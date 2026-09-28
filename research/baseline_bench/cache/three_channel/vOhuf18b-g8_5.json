@@ -1,0 +1,36 @@
+{
+ "uid": "vOhuf18b-g8_5",
+ "system": "three_channel",
+ "video_id": "vOhuf18b-g8",
+ "segment_id": 5,
+ "split": "holdout",
+ "payload": {
+  "segment_id": 5,
+  "start_s": 34.160000000000004,
+  "end_s": 42.32,
+  "transcript": "So in order to explain where I'm coming from, we have to go back a little bit and think about the origins of why we even are so enamored with foldable phones in the first place.",
+  "transcript_sentiment": "NEUTRAL (0.45)",
+  "vocal_emotion": "NEUTRAL (arousal 0.53)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.97)"
+ },
+ "seconds": 4.813,
+ "raw": "{\n  \"segment_id\": 5,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"video_comment_sentiment\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and tone are neutral, but their facial expression is not detected, and the audience's comments are overwhelmingly positive, indicating a conflict between the creator's intended message and their actual emotional expression.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 5,
+  "start_s": 34.160000000000004,
+  "end_s": 42.32,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: video_comment_sentiment"
+  ],
+  "flagged": false
+ }
+}

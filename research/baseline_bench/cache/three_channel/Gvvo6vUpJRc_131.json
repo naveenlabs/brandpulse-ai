@@ -1,0 +1,36 @@
+{
+ "uid": "Gvvo6vUpJRc_131",
+ "system": "three_channel",
+ "video_id": "Gvvo6vUpJRc",
+ "segment_id": 131,
+ "split": "selection",
+ "payload": {
+  "segment_id": 131,
+  "start_s": 675.32,
+  "end_s": 682.7600000000001,
+  "transcript": "I hate that it looks like a mini purse and I hate that I know Apple thoroughly considered all this stuff.",
+  "transcript_sentiment": "NEGATIVE (0.93)",
+  "vocal_emotion": "POSITIVE (arousal 0.66)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.96)"
+ },
+ "seconds": 4.805,
+ "raw": "{\n  \"segment_id\": 131,\n  \"conflict_score\": 0.8,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"vocal_sentiment\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words express strong negative sentiment, but their tone and facial expression suggest positivity, and the audience's comments also express positivity. This discrepancy between verbal and non-verbal cues indicates a conflict in emotional valence.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 131,
+  "start_s": 675.32,
+  "end_s": 682.7600000000001,
+  "conflict_score": 0.8,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: vocal_sentiment"
+  ],
+  "flagged": true
+ }
+}

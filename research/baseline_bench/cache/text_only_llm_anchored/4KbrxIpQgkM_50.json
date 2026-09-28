@@ -1,0 +1,27 @@
+{
+ "uid": "4KbrxIpQgkM_50",
+ "system": "text_only_llm_anchored",
+ "video_id": "4KbrxIpQgkM",
+ "segment_id": 50,
+ "split": "selection",
+ "payload": {
+  "segment_id": 50,
+  "start_s": 262.78,
+  "end_s": 265.94,
+  "transcript": "Well, technically no. The Snapdragon 8 Elite still smokes this."
+ },
+ "seconds": 4.179,
+ "raw": "{\n  \"segment_id\": 50,\n  \"conflict_score\": 0.75,\n  \"channels_in_conflict\": [],\n  \"flags\": [\"POTENTIAL_PAID_PROMOTION\"],\n  \"narrative\": \"The use of the word 'smokes' to describe the performance of the Snapdragon 8 Elite, in comparison to the product being reviewed, suggests a strong promotional tone, implying that the creator is not being entirely sincere in their assessment.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 50,
+  "start_s": 262.78,
+  "end_s": 265.94,
+  "conflict_score": 0.75,
+  "conflict_reasons": [
+   "POTENTIAL_PAID_PROMOTION"
+  ],
+  "flagged": true
+ }
+}

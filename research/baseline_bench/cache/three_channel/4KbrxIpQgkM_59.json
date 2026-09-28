@@ -1,0 +1,36 @@
+{
+ "uid": "4KbrxIpQgkM_59",
+ "system": "three_channel",
+ "video_id": "4KbrxIpQgkM",
+ "segment_id": 59,
+ "split": "selection",
+ "payload": {
+  "segment_id": 59,
+  "start_s": 307.32,
+  "end_s": 314.22,
+  "transcript": "Awesome to see that. But there is no 8128 version. And I think if they did make one, that would probably be like $699.",
+  "transcript_sentiment": "POSITIVE (0.45)",
+  "vocal_emotion": "NEUTRAL (arousal 0.57)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.99)"
+ },
+ "seconds": 3.945,
+ "raw": "{\n  \"segment_id\": 59,\n  \"conflict_score\": 0.5,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words express a positive sentiment, but their facial expression shows no emotion, indicating a potential conflict between verbal and non-verbal cues.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 59,
+  "start_s": 307.32,
+  "end_s": 314.22,
+  "conflict_score": 0.2445,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+  ],
+  "flagged": false
+ }
+}

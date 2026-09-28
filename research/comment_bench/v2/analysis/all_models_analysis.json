@@ -1,0 +1,1874 @@
+{
+  "generated_at": "2026-08-28",
+  "models_evaluated": [
+    "cardiffnlp",
+    "tabularisai",
+    "VADER",
+    "j-hartmann",
+    "bertweet",
+    "cardiffnlp_original",
+    "cardiffnlp_xlm",
+    "distilbert_student",
+    "nlptown",
+    "siebert"
+  ],
+  "models_missing": [],
+  "corpus_comments_scored": 4843,
+  "ground_truth": "labels/label_sheet_rater1.csv (350 human labels)",
+  "seed": 42,
+  "sample_a_accuracy": {
+    "n": 300,
+    "note": "Unbiased random sample. THE headline accuracy figure.",
+    "truth_distribution": {
+      "POSITIVE": 131,
+      "NEGATIVE": 67,
+      "NEUTRAL": 102
+    },
+    "cardiffnlp": {
+      "model_id": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+      "correct": 214,
+      "wrong": 86,
+      "n": 300,
+      "accuracy": 0.7133333333333334,
+      "ci95": [
+        0.6597173468493974,
+        0.7615547896849021
+      ],
+      "kappa_vs_human": 0.5486827834726936,
+      "per_class": {
+        "POSITIVE": {
+          "precision": 0.7659574468085106,
+          "recall": 0.8244274809160306,
+          "f1": 0.7941176470588236,
+          "support": 131
+        },
+        "NEUTRAL": {
+          "precision": 0.6886792452830188,
+          "recall": 0.7156862745098039,
+          "f1": 0.7019230769230769,
+          "support": 102
+        },
+        "NEGATIVE": {
+          "precision": 0.6226415094339622,
+          "recall": 0.4925373134328358,
+          "f1": 0.55,
+          "support": 67
+        },
+        "macro_f1": 0.6820135746606336
+      },
+      "confusion_truth_by_pred": {
+        "POSITIVE": {
+          "POSITIVE": 108,
+          "NEUTRAL": 15,
+          "NEGATIVE": 8
+        },
+        "NEUTRAL": {
+          "POSITIVE": 17,
+          "NEUTRAL": 73,
+          "NEGATIVE": 12
+        },
+        "NEGATIVE": {
+          "POSITIVE": 16,
+          "NEUTRAL": 18,
+          "NEGATIVE": 33
+        }
+      },
+      "pred_distribution": {
+        "NEUTRAL": 106,
+        "POSITIVE": 141,
+        "NEGATIVE": 53
+      }
+    },
+    "tabularisai": {
+      "model_id": "tabularisai/multilingual-sentiment-analysis",
+      "correct": 167,
+      "wrong": 133,
+      "n": 300,
+      "accuracy": 0.5566666666666666,
+      "ci95": [
+        0.5000863411296723,
+        0.611814070137251
+      ],
+      "kappa_vs_human": 0.3367355419984374,
+      "per_class": {
+        "POSITIVE": {
+          "precision": 0.7319587628865979,
+          "recall": 0.5419847328244275,
+          "f1": 0.6228070175438597,
+          "support": 131
+        },
+        "NEUTRAL": {
+          "precision": 0.5643564356435643,
+          "recall": 0.5588235294117647,
+          "f1": 0.5615763546798029,
+          "support": 102
+        },
+        "NEGATIVE": {
+          "precision": 0.38235294117647056,
+          "recall": 0.582089552238806,
+          "f1": 0.4615384615384615,
+          "support": 67
+        },
+        "macro_f1": 0.5486406112540413
+      },
+      "confusion_truth_by_pred": {
+        "POSITIVE": {
+          "POSITIVE": 71,
+          "NEUTRAL": 29,
+          "NEGATIVE": 31
+        },
+        "NEUTRAL": {
+          "POSITIVE": 13,
+          "NEUTRAL": 57,
+          "NEGATIVE": 32
+        },
+        "NEGATIVE": {
+          "POSITIVE": 13,
+          "NEUTRAL": 15,
+          "NEGATIVE": 39
+        }
+      },
+      "pred_distribution": {
+        "NEUTRAL": 101,
+        "NEGATIVE": 102,
+        "POSITIVE": 97
+      }
+    },
+    "VADER": {
+      "model_id": "VADER (rule-based lexicon)",
+      "correct": 149,
+      "wrong": 151,
+      "n": 300,
+      "accuracy": 0.49666666666666665,
+      "ci95": [
+        0.440488541129282,
+        0.5529290817373694
+      ],
+      "kappa_vs_human": 0.18282673401280772,
+      "per_class": {
+        "POSITIVE": {
+          "precision": 0.5351351351351351,
+          "recall": 0.7557251908396947,
+          "f1": 0.6265822784810127,
+          "support": 131
+        },
+        "NEUTRAL": {
+          "precision": 0.48,
+          "recall": 0.35294117647058826,
+          "f1": 0.4067796610169491,
+          "support": 102
+        },
+        "NEGATIVE": {
+          "precision": 0.35,
+          "recall": 0.208955223880597,
+          "f1": 0.2616822429906542,
+          "support": 67
+        },
+        "macro_f1": 0.43168139416287205
+      },
+      "confusion_truth_by_pred": {
+        "POSITIVE": {
+          "POSITIVE": 99,
+          "NEUTRAL": 22,
+          "NEGATIVE": 10
+        },
+        "NEUTRAL": {
+          "POSITIVE": 50,
+          "NEUTRAL": 36,
+          "NEGATIVE": 16
+        },
+        "NEGATIVE": {
+          "POSITIVE": 36,
+          "NEUTRAL": 17,
+          "NEGATIVE": 14
+        }
+      },
+      "pred_distribution": {
+        "NEUTRAL": 75,
+        "POSITIVE": 185,
+        "NEGATIVE": 40
+      }
+    },
+    "j-hartmann": {
+      "model_id": "j-hartmann/sentiment-roberta-large-english-3-classes",
+      "correct": 198,
+      "wrong": 102,
+      "n": 300,
+      "accuracy": 0.66,
+      "ci95": [
+        0.6046734114246599,
+        0.7112806909760647
+      ],
+      "kappa_vs_human": 0.47710184552289825,
+      "per_class": {
+        "POSITIVE": {
+          "precision": 0.8181818181818182,
+          "recall": 0.6870229007633588,
+          "f1": 0.7468879668049792,
+          "support": 131
+        },
+        "NEUTRAL": {
+          "precision": 0.5806451612903226,
+          "recall": 0.7058823529411765,
+          "f1": 0.6371681415929203,
+          "support": 102
+        },
+        "NEGATIVE": {
+          "precision": 0.5454545454545454,
+          "recall": 0.5373134328358209,
+          "f1": 0.5413533834586466,
+          "support": 67
+        },
+        "macro_f1": 0.6418031639521821
+      },
+      "confusion_truth_by_pred": {
+        "POSITIVE": {
+          "POSITIVE": 90,
+          "NEUTRAL": 28,
+          "NEGATIVE": 13
+        },
+        "NEUTRAL": {
+          "POSITIVE": 13,
+          "NEUTRAL": 72,
+          "NEGATIVE": 17
+        },
+        "NEGATIVE": {
+          "POSITIVE": 7,
+          "NEUTRAL": 24,
+          "NEGATIVE": 36
+        }
+      },
+      "pred_distribution": {
+        "NEUTRAL": 124,
+        "NEGATIVE": 66,
+        "POSITIVE": 110
+      }
+    },
+    "bertweet": {
+      "model_id": "finiteautomata/bertweet-base-sentiment-analysis",
+      "correct": 199,
+      "wrong": 101,
+      "n": 300,
+      "accuracy": 0.6633333333333333,
+      "ci95": [
+        0.6080909561297259,
+        0.7144455234043472
+      ],
+      "kappa_vs_human": 0.4725848563968668,
+      "per_class": {
+        "POSITIVE": {
+          "precision": 0.7615384615384615,
+          "recall": 0.7557251908396947,
+          "f1": 0.7586206896551725,
+          "support": 131
+        },
+        "NEUTRAL": {
+          "precision": 0.5932203389830508,
+          "recall": 0.6862745098039216,
+          "f1": 0.6363636363636364,
+          "support": 102
+        },
+        "NEGATIVE": {
+          "precision": 0.5769230769230769,
+          "recall": 0.44776119402985076,
+          "f1": 0.5042016806722689,
+          "support": 67
+        },
+        "macro_f1": 0.6330620022303592
+      },
+      "confusion_truth_by_pred": {
+        "POSITIVE": {
+          "POSITIVE": 99,
+          "NEUTRAL": 23,
+          "NEGATIVE": 9
+        },
+        "NEUTRAL": {
+          "POSITIVE": 19,
+          "NEUTRAL": 70,
+          "NEGATIVE": 13
+        },
+        "NEGATIVE": {
+          "POSITIVE": 12,
+          "NEUTRAL": 25,
+          "NEGATIVE": 30
+        }
+      },
+      "pred_distribution": {
+        "NEUTRAL": 118,
+        "POSITIVE": 130,
+        "NEGATIVE": 52
+      }
+    },
+    "cardiffnlp_original": {
+      "model_id": "cardiffnlp/twitter-roberta-base-sentiment",
+      "correct": 202,
+      "wrong": 98,
+      "n": 300,
+      "accuracy": 0.6733333333333333,
+      "ci95": [
+        0.6183611701576165,
+        0.7239224407765018
+      ],
+      "kappa_vs_human": 0.48476192145248076,
+      "per_class": {
+        "POSITIVE": {
+          "precision": 0.7304964539007093,
+          "recall": 0.7862595419847328,
+          "f1": 0.7573529411764706,
+          "support": 131
+        },
+        "NEUTRAL": {
+          "precision": 0.6422018348623854,
+          "recall": 0.6862745098039216,
+          "f1": 0.6635071090047394,
+          "support": 102
+        },
+        "NEGATIVE": {
+          "precision": 0.58,
+          "recall": 0.43283582089552236,
+          "f1": 0.4957264957264957,
+          "support": 67
+        },
+        "macro_f1": 0.6388621819692353
+      },
+      "confusion_truth_by_pred": {
+        "POSITIVE": {
+          "POSITIVE": 103,
+          "NEUTRAL": 20,
+          "NEGATIVE": 8
+        },
+        "NEUTRAL": {
+          "POSITIVE": 19,
+          "NEUTRAL": 70,
+          "NEGATIVE": 13
+        },
+        "NEGATIVE": {
+          "POSITIVE": 19,
+          "NEUTRAL": 19,
+          "NEGATIVE": 29
+        }
+      },
+      "pred_distribution": {
+        "NEUTRAL": 109,
+        "POSITIVE": 141,
+        "NEGATIVE": 50
+      }
+    },
+    "cardiffnlp_xlm": {
+      "model_id": "cardiffnlp/twitter-xlm-roberta-base-sentiment",
+      "correct": 199,
+      "wrong": 101,
+      "n": 300,
+      "accuracy": 0.6633333333333333,
+      "ci95": [
+        0.6080909561297259,
+        0.7144455234043472
+      ],
+      "kappa_vs_human": 0.4817412126913537,
+      "per_class": {
+        "POSITIVE": {
+          "precision": 0.7692307692307693,
+          "recall": 0.7633587786259542,
+          "f1": 0.7662835249042146,
+          "support": 131
+        },
+        "NEUTRAL": {
+          "precision": 0.6966292134831461,
+          "recall": 0.6078431372549019,
+          "f1": 0.6492146596858639,
+          "support": 102
+        },
+        "NEGATIVE": {
+          "precision": 0.4567901234567901,
+          "recall": 0.5522388059701493,
+          "f1": 0.5,
+          "support": 67
+        },
+        "macro_f1": 0.6384993948633595
+      },
+      "confusion_truth_by_pred": {
+        "POSITIVE": {
+          "POSITIVE": 100,
+          "NEUTRAL": 13,
+          "NEGATIVE": 18
+        },
+        "NEUTRAL": {
+          "POSITIVE": 14,
+          "NEUTRAL": 62,
+          "NEGATIVE": 26
+        },
+        "NEGATIVE": {
+          "POSITIVE": 16,
+          "NEUTRAL": 14,
+          "NEGATIVE": 37
+        }
+      },
+      "pred_distribution": {
+        "NEGATIVE": 81,
+        "POSITIVE": 130,
+        "NEUTRAL": 89
+      }
+    },
+    "distilbert_student": {
+      "model_id": "lxyuan/distilbert-base-multilingual-cased-sentiments-student",
+      "correct": 132,
+      "wrong": 168,
+      "n": 300,
+      "accuracy": 0.44,
+      "ci95": [
+        0.3849382095794712,
+        0.49657900202025707
+      ],
+      "kappa_vs_human": 0.1284197419845744,
+      "per_class": {
+        "POSITIVE": {
+          "precision": 0.5248618784530387,
+          "recall": 0.7251908396946565,
+          "f1": 0.6089743589743589,
+          "support": 131
+        },
+        "NEUTRAL": {
+          "precision": 0.35714285714285715,
+          "recall": 0.049019607843137254,
+          "f1": 0.08620689655172414,
+          "support": 102
+        },
+        "NEGATIVE": {
+          "precision": 0.3047619047619048,
+          "recall": 0.47761194029850745,
+          "f1": 0.37209302325581395,
+          "support": 67
+        },
+        "macro_f1": 0.355758092927299
+      },
+      "confusion_truth_by_pred": {
+        "POSITIVE": {
+          "POSITIVE": 95,
+          "NEUTRAL": 4,
+          "NEGATIVE": 32
+        },
+        "NEUTRAL": {
+          "POSITIVE": 56,
+          "NEUTRAL": 5,
+          "NEGATIVE": 41
+        },
+        "NEGATIVE": {
+          "POSITIVE": 30,
+          "NEUTRAL": 5,
+          "NEGATIVE": 32
+        }
+      },
+      "pred_distribution": {
+        "POSITIVE": 181,
+        "NEGATIVE": 105,
+        "NEUTRAL": 14
+      }
+    },
+    "nlptown": {
+      "model_id": "nlptown/bert-base-multilingual-uncased-sentiment",
+      "correct": 147,
+      "wrong": 153,
+      "n": 300,
+      "accuracy": 0.49,
+      "ci95": [
+        0.43391603364256914,
+        0.5463368349573855
+      ],
+      "kappa_vs_human": 0.21646950376401908,
+      "per_class": {
+        "POSITIVE": {
+          "precision": 0.5962732919254659,
+          "recall": 0.732824427480916,
+          "f1": 0.6575342465753424,
+          "support": 131
+        },
+        "NEUTRAL": {
+          "precision": 0.4827586206896552,
+          "recall": 0.13725490196078433,
+          "f1": 0.2137404580152672,
+          "support": 102
+        },
+        "NEGATIVE": {
+          "precision": 0.33636363636363636,
+          "recall": 0.5522388059701493,
+          "f1": 0.4180790960451977,
+          "support": 67
+        },
+        "macro_f1": 0.4297846002119358
+      },
+      "confusion_truth_by_pred": {
+        "POSITIVE": {
+          "POSITIVE": 96,
+          "NEUTRAL": 8,
+          "NEGATIVE": 27
+        },
+        "NEUTRAL": {
+          "POSITIVE": 42,
+          "NEUTRAL": 14,
+          "NEGATIVE": 46
+        },
+        "NEGATIVE": {
+          "POSITIVE": 23,
+          "NEUTRAL": 7,
+          "NEGATIVE": 37
+        }
+      },
+      "pred_distribution": {
+        "NEGATIVE": 110,
+        "NEUTRAL": 29,
+        "POSITIVE": 161
+      }
+    },
+    "siebert": {
+      "model_id": "siebert/sentiment-roberta-large-english",
+      "correct": 167,
+      "wrong": 133,
+      "n": 300,
+      "accuracy": 0.5566666666666666,
+      "ci95": [
+        0.5000863411296723,
+        0.611814070137251
+      ],
+      "kappa_vs_human": 0.3100824788615496,
+      "per_class": {
+        "POSITIVE": {
+          "precision": 0.6170212765957447,
+          "recall": 0.8854961832061069,
+          "f1": 0.7272727272727273,
+          "support": 131
+        },
+        "NEUTRAL": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 102
+        },
+        "NEGATIVE": {
+          "precision": 0.4594594594594595,
+          "recall": 0.7611940298507462,
+          "f1": 0.5730337078651686,
+          "support": 67
+        },
+        "macro_f1": 0.43343547837929863
+      },
+      "confusion_truth_by_pred": {
+        "POSITIVE": {
+          "POSITIVE": 116,
+          "NEUTRAL": 0,
+          "NEGATIVE": 15
+        },
+        "NEUTRAL": {
+          "POSITIVE": 57,
+          "NEUTRAL": 0,
+          "NEGATIVE": 45
+        },
+        "NEGATIVE": {
+          "POSITIVE": 15,
+          "NEUTRAL": 1,
+          "NEGATIVE": 51
+        }
+      },
+      "pred_distribution": {
+        "POSITIVE": 188,
+        "NEGATIVE": 111,
+        "NEUTRAL": 1
+      }
+    },
+    "ranking": [
+      "cardiffnlp",
+      "cardiffnlp_original",
+      "bertweet",
+      "cardiffnlp_xlm",
+      "j-hartmann",
+      "tabularisai",
+      "siebert",
+      "VADER",
+      "nlptown",
+      "distilbert_student"
+    ]
+  },
+  "sample_b_diagnostic": {
+    "n": 50,
+    "note": "Enriched with three-way model disagreements. Diagnostic only, NOT an accuracy estimate.",
+    "truth_distribution": {
+      "NEUTRAL": 23,
+      "POSITIVE": 14,
+      "NEGATIVE": 13
+    },
+    "cardiffnlp": {
+      "model_id": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+      "correct": 25,
+      "wrong": 25,
+      "n": 50,
+      "accuracy": 0.5,
+      "ci95": [
+        0.36644286412332855,
+        0.6335571358766714
+      ],
+      "kappa_vs_human": 0.19041450777202062,
+      "per_class": {
+        "POSITIVE": {
+          "precision": 0.6666666666666666,
+          "recall": 0.2857142857142857,
+          "f1": 0.4,
+          "support": 14
+        },
+        "NEUTRAL": {
+          "precision": 0.5,
+          "recall": 0.6521739130434783,
+          "f1": 0.5660377358490566,
+          "support": 23
+        },
+        "NEGATIVE": {
+          "precision": 0.42857142857142855,
+          "recall": 0.46153846153846156,
+          "f1": 0.4444444444444445,
+          "support": 13
+        },
+        "macro_f1": 0.4701607267645003
+      },
+      "confusion_truth_by_pred": {
+        "POSITIVE": {
+          "POSITIVE": 4,
+          "NEUTRAL": 8,
+          "NEGATIVE": 2
+        },
+        "NEUTRAL": {
+          "POSITIVE": 2,
+          "NEUTRAL": 15,
+          "NEGATIVE": 6
+        },
+        "NEGATIVE": {
+          "POSITIVE": 0,
+          "NEUTRAL": 7,
+          "NEGATIVE": 6
+        }
+      },
+      "pred_distribution": {
+        "NEUTRAL": 30,
+        "POSITIVE": 6,
+        "NEGATIVE": 14
+      }
+    },
+    "tabularisai": {
+      "model_id": "tabularisai/multilingual-sentiment-analysis",
+      "correct": 17,
+      "wrong": 33,
+      "n": 50,
+      "accuracy": 0.34,
+      "ci95": [
+        0.2243676963506106,
+        0.47846431458517147
+      ],
+      "kappa_vs_human": 0.025974025974025983,
+      "per_class": {
+        "POSITIVE": {
+          "precision": 0.5,
+          "recall": 0.21428571428571427,
+          "f1": 0.3,
+          "support": 14
+        },
+        "NEUTRAL": {
+          "precision": 0.4666666666666667,
+          "recall": 0.30434782608695654,
+          "f1": 0.3684210526315789,
+          "support": 23
+        },
+        "NEGATIVE": {
+          "precision": 0.2413793103448276,
+          "recall": 0.5384615384615384,
+          "f1": 0.3333333333333333,
+          "support": 13
+        },
+        "macro_f1": 0.3339181286549708
+      },
+      "confusion_truth_by_pred": {
+        "POSITIVE": {
+          "POSITIVE": 3,
+          "NEUTRAL": 4,
+          "NEGATIVE": 7
+        },
+        "NEUTRAL": {
+          "POSITIVE": 1,
+          "NEUTRAL": 7,
+          "NEGATIVE": 15
+        },
+        "NEGATIVE": {
+          "POSITIVE": 2,
+          "NEUTRAL": 4,
+          "NEGATIVE": 7
+        }
+      },
+      "pred_distribution": {
+        "NEGATIVE": 29,
+        "POSITIVE": 6,
+        "NEUTRAL": 15
+      }
+    },
+    "VADER": {
+      "model_id": "VADER (rule-based lexicon)",
+      "correct": 8,
+      "wrong": 42,
+      "n": 50,
+      "accuracy": 0.16,
+      "ci95": [
+        0.08337321362087696,
+        0.2851448096176598
+      ],
+      "kappa_vs_human": -0.19182746878547108,
+      "per_class": {
+        "POSITIVE": {
+          "precision": 0.18421052631578946,
+          "recall": 0.5,
+          "f1": 0.2692307692307692,
+          "support": 14
+        },
+        "NEUTRAL": {
+          "precision": 0.2,
+          "recall": 0.043478260869565216,
+          "f1": 0.07142857142857142,
+          "support": 23
+        },
+        "NEGATIVE": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 13
+        },
+        "macro_f1": 0.11355311355311355
+      },
+      "confusion_truth_by_pred": {
+        "POSITIVE": {
+          "POSITIVE": 7,
+          "NEUTRAL": 2,
+          "NEGATIVE": 5
+        },
+        "NEUTRAL": {
+          "POSITIVE": 20,
+          "NEUTRAL": 1,
+          "NEGATIVE": 2
+        },
+        "NEGATIVE": {
+          "POSITIVE": 11,
+          "NEUTRAL": 2,
+          "NEGATIVE": 0
+        }
+      },
+      "pred_distribution": {
+        "POSITIVE": 38,
+        "NEUTRAL": 5,
+        "NEGATIVE": 7
+      }
+    },
+    "j-hartmann": {
+      "model_id": "j-hartmann/sentiment-roberta-large-english-3-classes",
+      "correct": 24,
+      "wrong": 26,
+      "n": 50,
+      "accuracy": 0.48,
+      "ci95": [
+        0.3479691239550571,
+        0.6148848774119157
+      ],
+      "kappa_vs_human": 0.15309446254071657,
+      "per_class": {
+        "POSITIVE": {
+          "precision": 0.6,
+          "recall": 0.21428571428571427,
+          "f1": 0.3157894736842105,
+          "support": 14
+        },
+        "NEUTRAL": {
+          "precision": 0.5483870967741935,
+          "recall": 0.7391304347826086,
+          "f1": 0.6296296296296297,
+          "support": 23
+        },
+        "NEGATIVE": {
+          "precision": 0.2857142857142857,
+          "recall": 0.3076923076923077,
+          "f1": 0.29629629629629634,
+          "support": 13
+        },
+        "macro_f1": 0.4139051332033788
+      },
+      "confusion_truth_by_pred": {
+        "POSITIVE": {
+          "POSITIVE": 3,
+          "NEUTRAL": 5,
+          "NEGATIVE": 6
+        },
+        "NEUTRAL": {
+          "POSITIVE": 2,
+          "NEUTRAL": 17,
+          "NEGATIVE": 4
+        },
+        "NEGATIVE": {
+          "POSITIVE": 0,
+          "NEUTRAL": 9,
+          "NEGATIVE": 4
+        }
+      },
+      "pred_distribution": {
+        "NEUTRAL": 31,
+        "NEGATIVE": 14,
+        "POSITIVE": 5
+      }
+    },
+    "bertweet": {
+      "model_id": "finiteautomata/bertweet-base-sentiment-analysis",
+      "correct": 26,
+      "wrong": 24,
+      "n": 50,
+      "accuracy": 0.52,
+      "ci95": [
+        0.3851151225880844,
+        0.6520308760449429
+      ],
+      "kappa_vs_human": 0.180327868852459,
+      "per_class": {
+        "POSITIVE": {
+          "precision": 0.5,
+          "recall": 0.21428571428571427,
+          "f1": 0.3,
+          "support": 14
+        },
+        "NEUTRAL": {
+          "precision": 0.5263157894736842,
+          "recall": 0.8695652173913043,
+          "f1": 0.6557377049180327,
+          "support": 23
+        },
+        "NEGATIVE": {
+          "precision": 0.5,
+          "recall": 0.23076923076923078,
+          "f1": 0.3157894736842105,
+          "support": 13
+        },
+        "macro_f1": 0.4238423928674144
+      },
+      "confusion_truth_by_pred": {
+        "POSITIVE": {
+          "POSITIVE": 3,
+          "NEUTRAL": 9,
+          "NEGATIVE": 2
+        },
+        "NEUTRAL": {
+          "POSITIVE": 2,
+          "NEUTRAL": 20,
+          "NEGATIVE": 1
+        },
+        "NEGATIVE": {
+          "POSITIVE": 1,
+          "NEUTRAL": 9,
+          "NEGATIVE": 3
+        }
+      },
+      "pred_distribution": {
+        "NEUTRAL": 38,
+        "POSITIVE": 6,
+        "NEGATIVE": 6
+      }
+    },
+    "cardiffnlp_original": {
+      "model_id": "cardiffnlp/twitter-roberta-base-sentiment",
+      "correct": 25,
+      "wrong": 25,
+      "n": 50,
+      "accuracy": 0.5,
+      "ci95": [
+        0.36644286412332855,
+        0.6335571358766714
+      ],
+      "kappa_vs_human": 0.2063492063492063,
+      "per_class": {
+        "POSITIVE": {
+          "precision": 0.5333333333333333,
+          "recall": 0.5714285714285714,
+          "f1": 0.5517241379310344,
+          "support": 14
+        },
+        "NEUTRAL": {
+          "precision": 0.6153846153846154,
+          "recall": 0.6956521739130435,
+          "f1": 0.6530612244897959,
+          "support": 23
+        },
+        "NEGATIVE": {
+          "precision": 0.1111111111111111,
+          "recall": 0.07692307692307693,
+          "f1": 0.09090909090909093,
+          "support": 13
+        },
+        "macro_f1": 0.4318981511099737
+      },
+      "confusion_truth_by_pred": {
+        "POSITIVE": {
+          "POSITIVE": 8,
+          "NEUTRAL": 2,
+          "NEGATIVE": 4
+        },
+        "NEUTRAL": {
+          "POSITIVE": 3,
+          "NEUTRAL": 16,
+          "NEGATIVE": 4
+        },
+        "NEGATIVE": {
+          "POSITIVE": 4,
+          "NEUTRAL": 8,
+          "NEGATIVE": 1
+        }
+      },
+      "pred_distribution": {
+        "NEUTRAL": 26,
+        "POSITIVE": 15,
+        "NEGATIVE": 9
+      }
+    },
+    "cardiffnlp_xlm": {
+      "model_id": "cardiffnlp/twitter-xlm-roberta-base-sentiment",
+      "correct": 21,
+      "wrong": 29,
+      "n": 50,
+      "accuracy": 0.42,
+      "ci95": [
+        0.2937479723456693,
+        0.5576680331222217
+      ],
+      "kappa_vs_human": 0.1363907087552114,
+      "per_class": {
+        "POSITIVE": {
+          "precision": 0.45454545454545453,
+          "recall": 0.35714285714285715,
+          "f1": 0.4,
+          "support": 14
+        },
+        "NEUTRAL": {
+          "precision": 0.5625,
+          "recall": 0.391304347826087,
+          "f1": 0.46153846153846156,
+          "support": 23
+        },
+        "NEGATIVE": {
+          "precision": 0.30434782608695654,
+          "recall": 0.5384615384615384,
+          "f1": 0.3888888888888889,
+          "support": 13
+        },
+        "macro_f1": 0.4168091168091168
+      },
+      "confusion_truth_by_pred": {
+        "POSITIVE": {
+          "POSITIVE": 5,
+          "NEUTRAL": 2,
+          "NEGATIVE": 7
+        },
+        "NEUTRAL": {
+          "POSITIVE": 5,
+          "NEUTRAL": 9,
+          "NEGATIVE": 9
+        },
+        "NEGATIVE": {
+          "POSITIVE": 1,
+          "NEUTRAL": 5,
+          "NEGATIVE": 7
+        }
+      },
+      "pred_distribution": {
+        "NEGATIVE": 23,
+        "NEUTRAL": 16,
+        "POSITIVE": 11
+      }
+    },
+    "distilbert_student": {
+      "model_id": "lxyuan/distilbert-base-multilingual-cased-sentiments-student",
+      "correct": 11,
+      "wrong": 39,
+      "n": 50,
+      "accuracy": 0.22,
+      "ci95": [
+        0.12753786224302288,
+        0.35241815689459555
+      ],
+      "kappa_vs_human": -0.09921082299887259,
+      "per_class": {
+        "POSITIVE": {
+          "precision": 0.23076923076923078,
+          "recall": 0.42857142857142855,
+          "f1": 0.3,
+          "support": 14
+        },
+        "NEUTRAL": {
+          "precision": 0.2,
+          "recall": 0.043478260869565216,
+          "f1": 0.07142857142857142,
+          "support": 23
+        },
+        "NEGATIVE": {
+          "precision": 0.21052631578947367,
+          "recall": 0.3076923076923077,
+          "f1": 0.25,
+          "support": 13
+        },
+        "macro_f1": 0.20714285714285716
+      },
+      "confusion_truth_by_pred": {
+        "POSITIVE": {
+          "POSITIVE": 6,
+          "NEUTRAL": 2,
+          "NEGATIVE": 6
+        },
+        "NEUTRAL": {
+          "POSITIVE": 13,
+          "NEUTRAL": 1,
+          "NEGATIVE": 9
+        },
+        "NEGATIVE": {
+          "POSITIVE": 7,
+          "NEUTRAL": 2,
+          "NEGATIVE": 4
+        }
+      },
+      "pred_distribution": {
+        "NEGATIVE": 19,
+        "POSITIVE": 26,
+        "NEUTRAL": 5
+      }
+    },
+    "nlptown": {
+      "model_id": "nlptown/bert-base-multilingual-uncased-sentiment",
+      "correct": 20,
+      "wrong": 30,
+      "n": 50,
+      "accuracy": 0.4,
+      "ci95": [
+        0.2760818978624575,
+        0.5381881089724063
+      ],
+      "kappa_vs_human": 0.13693901035673187,
+      "per_class": {
+        "POSITIVE": {
+          "precision": 0.4166666666666667,
+          "recall": 0.35714285714285715,
+          "f1": 0.3846153846153846,
+          "support": 14
+        },
+        "NEUTRAL": {
+          "precision": 0.7,
+          "recall": 0.30434782608695654,
+          "f1": 0.42424242424242425,
+          "support": 23
+        },
+        "NEGATIVE": {
+          "precision": 0.2857142857142857,
+          "recall": 0.6153846153846154,
+          "f1": 0.3902439024390244,
+          "support": 13
+        },
+        "macro_f1": 0.39970057043227775
+      },
+      "confusion_truth_by_pred": {
+        "POSITIVE": {
+          "POSITIVE": 5,
+          "NEUTRAL": 1,
+          "NEGATIVE": 8
+        },
+        "NEUTRAL": {
+          "POSITIVE": 4,
+          "NEUTRAL": 7,
+          "NEGATIVE": 12
+        },
+        "NEGATIVE": {
+          "POSITIVE": 3,
+          "NEUTRAL": 2,
+          "NEGATIVE": 8
+        }
+      },
+      "pred_distribution": {
+        "NEGATIVE": 28,
+        "POSITIVE": 12,
+        "NEUTRAL": 10
+      }
+    },
+    "siebert": {
+      "model_id": "siebert/sentiment-roberta-large-english",
+      "correct": 20,
+      "wrong": 30,
+      "n": 50,
+      "accuracy": 0.4,
+      "ci95": [
+        0.2760818978624575,
+        0.5381881089724063
+      ],
+      "kappa_vs_human": 0.17898193760262723,
+      "per_class": {
+        "POSITIVE": {
+          "precision": 0.5217391304347826,
+          "recall": 0.8571428571428571,
+          "f1": 0.6486486486486486,
+          "support": 14
+        },
+        "NEUTRAL": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 23
+        },
+        "NEGATIVE": {
+          "precision": 0.2962962962962963,
+          "recall": 0.6153846153846154,
+          "f1": 0.4,
+          "support": 13
+        },
+        "macro_f1": 0.34954954954954953
+      },
+      "confusion_truth_by_pred": {
+        "POSITIVE": {
+          "POSITIVE": 12,
+          "NEUTRAL": 0,
+          "NEGATIVE": 2
+        },
+        "NEUTRAL": {
+          "POSITIVE": 6,
+          "NEUTRAL": 0,
+          "NEGATIVE": 17
+        },
+        "NEGATIVE": {
+          "POSITIVE": 5,
+          "NEUTRAL": 0,
+          "NEGATIVE": 8
+        }
+      },
+      "pred_distribution": {
+        "NEGATIVE": 27,
+        "POSITIVE": 23
+      }
+    },
+    "ranking": [
+      "bertweet",
+      "cardiffnlp",
+      "cardiffnlp_original",
+      "j-hartmann",
+      "cardiffnlp_xlm",
+      "nlptown",
+      "siebert",
+      "tabularisai",
+      "distilbert_student",
+      "VADER"
+    ]
+  },
+  "pooled_350_pessimistic": {
+    "n": 350,
+    "note": "All 350 human labels pooled. PESSIMISTIC: one seventh of these were selected because models disagreed, so this understates field accuracy. Reported because it was explicitly requested; sample_a_accuracy is the figure to quote.",
+    "truth_distribution": {
+      "POSITIVE": 145,
+      "NEUTRAL": 125,
+      "NEGATIVE": 80
+    },
+    "cardiffnlp": {
+      "model_id": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+      "correct": 239,
+      "wrong": 111,
+      "n": 350,
+      "accuracy": 0.6828571428571428,
+      "ci95": [
+        0.632342181062674,
+        0.7294016048573534
+      ],
+      "kappa_vs_human": 0.5071360608943862,
+      "per_class": {
+        "POSITIVE": {
+          "precision": 0.7619047619047619,
+          "recall": 0.7724137931034483,
+          "f1": 0.767123287671233,
+          "support": 145
+        },
+        "NEUTRAL": {
+          "precision": 0.6470588235294118,
+          "recall": 0.704,
+          "f1": 0.6743295019157088,
+          "support": 125
+        },
+        "NEGATIVE": {
+          "precision": 0.582089552238806,
+          "recall": 0.4875,
+          "f1": 0.5306122448979592,
+          "support": 80
+        },
+        "macro_f1": 0.657355011494967
+      },
+      "confusion_truth_by_pred": {
+        "POSITIVE": {
+          "POSITIVE": 112,
+          "NEUTRAL": 23,
+          "NEGATIVE": 10
+        },
+        "NEUTRAL": {
+          "POSITIVE": 19,
+          "NEUTRAL": 88,
+          "NEGATIVE": 18
+        },
+        "NEGATIVE": {
+          "POSITIVE": 16,
+          "NEUTRAL": 25,
+          "NEGATIVE": 39
+        }
+      },
+      "pred_distribution": {
+        "NEUTRAL": 136,
+        "POSITIVE": 147,
+        "NEGATIVE": 67
+      }
+    },
+    "tabularisai": {
+      "model_id": "tabularisai/multilingual-sentiment-analysis",
+      "correct": 184,
+      "wrong": 166,
+      "n": 350,
+      "accuracy": 0.5257142857142857,
+      "ci95": [
+        0.47340523413169405,
+        0.5774649857633096
+      ],
+      "kappa_vs_human": 0.2964824120603015,
+      "per_class": {
+        "POSITIVE": {
+          "precision": 0.7184466019417476,
+          "recall": 0.5103448275862069,
+          "f1": 0.5967741935483871,
+          "support": 145
+        },
+        "NEUTRAL": {
+          "precision": 0.5517241379310345,
+          "recall": 0.512,
+          "f1": 0.5311203319502075,
+          "support": 125
+        },
+        "NEGATIVE": {
+          "precision": 0.3511450381679389,
+          "recall": 0.575,
+          "f1": 0.4360189573459715,
+          "support": 80
+        },
+        "macro_f1": 0.521304494281522
+      },
+      "confusion_truth_by_pred": {
+        "POSITIVE": {
+          "POSITIVE": 74,
+          "NEUTRAL": 33,
+          "NEGATIVE": 38
+        },
+        "NEUTRAL": {
+          "POSITIVE": 14,
+          "NEUTRAL": 64,
+          "NEGATIVE": 47
+        },
+        "NEGATIVE": {
+          "POSITIVE": 15,
+          "NEUTRAL": 19,
+          "NEGATIVE": 46
+        }
+      },
+      "pred_distribution": {
+        "NEUTRAL": 116,
+        "NEGATIVE": 131,
+        "POSITIVE": 103
+      }
+    },
+    "VADER": {
+      "model_id": "VADER (rule-based lexicon)",
+      "correct": 157,
+      "wrong": 193,
+      "n": 350,
+      "accuracy": 0.44857142857142857,
+      "ci95": [
+        0.3973050236806779,
+        0.5009545365293143
+      ],
+      "kappa_vs_human": 0.11589555657352268,
+      "per_class": {
+        "POSITIVE": {
+          "precision": 0.47533632286995514,
+          "recall": 0.7310344827586207,
+          "f1": 0.5760869565217391,
+          "support": 145
+        },
+        "NEUTRAL": {
+          "precision": 0.4625,
+          "recall": 0.296,
+          "f1": 0.36097560975609755,
+          "support": 125
+        },
+        "NEGATIVE": {
+          "precision": 0.2978723404255319,
+          "recall": 0.175,
+          "f1": 0.22047244094488186,
+          "support": 80
+        },
+        "macro_f1": 0.38584500240757286
+      },
+      "confusion_truth_by_pred": {
+        "POSITIVE": {
+          "POSITIVE": 106,
+          "NEUTRAL": 24,
+          "NEGATIVE": 15
+        },
+        "NEUTRAL": {
+          "POSITIVE": 70,
+          "NEUTRAL": 37,
+          "NEGATIVE": 18
+        },
+        "NEGATIVE": {
+          "POSITIVE": 47,
+          "NEUTRAL": 19,
+          "NEGATIVE": 14
+        }
+      },
+      "pred_distribution": {
+        "NEUTRAL": 80,
+        "POSITIVE": 223,
+        "NEGATIVE": 47
+      }
+    },
+    "j-hartmann": {
+      "model_id": "j-hartmann/sentiment-roberta-large-english-3-classes",
+      "correct": 222,
+      "wrong": 128,
+      "n": 350,
+      "accuracy": 0.6342857142857142,
+      "ci95": [
+        0.5826226490203961,
+        0.6830329437646241
+      ],
+      "kappa_vs_human": 0.4403497813866332,
+      "per_class": {
+        "POSITIVE": {
+          "precision": 0.808695652173913,
+          "recall": 0.6413793103448275,
+          "f1": 0.7153846153846153,
+          "support": 145
+        },
+        "NEUTRAL": {
+          "precision": 0.5741935483870968,
+          "recall": 0.712,
+          "f1": 0.6357142857142858,
+          "support": 125
+        },
+        "NEGATIVE": {
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5,
+          "support": 80
+        },
+        "macro_f1": 0.6170329670329671
+      },
+      "confusion_truth_by_pred": {
+        "POSITIVE": {
+          "POSITIVE": 93,
+          "NEUTRAL": 33,
+          "NEGATIVE": 19
+        },
+        "NEUTRAL": {
+          "POSITIVE": 15,
+          "NEUTRAL": 89,
+          "NEGATIVE": 21
+        },
+        "NEGATIVE": {
+          "POSITIVE": 7,
+          "NEUTRAL": 33,
+          "NEGATIVE": 40
+        }
+      },
+      "pred_distribution": {
+        "NEUTRAL": 155,
+        "NEGATIVE": 80,
+        "POSITIVE": 115
+      }
+    },
+    "bertweet": {
+      "model_id": "finiteautomata/bertweet-base-sentiment-analysis",
+      "correct": 225,
+      "wrong": 125,
+      "n": 350,
+      "accuracy": 0.6428571428571429,
+      "ci95": [
+        0.5913557279094346,
+        0.691256604840587
+      ],
+      "kappa_vs_human": 0.4436673448626654,
+      "per_class": {
+        "POSITIVE": {
+          "precision": 0.75,
+          "recall": 0.7034482758620689,
+          "f1": 0.7259786476868326,
+          "support": 145
+        },
+        "NEUTRAL": {
+          "precision": 0.5769230769230769,
+          "recall": 0.72,
+          "f1": 0.6405693950177935,
+          "support": 125
+        },
+        "NEGATIVE": {
+          "precision": 0.5689655172413793,
+          "recall": 0.4125,
+          "f1": 0.47826086956521735,
+          "support": 80
+        },
+        "macro_f1": 0.6149363040899478
+      },
+      "confusion_truth_by_pred": {
+        "POSITIVE": {
+          "POSITIVE": 102,
+          "NEUTRAL": 32,
+          "NEGATIVE": 11
+        },
+        "NEUTRAL": {
+          "POSITIVE": 21,
+          "NEUTRAL": 90,
+          "NEGATIVE": 14
+        },
+        "NEGATIVE": {
+          "POSITIVE": 13,
+          "NEUTRAL": 34,
+          "NEGATIVE": 33
+        }
+      },
+      "pred_distribution": {
+        "NEUTRAL": 156,
+        "POSITIVE": 136,
+        "NEGATIVE": 58
+      }
+    },
+    "cardiffnlp_original": {
+      "model_id": "cardiffnlp/twitter-roberta-base-sentiment",
+      "correct": 227,
+      "wrong": 123,
+      "n": 350,
+      "accuracy": 0.6485714285714286,
+      "ci95": [
+        0.5971873105751553,
+        0.696729515484867
+      ],
+      "kappa_vs_human": 0.45008622341444715,
+      "per_class": {
+        "POSITIVE": {
+          "precision": 0.7115384615384616,
+          "recall": 0.7655172413793103,
+          "f1": 0.7375415282392025,
+          "support": 145
+        },
+        "NEUTRAL": {
+          "precision": 0.6370370370370371,
+          "recall": 0.688,
+          "f1": 0.6615384615384615,
+          "support": 125
+        },
+        "NEGATIVE": {
+          "precision": 0.5084745762711864,
+          "recall": 0.375,
+          "f1": 0.4316546762589928,
+          "support": 80
+        },
+        "macro_f1": 0.6102448886788856
+      },
+      "confusion_truth_by_pred": {
+        "POSITIVE": {
+          "POSITIVE": 111,
+          "NEUTRAL": 22,
+          "NEGATIVE": 12
+        },
+        "NEUTRAL": {
+          "POSITIVE": 22,
+          "NEUTRAL": 86,
+          "NEGATIVE": 17
+        },
+        "NEGATIVE": {
+          "POSITIVE": 23,
+          "NEUTRAL": 27,
+          "NEGATIVE": 30
+        }
+      },
+      "pred_distribution": {
+        "NEUTRAL": 135,
+        "POSITIVE": 156,
+        "NEGATIVE": 59
+      }
+    },
+    "cardiffnlp_xlm": {
+      "model_id": "cardiffnlp/twitter-xlm-roberta-base-sentiment",
+      "correct": 220,
+      "wrong": 130,
+      "n": 350,
+      "accuracy": 0.6285714285714286,
+      "ci95": [
+        0.5768100140443334,
+        0.6775410854306859
+      ],
+      "kappa_vs_human": 0.4355539015010545,
+      "per_class": {
+        "POSITIVE": {
+          "precision": 0.7446808510638298,
+          "recall": 0.7241379310344828,
+          "f1": 0.7342657342657343,
+          "support": 145
+        },
+        "NEUTRAL": {
+          "precision": 0.6761904761904762,
+          "recall": 0.568,
+          "f1": 0.6173913043478261,
+          "support": 125
+        },
+        "NEGATIVE": {
+          "precision": 0.4230769230769231,
+          "recall": 0.55,
+          "f1": 0.47826086956521735,
+          "support": 80
+        },
+        "macro_f1": 0.6099726360595925
+      },
+      "confusion_truth_by_pred": {
+        "POSITIVE": {
+          "POSITIVE": 105,
+          "NEUTRAL": 15,
+          "NEGATIVE": 25
+        },
+        "NEUTRAL": {
+          "POSITIVE": 19,
+          "NEUTRAL": 71,
+          "NEGATIVE": 35
+        },
+        "NEGATIVE": {
+          "POSITIVE": 17,
+          "NEUTRAL": 19,
+          "NEGATIVE": 44
+        }
+      },
+      "pred_distribution": {
+        "NEGATIVE": 104,
+        "POSITIVE": 141,
+        "NEUTRAL": 105
+      }
+    },
+    "distilbert_student": {
+      "model_id": "lxyuan/distilbert-base-multilingual-cased-sentiments-student",
+      "correct": 143,
+      "wrong": 207,
+      "n": 350,
+      "accuracy": 0.4085714285714286,
+      "ci95": [
+        0.35833476632011,
+        0.46079334071987615
+      ],
+      "kappa_vs_human": 0.09652076318742983,
+      "per_class": {
+        "POSITIVE": {
+          "precision": 0.48792270531400966,
+          "recall": 0.696551724137931,
+          "f1": 0.5738636363636364,
+          "support": 145
+        },
+        "NEUTRAL": {
+          "precision": 0.3157894736842105,
+          "recall": 0.048,
+          "f1": 0.08333333333333334,
+          "support": 125
+        },
+        "NEGATIVE": {
+          "precision": 0.2903225806451613,
+          "recall": 0.45,
+          "f1": 0.3529411764705882,
+          "support": 80
+        },
+        "macro_f1": 0.336712715389186
+      },
+      "confusion_truth_by_pred": {
+        "POSITIVE": {
+          "POSITIVE": 101,
+          "NEUTRAL": 6,
+          "NEGATIVE": 38
+        },
+        "NEUTRAL": {
+          "POSITIVE": 69,
+          "NEUTRAL": 6,
+          "NEGATIVE": 50
+        },
+        "NEGATIVE": {
+          "POSITIVE": 37,
+          "NEUTRAL": 7,
+          "NEGATIVE": 36
+        }
+      },
+      "pred_distribution": {
+        "POSITIVE": 207,
+        "NEGATIVE": 124,
+        "NEUTRAL": 19
+      }
+    },
+    "nlptown": {
+      "model_id": "nlptown/bert-base-multilingual-uncased-sentiment",
+      "correct": 167,
+      "wrong": 183,
+      "n": 350,
+      "accuracy": 0.47714285714285715,
+      "ci95": [
+        0.4253468179045563,
+        0.5294352088554402
+      ],
+      "kappa_vs_human": 0.21411042944785275,
+      "per_class": {
+        "POSITIVE": {
+          "precision": 0.5838150289017341,
+          "recall": 0.696551724137931,
+          "f1": 0.6352201257861635,
+          "support": 145
+        },
+        "NEUTRAL": {
+          "precision": 0.5384615384615384,
+          "recall": 0.168,
+          "f1": 0.25609756097560976,
+          "support": 125
+        },
+        "NEGATIVE": {
+          "precision": 0.32608695652173914,
+          "recall": 0.5625,
+          "f1": 0.41284403669724773,
+          "support": 80
+        },
+        "macro_f1": 0.4347205744863403
+      },
+      "confusion_truth_by_pred": {
+        "POSITIVE": {
+          "POSITIVE": 101,
+          "NEUTRAL": 9,
+          "NEGATIVE": 35
+        },
+        "NEUTRAL": {
+          "POSITIVE": 46,
+          "NEUTRAL": 21,
+          "NEGATIVE": 58
+        },
+        "NEGATIVE": {
+          "POSITIVE": 26,
+          "NEUTRAL": 9,
+          "NEGATIVE": 45
+        }
+      },
+      "pred_distribution": {
+        "NEGATIVE": 138,
+        "NEUTRAL": 39,
+        "POSITIVE": 173
+      }
+    },
+    "siebert": {
+      "model_id": "siebert/sentiment-roberta-large-english",
+      "correct": 187,
+      "wrong": 163,
+      "n": 350,
+      "accuracy": 0.5342857142857143,
+      "ci95": [
+        0.48193670548814704,
+        0.5858902543718579
+      ],
+      "kappa_vs_human": 0.2934109487243001,
+      "per_class": {
+        "POSITIVE": {
+          "precision": 0.6066350710900474,
+          "recall": 0.8827586206896552,
+          "f1": 0.7191011235955057,
+          "support": 145
+        },
+        "NEUTRAL": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 125
+        },
+        "NEGATIVE": {
+          "precision": 0.427536231884058,
+          "recall": 0.7375,
+          "f1": 0.5412844036697249,
+          "support": 80
+        },
+        "macro_f1": 0.42012850908841015
+      },
+      "confusion_truth_by_pred": {
+        "POSITIVE": {
+          "POSITIVE": 128,
+          "NEUTRAL": 0,
+          "NEGATIVE": 17
+        },
+        "NEUTRAL": {
+          "POSITIVE": 63,
+          "NEUTRAL": 0,
+          "NEGATIVE": 62
+        },
+        "NEGATIVE": {
+          "POSITIVE": 20,
+          "NEUTRAL": 1,
+          "NEGATIVE": 59
+        }
+      },
+      "pred_distribution": {
+        "POSITIVE": 211,
+        "NEGATIVE": 138,
+        "NEUTRAL": 1
+      }
+    },
+    "ranking": [
+      "cardiffnlp",
+      "cardiffnlp_original",
+      "bertweet",
+      "j-hartmann",
+      "cardiffnlp_xlm",
+      "siebert",
+      "tabularisai",
+      "nlptown",
+      "VADER",
+      "distilbert_student"
+    ]
+  },
+  "mcnemar_vs_champion": {
+    "champion": "cardiffnlp",
+    "pairs": {
+      "cardiffnlp_vs_tabularisai": {
+        "champion_only_correct": 70,
+        "challenger_only_correct": 23,
+        "discordant": 93,
+        "p_value_exact": 1.1026255560645484e-06,
+        "significant_at_0.05": true
+      },
+      "cardiffnlp_vs_VADER": {
+        "champion_only_correct": 81,
+        "challenger_only_correct": 16,
+        "discordant": 97,
+        "p_value_exact": 1.2385312683552126e-11,
+        "significant_at_0.05": true
+      },
+      "cardiffnlp_vs_j-hartmann": {
+        "champion_only_correct": 40,
+        "challenger_only_correct": 24,
+        "discordant": 64,
+        "p_value_exact": 0.05994118956699923,
+        "significant_at_0.05": false
+      },
+      "cardiffnlp_vs_bertweet": {
+        "champion_only_correct": 25,
+        "challenger_only_correct": 10,
+        "discordant": 35,
+        "p_value_exact": 0.01667384780012071,
+        "significant_at_0.05": true
+      },
+      "cardiffnlp_vs_cardiffnlp_original": {
+        "champion_only_correct": 21,
+        "challenger_only_correct": 9,
+        "discordant": 30,
+        "p_value_exact": 0.04277394525706768,
+        "significant_at_0.05": true
+      },
+      "cardiffnlp_vs_cardiffnlp_xlm": {
+        "champion_only_correct": 32,
+        "challenger_only_correct": 17,
+        "discordant": 49,
+        "p_value_exact": 0.04438416098714981,
+        "significant_at_0.05": true
+      },
+      "cardiffnlp_vs_distilbert_student": {
+        "champion_only_correct": 101,
+        "challenger_only_correct": 19,
+        "discordant": 120,
+        "p_value_exact": 1.0754075870962743e-14,
+        "significant_at_0.05": true
+      },
+      "cardiffnlp_vs_nlptown": {
+        "champion_only_correct": 90,
+        "challenger_only_correct": 23,
+        "discordant": 113,
+        "p_value_exact": 1.4884906475803414e-10,
+        "significant_at_0.05": true
+      },
+      "cardiffnlp_vs_siebert": {
+        "champion_only_correct": 82,
+        "challenger_only_correct": 35,
+        "discordant": 117,
+        "p_value_exact": 1.6504133479434384e-05,
+        "significant_at_0.05": true
+      }
+    }
+  },
+  "video_level_sample_a": {
+    "human_aggregate_net": 21.333333333333332,
+    "per_model": {
+      "cardiffnlp": {
+        "mae_pts": 13.333333333333334,
+        "sign_flips": 1,
+        "videos": 10,
+        "aggregate_net": 29.333333333333332,
+        "aggregate_error_pts": 8.0
+      },
+      "tabularisai": {
+        "mae_pts": 22.999999999999996,
+        "sign_flips": 3,
+        "videos": 10,
+        "aggregate_net": -1.6666666666666667,
+        "aggregate_error_pts": -23.0
+      },
+      "VADER": {
+        "mae_pts": 29.666666666666668,
+        "sign_flips": 0,
+        "videos": 10,
+        "aggregate_net": 48.333333333333336,
+        "aggregate_error_pts": 27.000000000000004
+      },
+      "j-hartmann": {
+        "mae_pts": 7.333333333333333,
+        "sign_flips": 2,
+        "videos": 10,
+        "aggregate_net": 14.666666666666666,
+        "aggregate_error_pts": -6.666666666666666
+      },
+      "bertweet": {
+        "mae_pts": 9.33333333333333,
+        "sign_flips": 1,
+        "videos": 10,
+        "aggregate_net": 26.0,
+        "aggregate_error_pts": 4.666666666666668
+      },
+      "cardiffnlp_original": {
+        "mae_pts": 11.666666666666668,
+        "sign_flips": 1,
+        "videos": 10,
+        "aggregate_net": 30.333333333333332,
+        "aggregate_error_pts": 9.0
+      },
+      "cardiffnlp_xlm": {
+        "mae_pts": 7.666666666666667,
+        "sign_flips": 3,
+        "videos": 10,
+        "aggregate_net": 16.333333333333332,
+        "aggregate_error_pts": -5.0
+      },
+      "distilbert_student": {
+        "mae_pts": 13.333333333333334,
+        "sign_flips": 1,
+        "videos": 10,
+        "aggregate_net": 25.333333333333332,
+        "aggregate_error_pts": 4.0
+      },
+      "nlptown": {
+        "mae_pts": 10.333333333333332,
+        "sign_flips": 2,
+        "videos": 10,
+        "aggregate_net": 17.0,
+        "aggregate_error_pts": -4.333333333333332
+      },
+      "siebert": {
+        "mae_pts": 14.333333333333334,
+        "sign_flips": 1,
+        "videos": 10,
+        "aggregate_net": 25.666666666666668,
+        "aggregate_error_pts": 4.333333333333336
+      }
+    }
+  }
+}

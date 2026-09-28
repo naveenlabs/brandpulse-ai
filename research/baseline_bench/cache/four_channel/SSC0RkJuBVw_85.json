@@ -1,0 +1,36 @@
+{
+ "uid": "SSC0RkJuBVw_85",
+ "system": "four_channel",
+ "video_id": "SSC0RkJuBVw",
+ "segment_id": 85,
+ "split": "selection",
+ "payload": {
+  "segment_id": 85,
+  "start_s": 346.24,
+  "end_s": 349.34000000000003,
+  "transcript": "in that it's an external battery pack that you keep in your pocket.",
+  "transcript_sentiment": "NEUTRAL (0.82)",
+  "vocal_emotion": "NEUTRAL (arousal 0.56)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.95)"
+ },
+ "seconds": 4.861,
+ "raw": "{\n  \"segment_id\": 85,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"vocal_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and tone suggest neutrality, but their facial expression and vocal tone also suggest neutrality, which is consistent. However, the audience's comments are overwhelmingly positive, creating a conflict between the creator's and audience's sentiments.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 85,
+  "start_s": 346.24,
+  "end_s": 349.34000000000003,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: vocal_emotion"
+  ],
+  "flagged": false
+ }
+}

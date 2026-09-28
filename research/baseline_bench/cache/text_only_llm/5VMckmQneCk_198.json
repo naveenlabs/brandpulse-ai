@@ -1,0 +1,27 @@
+{
+ "uid": "5VMckmQneCk_198",
+ "system": "text_only_llm",
+ "video_id": "5VMckmQneCk",
+ "segment_id": 198,
+ "split": "selection",
+ "payload": {
+  "segment_id": 198,
+  "start_s": 850.3199999999999,
+  "end_s": 855.9799999999999,
+  "transcript": "And are they going to bring these improvements to their previous phones? I mean, I'd say there's at least a 50% chance that they don't."
+ },
+ "seconds": 3.362,
+ "raw": "{\n  \"segment_id\": 198,\n  \"conflict_score\": 0.8,\n  \"channels_in_conflict\": [],\n  \"flags\": [\"SARCASM_DETECTED\"],\n  \"narrative\": \"The creator's tone and language suggest they are being sarcastic, implying a low likelihood of the improvements being applied to previous phones.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 198,
+  "start_s": 850.3199999999999,
+  "end_s": 855.9799999999999,
+  "conflict_score": 0.8,
+  "conflict_reasons": [
+   "SARCASM_DETECTED"
+  ],
+  "flagged": true
+ }
+}

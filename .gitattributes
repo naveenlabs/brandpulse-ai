@@ -1,0 +1,7 @@
+# Check every file out byte for byte as committed, on every platform.
+#
+# Git for Windows converts text files to CRLF line endings on checkout by
+# default. A stored written report records the SHA-256 of the saved report it
+# was written from (outputs/analysis/, outputs/sweeps/*/analysis/), so a
+# converted copy reads as changed and the combined report is marked out of date.
+* -text

@@ -1,0 +1,2995 @@
+{
+  "schema": "brandpulse.analysis/1",
+  "status": "complete",
+  "steps": {
+    "claims": true,
+    "topics": true,
+    "comments": true,
+    "prose": true
+  },
+  "created_at": "2026-09-25T10:36:36+00:00",
+  "model": "llama3.1:8b",
+  "num_ctx": 6144,
+  "prompt_versions": {
+    "claims": "11039eb1443c",
+    "topics": "849d75dbc679",
+    "comments": "dda83531df32",
+    "prose": "633ad9a4e222"
+  },
+  "subject": {
+    "brand": "Apple",
+    "product": "iPhone 18 Pro Max",
+    "title": ""
+  },
+  "facts": {
+    "scores": {
+      "authenticity": 47.3,
+      "brand_health": 76.53
+    },
+    "segments": 148,
+    "flagged": 3,
+    "threshold": 0.75,
+    "duration_s": 737.8,
+    "comments": {
+      "n": 100,
+      "distribution": {
+        "POSITIVE": 54,
+        "NEUTRAL": 32,
+        "NEGATIVE": 14
+      },
+      "label": "POSITIVE"
+    },
+    "reviewer": {
+      "lean": 0.04153607228575476,
+      "se": 0.058673344287718934,
+      "n": 148,
+      "call": "balanced",
+      "counts": {
+        "POSITIVE": 36,
+        "NEUTRAL": 78,
+        "NEGATIVE": 34
+      },
+      "seconds": {
+        "POSITIVE": 184.76,
+        "NEUTRAL": 368.2,
+        "NEGATIVE": 155.34
+      },
+      "unread": 0
+    },
+    "audience": {
+      "lean": 0.4,
+      "se": 0.07247430753394782,
+      "n": 100,
+      "call": "positive",
+      "counts": {
+        "POSITIVE": 54,
+        "NEUTRAL": 32,
+        "NEGATIVE": 14
+      }
+    },
+    "agreement": {
+      "gap": -0.3584639277142453,
+      "se": 0.09324744812824877,
+      "low": -0.5412255676958797,
+      "high": -0.17570228773261082,
+      "call": "audience_warmer"
+    },
+    "confidence": {
+      "level": "well_covered",
+      "checks": [
+        {
+          "id": "comments",
+          "label": "Enough comments to read the audience",
+          "value": 100,
+          "target": 30,
+          "unit": "comments",
+          "passed": true,
+          "core": true
+        },
+        {
+          "id": "transcript",
+          "label": "The reviewer's words were read",
+          "value": 1.0,
+          "target": 0.5,
+          "unit": "share",
+          "core": true,
+          "passed": true
+        },
+        {
+          "id": "weak_conflict",
+          "label": "The conflict rests mostly on the stronger channels",
+          "value": 0.1216,
+          "target": 0.5,
+          "unit": "share",
+          "passed": true,
+          "core": false,
+          "no_conflict": false
+        }
+      ],
+      "coverage": {
+        "transcript": {
+          "read": 148,
+          "total": 148,
+          "share": 1.0
+        },
+        "facial": {
+          "read": 61,
+          "total": 148,
+          "share": 0.41216216216216217
+        },
+        "vocal": {
+          "read": 148,
+          "total": 148,
+          "share": 1.0
+        },
+        "comment": {
+          "read": 148,
+          "total": 148,
+          "share": 1.0
+        }
+      },
+      "weak_conflict": {
+        "weak": 9.3834,
+        "total": 77.1834,
+        "share": 0.1215727734201914
+      },
+      "accuracy": {
+        "comment": 78.7,
+        "transcript": 67.8,
+        "vocal": 48.9,
+        "facial": 34.2
+      },
+      "means_not": "How much evidence this reading rests on. Not whether the verdict is right, and not whether anyone in the video was honest.",
+      "ceiling": {
+        "text": "No score in this system has been shown to track human judgement of authenticity. On 119 hand-rated segments the four-channel design scored rho = +0.0575 (95% CI -0.1282 to +0.2364); people agreed with each other at rho = +0.8038.",
+        "n": 119,
+        "rho": 0.0575,
+        "ci": [
+          -0.1282,
+          0.2364
+        ],
+        "human_rho": 0.8038,
+        "source": "baseline_bench/BASELINE_ANALYSIS.md"
+      }
+    },
+    "tone": {
+      "window_s": 60.0,
+      "points": [
+        {
+          "seg": 0,
+          "start": 0.0,
+          "end": 3.84,
+          "raw": 0.0,
+          "t": 1.92,
+          "smooth": 0.0361
+        },
+        {
+          "seg": 1,
+          "start": 3.84,
+          "end": 7.5,
+          "raw": 0.0,
+          "t": 5.67,
+          "smooth": 0.0318
+        },
+        {
+          "seg": 2,
+          "start": 7.5,
+          "end": 11.74,
+          "raw": -0.5771,
+          "t": 9.62,
+          "smooth": -0.0118
+        },
+        {
+          "seg": 3,
+          "start": 11.74,
+          "end": 16.68,
+          "raw": 0.5607,
+          "t": 14.21,
+          "smooth": -0.0461
+        },
+        {
+          "seg": 4,
+          "start": 16.68,
+          "end": 20.16,
+          "raw": -0.8537,
+          "t": 18.42,
+          "smooth": -0.0461
+        },
+        {
+          "seg": 5,
+          "start": 20.16,
+          "end": 25.48,
+          "raw": 0.6837,
+          "t": 22.82,
+          "smooth": -0.0434
+        },
+        {
+          "seg": 6,
+          "start": 30.0,
+          "end": 37.5,
+          "raw": 0.0,
+          "t": 33.75,
+          "smooth": 0.0674
+        },
+        {
+          "seg": 7,
+          "start": 37.5,
+          "end": 41.58,
+          "raw": -0.6616,
+          "t": 39.54,
+          "smooth": 0.0654
+        },
+        {
+          "seg": 8,
+          "start": 48.82,
+          "end": 51.16,
+          "raw": 0.0,
+          "t": 49.99,
+          "smooth": 0.0323
+        },
+        {
+          "seg": 9,
+          "start": 57.06,
+          "end": 62.4,
+          "raw": 0.8548,
+          "t": 59.73,
+          "smooth": -0.1464
+        },
+        {
+          "seg": 10,
+          "start": 62.4,
+          "end": 67.56,
+          "raw": 0.0,
+          "t": 64.98,
+          "smooth": -0.1456
+        },
+        {
+          "seg": 11,
+          "start": 67.56,
+          "end": 73.82,
+          "raw": -0.6373,
+          "t": 70.69,
+          "smooth": -0.0991
+        },
+        {
+          "seg": 12,
+          "start": 73.82,
+          "end": 77.47999999999999,
+          "raw": 0.0,
+          "t": 75.65,
+          "smooth": -0.079
+        },
+        {
+          "seg": 13,
+          "start": 77.47999999999999,
+          "end": 83.36,
+          "raw": 0.0,
+          "t": 80.42,
+          "smooth": -0.0742
+        },
+        {
+          "seg": 14,
+          "start": 83.36,
+          "end": 88.24,
+          "raw": -0.9176,
+          "t": 85.8,
+          "smooth": -0.1109
+        },
+        {
+          "seg": 15,
+          "start": 89.76,
+          "end": 95.4,
+          "raw": 0.0,
+          "t": 92.58,
+          "smooth": -0.2637
+        },
+        {
+          "seg": 16,
+          "start": 95.4,
+          "end": 98.60000000000001,
+          "raw": 0.0,
+          "t": 97.0,
+          "smooth": -0.2158
+        },
+        {
+          "seg": 17,
+          "start": 98.60000000000001,
+          "end": 102.4,
+          "raw": 0.0,
+          "t": 100.5,
+          "smooth": -0.1838
+        },
+        {
+          "seg": 18,
+          "start": 102.4,
+          "end": 106.04,
+          "raw": 0.0,
+          "t": 104.22,
+          "smooth": -0.1476
+        },
+        {
+          "seg": 19,
+          "start": 106.04,
+          "end": 109.04,
+          "raw": 0.0,
+          "t": 107.54,
+          "smooth": -0.1476
+        },
+        {
+          "seg": 20,
+          "start": 109.04,
+          "end": 112.04,
+          "raw": 0.0,
+          "t": 110.54,
+          "smooth": -0.1476
+        },
+        {
+          "seg": 21,
+          "start": 112.04,
+          "end": 115.04,
+          "raw": -0.5965,
+          "t": 113.54,
+          "smooth": -0.1448
+        },
+        {
+          "seg": 22,
+          "start": 115.04,
+          "end": 119.04,
+          "raw": -0.8585,
+          "t": 117.04,
+          "smooth": -0.0497
+        },
+        {
+          "seg": 23,
+          "start": 119.04,
+          "end": 122.68,
+          "raw": -0.4883,
+          "t": 120.86,
+          "smooth": -0.0197
+        },
+        {
+          "seg": 24,
+          "start": 122.68,
+          "end": 126.68,
+          "raw": 0.712,
+          "t": 124.68,
+          "smooth": -0.0521
+        },
+        {
+          "seg": 25,
+          "start": 126.68,
+          "end": 129.68,
+          "raw": 0.0,
+          "t": 128.18,
+          "smooth": -0.0521
+        },
+        {
+          "seg": 26,
+          "start": 129.68,
+          "end": 134.68,
+          "raw": 0.0,
+          "t": 132.18,
+          "smooth": -0.0764
+        },
+        {
+          "seg": 27,
+          "start": 134.68,
+          "end": 139.68,
+          "raw": 0.0,
+          "t": 137.18,
+          "smooth": -0.0697
+        },
+        {
+          "seg": 28,
+          "start": 139.68,
+          "end": 144.4,
+          "raw": 0.0,
+          "t": 142.04,
+          "smooth": -0.0014
+        },
+        {
+          "seg": 29,
+          "start": 144.4,
+          "end": 149.32,
+          "raw": 0.8883,
+          "t": 146.86,
+          "smooth": 0.0963
+        },
+        {
+          "seg": 30,
+          "start": 149.32,
+          "end": 153.0,
+          "raw": -0.9092,
+          "t": 151.16,
+          "smooth": 0.1447
+        },
+        {
+          "seg": 31,
+          "start": 153.0,
+          "end": 156.6,
+          "raw": 0.0,
+          "t": 154.8,
+          "smooth": 0.132
+        },
+        {
+          "seg": 32,
+          "start": 156.6,
+          "end": 159.68,
+          "raw": 0.0,
+          "t": 158.14,
+          "smooth": 0.0952
+        },
+        {
+          "seg": 33,
+          "start": 159.68,
+          "end": 164.92000000000002,
+          "raw": -0.5831,
+          "t": 162.3,
+          "smooth": 0.0775
+        },
+        {
+          "seg": 34,
+          "start": 164.92000000000002,
+          "end": 170.48000000000002,
+          "raw": 0.885,
+          "t": 167.7,
+          "smooth": 0.0982
+        },
+        {
+          "seg": 35,
+          "start": 170.48,
+          "end": 175.35999999999999,
+          "raw": 0.756,
+          "t": 172.92,
+          "smooth": 0.0717
+        },
+        {
+          "seg": 36,
+          "start": 175.35999999999999,
+          "end": 179.95999999999998,
+          "raw": 0.0,
+          "t": 177.66,
+          "smooth": 0.0234
+        },
+        {
+          "seg": 37,
+          "start": 179.95999999999998,
+          "end": 186.44,
+          "raw": 0.0,
+          "t": 183.2,
+          "smooth": 0.0546
+        },
+        {
+          "seg": 38,
+          "start": 186.44,
+          "end": 191.35999999999999,
+          "raw": -0.5109,
+          "t": 188.9,
+          "smooth": 0.0546
+        },
+        {
+          "seg": 39,
+          "start": 191.35999999999999,
+          "end": 195.76,
+          "raw": 0.6225,
+          "t": 193.56,
+          "smooth": 0.0923
+        },
+        {
+          "seg": 40,
+          "start": 195.76,
+          "end": 201.07999999999998,
+          "raw": -0.4703,
+          "t": 198.42,
+          "smooth": 0.0647
+        },
+        {
+          "seg": 41,
+          "start": 201.07999999999998,
+          "end": 204.23999999999998,
+          "raw": 0.0,
+          "t": 202.66,
+          "smooth": 0.0485
+        },
+        {
+          "seg": 42,
+          "start": 204.23999999999998,
+          "end": 207.84,
+          "raw": 0.0,
+          "t": 206.04,
+          "smooth": 0.0214
+        },
+        {
+          "seg": 43,
+          "start": 207.84,
+          "end": 213.56,
+          "raw": 0.0,
+          "t": 210.7,
+          "smooth": 0.0214
+        },
+        {
+          "seg": 44,
+          "start": 213.56,
+          "end": 217.88,
+          "raw": 0.0,
+          "t": 215.72,
+          "smooth": 0.0244
+        },
+        {
+          "seg": 45,
+          "start": 217.88,
+          "end": 221.24,
+          "raw": 0.0,
+          "t": 219.56,
+          "smooth": 0.0837
+        },
+        {
+          "seg": 46,
+          "start": 221.24,
+          "end": 227.32,
+          "raw": 0.0,
+          "t": 224.28,
+          "smooth": 0.0526
+        },
+        {
+          "seg": 47,
+          "start": 227.32,
+          "end": 233.35999999999999,
+          "raw": 0.5892,
+          "t": 230.34,
+          "smooth": 0.0327
+        },
+        {
+          "seg": 48,
+          "start": 233.35999999999999,
+          "end": 239.68,
+          "raw": 0.0,
+          "t": 236.52,
+          "smooth": 0.0142
+        },
+        {
+          "seg": 49,
+          "start": 239.68,
+          "end": 245.36,
+          "raw": 0.0,
+          "t": 242.52,
+          "smooth": 0.0463
+        },
+        {
+          "seg": 50,
+          "start": 245.36,
+          "end": 251.72,
+          "raw": 0.5105,
+          "t": 248.54,
+          "smooth": 0.0463
+        },
+        {
+          "seg": 51,
+          "start": 251.72,
+          "end": 257.28000000000003,
+          "raw": -0.809,
+          "t": 254.5,
+          "smooth": 0.0317
+        },
+        {
+          "seg": 52,
+          "start": 257.28000000000003,
+          "end": 261.24,
+          "raw": 0.0,
+          "t": 259.26,
+          "smooth": -0.0474
+        },
+        {
+          "seg": 53,
+          "start": 261.24,
+          "end": 264.88,
+          "raw": -0.664,
+          "t": 263.06,
+          "smooth": -0.1281
+        },
+        {
+          "seg": 54,
+          "start": 264.88,
+          "end": 269.8,
+          "raw": 0.5864,
+          "t": 267.34,
+          "smooth": -0.1464
+        },
+        {
+          "seg": 55,
+          "start": 269.8,
+          "end": 273.56,
+          "raw": 0.0,
+          "t": 271.68,
+          "smooth": -0.1464
+        },
+        {
+          "seg": 56,
+          "start": 273.56,
+          "end": 279.36,
+          "raw": 0.0,
+          "t": 276.46,
+          "smooth": -0.1498
+        },
+        {
+          "seg": 57,
+          "start": 279.36,
+          "end": 283.36,
+          "raw": 0.0,
+          "t": 281.36,
+          "smooth": -0.1529
+        },
+        {
+          "seg": 58,
+          "start": 283.36,
+          "end": 288.72,
+          "raw": -0.7664,
+          "t": 286.04,
+          "smooth": -0.1102
+        },
+        {
+          "seg": 59,
+          "start": 288.72,
+          "end": 294.40000000000003,
+          "raw": -0.6852,
+          "t": 291.56,
+          "smooth": -0.0892
+        },
+        {
+          "seg": 60,
+          "start": 294.40000000000003,
+          "end": 300.84000000000003,
+          "raw": 0.0,
+          "t": 297.62,
+          "smooth": -0.0254
+        },
+        {
+          "seg": 61,
+          "start": 300.84,
+          "end": 306.03999999999996,
+          "raw": 0.0,
+          "t": 303.44,
+          "smooth": -0.0865
+        },
+        {
+          "seg": 62,
+          "start": 306.03999999999996,
+          "end": 309.2,
+          "raw": 0.8457,
+          "t": 307.62,
+          "smooth": -0.0865
+        },
+        {
+          "seg": 63,
+          "start": 309.2,
+          "end": 314.0,
+          "raw": 0.0,
+          "t": 311.6,
+          "smooth": -0.108
+        },
+        {
+          "seg": 64,
+          "start": 314.0,
+          "end": 317.47999999999996,
+          "raw": -0.3672,
+          "t": 315.74,
+          "smooth": -0.0776
+        },
+        {
+          "seg": 65,
+          "start": 317.47999999999996,
+          "end": 320.88,
+          "raw": 0.0,
+          "t": 319.18,
+          "smooth": -0.0007
+        },
+        {
+          "seg": 66,
+          "start": 320.88,
+          "end": 325.4,
+          "raw": 0.8411,
+          "t": 323.14,
+          "smooth": 0.0445
+        },
+        {
+          "seg": 67,
+          "start": 325.4,
+          "end": 329.71999999999997,
+          "raw": 0.0,
+          "t": 327.56,
+          "smooth": 0.0152
+        },
+        {
+          "seg": 68,
+          "start": 329.71999999999997,
+          "end": 333.08,
+          "raw": -0.7111,
+          "t": 331.4,
+          "smooth": -0.0227
+        },
+        {
+          "seg": 69,
+          "start": 333.08,
+          "end": 336.44,
+          "raw": 0.0,
+          "t": 334.76,
+          "smooth": 0.0045
+        },
+        {
+          "seg": 70,
+          "start": 336.44,
+          "end": 339.47999999999996,
+          "raw": 0.0,
+          "t": 337.96,
+          "smooth": -0.0163
+        },
+        {
+          "seg": 71,
+          "start": 339.47999999999996,
+          "end": 343.71999999999997,
+          "raw": -0.6063,
+          "t": 341.6,
+          "smooth": -0.0376
+        },
+        {
+          "seg": 72,
+          "start": 343.71999999999997,
+          "end": 348.91999999999996,
+          "raw": 0.6341,
+          "t": 346.32,
+          "smooth": -0.0591
+        },
+        {
+          "seg": 73,
+          "start": 348.91999999999996,
+          "end": 354.44,
+          "raw": 0.0,
+          "t": 351.68,
+          "smooth": -0.0407
+        },
+        {
+          "seg": 74,
+          "start": 354.44,
+          "end": 360.68,
+          "raw": -0.8405,
+          "t": 357.56,
+          "smooth": -0.1416
+        },
+        {
+          "seg": 75,
+          "start": 360.68,
+          "end": 365.56,
+          "raw": 0.4856,
+          "t": 363.12,
+          "smooth": -0.1043
+        },
+        {
+          "seg": 76,
+          "start": 366.44,
+          "end": 371.32,
+          "raw": 0.0,
+          "t": 368.88,
+          "smooth": -0.0763
+        },
+        {
+          "seg": 77,
+          "start": 371.32,
+          "end": 375.24,
+          "raw": -0.7555,
+          "t": 373.28,
+          "smooth": -0.0497
+        },
+        {
+          "seg": 78,
+          "start": 375.24,
+          "end": 378.6,
+          "raw": 0.5841,
+          "t": 376.92,
+          "smooth": -0.1159
+        },
+        {
+          "seg": 79,
+          "start": 378.6,
+          "end": 383.88,
+          "raw": 0.0,
+          "t": 381.24,
+          "smooth": -0.1423
+        },
+        {
+          "seg": 80,
+          "start": 383.88,
+          "end": 389.71999999999997,
+          "raw": -0.7705,
+          "t": 386.8,
+          "smooth": -0.1467
+        },
+        {
+          "seg": 81,
+          "start": 389.71999999999997,
+          "end": 396.92,
+          "raw": 0.4353,
+          "t": 393.32,
+          "smooth": -0.176
+        },
+        {
+          "seg": 82,
+          "start": 396.92,
+          "end": 399.24,
+          "raw": 0.0,
+          "t": 398.08,
+          "smooth": -0.1947
+        },
+        {
+          "seg": 83,
+          "start": 402.2,
+          "end": 407.32,
+          "raw": -0.5373,
+          "t": 404.76,
+          "smooth": -0.1457
+        },
+        {
+          "seg": 84,
+          "start": 407.32,
+          "end": 412.36,
+          "raw": 0.0,
+          "t": 409.84,
+          "smooth": -0.1759
+        },
+        {
+          "seg": 85,
+          "start": 412.36,
+          "end": 414.84000000000003,
+          "raw": -0.7839,
+          "t": 413.6,
+          "smooth": -0.1662
+        },
+        {
+          "seg": 86,
+          "start": 418.76,
+          "end": 423.40000000000003,
+          "raw": -0.7072,
+          "t": 421.08,
+          "smooth": -0.0491
+        },
+        {
+          "seg": 87,
+          "start": 423.40000000000003,
+          "end": 427.96000000000004,
+          "raw": 0.0,
+          "t": 425.68,
+          "smooth": -0.1167
+        },
+        {
+          "seg": 88,
+          "start": 427.96000000000004,
+          "end": 436.04,
+          "raw": 0.0,
+          "t": 432.0,
+          "smooth": -0.2084
+        },
+        {
+          "seg": 89,
+          "start": 436.04,
+          "end": 442.68,
+          "raw": 0.0,
+          "t": 439.36,
+          "smooth": -0.1799
+        },
+        {
+          "seg": 90,
+          "start": 442.68,
+          "end": 447.72,
+          "raw": 0.5605,
+          "t": 445.2,
+          "smooth": -0.1443
+        },
+        {
+          "seg": 91,
+          "start": 447.72,
+          "end": 453.96000000000004,
+          "raw": 0.0,
+          "t": 450.84,
+          "smooth": -0.1112
+        },
+        {
+          "seg": 92,
+          "start": 453.96000000000004,
+          "end": 458.76,
+          "raw": -0.9231,
+          "t": 456.36,
+          "smooth": -0.0811
+        },
+        {
+          "seg": 93,
+          "start": 458.76,
+          "end": 463.88,
+          "raw": -0.6364,
+          "t": 461.32,
+          "smooth": -0.1247
+        },
+        {
+          "seg": 94,
+          "start": 463.88,
+          "end": 468.28,
+          "raw": 0.0,
+          "t": 466.08,
+          "smooth": -0.1315
+        },
+        {
+          "seg": 95,
+          "start": 468.28,
+          "end": 473.24,
+          "raw": 0.0,
+          "t": 470.76,
+          "smooth": -0.098
+        },
+        {
+          "seg": 96,
+          "start": 473.24,
+          "end": 478.04,
+          "raw": 0.0,
+          "t": 475.64,
+          "smooth": -0.1225
+        },
+        {
+          "seg": 97,
+          "start": 478.04,
+          "end": 482.52,
+          "raw": 0.0,
+          "t": 480.28,
+          "smooth": -0.1
+        },
+        {
+          "seg": 98,
+          "start": 482.52,
+          "end": 487.71999999999997,
+          "raw": 0.0,
+          "t": 485.12,
+          "smooth": -0.1344
+        },
+        {
+          "seg": 99,
+          "start": 487.71999999999997,
+          "end": 491.88,
+          "raw": -0.7269,
+          "t": 489.8,
+          "smooth": -0.139
+        },
+        {
+          "seg": 100,
+          "start": 491.88,
+          "end": 496.52,
+          "raw": 0.0,
+          "t": 494.2,
+          "smooth": -0.1178
+        },
+        {
+          "seg": 101,
+          "start": 496.52,
+          "end": 501.15999999999997,
+          "raw": 0.474,
+          "t": 498.84,
+          "smooth": -0.096
+        },
+        {
+          "seg": 102,
+          "start": 501.15999999999997,
+          "end": 505.64,
+          "raw": 0.0,
+          "t": 503.4,
+          "smooth": -0.0596
+        },
+        {
+          "seg": 103,
+          "start": 505.64,
+          "end": 511.0,
+          "raw": 0.542,
+          "t": 508.32,
+          "smooth": -0.0382
+        },
+        {
+          "seg": 104,
+          "start": 511.0,
+          "end": 515.88,
+          "raw": -0.8561,
+          "t": 513.44,
+          "smooth": -0.0245
+        },
+        {
+          "seg": 105,
+          "start": 515.88,
+          "end": 521.08,
+          "raw": -0.9304,
+          "t": 518.48,
+          "smooth": -0.0152
+        },
+        {
+          "seg": 106,
+          "start": 522.2,
+          "end": 526.92,
+          "raw": 0.0,
+          "t": 524.56,
+          "smooth": 0.0768
+        },
+        {
+          "seg": 107,
+          "start": 526.92,
+          "end": 532.04,
+          "raw": 0.6695,
+          "t": 529.48,
+          "smooth": 0.053
+        },
+        {
+          "seg": 108,
+          "start": 532.04,
+          "end": 535.64,
+          "raw": 0.0,
+          "t": 533.84,
+          "smooth": 0.0322
+        },
+        {
+          "seg": 109,
+          "start": 535.64,
+          "end": 540.04,
+          "raw": 0.4688,
+          "t": 537.84,
+          "smooth": -0.0115
+        },
+        {
+          "seg": 110,
+          "start": 540.04,
+          "end": 544.36,
+          "raw": 0.0,
+          "t": 542.2,
+          "smooth": 0.033
+        },
+        {
+          "seg": 111,
+          "start": 544.36,
+          "end": 549.8,
+          "raw": 0.0,
+          "t": 547.08,
+          "smooth": 0.1116
+        },
+        {
+          "seg": 112,
+          "start": 549.8,
+          "end": 554.36,
+          "raw": 0.6451,
+          "t": 552.08,
+          "smooth": 0.1719
+        },
+        {
+          "seg": 113,
+          "start": 554.36,
+          "end": 559.0,
+          "raw": 0.0,
+          "t": 556.68,
+          "smooth": 0.1716
+        },
+        {
+          "seg": 114,
+          "start": 559.0,
+          "end": 563.0,
+          "raw": 0.0,
+          "t": 561.0,
+          "smooth": 0.126
+        },
+        {
+          "seg": 115,
+          "start": 563.0,
+          "end": 567.3199999999999,
+          "raw": -0.5099,
+          "t": 565.16,
+          "smooth": 0.1367
+        },
+        {
+          "seg": 116,
+          "start": 567.32,
+          "end": 572.6800000000001,
+          "raw": 0.7584,
+          "t": 570.0,
+          "smooth": 0.1614
+        },
+        {
+          "seg": 117,
+          "start": 572.6800000000001,
+          "end": 578.2800000000001,
+          "raw": 0.0,
+          "t": 575.48,
+          "smooth": 0.1972
+        },
+        {
+          "seg": 118,
+          "start": 578.2800000000001,
+          "end": 582.6800000000001,
+          "raw": 0.0,
+          "t": 580.48,
+          "smooth": 0.1899
+        },
+        {
+          "seg": 119,
+          "start": 582.6800000000001,
+          "end": 588.5200000000001,
+          "raw": 0.0,
+          "t": 585.6,
+          "smooth": 0.1481
+        },
+        {
+          "seg": 120,
+          "start": 588.5200000000001,
+          "end": 593.48,
+          "raw": 0.0,
+          "t": 591.0,
+          "smooth": 0.1481
+        },
+        {
+          "seg": 121,
+          "start": 593.48,
+          "end": 598.84,
+          "raw": 0.7934,
+          "t": 596.16,
+          "smooth": 0.175
+        },
+        {
+          "seg": 122,
+          "start": 598.84,
+          "end": 604.12,
+          "raw": 0.5254,
+          "t": 601.48,
+          "smooth": 0.1531
+        },
+        {
+          "seg": 123,
+          "start": 604.12,
+          "end": 608.36,
+          "raw": 0.0,
+          "t": 606.24,
+          "smooth": 0.173
+        },
+        {
+          "seg": 124,
+          "start": 608.36,
+          "end": 614.04,
+          "raw": 0.0,
+          "t": 611.2,
+          "smooth": 0.176
+        },
+        {
+          "seg": 125,
+          "start": 614.04,
+          "end": 620.2,
+          "raw": 0.0,
+          "t": 617.12,
+          "smooth": 0.2539
+        },
+        {
+          "seg": 126,
+          "start": 620.2,
+          "end": 624.76,
+          "raw": 0.0,
+          "t": 622.48,
+          "smooth": 0.2634
+        },
+        {
+          "seg": 127,
+          "start": 624.76,
+          "end": 629.48,
+          "raw": 0.0,
+          "t": 627.12,
+          "smooth": 0.2141
+        },
+        {
+          "seg": 128,
+          "start": 629.48,
+          "end": 634.84,
+          "raw": 0.626,
+          "t": 632.16,
+          "smooth": 0.2099
+        },
+        {
+          "seg": 129,
+          "start": 634.84,
+          "end": 640.2,
+          "raw": 0.0,
+          "t": 637.52,
+          "smooth": 0.1961
+        },
+        {
+          "seg": 130,
+          "start": 641.6400000000001,
+          "end": 647.8000000000001,
+          "raw": 0.819,
+          "t": 644.72,
+          "smooth": 0.1838
+        },
+        {
+          "seg": 131,
+          "start": 647.8,
+          "end": 652.52,
+          "raw": 0.0,
+          "t": 650.16,
+          "smooth": 0.137
+        },
+        {
+          "seg": 132,
+          "start": 652.52,
+          "end": 657.56,
+          "raw": 0.0,
+          "t": 655.04,
+          "smooth": 0.1106
+        },
+        {
+          "seg": 133,
+          "start": 657.56,
+          "end": 662.52,
+          "raw": 0.6221,
+          "t": 660.04,
+          "smooth": 0.1159
+        },
+        {
+          "seg": 134,
+          "start": 662.52,
+          "end": 668.28,
+          "raw": 0.0,
+          "t": 665.4,
+          "smooth": 0.1185
+        },
+        {
+          "seg": 135,
+          "start": 668.28,
+          "end": 673.24,
+          "raw": 0.0,
+          "t": 670.76,
+          "smooth": 0.183
+        },
+        {
+          "seg": 136,
+          "start": 673.24,
+          "end": 677.48,
+          "raw": -0.4901,
+          "t": 675.36,
+          "smooth": 0.1847
+        },
+        {
+          "seg": 137,
+          "start": 677.48,
+          "end": 683.16,
+          "raw": -0.5162,
+          "t": 680.32,
+          "smooth": 0.2092
+        },
+        {
+          "seg": 138,
+          "start": 683.16,
+          "end": 688.84,
+          "raw": 0.0,
+          "t": 686.0,
+          "smooth": 0.2818
+        },
+        {
+          "seg": 139,
+          "start": 688.84,
+          "end": 693.0,
+          "raw": 0.5535,
+          "t": 690.92,
+          "smooth": 0.208
+        },
+        {
+          "seg": 140,
+          "start": 693.0,
+          "end": 697.16,
+          "raw": 0.6315,
+          "t": 695.08,
+          "smooth": 0.1803
+        },
+        {
+          "seg": 141,
+          "start": 697.16,
+          "end": 701.88,
+          "raw": 0.7686,
+          "t": 699.52,
+          "smooth": 0.1996
+        },
+        {
+          "seg": 142,
+          "start": 701.88,
+          "end": 706.6,
+          "raw": 0.7041,
+          "t": 704.24,
+          "smooth": 0.2633
+        },
+        {
+          "seg": 143,
+          "start": 706.6,
+          "end": 711.8,
+          "raw": 0.6984,
+          "t": 709.2,
+          "smooth": 0.3548
+        },
+        {
+          "seg": 144,
+          "start": 711.8,
+          "end": 717.08,
+          "raw": 0.7911,
+          "t": 714.44,
+          "smooth": 0.4279
+        },
+        {
+          "seg": 145,
+          "start": 717.08,
+          "end": 721.72,
+          "raw": -0.8327,
+          "t": 719.4,
+          "smooth": 0.4654
+        },
+        {
+          "seg": 146,
+          "start": 721.72,
+          "end": 727.88,
+          "raw": 0.0,
+          "t": 724.8,
+          "smooth": 0.4511
+        },
+        {
+          "seg": 147,
+          "start": 727.88,
+          "end": 737.8,
+          "raw": 0.7066,
+          "t": 732.84,
+          "smooth": 0.3891
+        }
+      ],
+      "turns": [
+        {
+          "seg": 30,
+          "t": 151.16,
+          "kind": "peak",
+          "smooth": 0.1447,
+          "prominence": 0.3531
+        },
+        {
+          "seg": 88,
+          "t": 432.0,
+          "kind": "dip",
+          "smooth": -0.2084,
+          "prominence": 0.3531
+        }
+      ]
+    },
+    "moments": [
+      {
+        "seg": 11,
+        "start": 67.56,
+        "end": 73.82,
+        "time": "1:07",
+        "conflict": 0.8,
+        "flagged": true,
+        "damped": false,
+        "valences": {
+          "transcript": "NEGATIVE",
+          "vocal": "NEUTRAL",
+          "comment": "POSITIVE"
+        },
+        "text": "the most expensive iPhone ever, until the Duo comes out at a staggering $2,500."
+      },
+      {
+        "seg": 40,
+        "start": 195.76,
+        "end": 201.07999999999998,
+        "time": "3:15",
+        "conflict": 0.8,
+        "flagged": true,
+        "damped": false,
+        "valences": {
+          "transcript": "NEGATIVE",
+          "facial": "NEGATIVE",
+          "vocal": "NEUTRAL",
+          "comment": "POSITIVE"
+        },
+        "text": "Thermals. This is where things start to get a little bit odd, because this is an iPhone 16 Pro Max."
+      },
+      {
+        "seg": 105,
+        "start": 515.88,
+        "end": 521.08,
+        "time": "8:35",
+        "conflict": 0.8,
+        "flagged": true,
+        "damped": false,
+        "valences": {
+          "transcript": "NEGATIVE",
+          "vocal": "NEGATIVE",
+          "comment": "POSITIVE"
+        },
+        "text": "when the screen is off and you're looking from a certain angle, you can see it, and it annoys me."
+      }
+    ],
+    "signs": {
+      "title": "Signs of a commercial interest or a mismatch",
+      "disclaimer": "These are signs, not proof. A creator can disclose a sponsor and still review honestly, and an undisclosed deal would leave none of these marks.",
+      "signs": [
+        {
+          "id": "S1",
+          "kind": "fact",
+          "state": "absent",
+          "name": "The creator declared a paid promotion",
+          "evidence": {
+            "label": false,
+            "description": []
+          }
+        },
+        {
+          "id": "S2",
+          "kind": "fact",
+          "state": "present",
+          "name": "Sponsor, code, affiliate or gift wording in what was said",
+          "evidence": {
+            "speech": [
+              {
+                "seg": 140,
+                "time": "11:33",
+                "category": "sponsorship",
+                "pattern": "todays_sponsor",
+                "match": "our sponsor"
+              }
+            ]
+          }
+        },
+        {
+          "id": "S3",
+          "kind": "fact",
+          "state": "present",
+          "name": "Affiliate links, discount codes or a gifted unit in the description",
+          "evidence": {
+            "description": [
+              {
+                "category": "affiliate",
+                "pattern": "affiliate",
+                "match": "affiliate",
+                "context": "es of Tech right now (Not sponsored but these are affiliate links which help out the channel!): 1. Balmuda To"
+              },
+              {
+                "category": "affiliate",
+                "pattern": "affiliate_network",
+                "match": "geni.us",
+                "context": "lp out the channel!): 1. Balmuda Toaster: geni.us/… 2. Ember Mug 2: geni.us/… 3."
+              },
+              {
+                "category": "affiliate",
+                "pattern": "affiliate_network",
+                "match": "geni.us",
+                "context": ": geni.us/… 2. Ember Mug 2: geni.us/… 3. Ninja Creami Deluxe: geni.us/…"
+              },
+              {
+                "category": "affiliate",
+                "pattern": "affiliate_network",
+                "match": "geni.us",
+                "context": "s://geni.us/zb4Ix 3. Ninja Creami Deluxe: geni.us/… 4. Anker PowerBank: geni.us/… 5."
+              },
+              {
+                "category": "affiliate",
+                "pattern": "affiliate_network",
+                "match": "geni.us",
+                "context": "geni.us/… 4. Anker PowerBank: geni.us/… 5. Momax Travel Adaptor: geni.us/…"
+              },
+              {
+                "category": "affiliate",
+                "pattern": "affiliate_network",
+                "match": "geni.us",
+                "context": "://geni.us/p3PVF 5. Momax Travel Adaptor: geni.us/… Music is from Epidemic sound: sha/…"
+              }
+            ]
+          }
+        },
+        {
+          "id": "S4",
+          "kind": "inference",
+          "state": "absent",
+          "name": "The reviewer was measurably warmer than the audience",
+          "evidence": {
+            "agreement": {
+              "gap": -0.3584639277142453,
+              "se": 0.09324744812824877,
+              "low": -0.5412255676958797,
+              "high": -0.17570228773261082,
+              "call": "audience_warmer"
+            }
+          }
+        },
+        {
+          "id": "S5",
+          "kind": "inference",
+          "state": "absent",
+          "name": "Positive words at moments the controller flagged",
+          "evidence": {
+            "positive_flagged": [],
+            "controller_flag": []
+          }
+        }
+      ],
+      "present": 2,
+      "checked": 5
+    }
+  },
+  "reading": {
+    "claims": [
+      {
+        "seg": 9,
+        "time": "0:57",
+        "start": 57.06,
+        "aspect": "design",
+        "stance": "praise",
+        "claim": "The iPhone 18 Pro Max has the blackest design ever.",
+        "quote": "This is the blackest that a Pro has ever been.",
+        "topic": "T1"
+      },
+      {
+        "seg": 11,
+        "time": "1:07",
+        "start": 67.56,
+        "aspect": "price",
+        "stance": "criticism",
+        "claim": "The iPhone 18 Pro Max is the most expensive iPhone ever.",
+        "quote": "the most expensive iPhone ever, until the Duo comes out at a staggering $2,500.",
+        "topic": "T3"
+      },
+      {
+        "seg": 16,
+        "time": "1:35",
+        "start": 95.4,
+        "aspect": "battery",
+        "stance": "neutral",
+        "claim": "The iPhone 18 Pro Max has the largest battery ever on an iPhone.",
+        "quote": "has not just the largest battery ever on an iPhone,",
+        "topic": "T0"
+      },
+      {
+        "seg": 17,
+        "time": "1:38",
+        "start": 98.60000000000001,
+        "aspect": "battery",
+        "stance": "neutral",
+        "claim": "The iPhone 18 Pro Max has the largest increase in battery ever on an iPhone.",
+        "quote": "but also the largest increase in battery ever on an iPhone.",
+        "topic": "T0"
+      },
+      {
+        "seg": 29,
+        "time": "2:24",
+        "start": 144.4,
+        "aspect": "battery",
+        "stance": "praise",
+        "claim": "The iPhone 18 Pro Max lasts 12 hours and 32 minutes.",
+        "quote": "with 12 hours and 32. So we're off to a very good start here.",
+        "topic": "T0"
+      },
+      {
+        "seg": 34,
+        "time": "2:44",
+        "start": 164.92000000000002,
+        "aspect": "charging",
+        "stance": "praise",
+        "claim": "The iPhone 18 Pro Max charges 58% in 20 minutes.",
+        "quote": "20 minutes later, that was pretty good. We've got 58% and 63% for the latest iPhones.",
+        "topic": "T0"
+      },
+      {
+        "seg": 36,
+        "time": "2:55",
+        "start": 175.35999999999999,
+        "aspect": "charging",
+        "stance": "neutral",
+        "claim": "The smaller iPhone 18 Pro charges faster than the bigger ones.",
+        "quote": "Notice also how the smaller Pros charge faster than the bigger ones, because of their not as large batteries.",
+        "topic": "T0"
+      },
+      {
+        "seg": 38,
+        "time": "3:06",
+        "start": 186.44,
+        "aspect": "charging",
+        "stance": "criticism",
+        "claim": "Apple's iPhones do not lead the charge in charging speed.",
+        "quote": "Apple's kind of caught up, but they're not exactly leading the charge, as it were.",
+        "topic": "T0"
+      },
+      {
+        "seg": 48,
+        "time": "3:53",
+        "start": 233.35999999999999,
+        "aspect": "performance",
+        "stance": "neutral",
+        "claim": "The iPhone 18 Pro Max performed almost identically to the 17 Pro Max.",
+        "quote": "But what I didn't expect to see is that the iPhone 18 Pro Max performed almost identically to the 17 Pro Max.",
+        "topic": "T2"
+      },
+      {
+        "seg": 49,
+        "time": "3:59",
+        "start": 239.68,
+        "aspect": "performance",
+        "stance": "criticism",
+        "claim": "The iPhone 18 Pro Max got hotter than the others.",
+        "quote": "And that the further the tests went on, if anything, the hotter the body of the 18 Pro Max got.",
+        "topic": "T2"
+      },
+      {
+        "seg": 50,
+        "time": "4:05",
+        "start": 245.36,
+        "aspect": "performance",
+        "stance": "criticism",
+        "claim": "The iPhone 18 Pro Max got hotter than the others.",
+        "quote": "To the point where, by the end, it was the hottest.",
+        "topic": "T2"
+      },
+      {
+        "seg": 93,
+        "time": "7:38",
+        "start": 458.76,
+        "aspect": "performance",
+        "stance": "criticism",
+        "claim": "The reviewer finds the new chip's performance is not translating to real-life experience.",
+        "quote": "this theoretical performance is not translating to the real-life experience that most people are going to care about on their phones.",
+        "seg_end": 94,
+        "topic": "T2"
+      },
+      {
+        "seg": 96,
+        "time": "7:53",
+        "start": 473.24,
+        "aspect": "design",
+        "stance": "praise",
+        "claim": "The reviewer finds the dynamic island's reduction is interesting.",
+        "quote": "it's pretty interesting how.",
+        "topic": "T1"
+      },
+      {
+        "seg": 105,
+        "time": "8:35",
+        "start": 515.88,
+        "aspect": "design",
+        "stance": "criticism",
+        "claim": "The reviewer finds the gaps in the screen are annoying.",
+        "quote": "when the screen is off and you're looking from a certain angle, you can see it, and it annoys me.",
+        "topic": "T1"
+      },
+      {
+        "seg": 108,
+        "time": "8:52",
+        "start": 532.04,
+        "aspect": "performance",
+        "stance": "criticism",
+        "claim": "The reviewer finds the variable aperture is not impressive.",
+        "quote": "what you're generally getting? Not so much.",
+        "topic": "T2"
+      },
+      {
+        "seg": 109,
+        "time": "8:55",
+        "start": 535.64,
+        "aspect": "performance",
+        "stance": "neutral",
+        "claim": "The reviewer explains the general rule of aperture in photography.",
+        "quote": "So as a general rule, when you're taking photos on a smartphone, the wider your aperture, the better.",
+        "topic": "T2"
+      },
+      {
+        "seg": 112,
+        "time": "9:09",
+        "start": 549.8,
+        "aspect": "performance",
+        "stance": "praise",
+        "claim": "The reviewer finds the wide aperture creates more depth and character.",
+        "quote": "It's the wide, right? Because a wide aperture creates so much more depth and character.",
+        "topic": "T2"
+      },
+      {
+        "seg": 115,
+        "time": "9:23",
+        "start": 563.0,
+        "aspect": "performance",
+        "stance": "praise",
+        "claim": "The reviewer praises the iPhone 18 Pro's ability to adapt aperture.",
+        "quote": "one thing that I gotta say the iPhone 18 Pro does do rather intelligently is adapt this aperture to your situation.",
+        "seg_end": 116,
+        "topic": "T2"
+      },
+      {
+        "seg": 122,
+        "time": "9:58",
+        "start": 598.84,
+        "aspect": "performance",
+        "stance": "praise",
+        "claim": "The reviewer finds the phone's group shot feature impressive.",
+        "quote": "I can genuinely say that never in my life have I taken a staggered group shot like this,",
+        "topic": "T2"
+      },
+      {
+        "seg": 130,
+        "time": "10:41",
+        "start": 641.6400000000001,
+        "aspect": "performance",
+        "stance": "praise",
+        "claim": "The reviewer finds the phone's low-light performance cool.",
+        "quote": "That said, in the dark, this is cool.",
+        "topic": "T2"
+      },
+      {
+        "seg": 134,
+        "time": "11:02",
+        "start": 662.52,
+        "aspect": "performance",
+        "stance": "praise",
+        "claim": "The reviewer finds the phone's low-light performance transformative.",
+        "quote": "pretty transformational, entirely new layer of detail,",
+        "seg_end": 135,
+        "topic": "T2"
+      },
+      {
+        "seg": 136,
+        "time": "11:13",
+        "start": 673.24,
+        "aspect": "performance",
+        "stance": "criticism",
+        "claim": "The reviewer finds Samsung's low-light performance to be consistently poor.",
+        "quote": "Whether it's the softness or just the skin tones, it's falling behind.",
+        "seg_end": 137,
+        "topic": "T2"
+      },
+      {
+        "seg": 137,
+        "time": "11:17",
+        "start": 677.48,
+        "aspect": "design",
+        "stance": "criticism",
+        "claim": "The reviewer thinks Apple could have simplified the variable aperture feature.",
+        "quote": "I just think that Apple could have had 96% of the benefits of it by just widening the aperture",
+        "seg_end": 138,
+        "topic": "T1"
+      },
+      {
+        "seg": 141,
+        "time": "11:37",
+        "start": 697.16,
+        "aspect": "value",
+        "stance": "praise",
+        "claim": "The reviewer recommends ESR Cyclone as a MagSafe charger.",
+        "quote": "is now the one MagSafe perk I'd recommend for charging.",
+        "topic": "T3"
+      },
+      {
+        "seg": 143,
+        "time": "11:46",
+        "start": 706.6,
+        "aspect": "performance",
+        "stance": "praise",
+        "claim": "The reviewer finds ESR Cyclone's charging speed to be faster than Apple's.",
+        "quote": "you just charge 28% faster while improving longevity.",
+        "topic": "T2"
+      },
+      {
+        "seg": 145,
+        "time": "11:57",
+        "start": 717.08,
+        "aspect": "value",
+        "stance": "praise",
+        "claim": "The reviewer finds ESR Cyclone's extend plug to be convenient.",
+        "quote": "Things tiny enough that I could literally carry it in my sock.",
+        "seg_end": 146,
+        "topic": "T3"
+      }
+    ],
+    "topics": [
+      {
+        "id": "T0",
+        "name": "Battery Life",
+        "aspects": [
+          "battery",
+          "charging"
+        ],
+        "reviewer": {
+          "claims": 6,
+          "stances": {
+            "praise": 2,
+            "criticism": 1,
+            "mixed": 0,
+            "neutral": 3
+          },
+          "seconds": {
+            "POSITIVE": 10.48,
+            "NEUTRAL": 11.6,
+            "NEGATIVE": 4.92
+          },
+          "segments": [
+            16,
+            17,
+            29,
+            34,
+            36,
+            38
+          ],
+          "lean": 0.20592592592592623,
+          "se": 0.34403157749765223,
+          "call": "balanced"
+        },
+        "audience": {
+          "comments": 15,
+          "counts": {
+            "POSITIVE": 7,
+            "NEUTRAL": 5,
+            "NEGATIVE": 3
+          },
+          "lean": 0.26666666666666666,
+          "se": 0.20625150312102586,
+          "call": "balanced",
+          "questions": 4,
+          "examples": [
+            {
+              "i": 6,
+              "quote": "2:27 the winner is the phone running the timer",
+              "label": "POSITIVE",
+              "likes": 1493
+            },
+            {
+              "i": 4,
+              "quote": "2:20 after seeing all the phones' screen times, I want to purchase the stopwatch phone.",
+              "label": "POSITIVE",
+              "likes": 149
+            },
+            {
+              "i": 44,
+              "quote": "2:58 iPhone 18 Pro had lasted just as long and charged just as fast. You yourself said that the smaller phones charge faster due to a smaller battery, so wouldn't it make sense that the 18 Pro Max is a bit behind?",
+              "label": "NEUTRAL",
+              "likes": 49
+            }
+          ]
+        },
+        "agreement": {
+          "gap": -0.06074074074074043,
+          "se": 0.401120192529877,
+          "low": -0.8469218715710718,
+          "high": 0.7254403900895909,
+          "call": "no_clear_difference"
+        }
+      },
+      {
+        "id": "T1",
+        "name": "Design and Build",
+        "aspects": [
+          "design"
+        ],
+        "reviewer": {
+          "claims": 4,
+          "stances": {
+            "praise": 2,
+            "criticism": 2,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 5.34,
+            "NEUTRAL": 10.48,
+            "NEGATIVE": 8.04
+          },
+          "segments": [
+            9,
+            96,
+            105,
+            137,
+            138
+          ],
+          "lean": -0.11316010058675666,
+          "se": 0.373845890988555,
+          "call": "balanced"
+        },
+        "audience": {
+          "comments": 9,
+          "counts": {
+            "POSITIVE": 4,
+            "NEUTRAL": 4,
+            "NEGATIVE": 1
+          },
+          "lean": 0.3333333333333333,
+          "se": 0.2357022603955158,
+          "call": "balanced",
+          "questions": 0,
+          "examples": [
+            {
+              "i": 63,
+              "quote": "I like the burgundy colour.  The orange phones were hideous eyesores.",
+              "label": "NEGATIVE",
+              "likes": 21
+            },
+            {
+              "i": 58,
+              "quote": "0:31 I thought Glacier would be the one everyone wants, given the hype around Sierra Blue. But I guess it was just a vocal minority",
+              "label": "NEUTRAL",
+              "likes": 12
+            },
+            {
+              "i": 68,
+              "quote": "05:50 so 18 pro max is a winter phone yk like for warming the hands and pocket not literally for pocket i can say",
+              "label": "NEUTRAL",
+              "likes": 8
+            }
+          ]
+        },
+        "agreement": {
+          "gap": -0.44649343392009,
+          "se": 0.4419460439517273,
+          "low": -1.3126917631754313,
+          "high": 0.41970489533525135,
+          "call": "no_clear_difference"
+        }
+      },
+      {
+        "id": "T2",
+        "name": "Performance",
+        "aspects": [
+          "performance"
+        ],
+        "reviewer": {
+          "claims": 13,
+          "stances": {
+            "praise": 6,
+            "criticism": 5,
+            "mixed": 0,
+            "neutral": 2
+          },
+          "seconds": {
+            "POSITIVE": 37.32,
+            "NEUTRAL": 30.72,
+            "NEGATIVE": 16.52
+          },
+          "segments": [
+            48,
+            49,
+            50,
+            93,
+            94,
+            108,
+            109,
+            112,
+            115,
+            116,
+            122,
+            130,
+            134,
+            135,
+            136,
+            137,
+            143
+          ],
+          "lean": 0.24597918637653748,
+          "se": 0.18681945210156517,
+          "call": "balanced"
+        },
+        "audience": {
+          "comments": 6,
+          "counts": {
+            "POSITIVE": 3,
+            "NEUTRAL": 2,
+            "NEGATIVE": 1
+          },
+          "lean": 0.3333333333333333,
+          "se": 0.3333333333333333,
+          "call": "balanced",
+          "questions": 1,
+          "examples": [
+            {
+              "i": 25,
+              "quote": "The sweat from my hands is enough to cool the phone down enough",
+              "label": "POSITIVE",
+              "likes": 131
+            },
+            {
+              "i": 75,
+              "quote": "7:40 When talking about the speed of the phones, did you account for the fact that iOS 27 does a re-indexing in background that slows the phone down for a few days? I wonder if that could’ve made a difference",
+              "label": "NEUTRAL",
+              "likes": 15
+            },
+            {
+              "i": 32,
+              "quote": "7:37 1.8x faster ai slop (look at the ouput)",
+              "label": "POSITIVE",
+              "likes": 11
+            }
+          ]
+        },
+        "agreement": {
+          "gap": -0.08735414695679583,
+          "se": 0.3821159755815505,
+          "low": -0.8362876970140216,
+          "high": 0.6615794031004298,
+          "call": "no_clear_difference"
+        }
+      },
+      {
+        "id": "T3",
+        "name": "Value and Price",
+        "aspects": [
+          "value",
+          "price"
+        ],
+        "reviewer": {
+          "claims": 3,
+          "stances": {
+            "praise": 2,
+            "criticism": 1,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 4.72,
+            "NEUTRAL": 6.16,
+            "NEGATIVE": 10.9
+          },
+          "segments": [
+            11,
+            141,
+            145,
+            146
+          ],
+          "lean": -0.28374655647382724,
+          "se": 0.44647076800668356,
+          "call": "balanced"
+        },
+        "audience": {
+          "comments": 2,
+          "counts": {
+            "POSITIVE": 1,
+            "NEUTRAL": 1,
+            "NEGATIVE": 0
+          },
+          "lean": 0.5,
+          "se": 0.5000000000000001,
+          "call": "balanced",
+          "questions": 0,
+          "examples": [
+            {
+              "i": 38,
+              "quote": "Omg I made a good call skipping the 16 and 17. 18 pro max looks glorious. Just gonna need some screen protection and call it a day",
+              "label": "POSITIVE",
+              "likes": 376
+            },
+            {
+              "i": 81,
+              "quote": "This would have been such a perfect opportunity for  Apple to line-up their iPhone numbering with their actual generation (eg. A20 Pro chip) & call it the iPhone 20 series especially with no e, base or Air & a new Duo model.",
+              "label": "NEUTRAL",
+              "likes": 6
+            }
+          ]
+        },
+        "agreement": {
+          "gap": -0.7837465564738273,
+          "se": 0.6703254035798419,
+          "low": -2.097560205412594,
+          "high": 0.5300670924649395,
+          "call": "no_clear_difference"
+        }
+      },
+      {
+        "id": "T4",
+        "name": "Camera and Photography",
+        "aspects": [],
+        "reviewer": {
+          "claims": 0,
+          "stances": {
+            "praise": 0,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 0.0,
+            "NEUTRAL": 0.0,
+            "NEGATIVE": 0.0
+          },
+          "segments": [],
+          "lean": null,
+          "se": null,
+          "call": "unknown"
+        },
+        "audience": {
+          "comments": 13,
+          "counts": {
+            "POSITIVE": 4,
+            "NEUTRAL": 8,
+            "NEGATIVE": 1
+          },
+          "lean": 0.23076923076923078,
+          "se": 0.16617283842071437,
+          "call": "balanced",
+          "questions": 1,
+          "examples": [
+            {
+              "i": 3,
+              "quote": "Colours looking like the car color options we had in GTA San Andreas",
+              "label": "NEUTRAL",
+              "likes": 3009
+            },
+            {
+              "i": 79,
+              "quote": "10:58 what is that photo T_T",
+              "label": "NEUTRAL",
+              "likes": 85
+            },
+            {
+              "i": 54,
+              "quote": "That black iphone looks very professional",
+              "label": "POSITIVE",
+              "likes": 68
+            }
+          ]
+        },
+        "agreement": {
+          "gap": null,
+          "se": null,
+          "low": null,
+          "high": null,
+          "call": "unknown"
+        }
+      },
+      {
+        "id": "T5",
+        "name": "Comparison and Upgrade",
+        "aspects": [],
+        "reviewer": {
+          "claims": 0,
+          "stances": {
+            "praise": 0,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 0.0,
+            "NEUTRAL": 0.0,
+            "NEGATIVE": 0.0
+          },
+          "segments": [],
+          "lean": null,
+          "se": null,
+          "call": "unknown"
+        },
+        "audience": {
+          "comments": 10,
+          "counts": {
+            "POSITIVE": 2,
+            "NEUTRAL": 5,
+            "NEGATIVE": 3
+          },
+          "lean": -0.1,
+          "se": 0.23333333333333334,
+          "call": "balanced",
+          "questions": 3,
+          "examples": [
+            {
+              "i": 2,
+              "quote": "Sometimes i feel like he should compare new phones with 3-4 yr old phone. Examples 18 pro with 15 pro. As people usually upgrade after 3-4 yr",
+              "label": "NEUTRAL",
+              "likes": 5200
+            },
+            {
+              "i": 77,
+              "quote": "i think apple is focusing too much on the iphone duo rather than the iphone 18 pro’s so it kinda felt like an insignificant upgrade",
+              "label": "NEGATIVE",
+              "likes": 64
+            },
+            {
+              "i": 65,
+              "quote": "The 18 Pro Max having 45% battery left when the Ultra ran out is… rather insane. Not to mention, this is the SIM tray model iPhone.",
+              "label": "NEGATIVE",
+              "likes": 36
+            }
+          ]
+        },
+        "agreement": {
+          "gap": null,
+          "se": null,
+          "low": null,
+          "high": null,
+          "call": "unknown"
+        }
+      },
+      {
+        "id": "T6",
+        "name": "Commentary and Feedback",
+        "aspects": [],
+        "reviewer": {
+          "claims": 0,
+          "stances": {
+            "praise": 0,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 0.0,
+            "NEUTRAL": 0.0,
+            "NEGATIVE": 0.0
+          },
+          "segments": [],
+          "lean": null,
+          "se": null,
+          "call": "unknown"
+        },
+        "audience": {
+          "comments": 29,
+          "counts": {
+            "POSITIVE": 21,
+            "NEUTRAL": 3,
+            "NEGATIVE": 5
+          },
+          "lean": 0.5517241379310345,
+          "se": 0.14542452629680308,
+          "call": "positive",
+          "questions": 4,
+          "examples": [
+            {
+              "i": 1,
+              "quote": "20 Likes, supporting small creators!",
+              "label": "POSITIVE",
+              "likes": 7808
+            },
+            {
+              "i": 5,
+              "quote": "It’s crazy how much more in depth he gets than MKBHD",
+              "label": "POSITIVE",
+              "likes": 2404
+            },
+            {
+              "i": 0,
+              "quote": "FULL review is coming in a few days - cooking something pretty special for this one...two Aruns are back...",
+              "label": "POSITIVE",
+              "likes": 2092
+            }
+          ]
+        },
+        "agreement": {
+          "gap": null,
+          "se": null,
+          "low": null,
+          "high": null,
+          "call": "unknown"
+        }
+      },
+      {
+        "id": "T7",
+        "name": "Technical Details",
+        "aspects": [],
+        "reviewer": {
+          "claims": 0,
+          "stances": {
+            "praise": 0,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 0.0,
+            "NEUTRAL": 0.0,
+            "NEGATIVE": 0.0
+          },
+          "segments": [],
+          "lean": null,
+          "se": null,
+          "call": "unknown"
+        },
+        "audience": {
+          "comments": 12,
+          "counts": {
+            "POSITIVE": 3,
+            "NEUTRAL": 7,
+            "NEGATIVE": 2
+          },
+          "lean": 0.08333333333333333,
+          "se": 0.19299604852813632,
+          "call": "balanced",
+          "questions": 1,
+          "examples": [
+            {
+              "i": 13,
+              "quote": "The phone getting hotter on the outside absolutely makes sense that’s what it’s designed to do it dissipates heat faster and more efficiently to the outside.",
+              "label": "POSITIVE",
+              "likes": 395
+            },
+            {
+              "i": 14,
+              "quote": "5:26 if the shell gets hot, the chip gets cooler",
+              "label": "NEUTRAL",
+              "likes": 173
+            },
+            {
+              "i": 75,
+              "quote": "7:40 When talking about the speed of the phones, did you account for the fact that iOS 27 does a re-indexing in background that slows the phone down for a few days? I wonder if that could’ve made a difference",
+              "label": "NEUTRAL",
+              "likes": 15
+            }
+          ]
+        },
+        "agreement": {
+          "gap": null,
+          "se": null,
+          "low": null,
+          "high": null,
+          "call": "unknown"
+        }
+      }
+    ],
+    "topic_source": "model",
+    "questions": [
+      {
+        "i": 10,
+        "quote": "is it me or this video feels like just straight to the point and nothing else?"
+      },
+      {
+        "i": 21,
+        "quote": "11:45 Wireless charging is the worst way to charge your phone, plugging it in is always the best option...I mean seriously who would want to game using wireless charger?"
+      },
+      {
+        "i": 61,
+        "quote": "So did you want that after you’re done or…?"
+      }
+    ],
+    "comment_tags": {
+      "0": [
+        "Commentary and Feedback"
+      ],
+      "1": [
+        "Commentary and Feedback"
+      ],
+      "2": [
+        "Comparison and Upgrade"
+      ],
+      "3": [
+        "Camera and Photography"
+      ],
+      "4": [
+        "Battery Life"
+      ],
+      "5": [
+        "Commentary and Feedback"
+      ],
+      "6": [
+        "Battery Life"
+      ],
+      "7": [
+        "Commentary and Feedback"
+      ],
+      "8": [
+        "Commentary and Feedback"
+      ],
+      "9": [
+        "Commentary and Feedback"
+      ],
+      "10": [
+        "Commentary and Feedback"
+      ],
+      "11": [
+        "Commentary and Feedback"
+      ],
+      "12": [
+        "Battery Life"
+      ],
+      "13": [
+        "Technical Details"
+      ],
+      "14": [
+        "Technical Details"
+      ],
+      "15": [
+        "Battery Life"
+      ],
+      "16": [
+        "Commentary and Feedback"
+      ],
+      "17": [
+        "Camera and Photography",
+        "Technical Details"
+      ],
+      "18": [
+        "Commentary and Feedback"
+      ],
+      "19": [
+        "Commentary and Feedback",
+        "Performance"
+      ],
+      "20": [
+        "Commentary and Feedback"
+      ],
+      "21": [
+        "Commentary and Feedback"
+      ],
+      "22": [
+        "Technical Details"
+      ],
+      "23": [
+        "Commentary and Feedback"
+      ],
+      "24": [
+        "Commentary and Feedback"
+      ],
+      "25": [
+        "Performance"
+      ],
+      "26": [
+        "Commentary and Feedback"
+      ],
+      "27": [
+        "Technical Details"
+      ],
+      "28": [
+        "Comparison and Upgrade"
+      ],
+      "29": [
+        "Camera and Photography"
+      ],
+      "30": [
+        "Battery Life",
+        "Commentary and Feedback"
+      ],
+      "31": [
+        "Technical Details"
+      ],
+      "32": [
+        "Performance"
+      ],
+      "33": [
+        "Camera and Photography"
+      ],
+      "34": [],
+      "35": [
+        "Battery Life"
+      ],
+      "36": [
+        "Commentary and Feedback"
+      ],
+      "37": [],
+      "38": [
+        "Value and Price"
+      ],
+      "39": [],
+      "40": [
+        "Camera and Photography"
+      ],
+      "41": [],
+      "42": [
+        "Commentary and Feedback"
+      ],
+      "43": [],
+      "44": [
+        "Battery Life"
+      ],
+      "45": [
+        "Commentary and Feedback"
+      ],
+      "46": [
+        "Performance"
+      ],
+      "47": [
+        "Battery Life",
+        "Commentary and Feedback"
+      ],
+      "48": [
+        "Comparison and Upgrade"
+      ],
+      "49": [
+        "Design and Build"
+      ],
+      "50": [],
+      "51": [
+        "Camera and Photography",
+        "Technical Details"
+      ],
+      "52": [
+        "Battery Life",
+        "Design and Build"
+      ],
+      "53": [
+        "Camera and Photography",
+        "Technical Details"
+      ],
+      "54": [
+        "Camera and Photography"
+      ],
+      "55": [],
+      "56": [
+        "Battery Life"
+      ],
+      "57": [],
+      "58": [
+        "Design and Build"
+      ],
+      "59": [
+        "Performance",
+        "Technical Details"
+      ],
+      "60": [],
+      "61": [],
+      "62": [],
+      "63": [
+        "Design and Build"
+      ],
+      "64": [
+        "Commentary and Feedback"
+      ],
+      "65": [
+        "Battery Life",
+        "Comparison and Upgrade"
+      ],
+      "66": [],
+      "67": [
+        "Battery Life",
+        "Comparison and Upgrade"
+      ],
+      "68": [
+        "Design and Build"
+      ],
+      "69": [
+        "Battery Life",
+        "Comparison and Upgrade"
+      ],
+      "70": [
+        "Battery Life",
+        "Comparison and Upgrade"
+      ],
+      "71": [
+        "Commentary and Feedback"
+      ],
+      "72": [],
+      "73": [],
+      "74": [
+        "Camera and Photography"
+      ],
+      "75": [
+        "Performance",
+        "Technical Details"
+      ],
+      "76": [],
+      "77": [
+        "Comparison and Upgrade"
+      ],
+      "78": [
+        "Commentary and Feedback"
+      ],
+      "79": [
+        "Camera and Photography"
+      ],
+      "80": [
+        "Comparison and Upgrade"
+      ],
+      "81": [
+        "Design and Build",
+        "Value and Price"
+      ],
+      "82": [
+        "Camera and Photography"
+      ],
+      "83": [],
+      "84": [
+        "Commentary and Feedback"
+      ],
+      "85": [],
+      "86": [
+        "Comparison and Upgrade"
+      ],
+      "87": [
+        "Technical Details"
+      ],
+      "88": [
+        "Camera and Photography"
+      ],
+      "89": [
+        "Commentary and Feedback"
+      ],
+      "90": [],
+      "91": [
+        "Commentary and Feedback"
+      ],
+      "92": [
+        "Design and Build",
+        "Camera and Photography"
+      ],
+      "93": [],
+      "94": [
+        "Technical Details"
+      ],
+      "95": [
+        "Commentary and Feedback"
+      ],
+      "96": [
+        "Design and Build"
+      ],
+      "97": [
+        "Battery Life"
+      ],
+      "98": [
+        "Design and Build"
+      ],
+      "99": [
+        "Commentary and Feedback"
+      ]
+    }
+  },
+  "written": {
+    "verdict": {
+      "text": "The reviewer concludes that the iPhone 18 Pro Max has some impressive features, but also some drawbacks, such as overheating and high price. The audience is generally positive about the product, with 54% of comments being positive.",
+      "evidence": [
+        "S93",
+        "S145"
+      ],
+      "source": "model"
+    },
+    "brand_health_words": {
+      "text": "The audience is generally positive about the product, with 54% of comments being positive. Some comments mention the high price and overheating issue, but overall the audience is leaning positive.",
+      "evidence": [
+        "T0",
+        "T1",
+        "T2",
+        "T3"
+      ],
+      "source": "model"
+    },
+    "audience_words": {
+      "text": "The audience is discussing the battery life, design and build, performance, value and price, and camera and photography of the iPhone 18 Pro Max.",
+      "evidence": [
+        "T0",
+        "T1",
+        "T2",
+        "T3",
+        "T4"
+      ],
+      "source": "model"
+    },
+    "agreement_words": {
+      "text": "The reviewer and the audience agree on the battery life and design and build of the iPhone 18 Pro Max, but disagree on the performance and value and price.",
+      "evidence": [
+        "T0",
+        "T1",
+        "T2",
+        "T3"
+      ],
+      "source": "model"
+    },
+    "takeaways": [
+      {
+        "text": "The brand should address the overheating issue with the new chip's performance.",
+        "evidence": [
+          "S49",
+          "S50",
+          "S93"
+        ]
+      },
+      {
+        "text": "The brand should consider reducing the price of the iPhone 18 Pro Max.",
+        "evidence": [
+          "S11"
+        ]
+      },
+      {
+        "text": "The brand should improve the design and build quality of the iPhone 18 Pro Max.",
+        "evidence": [
+          "S105"
+        ]
+      }
+    ],
+    "moment_notes": [
+      {
+        "seg": 11,
+        "text": "The words read negative as the reviewer criticizes the high price, while the voice reads neutral and the comments read positive."
+      },
+      {
+        "seg": 40,
+        "text": "The words read negative as the reviewer criticizes the design and build, while the face reads negative and the comments read positive."
+      },
+      {
+        "seg": 105,
+        "text": "The words read negative as the reviewer criticizes the design and build, while the voice reads negative and the comments read positive."
+      }
+    ],
+    "turn_labels": [
+      {
+        "seg": 30,
+        "label": "The price"
+      },
+      {
+        "seg": 88,
+        "label": "The 18 did win this one"
+      }
+    ]
+  },
+  "verifier": {
+    "proposed": 151,
+    "kept": 146,
+    "by_field": {
+      "claim": {
+        "kept": 26,
+        "dropped": 5
+      },
+      "topic": {
+        "kept": 8,
+        "dropped": 0
+      },
+      "comment_tags": {
+        "kept": 100,
+        "dropped": 0
+      },
+      "verdict": {
+        "kept": 1,
+        "dropped": 0
+      },
+      "brand_health_words": {
+        "kept": 1,
+        "dropped": 0
+      },
+      "audience_words": {
+        "kept": 1,
+        "dropped": 0
+      },
+      "agreement_words": {
+        "kept": 1,
+        "dropped": 0
+      },
+      "takeaway": {
+        "kept": 3,
+        "dropped": 0
+      },
+      "moment_note": {
+        "kept": 3,
+        "dropped": 0
+      },
+      "turn_label": {
+        "kept": 2,
+        "dropped": 0
+      }
+    },
+    "dropped": [
+      {
+        "field": "claim",
+        "reasons": [
+          "figure not in the facts: 3"
+        ],
+        "text": "{'seg': 59, 'aspect': 'performance', 'stance': 'praise', 'claim': \"The iPhone 18 Pro Max performed well in 3DMark's extreme stress test.\", 'quote': 'And yes, the 18 with its new A20 Pro chip absolutely murdered the other devices.'}"
+      },
+      {
+        "field": "claim",
+        "reasons": [
+          "figure not in the facts: 3"
+        ],
+        "text": "{'seg': 60, 'aspect': 'performance', 'stance': 'praise', 'claim': \"The iPhone 18 Pro Max got a top score in 3DMark's extreme stress test.\", 'quote': 'Look at this top score, 9024, which compares to Samsung in second place with 7970,'}"
+      },
+      {
+        "field": "claim",
+        "reasons": [
+          "figure not in the facts: 3"
+        ],
+        "text": "{'seg': 63, 'aspect': 'performance', 'stance': 'praise', 'claim': \"The iPhone 18 Pro Max retained a significant lead in 3DMark's extreme stress test.\", 'quote': 'And the 18 Pro Max retains this very significant lead,'}"
+      },
+      {
+        "field": "claim",
+        "reasons": [
+          "figure not in the facts: two"
+        ],
+        "text": "{'seg': 78, 'aspect': 'performance', 'stance': 'criticism', 'claim': \"The iPhone 18 Pro Max did not meet Apple's promise of two times the AI performance of the 17 Pro.\", 'quote': 'Apple promised us two times the AI performance of the 17 Pro,'}"
+      },
+      {
+        "field": "claim",
+        "reasons": [
+          "figure not in the facts: 17",
+          "figure not in the facts: two"
+        ],
+        "text": "{'seg': 79, 'aspect': 'performance', 'stance': 'criticism', 'claim': \"The iPhone 18 Pro Max did not meet Apple's promise of two times the AI performance of the 17 Pro.\", 'quote': \"and while running Geekbench's AI test, I can see a decent 30% or so increase.\"}"
+      }
+    ],
+    "notes": [
+      {
+        "field": "claim",
+        "what": "segment corrected to where the quote is",
+        "from": 63,
+        "to": 62
+      },
+      {
+        "field": "claim",
+        "what": "segment corrected to where the quote is",
+        "from": 111,
+        "to": 112
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 115,
+        "to": [
+          115,
+          116
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 92,
+        "to": [
+          93,
+          94
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 134,
+        "to": [
+          134,
+          135
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 136,
+        "to": [
+          136,
+          137
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 137,
+        "to": [
+          137,
+          138
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "segment corrected to where the quote is",
+        "from": 142,
+        "to": 143
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 146,
+        "to": [
+          145,
+          146
+        ]
+      }
+    ]
+  },
+  "video_meta": {
+    "fetched": true,
+    "at": "2026-09-25T10:32:02+00:00",
+    "has_paid_product_placement": false,
+    "description_hits": [
+      {
+        "category": "affiliate",
+        "pattern": "affiliate",
+        "match": "affiliate",
+        "context": "es of Tech right now (Not sponsored but these are affiliate links which help out the channel!): 1. Balmuda To"
+      },
+      {
+        "category": "affiliate",
+        "pattern": "affiliate_network",
+        "match": "geni.us",
+        "context": "lp out the channel!): 1. Balmuda Toaster: geni.us/… 2. Ember Mug 2: geni.us/… 3."
+      },
+      {
+        "category": "affiliate",
+        "pattern": "affiliate_network",
+        "match": "geni.us",
+        "context": ": geni.us/… 2. Ember Mug 2: geni.us/… 3. Ninja Creami Deluxe: geni.us/…"
+      },
+      {
+        "category": "affiliate",
+        "pattern": "affiliate_network",
+        "match": "geni.us",
+        "context": "s://geni.us/zb4Ix 3. Ninja Creami Deluxe: geni.us/… 4. Anker PowerBank: geni.us/… 5."
+      },
+      {
+        "category": "affiliate",
+        "pattern": "affiliate_network",
+        "match": "geni.us",
+        "context": "geni.us/… 4. Anker PowerBank: geni.us/… 5. Momax Travel Adaptor: geni.us/…"
+      },
+      {
+        "category": "affiliate",
+        "pattern": "affiliate_network",
+        "match": "geni.us",
+        "context": "://geni.us/p3PVF 5. Momax Travel Adaptor: geni.us/… Music is from Epidemic sound: sha/…"
+      }
+    ],
+    "title": "iPhone 18 Pro Unboxing - This Needs Explaining",
+    "channel": "Mrwhosetheboss",
+    "published_at": "2026-09-16T12:03:46Z"
+  },
+  "calls": [
+    {
+      "step": "claims",
+      "ok": true,
+      "seconds": 36.44,
+      "prompt_chars": 6920,
+      "prompt_tokens": 2081,
+      "output_tokens": 491
+    },
+    {
+      "step": "claims",
+      "ok": true,
+      "seconds": 33.36,
+      "prompt_chars": 6647,
+      "prompt_tokens": 1952,
+      "output_tokens": 546
+    },
+    {
+      "step": "claims",
+      "ok": true,
+      "seconds": 27.47,
+      "prompt_chars": 6580,
+      "prompt_tokens": 1882,
+      "output_tokens": 427
+    },
+    {
+      "step": "claims",
+      "ok": true,
+      "seconds": 26.76,
+      "prompt_chars": 5486,
+      "prompt_tokens": 1518,
+      "output_tokens": 465
+    },
+    {
+      "step": "topics",
+      "ok": true,
+      "seconds": 15.79,
+      "prompt_chars": 5238,
+      "prompt_tokens": 1358,
+      "output_tokens": 203
+    },
+    {
+      "step": "comments",
+      "ok": true,
+      "seconds": 24.46,
+      "prompt_chars": 3737,
+      "prompt_tokens": 1000,
+      "output_tokens": 424
+    },
+    {
+      "step": "comments",
+      "ok": true,
+      "seconds": 24.38,
+      "prompt_chars": 4875,
+      "prompt_tokens": 1344,
+      "output_tokens": 393
+    },
+    {
+      "step": "comments",
+      "ok": true,
+      "seconds": 23.11,
+      "prompt_chars": 4188,
+      "prompt_tokens": 1156,
+      "output_tokens": 404
+    },
+    {
+      "step": "comments",
+      "ok": true,
+      "seconds": 21.15,
+      "prompt_chars": 3971,
+      "prompt_tokens": 1080,
+      "output_tokens": 404
+    },
+    {
+      "step": "prose",
+      "ok": true,
+      "seconds": 40.75,
+      "prompt_chars": 10730,
+      "prompt_tokens": 3168,
+      "output_tokens": 581
+    }
+  ],
+  "runtime_s": 274.14,
+  "report_ref": {
+    "file": "Apple (iPhone 18 Pro Max).json",
+    "sha256": "a4f08fc2d440ef8b65e2ec424e08497d4c9cdf27aff2a6b3a9be48f7cdb36402"
+  }
+}

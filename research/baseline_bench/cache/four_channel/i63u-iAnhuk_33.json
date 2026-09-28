@@ -1,0 +1,36 @@
+{
+ "uid": "i63u-iAnhuk_33",
+ "system": "four_channel",
+ "video_id": "i63u-iAnhuk",
+ "segment_id": 33,
+ "split": "selection",
+ "payload": {
+  "segment_id": 33,
+  "start_s": 170.04,
+  "end_s": 173.33999999999997,
+  "transcript": "that sort of combine to make it feel a little more flagship-y,",
+  "transcript_sentiment": "NEUTRAL (0.42)",
+  "vocal_emotion": "NEUTRAL (arousal 0.49)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "fear (0.87)",
+  "video_comment_sentiment": "POSITIVE (0.97)"
+ },
+ "seconds": 4.616,
+ "raw": "{\n  \"segment_id\": 33,\n  \"conflict_score\": 0.8,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"video_comment_sentiment\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and tone suggest neutrality, but their facial expression shows fear, and the audience's comments are overwhelmingly positive, indicating a significant conflict between the creator's intended message and their emotional expression.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 33,
+  "start_s": 170.04,
+  "end_s": 173.33999999999997,
+  "conflict_score": 0.8,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: video_comment_sentiment"
+  ],
+  "flagged": true
+ }
+}

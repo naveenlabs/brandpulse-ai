@@ -1,0 +1,377 @@
+{
+ "anchor": {
+  "ok": true,
+  "problems": [],
+  "segments_in_run": 77,
+  "rows_described": 59,
+  "rows_total": 77,
+  "no_label_segments": 5,
+  "faceless_segments": 20
+ },
+ "bench_c": {
+  "1VjPETN3m6U": {
+   "dan_affectnet8": {
+    "n_crops": 414,
+    "argmax_counts": {
+     "sad": 80,
+     "disgust": 35,
+     "surprise": 213,
+     "contempt": 3,
+     "neutral": 28,
+     "fear": 7,
+     "anger": 42,
+     "happy": 6
+    },
+    "argmax_share": {
+     "sad": 0.1932367149758454,
+     "disgust": 0.08454106280193237,
+     "surprise": 0.5144927536231884,
+     "contempt": 0.007246376811594203,
+     "neutral": 0.06763285024154589,
+     "fear": 0.016908212560386472,
+     "anger": 0.10144927536231885,
+     "happy": 0.014492753623188406
+    },
+    "three_counts": {
+     "NEGATIVE": 167,
+     "POSITIVE": 219,
+     "NEUTRAL": 28
+    },
+    "mean_mass": {
+     "anger": 0.107203,
+     "contempt": 0.019416,
+     "disgust": 0.111032,
+     "fear": 0.093626,
+     "happy": 0.056341,
+     "neutral": 0.116758,
+     "sad": 0.161965,
+     "surprise": 0.333658
+    },
+    "anger_rank2": 44,
+    "anger_rank2_share": 0.11827956989247312,
+    "anger_mean_mass_when_not_top": 0.06945237365591399,
+    "n_not_top": 372,
+    "has_anger_class": true
+   },
+   "deepface_fer": {
+    "n_crops": 414,
+    "argmax_counts": {
+     "neutral": 176,
+     "fear": 22,
+     "sad": 105,
+     "angry": 52,
+     "happy": 45,
+     "disgust": 4,
+     "surprise": 10
+    },
+    "argmax_share": {
+     "neutral": 0.4251207729468599,
+     "fear": 0.05314009661835749,
+     "sad": 0.2536231884057971,
+     "angry": 0.12560386473429952,
+     "happy": 0.10869565217391304,
+     "disgust": 0.00966183574879227,
+     "surprise": 0.024154589371980676
+    },
+    "three_counts": {
+     "NEUTRAL": 176,
+     "NEGATIVE": 183,
+     "POSITIVE": 55
+    },
+    "mean_mass": {
+     "angry": 0.124974,
+     "disgust": 0.009955,
+     "fear": 0.05306,
+     "happy": 0.110526,
+     "neutral": 0.422773,
+     "sad": 0.254584,
+     "surprise": 0.024127
+    },
+    "anger_rank2": 342,
+    "anger_rank2_share": 0.9447513812154696,
+    "anger_mean_mass_when_not_top": 0.0016063176795580107,
+    "n_not_top": 362,
+    "has_anger_class": true
+   },
+   "dima806_vit": {
+    "n_crops": 414,
+    "argmax_counts": {
+     "fear": 17,
+     "happy": 237,
+     "sad": 57,
+     "neutral": 7,
+     "angry": 93,
+     "surprise": 3
+    },
+    "argmax_share": {
+     "fear": 0.04106280193236715,
+     "happy": 0.572463768115942,
+     "sad": 0.13768115942028986,
+     "neutral": 0.016908212560386472,
+     "angry": 0.2246376811594203,
+     "surprise": 0.007246376811594203
+    },
+    "three_counts": {
+     "NEGATIVE": 167,
+     "POSITIVE": 240,
+     "NEUTRAL": 7
+    },
+    "mean_mass": {
+     "angry": 0.183826,
+     "disgust": 0.008884,
+     "fear": 0.072147,
+     "happy": 0.438633,
+     "neutral": 0.074864,
+     "sad": 0.162474,
+     "surprise": 0.059172
+    },
+    "anger_rank2": 110,
+    "anger_rank2_share": 0.3426791277258567,
+    "anger_mean_mass_when_not_top": 0.10266499376947037,
+    "n_not_top": 321,
+    "has_anger_class": true
+   },
+   "emotieffnet_b0_va": {
+    "n_crops": 414,
+    "argmax_counts": {
+     "sadness": 53,
+     "fear": 6,
+     "surprise": 203,
+     "neutral": 48,
+     "happiness": 45,
+     "anger": 43,
+     "disgust": 15,
+     "contempt": 1
+    },
+    "argmax_share": {
+     "sadness": 0.1280193236714976,
+     "fear": 0.014492753623188406,
+     "surprise": 0.49033816425120774,
+     "neutral": 0.11594202898550725,
+     "happiness": 0.10869565217391304,
+     "anger": 0.10386473429951691,
+     "disgust": 0.036231884057971016,
+     "contempt": 0.0024154589371980675
+    },
+    "three_counts": {
+     "NEGATIVE": 118,
+     "POSITIVE": 248,
+     "NEUTRAL": 48
+    },
+    "mean_mass": {
+     "anger": 0.117005,
+     "contempt": 0.025797,
+     "disgust": 0.063253,
+     "fear": 0.041316,
+     "happiness": 0.11361,
+     "neutral": 0.145189,
+     "sadness": 0.132288,
+     "surprise": 0.361542
+    },
+    "anger_rank2": 53,
+    "anger_rank2_share": 0.14285714285714285,
+    "anger_mean_mass_when_not_top": 0.07713646630727763,
+    "n_not_top": 371,
+    "has_anger_class": true
+   },
+   "emotieffnet_b2": {
+    "n_crops": 414,
+    "argmax_counts": {
+     "sadness": 62,
+     "contempt": 23,
+     "surprise": 182,
+     "neutral": 32,
+     "disgust": 76,
+     "happiness": 23,
+     "anger": 13,
+     "fear": 3
+    },
+    "argmax_share": {
+     "sadness": 0.1497584541062802,
+     "contempt": 0.05555555555555555,
+     "surprise": 0.4396135265700483,
+     "neutral": 0.07729468599033816,
+     "disgust": 0.18357487922705315,
+     "happiness": 0.05555555555555555,
+     "anger": 0.03140096618357488,
+     "fear": 0.007246376811594203
+    },
+    "three_counts": {
+     "NEGATIVE": 177,
+     "POSITIVE": 205,
+     "NEUTRAL": 32
+    },
+    "mean_mass": {
+     "anger": 0.079796,
+     "contempt": 0.129858,
+     "disgust": 0.165178,
+     "fear": 0.100369,
+     "happiness": 0.081928,
+     "neutral": 0.105988,
+     "sadness": 0.12736,
+     "surprise": 0.209522
+    },
+    "anger_rank2": 23,
+    "anger_rank2_share": 0.057356608478802994,
+    "anger_mean_mass_when_not_top": 0.0712032967581047,
+    "n_not_top": 401,
+    "has_anger_class": true
+   },
+   "hardlyhumans_vit": {
+    "n_crops": 414,
+    "argmax_counts": {
+     "sad": 193,
+     "anger": 49,
+     "surprise": 144,
+     "neutral": 4,
+     "fear": 11,
+     "disgust": 11,
+     "contempt": 2
+    },
+    "argmax_share": {
+     "sad": 0.46618357487922707,
+     "anger": 0.11835748792270531,
+     "surprise": 0.34782608695652173,
+     "neutral": 0.00966183574879227,
+     "fear": 0.026570048309178744,
+     "disgust": 0.026570048309178744,
+     "contempt": 0.004830917874396135
+    },
+    "three_counts": {
+     "NEGATIVE": 266,
+     "POSITIVE": 144,
+     "NEUTRAL": 4
+    },
+    "mean_mass": {
+     "anger": 0.152001,
+     "contempt": 0.026994,
+     "disgust": 0.115843,
+     "fear": 0.137581,
+     "happy": 0.001062,
+     "neutral": 0.015076,
+     "sad": 0.310438,
+     "surprise": 0.241005
+    },
+    "anger_rank2": 88,
+    "anger_rank2_share": 0.2410958904109589,
+    "anger_mean_mass_when_not_top": 0.11495901643835606,
+    "n_not_top": 365,
+    "has_anger_class": true
+   },
+   "motheecreator_vit": {
+    "n_crops": 414,
+    "argmax_counts": {
+     "sad": 76,
+     "fear": 15,
+     "happy": 56,
+     "surprise": 187,
+     "neutral": 59,
+     "anger": 10,
+     "disgust": 11
+    },
+    "argmax_share": {
+     "sad": 0.18357487922705315,
+     "fear": 0.036231884057971016,
+     "happy": 0.13526570048309178,
+     "surprise": 0.45169082125603865,
+     "neutral": 0.14251207729468598,
+     "anger": 0.024154589371980676,
+     "disgust": 0.026570048309178744
+    },
+    "three_counts": {
+     "NEGATIVE": 112,
+     "POSITIVE": 243,
+     "NEUTRAL": 59
+    },
+    "mean_mass": {
+     "anger": 0.048116,
+     "disgust": 0.067389,
+     "fear": 0.084289,
+     "happy": 0.131149,
+     "neutral": 0.163264,
+     "sad": 0.172626,
+     "surprise": 0.333167
+    },
+    "anger_rank2": 17,
+    "anger_rank2_share": 0.04207920792079208,
+    "anger_mean_mass_when_not_top": 0.04081730693069304,
+    "n_not_top": 404,
+    "has_anger_class": true
+   },
+   "tanneru_beit_large": {
+    "n_crops": 414,
+    "argmax_counts": {
+     "surprise": 350,
+     "anger": 25,
+     "sad": 24,
+     "disgust": 5,
+     "happy": 3,
+     "neutral": 7
+    },
+    "argmax_share": {
+     "surprise": 0.8454106280193237,
+     "anger": 0.06038647342995169,
+     "sad": 0.057971014492753624,
+     "disgust": 0.012077294685990338,
+     "happy": 0.007246376811594203,
+     "neutral": 0.016908212560386472
+    },
+    "three_counts": {
+     "POSITIVE": 353,
+     "NEGATIVE": 54,
+     "NEUTRAL": 7
+    },
+    "mean_mass": {
+     "anger": 0.098519,
+     "disgust": 0.031641,
+     "fear": 0.006735,
+     "happy": 0.023583,
+     "neutral": 0.033571,
+     "sad": 0.085886,
+     "surprise": 0.720065
+    },
+    "anger_rank2": 150,
+    "anger_rank2_share": 0.3856041131105398,
+    "anger_mean_mass_when_not_top": 0.06314098457583552,
+    "n_not_top": 389,
+    "has_anger_class": true
+   },
+   "trpakov_vit": {
+    "n_crops": 414,
+    "argmax_counts": {
+     "sad": 71,
+     "neutral": 215,
+     "happy": 68,
+     "angry": 59,
+     "surprise": 1
+    },
+    "argmax_share": {
+     "sad": 0.17149758454106281,
+     "neutral": 0.5193236714975845,
+     "happy": 0.1642512077294686,
+     "angry": 0.14251207729468598,
+     "surprise": 0.0024154589371980675
+    },
+    "three_counts": {
+     "NEGATIVE": 130,
+     "NEUTRAL": 215,
+     "POSITIVE": 69
+    },
+    "mean_mass": {
+     "angry": 0.165374,
+     "disgust": 0.007496,
+     "fear": 0.018443,
+     "happy": 0.159457,
+     "neutral": 0.465894,
+     "sad": 0.171966,
+     "surprise": 0.011369
+    },
+    "anger_rank2": 120,
+    "anger_rank2_share": 0.3380281690140845,
+    "anger_mean_mass_when_not_top": 0.076898585915493,
+    "n_not_top": 355,
+    "has_anger_class": true
+   }
+  }
+ }
+}

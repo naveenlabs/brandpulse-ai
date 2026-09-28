@@ -1,0 +1,505 @@
+/* ===========================================================================
+   run.css — starting a run, and the four to nine minutes of watching it.
+
+   The wait is the screen somebody actually spends time on, so it is the one
+   this stylesheet spends its budget on. Three ideas carry it:
+
+     1. The instrument ASSEMBLES ITSELF. Four lanes, armed, scanned, then
+        marked recorded as each stage completes.
+     2. The lanes stay EMPTY, and say so. Nothing has been measured yet, and a
+        plausible-looking trace would be an invented measurement.
+     3. The APERTURE is a live reading. Two of the four stages reach a network
+        and two do not, so this reads "sealed" for most of a long run. It is the
+        product's central claim turned into something you can watch.
+   ======================================================================== */
+
+[data-run] { display: block; }
+
+/* The studio's page frame is in run-scene.css, on the page grid. */
+
+/* --- the form ------------------------------------------------------------ */
+
+.rn__form {
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  gap: var(--s-6) var(--s-8);
+  align-items: start;
+}
+
+.rn__brief { grid-column: 1 / -1; max-width: 60ch; }
+.rn__brief h1 { margin-bottom: var(--s-4); }
+
+.notice {
+  margin-top: var(--s-5);
+  padding: var(--s-4);
+  border: var(--hair) solid var(--tear);
+  border-left-width: 3px;
+  border-radius: var(--r-panel);
+  color: var(--ink);
+  max-width: none;
+}
+
+/* A three-position selector, drawn as the building's tabs: words on a rule,
+   the chosen one in ink with a 2px ink rule under it. The same tab the proof
+   charts and the limits rail use. */
+.rn__modes {
+  grid-column: 1 / -1;
+  display: flex;
+  border-bottom: var(--hair) solid var(--edge-hi);
+}
+
+.mode {
+  position: relative;
+  flex: 1;
+  min-height: var(--ctl-h);
+  padding: 0 var(--s-2);
+  color: var(--ink-2);
+  font-size: var(--ctl-size);
+  font-variation-settings: "wdth" var(--ctl-wdth);
+  font-weight: 500;
+  transition: color var(--t-fast) var(--ease-out);
+}
+
+.mode:hover { color: var(--ink); }
+.mode[aria-pressed="true"] { color: var(--ink); font-weight: 650; }
+.mode[aria-pressed="true"]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 2px;
+  background: var(--ink);
+}
+
+/* --- the panel the form lives in ----------------------------------------- */
+
+.rn__panel {
+  display: grid;
+  gap: var(--s-5);
+  padding: var(--s-6);
+  background: var(--panel);
+  border: var(--hair) solid var(--edge);
+  border-radius: var(--r-panel);
+}
+
+.fld { display: grid; gap: var(--s-2); }
+.fld__pair { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-4); }
+
+.fld label { color: var(--ink); }
+
+/* The building's field: a soft rectangle, recessed, one hairline. */
+.fld input {
+  min-height: 48px;
+  padding: 0 var(--s-4);
+  background: color-mix(in srgb, var(--screen) 70%, transparent);
+  border: var(--ctl-border) solid var(--edge-ctl);
+  border-radius: var(--r-field);
+  color: var(--ink);
+  font-size: var(--t-body);
+  transition: border-color var(--t-fast) var(--ease-out), background var(--t-fast) var(--ease-out);
+}
+
+.fld input::placeholder { color: var(--ink-3); }
+.fld input:hover { border-color: var(--ink-3); }
+.fld input:focus { border-color: var(--ink-2); background: var(--screen); }
+.fld input:focus-visible { outline: 2px solid var(--focus); outline-offset: 1px; }
+
+.fld__hint { color: var(--ink-3); }
+
+/* A problem is stated at the field it belongs to, in the interface's voice,
+   and it replaces the hint rather than stacking under it. */
+.fld.is-wrong input { border-color: var(--tear); }
+.fld.is-wrong .fld__hint { color: var(--tear); }
+
+.win { border: 0; padding: 0; margin: 0; display: grid; gap: var(--s-3); }
+.win legend { padding: 0; color: var(--ink); }
+.win__row { display: flex; gap: var(--s-2); flex-wrap: wrap; }
+
+.win__one { position: relative; }
+.win__one input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+/* A choice among several is a chip (chassis.css .chip): the same pill. */
+.win__one span {
+  display: flex;
+  align-items: center;
+  min-height: var(--ctl-h-sm);
+  padding: 0 var(--s-4);
+  border: var(--ctl-border) solid var(--edge-hi);
+  border-radius: var(--r-pill);
+  color: var(--ink-2);
+  font-size: var(--t-label);
+  font-variation-settings: "wdth" var(--ctl-wdth);
+  font-weight: 600;
+  transition: background var(--t-fast) var(--ease-out), border-color var(--t-fast) var(--ease-out),
+              color var(--t-fast) var(--ease-out);
+}
+.win__one:hover span { color: var(--ink); border-color: var(--ink-3); }
+.win__one input:checked + span { background: var(--ink); border-color: var(--ink); color: var(--body); }
+.win__one input:focus-visible + span { outline: 2px solid var(--focus); outline-offset: 2px; }
+/* An ending too far back for the chosen window: still readable, plainly not
+   on offer. The rule itself is the line under the row. */
+.win__one input:disabled { cursor: not-allowed; }
+.win__one input:disabled + span { border-style: dashed; border-color: var(--edge); color: var(--ink-3); }
+
+.rn__go { display: grid; gap: var(--s-3); justify-items: start; }
+
+/* --- what it will read --------------------------------------------------- */
+
+.rn__what { display: grid; gap: var(--s-4); align-content: start; }
+.rn__chans { display: grid; gap: 0; border-top: var(--hair) solid var(--edge); }
+
+.rn__chans li {
+  display: grid;
+  grid-template-columns: 14px minmax(0, 1fr) 3.5rem;
+  gap: var(--s-2) var(--s-3);
+  align-items: center;
+  padding-block: var(--s-3);
+  border-bottom: var(--hair) solid var(--edge);
+}
+
+.rn__chans .t-read { text-align: right; color: var(--ch); }
+.rn__chans .t-micro { grid-column: 2 / -1; }
+.rn__cn { color: var(--ink); }
+.rn__chans li[data-channel="facial"] .rn__cn { font-variation-settings: "wdth" var(--w-trust-lo); }
+.rn__chans li[data-channel="transcript"] .rn__cn,
+.rn__chans li[data-channel="audience"] .rn__cn { font-variation-settings: "wdth" var(--w-trust-hi); }
+
+/* --- the casting table ---------------------------------------------------
+   Things to compare, weigh and choose between, with the refusals as
+   interesting as the picks. Not a list of rows. */
+
+.cast__head { max-width: 68ch; margin-bottom: var(--s-6); display: grid; gap: var(--s-3); }
+
+.cast__bar {
+  position: sticky;
+  top: 4.75rem;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-4);
+  flex-wrap: wrap;
+  padding: var(--s-3) var(--s-4);
+  margin-bottom: var(--s-5);
+  background: var(--panel);
+  border: var(--hair) solid var(--edge);
+  border-radius: var(--r-panel);
+}
+
+.cast__bar .is-tear { color: var(--tear); }
+.cast__acts { display: flex; gap: var(--s-3); flex-wrap: wrap; }
+
+.cast__short {
+  padding: var(--s-4);
+  border: var(--hair) solid var(--tear);
+  border-left-width: 3px;
+  border-radius: var(--r-panel);
+  color: var(--ink);
+  max-width: 72ch;
+}
+
+.cast__list { display: grid; gap: 0; border-top: var(--hair) solid var(--edge); }
+
+.cand {
+  display: grid;
+  grid-template-columns: 2.5rem minmax(0, 1fr) minmax(0, 14rem);
+  gap: var(--s-4);
+  align-items: start;
+  padding-block: var(--s-4);
+  border-bottom: var(--hair) solid var(--edge);
+  transition: background var(--t-fast) var(--ease-out);
+}
+
+.cand:hover { background: var(--panel); }
+
+/* --- the candidate's own still ------------------------------------------
+   The casting table shows videos that have not been downloaded, so there is no
+   derived frame for them yet. This is YouTube's thumbnail, served from this
+   machine by /thumbnails/<id>.jpg rather than fetched from Google, so the page
+   goes on making no external request of any kind.
+
+   It sits BEHIND the artwork already in this slot rather than in place of it:
+   the play mark and the duration stay exactly where they were, over a scrim
+   heavy enough to keep 8px type legible on a bright still. The slot's own
+   size, padding and layout are set in run-scene.css and are not touched here.
+   Nothing below sets a property that file also sets, so load order cannot
+   decide the outcome. */
+.cand__visual { position: relative; overflow: hidden; }
+.cand__visual > span, .cand__visual > svg { position: relative; z-index: 2; }
+
+.cand__thumb {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Drawn on the slot rather than on the image, so it is there for the moment
+   before a still arrives and for the run where one never does.
+
+   Two edge washes and one overall veil. The washes are where they are because
+   that is where the type is: this slot lays its label, its play mark and its
+   duration out with space-between and centres them, so the words sit hard
+   against the left and right edges and a top-to-bottom gradient would miss
+   them entirely. Measured on real stills before and after — the label was
+   reading at 1.09:1 in FIELD over a bright frame, which is not a label. */
+.cand__visual::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg,
+      color-mix(in srgb, var(--body) 92%, transparent) 0,
+      color-mix(in srgb, var(--body) 60%, transparent) 14%,
+      transparent 27%),
+    linear-gradient(270deg,
+      color-mix(in srgb, var(--body) 92%, transparent) 0,
+      color-mix(in srgb, var(--body) 60%, transparent) 14%,
+      transparent 27%),
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--body) 46%, transparent),
+      color-mix(in srgb, var(--body) 24%, transparent) 45%,
+      color-mix(in srgb, var(--body) 50%, transparent));
+}
+
+/* A refused candidate is quietened everywhere else on the card; its still is
+   quietened the same way, because seeing what was turned down is half the
+   point of this table. */
+.cand.is-refused .cand__thumb { filter: grayscale(1); opacity: 0.42; }
+
+.cand__pick { display: grid; place-items: center; min-height: 44px; }
+.cand__pick input { width: 20px; height: 20px; accent-color: var(--ink); cursor: pointer; }
+
+.cand__title { color: var(--ink); }
+.cand__meta { display: flex; align-items: center; gap: var(--s-2); flex-wrap: wrap;
+  margin-top: var(--s-2); }
+
+/* A hairline between meta items rather than a middle dot. The separator is a
+   rule because a rule is a separator; a punctuation mark pressed into service
+   as one is the tell. */
+.cand__sep { width: 1px; height: 0.85em; background: var(--edge-hi); display: inline-block; }
+
+.cand__verdict { justify-self: end; text-align: right; color: var(--ch-transcript); }
+.cand.is-refused .cand__verdict { color: var(--tear); }
+.cand.is-refused .cand__title { color: var(--ink-2); }
+
+.cast__refused { margin-top: var(--act-tight); display: grid; gap: var(--s-2); }
+
+/* ============================================================== the wait == */
+
+.wait { display: grid; gap: var(--s-6); max-width: 1100px; }
+
+.wait__top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--s-5);
+  flex-wrap: wrap;
+  padding-bottom: var(--s-4);
+  border-bottom: var(--hair) solid var(--edge);
+}
+
+.wait__clock { color: var(--ink-2); }
+
+.wait__which { display: grid; gap: var(--s-2); }
+.wait__dots { display: flex; gap: var(--s-2); margin-top: var(--s-2); }
+.wait__dots li { width: 34px; height: 4px; background: var(--edge); }
+.wait__dots li[data-state="done"] { background: var(--ink-2); }
+.wait__dots li[data-state="now"] { background: var(--ink); }
+
+.wait__stage { display: grid; gap: var(--s-2); max-width: 62ch; }
+
+/* --- the instrument assembling itself ----------------------------------- */
+
+.rec {
+  display: grid;
+  gap: 0;
+  background: var(--screen);
+  border: var(--hair) solid var(--edge);
+  border-radius: var(--r-screen);
+  overflow: hidden;
+}
+
+.rec__lane {
+  display: grid;
+  grid-template-columns: 8rem minmax(0, 1fr) 6rem;
+  align-items: center;
+  gap: var(--s-3);
+  padding: var(--s-3) var(--s-4);
+  border-bottom: var(--hair) solid var(--edge);
+}
+
+.rec__id { display: flex; align-items: center; gap: var(--s-2); color: var(--ink-3); }
+.rec__lane[data-channel="facial"] .rec__id { font-variation-settings: "wdth" var(--w-trust-lo); }
+.rec__lane[data-channel="transcript"] .rec__id,
+.rec__lane[data-channel="audience"] .rec__id { font-variation-settings: "wdth" var(--w-trust-hi); }
+
+.rec__track {
+  position: relative;
+  height: 14px;
+  overflow: hidden;
+  /* Hatched, because it is empty and empty is the honest state. */
+  background: repeating-linear-gradient(135deg,
+    transparent 0 5px, color-mix(in srgb, var(--edge) 70%, transparent) 5px 6px);
+}
+
+.rec__scan {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 22%;
+  background: linear-gradient(90deg, transparent, var(--ch), transparent);
+  opacity: 0;
+}
+
+.rec__state { justify-self: end; color: var(--ink-3); }
+
+.rec__lane[data-state="recording"] .rec__id { color: var(--ink); }
+.rec__lane[data-state="recording"] .rec__state { color: var(--ch); }
+.rec__lane[data-state="recording"] .rec__scan { opacity: 1; }
+.rec__lane[data-state="recording"] .rec__track {
+  background: color-mix(in srgb, var(--ch) 12%, transparent);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ch) 45%, transparent);
+}
+
+.rec__lane[data-state="recorded"] .rec__id { color: var(--ink-2); }
+.rec__lane[data-state="recorded"] .rec__track {
+  background: color-mix(in srgb, var(--ch) 22%, transparent);
+}
+.rec__lane[data-state="recorded"] .rec__state { color: var(--ink-2); }
+
+.rec__note { grid-column: 1 / -1; padding: var(--s-3) var(--s-4); }
+
+/* The controller is not a channel, so it is not drawn as one. It sits below
+   the four with its own rule and its own mark, because what it does is READ
+   the four rather than record a fifth. */
+.rec__lane--ctrl {
+  --ch: var(--tear);
+  border-top: var(--hair) solid var(--edge-hi);
+}
+
+.rec__ctrlmark {
+  flex: none;
+  width: 11px;
+  height: 11px;
+  border: 1px solid var(--tear);
+  border-radius: 999px;
+}
+.rec__lane--ctrl[data-state="waiting"] .rec__ctrlmark { border-color: var(--ink-3); }
+
+@media (prefers-reduced-motion: no-preference) {
+  .rec__lane[data-state="recording"] .rec__scan {
+    animation: scan 2.4s var(--ease-move) infinite;
+  }
+  @keyframes scan {
+    from { transform: translateX(-120%); }
+    to { transform: translateX(560%); }
+  }
+}
+
+/* Under reduced motion the recording lane is marked by its own colour rather
+   than by a travelling light. Nothing is lost: the state is still legible, it
+   just does not move. */
+@media (prefers-reduced-motion: reduce) {
+  .rec__lane[data-state="recording"] .rec__track {
+    background: repeating-linear-gradient(90deg,
+      color-mix(in srgb, var(--ch) 55%, transparent) 0 6px, transparent 6px 12px);
+  }
+  .rec__lane[data-state="recording"] .rec__scan { display: none; }
+}
+
+/* --- the aperture --------------------------------------------------------
+   The product's central claim as a live reading. Sealed for most of a run. */
+
+.port {
+  display: flex;
+  align-items: center;
+  gap: var(--s-4);
+  padding: var(--s-4) var(--s-5);
+  border: var(--hair) solid var(--edge);
+  border-radius: var(--r-panel);
+  background: var(--panel);
+  max-width: 44rem;
+  transition: border-color var(--t-med) var(--ease-out);
+}
+
+.port__lamp {
+  flex: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background: var(--ink-3);
+  box-shadow: none;
+}
+
+.port[data-open="true"] { border-color: var(--tear); }
+.port[data-open="true"] .port__lamp { background: var(--tear); }
+.port[data-open="true"] [data-port-state] { color: var(--tear); }
+
+@media (prefers-reduced-motion: no-preference) {
+  .port[data-open="true"] .port__lamp { animation: lamp 1.8s ease-in-out infinite; }
+  @keyframes lamp { 0%, 100% { opacity: 1; } 50% { opacity: 0.45; } }
+}
+
+.wait__acts { display: grid; gap: var(--s-3); justify-items: start; }
+
+/* ============================================================ the endings = */
+
+.fin { display: grid; gap: var(--s-5); max-width: 72ch; }
+.fin__tag { color: var(--ink-3); }
+.fin__tag.is-tear { color: var(--tear); }
+
+.fin__why {
+  padding: var(--s-4);
+  border: var(--hair) solid var(--tear);
+  border-left-width: 3px;
+  border-radius: var(--r-panel);
+  max-width: none;
+}
+
+.fin__scores {
+  display: flex;
+  gap: var(--s-7);
+  flex-wrap: wrap;
+  margin: var(--s-2) 0;
+  padding: var(--s-5) 0;
+  border-block: var(--hair) solid var(--edge);
+}
+.fin__scores div { display: grid; gap: var(--s-2); }
+.fin__scores dd { margin: 0; }
+
+.fin__failed { display: grid; gap: var(--s-3); }
+.fin__failed ul { display: grid; gap: var(--s-2); }
+.fin__failed li { display: grid; gap: 2px; padding-left: var(--s-4);
+  border-left: 2px solid var(--tear); }
+
+.fin__acts { display: flex; gap: var(--s-3); flex-wrap: wrap; margin-top: var(--s-2); }
+
+/* =============================================================== phone ==== */
+
+@media (max-width: 1040px) {
+  .rn__form { grid-template-columns: minmax(0, 1fr); }
+  .cand { grid-template-columns: 2.5rem minmax(0, 1fr); }
+  .cand__verdict { grid-column: 2; justify-self: start; text-align: left; }
+}
+
+@media (max-width: 720px) {
+  .fld__pair { grid-template-columns: minmax(0, 1fr); }
+  .rn__panel { padding: var(--s-4); }
+  .rec__lane { grid-template-columns: 6.5rem minmax(0, 1fr); row-gap: var(--s-2); }
+  .rec__state { grid-column: 2; justify-self: start; }
+  .wait__top { gap: var(--s-2); }
+  .rn__modes { width: 100%; }
+  .mode { flex: 1; padding-inline: var(--s-2); }
+}

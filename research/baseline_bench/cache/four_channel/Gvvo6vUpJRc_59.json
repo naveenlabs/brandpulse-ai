@@ -1,0 +1,35 @@
+{
+ "uid": "Gvvo6vUpJRc_59",
+ "system": "four_channel",
+ "video_id": "Gvvo6vUpJRc",
+ "segment_id": 59,
+ "split": "selection",
+ "payload": {
+  "segment_id": 59,
+  "start_s": 306.72,
+  "end_s": 310.38,
+  "transcript": "It looks pretty clean. And like I said, matte black would look pretty sweet.",
+  "transcript_sentiment": "POSITIVE (0.89)",
+  "vocal_emotion": "NEUTRAL (arousal 0.54)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "fear (0.54)",
+  "video_comment_sentiment": "POSITIVE (0.96)"
+ },
+ "seconds": 3.917,
+ "raw": "{\n  \"segment_id\": 59,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words convey a positive sentiment, but their facial expression shows fear, indicating a conflict between their verbal and non-verbal cues.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 59,
+  "start_s": 306.72,
+  "end_s": 310.38,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion"
+  ],
+  "flagged": false
+ }
+}

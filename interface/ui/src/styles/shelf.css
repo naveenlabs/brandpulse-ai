@@ -1,0 +1,433 @@
+/* =======================================================================
+   shelf.css — the bookcase, and the reading desk beside it.
+
+   Read lib/shelf.js first; it carries the provenance and the deviations.
+
+   The room itself is drawn in WebGL and is not styled here. What is styled
+   here is everything around it: the masthead, the three case labels that name
+   the ways a run can be started, the panel a lifted volume reads into, and the
+   actions. All of it is on this project's own tokens, so the shelf belongs to
+   the interface rather than sitting inside it as a foreign object.
+
+   ALIGNMENT. The case labels are HTML and the cases are pixels in a perspective
+   projection, so the only honest way to line them up is to ask the camera. The
+   component projects each case's centre and publishes it as --bk-bay-0..2, in
+   pixels from the middle of the stage; each label is placed from its own one.
+   Thirds of the frame are about seven pixels out at desktop width -- close
+   enough to look like a mistake rather than a choice.
+
+   The section is NOT themed away under FIELD. Both themes get a room, built
+   from SHELF_PALETTE, because a bookcase that vanished in one theme would be
+   a feature that only half the product has.
+   ==================================================================== */
+
+.bk {
+  position: relative;
+  isolation: isolate;
+  background: var(--body);
+  /* This section is the last thing on the page now that the rack is not
+     drawn underneath it, so this margin is the whole gap between the rail
+     and the bottom of the browser -- there is nothing below to justify the
+     3-5.5rem the earlier build left here, which is what read as a stretch of
+     dead background under "20 spaces left...". Small, deliberate close
+     instead. The old border-block-end is gone too: it drew a second line a
+     few pixels under the rail's own border-block-start, doubling a seam that
+     one hairline already made. */
+  margin-block-end: 0;
+}
+
+/* THE ROOM IS NOT SHOWN UNTIL IT HAS BEEN DRAWN.
+
+   Between the markup landing and the first painted pixel there is over a
+   second of context building, pass compilation and texture upload on a machine
+   without a GPU -- measured at 734ms and 2195ms on a return to this page. The
+   loading state above stays up for all of it and this stays hidden, so the
+   page changes once instead of arriving as an empty bookcase that fills in a
+   second and a half later.
+
+   Taken out of flow while it settles, for three reasons: the loading state
+   keeps its own place, the document does not grow a scrollbar it is about to
+   lose, and the stage keeps its final width so the canvas is never re-measured
+   at the moment it is revealed. `visibility` rather than `opacity`, because
+   the renderer has to keep running underneath -- it is the thing that decides
+   when this ends. */
+[data-library] { position: relative; }
+.bk[data-settling] {
+  position: absolute;
+  inset-inline: 0;
+  inset-block-start: 0;
+  visibility: hidden;
+}
+
+/* THE HANDOVER IS A DISSOLVE, NOT A CUT.
+
+   Added 23 Sep 2026. Until then the loading panel was removed in the same
+   frame the room was revealed, so two unlike compositions -- a left-ranged
+   headline on an empty ground, and a centred bookcase -- swapped in one frame.
+   That swap is what was reported as "I see some other page first, then this
+   page loads": nothing was actually wrong, but an instant change between two
+   layouts reads as two pages rather than one page arriving.
+
+   The panel leaves its place in the flow the moment it starts to go, so the
+   room can take that place while it is still fading. `animation: none` is not
+   optional -- [data-boot] carries state-wait-in with `forwards`, and a filled
+   animation beats a declared opacity, so without it the panel would sit at
+   full strength and never fade at all.
+
+   ONLY THE PANEL MOVES. The room is revealed at full strength and the panel
+   dissolves off the top of it.
+
+   The first attempt faded the room UP instead, holding it at zero and
+   releasing it two animation frames later. That is a bet on the main thread,
+   and against a renderer that is mid-intro it loses: measured at 1280x800 the
+   two frames took **1.7 seconds** to arrive, and for all of it the panel had
+   gone and the room was still at opacity 0. An empty page for 1.7s is far
+   worse than the cut it was meant to replace. Nothing here now depends on a
+   frame callback firing promptly. */
+
+[data-boot][data-leaving] {
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline: 0;
+  opacity: 0;
+  pointer-events: none;
+  animation: none;
+  transition: opacity 260ms linear;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-boot][data-leaving] { transition: none; }
+}
+
+/* --- the room ----------------------------------------------------------- */
+
+.bk__frame {
+  position: relative;
+  overflow: hidden;
+  background: var(--body);
+}
+
+.bk__stage {
+  position: relative;
+  width: 100%;
+  /* Keep the canvas and desk in the frame's stacking context: the room veil
+     sits above the canvas, while the reading desk must sit above the veil. */
+  isolation: auto;
+  /* THE STAGE IS THE SHAPE OF THE FURNITURE.
+
+     --bk-ratio is the case's own proportion, written by library.js from
+     shelfgeom.js before the renderer is even fetched, so there is no reflow
+     when it arrives. Sizing the stage to it means the carcass fills the frame
+     in both directions instead of sitting in a letterbox, which is worth about
+     a fifth again on every cover -- and when a fifth shelf is added the stage
+     grows taller by itself, so the volumes stay the size they were rather than
+     shrinking to make room.
+
+     Capped so that the nav bar above (76px), this room, and the hint rail
+     below (47px) come to exactly one screen. On a page whose entire content
+     is a room, a 68px scrollbar was the only thing on screen suggesting
+     there was more to see; past the cap the aspect gives way and the camera
+     re-frames, which it is built to do. */
+  aspect-ratio: var(--bk-ratio, 1.566);
+  max-height: calc(100svh - 76px - 47px);
+  min-height: 520px;
+  /* The room's own clear colour is the page ground now (SHELF_PALETTE), and
+     its wall falls off into it past the carcass, so the stage and the page
+     are one surface before the first frame and after it. */
+  background: var(--body);
+  overflow: hidden;
+}
+
+/* THE CANVAS DOES NOT FADE ITSELF. Changed 23 Sep 2026.
+
+   It used to carry `transition: opacity .9s linear`, and that fade was the
+   single largest part of what was reported as the page loading in stages.
+   It was also redundant twice over, and measurably harmful once:
+
+   Redundant, because the renderer runs its own intro inside the canvas -- the
+   wall fades up and the volumes arrive left to right -- so the room already
+   appears rather than being switched on. Fading the whole canvas on top of
+   that faded the arrival itself.
+
+   Harmful, because `data-shelf="on"` is set BEFORE the first frame is painted,
+   so the fade began against an empty canvas. The page drops its loading panel
+   on `onReady`, which is the first PAINTED frame, and measured at 1280x800 the
+   canvas was still at opacity 0.00 at that moment: the panel went, and what it
+   uncovered was a room still fading in from nothing.
+
+   Now it is simply opaque. Nothing is shown too early -- .bk[data-settling]
+   keeps the whole room out of sight until that first painted frame. */
+.bk__canvas { position: absolute; z-index: 0; inset: 0; display: block; width: 100%; height: 100%;
+  touch-action: none; user-select: none; -webkit-user-select: none;
+  opacity: 0; }
+.bk__stage[data-shelf="on"] .bk__canvas { opacity: 1; }
+
+/* THE SEAM.
+
+   Above this line is flat HTML on --body; the wall bake the canvas paints is
+   lit to a peak of 62-226 (SHELF_PALETTE.wallPeak) plus a further bounce off
+   every plank, so the top of the room reads 50-70 luminance points brighter
+   than the masthead sitting on it -- a real jump, not a rendering fault, and
+   the .bk__cases hairline used to draw a ruled line exactly on top of it,
+   which is what made the page read as two stacked boxes rather than one.
+
+   Fixed with a generated layer over the canvas rather than by dimming the
+   room (the room is right; the room is what a shelf is meant to look like)
+   or by lightening the masthead (nothing above the fold should compete with
+   it for attention). Two gradients, top and bottom, both var(--body) so they
+   carry the theme automatically. Short on purpose: the top shelf's books sit
+   close to the top of the frame -- about an eighth of the stage's own height
+   under the framing this camera uses -- and a fade sized to fully erase a
+   ~60pt jump would have painted over their tops. This softens the cut into a
+   short reveal instead of erasing it, which is the honest amount of fix a
+   perspective room next to flat type can take without losing the picture. */
+.bk__stage::after { content: none; }
+
+/* --- the case labels ---------------------------------------------------
+   One row of three, each placed over the middle of its own case. Until the
+   component has projected them they sit on thirds, which is close enough that
+   the correction is not seen as a jump; data-aligned marks the moment the real
+   numbers land. Set as type on the page, not painted into the canvas, so they
+   stay crisp at any pixel ratio and can be found by find-in-page. */
+
+.bk__cases {
+  position: absolute;
+  z-index: 4;
+  /* Anchored to the SAME measured boundary the masthead is capped by, offset
+     up by its own height plus the gap below, so the row always sits above the
+     top shelf's books regardless of viewport width, row count, or how many
+     lines the masthead wrapped to. The old 36% was a guess for one width at
+     one row count; it broke the moment either changed.
+
+     34px of that is the row's own height, so the number below sets the gap:
+     at 44px the labels cleared the books by 10px at every size measured, and
+     read as stuck to the shelf. 74px gives them 40px. Raised 23 Sep 2026 at
+     the author's request, in two steps -- 20px was tried first and asked to go
+     further. Headroom was checked before committing, not after: the tightest
+     of five viewports (1280x720) left 57px above the row at 44px, so 30px more
+     still lands the row inside the stage and nowhere near the masthead. */
+  inset-block-start: calc(var(--bk-top, 60%) - 74px);
+  inset-inline: 0;
+  height: 34px;
+  padding-inline: clamp(12px, 2vw, 34px);
+  pointer-events: none;
+}
+.bk__case {
+  position: absolute; inset-block-end: 0;
+  left: calc(50% + var(--bk-bay-0, 0px));
+  transform: translateX(-50%);
+  display: grid; gap: 4px; justify-items: center; white-space: nowrap;
+}
+.bk__case:nth-child(2) { left: calc(50% + var(--bk-bay-1, 0px)); }
+.bk__case:nth-child(3) { left: calc(50% + var(--bk-bay-2, 0px)); }
+.bk__cases:not([data-aligned]) .bk__case { left: calc(16.67% + var(--i) * 33.33%); }
+/* While a volume is in hand the room behind it is blurred by the registered
+   composite, and these three labels are HTML, so they would otherwise stay
+   perfectly sharp over a deliberately soft picture -- the one thing on screen
+   insisting it is not part of the scene. They fade with it instead. */
+.bk__frame:has(.bk__desk.is-open) .bk__cases { opacity: 0; }
+.bk__cases { transition: opacity .34s var(--e-out, cubic-bezier(.19,.78,.2,1)); }
+
+/* Sentence case, like every label in the building. These were 10px tracked
+   capitals, the one place on the page where the shelf's own type spoke a
+   different language from the book it opens into. */
+.bk__case b {
+  font: 600 var(--t-label)/1.1 var(--f-inst); letter-spacing: var(--tr-label);
+  font-variation-settings: "wdth" var(--ctl-wdth);
+  color: var(--ink);
+}
+.bk__case span {
+  font: 500 var(--t-note)/1.1 var(--f-inst); letter-spacing: var(--tr-label);
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-2);
+}
+
+/* --- the reading desk --------------------------------------------------
+   A lifted volume is held to the right of the frame by the component, so the
+   panel takes the left. It is a panel, not a modal: the shelf stays live
+   behind it and Escape puts the volume back. */
+
+.bk__desk {
+  position: absolute; inset-block: 0; inset-inline-start: 0;
+  width: min(486px, 44%); z-index: 3;
+  display: flex; flex-direction: column; justify-content: center; gap: var(--s-4);
+  padding: clamp(24px, 4vh, 54px) clamp(20px, 3vw, 46px);
+  /* Closed, it is out of the tab order as well as out of sight. Opacity alone
+     left three focusable controls sitting invisibly in front of the shelf. */
+  opacity: 0; pointer-events: none; visibility: hidden;
+  transition: opacity .42s var(--e-out, cubic-bezier(.19,.78,.2,1)) .12s,
+              visibility 0s linear .54s;
+  background: linear-gradient(to right,
+    color-mix(in srgb, var(--body) 92%, transparent) 0 62%,
+    color-mix(in srgb, var(--body) 0%, transparent) 100%);
+}
+.bk__desk.is-open { opacity: 1; visibility: visible; transition-delay: .12s, 0s; }
+.bk__desk.is-open .bk__acts,
+.bk__desk.is-open .bk__confirm { pointer-events: auto; }
+
+.bk__kicker { margin: 0; font: 600 var(--t-label)/1.4 var(--f-inst); letter-spacing: var(--tr-label);
+  font-variation-settings: "wdth" var(--ctl-wdth); color: var(--ink-2); }
+/* The date, parted from the kind by a hairline rather than a middle dot. */
+.bk__kfoot::before { content: ""; display: inline-block; width: 1px; height: 0.85em;
+  margin: 0 0.6em; vertical-align: -0.08em; background: currentColor; opacity: .45; }
+.bk__title { margin: 0; font: 560 clamp(28px, 2.6vw, 42px)/1.02 var(--f-inst);
+  letter-spacing: var(--tr-title); font-variation-settings: "wdth" 96; text-wrap: balance; }
+.bk__title em { font-family: var(--f-voice); font-weight: 400; font-style: normal; }
+.bk__blurb { margin: 0; max-width: 34ch; font: 400 16px/1.5 var(--f-voice); color: var(--ink-2); }
+
+.bk__ledger { margin: 0; display: grid; grid-template-columns: 1fr auto; gap: 0; }
+.bk__ledger div { display: contents; }
+/* The rule over each row is drawn by two cells side by side, so both cells
+   have to START at the row's top edge or the line arrives in two pieces at
+   two heights. `align-self: center` on this one did exactly that: it stopped
+   the label being stretched to the row's full 40px, centred its own 31.59px
+   box instead, and took its top border down with it -- a measured 4.2px step,
+   ((40 - 31.59) / 2), in the middle of every rule in the panel.
+
+   The label still needs to sit optically centred against a number twice its
+   size. It gets that by centring the TEXT inside a full-height box rather
+   than by centring the box, which leaves the border where the row is. */
+.bk__ledger dt { padding: 9px 0; border-block-start: 1px solid var(--edge);
+  font: 500 var(--t-label)/1.4 var(--f-inst); letter-spacing: var(--tr-label);
+  color: var(--ink-2); display: flex; align-items: center; }
+.bk__ledger dd { margin: 0; padding: 9px 0; border-block-start: 1px solid var(--edge);
+  text-align: right; font-variant-numeric: tabular-nums;
+  font: 460 15px/1.4 var(--f-inst); letter-spacing: -.02em; }
+.bk__ledger dd.is-tear { color: var(--tear); }
+
+.bk__acts { display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
+  margin-block-start: var(--s-4); }
+/* The desk's actions are the building's actions (chassis.css .btn): the
+   same pill, height, type and border, so the button that opens a book here
+   is recognisably the button that starts a run on Analyse. */
+.bk__act {
+  display: inline-flex; align-items: center; justify-content: center; gap: var(--s-2);
+  min-height: var(--ctl-h); padding: 0 var(--ctl-pad-x);
+  font: var(--ctl-weight) var(--ctl-size)/1.1 var(--f-inst);
+  font-variation-settings: "wdth" var(--ctl-wdth);
+  cursor: pointer; white-space: nowrap;
+  border: var(--ctl-border) solid var(--edge-hi); border-radius: var(--r-pill);
+  background: color-mix(in srgb, var(--body) 70%, transparent);
+  color: var(--ink); text-decoration: none;
+  transition: background var(--t-fast) var(--ease-out), border-color var(--t-fast) var(--ease-out),
+              color var(--t-fast) var(--ease-out), transform var(--t-fast) var(--ease-out);
+}
+.bk__act:hover { border-color: var(--ink-2); background: color-mix(in srgb, var(--ink) 7%, var(--body)); }
+.bk__act:active { transform: translateY(1px); }
+.bk__act--solid { background: var(--ink); color: var(--body); border-color: var(--ink); }
+.bk__act--solid:hover { background: color-mix(in srgb, var(--ink) 84%, var(--body)); border-color: color-mix(in srgb, var(--ink) 84%, var(--body)); }
+
+/* "Put it back" is the way out, not a third choice of equal weight, so it is
+   set as text rather than as a third pill. Three pills in a row wrapped the
+   last one onto its own line at this width, which read as a mistake. */
+.bk__act--quiet { border-color: transparent; background: none; color: var(--ink-2);
+  padding-inline: var(--s-3); text-decoration: underline; text-decoration-color: var(--edge-hi);
+  text-underline-offset: 0.3em; }
+.bk__act--quiet:hover { color: var(--ink); border-color: transparent; background: none;
+  text-decoration-color: currentColor; }
+
+/* --- deleting a volume --------------------------------------------------
+
+   "Delete" is set as text rather than as a pill, for the reason directly
+   above: the row already learned that a third pill wraps onto its own line at
+   this width, and this is the fourth control. It is also the right weight —
+   the destructive action should not be the most clickable thing on the desk.
+   The colour is the one this build already uses for a finding that needs
+   attention, so it reads as consequence rather than as decoration. */
+.bk__act--danger { border-color: transparent; background: none; color: var(--tear);
+  padding-inline: var(--s-3); }
+.bk__act--danger:hover { border-color: var(--tear); background: none; color: var(--tear); }
+
+/* The second step stands where the first one was. Nothing destructive is ever
+   adjacent to the control that cancels it in the same row the reader was
+   already clicking in, and the question is the only thing on the desk being
+   answered. */
+.bk__confirm { display: grid; gap: 12px; margin-block-start: var(--s-4); }
+.bk__confirmq {
+  margin: 0; max-width: 40ch;
+  font: 400 var(--t-small)/1.55 var(--f-inst); color: var(--ink);
+  padding-inline-start: 12px;
+  border-inline-start: 2px solid var(--tear);
+}
+.bk__confirmacts { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+
+/* The one place the tear colour is a filled control. It is the last click
+   before something is gone, and it should look like it. */
+.bk__confirmacts .bk__act--danger {
+  background: var(--tear); color: var(--on-tear); border-color: var(--tear);
+  padding-inline: var(--ctl-pad-x);
+}
+.bk__confirmacts .bk__act--danger:hover { background: color-mix(in srgb, var(--tear) 86%, var(--ink)); }
+.bk__act[disabled] { opacity: .5; cursor: default; transform: none; }
+
+/* --- the foot rail ------------------------------------------------------
+   The grey site footer is not mounted on this page. Everything it said that
+   is true HERE is said on this rail instead, beside the count it belongs to,
+   which is where a reader is already looking. */
+
+/* The shared page ending (chassis.css .end), held to exactly the 47px the
+   stage's height cap leaves for it, so shelf and line are one screen. */
+.bk__rail { height: 47px; padding-block: 0; flex-wrap: nowrap; }
+.bk__rail > * { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.bk__hint { color: var(--ink-3); }
+
+/* --- the index ---------------------------------------------------------
+
+   The shelf is a canvas: it cannot be tabbed into, and a screen reader has
+   nothing to read in it, which is why the stage is aria-hidden. These are the
+   same volumes as real links, held off the page but IN the accessibility tree
+   and in the tab order -- and, like a skip link, they show themselves the
+   moment one takes focus, so a sighted keyboard reader is never tabbing
+   through something invisible.                                              */
+
+.bk__index { position: relative; }
+.bk__index ul { margin: 0; padding: 0; }
+.bk__index li { list-style: none; }
+
+/* Each link is hidden on its own rather than the list being hidden around
+   them. A clip-path on an ancestor is a containing block for fixed-position
+   descendants, so a link revealed inside a clipped list would still be
+   clipped -- it has to be able to drop its own clip. */
+.bk__index p, .bk__index a, .bk__index button {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip-path: inset(50%); white-space: nowrap; margin: 0;
+  color: var(--ink); text-decoration: none;
+}
+/* Buttons since 25 Sep 2026 (each takes its volume down); the reveal is the
+   same one the links had. */
+.bk__index button { background: none; border: 0; padding: 0; font: inherit; text-align: left; cursor: pointer; }
+.bk__index a:focus-visible, .bk__index button:focus-visible {
+  position: fixed; inset-block-end: 18px; inset-inline-start: 18px;
+  width: auto; height: auto; overflow: visible; clip-path: none; white-space: normal;
+  max-width: min(560px, 80vw);
+  background: var(--panel, var(--body)); color: var(--ink);
+  border: 1px solid var(--ink); border-radius: 10px;
+  padding: 12px 16px; font: 400 13px/1.45 var(--f-inst);
+  outline: 2px solid var(--ink); outline-offset: 3px;
+}
+
+/* The same size library.js asks for (SHELF_FITS). Below it the page swaps the
+   room for the list; this rule only keeps a room that has not been swapped yet
+   from being drawn half off the window. */
+@media (max-width: 899px), (max-height: 599px) { .bk { display: none; } }
+/* The two width/height overrides that used to live here existed only to keep
+   a masthead from clipping into the shelf. There is no masthead now, so the
+   only thing left to say is the one thing that is genuinely viewport
+   dependent: a short window needs a floor under the stage. Everything else --
+   the case labels above all -- positions itself from --bk-top, which is
+   measured against whatever the stage actually is. */
+@media (min-width: 900px) and (max-height: 780px) {
+  .bk__stage { min-height: 640px; }
+}
+@media (prefers-reduced-motion: reduce) { .bk { display: none; } }
+@media print { .bk { display: none !important; } }
+
+/* "Show as a list" on the rail: a plain text control at the rail's own size,
+   with a hit area the full height of the rail (2.5.8). */
+.bk__aslist {
+  background: none; border: 0; padding: 0 0 0 var(--s-3); margin: 0;
+  min-height: 44px; font: inherit; color: var(--ink-2); cursor: pointer;
+  text-decoration: underline; text-decoration-color: var(--edge-hi); text-underline-offset: 3px;
+  flex: none;
+}
+.bk__aslist:hover { color: var(--ink); text-decoration-color: currentColor; }

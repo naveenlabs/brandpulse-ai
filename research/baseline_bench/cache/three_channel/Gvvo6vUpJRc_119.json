@@ -1,0 +1,36 @@
+{
+ "uid": "Gvvo6vUpJRc_119",
+ "system": "three_channel",
+ "video_id": "Gvvo6vUpJRc",
+ "segment_id": 119,
+ "split": "selection",
+ "payload": {
+  "segment_id": 119,
+  "start_s": 612.5400000000001,
+  "end_s": 620.4000000000001,
+  "transcript": "There's no latency or range issues anywhere with Bluetooth. So I'm able to walk around corners and even up and down stairs away from my device without a drop connection.",
+  "transcript_sentiment": "NEUTRAL (0.52)",
+  "vocal_emotion": "NEUTRAL (arousal 0.56)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.96)"
+ },
+ "seconds": 5.2,
+ "raw": "{\n  \"segment_id\": 119,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"vocal_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and tone suggest a neutral sentiment, but their facial expression and vocal tone indicate a more positive sentiment, while the audience's comments are overwhelmingly positive. This discrepancy suggests a potential conflict between the creator's intended message and their actual emotional expression.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 119,
+  "start_s": 612.5400000000001,
+  "end_s": 620.4000000000001,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: vocal_emotion"
+  ],
+  "flagged": false
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "uid": "32slGhAH3Xc_109",
+ "system": "four_channel",
+ "video_id": "32slGhAH3Xc",
+ "segment_id": 109,
+ "split": "selection",
+ "payload": {
+  "segment_id": 109,
+  "start_s": 500.76,
+  "end_s": 505.4,
+  "transcript": "and can do a lot of technically full-screen phone things, Samsung's done this with an understanding",
+  "transcript_sentiment": "POSITIVE (0.70)",
+  "vocal_emotion": "POSITIVE (arousal 0.65)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "neutral (0.85)",
+  "video_comment_sentiment": "POSITIVE (0.98)"
+ },
+ "seconds": 3.954,
+ "raw": "{\n  \"segment_id\": 109,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words convey a positive sentiment, but their facial expression is neutral, indicating a potential conflict between their verbal and non-verbal cues.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 109,
+  "start_s": 500.76,
+  "end_s": 505.4,
+  "conflict_score": 0.2052,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "facial_channel_downweighted[structural]: 0.6000 -> 0.2052 (x0.342, measured channel accuracy)"
+  ],
+  "flagged": false
+ }
+}

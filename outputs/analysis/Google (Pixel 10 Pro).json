@@ -1,0 +1,2464 @@
+{
+  "schema": "brandpulse.analysis/1",
+  "status": "complete",
+  "steps": {
+    "claims": true,
+    "topics": true,
+    "comments": true,
+    "prose": true
+  },
+  "created_at": "2026-09-26T18:34:23+00:00",
+  "model": "llama3.1:8b",
+  "num_ctx": 6144,
+  "prompt_versions": {
+    "claims": "11039eb1443c",
+    "topics": "849d75dbc679",
+    "comments": "dda83531df32",
+    "prose": "633ad9a4e222"
+  },
+  "subject": {
+    "brand": "Google",
+    "product": "Pixel 10 Pro",
+    "title": ""
+  },
+  "facts": {
+    "scores": {
+      "authenticity": 60.21,
+      "brand_health": 81.57
+    },
+    "segments": 88,
+    "flagged": 1,
+    "threshold": 0.75,
+    "duration_s": 437.78,
+    "comments": {
+      "n": 58,
+      "distribution": {
+        "POSITIVE": 34,
+        "NEUTRAL": 8,
+        "NEGATIVE": 16
+      },
+      "label": "POSITIVE"
+    },
+    "reviewer": {
+      "lean": 0.39421346499930776,
+      "se": 0.07860383756711885,
+      "n": 88,
+      "call": "positive",
+      "counts": {
+        "POSITIVE": 47,
+        "NEUTRAL": 28,
+        "NEGATIVE": 13
+      },
+      "seconds": {
+        "POSITIVE": 233.56,
+        "NEUTRAL": 137.16,
+        "NEGATIVE": 62.7
+      },
+      "unread": 0
+    },
+    "audience": {
+      "lean": 0.3103448275862069,
+      "se": 0.11590642425830469,
+      "n": 58,
+      "call": "positive",
+      "counts": {
+        "POSITIVE": 34,
+        "NEUTRAL": 8,
+        "NEGATIVE": 16
+      }
+    },
+    "agreement": {
+      "gap": 0.08386863741310085,
+      "se": 0.14004592983954986,
+      "low": -0.19061634125384014,
+      "high": 0.35835361608004185,
+      "call": "no_clear_difference"
+    },
+    "confidence": {
+      "level": "well_covered",
+      "checks": [
+        {
+          "id": "comments",
+          "label": "Enough comments to read the audience",
+          "value": 58,
+          "target": 30,
+          "unit": "comments",
+          "passed": true,
+          "core": true
+        },
+        {
+          "id": "transcript",
+          "label": "The reviewer's words were read",
+          "value": 1.0,
+          "target": 0.5,
+          "unit": "share",
+          "core": true,
+          "passed": true
+        },
+        {
+          "id": "weak_conflict",
+          "label": "The conflict rests mostly on the stronger channels",
+          "value": 0.2893,
+          "target": 0.5,
+          "unit": "share",
+          "passed": true,
+          "core": false,
+          "no_conflict": false
+        }
+      ],
+      "coverage": {
+        "transcript": {
+          "read": 88,
+          "total": 88,
+          "share": 1.0
+        },
+        "facial": {
+          "read": 42,
+          "total": 88,
+          "share": 0.4772727272727273
+        },
+        "vocal": {
+          "read": 88,
+          "total": 88,
+          "share": 1.0
+        },
+        "comment": {
+          "read": 88,
+          "total": 88,
+          "share": 1.0
+        }
+      },
+      "weak_conflict": {
+        "weak": 10.0116,
+        "total": 34.6116,
+        "share": 0.2892556252816973
+      },
+      "accuracy": {
+        "comment": 78.7,
+        "transcript": 67.8,
+        "vocal": 48.9,
+        "facial": 34.2
+      },
+      "means_not": "How much evidence this reading rests on. Not whether the verdict is right, and not whether anyone in the video was honest.",
+      "ceiling": {
+        "text": "No score in this system has been shown to track human judgement of authenticity. On 119 hand-rated segments the four-channel design scored rho = +0.0575 (95% CI -0.1282 to +0.2364); people agreed with each other at rho = +0.8038.",
+        "n": 119,
+        "rho": 0.0575,
+        "ci": [
+          -0.1282,
+          0.2364
+        ],
+        "human_rho": 0.8038,
+        "source": "baseline_bench/BASELINE_ANALYSIS.md"
+      }
+    },
+    "tone": {
+      "window_s": 60.0,
+      "points": [
+        {
+          "seg": 0,
+          "start": 0.0,
+          "end": 12.38,
+          "raw": 0.0,
+          "t": 6.19,
+          "smooth": 0.4446
+        },
+        {
+          "seg": 1,
+          "start": 12.5,
+          "end": 16.88,
+          "raw": 0.0,
+          "t": 14.69,
+          "smooth": 0.3622
+        },
+        {
+          "seg": 2,
+          "start": 16.88,
+          "end": 21.76,
+          "raw": 0.7197,
+          "t": 19.32,
+          "smooth": 0.3885
+        },
+        {
+          "seg": 3,
+          "start": 21.76,
+          "end": 27.6,
+          "raw": 0.803,
+          "t": 24.68,
+          "smooth": 0.3735
+        },
+        {
+          "seg": 4,
+          "start": 27.6,
+          "end": 32.36,
+          "raw": 0.9392,
+          "t": 29.98,
+          "smooth": 0.3819
+        },
+        {
+          "seg": 5,
+          "start": 32.480000000000004,
+          "end": 36.24,
+          "raw": 0.8927,
+          "t": 34.36,
+          "smooth": 0.3979
+        },
+        {
+          "seg": 6,
+          "start": 36.44,
+          "end": 40.44,
+          "raw": 0.0,
+          "t": 38.44,
+          "smooth": 0.3996
+        },
+        {
+          "seg": 7,
+          "start": 40.44,
+          "end": 45.620000000000005,
+          "raw": 0.0,
+          "t": 43.03,
+          "smooth": 0.3988
+        },
+        {
+          "seg": 8,
+          "start": 45.620000000000005,
+          "end": 50.900000000000006,
+          "raw": 0.8009,
+          "t": 48.26,
+          "smooth": 0.4394
+        },
+        {
+          "seg": 9,
+          "start": 50.900000000000006,
+          "end": 56.5,
+          "raw": 0.0,
+          "t": 53.7,
+          "smooth": 0.4228
+        },
+        {
+          "seg": 10,
+          "start": 56.5,
+          "end": 61.26,
+          "raw": 0.7126,
+          "t": 58.88,
+          "smooth": 0.3909
+        },
+        {
+          "seg": 11,
+          "start": 61.38,
+          "end": 64.88,
+          "raw": 0.0,
+          "t": 63.13,
+          "smooth": 0.3253
+        },
+        {
+          "seg": 12,
+          "start": 65.14,
+          "end": 69.76,
+          "raw": 0.0,
+          "t": 67.45,
+          "smooth": 0.2736
+        },
+        {
+          "seg": 13,
+          "start": 69.76,
+          "end": 74.02,
+          "raw": 0.0,
+          "t": 71.89,
+          "smooth": 0.2384
+        },
+        {
+          "seg": 14,
+          "start": 74.02,
+          "end": 78.5,
+          "raw": 0.8015,
+          "t": 76.26,
+          "smooth": 0.2298
+        },
+        {
+          "seg": 15,
+          "start": 78.5,
+          "end": 82.42,
+          "raw": 0.5523,
+          "t": 80.46,
+          "smooth": 0.1732
+        },
+        {
+          "seg": 16,
+          "start": 82.42,
+          "end": 87.92,
+          "raw": 0.5775,
+          "t": 85.17,
+          "smooth": 0.1696
+        },
+        {
+          "seg": 17,
+          "start": 87.92,
+          "end": 92.24000000000001,
+          "raw": 0.0,
+          "t": 90.08,
+          "smooth": 0.1528
+        },
+        {
+          "seg": 18,
+          "start": 92.24000000000001,
+          "end": 97.02,
+          "raw": 0.0,
+          "t": 94.63,
+          "smooth": 0.151
+        },
+        {
+          "seg": 19,
+          "start": 97.02,
+          "end": 101.2,
+          "raw": -0.5657,
+          "t": 99.11,
+          "smooth": 0.1185
+        },
+        {
+          "seg": 20,
+          "start": 101.3,
+          "end": 106.42,
+          "raw": 0.0,
+          "t": 103.86,
+          "smooth": 0.0809
+        },
+        {
+          "seg": 21,
+          "start": 106.42,
+          "end": 111.62,
+          "raw": 0.0,
+          "t": 109.02,
+          "smooth": 0.0161
+        },
+        {
+          "seg": 22,
+          "start": 112.42,
+          "end": 116.88,
+          "raw": 0.0,
+          "t": 114.65,
+          "smooth": 0.0271
+        },
+        {
+          "seg": 23,
+          "start": 117.26,
+          "end": 122.94,
+          "raw": 0.5331,
+          "t": 120.1,
+          "smooth": 0.0492
+        },
+        {
+          "seg": 24,
+          "start": 122.94,
+          "end": 126.74000000000001,
+          "raw": -0.456,
+          "t": 124.84,
+          "smooth": 0.1
+        },
+        {
+          "seg": 25,
+          "start": 126.74000000000001,
+          "end": 131.26,
+          "raw": -0.3815,
+          "t": 129.0,
+          "smooth": 0.1677
+        },
+        {
+          "seg": 26,
+          "start": 131.74,
+          "end": 136.52,
+          "raw": -0.672,
+          "t": 134.13,
+          "smooth": 0.2365
+        },
+        {
+          "seg": 27,
+          "start": 136.8,
+          "end": 141.34,
+          "raw": 0.8487,
+          "t": 139.07,
+          "smooth": 0.259
+        },
+        {
+          "seg": 28,
+          "start": 141.34,
+          "end": 146.78,
+          "raw": 0.554,
+          "t": 144.06,
+          "smooth": 0.3295
+        },
+        {
+          "seg": 29,
+          "start": 146.78,
+          "end": 152.36,
+          "raw": 0.5996,
+          "t": 149.57,
+          "smooth": 0.3784
+        },
+        {
+          "seg": 30,
+          "start": 152.36,
+          "end": 156.82,
+          "raw": 0.6405,
+          "t": 154.59,
+          "smooth": 0.4237
+        },
+        {
+          "seg": 31,
+          "start": 156.82,
+          "end": 162.92000000000002,
+          "raw": 0.7053,
+          "t": 159.87,
+          "smooth": 0.5387
+        },
+        {
+          "seg": 32,
+          "start": 162.92000000000002,
+          "end": 167.66,
+          "raw": 0.0,
+          "t": 165.29,
+          "smooth": 0.667
+        },
+        {
+          "seg": 33,
+          "start": 167.66,
+          "end": 171.38,
+          "raw": 0.9291,
+          "t": 169.52,
+          "smooth": 0.7008
+        },
+        {
+          "seg": 34,
+          "start": 171.6,
+          "end": 175.88,
+          "raw": 0.8683,
+          "t": 173.74,
+          "smooth": 0.6726
+        },
+        {
+          "seg": 35,
+          "start": 175.88,
+          "end": 180.78,
+          "raw": 0.7219,
+          "t": 178.33,
+          "smooth": 0.6019
+        },
+        {
+          "seg": 36,
+          "start": 180.78,
+          "end": 186.12,
+          "raw": 0.7456,
+          "t": 183.45,
+          "smooth": 0.5124
+        },
+        {
+          "seg": 37,
+          "start": 186.12,
+          "end": 190.9,
+          "raw": 0.9256,
+          "t": 188.51,
+          "smooth": 0.4305
+        },
+        {
+          "seg": 38,
+          "start": 191.1,
+          "end": 196.3,
+          "raw": 0.9295,
+          "t": 193.7,
+          "smooth": 0.3337
+        },
+        {
+          "seg": 39,
+          "start": 196.3,
+          "end": 200.92000000000002,
+          "raw": 0.8512,
+          "t": 198.61,
+          "smooth": 0.3189
+        },
+        {
+          "seg": 40,
+          "start": 200.92000000000002,
+          "end": 206.10000000000002,
+          "raw": 0.0,
+          "t": 203.51,
+          "smooth": 0.2305
+        },
+        {
+          "seg": 41,
+          "start": 206.10000000000002,
+          "end": 211.42000000000002,
+          "raw": -0.7168,
+          "t": 208.76,
+          "smooth": 0.1586
+        },
+        {
+          "seg": 42,
+          "start": 211.42000000000002,
+          "end": 216.26000000000002,
+          "raw": 0.0,
+          "t": 213.84,
+          "smooth": 0.1449
+        },
+        {
+          "seg": 43,
+          "start": 216.26000000000002,
+          "end": 222.42000000000002,
+          "raw": -0.6794,
+          "t": 219.34,
+          "smooth": 0.0491
+        },
+        {
+          "seg": 44,
+          "start": 222.42,
+          "end": 227.04,
+          "raw": 0.0,
+          "t": 224.73,
+          "smooth": -0.0055
+        },
+        {
+          "seg": 45,
+          "start": 227.04,
+          "end": 231.66,
+          "raw": 0.0,
+          "t": 229.35,
+          "smooth": -0.0129
+        },
+        {
+          "seg": 46,
+          "start": 231.66,
+          "end": 236.85999999999999,
+          "raw": -0.5331,
+          "t": 234.26,
+          "smooth": -0.0609
+        },
+        {
+          "seg": 47,
+          "start": 236.85999999999999,
+          "end": 242.17999999999998,
+          "raw": 0.8541,
+          "t": 239.52,
+          "smooth": 0.0122
+        },
+        {
+          "seg": 48,
+          "start": 242.17999999999998,
+          "end": 246.89999999999998,
+          "raw": 0.0,
+          "t": 244.54,
+          "smooth": 0.1011
+        },
+        {
+          "seg": 49,
+          "start": 247.1,
+          "end": 251.72,
+          "raw": -0.4707,
+          "t": 249.41,
+          "smooth": 0.1972
+        },
+        {
+          "seg": 50,
+          "start": 251.72,
+          "end": 256.16,
+          "raw": 0.891,
+          "t": 253.94,
+          "smooth": 0.2468
+        },
+        {
+          "seg": 51,
+          "start": 256.16,
+          "end": 260.52,
+          "raw": 0.7333,
+          "t": 258.34,
+          "smooth": 0.2223
+        },
+        {
+          "seg": 52,
+          "start": 260.52,
+          "end": 265.82,
+          "raw": -0.6408,
+          "t": 263.17,
+          "smooth": 0.2957
+        },
+        {
+          "seg": 53,
+          "start": 265.82,
+          "end": 271.8,
+          "raw": 0.7906,
+          "t": 268.81,
+          "smooth": 0.3637
+        },
+        {
+          "seg": 54,
+          "start": 271.8,
+          "end": 276.92,
+          "raw": 0.7846,
+          "t": 274.36,
+          "smooth": 0.3418
+        },
+        {
+          "seg": 55,
+          "start": 276.92,
+          "end": 282.2,
+          "raw": 0.6974,
+          "t": 279.56,
+          "smooth": 0.3868
+        },
+        {
+          "seg": 56,
+          "start": 282.2,
+          "end": 287.5,
+          "raw": -0.5875,
+          "t": 284.85,
+          "smooth": 0.3528
+        },
+        {
+          "seg": 57,
+          "start": 287.5,
+          "end": 291.44,
+          "raw": 0.7445,
+          "t": 289.47,
+          "smooth": 0.331
+        },
+        {
+          "seg": 58,
+          "start": 291.44,
+          "end": 297.20000000000005,
+          "raw": 0.7394,
+          "t": 294.32,
+          "smooth": 0.368
+        },
+        {
+          "seg": 59,
+          "start": 297.20000000000005,
+          "end": 302.04,
+          "raw": 0.4864,
+          "t": 299.62,
+          "smooth": 0.3366
+        },
+        {
+          "seg": 60,
+          "start": 302.04,
+          "end": 306.48,
+          "raw": 0.0,
+          "t": 304.26,
+          "smooth": 0.315
+        },
+        {
+          "seg": 61,
+          "start": 306.48,
+          "end": 311.58000000000004,
+          "raw": 0.5224,
+          "t": 309.03,
+          "smooth": 0.2389
+        },
+        {
+          "seg": 62,
+          "start": 311.58000000000004,
+          "end": 315.88,
+          "raw": -0.4051,
+          "t": 313.73,
+          "smooth": 0.2795
+        },
+        {
+          "seg": 63,
+          "start": 315.88,
+          "end": 320.20000000000005,
+          "raw": 0.7538,
+          "t": 318.04,
+          "smooth": 0.3569
+        },
+        {
+          "seg": 64,
+          "start": 320.20000000000005,
+          "end": 324.58000000000004,
+          "raw": 0.0,
+          "t": 322.39,
+          "smooth": 0.357
+        },
+        {
+          "seg": 65,
+          "start": 325.06,
+          "end": 329.70000000000005,
+          "raw": 0.0,
+          "t": 327.38,
+          "smooth": 0.3494
+        },
+        {
+          "seg": 66,
+          "start": 329.7,
+          "end": 334.21999999999997,
+          "raw": 0.528,
+          "t": 331.96,
+          "smooth": 0.3616
+        },
+        {
+          "seg": 67,
+          "start": 334.21999999999997,
+          "end": 338.18,
+          "raw": -0.4425,
+          "t": 336.2,
+          "smooth": 0.3984
+        },
+        {
+          "seg": 68,
+          "start": 338.18,
+          "end": 342.03999999999996,
+          "raw": 0.8988,
+          "t": 340.11,
+          "smooth": 0.314
+        },
+        {
+          "seg": 69,
+          "start": 342.03999999999996,
+          "end": 346.9,
+          "raw": 0.6032,
+          "t": 344.47,
+          "smooth": 0.3091
+        },
+        {
+          "seg": 70,
+          "start": 346.9,
+          "end": 351.46,
+          "raw": 0.7741,
+          "t": 349.18,
+          "smooth": 0.3123
+        },
+        {
+          "seg": 71,
+          "start": 351.46,
+          "end": 356.02,
+          "raw": 0.6419,
+          "t": 353.74,
+          "smooth": 0.3601
+        },
+        {
+          "seg": 72,
+          "start": 356.02,
+          "end": 360.96,
+          "raw": 0.6307,
+          "t": 358.49,
+          "smooth": 0.4257
+        },
+        {
+          "seg": 73,
+          "start": 360.96,
+          "end": 365.71999999999997,
+          "raw": 0.695,
+          "t": 363.34,
+          "smooth": 0.4378
+        },
+        {
+          "seg": 74,
+          "start": 365.71999999999997,
+          "end": 370.97999999999996,
+          "raw": -0.7991,
+          "t": 368.35,
+          "smooth": 0.4783
+        },
+        {
+          "seg": 75,
+          "start": 370.97999999999996,
+          "end": 376.12,
+          "raw": 0.0,
+          "t": 373.55,
+          "smooth": 0.4709
+        },
+        {
+          "seg": 76,
+          "start": 376.21999999999997,
+          "end": 381.52,
+          "raw": 0.7007,
+          "t": 378.87,
+          "smooth": 0.4573
+        },
+        {
+          "seg": 77,
+          "start": 381.52,
+          "end": 386.41999999999996,
+          "raw": 0.8872,
+          "t": 383.97,
+          "smooth": 0.3969
+        },
+        {
+          "seg": 78,
+          "start": 386.41999999999996,
+          "end": 391.65999999999997,
+          "raw": 0.8339,
+          "t": 389.04,
+          "smooth": 0.3815
+        },
+        {
+          "seg": 79,
+          "start": 391.65999999999997,
+          "end": 396.44,
+          "raw": 0.0,
+          "t": 394.05,
+          "smooth": 0.3567
+        },
+        {
+          "seg": 80,
+          "start": 396.44,
+          "end": 401.76,
+          "raw": 0.6776,
+          "t": 399.1,
+          "smooth": 0.3838
+        },
+        {
+          "seg": 81,
+          "start": 401.85999999999996,
+          "end": 406.78,
+          "raw": 0.8456,
+          "t": 404.32,
+          "smooth": 0.4569
+        },
+        {
+          "seg": 82,
+          "start": 406.78,
+          "end": 411.38,
+          "raw": 0.0,
+          "t": 409.08,
+          "smooth": 0.4706
+        },
+        {
+          "seg": 83,
+          "start": 411.38,
+          "end": 415.9,
+          "raw": 0.0,
+          "t": 413.64,
+          "smooth": 0.4437
+        },
+        {
+          "seg": 84,
+          "start": 415.9,
+          "end": 421.59999999999997,
+          "raw": 0.7334,
+          "t": 418.75,
+          "smooth": 0.3998
+        },
+        {
+          "seg": 85,
+          "start": 421.59999999999997,
+          "end": 425.9,
+          "raw": 0.0,
+          "t": 423.75,
+          "smooth": 0.39
+        },
+        {
+          "seg": 86,
+          "start": 426.09999999999997,
+          "end": 429.94,
+          "raw": 0.0,
+          "t": 428.02,
+          "smooth": 0.4051
+        },
+        {
+          "seg": 87,
+          "start": 429.94,
+          "end": 437.78,
+          "raw": 0.6516,
+          "t": 433.86,
+          "smooth": 0.3487
+        }
+      ],
+      "turns": [
+        {
+          "seg": 21,
+          "t": 109.02,
+          "kind": "dip",
+          "smooth": 0.0161,
+          "prominence": 0.4285
+        },
+        {
+          "seg": 33,
+          "t": 169.52,
+          "kind": "peak",
+          "smooth": 0.7008,
+          "prominence": 0.6847
+        },
+        {
+          "seg": 46,
+          "t": 234.26,
+          "kind": "dip",
+          "smooth": -0.0609,
+          "prominence": 0.5392
+        }
+      ]
+    },
+    "moments": [
+      {
+        "seg": 24,
+        "start": 122.94,
+        "end": 126.74000000000001,
+        "time": "2:02",
+        "conflict": 0.8,
+        "flagged": true,
+        "damped": false,
+        "valences": {
+          "transcript": "NEGATIVE",
+          "facial": "NEGATIVE",
+          "vocal": "NEUTRAL",
+          "comment": "POSITIVE"
+        },
+        "text": "for today. And I don't think that you're going to get any better proof that even Google knows that"
+      },
+      {
+        "seg": 0,
+        "start": 0.0,
+        "end": 12.38,
+        "time": "0:00",
+        "conflict": 0.6,
+        "flagged": false,
+        "damped": false,
+        "valences": {
+          "transcript": "NEUTRAL",
+          "facial": "NEUTRAL",
+          "vocal": "POSITIVE",
+          "comment": "POSITIVE"
+        },
+        "text": "Hey, it's Jason. It's been one year since I got my hand on the Google Pixel 10 Pro,"
+      },
+      {
+        "seg": 1,
+        "start": 12.5,
+        "end": 16.88,
+        "time": "0:12",
+        "conflict": 0.6,
+        "flagged": false,
+        "damped": false,
+        "valences": {
+          "transcript": "NEUTRAL",
+          "facial": "POSITIVE",
+          "vocal": "NEUTRAL",
+          "comment": "POSITIVE"
+        },
+        "text": "the latest flagship from a company that really seemed like it was on its last lifeline of"
+      }
+    ],
+    "signs": {
+      "title": "Signs of a commercial interest or a mismatch",
+      "disclaimer": "These are signs, not proof. A creator can disclose a sponsor and still review honestly, and an undisclosed deal would leave none of these marks.",
+      "signs": [
+        {
+          "id": "S1",
+          "kind": "fact",
+          "state": "absent",
+          "name": "The creator declared a paid promotion",
+          "evidence": {
+            "label": false,
+            "description": []
+          }
+        },
+        {
+          "id": "S2",
+          "kind": "fact",
+          "state": "absent",
+          "name": "Sponsor, code, affiliate or gift wording in what was said",
+          "evidence": {
+            "speech": []
+          }
+        },
+        {
+          "id": "S3",
+          "kind": "fact",
+          "state": "present",
+          "name": "Affiliate links, discount codes or a gifted unit in the description",
+          "evidence": {
+            "description": [
+              {
+                "category": "affiliate",
+                "pattern": "affiliate",
+                "match": "affiliate",
+                "context": "The information provided on this channel includes affiliate links. This means we may earn a commission if you"
+              },
+              {
+                "category": "affiliate",
+                "pattern": "commission",
+                "match": "commission",
+                "context": "ncludes affiliate links. This means we may earn a commission if you click on a link and make a purchase. This"
+              },
+              {
+                "category": "affiliate",
+                "pattern": "amzn_link",
+                "match": "amzn.to/",
+                "context": "xel Try Amazon Prime FREE for 30 days!! amzn.to/… SUBSCRIBE TO MY CHANNEL: www.youtube.com/"
+              },
+              {
+                "category": "affiliate",
+                "pattern": "amzn_link",
+                "match": "amzn.to/",
+                "context": "ebook: JSL Review My Gear: 1.Sony A6600: amzn.to/… 2. Panasonic G7: amzn.to/… 3."
+              },
+              {
+                "category": "affiliate",
+                "pattern": "amzn_link",
+                "match": "amzn.to/",
+                "context": ": amzn.to/… 2. Panasonic G7: amzn.to/… 3. Sigma 18-35mm F/1.8 Lens: amzn.t/…"
+              },
+              {
+                "category": "affiliate",
+                "pattern": "amzn_link",
+                "match": "amzn.to/",
+                "context": "zn.to/2rNiRUR 3. Sigma 18-35mm F/1.8 Lens: amzn.to/… 4. Blue Yeti Microphone: amzn.to/…"
+              },
+              {
+                "category": "affiliate",
+                "pattern": "amzn_link",
+                "match": "amzn.to/",
+                "context": "//amzn.to/2regRof 4. Blue Yeti Microphone: amzn.to/… 5. Rode Video Micro: amzn.to/…"
+              },
+              {
+                "category": "affiliate",
+                "pattern": "amzn_link",
+                "match": "amzn.to/",
+                "context": "ttp://amzn.to/2qy0Lll 5. Rode Video Micro: amzn.to/… 6. 2015 iMac: amzn.to/… 7. Bo"
+              },
+              {
+                "category": "affiliate",
+                "pattern": "amzn_link",
+                "match": "amzn.to/",
+                "context": "icro: amzn.to/… 6. 2015 iMac: amzn.to/… 7. Bose QC25 Headphones: amzn.to/…"
+              },
+              {
+                "category": "affiliate",
+                "pattern": "amzn_link",
+                "match": "amzn.to/",
+                "context": "//amzn.to/2r3u2Yn 7. Bose QC25 Headphones: amzn.to/… 8. Divoom Timebox Speaker: amzn.to/…"
+              },
+              {
+                "category": "affiliate",
+                "pattern": "amzn_link",
+                "match": "amzn.to/",
+                "context": "amzn.to/2rehAFZ 8. Divoom Timebox Speaker: amzn.to/… 9. Limo Studio Lamps: amzn.to/…"
+              },
+              {
+                "category": "affiliate",
+                "pattern": "amzn_link",
+                "match": "amzn.to/",
+                "context": "tp://amzn.to/2rehVIo 9. Limo Studio Lamps: amzn.to/… The information provided on this channel"
+              }
+            ]
+          }
+        },
+        {
+          "id": "S4",
+          "kind": "inference",
+          "state": "absent",
+          "name": "The reviewer was measurably warmer than the audience",
+          "evidence": {
+            "agreement": {
+              "gap": 0.08386863741310085,
+              "se": 0.14004592983954986,
+              "low": -0.19061634125384014,
+              "high": 0.35835361608004185,
+              "call": "no_clear_difference"
+            }
+          }
+        },
+        {
+          "id": "S5",
+          "kind": "inference",
+          "state": "absent",
+          "name": "Positive words at moments the controller flagged",
+          "evidence": {
+            "positive_flagged": [],
+            "controller_flag": []
+          }
+        }
+      ],
+      "present": 1,
+      "checked": 5
+    }
+  },
+  "reading": {
+    "claims": [
+      {
+        "seg": 22,
+        "time": "1:52",
+        "start": 112.42,
+        "aspect": "design",
+        "stance": "praise",
+        "claim": "The Pixel 10 Pro has a high-end design.",
+        "quote": "This is when they used high-end aluminum for the frame, a glass-on-glass design,",
+        "topic": "T0"
+      },
+      {
+        "seg": 23,
+        "time": "1:57",
+        "start": 117.26,
+        "aspect": "design",
+        "stance": "praise",
+        "claim": "The Pixel 10 Pro's design is a flagship phone design.",
+        "quote": "And it finally looked and felt like a flagship phone for today.",
+        "seg_end": 24,
+        "topic": "T0"
+      },
+      {
+        "seg": 27,
+        "time": "2:16",
+        "start": 136.8,
+        "aspect": "design",
+        "stance": "praise",
+        "claim": "The Pixel 10 Pro's design has held up well.",
+        "quote": "And one year later, I'll be the first to say that this is the one time that I'm glad that there's",
+        "topic": "T0"
+      },
+      {
+        "seg": 29,
+        "time": "2:26",
+        "start": 146.78,
+        "aspect": "design",
+        "stance": "praise",
+        "claim": "The Pixel 10 Pro has a good weight.",
+        "quote": "The robust aluminum frame paired with the thickness of this phone gives the Pixel 10 Pro a good amount of weight in the hand that is",
+        "seg_end": 30,
+        "topic": "T0"
+      },
+      {
+        "seg": 31,
+        "time": "2:36",
+        "start": 156.82,
+        "aspect": "durability",
+        "stance": "praise",
+        "claim": "The Pixel 10 Pro's hardware has stood the test of time.",
+        "quote": "The hardware has stood the test of time.",
+        "seg_end": 32,
+        "topic": "T3"
+      },
+      {
+        "seg": 32,
+        "time": "2:42",
+        "start": 162.92000000000002,
+        "aspect": "durability",
+        "stance": "praise",
+        "claim": "The Pixel 10 Pro's camera housing has no scratches or wear.",
+        "quote": "The signature pixel camera housing hasn't seen scratches or wear,",
+        "topic": "T3"
+      },
+      {
+        "seg": 34,
+        "time": "2:51",
+        "start": 171.6,
+        "aspect": "design",
+        "stance": "praise",
+        "claim": "The Pixel 10 Pro's moonstone color is refined.",
+        "quote": "This moonstone color still slaps in my opinion. It really gives the phone a refined look and",
+        "topic": "T0"
+      },
+      {
+        "seg": 35,
+        "time": "2:55",
+        "start": 175.88,
+        "aspect": "performance",
+        "stance": "praise",
+        "claim": "The Pixel 10 Pro's display performs great.",
+        "quote": "the high refresh rate display with its small bezel still looks and performs great.",
+        "topic": "T1"
+      },
+      {
+        "seg": 36,
+        "time": "3:00",
+        "start": 180.78,
+        "aspect": "design",
+        "stance": "praise",
+        "claim": "The addition of Pixel Snap is a great feature.",
+        "quote": "has been the cherry on top is the addition of pixel snap on the Pixel 10 Pro",
+        "topic": "T0"
+      },
+      {
+        "seg": 37,
+        "time": "3:06",
+        "start": 186.12,
+        "aspect": "design",
+        "stance": "praise",
+        "claim": "The phone's updated form factor is fantastic.",
+        "quote": "It's been fantastic being able to use them natively on this updated form factor",
+        "topic": "T0"
+      },
+      {
+        "seg": 38,
+        "time": "3:11",
+        "start": 191.1,
+        "aspect": "quality",
+        "stance": "praise",
+        "claim": "Google has really stepped up in terms of quality.",
+        "quote": "All to say, Google has really stepped it up in terms of quality here as this phone is still a joy",
+        "topic": "T7"
+      },
+      {
+        "seg": 40,
+        "time": "3:20",
+        "start": 200.92000000000002,
+        "aspect": "design",
+        "stance": "praise",
+        "claim": "The phone's physical design checks the box in the good category.",
+        "quote": "Okay, the Pixel 10 Pro's physical design one year later, in my opinion, checks the box in",
+        "topic": "T0"
+      },
+      {
+        "seg": 43,
+        "time": "3:36",
+        "start": 216.26000000000002,
+        "aspect": "performance",
+        "stance": "criticism",
+        "claim": "The Tensor lineup has had a shaky reputation.",
+        "quote": "the Tensor lineup so far has had a bit of a shaky reputation when it comes to long-term reliability",
+        "seg_end": 44,
+        "topic": "T1"
+      },
+      {
+        "seg": 46,
+        "time": "3:51",
+        "start": 231.66,
+        "aspect": "performance",
+        "stance": "praise",
+        "claim": "The Tensor G5 is the most stable Tensor experience.",
+        "quote": "the Tensor G5 one year later to me has been the most stable Tensor experience I've had",
+        "seg_end": 47,
+        "topic": "T1"
+      },
+      {
+        "seg": 50,
+        "time": "4:11",
+        "start": 251.72,
+        "aspect": "performance",
+        "stance": "praise",
+        "claim": "The phone's performance has been rock solid over the past year.",
+        "quote": "rock solid over the past year",
+        "seg_end": 51,
+        "topic": "T1"
+      },
+      {
+        "seg": 53,
+        "time": "4:25",
+        "start": 265.82,
+        "aspect": "battery life",
+        "stance": "praise",
+        "claim": "The G5 chip has translated to good, consistent battery performance.",
+        "quote": "which has translated to good, consistent battery performance",
+        "seg_end": 54,
+        "topic": "T7"
+      },
+      {
+        "seg": 71,
+        "time": "5:51",
+        "start": 351.46,
+        "aspect": "video quality",
+        "stance": "criticism",
+        "claim": "The reviewer thinks the video quality is not good.",
+        "quote": "Now, where I feel as though Google has the most opportunity for improvement is with their video quality.",
+        "seg_end": 72,
+        "topic": "T2"
+      },
+      {
+        "seg": 72,
+        "time": "5:56",
+        "start": 356.02,
+        "aspect": "video quality",
+        "stance": "criticism",
+        "claim": "The reviewer thinks the video quality is behind the still image quality.",
+        "quote": "It's never been that good, and it always feels as though it's more behind than it actually is because the still image quality is so good.",
+        "seg_end": 73,
+        "topic": "T2"
+      },
+      {
+        "seg": 73,
+        "time": "6:00",
+        "start": 360.96,
+        "aspect": "video quality",
+        "stance": "criticism",
+        "claim": "The reviewer thinks the videos look over processed and too digital.",
+        "quote": "the videos that you can get out of this phone are okay, but they tend to look over processed and too digital.",
+        "seg_end": 74,
+        "topic": "T2"
+      },
+      {
+        "seg": 76,
+        "time": "6:16",
+        "start": 376.21999999999997,
+        "aspect": "video quality",
+        "stance": "praise",
+        "claim": "The reviewer thinks the video quality would be an absolute home run if it matched the photo quality.",
+        "quote": "it would be an absolute home run, especially in times like these where shooting video is a lot more commonplace than before.",
+        "seg_end": 77,
+        "topic": "T2"
+      },
+      {
+        "seg": 78,
+        "time": "6:26",
+        "start": 386.41999999999996,
+        "aspect": "user experience",
+        "stance": "praise",
+        "claim": "The reviewer finds the device fun to use.",
+        "quote": "I do notice that I play around with it a lot more than I do with my iPhone, and I'm glad to say that's still the case today.",
+        "seg_end": 79,
+        "topic": "T6"
+      },
+      {
+        "seg": 81,
+        "time": "6:41",
+        "start": 401.85999999999996,
+        "aspect": "upgrading",
+        "stance": "criticism",
+        "claim": "The reviewer advises against upgrading to the 11 Pro if you have the 10 Pro.",
+        "quote": "But if you're holding the 10 Pro, I'd wait before jumping too quickly to get the 11 Pro.",
+        "seg_end": 82,
+        "topic": "T5"
+      },
+      {
+        "seg": 84,
+        "time": "6:55",
+        "start": 415.9,
+        "aspect": "value",
+        "stance": "praise",
+        "claim": "The reviewer thinks the Pixel 10 Pro is still a solid device one year later.",
+        "quote": "the Pixel 10 Pro one year later is still a solid, solid device.",
+        "topic": "T4"
+      }
+    ],
+    "topics": [
+      {
+        "id": "T0",
+        "name": "Design",
+        "aspects": [
+          "design"
+        ],
+        "reviewer": {
+          "claims": 8,
+          "stances": {
+            "praise": 8,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 34.66,
+            "NEUTRAL": 9.64,
+            "NEGATIVE": 3.8
+          },
+          "segments": [
+            22,
+            23,
+            24,
+            27,
+            29,
+            30,
+            34,
+            36,
+            37,
+            40
+          ],
+          "lean": 0.641580041580041,
+          "se": 0.19655454035311432,
+          "call": "positive"
+        },
+        "audience": {
+          "comments": 8,
+          "counts": {
+            "POSITIVE": 5,
+            "NEUTRAL": 0,
+            "NEGATIVE": 3
+          },
+          "lean": 0.25,
+          "se": 0.36596252735569995,
+          "call": "balanced",
+          "questions": 0,
+          "examples": [
+            {
+              "i": 8,
+              "quote": "The true mark of a great reviewer isn't praising novelty, but recognizing maturity. Highlighting how staying with the same design language became Google’s strongest move takes a rare level of perceptive clarity. Masterclass in tech commentary.",
+              "label": "POSITIVE",
+              "likes": 43
+            },
+            {
+              "i": 35,
+              "quote": "The glass is way too slippery... I miss the plastic.  But I guess reviews never have to mention that.",
+              "label": "NEGATIVE",
+              "likes": 3
+            },
+            {
+              "i": 15,
+              "quote": "I just got a Pixel 10 Pro XL in Moonstone it is wonderful. It reminds me so much of my old Sierra Blue iPhone 13 Pro Max.",
+              "label": "POSITIVE",
+              "likes": 1
+            }
+          ]
+        },
+        "agreement": {
+          "gap": 0.391580041580041,
+          "se": 0.4154061371260606,
+          "low": -0.4226010261439448,
+          "high": 1.2057611093040268,
+          "call": "no_clear_difference"
+        }
+      },
+      {
+        "id": "T1",
+        "name": "Performance",
+        "aspects": [
+          "performance"
+        ],
+        "reviewer": {
+          "claims": 4,
+          "stances": {
+            "praise": 3,
+            "criticism": 1,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 19.02,
+            "NEUTRAL": 4.62,
+            "NEGATIVE": 11.36
+          },
+          "segments": [
+            35,
+            43,
+            44,
+            46,
+            47,
+            50,
+            51
+          ],
+          "lean": 0.21885714285714294,
+          "se": 0.3818679402738938,
+          "call": "balanced"
+        },
+        "audience": {
+          "comments": 13,
+          "counts": {
+            "POSITIVE": 8,
+            "NEUTRAL": 0,
+            "NEGATIVE": 5
+          },
+          "lean": 0.23076923076923078,
+          "se": 0.2808833628231622,
+          "call": "balanced",
+          "questions": 0,
+          "examples": [
+            {
+              "i": 1,
+              "quote": "Im so happy with the Pixel 10 Pro. Have it since release date and phone runs so great.",
+              "label": "POSITIVE",
+              "likes": 29
+            },
+            {
+              "i": 16,
+              "quote": "Nice review but battery health dropped on me 6% in 6/7 month as my backup phone battery life bad. I switched to the s26 ultra instead",
+              "label": "NEGATIVE",
+              "likes": 3
+            },
+            {
+              "i": 34,
+              "quote": "Hey jsl \n\nI want a good phone atleast 5 to 6 yr & my priority excellent performance ( not lag. Sustain performance) & software & good battery backup .\n\nPlease suggest me phone Which phones I go for Samsung or pixel\n\nLuv from india 🇮🇳",
+              "label": "POSITIVE",
+              "likes": 1
+            }
+          ]
+        },
+        "agreement": {
+          "gap": -0.011912087912087838,
+          "se": 0.4740449212045988,
+          "low": -0.9410230605272293,
+          "high": 0.9171988847030536,
+          "call": "no_clear_difference"
+        }
+      },
+      {
+        "id": "T2",
+        "name": "Video Quality",
+        "aspects": [
+          "video quality"
+        ],
+        "reviewer": {
+          "claims": 4,
+          "stances": {
+            "praise": 1,
+            "criticism": 3,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 24.46,
+            "NEUTRAL": 0.0,
+            "NEGATIVE": 5.26
+          },
+          "segments": [
+            71,
+            72,
+            73,
+            74,
+            76,
+            77
+          ],
+          "lean": 0.6460296096904444,
+          "se": 0.34965962028772746,
+          "call": "balanced"
+        },
+        "audience": {
+          "comments": 3,
+          "counts": {
+            "POSITIVE": 2,
+            "NEUTRAL": 0,
+            "NEGATIVE": 1
+          },
+          "lean": 0.3333333333333333,
+          "se": 0.6666666666666666,
+          "call": "balanced",
+          "questions": 0,
+          "examples": [
+            {
+              "i": 13,
+              "quote": "wow u nailed the video quality description perfectly, i mean it dont look fake but ..",
+              "label": "POSITIVE",
+              "likes": 1
+            }
+          ]
+        },
+        "agreement": {
+          "gap": 0.3126962763571111,
+          "se": 0.7527989735010285,
+          "low": -1.1627625993036275,
+          "high": 1.7881551520178496,
+          "call": "no_clear_difference"
+        }
+      },
+      {
+        "id": "T3",
+        "name": "Durability",
+        "aspects": [
+          "durability"
+        ],
+        "reviewer": {
+          "claims": 2,
+          "stances": {
+            "praise": 2,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 6.1,
+            "NEUTRAL": 4.74,
+            "NEGATIVE": 0.0
+          },
+          "segments": [
+            31,
+            32
+          ],
+          "lean": 0.562730627306275,
+          "se": 0.49212973679552247,
+          "call": "balanced"
+        },
+        "audience": {
+          "comments": 1,
+          "counts": {
+            "POSITIVE": 0,
+            "NEUTRAL": 1,
+            "NEGATIVE": 0
+          },
+          "lean": 0.0,
+          "se": null,
+          "call": "unknown",
+          "questions": 1,
+          "examples": []
+        },
+        "agreement": {
+          "gap": 0.562730627306275,
+          "se": null,
+          "low": null,
+          "high": null,
+          "call": "unknown"
+        }
+      },
+      {
+        "id": "T4",
+        "name": "Value",
+        "aspects": [
+          "value"
+        ],
+        "reviewer": {
+          "claims": 1,
+          "stances": {
+            "praise": 1,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 5.7,
+            "NEUTRAL": 0.0,
+            "NEGATIVE": 0.0
+          },
+          "segments": [
+            84
+          ],
+          "lean": 1.0,
+          "se": null,
+          "call": "unknown"
+        },
+        "audience": {
+          "comments": 10,
+          "counts": {
+            "POSITIVE": 8,
+            "NEUTRAL": 0,
+            "NEGATIVE": 2
+          },
+          "lean": 0.6,
+          "se": 0.26666666666666666,
+          "call": "positive",
+          "questions": 0,
+          "examples": [
+            {
+              "i": 1,
+              "quote": "Im so happy with the Pixel 10 Pro. Have it since release date and phone runs so great.",
+              "label": "POSITIVE",
+              "likes": 29
+            },
+            {
+              "i": 22,
+              "quote": "I just bought the Pixel 10 pro for $540. Arriving this Saturday. Hell of a deal! Given the Pixel 11 pro is pretty much a slightly beefed up 10 pro and my phone usage is minimal!",
+              "label": "POSITIVE",
+              "likes": 1
+            },
+            {
+              "i": 17,
+              "quote": "Im thinking of getting a new 10 pro this month for ~600-650€ (here in Germany). For that price it could be a good deal even though it still has 128gb which is a small bummer",
+              "label": "POSITIVE",
+              "likes": 1
+            }
+          ]
+        },
+        "agreement": {
+          "gap": 0.4,
+          "se": null,
+          "low": null,
+          "high": null,
+          "call": "unknown"
+        }
+      },
+      {
+        "id": "T5",
+        "name": "Upgrading",
+        "aspects": [
+          "upgrading"
+        ],
+        "reviewer": {
+          "claims": 1,
+          "stances": {
+            "praise": 0,
+            "criticism": 1,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 4.92,
+            "NEUTRAL": 4.6,
+            "NEGATIVE": 0.0
+          },
+          "segments": [
+            81,
+            82
+          ],
+          "lean": 0.5168067226890752,
+          "se": 0.4994350681449051,
+          "call": "balanced"
+        },
+        "audience": {
+          "comments": 12,
+          "counts": {
+            "POSITIVE": 6,
+            "NEUTRAL": 3,
+            "NEGATIVE": 3
+          },
+          "lean": 0.25,
+          "se": 0.25,
+          "call": "balanced",
+          "questions": 1,
+          "examples": [
+            {
+              "i": 21,
+              "quote": "Sold 15pm and got 10 pro xl around half a year ago, won't go back to apple haha",
+              "label": "NEGATIVE",
+              "likes": 5
+            },
+            {
+              "i": 46,
+              "quote": "Getting ready to buy mine right now",
+              "label": "POSITIVE",
+              "likes": 1
+            },
+            {
+              "i": 29,
+              "quote": "My content creator in smartphone Second hand market",
+              "label": "NEUTRAL",
+              "likes": 1
+            }
+          ]
+        },
+        "agreement": {
+          "gap": 0.26680672268907524,
+          "se": 0.5585117611052662,
+          "low": -0.8278562140192852,
+          "high": 1.3614696593974358,
+          "call": "no_clear_difference"
+        }
+      },
+      {
+        "id": "T6",
+        "name": "User Experience",
+        "aspects": [
+          "user experience"
+        ],
+        "reviewer": {
+          "claims": 1,
+          "stances": {
+            "praise": 1,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 5.24,
+            "NEUTRAL": 4.78,
+            "NEGATIVE": 0.0
+          },
+          "segments": [
+            78,
+            79
+          ],
+          "lean": 0.5229540918163662,
+          "se": 0.4989462193377716,
+          "call": "balanced"
+        },
+        "audience": {
+          "comments": 8,
+          "counts": {
+            "POSITIVE": 7,
+            "NEUTRAL": 0,
+            "NEGATIVE": 1
+          },
+          "lean": 0.75,
+          "se": 0.25,
+          "call": "positive",
+          "questions": 0,
+          "examples": [
+            {
+              "i": 2,
+              "quote": "I love my pixel 10 pro xl. It does what I need perfectly",
+              "label": "POSITIVE",
+              "likes": 6
+            },
+            {
+              "i": 11,
+              "quote": "Your videos make it much easier to decide on tech purchases. Thanks for sharing, and hosting this giveaway!\n\nI just got my Pixel 10 Pro because of your review, and I haven't regretted it for a second! Now I'd love to complete the setup with the Pixel Buds. Thanks for the amazing reviews and for this giveaway!",
+              "label": "POSITIVE",
+              "likes": 1
+            },
+            {
+              "i": 20,
+              "quote": "Bought my Google Pixel 10 Pro XL in Obsidian last December, and it was the very first one I ever bought. I never even owned a Nexus. The only problem is that it's too damn good, and I upgrade regularly, but now I'm not so sure if I want to do that as often because of it.",
+              "label": "POSITIVE",
+              "likes": 0
+            }
+          ]
+        },
+        "agreement": {
+          "gap": -0.2270459081836338,
+          "se": 0.558074663276748,
+          "low": -1.320852148890378,
+          "high": 0.8667603325231104,
+          "call": "no_clear_difference"
+        }
+      },
+      {
+        "id": "T7",
+        "name": "Other",
+        "aspects": [
+          "battery life",
+          "quality"
+        ],
+        "reviewer": {
+          "claims": 2,
+          "stances": {
+            "praise": 2,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 16.3,
+            "NEUTRAL": 0.0,
+            "NEGATIVE": 0.0
+          },
+          "segments": [
+            38,
+            53,
+            54
+          ],
+          "lean": 1.0,
+          "se": 0.0,
+          "call": "positive"
+        },
+        "audience": {
+          "comments": 6,
+          "counts": {
+            "POSITIVE": 5,
+            "NEUTRAL": 0,
+            "NEGATIVE": 1
+          },
+          "lean": 0.6666666666666666,
+          "se": 0.33333333333333326,
+          "call": "positive",
+          "questions": 0,
+          "examples": [
+            {
+              "i": 10,
+              "quote": "Pixel Buds Giveaway!  Make sure you're subscribed to the channel and the JSL Newsletter in order for you to be eligible.  Giveaway open to all who meet requirements, winner to be announced at the end of August 2026.  Subscribe to the JSL Newsletter!! shorturl.at/…",
+              "label": "POSITIVE",
+              "likes": 8
+            },
+            {
+              "i": 6,
+              "quote": "I would LOVE Google earbuds because I just got the Google pixel 10 literally yesterday",
+              "label": "POSITIVE",
+              "likes": 4
+            },
+            {
+              "i": 11,
+              "quote": "Your videos make it much easier to decide on tech purchases. Thanks for sharing, and hosting this giveaway!\n\nI just got my Pixel 10 Pro because of your review, and I haven't regretted it for a second! Now I'd love to complete the setup with the Pixel Buds. Thanks for the amazing reviews and for this giveaway!",
+              "label": "POSITIVE",
+              "likes": 1
+            }
+          ]
+        },
+        "agreement": {
+          "gap": 0.33333333333333337,
+          "se": 0.33333333333333326,
+          "low": -0.3199879948466845,
+          "high": 0.9866546615133512,
+          "call": "no_clear_difference"
+        }
+      }
+    ],
+    "topic_source": "model",
+    "questions": [
+      {
+        "i": 0,
+        "quote": "Who else loves the Pixel 10 Pro??"
+      },
+      {
+        "i": 12,
+        "quote": "is it worth it to upgrade google pixel 10/11 pro from iphone 16 pro?actually i dont play heavy games  just indie and social media"
+      }
+    ],
+    "comment_tags": {
+      "0": [],
+      "1": [
+        "Performance",
+        "Value"
+      ],
+      "2": [
+        "User Experience"
+      ],
+      "3": [
+        "Performance",
+        "Upgrading"
+      ],
+      "4": [
+        "Value",
+        "User Experience"
+      ],
+      "5": [
+        "Upgrading"
+      ],
+      "6": [
+        "Other"
+      ],
+      "7": [
+        "Upgrading"
+      ],
+      "8": [
+        "Design"
+      ],
+      "9": [
+        "Performance",
+        "Video Quality"
+      ],
+      "10": [
+        "Other"
+      ],
+      "11": [
+        "User Experience",
+        "Other"
+      ],
+      "12": [
+        "Upgrading"
+      ],
+      "13": [
+        "Video Quality"
+      ],
+      "14": [],
+      "15": [
+        "Design"
+      ],
+      "16": [
+        "Performance"
+      ],
+      "17": [
+        "Value"
+      ],
+      "18": [
+        "Other"
+      ],
+      "19": [],
+      "20": [
+        "User Experience"
+      ],
+      "21": [
+        "Upgrading"
+      ],
+      "22": [
+        "Value"
+      ],
+      "23": [
+        "Design"
+      ],
+      "24": [
+        "Upgrading"
+      ],
+      "25": [],
+      "26": [
+        "Value"
+      ],
+      "27": [
+        "User Experience",
+        "Performance"
+      ],
+      "28": [],
+      "29": [
+        "Upgrading"
+      ],
+      "30": [
+        "Video Quality",
+        "Performance"
+      ],
+      "31": [
+        "Upgrading"
+      ],
+      "32": [
+        "Durability"
+      ],
+      "33": [
+        "Upgrading"
+      ],
+      "34": [
+        "Performance",
+        "Value"
+      ],
+      "35": [
+        "Design"
+      ],
+      "36": [],
+      "37": [
+        "Performance"
+      ],
+      "38": [],
+      "39": [
+        "Design"
+      ],
+      "40": [],
+      "41": [
+        "User Experience",
+        "Performance"
+      ],
+      "42": [],
+      "43": [
+        "Upgrading"
+      ],
+      "44": [
+        "Value",
+        "Design"
+      ],
+      "45": [
+        "User Experience",
+        "Performance"
+      ],
+      "46": [
+        "Upgrading"
+      ],
+      "47": [
+        "Value",
+        "Design"
+      ],
+      "48": [
+        "Design",
+        "Performance"
+      ],
+      "49": [],
+      "50": [
+        "Other"
+      ],
+      "51": [],
+      "52": [
+        "User Experience"
+      ],
+      "53": [
+        "Performance"
+      ],
+      "54": [
+        "Upgrading"
+      ],
+      "55": [
+        "Value"
+      ],
+      "56": [
+        "Value",
+        "Performance"
+      ],
+      "57": [
+        "Other"
+      ]
+    }
+  },
+  "written": {
+    "verdict": {
+      "text": "The reviewer concluded that the Pixel 10 Pro is a great phone with a high-end design, good performance, and excellent video quality. The audience is also positive about the phone, with 59% of comments being positive.",
+      "evidence": [
+        "T0",
+        "T1",
+        "T2",
+        "T4"
+      ],
+      "source": "model"
+    },
+    "brand_health_words": {
+      "text": "Of 58 comments, 34 read positive, 8 neutral and 16 negative.",
+      "evidence": [],
+      "source": "template"
+    },
+    "audience_words": {
+      "text": "58 comments were read; the comments lean positive.",
+      "evidence": [],
+      "source": "template"
+    },
+    "agreement_words": {
+      "text": "There is no clear difference between the reviewer and the audience's opinions on the Pixel 10 Pro.",
+      "evidence": [
+        "T0",
+        "T1",
+        "T2"
+      ],
+      "source": "model"
+    },
+    "takeaways": [
+      {
+        "text": "The brand should focus on maintaining a high-end design and materials for future products.",
+        "evidence": [
+          "T0"
+        ]
+      },
+      {
+        "text": "The brand should prioritize improving the performance and battery life of future products.",
+        "evidence": [
+          "T1"
+        ]
+      },
+      {
+        "text": "The brand should continue to invest in improving video quality for future products.",
+        "evidence": [
+          "T2"
+        ]
+      }
+    ],
+    "moment_notes": [
+      {
+        "seg": 0,
+        "text": "The words read neutral as the reviewer introduces the review, while the face reads neutral and the voice reads positive."
+      },
+      {
+        "seg": 1,
+        "text": "The words read neutral as the reviewer discusses the phone's performance, while the face reads positive and the voice reads neutral."
+      }
+    ],
+    "turn_labels": [
+      {
+        "seg": 21,
+        "label": "The price"
+      },
+      {
+        "seg": 33,
+        "label": "The design"
+      },
+      {
+        "seg": 46,
+        "label": "The performance"
+      }
+    ]
+  },
+  "verifier": {
+    "proposed": 103,
+    "kept": 99,
+    "by_field": {
+      "claim": {
+        "kept": 23,
+        "dropped": 1
+      },
+      "topic": {
+        "kept": 8,
+        "dropped": 0
+      },
+      "comment_tags": {
+        "kept": 58,
+        "dropped": 0
+      },
+      "verdict": {
+        "kept": 1,
+        "dropped": 0
+      },
+      "brand_health_words": {
+        "kept": 0,
+        "dropped": 1
+      },
+      "audience_words": {
+        "kept": 0,
+        "dropped": 1
+      },
+      "agreement_words": {
+        "kept": 1,
+        "dropped": 0
+      },
+      "takeaway": {
+        "kept": 3,
+        "dropped": 0
+      },
+      "moment_note": {
+        "kept": 2,
+        "dropped": 1
+      },
+      "turn_label": {
+        "kept": 3,
+        "dropped": 0
+      }
+    },
+    "dropped": [
+      {
+        "field": "claim",
+        "reasons": [
+          "figure not in the facts: 11"
+        ],
+        "text": "{'seg': 80, 'aspect': 'new features', 'stance': 'neutral', 'claim': 'The new Pixel 11 lineup is building upon the strength of the Pixel 10.', 'quote': \"So far, it looks like it's building upon the strength of the Pixel 10,\"}"
+      },
+      {
+        "field": "brand_health_words",
+        "reasons": [
+          "says the reviewer were negative about Value, which the run does not show"
+        ],
+        "text": "The audience is generally positive about the Pixel 10 Pro, with 59% of comments being positive. Some users praise the phone's design, performance, and video quality, while others criticize its battery life and value."
+      },
+      {
+        "field": "audience_words",
+        "reasons": [
+          "states a proportion that cannot be checked: 'most comments'"
+        ],
+        "text": "The audience is discussing the phone's design, performance, and value, with the most comments coming from topics T0 and T1."
+      },
+      {
+        "field": "moment_note",
+        "reasons": [
+          "says the words read positive; it read negative"
+        ],
+        "text": "The words read positive as the reviewer praises the phone's design, while the face reads negative."
+      }
+    ],
+    "notes": [
+      {
+        "field": "claim",
+        "what": "segment corrected to where the quote is",
+        "from": 23,
+        "to": 22
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 24,
+        "to": [
+          23,
+          24
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "segment corrected to where the quote is",
+        "from": 28,
+        "to": 27
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 30,
+        "to": [
+          29,
+          30
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 32,
+        "to": [
+          31,
+          32
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "segment corrected to where the quote is",
+        "from": 33,
+        "to": 32
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 43,
+        "to": [
+          43,
+          44
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 47,
+        "to": [
+          46,
+          47
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 51,
+        "to": [
+          50,
+          51
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 53,
+        "to": [
+          53,
+          54
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 71,
+        "to": [
+          71,
+          72
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 72,
+        "to": [
+          72,
+          73
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 74,
+        "to": [
+          73,
+          74
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 76,
+        "to": [
+          76,
+          77
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 78,
+        "to": [
+          78,
+          79
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 81,
+        "to": [
+          81,
+          82
+        ]
+      }
+    ]
+  },
+  "video_meta": {
+    "fetched": true,
+    "at": "2026-09-26T18:31:01+00:00",
+    "has_paid_product_placement": false,
+    "description_hits": [
+      {
+        "category": "affiliate",
+        "pattern": "affiliate",
+        "match": "affiliate",
+        "context": "The information provided on this channel includes affiliate links. This means we may earn a commission if you"
+      },
+      {
+        "category": "affiliate",
+        "pattern": "commission",
+        "match": "commission",
+        "context": "ncludes affiliate links. This means we may earn a commission if you click on a link and make a purchase. This"
+      },
+      {
+        "category": "affiliate",
+        "pattern": "amzn_link",
+        "match": "amzn.to/",
+        "context": "xel Try Amazon Prime FREE for 30 days!! amzn.to/… SUBSCRIBE TO MY CHANNEL: www.youtube.com/"
+      },
+      {
+        "category": "affiliate",
+        "pattern": "amzn_link",
+        "match": "amzn.to/",
+        "context": "ebook: JSL Review My Gear: 1.Sony A6600: amzn.to/… 2. Panasonic G7: amzn.to/… 3."
+      },
+      {
+        "category": "affiliate",
+        "pattern": "amzn_link",
+        "match": "amzn.to/",
+        "context": ": amzn.to/… 2. Panasonic G7: amzn.to/… 3. Sigma 18-35mm F/1.8 Lens: amzn.t/…"
+      },
+      {
+        "category": "affiliate",
+        "pattern": "amzn_link",
+        "match": "amzn.to/",
+        "context": "zn.to/2rNiRUR 3. Sigma 18-35mm F/1.8 Lens: amzn.to/… 4. Blue Yeti Microphone: amzn.to/…"
+      },
+      {
+        "category": "affiliate",
+        "pattern": "amzn_link",
+        "match": "amzn.to/",
+        "context": "//amzn.to/2regRof 4. Blue Yeti Microphone: amzn.to/… 5. Rode Video Micro: amzn.to/…"
+      },
+      {
+        "category": "affiliate",
+        "pattern": "amzn_link",
+        "match": "amzn.to/",
+        "context": "ttp://amzn.to/2qy0Lll 5. Rode Video Micro: amzn.to/… 6. 2015 iMac: amzn.to/… 7. Bo"
+      },
+      {
+        "category": "affiliate",
+        "pattern": "amzn_link",
+        "match": "amzn.to/",
+        "context": "icro: amzn.to/… 6. 2015 iMac: amzn.to/… 7. Bose QC25 Headphones: amzn.to/…"
+      },
+      {
+        "category": "affiliate",
+        "pattern": "amzn_link",
+        "match": "amzn.to/",
+        "context": "//amzn.to/2r3u2Yn 7. Bose QC25 Headphones: amzn.to/… 8. Divoom Timebox Speaker: amzn.to/…"
+      },
+      {
+        "category": "affiliate",
+        "pattern": "amzn_link",
+        "match": "amzn.to/",
+        "context": "amzn.to/2rehAFZ 8. Divoom Timebox Speaker: amzn.to/… 9. Limo Studio Lamps: amzn.to/…"
+      },
+      {
+        "category": "affiliate",
+        "pattern": "amzn_link",
+        "match": "amzn.to/",
+        "context": "tp://amzn.to/2rehVIo 9. Limo Studio Lamps: amzn.to/… The information provided on this channel"
+      }
+    ],
+    "title": "Pixel 10 Pro One Year Later - Best Pixel Ever??",
+    "channel": "JSL Review",
+    "published_at": "2026-07-31T14:00:10Z"
+  },
+  "calls": [
+    {
+      "step": "claims",
+      "ok": true,
+      "seconds": 34.14,
+      "prompt_chars": 6555,
+      "prompt_tokens": 1833,
+      "output_tokens": 486
+    },
+    {
+      "step": "claims",
+      "ok": true,
+      "seconds": 28.31,
+      "prompt_chars": 6425,
+      "prompt_tokens": 1792,
+      "output_tokens": 472
+    },
+    {
+      "step": "claims",
+      "ok": true,
+      "seconds": 28.78,
+      "prompt_chars": 4298,
+      "prompt_tokens": 1178,
+      "output_tokens": 554
+    },
+    {
+      "step": "topics",
+      "ok": true,
+      "seconds": 16.8,
+      "prompt_chars": 5139,
+      "prompt_tokens": 1314,
+      "output_tokens": 243
+    },
+    {
+      "step": "comments",
+      "ok": true,
+      "seconds": 22.93,
+      "prompt_chars": 5021,
+      "prompt_tokens": 1381,
+      "output_tokens": 380
+    },
+    {
+      "step": "comments",
+      "ok": true,
+      "seconds": 21.49,
+      "prompt_chars": 3908,
+      "prompt_tokens": 1088,
+      "output_tokens": 380
+    },
+    {
+      "step": "comments",
+      "ok": true,
+      "seconds": 7.83,
+      "prompt_chars": 2106,
+      "prompt_tokens": 576,
+      "output_tokens": 124
+    },
+    {
+      "step": "prose",
+      "ok": true,
+      "seconds": 41.58,
+      "prompt_chars": 10864,
+      "prompt_tokens": 3209,
+      "output_tokens": 566
+    }
+  ],
+  "runtime_s": 202.01,
+  "report_ref": {
+    "file": "Google (Pixel 10 Pro).json",
+    "sha256": "d7b27dd9519370b3f93320da79a9a00c475bb2b44d7859efae22d5c6a99c78ca"
+  }
+}

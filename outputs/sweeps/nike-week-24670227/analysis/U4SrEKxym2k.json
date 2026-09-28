@@ -1,0 +1,3092 @@
+{
+  "schema": "brandpulse.analysis/1",
+  "status": "complete",
+  "steps": {
+    "claims": true,
+    "topics": true,
+    "comments": true,
+    "prose": true
+  },
+  "created_at": "2026-09-27T10:19:33+00:00",
+  "model": "llama3.1:8b",
+  "num_ctx": 6144,
+  "prompt_versions": {
+    "claims": "11039eb1443c",
+    "topics": "849d75dbc679",
+    "comments": "dda83531df32",
+    "prose": "633ad9a4e222"
+  },
+  "subject": {
+    "brand": "Nike",
+    "product": "",
+    "title": "I bought the all new Nike Alphafly 4 - here's my honest review!"
+  },
+  "facts": {
+    "scores": {
+      "authenticity": 47.06,
+      "brand_health": 76.1
+    },
+    "segments": 147,
+    "flagged": 13,
+    "threshold": 0.75,
+    "duration_s": 727.2,
+    "comments": {
+      "n": 80,
+      "distribution": {
+        "POSITIVE": 36,
+        "NEUTRAL": 16,
+        "NEGATIVE": 28
+      },
+      "label": "POSITIVE"
+    },
+    "reviewer": {
+      "lean": 0.19394362266257387,
+      "se": 0.06294584639755567,
+      "n": 147,
+      "call": "positive",
+      "counts": {
+        "POSITIVE": 46,
+        "NEUTRAL": 78,
+        "NEGATIVE": 23
+      },
+      "seconds": {
+        "POSITIVE": 243.7,
+        "NEUTRAL": 368.18,
+        "NEGATIVE": 104.72
+      },
+      "unread": 0
+    },
+    "audience": {
+      "lean": 0.1,
+      "se": 0.10000000000000002,
+      "n": 80,
+      "call": "balanced",
+      "counts": {
+        "POSITIVE": 36,
+        "NEUTRAL": 16,
+        "NEGATIVE": 28
+      }
+    },
+    "agreement": {
+      "gap": 0.09394362266257386,
+      "se": 0.11816166712900032,
+      "low": -0.13764898926347713,
+      "high": 0.32553623458862485,
+      "call": "no_clear_difference"
+    },
+    "confidence": {
+      "level": "well_covered",
+      "checks": [
+        {
+          "id": "comments",
+          "label": "Enough comments to read the audience",
+          "value": 80,
+          "target": 30,
+          "unit": "comments",
+          "passed": true,
+          "core": true
+        },
+        {
+          "id": "transcript",
+          "label": "The reviewer's words were read",
+          "value": 1.0,
+          "target": 0.5,
+          "unit": "share",
+          "core": true,
+          "passed": true
+        },
+        {
+          "id": "weak_conflict",
+          "label": "The conflict rests mostly on the stronger channels",
+          "value": 0.1656,
+          "target": 0.5,
+          "unit": "share",
+          "passed": true,
+          "core": false,
+          "no_conflict": false
+        }
+      ],
+      "coverage": {
+        "transcript": {
+          "read": 147,
+          "total": 147,
+          "share": 1.0
+        },
+        "facial": {
+          "read": 132,
+          "total": 147,
+          "share": 0.8979591836734694
+        },
+        "vocal": {
+          "read": 147,
+          "total": 147,
+          "share": 1.0
+        },
+        "comment": {
+          "read": 147,
+          "total": 147,
+          "share": 1.0
+        }
+      },
+      "weak_conflict": {
+        "weak": 12.3061,
+        "total": 74.3061,
+        "share": 0.16561359027051611
+      },
+      "accuracy": {
+        "comment": 78.7,
+        "transcript": 67.8,
+        "vocal": 48.9,
+        "facial": 34.2
+      },
+      "means_not": "How much evidence this reading rests on. Not whether the verdict is right, and not whether anyone in the video was honest.",
+      "ceiling": {
+        "text": "No score in this system has been shown to track human judgement of authenticity. On 119 hand-rated segments the four-channel design scored rho = +0.0575 (95% CI -0.1282 to +0.2364); people agreed with each other at rho = +0.8038.",
+        "n": 119,
+        "rho": 0.0575,
+        "ci": [
+          -0.1282,
+          0.2364
+        ],
+        "human_rho": 0.8038,
+        "source": "baseline_bench/BASELINE_ANALYSIS.md"
+      }
+    },
+    "tone": {
+      "window_s": 60.0,
+      "points": [
+        {
+          "seg": 0,
+          "start": 0.0,
+          "end": 5.72,
+          "raw": 0.0,
+          "t": 2.86,
+          "smooth": -0.193
+        },
+        {
+          "seg": 1,
+          "start": 5.82,
+          "end": 10.540000000000001,
+          "raw": 0.0,
+          "t": 8.18,
+          "smooth": -0.166
+        },
+        {
+          "seg": 2,
+          "start": 10.540000000000001,
+          "end": 15.120000000000001,
+          "raw": 0.0,
+          "t": 12.83,
+          "smooth": -0.1479
+        },
+        {
+          "seg": 3,
+          "start": 15.120000000000001,
+          "end": 20.32,
+          "raw": -0.8965,
+          "t": 17.72,
+          "smooth": -0.1004
+        },
+        {
+          "seg": 4,
+          "start": 20.32,
+          "end": 24.580000000000002,
+          "raw": 0.0,
+          "t": 22.45,
+          "smooth": -0.0764
+        },
+        {
+          "seg": 5,
+          "start": 24.580000000000002,
+          "end": 28.82,
+          "raw": 0.0,
+          "t": 26.7,
+          "smooth": -0.0707
+        },
+        {
+          "seg": 6,
+          "start": 28.82,
+          "end": 32.6,
+          "raw": -0.439,
+          "t": 30.71,
+          "smooth": -0.049
+        },
+        {
+          "seg": 7,
+          "start": 32.6,
+          "end": 36.7,
+          "raw": 0.0,
+          "t": 34.65,
+          "smooth": 0.0057
+        },
+        {
+          "seg": 8,
+          "start": 36.7,
+          "end": 40.96,
+          "raw": 0.0,
+          "t": 38.83,
+          "smooth": 0.0592
+        },
+        {
+          "seg": 9,
+          "start": 40.96,
+          "end": 45.260000000000005,
+          "raw": 0.0,
+          "t": 43.11,
+          "smooth": 0.116
+        },
+        {
+          "seg": 10,
+          "start": 45.260000000000005,
+          "end": 48.980000000000004,
+          "raw": 0.6265,
+          "t": 47.12,
+          "smooth": 0.1495
+        },
+        {
+          "seg": 11,
+          "start": 49.1,
+          "end": 54.980000000000004,
+          "raw": 0.0,
+          "t": 52.04,
+          "smooth": 0.2645
+        },
+        {
+          "seg": 12,
+          "start": 54.98,
+          "end": 59.44,
+          "raw": 0.0,
+          "t": 57.21,
+          "smooth": 0.3161
+        },
+        {
+          "seg": 13,
+          "start": 59.44,
+          "end": 64.17999999999999,
+          "raw": 0.8359,
+          "t": 61.81,
+          "smooth": 0.364
+        },
+        {
+          "seg": 14,
+          "start": 64.17999999999999,
+          "end": 68.44,
+          "raw": 0.7858,
+          "t": 66.31,
+          "smooth": 0.3715
+        },
+        {
+          "seg": 15,
+          "start": 68.56,
+          "end": 72.96,
+          "raw": 0.8195,
+          "t": 70.76,
+          "smooth": 0.374
+        },
+        {
+          "seg": 16,
+          "start": 73.02,
+          "end": 76.88,
+          "raw": 0.0,
+          "t": 74.95,
+          "smooth": 0.374
+        },
+        {
+          "seg": 17,
+          "start": 76.88,
+          "end": 81.06,
+          "raw": 0.8673,
+          "t": 78.97,
+          "smooth": 0.3346
+        },
+        {
+          "seg": 18,
+          "start": 81.06,
+          "end": 85.56,
+          "raw": 0.5878,
+          "t": 83.31,
+          "smooth": 0.3338
+        },
+        {
+          "seg": 19,
+          "start": 85.56,
+          "end": 89.74000000000001,
+          "raw": 0.6134,
+          "t": 87.65,
+          "smooth": 0.3829
+        },
+        {
+          "seg": 20,
+          "start": 89.74000000000001,
+          "end": 96.04,
+          "raw": 0.0,
+          "t": 92.89,
+          "smooth": 0.3533
+        },
+        {
+          "seg": 21,
+          "start": 96.7,
+          "end": 102.38,
+          "raw": 0.0,
+          "t": 99.54,
+          "smooth": 0.265
+        },
+        {
+          "seg": 22,
+          "start": 102.38,
+          "end": 108.42,
+          "raw": 0.0,
+          "t": 105.4,
+          "smooth": 0.2172
+        },
+        {
+          "seg": 23,
+          "start": 108.42,
+          "end": 113.38,
+          "raw": 0.0,
+          "t": 110.9,
+          "smooth": 0.1582
+        },
+        {
+          "seg": 24,
+          "start": 113.48,
+          "end": 119.3,
+          "raw": 0.6874,
+          "t": 116.39,
+          "smooth": 0.1031
+        },
+        {
+          "seg": 25,
+          "start": 119.3,
+          "end": 124.96000000000001,
+          "raw": 0.0,
+          "t": 122.13,
+          "smooth": 0.0681
+        },
+        {
+          "seg": 26,
+          "start": 125.12,
+          "end": 131.66,
+          "raw": 0.0,
+          "t": 128.39,
+          "smooth": 0.0886
+        },
+        {
+          "seg": 27,
+          "start": 131.66,
+          "end": 138.4,
+          "raw": 0.0,
+          "t": 135.03,
+          "smooth": 0.0677
+        },
+        {
+          "seg": 28,
+          "start": 138.4,
+          "end": 143.78,
+          "raw": 0.0,
+          "t": 141.09,
+          "smooth": 0.081
+        },
+        {
+          "seg": 29,
+          "start": 144.12,
+          "end": 148.16,
+          "raw": 0.0,
+          "t": 146.14,
+          "smooth": 0.0502
+        },
+        {
+          "seg": 30,
+          "start": 148.16,
+          "end": 152.14000000000001,
+          "raw": 0.0,
+          "t": 150.15,
+          "smooth": 0.0135
+        },
+        {
+          "seg": 31,
+          "start": 152.14000000000001,
+          "end": 156.28,
+          "raw": 0.0,
+          "t": 154.21,
+          "smooth": 0.0489
+        },
+        {
+          "seg": 32,
+          "start": 156.28,
+          "end": 161.54000000000002,
+          "raw": 0.5984,
+          "t": 158.91,
+          "smooth": 0.0913
+        },
+        {
+          "seg": 33,
+          "start": 161.54,
+          "end": 166.35999999999999,
+          "raw": -0.8959,
+          "t": 163.95,
+          "smooth": 0.1287
+        },
+        {
+          "seg": 34,
+          "start": 166.42,
+          "end": 169.84,
+          "raw": 0.5772,
+          "t": 168.13,
+          "smooth": 0.1287
+        },
+        {
+          "seg": 35,
+          "start": 169.84,
+          "end": 174.45999999999998,
+          "raw": 0.0,
+          "t": 172.15,
+          "smooth": 0.1287
+        },
+        {
+          "seg": 36,
+          "start": 174.57999999999998,
+          "end": 180.18,
+          "raw": 0.0,
+          "t": 177.38,
+          "smooth": 0.0582
+        },
+        {
+          "seg": 37,
+          "start": 180.18,
+          "end": 187.92000000000002,
+          "raw": 0.5199,
+          "t": 184.05,
+          "smooth": 0.0556
+        },
+        {
+          "seg": 38,
+          "start": 187.98000000000002,
+          "end": 192.32,
+          "raw": 0.6455,
+          "t": 190.15,
+          "smooth": 0.0167
+        },
+        {
+          "seg": 39,
+          "start": 192.46,
+          "end": 197.44,
+          "raw": 0.0,
+          "t": 194.95,
+          "smooth": 0.0541
+        },
+        {
+          "seg": 40,
+          "start": 197.44,
+          "end": 202.36,
+          "raw": 0.0,
+          "t": 199.9,
+          "smooth": 0.0421
+        },
+        {
+          "seg": 41,
+          "start": 202.5,
+          "end": 207.56,
+          "raw": -0.8542,
+          "t": 205.03,
+          "smooth": 0.0216
+        },
+        {
+          "seg": 42,
+          "start": 207.56,
+          "end": 212.74,
+          "raw": 0.0,
+          "t": 210.15,
+          "smooth": -0.0284
+        },
+        {
+          "seg": 43,
+          "start": 212.74,
+          "end": 217.36,
+          "raw": 0.0,
+          "t": 215.05,
+          "smooth": -0.0529
+        },
+        {
+          "seg": 44,
+          "start": 217.44,
+          "end": 224.22,
+          "raw": 0.0,
+          "t": 220.83,
+          "smooth": -0.0856
+        },
+        {
+          "seg": 45,
+          "start": 224.22,
+          "end": 228.78,
+          "raw": 0.0,
+          "t": 226.5,
+          "smooth": -0.168
+        },
+        {
+          "seg": 46,
+          "start": 228.78,
+          "end": 233.5,
+          "raw": 0.0,
+          "t": 231.14,
+          "smooth": -0.177
+        },
+        {
+          "seg": 47,
+          "start": 233.5,
+          "end": 238.72,
+          "raw": -0.7962,
+          "t": 236.11,
+          "smooth": -0.1804
+        },
+        {
+          "seg": 48,
+          "start": 242.6,
+          "end": 248.02,
+          "raw": 0.5064,
+          "t": 245.31,
+          "smooth": -0.1582
+        },
+        {
+          "seg": 49,
+          "start": 248.02,
+          "end": 252.66,
+          "raw": 0.0,
+          "t": 250.34,
+          "smooth": -0.158
+        },
+        {
+          "seg": 50,
+          "start": 252.66,
+          "end": 256.88,
+          "raw": -0.9528,
+          "t": 254.77,
+          "smooth": -0.158
+        },
+        {
+          "seg": 51,
+          "start": 256.88,
+          "end": 260.94,
+          "raw": 0.0,
+          "t": 258.91,
+          "smooth": -0.105
+        },
+        {
+          "seg": 52,
+          "start": 260.94,
+          "end": 265.76,
+          "raw": -0.7089,
+          "t": 263.35,
+          "smooth": -0.0428
+        },
+        {
+          "seg": 53,
+          "start": 265.88,
+          "end": 269.94,
+          "raw": 0.0,
+          "t": 267.91,
+          "smooth": 0.0847
+        },
+        {
+          "seg": 54,
+          "start": 269.94,
+          "end": 273.66,
+          "raw": 0.0,
+          "t": 271.8,
+          "smooth": 0.1247
+        },
+        {
+          "seg": 55,
+          "start": 273.66,
+          "end": 278.4,
+          "raw": 0.0,
+          "t": 276.03,
+          "smooth": 0.0987
+        },
+        {
+          "seg": 56,
+          "start": 278.4,
+          "end": 285.72,
+          "raw": 0.0,
+          "t": 282.06,
+          "smooth": 0.1393
+        },
+        {
+          "seg": 57,
+          "start": 285.72,
+          "end": 289.48,
+          "raw": 0.931,
+          "t": 287.6,
+          "smooth": 0.2647
+        },
+        {
+          "seg": 58,
+          "start": 289.48,
+          "end": 293.24,
+          "raw": 0.7587,
+          "t": 291.36,
+          "smooth": 0.3039
+        },
+        {
+          "seg": 59,
+          "start": 293.24,
+          "end": 296.66,
+          "raw": 0.913,
+          "t": 294.95,
+          "smooth": 0.3787
+        },
+        {
+          "seg": 60,
+          "start": 296.8,
+          "end": 301.62,
+          "raw": 0.5324,
+          "t": 299.21,
+          "smooth": 0.3484
+        },
+        {
+          "seg": 61,
+          "start": 301.62,
+          "end": 305.48,
+          "raw": 0.0,
+          "t": 303.55,
+          "smooth": 0.3228
+        },
+        {
+          "seg": 62,
+          "start": 305.48,
+          "end": 310.12,
+          "raw": 0.5159,
+          "t": 307.8,
+          "smooth": 0.3017
+        },
+        {
+          "seg": 63,
+          "start": 310.12,
+          "end": 315.28000000000003,
+          "raw": 0.6817,
+          "t": 312.7,
+          "smooth": 0.2558
+        },
+        {
+          "seg": 64,
+          "start": 315.28,
+          "end": 321.09999999999997,
+          "raw": 0.5511,
+          "t": 318.19,
+          "smooth": 0.2076
+        },
+        {
+          "seg": 65,
+          "start": 321.21999999999997,
+          "end": 325.97999999999996,
+          "raw": 0.5335,
+          "t": 323.6,
+          "smooth": 0.0658
+        },
+        {
+          "seg": 66,
+          "start": 325.97999999999996,
+          "end": 330.91999999999996,
+          "raw": -0.8936,
+          "t": 328.45,
+          "smooth": 0.0567
+        },
+        {
+          "seg": 67,
+          "start": 330.91999999999996,
+          "end": 334.84,
+          "raw": 0.0,
+          "t": 332.88,
+          "smooth": 0.0362
+        },
+        {
+          "seg": 68,
+          "start": 334.88,
+          "end": 340.14,
+          "raw": -0.4355,
+          "t": 337.51,
+          "smooth": 0.0743
+        },
+        {
+          "seg": 69,
+          "start": 340.14,
+          "end": 343.58,
+          "raw": -0.6744,
+          "t": 341.86,
+          "smooth": 0.0731
+        },
+        {
+          "seg": 70,
+          "start": 343.68,
+          "end": 348.8,
+          "raw": 0.0,
+          "t": 346.24,
+          "smooth": -0.0263
+        },
+        {
+          "seg": 71,
+          "start": 348.8,
+          "end": 353.5,
+          "raw": -0.8837,
+          "t": 351.15,
+          "smooth": -0.0711
+        },
+        {
+          "seg": 72,
+          "start": 353.5,
+          "end": 357.5,
+          "raw": 0.8045,
+          "t": 355.5,
+          "smooth": -0.1092
+        },
+        {
+          "seg": 73,
+          "start": 357.5,
+          "end": 362.24,
+          "raw": 0.0,
+          "t": 359.87,
+          "smooth": -0.0554
+        },
+        {
+          "seg": 74,
+          "start": 362.24,
+          "end": 366.94,
+          "raw": 0.727,
+          "t": 364.59,
+          "smooth": -0.0066
+        },
+        {
+          "seg": 75,
+          "start": 366.94,
+          "end": 371.6,
+          "raw": 0.6511,
+          "t": 369.27,
+          "smooth": 0.0536
+        },
+        {
+          "seg": 76,
+          "start": 371.6,
+          "end": 375.82,
+          "raw": -0.7773,
+          "t": 373.71,
+          "smooth": 0.1232
+        },
+        {
+          "seg": 77,
+          "start": 375.82,
+          "end": 380.54,
+          "raw": 0.0,
+          "t": 378.18,
+          "smooth": 0.1682
+        },
+        {
+          "seg": 78,
+          "start": 380.58,
+          "end": 385.72,
+          "raw": 0.0,
+          "t": 383.15,
+          "smooth": 0.2747
+        },
+        {
+          "seg": 79,
+          "start": 385.72,
+          "end": 391.98,
+          "raw": 0.0,
+          "t": 388.85,
+          "smooth": 0.2377
+        },
+        {
+          "seg": 80,
+          "start": 391.98,
+          "end": 396.82,
+          "raw": 0.7585,
+          "t": 394.4,
+          "smooth": 0.2397
+        },
+        {
+          "seg": 81,
+          "start": 396.82,
+          "end": 401.18,
+          "raw": 0.0,
+          "t": 399.0,
+          "smooth": 0.1864
+        },
+        {
+          "seg": 82,
+          "start": 401.18,
+          "end": 406.96,
+          "raw": 0.5855,
+          "t": 404.07,
+          "smooth": 0.1504
+        },
+        {
+          "seg": 83,
+          "start": 406.96,
+          "end": 412.46,
+          "raw": 0.6536,
+          "t": 409.71,
+          "smooth": 0.1644
+        },
+        {
+          "seg": 84,
+          "start": 412.58,
+          "end": 416.02,
+          "raw": -0.5162,
+          "t": 414.3,
+          "smooth": 0.1643
+        },
+        {
+          "seg": 85,
+          "start": 416.02,
+          "end": 421.03999999999996,
+          "raw": 0.7707,
+          "t": 418.53,
+          "smooth": 0.1358
+        },
+        {
+          "seg": 86,
+          "start": 421.03999999999996,
+          "end": 426.5,
+          "raw": 0.0,
+          "t": 423.77,
+          "smooth": 0.0457
+        },
+        {
+          "seg": 87,
+          "start": 426.5,
+          "end": 431.04,
+          "raw": 0.0,
+          "t": 428.77,
+          "smooth": -0.0558
+        },
+        {
+          "seg": 88,
+          "start": 431.1,
+          "end": 434.72,
+          "raw": -0.8059,
+          "t": 432.91,
+          "smooth": -0.1114
+        },
+        {
+          "seg": 89,
+          "start": 434.72,
+          "end": 438.26,
+          "raw": 0.0,
+          "t": 436.49,
+          "smooth": -0.1465
+        },
+        {
+          "seg": 90,
+          "start": 438.26,
+          "end": 441.88,
+          "raw": 0.0,
+          "t": 440.07,
+          "smooth": -0.1851
+        },
+        {
+          "seg": 91,
+          "start": 441.88,
+          "end": 446.38,
+          "raw": 0.0,
+          "t": 444.13,
+          "smooth": -0.1975
+        },
+        {
+          "seg": 92,
+          "start": 446.38,
+          "end": 451.26,
+          "raw": -0.7924,
+          "t": 448.82,
+          "smooth": -0.2172
+        },
+        {
+          "seg": 93,
+          "start": 451.26,
+          "end": 456.9,
+          "raw": -0.7438,
+          "t": 454.08,
+          "smooth": -0.2463
+        },
+        {
+          "seg": 94,
+          "start": 456.9,
+          "end": 461.8,
+          "raw": -0.7646,
+          "t": 459.35,
+          "smooth": -0.2463
+        },
+        {
+          "seg": 95,
+          "start": 461.8,
+          "end": 465.9,
+          "raw": 0.0,
+          "t": 463.85,
+          "smooth": -0.209
+        },
+        {
+          "seg": 96,
+          "start": 465.92,
+          "end": 469.36,
+          "raw": 0.0,
+          "t": 467.64,
+          "smooth": -0.1973
+        },
+        {
+          "seg": 97,
+          "start": 469.36,
+          "end": 473.8,
+          "raw": 0.0,
+          "t": 471.58,
+          "smooth": -0.1973
+        },
+        {
+          "seg": 98,
+          "start": 473.8,
+          "end": 477.86,
+          "raw": 0.0,
+          "t": 475.83,
+          "smooth": -0.1848
+        },
+        {
+          "seg": 99,
+          "start": 477.86,
+          "end": 483.02000000000004,
+          "raw": 0.0,
+          "t": 480.44,
+          "smooth": -0.0747
+        },
+        {
+          "seg": 100,
+          "start": 483.14,
+          "end": 487.6,
+          "raw": 0.0,
+          "t": 485.37,
+          "smooth": 0.0631
+        },
+        {
+          "seg": 101,
+          "start": 487.6,
+          "end": 491.0,
+          "raw": 0.0,
+          "t": 489.3,
+          "smooth": 0.1704
+        },
+        {
+          "seg": 102,
+          "start": 491.0,
+          "end": 495.08000000000004,
+          "raw": 0.0,
+          "t": 493.04,
+          "smooth": 0.2391
+        },
+        {
+          "seg": 103,
+          "start": 495.08000000000004,
+          "end": 499.62,
+          "raw": 0.0,
+          "t": 497.35,
+          "smooth": 0.2746
+        },
+        {
+          "seg": 104,
+          "start": 499.62,
+          "end": 504.78000000000003,
+          "raw": 0.0,
+          "t": 502.2,
+          "smooth": 0.3335
+        },
+        {
+          "seg": 105,
+          "start": 504.78,
+          "end": 510.02,
+          "raw": 0.7118,
+          "t": 507.4,
+          "smooth": 0.378
+        },
+        {
+          "seg": 106,
+          "start": 510.02,
+          "end": 515.48,
+          "raw": 0.9218,
+          "t": 512.75,
+          "smooth": 0.3848
+        },
+        {
+          "seg": 107,
+          "start": 515.48,
+          "end": 520.8399999999999,
+          "raw": 0.8766,
+          "t": 518.16,
+          "smooth": 0.4594
+        },
+        {
+          "seg": 108,
+          "start": 520.8399999999999,
+          "end": 525.5799999999999,
+          "raw": 0.3858,
+          "t": 523.21,
+          "smooth": 0.5277
+        },
+        {
+          "seg": 109,
+          "start": 525.5799999999999,
+          "end": 530.8399999999999,
+          "raw": 0.6512,
+          "t": 528.21,
+          "smooth": 0.5887
+        },
+        {
+          "seg": 110,
+          "start": 530.84,
+          "end": 535.9200000000001,
+          "raw": 0.9223,
+          "t": 533.38,
+          "smooth": 0.5912
+        },
+        {
+          "seg": 111,
+          "start": 535.9200000000001,
+          "end": 540.38,
+          "raw": -0.5183,
+          "t": 538.15,
+          "smooth": 0.5151
+        },
+        {
+          "seg": 112,
+          "start": 540.48,
+          "end": 545.46,
+          "raw": 0.8433,
+          "t": 542.97,
+          "smooth": 0.4482
+        },
+        {
+          "seg": 113,
+          "start": 545.46,
+          "end": 549.84,
+          "raw": 0.8252,
+          "t": 547.65,
+          "smooth": 0.3772
+        },
+        {
+          "seg": 114,
+          "start": 549.9200000000001,
+          "end": 554.8000000000001,
+          "raw": 0.8102,
+          "t": 552.36,
+          "smooth": 0.2804
+        },
+        {
+          "seg": 115,
+          "start": 554.9200000000001,
+          "end": 558.88,
+          "raw": 0.6947,
+          "t": 556.9,
+          "smooth": 0.217
+        },
+        {
+          "seg": 116,
+          "start": 558.88,
+          "end": 562.56,
+          "raw": 0.0,
+          "t": 560.72,
+          "smooth": 0.1751
+        },
+        {
+          "seg": 117,
+          "start": 562.72,
+          "end": 566.8,
+          "raw": -0.6222,
+          "t": 564.76,
+          "smooth": 0.0901
+        },
+        {
+          "seg": 118,
+          "start": 566.8,
+          "end": 571.02,
+          "raw": 0.0,
+          "t": 568.91,
+          "smooth": 0.0925
+        },
+        {
+          "seg": 119,
+          "start": 571.16,
+          "end": 575.12,
+          "raw": 0.0,
+          "t": 573.14,
+          "smooth": 0.0874
+        },
+        {
+          "seg": 120,
+          "start": 575.12,
+          "end": 579.66,
+          "raw": 0.0,
+          "t": 577.39,
+          "smooth": 0.0604
+        },
+        {
+          "seg": 121,
+          "start": 579.66,
+          "end": 584.26,
+          "raw": -0.8759,
+          "t": 581.96,
+          "smooth": 0.0413
+        },
+        {
+          "seg": 122,
+          "start": 584.26,
+          "end": 588.86,
+          "raw": 0.0,
+          "t": 586.56,
+          "smooth": -0.0169
+        },
+        {
+          "seg": 123,
+          "start": 588.86,
+          "end": 592.52,
+          "raw": 0.0,
+          "t": 590.69,
+          "smooth": -0.0441
+        },
+        {
+          "seg": 124,
+          "start": 592.6,
+          "end": 596.9399999999999,
+          "raw": -0.6324,
+          "t": 594.77,
+          "smooth": -0.0225
+        },
+        {
+          "seg": 125,
+          "start": 597.06,
+          "end": 601.0,
+          "raw": 0.5572,
+          "t": 599.03,
+          "smooth": -0.0012
+        },
+        {
+          "seg": 126,
+          "start": 601.3,
+          "end": 605.18,
+          "raw": 0.0,
+          "t": 603.24,
+          "smooth": -0.0012
+        },
+        {
+          "seg": 127,
+          "start": 605.18,
+          "end": 610.28,
+          "raw": 0.8838,
+          "t": 607.73,
+          "smooth": -0.0012
+        },
+        {
+          "seg": 128,
+          "start": 610.28,
+          "end": 616.0,
+          "raw": 0.0,
+          "t": 613.14,
+          "smooth": 0.0029
+        },
+        {
+          "seg": 129,
+          "start": 616.0,
+          "end": 622.18,
+          "raw": 0.0,
+          "t": 619.09,
+          "smooth": 0.0395
+        },
+        {
+          "seg": 130,
+          "start": 622.18,
+          "end": 626.86,
+          "raw": 0.0,
+          "t": 624.52,
+          "smooth": 0.0385
+        },
+        {
+          "seg": 131,
+          "start": 626.86,
+          "end": 631.26,
+          "raw": 0.0,
+          "t": 629.06,
+          "smooth": 0.1148
+        },
+        {
+          "seg": 132,
+          "start": 631.3,
+          "end": 634.74,
+          "raw": 0.0,
+          "t": 633.02,
+          "smooth": 0.1324
+        },
+        {
+          "seg": 133,
+          "start": 634.74,
+          "end": 640.14,
+          "raw": 0.0,
+          "t": 637.44,
+          "smooth": 0.1024
+        },
+        {
+          "seg": 134,
+          "start": 640.14,
+          "end": 645.04,
+          "raw": -0.9357,
+          "t": 642.59,
+          "smooth": 0.0606
+        },
+        {
+          "seg": 135,
+          "start": 645.04,
+          "end": 650.14,
+          "raw": 0.7351,
+          "t": 647.59,
+          "smooth": 0.0606
+        },
+        {
+          "seg": 136,
+          "start": 650.14,
+          "end": 654.3199999999999,
+          "raw": -0.5324,
+          "t": 652.23,
+          "smooth": 0.0607
+        },
+        {
+          "seg": 137,
+          "start": 654.3199999999999,
+          "end": 659.08,
+          "raw": 0.9118,
+          "t": 656.7,
+          "smooth": 0.0658
+        },
+        {
+          "seg": 138,
+          "start": 659.08,
+          "end": 663.38,
+          "raw": 0.5469,
+          "t": 661.23,
+          "smooth": 0.1345
+        },
+        {
+          "seg": 139,
+          "start": 663.38,
+          "end": 667.22,
+          "raw": 0.0,
+          "t": 665.3,
+          "smooth": 0.1925
+        },
+        {
+          "seg": 140,
+          "start": 667.22,
+          "end": 672.08,
+          "raw": 0.0,
+          "t": 669.65,
+          "smooth": 0.2354
+        },
+        {
+          "seg": 141,
+          "start": 672.1800000000001,
+          "end": 677.4200000000001,
+          "raw": 0.0,
+          "t": 674.8,
+          "smooth": 0.3887
+        },
+        {
+          "seg": 142,
+          "start": 677.4200000000001,
+          "end": 681.6600000000001,
+          "raw": 0.0,
+          "t": 679.54,
+          "smooth": 0.4064
+        },
+        {
+          "seg": 143,
+          "start": 681.7,
+          "end": 686.36,
+          "raw": 0.0,
+          "t": 684.03,
+          "smooth": 0.5023
+        },
+        {
+          "seg": 144,
+          "start": 686.36,
+          "end": 691.8000000000001,
+          "raw": 0.9062,
+          "t": 689.08,
+          "smooth": 0.5056
+        },
+        {
+          "seg": 145,
+          "start": 691.8000000000001,
+          "end": 694.9200000000001,
+          "raw": 0.9254,
+          "t": 693.36,
+          "smooth": 0.5293
+        },
+        {
+          "seg": 146,
+          "start": 697.22,
+          "end": 727.2,
+          "raw": 0.8661,
+          "t": 712.21,
+          "smooth": 0.7913
+        }
+      ],
+      "turns": [
+        {
+          "seg": 19,
+          "t": 87.65,
+          "kind": "peak",
+          "smooth": 0.3829,
+          "prominence": 0.5759
+        },
+        {
+          "seg": 93,
+          "t": 454.08,
+          "kind": "dip",
+          "smooth": -0.2463,
+          "prominence": 0.6292
+        },
+        {
+          "seg": 110,
+          "t": 533.38,
+          "kind": "peak",
+          "smooth": 0.5912,
+          "prominence": 0.6353
+        }
+      ]
+    },
+    "moments": [
+      {
+        "seg": 6,
+        "start": 28.82,
+        "end": 32.6,
+        "time": "0:28",
+        "conflict": 0.8,
+        "flagged": true,
+        "damped": false,
+        "valences": {
+          "transcript": "NEGATIVE",
+          "facial": "NEGATIVE",
+          "vocal": "POSITIVE",
+          "comment": "POSITIVE"
+        },
+        "text": "not getting paid by Nike. That would be lovely because I've got bills to pay, but I'm not getting"
+      },
+      {
+        "seg": 33,
+        "start": 161.54,
+        "end": 166.35999999999999,
+        "time": "2:41",
+        "conflict": 0.8,
+        "flagged": true,
+        "damped": false,
+        "valences": {
+          "transcript": "NEGATIVE",
+          "facial": "NEGATIVE",
+          "vocal": "NEUTRAL",
+          "comment": "POSITIVE"
+        },
+        "text": "similar to AlphaFly 3, which I know has annoyed some of you. We've got sawtooth laces on the shoe,"
+      },
+      {
+        "seg": 52,
+        "start": 260.94,
+        "end": 265.76,
+        "time": "4:20",
+        "conflict": 0.8,
+        "flagged": true,
+        "damped": false,
+        "valences": {
+          "transcript": "NEGATIVE",
+          "facial": "NEGATIVE",
+          "vocal": "POSITIVE",
+          "comment": "POSITIVE"
+        },
+        "text": "they all squeak. And this does the same. But to be fair, in the race today, I didn't really notice."
+      }
+    ],
+    "signs": {
+      "title": "Signs of a commercial interest or a mismatch",
+      "disclaimer": "These are signs, not proof. A creator can disclose a sponsor and still review honestly, and an undisclosed deal would leave none of these marks.",
+      "signs": [
+        {
+          "id": "S1",
+          "kind": "fact",
+          "state": "present",
+          "name": "The creator declared a paid promotion",
+          "evidence": {
+            "label": false,
+            "description": [
+              {
+                "category": "disclosure",
+                "pattern": "paid_partnership",
+                "match": "paid promotion",
+                "context": "ether they're worth the price. No sponsorship, no paid promotion, no gifted product. Just my honest opinion. In t"
+              }
+            ]
+          }
+        },
+        {
+          "id": "S2",
+          "kind": "fact",
+          "state": "absent",
+          "name": "Sponsor, code, affiliate or gift wording in what was said",
+          "evidence": {
+            "speech": []
+          }
+        },
+        {
+          "id": "S3",
+          "kind": "fact",
+          "state": "present",
+          "name": "Affiliate links, discount codes or a gifted unit in the description",
+          "evidence": {
+            "description": [
+              {
+                "category": "discount_code",
+                "pattern": "percent_off",
+                "match": "15% off",
+                "context": "A6b 💸 Exclusive discount at SportsShoes.com: Get 15% off at Sportsshoes.com → www.fordyruns.com/…"
+              }
+            ]
+          }
+        },
+        {
+          "id": "S4",
+          "kind": "inference",
+          "state": "absent",
+          "name": "The reviewer was measurably warmer than the audience",
+          "evidence": {
+            "agreement": {
+              "gap": 0.09394362266257386,
+              "se": 0.11816166712900032,
+              "low": -0.13764898926347713,
+              "high": 0.32553623458862485,
+              "call": "no_clear_difference"
+            }
+          }
+        },
+        {
+          "id": "S5",
+          "kind": "inference",
+          "state": "present",
+          "name": "Positive words at moments the controller flagged",
+          "evidence": {
+            "positive_flagged": [
+              82,
+              144
+            ],
+            "controller_flag": []
+          }
+        }
+      ],
+      "present": 3,
+      "checked": 5
+    }
+  },
+  "reading": {
+    "claims": [
+      {
+        "seg": 12,
+        "time": "0:54",
+        "start": 54.98,
+        "aspect": "release",
+        "stance": "neutral",
+        "claim": "The shoe will release on October 29th.",
+        "quote": "The shoe will release properly on October the 29th,",
+        "seg_end": 13,
+        "topic": "T2"
+      },
+      {
+        "seg": 21,
+        "time": "1:36",
+        "start": 96.7,
+        "aspect": "design",
+        "stance": "neutral",
+        "claim": "The shoe has a 30% lighter air zoom unit.",
+        "quote": "The shoe comes again with the air zoom unit up the front, which is apparently 30% lighter.",
+        "seg_end": 22,
+        "topic": "T2"
+      },
+      {
+        "seg": 22,
+        "time": "1:42",
+        "start": 102.38,
+        "aspect": "weight",
+        "stance": "neutral",
+        "claim": "The shoe is 5% lighter than the previous model.",
+        "quote": "The shoe overall is 5% lighter versus the previous model.",
+        "topic": "T1"
+      },
+      {
+        "seg": 23,
+        "time": "1:48",
+        "start": 108.42,
+        "aspect": "materials",
+        "stance": "neutral",
+        "claim": "The weight reduction comes from the new Zoom X LT foam.",
+        "quote": "A lot of that weight reduction does come from the new Zoom X LT foam that we have on the top layer.",
+        "topic": "T2"
+      },
+      {
+        "seg": 24,
+        "time": "1:53",
+        "start": 113.48,
+        "aspect": "performance",
+        "stance": "neutral",
+        "claim": "The new foam has a 10% better return than normal Zoom X.",
+        "quote": "This foam apparently has got a 10% better return versus normal Zoom X.",
+        "topic": "T1"
+      },
+      {
+        "seg": 26,
+        "time": "2:05",
+        "start": 125.12,
+        "aspect": "fit",
+        "stance": "neutral",
+        "claim": "The shoe fits true to size.",
+        "quote": "My UK 9.5 weighs 213 grams, and it fits true to size.",
+        "topic": "T7"
+      },
+      {
+        "seg": 34,
+        "time": "2:46",
+        "start": 166.42,
+        "aspect": "lockdown",
+        "stance": "praise",
+        "claim": "The shoe has good lockdown due to sawtooth laces.",
+        "quote": "so it helps with lockdown",
+        "topic": "T7"
+      },
+      {
+        "seg": 36,
+        "time": "2:54",
+        "start": 174.57999999999998,
+        "aspect": "price",
+        "stance": "praise",
+        "claim": "The price of the AlphaFly 4 has been reduced.",
+        "quote": "So the AlphaFly 4 has been reduced in terms of price",
+        "topic": "T4"
+      },
+      {
+        "seg": 37,
+        "time": "3:00",
+        "start": 180.18,
+        "aspect": "price",
+        "stance": "praise",
+        "claim": "The price of the AlphaFly 4 is now £255.",
+        "quote": "down to £255",
+        "topic": "T4"
+      },
+      {
+        "seg": 41,
+        "time": "3:22",
+        "start": 202.5,
+        "aspect": "price",
+        "stance": "criticism",
+        "claim": "The new shoe from Nike, the Apex, will likely cost over £300.",
+        "quote": "They're going after that Evo market, okay",
+        "topic": "T4"
+      },
+      {
+        "seg": 63,
+        "time": "5:10",
+        "start": 310.12,
+        "aspect": "stability",
+        "stance": "praise",
+        "claim": "The AlphaFly 4 has good stability.",
+        "quote": "It performed very well",
+        "topic": "T1"
+      },
+      {
+        "seg": 63,
+        "time": "5:10",
+        "start": 310.12,
+        "aspect": "stability",
+        "stance": "praise",
+        "claim": "The AlphaFly 4 is more stable than the AP3.",
+        "quote": "We had a lot of pothole speed bumps and all",
+        "topic": "T1"
+      },
+      {
+        "seg": 68,
+        "time": "5:34",
+        "start": 334.88,
+        "aspect": "arch issues",
+        "stance": "praise",
+        "claim": "The reviewer had no arch issues.",
+        "quote": "I had no arch issues. I had no rubbing on the arch",
+        "topic": "T7"
+      },
+      {
+        "seg": 70,
+        "time": "5:43",
+        "start": 343.68,
+        "aspect": "blistering",
+        "stance": "praise",
+        "claim": "The reviewer did not experience blistering on the arch.",
+        "quote": "but I've not. So I can tell you that for me and the way my feet are, I haven't had the arch issue",
+        "topic": "T7"
+      },
+      {
+        "seg": 74,
+        "time": "6:02",
+        "start": 362.24,
+        "aspect": "cosmetics",
+        "stance": "praise",
+        "claim": "The reviewer thinks the upper is an improvement.",
+        "quote": "I do think that it's an improvement versus the previous model",
+        "topic": "T7"
+      },
+      {
+        "seg": 74,
+        "time": "6:02",
+        "start": 362.24,
+        "aspect": "breathability",
+        "stance": "praise",
+        "claim": "The reviewer found the upper to be breathable.",
+        "quote": "It was really nice. I say no issues in terms of rubbing or anything like that. Nice and breathable",
+        "seg_end": 75,
+        "topic": "T0"
+      },
+      {
+        "seg": 82,
+        "time": "6:41",
+        "start": 401.18,
+        "aspect": "foam",
+        "stance": "praise",
+        "claim": "The reviewer found the foam to be lighter, softer, and more responsive.",
+        "quote": "it feels a bit softer and a bit more responsive than I remember",
+        "topic": "T0"
+      },
+      {
+        "seg": 83,
+        "time": "6:46",
+        "start": 406.96,
+        "aspect": "weight",
+        "stance": "criticism",
+        "claim": "The reviewer thinks the shoe is too heavy.",
+        "quote": "despite the shoe being 213 grams, which I'll come on to because it is a problem really when you think about it",
+        "seg_end": 84,
+        "topic": "T1"
+      },
+      {
+        "seg": 92,
+        "time": "7:26",
+        "start": 446.38,
+        "aspect": "airpods",
+        "stance": "criticism",
+        "claim": "The reviewer thinks Nike should remove the AirPods.",
+        "quote": "I think Nike need to scrap these AirPod things",
+        "topic": "T3"
+      },
+      {
+        "seg": 98,
+        "time": "7:53",
+        "start": 473.8,
+        "aspect": "innovation",
+        "stance": "criticism",
+        "claim": "The reviewer thinks Nike's innovation is not top-end.",
+        "quote": "I don't think now that it's really top end",
+        "seg_end": 99,
+        "topic": "T1"
+      },
+      {
+        "seg": 105,
+        "time": "8:24",
+        "start": 504.78,
+        "aspect": "performance",
+        "stance": "praise",
+        "claim": "The reviewer finds the shoe performs much better.",
+        "quote": "what I would say in terms of performance for me, this performs much better",
+        "topic": "T1"
+      },
+      {
+        "seg": 107,
+        "time": "8:35",
+        "start": 515.48,
+        "aspect": "comfort",
+        "stance": "praise",
+        "claim": "The reviewer finds the shoe comfortable.",
+        "quote": "I didn't notice the weight and I felt great bouncing off of this",
+        "topic": "T0"
+      },
+      {
+        "seg": 108,
+        "time": "8:40",
+        "start": 520.8399999999999,
+        "aspect": "design",
+        "stance": "praise",
+        "claim": "The reviewer thinks the outside is brilliant.",
+        "quote": "I thought the outside was brilliant",
+        "topic": "T2"
+      },
+      {
+        "seg": 108,
+        "time": "8:40",
+        "start": 520.8399999999999,
+        "aspect": "stability",
+        "stance": "praise",
+        "claim": "The reviewer finds the shoe stable.",
+        "quote": "I thought the stability was good",
+        "seg_end": 109,
+        "topic": "T1"
+      },
+      {
+        "seg": 114,
+        "time": "9:09",
+        "start": 549.9200000000001,
+        "aspect": "materials",
+        "stance": "praise",
+        "claim": "The reviewer thinks the LT foam is good.",
+        "quote": "This LT foam is good",
+        "topic": "T2"
+      },
+      {
+        "seg": 115,
+        "time": "9:14",
+        "start": 554.9200000000001,
+        "aspect": "value",
+        "stance": "praise",
+        "claim": "The reviewer thinks the price is reasonable.",
+        "quote": "I think they've actually done a good update here",
+        "topic": "T4"
+      },
+      {
+        "seg": 117,
+        "time": "9:22",
+        "start": 562.72,
+        "aspect": "weight",
+        "stance": "criticism",
+        "claim": "The reviewer thinks the shoe is too heavy.",
+        "quote": "the problem we have with the Alpha Fly, as I said to you, is the weight",
+        "seg_end": 118,
+        "topic": "T1"
+      },
+      {
+        "seg": 123,
+        "time": "9:48",
+        "start": 588.86,
+        "aspect": "innovation",
+        "stance": "criticism",
+        "claim": "The reviewer thinks Nike needs to innovate more.",
+        "quote": "I think, look, it's going to divide opinion, the Alpha Fly 4. I think some of you are going to want more",
+        "seg_end": 124,
+        "topic": "T1"
+      },
+      {
+        "seg": 134,
+        "time": "10:40",
+        "start": 640.14,
+        "aspect": "hype",
+        "stance": "criticism",
+        "claim": "Adidas A6 are doing better than Nike.",
+        "quote": "they're actually killing Nike",
+        "topic": "T2"
+      },
+      {
+        "seg": 134,
+        "time": "10:40",
+        "start": 640.14,
+        "aspect": "innovation",
+        "stance": "criticism",
+        "claim": "Nike's technology is old.",
+        "quote": "When you compare it against what Adidas A6 are doing",
+        "topic": "T1"
+      },
+      {
+        "seg": 134,
+        "time": "10:40",
+        "start": 640.14,
+        "aspect": "innovation",
+        "stance": "criticism",
+        "claim": "Nike is struggling.",
+        "quote": "And you can see why Nike are struggling",
+        "seg_end": 135,
+        "topic": "T1"
+      },
+      {
+        "seg": 135,
+        "time": "10:45",
+        "start": 645.04,
+        "aspect": "performance",
+        "stance": "praise",
+        "claim": "The update is good.",
+        "quote": "I think it's a good update",
+        "topic": "T1"
+      },
+      {
+        "seg": 137,
+        "time": "10:54",
+        "start": 654.3199999999999,
+        "aspect": "performance",
+        "stance": "praise",
+        "claim": "The shoe is good.",
+        "quote": "I'm really happy with the updates",
+        "topic": "T1"
+      },
+      {
+        "seg": 144,
+        "time": "11:26",
+        "start": 686.36,
+        "aspect": "performance",
+        "stance": "praise",
+        "claim": "The shoe is a real contender.",
+        "quote": "this is a real contender",
+        "topic": "T1"
+      },
+      {
+        "seg": 144,
+        "time": "11:26",
+        "start": 686.36,
+        "aspect": "performance",
+        "stance": "praise",
+        "claim": "The shoe is enjoyable to run in.",
+        "quote": "I really enjoyed running in this shoe today",
+        "seg_end": 145,
+        "topic": "T1"
+      }
+    ],
+    "topics": [
+      {
+        "id": "T0",
+        "name": "Cushioning",
+        "aspects": [
+          "breathability",
+          "comfort",
+          "foam"
+        ],
+        "reviewer": {
+          "claims": 3,
+          "stances": {
+            "praise": 3,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 18.15,
+            "NEUTRAL": 0.0,
+            "NEGATIVE": 0.0
+          },
+          "segments": [
+            74,
+            75,
+            82,
+            107
+          ],
+          "lean": 1.0,
+          "se": 0.0,
+          "call": "positive"
+        },
+        "audience": {
+          "comments": 6,
+          "counts": {
+            "POSITIVE": 1,
+            "NEUTRAL": 3,
+            "NEGATIVE": 2
+          },
+          "lean": -0.16666666666666666,
+          "se": 0.3073181485764296,
+          "call": "balanced",
+          "questions": 1,
+          "examples": [
+            {
+              "i": 28,
+              "quote": "a little powder in the AirPod chambers fixed the squeak in my Vomero Premiums",
+              "label": "NEUTRAL",
+              "likes": 3
+            },
+            {
+              "i": 77,
+              "quote": "Do you think this version 4 will have the same horrible durability  that version 3 have? After 200 km the foam in the back is fallen apart, with rolls and cracks. Or this new foam will have more durability, like the adios pro 4? Thanks",
+              "label": "NEUTRAL",
+              "likes": 2
+            },
+            {
+              "i": 56,
+              "quote": "I got the AF3 and th3 noise does not bother me at all",
+              "label": "POSITIVE",
+              "likes": 0
+            }
+          ]
+        },
+        "agreement": {
+          "gap": 1.1666666666666667,
+          "se": 0.3073181485764296,
+          "low": 0.5643341636613355,
+          "high": 1.768999169671998,
+          "call": "reviewer_warmer"
+        }
+      },
+      {
+        "id": "T1",
+        "name": "Performance",
+        "aspects": [
+          "performance",
+          "innovation",
+          "stability",
+          "weight"
+        ],
+        "reviewer": {
+          "claims": 16,
+          "stances": {
+            "praise": 8,
+            "criticism": 6,
+            "mixed": 0,
+            "neutral": 2
+          },
+          "seconds": {
+            "POSITIVE": 47.77,
+            "NEUTRAL": 20.12,
+            "NEGATIVE": 14.31
+          },
+          "segments": [
+            22,
+            24,
+            63,
+            83,
+            84,
+            98,
+            99,
+            105,
+            108,
+            109,
+            117,
+            118,
+            123,
+            124,
+            134,
+            135,
+            137,
+            144,
+            145
+          ],
+          "lean": 0.40705596107056385,
+          "se": 0.17833620191824362,
+          "call": "positive"
+        },
+        "audience": {
+          "comments": 36,
+          "counts": {
+            "POSITIVE": 19,
+            "NEUTRAL": 8,
+            "NEGATIVE": 9
+          },
+          "lean": 0.2777777777777778,
+          "se": 0.1414836975919959,
+          "call": "positive",
+          "questions": 6,
+          "examples": [
+            {
+              "i": 9,
+              "quote": "I could close my eyes and tell where a af3 person was coming from lol",
+              "label": "NEUTRAL",
+              "likes": 11
+            },
+            {
+              "i": 22,
+              "quote": "I believe they have tried to make it a more usable model for average runners, improving it under thst point if vies as well, as they're going to come out with a super racers. The new model is going to be the one competing with the other top shoes",
+              "label": "POSITIVE",
+              "likes": 7
+            },
+            {
+              "i": 4,
+              "quote": "I just did the Copenhagen HM and I could clearly identify every single alphafly user that came from behind, even with all the surrounding noise from runners/spectators. It's ridiculous lol.",
+              "label": "POSITIVE",
+              "likes": 3
+            }
+          ]
+        },
+        "agreement": {
+          "gap": 0.12927818329278606,
+          "se": 0.22764322436419648,
+          "low": -0.31689433778561,
+          "high": 0.5754507043711821,
+          "call": "no_clear_difference"
+        }
+      },
+      {
+        "id": "T2",
+        "name": "Design",
+        "aspects": [
+          "design",
+          "materials",
+          "hype",
+          "release"
+        ],
+        "reviewer": {
+          "claims": 6,
+          "stances": {
+            "praise": 2,
+            "criticism": 1,
+            "mixed": 0,
+            "neutral": 3
+          },
+          "seconds": {
+            "POSITIVE": 11.99,
+            "NEUTRAL": 18.12,
+            "NEGATIVE": 2.45
+          },
+          "segments": [
+            12,
+            13,
+            21,
+            22,
+            23,
+            108,
+            114,
+            134
+          ],
+          "lean": 0.29299754299754344,
+          "se": 0.21617351893376838,
+          "call": "balanced"
+        },
+        "audience": {
+          "comments": 32,
+          "counts": {
+            "POSITIVE": 15,
+            "NEUTRAL": 4,
+            "NEGATIVE": 13
+          },
+          "lean": 0.0625,
+          "se": 0.16762994478045015,
+          "call": "balanced",
+          "questions": 5,
+          "examples": [
+            {
+              "i": 22,
+              "quote": "I believe they have tried to make it a more usable model for average runners, improving it under thst point if vies as well, as they're going to come out with a super racers. The new model is going to be the one competing with the other top shoes",
+              "label": "POSITIVE",
+              "likes": 7
+            },
+            {
+              "i": 24,
+              "quote": "Baby powder the zoom pods up. It squeaks cause the pod rubs against the foam",
+              "label": "NEGATIVE",
+              "likes": 7
+            },
+            {
+              "i": 12,
+              "quote": "Vaseline around the air bags usually gets rid of the squeak. My Pegasus Premiums were horrendously squeaky, but lubing up where the bag rubs against the foam has eliminated it completely.",
+              "label": "POSITIVE",
+              "likes": 3
+            }
+          ]
+        },
+        "agreement": {
+          "gap": 0.23049754299754344,
+          "se": 0.273552168105656,
+          "low": -0.3056548543823888,
+          "high": 0.7666499403774757,
+          "call": "no_clear_difference"
+        }
+      },
+      {
+        "id": "T3",
+        "name": "Airpods",
+        "aspects": [
+          "airpods"
+        ],
+        "reviewer": {
+          "claims": 1,
+          "stances": {
+            "praise": 0,
+            "criticism": 1,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 0.0,
+            "NEUTRAL": 0.0,
+            "NEGATIVE": 4.88
+          },
+          "segments": [
+            92
+          ],
+          "lean": -1.0,
+          "se": null,
+          "call": "unknown"
+        },
+        "audience": {
+          "comments": 4,
+          "counts": {
+            "POSITIVE": 2,
+            "NEUTRAL": 0,
+            "NEGATIVE": 2
+          },
+          "lean": 0.0,
+          "se": 0.5773502691896257,
+          "call": "balanced",
+          "questions": 0,
+          "examples": [
+            {
+              "i": 67,
+              "quote": "I’m not buying without the air pods. You can run in the vaporfly if you don’t like them.",
+              "label": "NEGATIVE",
+              "likes": 2
+            },
+            {
+              "i": 14,
+              "quote": "Nice , Hate the airpods and agree that this should be the last Alphafly with Airpods. \n Having said that I think this launch  colorway looks stunning  , and personally found the Atom knit and laces on my alphafly 3 the best upper on any shoe till date. will definitely purchase this new version.",
+              "label": "POSITIVE",
+              "likes": 1
+            },
+            {
+              "i": 54,
+              "quote": "Fordy, no chance Nike drops the air pods. It’s a differentiator from the market and 95% of the people buying Alpha Flys don’t care about the weight, especially given the performance.",
+              "label": "NEGATIVE",
+              "likes": 1
+            }
+          ]
+        },
+        "agreement": {
+          "gap": -1.0,
+          "se": null,
+          "low": null,
+          "high": null,
+          "call": "unknown"
+        }
+      },
+      {
+        "id": "T4",
+        "name": "Value",
+        "aspects": [
+          "price",
+          "value"
+        ],
+        "reviewer": {
+          "claims": 4,
+          "stances": {
+            "praise": 3,
+            "criticism": 1,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 11.7,
+            "NEUTRAL": 5.6,
+            "NEGATIVE": 5.06
+          },
+          "segments": [
+            36,
+            37,
+            41,
+            115
+          ],
+          "lean": 0.29695885509838743,
+          "se": 0.4710262158386771,
+          "call": "balanced"
+        },
+        "audience": {
+          "comments": 15,
+          "counts": {
+            "POSITIVE": 4,
+            "NEUTRAL": 1,
+            "NEGATIVE": 10
+          },
+          "lean": -0.4,
+          "se": 0.23502786055720123,
+          "call": "balanced",
+          "questions": 1,
+          "examples": [
+            {
+              "i": 59,
+              "quote": "They reduced the price because they understand something about 2026: hyper shoes. They are making one aswell, so they can’t have their super shoe at a hyper shoe price, which is $300-$500",
+              "label": "NEGATIVE",
+              "likes": 3
+            },
+            {
+              "i": 5,
+              "quote": "I really enjoyed this review. I appreciate how quickly you got it out to the world while sticking to the facts, keeping personal opinions to a minimum, and being completely honest. Honestly, I wish Nike had just called this the Alphafly 3.5 instead of the Alphafly 4.",
+              "label": "POSITIVE",
+              "likes": 3
+            },
+            {
+              "i": 67,
+              "quote": "I’m not buying without the air pods. You can run in the vaporfly if you don’t like them.",
+              "label": "NEGATIVE",
+              "likes": 2
+            }
+          ]
+        },
+        "agreement": {
+          "gap": 0.6969588550983874,
+          "se": 0.5264064886049556,
+          "low": -0.33477890379552,
+          "high": 1.7286966139922948,
+          "call": "no_clear_difference"
+        }
+      },
+      {
+        "id": "T5",
+        "name": "The Reviewer",
+        "aspects": [],
+        "reviewer": {
+          "claims": 0,
+          "stances": {
+            "praise": 0,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 0.0,
+            "NEUTRAL": 0.0,
+            "NEGATIVE": 0.0
+          },
+          "segments": [],
+          "lean": null,
+          "se": null,
+          "call": "unknown"
+        },
+        "audience": {
+          "comments": 10,
+          "counts": {
+            "POSITIVE": 5,
+            "NEUTRAL": 1,
+            "NEGATIVE": 4
+          },
+          "lean": 0.1,
+          "se": 0.31446603773522014,
+          "call": "balanced",
+          "questions": 3,
+          "examples": [
+            {
+              "i": 59,
+              "quote": "They reduced the price because they understand something about 2026: hyper shoes. They are making one aswell, so they can’t have their super shoe at a hyper shoe price, which is $300-$500",
+              "label": "NEGATIVE",
+              "likes": 3
+            },
+            {
+              "i": 5,
+              "quote": "I really enjoyed this review. I appreciate how quickly you got it out to the world while sticking to the facts, keeping personal opinions to a minimum, and being completely honest. Honestly, I wish Nike had just called this the Alphafly 3.5 instead of the Alphafly 4.",
+              "label": "POSITIVE",
+              "likes": 3
+            },
+            {
+              "i": 10,
+              "quote": "Thanks for the review Fordy! Top stuff.\n\nNever worn an Alphafly to be honest but tuned in anyway! always gone for the Vaporfly. Don’t suppose you’ve heard anything about a new Vaporfly 5? \n\nThanks mate! 😊",
+              "label": "POSITIVE",
+              "likes": 0
+            }
+          ]
+        },
+        "agreement": {
+          "gap": null,
+          "se": null,
+          "low": null,
+          "high": null,
+          "call": "unknown"
+        }
+      },
+      {
+        "id": "T6",
+        "name": "Where to Buy",
+        "aspects": [],
+        "reviewer": {
+          "claims": 0,
+          "stances": {
+            "praise": 0,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 0.0,
+            "NEUTRAL": 0.0,
+            "NEGATIVE": 0.0
+          },
+          "segments": [],
+          "lean": null,
+          "se": null,
+          "call": "unknown"
+        },
+        "audience": {
+          "comments": 7,
+          "counts": {
+            "POSITIVE": 3,
+            "NEUTRAL": 1,
+            "NEGATIVE": 3
+          },
+          "lean": 0.0,
+          "se": 0.3779644730092272,
+          "call": "balanced",
+          "questions": 2,
+          "examples": [
+            {
+              "i": 63,
+              "quote": "30quid cheeper than the mk3 !!",
+              "label": "POSITIVE",
+              "likes": 1
+            },
+            {
+              "i": 10,
+              "quote": "Thanks for the review Fordy! Top stuff.\n\nNever worn an Alphafly to be honest but tuned in anyway! always gone for the Vaporfly. Don’t suppose you’ve heard anything about a new Vaporfly 5? \n\nThanks mate! 😊",
+              "label": "POSITIVE",
+              "likes": 0
+            },
+            {
+              "i": 31,
+              "quote": "Managed to get a pair of the alphafly 3s for £87.49 in the Nike outlet now the 4s have been launched which I think is quite frankly insane",
+              "label": "POSITIVE",
+              "likes": 0
+            }
+          ]
+        },
+        "agreement": {
+          "gap": null,
+          "se": null,
+          "low": null,
+          "high": null,
+          "call": "unknown"
+        }
+      },
+      {
+        "id": "T7",
+        "name": "Other",
+        "aspects": [
+          "arch issues",
+          "blistering",
+          "cosmetics",
+          "fit",
+          "lockdown"
+        ],
+        "reviewer": {
+          "claims": 5,
+          "stances": {
+            "praise": 4,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 1
+          },
+          "seconds": {
+            "POSITIVE": 5.77,
+            "NEUTRAL": 11.66,
+            "NEGATIVE": 5.26
+          },
+          "segments": [
+            26,
+            34,
+            68,
+            70,
+            74
+          ],
+          "lean": 0.022476862053769035,
+          "se": 0.3320581415474754,
+          "call": "balanced"
+        },
+        "audience": {
+          "comments": 0,
+          "counts": {
+            "POSITIVE": 0,
+            "NEUTRAL": 0,
+            "NEGATIVE": 0
+          },
+          "lean": null,
+          "se": null,
+          "call": "unknown",
+          "questions": 0,
+          "examples": []
+        },
+        "agreement": {
+          "gap": null,
+          "se": null,
+          "low": null,
+          "high": null,
+          "call": "unknown"
+        }
+      }
+    ],
+    "topic_source": "model",
+    "questions": [
+      {
+        "i": 29,
+        "quote": "How's the toebox fit? That's why I reach for the AP3. It's comfortable to wear on longer runs. If I want to rip it fast, I have the Feidian Elite 6."
+      },
+      {
+        "i": 77,
+        "quote": "Do you think this version 4 will have the same horrible durability  that version 3 have? After 200 km the foam in the back is fallen apart, with rolls and cracks. Or this new foam will have more durability, like the adios pro 4? Thanks"
+      },
+      {
+        "i": 10,
+        "quote": "Thanks for the review Fordy! Top stuff.\n\nNever worn an Alphafly to be honest but tuned in anyway! always gone for the Vaporfly. Don’t suppose you’ve heard anything about a new Vaporfly 5? \n\nThanks mate! 😊"
+      }
+    ],
+    "comment_tags": {
+      "0": [
+        "Performance",
+        "Design"
+      ],
+      "1": [
+        "The Reviewer",
+        "Value"
+      ],
+      "2": [
+        "Performance",
+        "Design"
+      ],
+      "3": [],
+      "4": [
+        "Performance"
+      ],
+      "5": [
+        "The Reviewer",
+        "Value"
+      ],
+      "6": [],
+      "7": [
+        "Performance",
+        "Design"
+      ],
+      "8": [
+        "Performance"
+      ],
+      "9": [
+        "Performance"
+      ],
+      "10": [
+        "The Reviewer",
+        "Where to Buy"
+      ],
+      "11": [
+        "Performance",
+        "Design"
+      ],
+      "12": [
+        "Design"
+      ],
+      "13": [
+        "Performance",
+        "Design"
+      ],
+      "14": [
+        "Design",
+        "Airpods"
+      ],
+      "15": [
+        "Design"
+      ],
+      "16": [
+        "Performance"
+      ],
+      "17": [],
+      "18": [
+        "Performance",
+        "Design"
+      ],
+      "19": [
+        "Performance"
+      ],
+      "20": [
+        "Design",
+        "Airpods"
+      ],
+      "21": [
+        "The Reviewer"
+      ],
+      "22": [
+        "Performance",
+        "Design"
+      ],
+      "23": [
+        "Performance"
+      ],
+      "24": [
+        "Design"
+      ],
+      "25": [
+        "Design"
+      ],
+      "26": [
+        "Performance",
+        "Value"
+      ],
+      "27": [],
+      "28": [
+        "Cushioning"
+      ],
+      "29": [
+        "Performance",
+        "Design"
+      ],
+      "30": [
+        "Performance"
+      ],
+      "31": [
+        "Where to Buy"
+      ],
+      "32": [
+        "The Reviewer"
+      ],
+      "33": [
+        "Performance",
+        "Design"
+      ],
+      "34": [
+        "Design"
+      ],
+      "35": [
+        "Performance",
+        "Design"
+      ],
+      "36": [
+        "Performance",
+        "Design"
+      ],
+      "37": [
+        "Performance"
+      ],
+      "38": [
+        "Design",
+        "Performance"
+      ],
+      "39": [
+        "Value"
+      ],
+      "40": [
+        "Design",
+        "Performance"
+      ],
+      "41": [
+        "Design",
+        "Performance"
+      ],
+      "42": [
+        "Performance"
+      ],
+      "43": [],
+      "44": [
+        "Performance"
+      ],
+      "45": [
+        "Design"
+      ],
+      "46": [
+        "The Reviewer"
+      ],
+      "47": [
+        "Performance"
+      ],
+      "48": [],
+      "49": [
+        "The Reviewer"
+      ],
+      "50": [
+        "The Reviewer",
+        "Where to Buy"
+      ],
+      "51": [
+        "Performance",
+        "Design"
+      ],
+      "52": [
+        "Cushioning",
+        "Design"
+      ],
+      "53": [
+        "The Reviewer"
+      ],
+      "54": [
+        "Airpods",
+        "Value"
+      ],
+      "55": [],
+      "56": [
+        "Cushioning"
+      ],
+      "57": [
+        "Performance",
+        "Value"
+      ],
+      "58": [
+        "Performance",
+        "Design"
+      ],
+      "59": [
+        "Value",
+        "The Reviewer"
+      ],
+      "60": [
+        "Value",
+        "Where to Buy"
+      ],
+      "61": [
+        "Performance",
+        "Design"
+      ],
+      "62": [],
+      "63": [
+        "Value",
+        "Where to Buy"
+      ],
+      "64": [
+        "Performance",
+        "Value"
+      ],
+      "65": [
+        "Value",
+        "Where to Buy"
+      ],
+      "66": [
+        "Design",
+        "Performance"
+      ],
+      "67": [
+        "Airpods",
+        "Value"
+      ],
+      "68": [
+        "Value",
+        "Where to Buy"
+      ],
+      "69": [
+        "Performance",
+        "Design"
+      ],
+      "70": [
+        "Performance",
+        "Design"
+      ],
+      "71": [
+        "Value",
+        "Design"
+      ],
+      "72": [
+        "Performance",
+        "Design"
+      ],
+      "73": [
+        "Cushioning"
+      ],
+      "74": [
+        "Cushioning"
+      ],
+      "75": [],
+      "76": [],
+      "77": [
+        "Cushioning",
+        "Performance"
+      ],
+      "78": [
+        "Design",
+        "Value"
+      ],
+      "79": []
+    }
+  },
+  "written": {
+    "verdict": {
+      "text": "The reviewer's words lean positive, the comments are balanced, and there is no clear difference between the reviewer and the audience.",
+      "evidence": [],
+      "source": "template"
+    },
+    "brand_health_words": {
+      "text": "Of 80 comments, 36 read positive, 16 neutral and 28 negative.",
+      "evidence": [],
+      "source": "template"
+    },
+    "audience_words": {
+      "text": "The audience is discussing the cushioning, performance, and value of the Alphafly 4, with some reviewers praising its features and others criticizing its price and durability.",
+      "evidence": [
+        "T0",
+        "T1",
+        "T4",
+        "C28",
+        "C77"
+      ],
+      "source": "model"
+    },
+    "agreement_words": {
+      "text": "There is no clear difference between the reviewer and the audience.",
+      "evidence": [],
+      "source": "template"
+    },
+    "takeaways": [
+      {
+        "text": "Improve the durability of the foam in the Alphafly 4, as some reviewers have experienced issues with the previous model.",
+        "evidence": [
+          "T0",
+          "C77"
+        ]
+      },
+      {
+        "text": "Consider removing the Airpods from future models, as some reviewers have expressed dislike for them.",
+        "evidence": [
+          "T3",
+          "C67",
+          "C14"
+        ]
+      },
+      {
+        "text": "Monitor the price of the Alphafly 4, as some reviewers have noted that it may be too high for some customers.",
+        "evidence": [
+          "T4",
+          "C59"
+        ]
+      }
+    ],
+    "moment_notes": [
+      {
+        "seg": 33,
+        "text": "The words read negative as the reviewer mentions the sawtooth laces, while the face reads negative and the voice reads neutral."
+      },
+      {
+        "seg": 52,
+        "text": "The words read negative as the reviewer mentions the squeaking of the shoe, while the face reads negative and the voice reads positive."
+      }
+    ],
+    "turn_labels": [
+      {
+        "seg": 19,
+        "label": "The price"
+      },
+      {
+        "seg": 93,
+        "label": "Airpods"
+      },
+      {
+        "seg": 110,
+        "label": "The shoe"
+      }
+    ]
+  },
+  "verifier": {
+    "proposed": 140,
+    "kept": 132,
+    "by_field": {
+      "claim": {
+        "kept": 35,
+        "dropped": 4
+      },
+      "topic": {
+        "kept": 8,
+        "dropped": 0
+      },
+      "comment_tags": {
+        "kept": 80,
+        "dropped": 0
+      },
+      "verdict": {
+        "kept": 0,
+        "dropped": 1
+      },
+      "brand_health_words": {
+        "kept": 0,
+        "dropped": 1
+      },
+      "audience_words": {
+        "kept": 1,
+        "dropped": 0
+      },
+      "agreement_words": {
+        "kept": 0,
+        "dropped": 1
+      },
+      "takeaway": {
+        "kept": 3,
+        "dropped": 0
+      },
+      "moment_note": {
+        "kept": 2,
+        "dropped": 1
+      },
+      "turn_label": {
+        "kept": 3,
+        "dropped": 0
+      }
+    },
+    "dropped": [
+      {
+        "field": "claim",
+        "reasons": [
+          "quote not found in its segment"
+        ],
+        "text": "{'seg': 20, 'aspect': 'price', 'stance': 'criticism', 'claim': 'The price is £255, down from £285.', 'quote': \"The shoe is going to cost you £255. That's down from £285.\"}"
+      },
+      {
+        "field": "claim",
+        "reasons": [
+          "quote not found in its segment"
+        ],
+        "text": "{'seg': 14, 'aspect': 'design', 'stance': 'praise', 'claim': 'The shoe has a nice pink colorway.', 'quote': \"There's a really nice pink color. It does look really good.\"}"
+      },
+      {
+        "field": "claim",
+        "reasons": [
+          "figure not in the facts: 3"
+        ],
+        "text": "{'seg': 46, 'aspect': 'noise', 'stance': 'praise', 'claim': 'The AlphaFly 4 is a fraction quieter than the AlphaFly 3.', 'quote': \"but that silence, unfortunately, has resulted in the fact that we've got more squeaking\"}"
+      },
+      {
+        "field": "claim",
+        "reasons": [
+          "figure not in the facts: 3"
+        ],
+        "text": "{'seg': 48, 'aspect': 'noise', 'stance': 'criticism', 'claim': 'The AlphaFly 4 has more squeaking than the AlphaFly 3.', 'quote': 'This thing squeaks for fun'}"
+      },
+      {
+        "field": "verdict",
+        "reasons": [
+          "says the comments lean positive; the computed call is balanced"
+        ],
+        "text": "The reviewer concludes that the Nike Alphafly 4 is a real contender, praising its cushioning, performance, and value. The audience is generally positive, with 45% positive comments and 35% negative comments."
+      },
+      {
+        "field": "brand_health_words",
+        "reasons": [
+          "says the comments lean positive; the computed call is balanced"
+        ],
+        "text": "The audience is generally positive about the product, with 45% positive comments and 35% negative comments. Some reviewers have praised the cushioning, performance, and value of the Alphafly 4."
+      },
+      {
+        "field": "agreement_words",
+        "reasons": [
+          "says the comments were positive about Cushioning, which the run does not show"
+        ],
+        "text": "There is no clear difference between the reviewer and the audience on the Alphafly 4, with both groups praising its cushioning and performance."
+      },
+      {
+        "field": "moment_note",
+        "reasons": [
+          "makes a claim only the signs may make: 'paid'"
+        ],
+        "text": "The words read negative as the reviewer mentions not getting paid by Nike, while the face reads negative and the voice reads positive."
+      }
+    ],
+    "notes": [
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 13,
+        "to": [
+          12,
+          13
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 21,
+        "to": [
+          21,
+          22
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "segment corrected to where the quote is",
+        "from": 36,
+        "to": 37
+      },
+      {
+        "field": "claim",
+        "what": "segment corrected to where the quote is",
+        "from": 46,
+        "to": 47
+      },
+      {
+        "field": "claim",
+        "what": "segment corrected to where the quote is",
+        "from": 71,
+        "to": 70
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 75,
+        "to": [
+          74,
+          75
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 83,
+        "to": [
+          83,
+          84
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 99,
+        "to": [
+          98,
+          99
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 108,
+        "to": [
+          108,
+          109
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 118,
+        "to": [
+          117,
+          118
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 123,
+        "to": [
+          123,
+          124
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "segment corrected to where the quote is",
+        "from": 145,
+        "to": 144
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 145,
+        "to": [
+          144,
+          145
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 134,
+        "to": [
+          134,
+          135
+        ]
+      }
+    ]
+  },
+  "video_meta": {
+    "fetched": true,
+    "at": "2026-09-27T10:14:44+00:00",
+    "has_paid_product_placement": false,
+    "description_hits": [
+      {
+        "category": "disclosure",
+        "pattern": "paid_partnership",
+        "match": "paid promotion",
+        "context": "ether they're worth the price. No sponsorship, no paid promotion, no gifted product. Just my honest opinion. In t"
+      },
+      {
+        "category": "discount_code",
+        "pattern": "percent_off",
+        "match": "15% off",
+        "context": "A6b 💸 Exclusive discount at SportsShoes.com: Get 15% off at Sportsshoes.com → www.fordyruns.com/…"
+      }
+    ],
+    "title": "I bought the all new Nike Alphafly 4 - here's my honest review!",
+    "channel": "FORDY RUNS",
+    "published_at": "2026-09-20T23:00:08Z"
+  },
+  "calls": [
+    {
+      "step": "claims",
+      "ok": true,
+      "seconds": 37.13,
+      "prompt_chars": 6259,
+      "prompt_tokens": 1845,
+      "output_tokens": 459
+    },
+    {
+      "step": "claims",
+      "ok": true,
+      "seconds": 30.94,
+      "prompt_chars": 6255,
+      "prompt_tokens": 1842,
+      "output_tokens": 431
+    },
+    {
+      "step": "claims",
+      "ok": true,
+      "seconds": 30.32,
+      "prompt_chars": 6390,
+      "prompt_tokens": 1841,
+      "output_tokens": 474
+    },
+    {
+      "step": "claims",
+      "ok": true,
+      "seconds": 27.93,
+      "prompt_chars": 6304,
+      "prompt_tokens": 1806,
+      "output_tokens": 419
+    },
+    {
+      "step": "claims",
+      "ok": true,
+      "seconds": 20.23,
+      "prompt_chars": 3594,
+      "prompt_tokens": 996,
+      "output_tokens": 362
+    },
+    {
+      "step": "topics",
+      "ok": true,
+      "seconds": 18.71,
+      "prompt_chars": 6003,
+      "prompt_tokens": 1557,
+      "output_tokens": 237
+    },
+    {
+      "step": "comments",
+      "ok": true,
+      "seconds": 24.88,
+      "prompt_chars": 5744,
+      "prompt_tokens": 1515,
+      "output_tokens": 403
+    },
+    {
+      "step": "comments",
+      "ok": true,
+      "seconds": 22.37,
+      "prompt_chars": 4891,
+      "prompt_tokens": 1304,
+      "output_tokens": 388
+    },
+    {
+      "step": "comments",
+      "ok": true,
+      "seconds": 24.98,
+      "prompt_chars": 4218,
+      "prompt_tokens": 1203,
+      "output_tokens": 444
+    },
+    {
+      "step": "comments",
+      "ok": true,
+      "seconds": 4.6,
+      "prompt_chars": 1175,
+      "prompt_tokens": 325,
+      "output_tokens": 83
+    },
+    {
+      "step": "prose",
+      "ok": true,
+      "seconds": 46.31,
+      "prompt_chars": 10785,
+      "prompt_tokens": 3238,
+      "output_tokens": 650
+    }
+  ],
+  "runtime_s": 288.59,
+  "report_ref": {
+    "file": "U4SrEKxym2k.json",
+    "sha256": "3fcacb53e8b68564be2903c74a0c7071badb63f6041da82416b1278faa11ca0a"
+  }
+}

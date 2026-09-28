@@ -1,0 +1,36 @@
+{
+ "uid": "haWvrSliMVY_17",
+ "system": "four_channel",
+ "video_id": "haWvrSliMVY",
+ "segment_id": 17,
+ "split": "holdout",
+ "payload": {
+  "segment_id": 17,
+  "start_s": 128.88,
+  "end_s": 134.18,
+  "transcript": "most important, the best. I explain you now how that thing works. So Jacques Polsch, Chanel always has",
+  "transcript_sentiment": "NEUTRAL (0.52)",
+  "vocal_emotion": "POSITIVE (arousal 0.72)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "angry (0.79)",
+  "video_comment_sentiment": "POSITIVE (0.99)"
+ },
+ "seconds": 4.01,
+ "raw": "{\n  \"segment_id\": 17,\n  \"conflict_score\": 0.8,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"vocal_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and tone suggest positivity, but their facial expression shows anger, indicating a significant conflict in emotional valence.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 17,
+  "start_s": 128.88,
+  "end_s": 134.18,
+  "conflict_score": 0.8,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: vocal_emotion"
+  ],
+  "flagged": true
+ }
+}

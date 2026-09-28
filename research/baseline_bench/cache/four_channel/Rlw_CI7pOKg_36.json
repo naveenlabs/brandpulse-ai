@@ -1,0 +1,35 @@
+{
+ "uid": "Rlw_CI7pOKg_36",
+ "system": "four_channel",
+ "video_id": "Rlw_CI7pOKg",
+ "segment_id": 36,
+ "split": "holdout",
+ "payload": {
+  "segment_id": 36,
+  "start_s": 203.44,
+  "end_s": 208.24,
+  "transcript": "have had is that their laptops have been so good for so long there really just hasn't been much reason",
+  "transcript_sentiment": "NEGATIVE (0.46)",
+  "vocal_emotion": "POSITIVE (arousal 0.67)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.98)"
+ },
+ "seconds": 4.412,
+ "raw": "{\n  \"segment_id\": 36,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words convey a negative sentiment, but their facial expression shows none, and their tone sounds positive. This discrepancy suggests a potential conflict between the creator's intended message and their actual emotional state.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 36,
+  "start_s": 203.44,
+  "end_s": 208.24,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion"
+  ],
+  "flagged": false
+ }
+}

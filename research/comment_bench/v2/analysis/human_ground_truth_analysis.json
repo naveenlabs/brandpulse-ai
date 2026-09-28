@@ -1,0 +1,447 @@
+{
+  "generated_at": "2026-08-28",
+  "ground_truth": "labels/label_sheet_rater1.csv (350 human labels)",
+  "corpus_total": 4843,
+  "seed": 42,
+  "inter_rater": {
+    "overlap_n": 100,
+    "agree": 100,
+    "raw_agreement": 1.0,
+    "agreement_ci95": [
+      0.9630051925239981,
+      0.9999999999999999
+    ],
+    "expected_by_chance_pe": 0.37939999999999996,
+    "cohens_kappa": 1.0,
+    "rater1_distribution": {
+      "POSITIVE": 47,
+      "NEUTRAL": 36,
+      "NEGATIVE": 17
+    },
+    "rater2_distribution": {
+      "POSITIVE": 47,
+      "NEUTRAL": 36,
+      "NEGATIVE": 17
+    },
+    "note": "Second rater worked from the blank sheet independently, different row order, no discussion, no AI assistance. The high kappa is attributable to a deliberately prescriptive 10-rule rubric (labels/GUIDELINES.md) fixed before labelling began; it should be reported with that explanation. Perfect agreement means the overlap set yields no data on which items are ambiguous."
+  },
+  "double_rated_subset_accuracy": {
+    "cardiffnlp": {
+      "correct": 72,
+      "n": 100,
+      "accuracy": 0.72,
+      "ci95": [
+        0.6251178763865427,
+        0.7986044083240164
+      ]
+    },
+    "tabularisai": {
+      "correct": 50,
+      "n": 100,
+      "accuracy": 0.5,
+      "ci95": [
+        0.40382982859014716,
+        0.5961701714098528
+      ]
+    },
+    "VADER": {
+      "correct": 48,
+      "n": 100,
+      "accuracy": 0.48,
+      "ci95": [
+        0.38464384320080547,
+        0.5768359490982345
+      ]
+    }
+  },
+  "sample_a_accuracy": {
+    "n": 300,
+    "truth_distribution": {
+      "POSITIVE": 131,
+      "NEGATIVE": 67,
+      "NEUTRAL": 102
+    },
+    "cardiffnlp": {
+      "correct": 214,
+      "n": 300,
+      "accuracy": 0.7133333333333334,
+      "ci95": [
+        0.6597173468493974,
+        0.7615547896849021
+      ],
+      "kappa_vs_human": 0.5486827834726936,
+      "per_class": {
+        "POSITIVE": {
+          "precision": 0.7659574468085106,
+          "recall": 0.8244274809160306,
+          "f1": 0.7941176470588236,
+          "support": 131
+        },
+        "NEUTRAL": {
+          "precision": 0.6886792452830188,
+          "recall": 0.7156862745098039,
+          "f1": 0.7019230769230769,
+          "support": 102
+        },
+        "NEGATIVE": {
+          "precision": 0.6226415094339622,
+          "recall": 0.4925373134328358,
+          "f1": 0.55,
+          "support": 67
+        },
+        "macro_f1": 0.6820135746606336
+      },
+      "confusion_truth_by_pred": {
+        "POSITIVE": {
+          "POSITIVE": 108,
+          "NEUTRAL": 15,
+          "NEGATIVE": 8
+        },
+        "NEUTRAL": {
+          "POSITIVE": 17,
+          "NEUTRAL": 73,
+          "NEGATIVE": 12
+        },
+        "NEGATIVE": {
+          "POSITIVE": 16,
+          "NEUTRAL": 18,
+          "NEGATIVE": 33
+        }
+      },
+      "pred_distribution": {
+        "NEUTRAL": 106,
+        "POSITIVE": 141,
+        "NEGATIVE": 53
+      }
+    },
+    "tabularisai": {
+      "correct": 167,
+      "n": 300,
+      "accuracy": 0.5566666666666666,
+      "ci95": [
+        0.5000863411296723,
+        0.611814070137251
+      ],
+      "kappa_vs_human": 0.3367355419984374,
+      "per_class": {
+        "POSITIVE": {
+          "precision": 0.7319587628865979,
+          "recall": 0.5419847328244275,
+          "f1": 0.6228070175438597,
+          "support": 131
+        },
+        "NEUTRAL": {
+          "precision": 0.5643564356435643,
+          "recall": 0.5588235294117647,
+          "f1": 0.5615763546798029,
+          "support": 102
+        },
+        "NEGATIVE": {
+          "precision": 0.38235294117647056,
+          "recall": 0.582089552238806,
+          "f1": 0.4615384615384615,
+          "support": 67
+        },
+        "macro_f1": 0.5486406112540413
+      },
+      "confusion_truth_by_pred": {
+        "POSITIVE": {
+          "POSITIVE": 71,
+          "NEUTRAL": 29,
+          "NEGATIVE": 31
+        },
+        "NEUTRAL": {
+          "POSITIVE": 13,
+          "NEUTRAL": 57,
+          "NEGATIVE": 32
+        },
+        "NEGATIVE": {
+          "POSITIVE": 13,
+          "NEUTRAL": 15,
+          "NEGATIVE": 39
+        }
+      },
+      "pred_distribution": {
+        "NEUTRAL": 101,
+        "NEGATIVE": 102,
+        "POSITIVE": 97
+      }
+    },
+    "VADER": {
+      "correct": 149,
+      "n": 300,
+      "accuracy": 0.49666666666666665,
+      "ci95": [
+        0.440488541129282,
+        0.5529290817373694
+      ],
+      "kappa_vs_human": 0.18282673401280772,
+      "per_class": {
+        "POSITIVE": {
+          "precision": 0.5351351351351351,
+          "recall": 0.7557251908396947,
+          "f1": 0.6265822784810127,
+          "support": 131
+        },
+        "NEUTRAL": {
+          "precision": 0.48,
+          "recall": 0.35294117647058826,
+          "f1": 0.4067796610169491,
+          "support": 102
+        },
+        "NEGATIVE": {
+          "precision": 0.35,
+          "recall": 0.208955223880597,
+          "f1": 0.2616822429906542,
+          "support": 67
+        },
+        "macro_f1": 0.43168139416287205
+      },
+      "confusion_truth_by_pred": {
+        "POSITIVE": {
+          "POSITIVE": 99,
+          "NEUTRAL": 22,
+          "NEGATIVE": 10
+        },
+        "NEUTRAL": {
+          "POSITIVE": 50,
+          "NEUTRAL": 36,
+          "NEGATIVE": 16
+        },
+        "NEGATIVE": {
+          "POSITIVE": 36,
+          "NEUTRAL": 17,
+          "NEGATIVE": 14
+        }
+      },
+      "pred_distribution": {
+        "NEUTRAL": 75,
+        "POSITIVE": 185,
+        "NEGATIVE": 40
+      }
+    },
+    "mcnemar_pairwise": {
+      "cardiffnlp_vs_tabularisai": {
+        "only_first_correct": 70,
+        "only_second_correct": 23,
+        "discordant": 93,
+        "p_value_exact": 1.1026255560645484e-06
+      },
+      "cardiffnlp_vs_VADER": {
+        "only_first_correct": 81,
+        "only_second_correct": 16,
+        "discordant": 97,
+        "p_value_exact": 1.2385312683552126e-11
+      },
+      "tabularisai_vs_VADER": {
+        "only_first_correct": 69,
+        "only_second_correct": 51,
+        "discordant": 120,
+        "p_value_exact": 0.12032782773865801
+      }
+    }
+  },
+  "sample_b_diagnostic": {
+    "n": 50,
+    "truth_distribution": {
+      "NEUTRAL": 23,
+      "POSITIVE": 14,
+      "NEGATIVE": 13
+    },
+    "cardiffnlp": {
+      "correct": 25,
+      "n": 50,
+      "accuracy": 0.5,
+      "ci95": [
+        0.36644286412332855,
+        0.6335571358766714
+      ],
+      "kappa_vs_human": 0.19041450777202062,
+      "per_class": {
+        "POSITIVE": {
+          "precision": 0.6666666666666666,
+          "recall": 0.2857142857142857,
+          "f1": 0.4,
+          "support": 14
+        },
+        "NEUTRAL": {
+          "precision": 0.5,
+          "recall": 0.6521739130434783,
+          "f1": 0.5660377358490566,
+          "support": 23
+        },
+        "NEGATIVE": {
+          "precision": 0.42857142857142855,
+          "recall": 0.46153846153846156,
+          "f1": 0.4444444444444445,
+          "support": 13
+        },
+        "macro_f1": 0.4701607267645003
+      },
+      "confusion_truth_by_pred": {
+        "POSITIVE": {
+          "POSITIVE": 4,
+          "NEUTRAL": 8,
+          "NEGATIVE": 2
+        },
+        "NEUTRAL": {
+          "POSITIVE": 2,
+          "NEUTRAL": 15,
+          "NEGATIVE": 6
+        },
+        "NEGATIVE": {
+          "POSITIVE": 0,
+          "NEUTRAL": 7,
+          "NEGATIVE": 6
+        }
+      },
+      "pred_distribution": {
+        "NEUTRAL": 30,
+        "POSITIVE": 6,
+        "NEGATIVE": 14
+      }
+    },
+    "tabularisai": {
+      "correct": 17,
+      "n": 50,
+      "accuracy": 0.34,
+      "ci95": [
+        0.2243676963506106,
+        0.47846431458517147
+      ],
+      "kappa_vs_human": 0.025974025974025983,
+      "per_class": {
+        "POSITIVE": {
+          "precision": 0.5,
+          "recall": 0.21428571428571427,
+          "f1": 0.3,
+          "support": 14
+        },
+        "NEUTRAL": {
+          "precision": 0.4666666666666667,
+          "recall": 0.30434782608695654,
+          "f1": 0.3684210526315789,
+          "support": 23
+        },
+        "NEGATIVE": {
+          "precision": 0.2413793103448276,
+          "recall": 0.5384615384615384,
+          "f1": 0.3333333333333333,
+          "support": 13
+        },
+        "macro_f1": 0.3339181286549708
+      },
+      "confusion_truth_by_pred": {
+        "POSITIVE": {
+          "POSITIVE": 3,
+          "NEUTRAL": 4,
+          "NEGATIVE": 7
+        },
+        "NEUTRAL": {
+          "POSITIVE": 1,
+          "NEUTRAL": 7,
+          "NEGATIVE": 15
+        },
+        "NEGATIVE": {
+          "POSITIVE": 2,
+          "NEUTRAL": 4,
+          "NEGATIVE": 7
+        }
+      },
+      "pred_distribution": {
+        "NEGATIVE": 29,
+        "POSITIVE": 6,
+        "NEUTRAL": 15
+      }
+    },
+    "VADER": {
+      "correct": 8,
+      "n": 50,
+      "accuracy": 0.16,
+      "ci95": [
+        0.08337321362087696,
+        0.2851448096176598
+      ],
+      "kappa_vs_human": -0.19182746878547108,
+      "per_class": {
+        "POSITIVE": {
+          "precision": 0.18421052631578946,
+          "recall": 0.5,
+          "f1": 0.2692307692307692,
+          "support": 14
+        },
+        "NEUTRAL": {
+          "precision": 0.2,
+          "recall": 0.043478260869565216,
+          "f1": 0.07142857142857142,
+          "support": 23
+        },
+        "NEGATIVE": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 13
+        },
+        "macro_f1": 0.11355311355311355
+      },
+      "confusion_truth_by_pred": {
+        "POSITIVE": {
+          "POSITIVE": 7,
+          "NEUTRAL": 2,
+          "NEGATIVE": 5
+        },
+        "NEUTRAL": {
+          "POSITIVE": 20,
+          "NEUTRAL": 1,
+          "NEGATIVE": 2
+        },
+        "NEGATIVE": {
+          "POSITIVE": 11,
+          "NEUTRAL": 2,
+          "NEGATIVE": 0
+        }
+      },
+      "pred_distribution": {
+        "POSITIVE": 38,
+        "NEUTRAL": 5,
+        "NEGATIVE": 7
+      }
+    },
+    "mcnemar_pairwise": {
+      "cardiffnlp_vs_tabularisai": {
+        "only_first_correct": 25,
+        "only_second_correct": 17,
+        "discordant": 42,
+        "p_value_exact": 0.27995623852893914
+      },
+      "cardiffnlp_vs_VADER": {
+        "only_first_correct": 25,
+        "only_second_correct": 8,
+        "discordant": 33,
+        "p_value_exact": 0.004551384132355452
+      },
+      "tabularisai_vs_VADER": {
+        "only_first_correct": 17,
+        "only_second_correct": 8,
+        "discordant": 25,
+        "p_value_exact": 0.10775214433670044
+      }
+    }
+  },
+  "calibration_sample_a": {
+    "cardiffnlp": {
+      "mean_conf_when_correct": 0.8064056074766357,
+      "n_correct": 214,
+      "mean_conf_when_wrong": 0.6661883720930231,
+      "n_wrong": 86,
+      "separation": 0.14021723538361264
+    },
+    "tabularisai": {
+      "mean_conf_when_correct": 0.7842425149700599,
+      "n_correct": 167,
+      "mean_conf_when_wrong": 0.7239541353383456,
+      "n_wrong": 133,
+      "separation": 0.060288379631714295
+    }
+  }
+}

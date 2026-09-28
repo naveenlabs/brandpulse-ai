@@ -1,0 +1,36 @@
+{
+ "uid": "vOhuf18b-g8_28",
+ "system": "four_channel",
+ "video_id": "vOhuf18b-g8",
+ "segment_id": 28,
+ "split": "holdout",
+ "payload": {
+  "segment_id": 28,
+  "start_s": 181.06,
+  "end_s": 184.28,
+  "transcript": "And we also have a massive camera bump. This protrudes out a lot.",
+  "transcript_sentiment": "NEGATIVE (0.76)",
+  "vocal_emotion": "POSITIVE (arousal 0.67)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.97)"
+ },
+ "seconds": 4.221,
+ "raw": "{\n  \"segment_id\": 28,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"vocal_emotion\", \"facial_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words convey a negative sentiment, but their tone and facial expression suggest a positive emotion, indicating a conflict between the transcript and vocal channels.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 28,
+  "start_s": 181.06,
+  "end_s": 184.28,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: vocal_emotion",
+   "channels_in_conflict: facial_emotion"
+  ],
+  "flagged": false
+ }
+}

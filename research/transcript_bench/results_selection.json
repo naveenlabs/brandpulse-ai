@@ -1,0 +1,756 @@
+{
+ "split": "selection",
+ "incumbent": "0.1_sst2_incumbent",
+ "results": [
+  {
+   "id": "1.3_jhartmann_large",
+   "group": 1,
+   "name": "j-hartmann RoBERTa-large 3-class",
+   "n_scored": 400,
+   "parse_failures": 0,
+   "seconds_per_row": 0.0394,
+   "accuracy": 0.5675,
+   "accuracy_ci95": [
+    0.5185336742850802,
+    0.6151821192339629
+   ],
+   "macro_f1": 0.5331317192372095,
+   "neutral_recall": 0.8974358974358975,
+   "neutral_predicted": 289,
+   "neutral_precision": 0.4844290657439446,
+   "neutral_f1": 0.6292134831460674,
+   "positive_f1": 0.5118483412322276,
+   "negative_f1": 0.45833333333333337,
+   "mcnemar_vs_incumbent": {
+    "b": 142,
+    "c": 100,
+    "n_discordant": 242,
+    "p_value": 0.00826542477961716,
+    "min_attainable_p": 2.8298997121333476e-73
+   },
+   "confusion": {
+    "POSITIVE": {
+     "POSITIVE": 54,
+     "NEUTRAL": 93,
+     "NEGATIVE": 8
+    },
+    "NEUTRAL": {
+     "POSITIVE": 2,
+     "NEUTRAL": 140,
+     "NEGATIVE": 14
+    },
+    "NEGATIVE": {
+     "POSITIVE": 0,
+     "NEUTRAL": 56,
+     "NEGATIVE": 33
+    }
+   }
+  },
+  {
+   "id": "1.5_cardiffnlp_xlm",
+   "group": 1,
+   "name": "cardiffnlp XLM-RoBERTa multilingual",
+   "n_scored": 400,
+   "parse_failures": 0,
+   "seconds_per_row": 0.0253,
+   "accuracy": 0.6475,
+   "accuracy_ci95": [
+    0.5994796194705074,
+    0.6927141515525868
+   ],
+   "macro_f1": 0.632567588685732,
+   "neutral_recall": 0.7948717948717948,
+   "neutral_predicted": 216,
+   "neutral_precision": 0.5740740740740741,
+   "neutral_f1": 0.6666666666666666,
+   "positive_f1": 0.674074074074074,
+   "negative_f1": 0.5569620253164556,
+   "mcnemar_vs_incumbent": {
+    "b": 136,
+    "c": 62,
+    "n_discordant": 198,
+    "p_value": 1.5421479512370652e-07,
+    "min_attainable_p": 4.9784122222889134e-60
+   },
+   "confusion": {
+    "POSITIVE": {
+     "POSITIVE": 91,
+     "NEUTRAL": 54,
+     "NEGATIVE": 10
+    },
+    "NEUTRAL": {
+     "POSITIVE": 17,
+     "NEUTRAL": 124,
+     "NEGATIVE": 15
+    },
+    "NEGATIVE": {
+     "POSITIVE": 7,
+     "NEUTRAL": 38,
+     "NEGATIVE": 44
+    }
+   }
+  },
+  {
+   "id": "1.4_bertweet",
+   "group": 1,
+   "name": "BERTweet base sentiment",
+   "n_scored": 400,
+   "parse_failures": 0,
+   "seconds_per_row": 0.0217,
+   "accuracy": 0.615,
+   "accuracy_ci95": [
+    0.5664344525867856,
+    0.6613776400752879
+   ],
+   "macro_f1": 0.5882631538148001,
+   "neutral_recall": 0.7756410256410257,
+   "neutral_predicted": 229,
+   "neutral_precision": 0.5283842794759825,
+   "neutral_f1": 0.6285714285714286,
+   "positive_f1": 0.6690647482014388,
+   "negative_f1": 0.4671532846715329,
+   "mcnemar_vs_incumbent": {
+    "b": 130,
+    "c": 69,
+    "n_discordant": 199,
+    "p_value": 1.829240798038087e-05,
+    "min_attainable_p": 2.4892061111444567e-60
+   },
+   "confusion": {
+    "POSITIVE": {
+     "POSITIVE": 93,
+     "NEUTRAL": 56,
+     "NEGATIVE": 6
+    },
+    "NEUTRAL": {
+     "POSITIVE": 25,
+     "NEUTRAL": 121,
+     "NEGATIVE": 10
+    },
+    "NEGATIVE": {
+     "POSITIVE": 5,
+     "NEUTRAL": 52,
+     "NEGATIVE": 32
+    }
+   }
+  },
+  {
+   "id": "1.1_cardiffnlp_latest",
+   "group": 1,
+   "name": "cardiffnlp twitter-roberta latest",
+   "n_scored": 400,
+   "parse_failures": 0,
+   "seconds_per_row": 0.031,
+   "accuracy": 0.6225,
+   "accuracy_ci95": [
+    0.5740402091679837,
+    0.6686291938850946
+   ],
+   "macro_f1": 0.5998202642497944,
+   "neutral_recall": 0.7692307692307693,
+   "neutral_predicted": 222,
+   "neutral_precision": 0.5405405405405406,
+   "neutral_f1": 0.6349206349206349,
+   "positive_f1": 0.6813186813186813,
+   "negative_f1": 0.4832214765100671,
+   "mcnemar_vs_incumbent": {
+    "b": 131,
+    "c": 67,
+    "n_discordant": 198,
+    "p_value": 6.346997755773881e-06,
+    "min_attainable_p": 4.9784122222889134e-60
+   },
+   "confusion": {
+    "POSITIVE": {
+     "POSITIVE": 93,
+     "NEUTRAL": 53,
+     "NEGATIVE": 9
+    },
+    "NEUTRAL": {
+     "POSITIVE": 21,
+     "NEUTRAL": 120,
+     "NEGATIVE": 15
+    },
+    "NEGATIVE": {
+     "POSITIVE": 4,
+     "NEUTRAL": 49,
+     "NEGATIVE": 36
+    }
+   }
+  },
+  {
+   "id": "1.2_cardiffnlp_original",
+   "group": 1,
+   "name": "cardiffnlp twitter-roberta original",
+   "n_scored": 400,
+   "parse_failures": 0,
+   "seconds_per_row": 0.0207,
+   "accuracy": 0.625,
+   "accuracy_ci95": [
+    0.576578102393425,
+    0.6710437374566548
+   ],
+   "macro_f1": 0.5967911808914665,
+   "neutral_recall": 0.7243589743589743,
+   "neutral_predicted": 208,
+   "neutral_precision": 0.5432692307692307,
+   "neutral_f1": 0.6208791208791208,
+   "positive_f1": 0.7023411371237458,
+   "negative_f1": 0.4671532846715329,
+   "mcnemar_vs_incumbent": {
+    "b": 125,
+    "c": 60,
+    "n_discordant": 185,
+    "p_value": 2.0116885464439608e-06,
+    "min_attainable_p": 4.078315292499078e-56
+   },
+   "confusion": {
+    "POSITIVE": {
+     "POSITIVE": 105,
+     "NEUTRAL": 44,
+     "NEGATIVE": 6
+    },
+    "NEUTRAL": {
+     "POSITIVE": 33,
+     "NEUTRAL": 113,
+     "NEGATIVE": 10
+    },
+    "NEGATIVE": {
+     "POSITIVE": 6,
+     "NEUTRAL": 51,
+     "NEGATIVE": 32
+    }
+   }
+  },
+  {
+   "id": "4.1_deberta_zeroshot",
+   "group": 4,
+   "name": "DeBERTa-v3 zero-shot v2.0",
+   "n_scored": 400,
+   "parse_failures": 0,
+   "seconds_per_row": 0.1302,
+   "accuracy": 0.5975,
+   "accuracy_ci95": [
+    0.5487332989658665,
+    0.6444117361171958
+   ],
+   "macro_f1": 0.5921461463485037,
+   "neutral_recall": 0.7115384615384616,
+   "neutral_predicted": 211,
+   "neutral_precision": 0.5260663507109005,
+   "neutral_f1": 0.6049046321525885,
+   "positive_f1": 0.6190476190476191,
+   "negative_f1": 0.5524861878453039,
+   "mcnemar_vs_incumbent": {
+    "b": 126,
+    "c": 72,
+    "n_discordant": 198,
+    "p_value": 0.00015185854094876695,
+    "min_attainable_p": 4.9784122222889134e-60
+   },
+   "confusion": {
+    "POSITIVE": {
+     "POSITIVE": 78,
+     "NEUTRAL": 62,
+     "NEGATIVE": 15
+    },
+    "NEUTRAL": {
+     "POSITIVE": 18,
+     "NEUTRAL": 111,
+     "NEGATIVE": 27
+    },
+    "NEGATIVE": {
+     "POSITIVE": 1,
+     "NEUTRAL": 38,
+     "NEGATIVE": 50
+    }
+   }
+  },
+  {
+   "id": "6.1_comment_ft",
+   "group": 6,
+   "name": "our comment-channel fine-tune (transfer)",
+   "n_scored": 400,
+   "parse_failures": 0,
+   "seconds_per_row": 0.0173,
+   "accuracy": 0.6575,
+   "accuracy_ci95": [
+    0.6096937475435954,
+    0.7023097706675051
+   ],
+   "macro_f1": 0.6499882899991417,
+   "neutral_recall": 0.5576923076923077,
+   "neutral_predicted": 125,
+   "neutral_precision": 0.696,
+   "neutral_f1": 0.6192170818505338,
+   "positive_f1": 0.7567567567567568,
+   "negative_f1": 0.5739910313901345,
+   "mcnemar_vs_incumbent": {
+    "b": 111,
+    "c": 33,
+    "n_discordant": 144,
+    "p_value": 4.5803256241732346e-11,
+    "min_attainable_p": 8.96831017167883e-44
+   },
+   "confusion": {
+    "POSITIVE": {
+     "POSITIVE": 112,
+     "NEUTRAL": 18,
+     "NEGATIVE": 25
+    },
+    "NEUTRAL": {
+     "POSITIVE": 24,
+     "NEUTRAL": 87,
+     "NEGATIVE": 45
+    },
+    "NEGATIVE": {
+     "POSITIVE": 5,
+     "NEUTRAL": 20,
+     "NEGATIVE": 64
+    }
+   }
+  },
+  {
+   "id": "0.3_vader",
+   "group": 0,
+   "name": "VADER (rule-based floor)",
+   "n_scored": 400,
+   "parse_failures": 0,
+   "seconds_per_row": 0.0001,
+   "accuracy": 0.5075,
+   "accuracy_ci95": [
+    0.458667706127959,
+    0.5561896042630459
+   ],
+   "macro_f1": 0.4832777464966989,
+   "neutral_recall": 0.46794871794871795,
+   "neutral_predicted": 142,
+   "neutral_precision": 0.5140845070422535,
+   "neutral_f1": 0.4899328859060403,
+   "positive_f1": 0.5628415300546448,
+   "negative_f1": 0.39705882352941174,
+   "mcnemar_vs_incumbent": {
+    "b": 96,
+    "c": 78,
+    "n_discordant": 174,
+    "p_value": 0.19733841594358562,
+    "min_attainable_p": 8.352389719038111e-53
+   },
+   "confusion": {
+    "POSITIVE": {
+     "POSITIVE": 103,
+     "NEUTRAL": 42,
+     "NEGATIVE": 10
+    },
+    "NEUTRAL": {
+     "POSITIVE": 73,
+     "NEUTRAL": 73,
+     "NEGATIVE": 10
+    },
+    "NEGATIVE": {
+     "POSITIVE": 35,
+     "NEUTRAL": 27,
+     "NEGATIVE": 27
+    }
+   }
+  },
+  {
+   "id": "2.1_nlptown_stars",
+   "group": 2,
+   "name": "nlptown 5-star review model",
+   "n_scored": 400,
+   "parse_failures": 0,
+   "seconds_per_row": 0.0198,
+   "accuracy": 0.4925,
+   "accuracy_ci95": [
+    0.4438103957369542,
+    0.5413322938720411
+   ],
+   "macro_f1": 0.47580021984958804,
+   "neutral_recall": 0.4358974358974359,
+   "neutral_predicted": 150,
+   "neutral_precision": 0.4533333333333333,
+   "neutral_f1": 0.44444444444444436,
+   "positive_f1": 0.5853658536585366,
+   "negative_f1": 0.39759036144578314,
+   "mcnemar_vs_incumbent": {
+    "b": 88,
+    "c": 76,
+    "n_discordant": 164,
+    "p_value": 0.39043016796270574,
+    "min_attainable_p": 8.552847072295026e-50
+   },
+   "confusion": {
+    "POSITIVE": {
+     "POSITIVE": 96,
+     "NEUTRAL": 42,
+     "NEGATIVE": 17
+    },
+    "NEUTRAL": {
+     "POSITIVE": 61,
+     "NEUTRAL": 68,
+     "NEGATIVE": 27
+    },
+    "NEGATIVE": {
+     "POSITIVE": 16,
+     "NEUTRAL": 40,
+     "NEGATIVE": 33
+    }
+   }
+  },
+  {
+   "id": "4.2_bart_mnli",
+   "group": 4,
+   "name": "BART-large MNLI zero-shot",
+   "n_scored": 400,
+   "parse_failures": 0,
+   "seconds_per_row": 0.1713,
+   "accuracy": 0.6025,
+   "accuracy_ci95": [
+    0.5537843145893452,
+    0.6492655940877204
+   ],
+   "macro_f1": 0.5810827564471871,
+   "neutral_recall": 0.4166666666666667,
+   "neutral_predicted": 113,
+   "neutral_precision": 0.5752212389380531,
+   "neutral_f1": 0.483271375464684,
+   "positive_f1": 0.7178082191780822,
+   "negative_f1": 0.5421686746987953,
+   "mcnemar_vs_incumbent": {
+    "b": 108,
+    "c": 52,
+    "n_discordant": 160,
+    "p_value": 1.1307691767152769e-05,
+    "min_attainable_p": 1.3684555315672042e-48
+   },
+   "confusion": {
+    "POSITIVE": {
+     "POSITIVE": 131,
+     "NEUTRAL": 15,
+     "NEGATIVE": 9
+    },
+    "NEUTRAL": {
+     "POSITIVE": 68,
+     "NEUTRAL": 65,
+     "NEGATIVE": 23
+    },
+    "NEGATIVE": {
+     "POSITIVE": 11,
+     "NEUTRAL": 33,
+     "NEGATIVE": 45
+    }
+   }
+  },
+  {
+   "id": "5.2_gemma3_4b",
+   "group": 5,
+   "name": "gemma3:4b",
+   "n_scored": 400,
+   "parse_failures": 0,
+   "seconds_per_row": 0.842,
+   "accuracy": 0.6075,
+   "accuracy_ci95": [
+    0.5588404787053632,
+    0.6541143035657054
+   ],
+   "macro_f1": 0.6005034067339773,
+   "neutral_recall": 0.3717948717948718,
+   "neutral_predicted": 97,
+   "neutral_precision": 0.5979381443298969,
+   "neutral_f1": 0.45849802371541504,
+   "positive_f1": 0.6948640483383686,
+   "negative_f1": 0.6481481481481481,
+   "mcnemar_vs_incumbent": {
+    "b": 93,
+    "c": 35,
+    "n_discordant": 128,
+    "p_value": 2.9832419421477246e-07,
+    "min_attainable_p": 5.877471754111438e-39
+   },
+   "confusion": {
+    "POSITIVE": {
+     "POSITIVE": 115,
+     "NEUTRAL": 26,
+     "NEGATIVE": 14
+    },
+    "NEUTRAL": {
+     "POSITIVE": 55,
+     "NEUTRAL": 58,
+     "NEGATIVE": 43
+    },
+    "NEGATIVE": {
+     "POSITIVE": 6,
+     "NEUTRAL": 13,
+     "NEGATIVE": 70
+    }
+   }
+  },
+  {
+   "id": "5.1_llama32",
+   "group": 5,
+   "name": "llama3.2 (project controller LLM)",
+   "n_scored": 400,
+   "parse_failures": 0,
+   "seconds_per_row": 0.6359,
+   "accuracy": 0.5575,
+   "accuracy_ci95": [
+    0.5085070928349432,
+    0.6053989534960934
+   ],
+   "macro_f1": 0.543019506056316,
+   "neutral_recall": 0.27564102564102566,
+   "neutral_predicted": 84,
+   "neutral_precision": 0.5119047619047619,
+   "neutral_f1": 0.35833333333333334,
+   "positive_f1": 0.6809815950920246,
+   "negative_f1": 0.5897435897435898,
+   "mcnemar_vs_incumbent": {
+    "b": 81,
+    "c": 43,
+    "n_discordant": 124,
+    "p_value": 0.0008202604148752646,
+    "min_attainable_p": 9.4039548065783e-38
+   },
+   "confusion": {
+    "POSITIVE": {
+     "POSITIVE": 111,
+     "NEUTRAL": 27,
+     "NEGATIVE": 17
+    },
+    "NEUTRAL": {
+     "POSITIVE": 54,
+     "NEUTRAL": 43,
+     "NEGATIVE": 59
+    },
+    "NEGATIVE": {
+     "POSITIVE": 6,
+     "NEUTRAL": 14,
+     "NEGATIVE": 69
+    }
+   }
+  },
+  {
+   "id": "1.6_lxyuan_distil",
+   "group": 1,
+   "name": "lxyuan distilbert multilingual student",
+   "n_scored": 400,
+   "parse_failures": 0,
+   "seconds_per_row": 0.0186,
+   "accuracy": 0.425,
+   "accuracy_ci95": [
+    0.3774935293944863,
+    0.4739333666954657
+   ],
+   "macro_f1": 0.383966269912332,
+   "neutral_recall": 0.10897435897435898,
+   "neutral_predicted": 48,
+   "neutral_precision": 0.3541666666666667,
+   "neutral_f1": 0.16666666666666666,
+   "positive_f1": 0.5799457994579945,
+   "negative_f1": 0.4052863436123348,
+   "mcnemar_vs_incumbent": {
+    "b": 49,
+    "c": 64,
+    "n_discordant": 113,
+    "p_value": 0.18759872474577588,
+    "min_attainable_p": 1.925929944387236e-34
+   },
+   "confusion": {
+    "POSITIVE": {
+     "POSITIVE": 107,
+     "NEUTRAL": 11,
+     "NEGATIVE": 37
+    },
+    "NEUTRAL": {
+     "POSITIVE": 84,
+     "NEUTRAL": 17,
+     "NEGATIVE": 55
+    },
+    "NEGATIVE": {
+     "POSITIVE": 23,
+     "NEUTRAL": 20,
+     "NEGATIVE": 46
+    }
+   }
+  },
+  {
+   "id": "0.1_sst2_incumbent",
+   "group": 0,
+   "name": "DistilBERT SST-2 + 0.70 rule (incumbent)",
+   "n_scored": 400,
+   "parse_failures": 0,
+   "seconds_per_row": 0.0267,
+   "accuracy": 0.4625,
+   "accuracy_ci95": [
+    0.4142263811170028,
+    0.5114870669279734
+   ],
+   "macro_f1": 0.4007080965581864,
+   "neutral_recall": 0.04487179487179487,
+   "neutral_predicted": 13,
+   "neutral_precision": 0.5384615384615384,
+   "neutral_f1": 0.08284023668639054,
+   "positive_f1": 0.6158357771260997,
+   "negative_f1": 0.503448275862069,
+   "mcnemar_vs_incumbent": {
+    "b": 0,
+    "c": 0,
+    "n_discordant": 0,
+    "p_value": 1.0,
+    "min_attainable_p": 1.0
+   },
+   "confusion": {
+    "POSITIVE": {
+     "POSITIVE": 105,
+     "NEUTRAL": 5,
+     "NEGATIVE": 45
+    },
+    "NEUTRAL": {
+     "POSITIVE": 66,
+     "NEUTRAL": 7,
+     "NEGATIVE": 83
+    },
+    "NEGATIVE": {
+     "POSITIVE": 15,
+     "NEUTRAL": 1,
+     "NEGATIVE": 73
+    }
+   }
+  },
+  {
+   "id": "3.1_siebert_control",
+   "group": 3,
+   "name": "siebert RoBERTa-large + 0.70 rule (control)",
+   "n_scored": 400,
+   "parse_failures": 0,
+   "seconds_per_row": 0.0354,
+   "accuracy": 0.5125,
+   "accuracy_ci95": [
+    0.463629805456242,
+    0.5611323785287659
+   ],
+   "macro_f1": 0.4178030303030303,
+   "neutral_recall": 0.0,
+   "neutral_predicted": 3,
+   "neutral_precision": 0.0,
+   "neutral_f1": 0.0,
+   "positive_f1": 0.6909090909090909,
+   "negative_f1": 0.5625,
+   "mcnemar_vs_incumbent": {
+    "b": 44,
+    "c": 24,
+    "n_discordant": 68,
+    "p_value": 0.02052693371370707,
+    "min_attainable_p": 6.776263578034403e-21
+   },
+   "confusion": {
+    "POSITIVE": {
+     "POSITIVE": 133,
+     "NEUTRAL": 1,
+     "NEGATIVE": 21
+    },
+    "NEUTRAL": {
+     "POSITIVE": 82,
+     "NEUTRAL": 0,
+     "NEGATIVE": 74
+    },
+    "NEGATIVE": {
+     "POSITIVE": 15,
+     "NEUTRAL": 2,
+     "NEGATIVE": 72
+    }
+   }
+  }
+ ],
+ "threshold_sweep": [
+  {
+   "threshold": 0.5,
+   "accuracy": 0.45,
+   "macro_f1": 0.3694323963296106,
+   "neutral_recall": 0.0,
+   "neutral_precision": 0.0,
+   "neutral_predicted": 0
+  },
+  {
+   "threshold": 0.55,
+   "accuracy": 0.45,
+   "macro_f1": 0.37343820440621095,
+   "neutral_recall": 0.00641025641025641,
+   "neutral_precision": 0.3333333333333333,
+   "neutral_predicted": 3
+  },
+  {
+   "threshold": 0.6,
+   "accuracy": 0.45,
+   "macro_f1": 0.37343820440621095,
+   "neutral_recall": 0.00641025641025641,
+   "neutral_precision": 0.3333333333333333,
+   "neutral_predicted": 3
+  },
+  {
+   "threshold": 0.65,
+   "accuracy": 0.45,
+   "macro_f1": 0.377766169646015,
+   "neutral_recall": 0.01282051282051282,
+   "neutral_precision": 0.2857142857142857,
+   "neutral_predicted": 7
+  },
+  {
+   "threshold": 0.7,
+   "accuracy": 0.4625,
+   "macro_f1": 0.4007080965581864,
+   "neutral_recall": 0.04487179487179487,
+   "neutral_precision": 0.5384615384615384,
+   "neutral_predicted": 13
+  },
+  {
+   "threshold": 0.75,
+   "accuracy": 0.4575,
+   "macro_f1": 0.4000740751247851,
+   "neutral_recall": 0.05128205128205128,
+   "neutral_precision": 0.4444444444444444,
+   "neutral_predicted": 18
+  },
+  {
+   "threshold": 0.8,
+   "accuracy": 0.4525,
+   "macro_f1": 0.400406150079846,
+   "neutral_recall": 0.057692307692307696,
+   "neutral_precision": 0.36,
+   "neutral_predicted": 25
+  },
+  {
+   "threshold": 0.85,
+   "accuracy": 0.465,
+   "macro_f1": 0.4251306625905511,
+   "neutral_recall": 0.10256410256410256,
+   "neutral_precision": 0.45714285714285713,
+   "neutral_predicted": 35
+  },
+  {
+   "threshold": 0.9,
+   "accuracy": 0.46,
+   "macro_f1": 0.42585911960951145,
+   "neutral_recall": 0.11538461538461539,
+   "neutral_precision": 0.4090909090909091,
+   "neutral_predicted": 44
+  },
+  {
+   "threshold": 0.95,
+   "accuracy": 0.46,
+   "macro_f1": 0.43940561442699905,
+   "neutral_recall": 0.16666666666666666,
+   "neutral_precision": 0.4,
+   "neutral_predicted": 65
+  },
+  {
+   "threshold": 0.99,
+   "accuracy": 0.535,
+   "macro_f1": 0.5348254999769845,
+   "neutral_recall": 0.5,
+   "neutral_precision": 0.5032258064516129,
+   "neutral_predicted": 155
+  }
+ ]
+}

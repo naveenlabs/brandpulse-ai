@@ -1,0 +1,36 @@
+{
+ "uid": "4KbrxIpQgkM_109",
+ "system": "three_channel",
+ "video_id": "4KbrxIpQgkM",
+ "segment_id": 109,
+ "split": "selection",
+ "payload": {
+  "segment_id": 109,
+  "start_s": 567.22,
+  "end_s": 570.22,
+  "transcript": "I'm sure we'll see this in like a Jerry-g-everything-teared-on video at some point.",
+  "transcript_sentiment": "NEUTRAL (0.52)",
+  "vocal_emotion": "NEUTRAL (arousal 0.47)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.99)"
+ },
+ "seconds": 4.555,
+ "raw": "{\n  \"segment_id\": 109,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"video_comment_sentiment\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and tone suggest neutrality, but their face shows no emotion and the audience's comments are overwhelmingly positive, indicating a potential disconnect between the creator's intent and their emotional expression.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 109,
+  "start_s": 567.22,
+  "end_s": 570.22,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: video_comment_sentiment"
+  ],
+  "flagged": false
+ }
+}

@@ -1,0 +1,5498 @@
+{
+  "video_url": "https://youtu.be/nfHRMqqO578?si=w50ykp0P5Uld971g",
+  "brand_name": "Samsung",
+  "authenticity_score": 48.1,
+  "brand_health_score": 76.55,
+  "segment_count": 144,
+  "flagged_segments": [
+    {
+      "segment_id": 86,
+      "start_s": 441.0,
+      "end_s": 446.15999999999997,
+      "conflict_score": 0.8,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": true,
+      "text": "magnets in them, Samsung, but wouldn't you also want to maybe win an MVP phone of the",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6116
+        },
+        "facial_emotion": {
+          "dominant": "fear",
+          "confidence": 0.6096,
+          "frame_count": 6,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.43,
+          "valence": 0.5615,
+          "dominance": 0.4921,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 112.67,
+        "energy_mean": 0.009133
+      }
+    }
+  ],
+  "comment_sentiment": {
+    "label": "POSITIVE",
+    "confidence": 0.9551,
+    "comment_count": 100,
+    "distribution": {
+      "POSITIVE": 56,
+      "NEUTRAL": 27,
+      "NEGATIVE": 17
+    }
+  },
+  "bias_caveat": "IMPORTANT: Facial emotion recognition (DeepFace) has documented accuracy disparities across skin tone and gender (Buolamwini & Gebru, 2018; Fan et al., 2023). Authenticity scores informed by facial data should be interpreted with this limitation in mind.",
+  "vocal_caveat": "IMPORTANT: The vocal emotion channel is the second weakest of the four, after facial emotion, and is explicitly down-weighted. Benchmarked on 150 hand-rated clips from 6 speakers (vocal_bench/), the adopted model scores 48.9% three-class accuracy on held-out speakers - better than the model it replaced, which at 34.0% was significantly worse than always guessing NEUTRAL (p = 0.0070), but still not reliably better than that constant. No model tested beat it. Conflicts attributed to the vocal channel alone are damped accordingly, and per-segment claims should not rest on this channel. Read the within-video figure, not the headline: this report compares segments inside one video, and the channel's rank correlation with human judgement measured within a video is +0.159 across 147 clips and +0.056 on unseen speakers (vocal_bench/SPEAKER_NORM_RESULT.md). Most of its apparent accuracy is a between-video effect that says more about the speaker's habitual energy than about any individual moment.",
+  "vocal_licence_note": "The adopted vocal model (audeering/wav2vec2-large-robust-12-ft-emotion-msp-dim) is licensed CC-BY-NC-SA-4.0 and may not be used commercially. Every configuration measured in vocal_bench/ that showed usable signal was non-commercially licensed; the permissively-licensed alternatives measured at the bottom of every table. A commercial deployment would need to ship without this channel or replace it.",
+  "all_comments": [
+    {
+      "text": "MKBHD and Marques Brownlee in the same video!😮",
+      "label": "NEUTRAL",
+      "confidence": 0.981,
+      "like_count": 6845
+    },
+    {
+      "text": "The phone gets thinner every year but the camera bump is building a whole neighborhood",
+      "label": "NEGATIVE",
+      "confidence": 0.9937,
+      "like_count": 11602
+    },
+    {
+      "text": "MKBHD and MRWHOSETHEBOSS with the same video concept 😆",
+      "label": "NEUTRAL",
+      "confidence": 0.9586,
+      "like_count": 14465
+    },
+    {
+      "text": "I like how AI is just referred to as \"slop\" now, this is something I'm fully in agreement with",
+      "label": "POSITIVE",
+      "confidence": 0.9986,
+      "like_count": 1923
+    },
+    {
+      "text": "i think mr whos the boss and mkbhd took the same ChatGPT advice for this video.",
+      "label": "NEUTRAL",
+      "confidence": 0.999,
+      "like_count": 5578
+    },
+    {
+      "text": "Mrwhostheboss and Mkbhd both causally showing two of them in their videos.",
+      "label": "NEUTRAL",
+      "confidence": 0.9463,
+      "like_count": 1520
+    },
+    {
+      "text": "yo wtf how did mkbhd and mrwhostheboss have same video lol",
+      "label": "NEUTRAL",
+      "confidence": 0.998,
+      "like_count": 1750
+    },
+    {
+      "text": "The privacy screen is an awesome feature and one of the biggest innovations in phones over the last 5+ years for sure.",
+      "label": "POSITIVE",
+      "confidence": 0.9991,
+      "like_count": 337
+    },
+    {
+      "text": "11:46 \"the price is the most Ultra thing about this phone\"  That should be a T-shirt.",
+      "label": "NEGATIVE",
+      "confidence": 0.9805,
+      "like_count": 900
+    },
+    {
+      "text": "now i can use twitter in public",
+      "label": "POSITIVE",
+      "confidence": 0.9934,
+      "like_count": 2555
+    },
+    {
+      "text": "Viewing angles of screens in:\n2016: we want more!\n2026: turn it down, we want privacy!😂",
+      "label": "NEGATIVE",
+      "confidence": 0.9965,
+      "like_count": 202
+    },
+    {
+      "text": "4:55 it sold one at least. My original pick was the S26 plus coming from the iPhone 16 plus. But... the second i found out id get the bigger display AND a built in privacy display, i decided it was worth spending more. Edit: also the S-pen is fun and a bonus as well.",
+      "label": "POSITIVE",
+      "confidence": 0.9994,
+      "like_count": 11
+    },
+    {
+      "text": "0:30 Golden was the right song for that.",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 220
+    },
+    {
+      "text": "The privacy mode is handsdown the coolest feature on the phone. \n\nI wish samsung innovate more on the s pen software.\n\n\nIt is a special hardware and the software support should be improving with newer generations.\n\nBut it just does the bare minimum",
+      "label": "POSITIVE",
+      "confidence": 0.981,
+      "like_count": 667
+    },
+    {
+      "text": "My s23 ultra just looks so good . Even after years .",
+      "label": "POSITIVE",
+      "confidence": 0.9988,
+      "like_count": 302
+    },
+    {
+      "text": "Switched to this after years of iphone and switchedf from an iphone 12 lol. Its been an adjustment for sure, only had it a few days but it definitely has a lot of things I love right away.",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 16
+    },
+    {
+      "text": "Does the privacy display boost battery life since half of the pixels are off?",
+      "label": "NEGATIVE",
+      "confidence": 0.9916,
+      "like_count": 3277
+    },
+    {
+      "text": "privacy screen: blocks the guy next to you. \ndata policy: sells your data to vendors and trackers 🎭",
+      "label": "NEUTRAL",
+      "confidence": 0.8968,
+      "like_count": 171
+    },
+    {
+      "text": "Imagine buying a microscope just to measure pixels for a singular smartphone. Crazy, but I appreciate the effort",
+      "label": "NEGATIVE",
+      "confidence": 0.5181,
+      "like_count": 850
+    },
+    {
+      "text": "I only rely on mkbhd reviews , very detailed and understandable to . Good Job as always",
+      "label": "POSITIVE",
+      "confidence": 0.9989,
+      "like_count": 0
+    },
+    {
+      "text": "This is one of those times I genuinely appreciate the value MKBHD adds to his reviews.",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 13
+    },
+    {
+      "text": "Protect Marques Brownlee petition being prepared, after you cracked the code, of the display sequence (for Apple to now copy) 😅. Great review...",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 7
+    },
+    {
+      "text": "The intro to this video was G\nGreat. Very funny too. Nice job.",
+      "label": "POSITIVE",
+      "confidence": 0.9991,
+      "like_count": 4
+    },
+    {
+      "text": "It’s crazy for some reason your vids stopped being popping up on my timeline but as soon as I start thinking about buying a phone I type this in and I was like I’ll know the name when I see it and boom we’re back!!!! Missed the vids!!! 🎉",
+      "label": "POSITIVE",
+      "confidence": 0.9995,
+      "like_count": 0
+    },
+    {
+      "text": "0:12  corporate wants you to find the difference between these two pictures",
+      "label": "NEUTRAL",
+      "confidence": 0.9989,
+      "like_count": 199
+    },
+    {
+      "text": "The price is the most ultra thing about this 😂 11:45",
+      "label": "NEGATIVE",
+      "confidence": 0.987,
+      "like_count": 860
+    },
+    {
+      "text": "7:27 At least we have a heads up in the 1st quarter of who is definitely NOT winning MKBHD's 2026 MVP phone of the year and most improved phone awards.",
+      "label": "NEUTRAL",
+      "confidence": 0.6945,
+      "like_count": 204
+    },
+    {
+      "text": "Great vlog - informative with detail and balanced comment. Have read about the display changes, and needed a good techy review",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 1
+    },
+    {
+      "text": "Bro! you and \"Mr. Who's the boss\" both did twin version videos! Thats so cool!😂",
+      "label": "POSITIVE",
+      "confidence": 0.9994,
+      "like_count": 12
+    },
+    {
+      "text": "I just opened youtube for the first time on my s26u which just arrived and this is the first video I got recommended",
+      "label": "POSITIVE",
+      "confidence": 0.9991,
+      "like_count": 25
+    },
+    {
+      "text": "Thank you for addressing the PWM issue @12:12 .",
+      "label": "POSITIVE",
+      "confidence": 0.996,
+      "like_count": 4
+    },
+    {
+      "text": "I just realized with the new steady camera feature we can now get those scary videos without the people shaking the camera so much you can't see anything 😂",
+      "label": "NEUTRAL",
+      "confidence": 0.8586,
+      "like_count": 27
+    },
+    {
+      "text": "00:58 He did it he said the phrase yet again the GOAT",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 17
+    },
+    {
+      "text": "We got 2 Marques and 2 Aruns to review the S26 Ultra 🙂And yes, Marques has done the concept for years!",
+      "label": "POSITIVE",
+      "confidence": 0.9994,
+      "like_count": 17
+    },
+    {
+      "text": "Ive had my S25 Ultra for a year.  Im very happy with it.",
+      "label": "POSITIVE",
+      "confidence": 0.9991,
+      "like_count": 20
+    },
+    {
+      "text": "I'm thinking about getting this as a late birthday gift to myself next month...Time for an upgrade. I've had this Samsung A03 for 4 years now.",
+      "label": "POSITIVE",
+      "confidence": 0.9993,
+      "like_count": 1
+    },
+    {
+      "text": "My goodness! That's a twin of my dog at 9:00! Bernedoodles FTW!",
+      "label": "POSITIVE",
+      "confidence": 0.9994,
+      "like_count": 12
+    },
+    {
+      "text": "1:35 that wobble is crazy",
+      "label": "POSITIVE",
+      "confidence": 0.9982,
+      "like_count": 277
+    },
+    {
+      "text": "0:21 bro's out here listening to the new J Cole. Give us a one-time album review. Would love to hear your thoughts!",
+      "label": "POSITIVE",
+      "confidence": 0.9991,
+      "like_count": 244
+    },
+    {
+      "text": "I had the Galaxy S21 Ultra for the past 5 years. It still works great. My new phone, S26 Ultra, is coming in today.",
+      "label": "POSITIVE",
+      "confidence": 0.9993,
+      "like_count": 105
+    },
+    {
+      "text": "Hey Marques!\nYou probably would find it very odd, but you are my favourite YouTuber for mindless watches. \nNot saying your content is mindless, absolutely not. \nBut, when I have nothing to watch while having a meal, your calming voice and structured videos are such a great combo. And I am saying it with loads of affection and respect. \nThanks for bringing this unintentional calm. 😇🤗",
+      "label": "POSITIVE",
+      "confidence": 0.9994,
+      "like_count": 34
+    },
+    {
+      "text": "I'm about to pre-order this bad boy. MKBHD, you're the GOAT buddy!",
+      "label": "POSITIVE",
+      "confidence": 0.9993,
+      "like_count": 16
+    },
+    {
+      "text": "Og followers know this ain't the first double video from Mkbhd. 🙌",
+      "label": "POSITIVE",
+      "confidence": 0.9993,
+      "like_count": 20
+    },
+    {
+      "text": "So the reason that this virtual privacy screen is so great is that i work at cowboys stadium and a few other arenas, and when people have privacy screens it is really hard for our scanners to scan your ticket via qr code. Also, the brighter your screen can get, even for a few seconds, allows us to scan your qr code in direct sunlight. The scanners feel really cheap so we need you to come with the better screens or we will send you to the ticket tent to get assistance",
+      "label": "POSITIVE",
+      "confidence": 0.9904,
+      "like_count": 4
+    },
+    {
+      "text": "Damn the xaipondam dudes were right ?",
+      "label": "NEUTRAL",
+      "confidence": 0.9986,
+      "like_count": 1262
+    },
+    {
+      "text": "MKBHD rocking in DP's hoody💯",
+      "label": "POSITIVE",
+      "confidence": 0.999,
+      "like_count": 4
+    },
+    {
+      "text": "6:49 drop those players Marques! Your fantasy ranking won’t get any higher, except maybe for Westbrook. 😅 Get Diabate or Filipowski for double double and rebounds, I think no one picked them.",
+      "label": "NEUTRAL",
+      "confidence": 0.97,
+      "like_count": 6
+    },
+    {
+      "text": "I always enjoy your reviews! (I've bought many a phone from based on your commentary)❤️",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 2
+    },
+    {
+      "text": "7:14 the magnets would interfere with the S Pen, so there's another trade off",
+      "label": "NEGATIVE",
+      "confidence": 0.9977,
+      "like_count": 43
+    },
+    {
+      "text": "Both big reviews start with two of the same person in frame",
+      "label": "NEUTRAL",
+      "confidence": 0.9989,
+      "like_count": 264
+    },
+    {
+      "text": "Remind me of fold 7 camera bump",
+      "label": "NEUTRAL",
+      "confidence": 0.999,
+      "like_count": 18
+    },
+    {
+      "text": "Thank you for also talking about the regular base S26 lineup and not just the ultra",
+      "label": "NEUTRAL",
+      "confidence": 0.7192,
+      "like_count": 0
+    },
+    {
+      "text": "It seems that the Samsung briefcases didn't reach MKBHD this time.",
+      "label": "NEGATIVE",
+      "confidence": 0.9937,
+      "like_count": 364
+    },
+    {
+      "text": "Still in love with my S24 Ultra... I thought the S26 Ultra was going to be when I wanted to upgrade, but nah. Yeah, I'm a sucker for performance, but the S24 Ultra is still flying. Loving the camera too. And one more thing I love about my S24 Ultra is your review on it... no other Ultra has deserved that kind of review this year. Why buy another phone? Still two years later (at least why buy another Samsung Ultra, right?)",
+      "label": "POSITIVE",
+      "confidence": 0.9993,
+      "like_count": 76
+    },
+    {
+      "text": "Watched this video on my S26 Ultra. 😊 I can comment on some of this as someone who came from an S24U. The privacy display and screen in general isn't much of a trade off. The colouring is different but you can customise it in the advanced settings to how you like. Privacy, if you're like me, you use sparingly and don't notice a differenc3 the rest of the time, which is 99% of the time. I don't notice a great difference to the viewing angle in general and the anti reflective coating just seems to reflect warmer as opposed to worse. Battery is great, just doing a data transfer via cable I noticed the S24 drop by 20% in the same time the S26 dropped by 8%. Camera not really tested. Comfort, I'd say the curves rails on the S24U were my comfortable but the rounded corners on the S26 are much better. The speaker is much better too but I had to play around with the custom EQ to get it right for me....but you can do that which not every phone allows you to do. Never had magnets or magnet cases, I run a naked phone and have an all-in-one wireless charging set up for all my devices at night so I don't have any need. Ai is cool but not really explored it's full potential. What I have used is quick, effective and can be fun if that's your thing. There is another video online that shows yo< the best settings to change out of the box which has some great tips, recommend others go watch it (I can't remember the guy who posted it).",
+      "label": "POSITIVE",
+      "confidence": 0.9981,
+      "like_count": 16
+    },
+    {
+      "text": "I bought one, switched from 16 pro max, really enjoyed my first 2 days with it, feels so much quicker then my iphone did, was always a note fan back in the day this takes me right back",
+      "label": "POSITIVE",
+      "confidence": 0.9991,
+      "like_count": 0
+    },
+    {
+      "text": "03:30 If it turns off Pixels, it also saves battery. Win - Win. I bet 90% of people do not care if it's 300 DPI or 600, I bet 98% of people don't even realise it.",
+      "label": "POSITIVE",
+      "confidence": 0.9946,
+      "like_count": 81
+    },
+    {
+      "text": "7:40 I believe the reason for the lack of magnets is due to issues with the s pen, something about the digitizer layer in the screen that doesn't react well with the magnets and the s pen at the same time. Don't hold me up on that though.",
+      "label": "NEUTRAL",
+      "confidence": 0.8719,
+      "like_count": 73
+    },
+    {
+      "text": "Samsung knows this generation, which is why they add this feature",
+      "label": "NEUTRAL",
+      "confidence": 0.9208,
+      "like_count": 5
+    },
+    {
+      "text": "Remember when tech reviewers talked about viewing angles on new phones? and that suddenly became a NON issue... now Samsung has it back and everyone loves it (even me)",
+      "label": "POSITIVE",
+      "confidence": 0.9988,
+      "like_count": 1
+    },
+    {
+      "text": "Bro why did u and mrwhostheboss have the same idea 😭 They are secretly working together at this point",
+      "label": "NEUTRAL",
+      "confidence": 0.7362,
+      "like_count": 743
+    },
+    {
+      "text": "You just compare your video of the latest iPhone and this one, the biasing speaks for itself",
+      "label": "NEUTRAL",
+      "confidence": 0.988,
+      "like_count": 15
+    },
+    {
+      "text": "I think this phone is for someone who is upgrading from an S22 or S23, as they will get a lot of changes and features. But S24 or S25 users can happily keep on using theirs without upgrading.",
+      "label": "NEUTRAL",
+      "confidence": 0.6456,
+      "like_count": 20
+    },
+    {
+      "text": "I still love it, I'll trade sharpness for privacy. That said, I will absolutely use it app specific vs just having the phone always on privacy. The apps I can think of that I'd actually really want or need it for, don't really need the best of clarity anyway. Banking apps and chat apps mostly.",
+      "label": "POSITIVE",
+      "confidence": 0.9983,
+      "like_count": 2
+    },
+    {
+      "text": "0:40 Nothing font for Samsung review😮😮",
+      "label": "NEGATIVE",
+      "confidence": 0.7959,
+      "like_count": 21
+    },
+    {
+      "text": "3:56 what a good tradeoff to have.. now i want the phone so bad 😢😢",
+      "label": "POSITIVE",
+      "confidence": 0.9986,
+      "like_count": 8
+    },
+    {
+      "text": "7:16 well, I have heard that, if they make a magsafe-like hardware in the phone, it does not support reverse wireless charging anymore. And also, most of the people use cases always!! Also, except wireless power banks, wireless charging doesn't make a lot of sense. (Most of the people in Asia still use wired charging including me).",
+      "label": "NEGATIVE",
+      "confidence": 0.9974,
+      "like_count": 31
+    },
+    {
+      "text": "Its crazy,  i just upgraded to the s26u today just because they had a special on that i just couldn't pass up because it would allow me to jump to the s27u in 3 months instead of my two year plan. I can say that the sound and video at factory settings out the box is better then my old s24u that I just traded in.  I am amazed because of so many reviews that are saying it isn't really an upgrade,  and here am i saying i might have finally found a display i can play fps on and really see the field.  I just know.",
+      "label": "POSITIVE",
+      "confidence": 0.9994,
+      "like_count": 1
+    },
+    {
+      "text": "Yeah I want it,",
+      "label": "POSITIVE",
+      "confidence": 0.9987,
+      "like_count": 6
+    },
+    {
+      "text": "After 5 long years it's time to upgrade from my S20u.",
+      "label": "POSITIVE",
+      "confidence": 0.987,
+      "like_count": 43
+    },
+    {
+      "text": "5:30 I don't understand what is the point making phones \"thinner\" if camera is still bumping out and new chips require more battery anyways? 🤷‍♂️",
+      "label": "NEGATIVE",
+      "confidence": 0.9982,
+      "like_count": 155
+    },
+    {
+      "text": "Quality content! New sub. Thanks for the review.",
+      "label": "POSITIVE",
+      "confidence": 0.9991,
+      "like_count": 0
+    },
+    {
+      "text": "7:00 the magnets would screw with the S-Pen tracking, I got a phone case with magnets for my S25 ultra and I kept noticing the cursor shifting when I went over the magnet part, I couldn't draw straight lines... I took the magnets out of the case because it's a good case but still I think that's a pretty good reason not to add in built magnets to the phone.",
+      "label": "NEGATIVE",
+      "confidence": 0.9595,
+      "like_count": 5
+    },
+    {
+      "text": "Can't wait to see his enthusiasm on the iphone 18 reviews.",
+      "label": "POSITIVE",
+      "confidence": 0.9994,
+      "like_count": 22
+    },
+    {
+      "text": "samsung's first impressions limit just ended lol, got arun and marques here",
+      "label": "NEUTRAL",
+      "confidence": 0.9714,
+      "like_count": 18
+    },
+    {
+      "text": "I preordered mine, coming from the iPhone 15 pro. Can’t wait to get it and learn all about the new features it’ll offer!",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 0
+    },
+    {
+      "text": "6:30 Looks more like 10-15% CPU improvements to me, based on those benchmark numbers, not 20-30%.",
+      "label": "NEGATIVE",
+      "confidence": 0.9895,
+      "like_count": 32
+    },
+    {
+      "text": "But the screen! Already hear many people say it looks worse than before.",
+      "label": "NEGATIVE",
+      "confidence": 0.9979,
+      "like_count": 10
+    },
+    {
+      "text": "0:01 I need the MCU. The Marquez Brownlee Cinematic Universe.",
+      "label": "POSITIVE",
+      "confidence": 0.8135,
+      "like_count": 79
+    },
+    {
+      "text": "the microscope shot was really cool :]",
+      "label": "POSITIVE",
+      "confidence": 0.9991,
+      "like_count": 1
+    },
+    {
+      "text": "0:45 dude perfect merch?",
+      "label": "POSITIVE",
+      "confidence": 0.5641,
+      "like_count": 166
+    },
+    {
+      "text": "The privacy screen is dope. The only reason I'll be getting it is because AT&T is having a ridiculous promotion with trade ins right now. I'll get an $1100 credit for my 22 Ultra. So for $200 why not upgrade?",
+      "label": "POSITIVE",
+      "confidence": 0.9994,
+      "like_count": 24
+    },
+    {
+      "text": "Got my S26U today, moving from a Sony Xperia 1 III. I thought the X1 camera bump was big, but the S26U is truly *obnoxious* 😅 and it made me chuckle when you can still get the Level in the edge panel options! \n\nThe edge display I have enabled just for notifications and pin/password entry, and honestly at normal viewing distances - even 15-20cm away - the resolution drop doesn't bother me at all. As a trade-off of momentary privacy, it's great. Also, the viewing angle issue is a non issue, in the real world. The saddest thing is the lack of true 10-bit panel, and the loss of 4K panels from smartphones (one of the reasons I held on to my Sony for so long).",
+      "label": "POSITIVE",
+      "confidence": 0.9994,
+      "like_count": 7
+    },
+    {
+      "text": "MKBHD, your customer from Nigeria. How about I continue using your S25 ultra😊😊😊❤ from where you stopped, Sir?",
+      "label": "POSITIVE",
+      "confidence": 0.9993,
+      "like_count": 1
+    },
+    {
+      "text": "Is it Just me or was that KPDH music?\nIs it DP Merch?",
+      "label": "NEUTRAL",
+      "confidence": 0.9992,
+      "like_count": 7
+    },
+    {
+      "text": "Privacy display seems like a battery  saving feature.  Who needs this much pixel density.",
+      "label": "NEGATIVE",
+      "confidence": 0.9981,
+      "like_count": 33
+    },
+    {
+      "text": "My s21 ultra is number one.... Better camera, better vibration, the newer ones suck, can't even feel the vibration compared to the s21 ultra",
+      "label": "POSITIVE",
+      "confidence": 0.9717,
+      "like_count": 6
+    },
+    {
+      "text": "I have upgrade early ready but i have 14 months till my phone is paid off might just wait tbh",
+      "label": "NEGATIVE",
+      "confidence": 0.5281,
+      "like_count": 1
+    },
+    {
+      "text": "6:00 😂😂 Marquise.. you know that rock is there to mimic the keys depression...",
+      "label": "NEUTRAL",
+      "confidence": 0.9967,
+      "like_count": 4
+    },
+    {
+      "text": "This phone is still just such a mild spec bump compared to my 3 year old S23 Ultra, its still not worth wasting £1300 on the same phone.\nI used to get a new phone every 2 years without fail but its just not justifiably anymore.\nThe privacy display is very cool tech I just dont care about, so few times I need to hide my screen and even if I do a small tilt to the side is better than spending a grand.",
+      "label": "NEGATIVE",
+      "confidence": 0.9979,
+      "like_count": 6
+    },
+    {
+      "text": "I think I have seen this concept somewhere",
+      "label": "NEUTRAL",
+      "confidence": 0.9947,
+      "like_count": 175
+    },
+    {
+      "text": "I just got mine and switched from the fold 6 because of the screen and cameras. Loving the privacy. This would be massize in all screens like laptops for business on the go. I work for a medical comapny and that privacy would be so nice when traveling for work.",
+      "label": "POSITIVE",
+      "confidence": 0.9994,
+      "like_count": 0
+    },
+    {
+      "text": "This video felt like an effort to say \"GUUUYS we know it looked cool but come on this phone is not all that!!!!\" and I couldnt help but raise an eyebrow to that lol \nidk it felt like it REALLY put the enfasis in the little \"bad\" things -even if, like he said, if you're someone who really puts attention to those elements THEN you'd notice-\nIm curious to see how they'll tackle a certain someone's next flagship announcement",
+      "label": "NEUTRAL",
+      "confidence": 0.5388,
+      "like_count": 8
+    },
+    {
+      "text": "0:21 The Fall Off mentioned",
+      "label": "NEUTRAL",
+      "confidence": 0.9991,
+      "like_count": 74
+    },
+    {
+      "text": "I am from the Apple world, but I have to say, the privacy screen is almost the first thing I've seen on an Android phone that would get me to switch. The lower resolution and brightness when in privacy mode is a very minor tradeoff since you can always just turn it off. And the general, very slight, degradation I wouldn't notice. For now, I'm just hoping this gets added eventually to Apple phones. Samsung makes most of Apple's screens. I also kind of like the new design and have always been envious of the stylus.",
+      "label": "POSITIVE",
+      "confidence": 0.9682,
+      "like_count": 41
+    },
+    {
+      "text": "Thanks for this review. I was gonna pull the trigger on this one today but not before I watched your review.",
+      "label": "POSITIVE",
+      "confidence": 0.9993,
+      "like_count": 0
+    },
+    {
+      "text": "No magnets is the best part for us with pace makers!",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 15
+    },
+    {
+      "text": "what's up with the closed captions",
+      "label": "NEUTRAL",
+      "confidence": 0.8924,
+      "like_count": 20
+    },
+    {
+      "text": "9:20 Conspiracy theory that maybe is more theory than conspiracy: Samsung is a massive company that makes phones that will be in the hands of millions of people, and also makes the ram and storage sold to Ai data centres.\r\n\r\nSo, they get all their departments that make phones, fridges, monitors, TVs, and all the others to keep adding, focusing and pushing Ai, fuelling the Ai bubble, and then supply that bubble with their ram. Coincidence? I think not!",
+      "label": "NEUTRAL",
+      "confidence": 0.9976,
+      "like_count": 33
+    },
+    {
+      "text": "Finally,  this is the 2nd review I've watched that is actually reviewing from a POV of people who aren't all techy,  meaning you and the last guy are honest about certain features that might not be a huge breakthrough.... but at least samsung is trying",
+      "label": "POSITIVE",
+      "confidence": 0.9982,
+      "like_count": 0
+    }
+  ],
+  "all_segments": [
+    {
+      "segment_id": 0,
+      "start_s": 0.0,
+      "end_s": 4.5200000000000005,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Let's read our final thoughts.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7152
+        },
+        "facial_emotion": {
+          "dominant": "sad",
+          "confidence": 0.7928,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.8079,
+          "valence": 0.5715,
+          "dominance": 0.6771,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 206.41,
+        "energy_mean": 0.022446
+      }
+    },
+    {
+      "segment_id": 1,
+      "start_s": 4.58,
+      "end_s": 10.42,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "Thank you so much, everybody. Theour of this session",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.9175
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8094,
+          "frame_count": 6,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6237,
+          "valence": 0.5577,
+          "dominance": 0.4893,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 184.32,
+        "energy_mean": 0.017594
+      }
+    },
+    {
+      "segment_id": 2,
+      "start_s": 10.48,
+      "end_s": 13.6,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Is our personal story?",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.802
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.935,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7412,
+          "valence": 0.5682,
+          "dominance": 0.645,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 178.44,
+        "energy_mean": 0.038306
+      }
+    },
+    {
+      "segment_id": 3,
+      "start_s": 20.92,
+      "end_s": 25.48,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "I am going tootechnology a итó that is now.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7831
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.489,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5891,
+          "valence": 0.5044,
+          "dominance": 0.4683,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 175.44,
+        "energy_mean": 0.023846
+      }
+    },
+    {
+      "segment_id": 4,
+      "start_s": 27.62,
+      "end_s": 40.3,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "Warwick that blessed us You know, we can still hear what you're...",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7757
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.933,
+          "frame_count": 6,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5955,
+          "valence": 0.6859,
+          "dominance": 0.5719,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 193.86,
+        "energy_mean": 0.005142
+      }
+    },
+    {
+      "segment_id": 5,
+      "start_s": 40.3,
+      "end_s": 40.8,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "Nevermind.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.4184
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEGATIVE",
+          "arousal": 0.2386,
+          "valence": 0.2286,
+          "dominance": 0.3279,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 119.39,
+        "energy_mean": 0.016226
+      }
+    },
+    {
+      "segment_id": 6,
+      "start_s": 44.46,
+      "end_s": 48.620000000000005,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "You might remember all my impressions of this phone were based on footage of it before actually",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7798
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.945,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4455,
+          "valence": 0.6098,
+          "dominance": 0.5528,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 132.63,
+        "energy_mean": 0.012509
+      }
+    },
+    {
+      "segment_id": 7,
+      "start_s": 48.620000000000005,
+      "end_s": 54.739999999999995,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "getting to hold it in person. And those impressions were pretty positive, but not a lot is actually new with this phone.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.713
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7992,
+          "frame_count": 6,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4792,
+          "valence": 0.5642,
+          "dominance": 0.5591,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 142.45,
+        "energy_mean": 0.012582
+      }
+    },
+    {
+      "segment_id": 8,
+      "start_s": 55.0,
+      "end_s": 58.239999999999995,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Just a few things that are new are pretty interesting.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8215
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.6137,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4561,
+          "valence": 0.5347,
+          "dominance": 0.5485,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 176.35,
+        "energy_mean": 0.024329
+      }
+    },
+    {
+      "segment_id": 9,
+      "start_s": 58.24,
+      "end_s": 62.04,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "But I have been using this phone for about a week now, and the more I've used it, and",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.4886
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9952,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5634,
+          "valence": 0.6211,
+          "dominance": 0.6029,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 129.06,
+        "energy_mean": 0.007972
+      }
+    },
+    {
+      "segment_id": 10,
+      "start_s": 62.04,
+      "end_s": 68.22,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "the more commentary I've seen about it online, the more I feel the need to remind people about",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.4363
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9948,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4956,
+          "valence": 0.5207,
+          "dominance": 0.5756,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 138.05,
+        "energy_mean": 0.017489
+      }
+    },
+    {
+      "segment_id": 11,
+      "start_s": 68.22,
+      "end_s": 74.04,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "trade-offs. Every feature in every phone is a trade-off.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7707
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.911,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4341,
+          "valence": 0.3337,
+          "dominance": 0.5399,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 152.87,
+        "energy_mean": 0.01358
+      }
+    },
+    {
+      "segment_id": 12,
+      "start_s": 74.14,
+      "end_s": 78.76,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "And this new display is maybe one of the most interesting case studies in that in a long",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7959
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5481,
+          "valence": 0.7583,
+          "dominance": 0.6345,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 151.14,
+        "energy_mean": 0.017883
+      }
+    },
+    {
+      "segment_id": 13,
+      "start_s": 78.76,
+      "end_s": 82.46000000000001,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "time. So on paper, you know, it's a lot of the same numbers as last year, right?",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7173
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5528,
+          "valence": 0.5389,
+          "dominance": 0.6062,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 187.54,
+        "energy_mean": 0.016357
+      }
+    },
+    {
+      "segment_id": 14,
+      "start_s": 82.46,
+      "end_s": 88.25999999999999,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "It's a 6.9-inch big OLED display, 1440p resolution, 1 to 120 hertz, etc.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7273
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5628,
+          "valence": 0.6524,
+          "dominance": 0.6218,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 124.62,
+        "energy_mean": 0.014244
+      }
+    },
+    {
+      "segment_id": 15,
+      "start_s": 88.46,
+      "end_s": 92.72,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "But they've added this one massive new feature, the privacy display.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6924
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8717,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5491,
+          "valence": 0.6503,
+          "dominance": 0.6538,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 153.68,
+        "energy_mean": 0.004444
+      }
+    },
+    {
+      "segment_id": 16,
+      "start_s": 93.67999999999999,
+      "end_s": 99.38,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Incredibly useful feature. You toggle it on or off whenever you want, and when it's on, it instantly limits the viewing",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7245
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9991,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6458,
+          "valence": 0.8036,
+          "dominance": 0.7075,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 147.05,
+        "energy_mean": 0.018923
+      }
+    },
+    {
+      "segment_id": 17,
+      "start_s": 99.38,
+      "end_s": 103.52,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "angles pretty dramatically, preventing anyone from looking over your shoulder or snooping.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.5187
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4921,
+          "valence": 0.4961,
+          "dominance": 0.5864,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 124.93,
+        "energy_mean": 0.013249
+      }
+    },
+    {
+      "segment_id": 18,
+      "start_s": 103.52,
+      "end_s": 109.19999999999999,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "Now, yes, you could always just buy a cheap $20, $30 screen protector like this one that",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.506
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5629,
+          "valence": 0.6095,
+          "dominance": 0.6215,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 130.31,
+        "energy_mean": 0.013405
+      }
+    },
+    {
+      "segment_id": 19,
+      "start_s": 109.19999999999999,
+      "end_s": 116.94,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "does that through polarization. But unlike that screen protector, this actually blocks all viewing angles, horizontal or vertical",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6171
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5383,
+          "valence": 0.5437,
+          "dominance": 0.6235,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 134.89,
+        "energy_mean": 0.012949
+      }
+    },
+    {
+      "segment_id": 20,
+      "start_s": 116.94,
+      "end_s": 122.22,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "off-axis. But also because it's built into the display, you can turn it on for just the pixels you",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7044
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9728,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5792,
+          "valence": 0.6199,
+          "dominance": 0.641,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 151.96,
+        "energy_mean": 0.011515
+      }
+    },
+    {
+      "segment_id": 21,
+      "start_s": 122.22,
+      "end_s": 126.67999999999999,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "want to when you want to. So maybe only in certain apps.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7512
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.6741,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4579,
+          "valence": 0.5042,
+          "dominance": 0.5447,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 134.71,
+        "energy_mean": 0.014733
+      }
+    },
+    {
+      "segment_id": 22,
+      "start_s": 126.68,
+      "end_s": 132.18,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "So you can have it only block out your banking app and your texting app, or even only black",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5607
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5972,
+          "valence": 0.4914,
+          "dominance": 0.6462,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 156.96,
+        "energy_mean": 0.013836
+      }
+    },
+    {
+      "segment_id": 23,
+      "start_s": 132.18,
+      "end_s": 138.62,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "out incoming notifications, which is incredible. This is a genuinely useful innovation.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.9084
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9336,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5396,
+          "valence": 0.5957,
+          "dominance": 0.6216,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 149.03,
+        "energy_mean": 0.011904
+      }
+    },
+    {
+      "segment_id": 24,
+      "start_s": 138.84,
+      "end_s": 142.34,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "It's really, it's special that it's actually a new hardware feature, which we really don't",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.437
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9665,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5324,
+          "valence": 0.4723,
+          "dominance": 0.6002,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 141.11,
+        "energy_mean": 0.012864
+      }
+    },
+    {
+      "segment_id": 25,
+      "start_s": 142.34,
+      "end_s": 148.06,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "get that often in the smartphone world these days. But like I said, everything is a trade-off.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6132
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9526,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4628,
+          "valence": 0.4249,
+          "dominance": 0.561,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 133.38,
+        "energy_mean": 0.00749
+      }
+    },
+    {
+      "segment_id": 26,
+      "start_s": 148.34,
+      "end_s": 152.82,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "The way they pulled this off is they essentially have two types of pixels on this new display,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6344
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5695,
+          "valence": 0.6091,
+          "dominance": 0.6375,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 163.58,
+        "energy_mean": 0.016916
+      }
+    },
+    {
+      "segment_id": 27,
+      "start_s": 152.82,
+      "end_s": 158.62,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "wide-angle pixels that you can view from everywhere, and narrow-angle pixels that seem to have",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7299
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5035,
+          "valence": 0.5973,
+          "dominance": 0.5776,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 141.18,
+        "energy_mean": 0.007795
+      }
+    },
+    {
+      "segment_id": 28,
+      "start_s": 158.62,
+      "end_s": 163.2,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "some type of focusing lens on them, so you can only see them from straight on.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.65
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4512,
+          "valence": 0.4948,
+          "dominance": 0.5316,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 147.9,
+        "energy_mean": 0.009006
+      }
+    },
+    {
+      "segment_id": 29,
+      "start_s": 163.32,
+      "end_s": 166.48,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "So when you're just using the phone like normal, all the pixels are on.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7666
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9778,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5047,
+          "valence": 0.5772,
+          "dominance": 0.57,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 130.21,
+        "energy_mean": 0.019665
+      }
+    },
+    {
+      "segment_id": 30,
+      "start_s": 166.79999999999998,
+      "end_s": 172.85999999999999,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "But when you decide to turn on the privacy display, it simply turns off the wide-angle pixels,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6001
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9952,
+          "frame_count": 6,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4856,
+          "valence": 0.4189,
+          "dominance": 0.57,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 147.26,
+        "energy_mean": 0.008307
+      }
+    },
+    {
+      "segment_id": 31,
+      "start_s": 173.1,
+      "end_s": 177.6,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "and it leaves only the narrow-angle pixels. So you achieve that privacy filter effect.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6009
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.504,
+          "valence": 0.5028,
+          "dominance": 0.5973,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 136.23,
+        "energy_mean": 0.024691
+      }
+    },
+    {
+      "segment_id": 32,
+      "start_s": 178.16,
+      "end_s": 182.06,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "But now that also means you just turned off half the pixels.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6123
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5347,
+          "valence": 0.455,
+          "dominance": 0.613,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 158.64,
+        "energy_mean": 0.017032
+      }
+    },
+    {
+      "segment_id": 33,
+      "start_s": 182.06,
+      "end_s": 185.82,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "So your resolution is actually quite literally cut in half.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.71
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5557,
+          "valence": 0.3914,
+          "dominance": 0.6375,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 157.23,
+        "energy_mean": 0.011295
+      }
+    },
+    {
+      "segment_id": 34,
+      "start_s": 185.94,
+      "end_s": 191.9,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "And you can actually see it. Like there's blockier edges around text, and smaller details, and fine contrast.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6055
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5687,
+          "valence": 0.676,
+          "dominance": 0.6268,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 151.58,
+        "energy_mean": 0.014074
+      }
+    },
+    {
+      "segment_id": 35,
+      "start_s": 192.38,
+      "end_s": 198.1,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Here, I literally bought a microscope for this. So this is privacy display off, like normal.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5812
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6562,
+          "valence": 0.6319,
+          "dominance": 0.6948,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 180.71,
+        "energy_mean": 0.012535
+      }
+    },
+    {
+      "segment_id": 36,
+      "start_s": 198.72,
+      "end_s": 205.06,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "And this is privacy display on. You can see those pixels literally turning off.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5297
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5011,
+          "valence": 0.4651,
+          "dominance": 0.6163,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 130.33,
+        "energy_mean": 0.012285
+      }
+    },
+    {
+      "segment_id": 37,
+      "start_s": 205.48000000000002,
+      "end_s": 209.92000000000002,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "So yes, less resolution. And also, yes, peak brightness is a bit lower.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5967
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5665,
+          "valence": 0.7076,
+          "dominance": 0.6293,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 160.49,
+        "energy_mean": 0.016454
+      }
+    },
+    {
+      "segment_id": 38,
+      "start_s": 209.92,
+      "end_s": 213.79999999999998,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "You normally don't notice that because they cleverly adjust the output of the pixels",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.469
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5233,
+          "valence": 0.445,
+          "dominance": 0.6192,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 137.92,
+        "energy_mean": 0.00705
+      }
+    },
+    {
+      "segment_id": 39,
+      "start_s": 213.79999999999998,
+      "end_s": 216.79999999999998,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "that are staying on to keep the perceived brightness about the same.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5139
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5315,
+          "valence": 0.7086,
+          "dominance": 0.6067,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 138.9,
+        "energy_mean": 0.012929
+      }
+    },
+    {
+      "segment_id": 40,
+      "start_s": 216.94,
+      "end_s": 220.22,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "But if you're at a high enough brightness, you will actually see it get a little dimmer",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.4444
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5194,
+          "valence": 0.6533,
+          "dominance": 0.5741,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 131.16,
+        "energy_mean": 0.007881
+      }
+    },
+    {
+      "segment_id": 41,
+      "start_s": 220.22,
+      "end_s": 227.51999999999998,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "when you turn the feature on. And even in regular use, that means this display is slightly worse all the time.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.7632
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7475,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4397,
+          "valence": 0.3072,
+          "dominance": 0.5347,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 159.35,
+        "energy_mean": 0.011561
+      }
+    },
+    {
+      "segment_id": 42,
+      "start_s": 227.64,
+      "end_s": 233.74,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "I mean, think about it. If you've added a narrow focusing lens to half of your pixels, that means that your viewing",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6324
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8238,
+          "frame_count": 6,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5198,
+          "valence": 0.5671,
+          "dominance": 0.5849,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 149.42,
+        "energy_mean": 0.006845
+      }
+    },
+    {
+      "segment_id": 43,
+      "start_s": 233.74,
+      "end_s": 239.46,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "angles are going to be slightly worse all the time because half of these pixels now have",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.7295
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.3867,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4993,
+          "valence": 0.381,
+          "dominance": 0.562,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 155.33,
+        "energy_mean": 0.011186
+      }
+    },
+    {
+      "segment_id": 44,
+      "start_s": 239.46,
+      "end_s": 244.62,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "permanently poor viewing angles. It also appears to have a different coating on the display that's not quite as good at",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.8996
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5386,
+          "valence": 0.5461,
+          "dominance": 0.6003,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 140.14,
+        "energy_mean": 0.011636
+      }
+    },
+    {
+      "segment_id": 45,
+      "start_s": 244.62,
+      "end_s": 247.92,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "the anti-reflective thing that was so good on S25 Ultra.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.5738
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4933,
+          "valence": 0.6814,
+          "dominance": 0.5757,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 143.97,
+        "energy_mean": 0.008397
+      }
+    },
+    {
+      "segment_id": 46,
+      "start_s": 247.92,
+      "end_s": 251.85999999999999,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "And it also turns out it's still an 8-bit display simulating 10-bit color instead of",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6096
+        },
+        "facial_emotion": {
+          "dominant": "sad",
+          "confidence": 0.5101,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5242,
+          "valence": 0.5613,
+          "dominance": 0.5858,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 130.64,
+        "energy_mean": 0.011454
+      }
+    },
+    {
+      "segment_id": 47,
+      "start_s": 251.85999999999999,
+      "end_s": 255.14,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "a full native 10-bit display like so many others have added.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5682
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8711,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4598,
+          "valence": 0.6207,
+          "dominance": 0.5477,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 131.35,
+        "energy_mean": 0.011045
+      }
+    },
+    {
+      "segment_id": 48,
+      "start_s": 255.23999999999998,
+      "end_s": 260.08,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "But I think that Samsung knows that most people are not pixel peepers.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.4947
+        },
+        "facial_emotion": {
+          "dominant": "sad",
+          "confidence": 0.6881,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4231,
+          "valence": 0.3691,
+          "dominance": 0.5462,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 160.71,
+        "energy_mean": 0.008389
+      }
+    },
+    {
+      "segment_id": 49,
+      "start_s": 260.44,
+      "end_s": 266.15999999999997,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Like even on this display, this is a 1440p screen, but out the box, it's set to 1080p by",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7297
+        },
+        "facial_emotion": {
+          "dominant": "surprise",
+          "confidence": 0.7021,
+          "frame_count": 6,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5666,
+          "valence": 0.6036,
+          "dominance": 0.6141,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 144.27,
+        "energy_mean": 0.01006
+      }
+    },
+    {
+      "segment_id": 50,
+      "start_s": 266.15999999999997,
+      "end_s": 270.06,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "default for everyone because they assume that most people would rather have the slightly",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.6573
+        },
+        "facial_emotion": {
+          "dominant": "fear",
+          "confidence": 0.4991,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4515,
+          "valence": 0.3814,
+          "dominance": 0.5462,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 129.78,
+        "energy_mean": 0.015546
+      }
+    },
+    {
+      "segment_id": 51,
+      "start_s": 270.06,
+      "end_s": 273.12,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "longer battery life as a trade-off over like a perfect screen.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.5983
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 1.0,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.534,
+          "valence": 0.6459,
+          "dominance": 0.6115,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 130.56,
+        "energy_mean": 0.004524
+      }
+    },
+    {
+      "segment_id": 52,
+      "start_s": 273.12,
+      "end_s": 277.14,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "So nerds like me will lock in and immediately switch to 1440p in the settings right out",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.5006
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6265,
+          "valence": 0.6472,
+          "dominance": 0.6678,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 128.07,
+        "energy_mean": 0.021263
+      }
+    },
+    {
+      "segment_id": 53,
+      "start_s": 277.14,
+      "end_s": 283.24,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "the box. And we will notice more the slight resolution differences and viewing angle differences.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.4992
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9023,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4683,
+          "valence": 0.5845,
+          "dominance": 0.565,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 120.63,
+        "energy_mean": 0.013016
+      }
+    },
+    {
+      "segment_id": 54,
+      "start_s": 283.54,
+      "end_s": 288.32,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "And we'll upvote every comment on Reddit that chastises Samsung for using the 8-bit display",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.5969
+        },
+        "facial_emotion": {
+          "dominant": "surprise",
+          "confidence": 0.916,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5112,
+          "valence": 0.5026,
+          "dominance": 0.5746,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 123.57,
+        "energy_mean": 0.007682
+      }
+    },
+    {
+      "segment_id": 55,
+      "start_s": 288.32,
+      "end_s": 293.26,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "again. But at the end of the day, this is the trade-off that they decided to make to have this one",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.5405
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8898,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6004,
+          "valence": 0.5799,
+          "dominance": 0.657,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 135.06,
+        "energy_mean": 0.02019
+      }
+    },
+    {
+      "segment_id": 56,
+      "start_s": 293.26,
+      "end_s": 297.72,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "really cool feature that they probably believe will sell more phones.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8512
+        },
+        "facial_emotion": {
+          "dominant": "fear",
+          "confidence": 0.6705,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4667,
+          "valence": 0.7054,
+          "dominance": 0.5834,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 137.22,
+        "energy_mean": 0.015659
+      }
+    },
+    {
+      "segment_id": 57,
+      "start_s": 297.82,
+      "end_s": 304.78000000000003,
+      "conflict_score": 0.2934,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.6000 -> 0.2934 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "But to be totally clear, this is still a really good display. But like I said, if you're a pixel peeper like me, just know what you're getting into.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7646
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6446,
+          "valence": 0.7586,
+          "dominance": 0.7068,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 154.16,
+        "energy_mean": 0.014919
+      }
+    },
+    {
+      "segment_id": 58,
+      "start_s": 304.90000000000003,
+      "end_s": 308.08000000000004,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "Because there are better looking displays that you can get for your 1300 bucks, ironically,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5166
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9102,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5974,
+          "valence": 0.6442,
+          "dominance": 0.6604,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 131.35,
+        "energy_mean": 0.010354
+      }
+    },
+    {
+      "segment_id": 59,
+      "start_s": 308.36,
+      "end_s": 312.98,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "probably also manufactured by Samsung. But if that's your number one priority, there's other places you can look.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7118
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9359,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5409,
+          "valence": 0.6494,
+          "dominance": 0.6008,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 130.05,
+        "energy_mean": 0.008319
+      }
+    },
+    {
+      "segment_id": 60,
+      "start_s": 313.48,
+      "end_s": 318.44,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "Also, subscribe for more phones under microscopes. Here's another trade-off, this new design.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6268
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9352,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6322,
+          "valence": 0.6576,
+          "dominance": 0.6685,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 160.1,
+        "energy_mean": 0.009448
+      }
+    },
+    {
+      "segment_id": 61,
+      "start_s": 318.64000000000004,
+      "end_s": 325.20000000000005,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "And it's not even really that new of a design. They just made the phone a little thinner, a little lighter, and a little rounder at the",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5164
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5428,
+          "valence": 0.6099,
+          "dominance": 0.589,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 123.25,
+        "energy_mean": 0.013495
+      }
+    },
+    {
+      "segment_id": 62,
+      "start_s": 325.20000000000005,
+      "end_s": 330.34000000000003,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "corners to make it look like the rest of the flagship phones that they make. But even that comes with downsides.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5729
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5089,
+          "valence": 0.4786,
+          "dominance": 0.5719,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 141.17,
+        "energy_mean": 0.007717
+      }
+    },
+    {
+      "segment_id": 63,
+      "start_s": 330.34,
+      "end_s": 334.44,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "Like, since the corners are more round, that means the part where the S Pen goes into the",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7875
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.52,
+          "valence": 0.5556,
+          "dominance": 0.568,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 121.73,
+        "energy_mean": 0.018172
+      }
+    },
+    {
+      "segment_id": 64,
+      "start_s": 334.44,
+      "end_s": 338.73999999999995,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "phone is capped with a slight curve instead of totally flat.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.511
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4091,
+          "valence": 0.4281,
+          "dominance": 0.4954,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 142.07,
+        "energy_mean": 0.009539
+      }
+    },
+    {
+      "segment_id": 65,
+      "start_s": 338.85999999999996,
+      "end_s": 343.41999999999996,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "So now the S Pen can only go back into this phone this one way, unlike last year where",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5937
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6413,
+          "valence": 0.5761,
+          "dominance": 0.6558,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 145.66,
+        "energy_mean": 0.011003
+      }
+    },
+    {
+      "segment_id": 66,
+      "start_s": 343.41999999999996,
+      "end_s": 351.44,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "it was flat. And so you didn't really have to think about that at all. Also, since the camera bump is now a camera plateau with rings on top of it, it's bigger,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6966
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5457,
+          "valence": 0.5275,
+          "dominance": 0.5882,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 140.35,
+        "energy_mean": 0.004777
+      }
+    },
+    {
+      "segment_id": 67,
+      "start_s": 351.76,
+      "end_s": 356.79999999999995,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "which combined with a slightly thinner body means this phone rocks viciously on a table",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.4251
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.539,
+          "valence": 0.4678,
+          "dominance": 0.6075,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 143.17,
+        "energy_mean": 0.012316
+      }
+    },
+    {
+      "segment_id": 68,
+      "start_s": 356.8,
+      "end_s": 361.6,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "when I'm trying to type with no case. I'm sure most people just throw a dbrand case on it and call it a day.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.4539
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4647,
+          "valence": 0.509,
+          "dominance": 0.5502,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 128.41,
+        "energy_mean": 0.005497
+      }
+    },
+    {
+      "segment_id": 69,
+      "start_s": 361.7,
+      "end_s": 369.14,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "But yeah, that's not nothing. And switching back to aluminum sides from titanium honestly makes no real difference to using",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.5036
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5021,
+          "valence": 0.4164,
+          "dominance": 0.568,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 145.48,
+        "energy_mean": 0.006939
+      }
+    },
+    {
+      "segment_id": 70,
+      "start_s": 369.14,
+      "end_s": 373.58000000000004,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "the phone. But it does mean people will be able to make fun of you for copying the iPhone's titanium",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.4765
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5559,
+          "valence": 0.659,
+          "dominance": 0.615,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 133.53,
+        "energy_mean": 0.011711
+      }
+    },
+    {
+      "segment_id": 71,
+      "start_s": 373.58000000000004,
+      "end_s": 378.22,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "for no reason. The new chip is the Snapdragon 8 Elite Gen 5 for Galaxy.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7671
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9998,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5278,
+          "valence": 0.5818,
+          "dominance": 0.6001,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 150.1,
+        "energy_mean": 0.012193
+      }
+    },
+    {
+      "segment_id": 72,
+      "start_s": 378.6,
+      "end_s": 383.08000000000004,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "So I benchmarked it against the OnePlus 15, which is a Snapdragon 8 Elite Gen 5.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7972
+        },
+        "facial_emotion": {
+          "dominant": "sad",
+          "confidence": 0.5601,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4607,
+          "valence": 0.5252,
+          "dominance": 0.5454,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 118.23,
+        "energy_mean": 0.009115
+      }
+    },
+    {
+      "segment_id": 73,
+      "start_s": 383.2,
+      "end_s": 386.86,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "Similar scores, slightly higher actually for the Samsung version, but still right around",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.4878
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5214,
+          "valence": 0.6226,
+          "dominance": 0.5697,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 154.7,
+        "energy_mean": 0.014521
+      }
+    },
+    {
+      "segment_id": 74,
+      "start_s": 386.86,
+      "end_s": 390.26,
+      "conflict_score": 0.2934,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.6000 -> 0.2934 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "the yearly 20 to 30% CPU improvements expected.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.5285
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4797,
+          "valence": 0.6002,
+          "dominance": 0.5684,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 120.91,
+        "energy_mean": 0.019443
+      }
+    },
+    {
+      "segment_id": 75,
+      "start_s": 390.48,
+      "end_s": 396.64,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "Really, Samsung seems to be much more focused on NPU, which is around the AI generating features",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5503
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9512,
+          "frame_count": 6,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4667,
+          "valence": 0.5777,
+          "dominance": 0.5273,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 132.11,
+        "energy_mean": 0.013201
+      }
+    },
+    {
+      "segment_id": 76,
+      "start_s": 396.64,
+      "end_s": 401.84000000000003,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "on the phone, which we'll get to in a second. We'll get there. But yeah, the performance is generally, it's great.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8679
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9553,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5256,
+          "valence": 0.6832,
+          "dominance": 0.5787,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 157.41,
+        "energy_mean": 0.014019
+      }
+    },
+    {
+      "segment_id": 77,
+      "start_s": 401.84,
+      "end_s": 405.03999999999996,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "It's almost a formality at this point. Hey, are animations smooth?",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5102
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5792,
+          "valence": 0.5399,
+          "dominance": 0.5979,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 145.5,
+        "energy_mean": 0.009962
+      }
+    },
+    {
+      "segment_id": 78,
+      "start_s": 405.4,
+      "end_s": 408.76,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "Yup. Can it handle heavy multitasking and gaming? Yup.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6091
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5323,
+          "valence": 0.5586,
+          "dominance": 0.5872,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 115.71,
+        "energy_mean": 0.009144
+      }
+    },
+    {
+      "segment_id": 79,
+      "start_s": 408.94,
+      "end_s": 412.44,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "The redesigned vapor chamber with less volume inside the phone is doing just fine.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.669
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.542,
+          "valence": 0.6443,
+          "dominance": 0.5964,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 113.35,
+        "energy_mean": 0.010582
+      }
+    },
+    {
+      "segment_id": 80,
+      "start_s": 412.9,
+      "end_s": 417.62,
+      "conflict_score": 0.2934,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.6000 -> 0.2934 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "And battery life is actually slightly better, despite having the same 5,000 milliamp hour",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.5218
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.493,
+          "valence": 0.4982,
+          "dominance": 0.5674,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 138.0,
+        "energy_mean": 0.007838
+      }
+    },
+    {
+      "segment_id": 81,
+      "start_s": 417.62,
+      "end_s": 420.91999999999996,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "battery again, because the chip and software are a bit more efficient.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.5749
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5693,
+          "valence": 0.4898,
+          "dominance": 0.6047,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 141.07,
+        "energy_mean": 0.014358
+      }
+    },
+    {
+      "segment_id": 82,
+      "start_s": 421.38,
+      "end_s": 425.47999999999996,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "Standby time is still not quite as magical as some of its competitors, but it's really good",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8197
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5187,
+          "valence": 0.7211,
+          "dominance": 0.5739,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 141.79,
+        "energy_mean": 0.010407
+      }
+    },
+    {
+      "segment_id": 83,
+      "start_s": 425.47999999999996,
+      "end_s": 430.02,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "battery life, and this phone charges slightly faster at a peak 60 watts now.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.5486
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9579,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5337,
+          "valence": 0.5941,
+          "dominance": 0.5928,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 125.8,
+        "energy_mean": 0.012483
+      }
+    },
+    {
+      "segment_id": 84,
+      "start_s": 430.02,
+      "end_s": 433.46,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "I do have to say though, and if you're a subscriber, you probably know exactly where I'm about to",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6319
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7762,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5893,
+          "valence": 0.5313,
+          "dominance": 0.6341,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 136.05,
+        "energy_mean": 0.008613
+      }
+    },
+    {
+      "segment_id": 85,
+      "start_s": 433.46,
+      "end_s": 441.0,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "go with this. No Qi 2 magnets? That seems like it would have been a no-brainer, and I know you want to sell lots of cases with",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.7648
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7507,
+          "frame_count": 7,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5601,
+          "valence": 0.38,
+          "dominance": 0.6002,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 158.16,
+        "energy_mean": 0.015169
+      }
+    },
+    {
+      "segment_id": 86,
+      "start_s": 441.0,
+      "end_s": 446.15999999999997,
+      "conflict_score": 0.8,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": true,
+      "text": "magnets in them, Samsung, but wouldn't you also want to maybe win an MVP phone of the",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6116
+        },
+        "facial_emotion": {
+          "dominant": "fear",
+          "confidence": 0.6096,
+          "frame_count": 6,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.43,
+          "valence": 0.5615,
+          "dominance": 0.4921,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 112.67,
+        "energy_mean": 0.009133
+      }
+    },
+    {
+      "segment_id": 87,
+      "start_s": 446.15999999999997,
+      "end_s": 452.85999999999996,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "year award too? And then, no silicon carbon battery, which, you know, I know you've had battery scares",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.7392
+        },
+        "facial_emotion": {
+          "dominant": "happy",
+          "confidence": 0.6964,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5298,
+          "valence": 0.4527,
+          "dominance": 0.5604,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 157.73,
+        "energy_mean": 0.015966
+      }
+    },
+    {
+      "segment_id": 88,
+      "start_s": 452.85999999999996,
+      "end_s": 457.35999999999996,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "in the past, but wouldn't you want to be eligible for a most improved award too?",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.4393
+        },
+        "facial_emotion": {
+          "dominant": "happy",
+          "confidence": 0.6663,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.485,
+          "valence": 0.555,
+          "dominance": 0.5518,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 149.1,
+        "energy_mean": 0.011582
+      }
+    },
+    {
+      "segment_id": 89,
+      "start_s": 457.36,
+      "end_s": 462.08000000000004,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "I think a phone that isn't slightly thinner, but that does have more battery and magnets",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7097
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.56,
+          "valence": 0.605,
+          "dominance": 0.576,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 158.51,
+        "energy_mean": 0.019108
+      }
+    },
+    {
+      "segment_id": 90,
+      "start_s": 462.08000000000004,
+      "end_s": 465.6,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "built in would have been pretty universally appreciated. I'm just saying.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.5864
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5366,
+          "valence": 0.6633,
+          "dominance": 0.6575,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 130.68,
+        "energy_mean": 0.012231
+      }
+    },
+    {
+      "segment_id": 91,
+      "start_s": 466.32,
+      "end_s": 470.64,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "Mr. Who's the Boss, Aaron, he just did his battery test that highlights the slightly better",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.556
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5783,
+          "valence": 0.5104,
+          "dominance": 0.6089,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 122.47,
+        "energy_mean": 0.017132
+      }
+    },
+    {
+      "segment_id": 92,
+      "start_s": 470.64,
+      "end_s": 474.82,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "battery life of S26 Ultra over the last gen, but it also kind of shows it getting dunked",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6026
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5252,
+          "valence": 0.5307,
+          "dominance": 0.5827,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 150.47,
+        "energy_mean": 0.008091
+      }
+    },
+    {
+      "segment_id": 93,
+      "start_s": 474.82,
+      "end_s": 480.90000000000003,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "on by some silicon carbon battery phones from last year. At this point, it's not surprising that they're still playing it safe here, but it's also still",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.5179
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.774,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.532,
+          "valence": 0.5534,
+          "dominance": 0.5601,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 144.01,
+        "energy_mean": 0.017142
+      }
+    },
+    {
+      "segment_id": 94,
+      "start_s": 480.90000000000003,
+      "end_s": 485.46000000000004,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "kind of frustrating because it feels like the ceiling for this phone could have been so much",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.9058
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9811,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4151,
+          "valence": 0.278,
+          "dominance": 0.5198,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 126.35,
+        "energy_mean": 0.009245
+      }
+    },
+    {
+      "segment_id": 95,
+      "start_s": 485.46,
+      "end_s": 491.88,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "higher, so much more ultra. These cameras are mostly the same as last year, but I think that actually undersells how good",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7326
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9726,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5502,
+          "valence": 0.5847,
+          "dominance": 0.6267,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 153.73,
+        "energy_mean": 0.011046
+      }
+    },
+    {
+      "segment_id": 96,
+      "start_s": 491.88,
+      "end_s": 499.21999999999997,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "they are. There's a bigger aperture on the main camera. The 3X is about the same, and then a bigger aperture on the 5X as well.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7765
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5534,
+          "valence": 0.6396,
+          "dominance": 0.6091,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 141.66,
+        "energy_mean": 0.012037
+      }
+    },
+    {
+      "segment_id": 97,
+      "start_s": 499.34,
+      "end_s": 503.03999999999996,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "So both of these cameras let more light in and get all the benefits that come with that,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6208
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.556,
+          "valence": 0.6815,
+          "dominance": 0.6173,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 126.99,
+        "energy_mean": 0.01783
+      }
+    },
+    {
+      "segment_id": 98,
+      "start_s": 503.32,
+      "end_s": 506.41999999999996,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "including slightly softer bokeh with close-up subjects.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5922
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4467,
+          "valence": 0.5857,
+          "dominance": 0.5253,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 120.51,
+        "energy_mean": 0.015031
+      }
+    },
+    {
+      "segment_id": 99,
+      "start_s": 506.88,
+      "end_s": 510.03999999999996,
+      "conflict_score": 0.2934,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.6000 -> 0.2934 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "And as a photographer, I feel like I'm always going to take the faster lens when I can get",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.5783
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5894,
+          "valence": 0.659,
+          "dominance": 0.6072,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 150.58,
+        "energy_mean": 0.016375
+      }
+    },
+    {
+      "segment_id": 100,
+      "start_s": 510.04,
+      "end_s": 514.1,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "it. The minimum focus distance, though, on the main camera definitely got worse.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.8447
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5506,
+          "valence": 0.2906,
+          "dominance": 0.611,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 165.13,
+        "energy_mean": 0.018538
+      }
+    },
+    {
+      "segment_id": 101,
+      "start_s": 514.44,
+      "end_s": 520.58,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "So I don't know if that's a direct trade-off. There is still macro mode, but I did notice that downgrade from the main camera.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.5074
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5272,
+          "valence": 0.5654,
+          "dominance": 0.5795,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 135.65,
+        "energy_mean": 0.009665
+      }
+    },
+    {
+      "segment_id": 102,
+      "start_s": 520.82,
+      "end_s": 526.1800000000001,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "Not a disaster, but just something to notice. The more noticeable camera changes, though, are actually the ones enabled by software.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.7392
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.986,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5537,
+          "valence": 0.4494,
+          "dominance": 0.6314,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 146.58,
+        "energy_mean": 0.006754
+      }
+    },
+    {
+      "segment_id": 103,
+      "start_s": 526.72,
+      "end_s": 530.0,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "So the APV log codec was added. It works great.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8318
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.752,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6072,
+          "valence": 0.8324,
+          "dominance": 0.6454,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 148.85,
+        "energy_mean": 0.016003
+      }
+    },
+    {
+      "segment_id": 104,
+      "start_s": 530.48,
+      "end_s": 535.62,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "They also added this super aggressive stabilization feature called Horizon Lock, and it's not the",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6347
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8342,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5776,
+          "valence": 0.668,
+          "dominance": 0.6204,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 160.9,
+        "energy_mean": 0.014709
+      }
+    },
+    {
+      "segment_id": 105,
+      "start_s": 535.62,
+      "end_s": 539.24,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "first time we've seen it, but it is one of the best executions we've seen of it.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8827
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9952,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4631,
+          "valence": 0.6394,
+          "dominance": 0.5717,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 128.94,
+        "energy_mean": 0.016145
+      }
+    },
+    {
+      "segment_id": 106,
+      "start_s": 539.24,
+      "end_s": 544.22,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "It takes advantage of this huge 200 megapixel sensor and crops in to shoot ridiculously stable,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6103
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5953,
+          "valence": 0.2984,
+          "dominance": 0.671,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 142.68,
+        "energy_mean": 0.015232
+      }
+    },
+    {
+      "segment_id": 107,
+      "start_s": 544.5600000000001,
+      "end_s": 548.36,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "still Quad HD video up to 60 frames per second. It's pretty sick.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.9318
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5796,
+          "valence": 0.4593,
+          "dominance": 0.6405,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 175.08,
+        "energy_mean": 0.016056
+      }
+    },
+    {
+      "segment_id": 108,
+      "start_s": 548.98,
+      "end_s": 553.88,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "In general, video footage with this slightly wider aperture on the main camera look good.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7866
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5768,
+          "valence": 0.6599,
+          "dominance": 0.6312,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 140.98,
+        "energy_mean": 0.02131
+      }
+    },
+    {
+      "segment_id": 109,
+      "start_s": 554.04,
+      "end_s": 558.32,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "All of the talking head footage on the latest autofocus episode with the Polestar 4 was shot",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7617
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6596,
+          "valence": 0.5994,
+          "dominance": 0.7025,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 146.29,
+        "energy_mean": 0.017268
+      }
+    },
+    {
+      "segment_id": 110,
+      "start_s": 558.32,
+      "end_s": 562.26,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "on this S26 Ultra, so if you want to look at way more footage from this phone, I'll link",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.586
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6115,
+          "valence": 0.6912,
+          "dominance": 0.636,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 151.96,
+        "energy_mean": 0.015289
+      }
+    },
+    {
+      "segment_id": 111,
+      "start_s": 562.26,
+      "end_s": 569.0600000000001,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "that below the like button. The rest of what's new on S26 Ultra could be described as software.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.734
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9418,
+          "frame_count": 7,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5031,
+          "valence": 0.5841,
+          "dominance": 0.5828,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 164.68,
+        "energy_mean": 0.007487
+      }
+    },
+    {
+      "segment_id": 112,
+      "start_s": 570.0,
+      "end_s": 574.0600000000001,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "It's a word you could use. Slop is another word I could use.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.5219
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7116,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4348,
+          "valence": 0.5147,
+          "dominance": 0.5039,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 150.43,
+        "energy_mean": 0.011214
+      }
+    },
+    {
+      "segment_id": 113,
+      "start_s": 574.22,
+      "end_s": 579.9,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "The word Samsung would probably like me to use is agentic, but nah.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6622
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9633,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4356,
+          "valence": 0.4028,
+          "dominance": 0.5095,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 149.69,
+        "energy_mean": 0.009512
+      }
+    },
+    {
+      "segment_id": 114,
+      "start_s": 580.22,
+      "end_s": 585.5600000000001,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "There's a ton of AI features crammed into this phone now, ranging from call screening, which",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.564
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5592,
+          "valence": 0.6094,
+          "dominance": 0.6178,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 131.74,
+        "energy_mean": 0.0159
+      }
+    },
+    {
+      "segment_id": 115,
+      "start_s": 585.5600000000001,
+      "end_s": 590.04,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "is very welcome and very useful for screening unknown numbers, to audio eraser, which does",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6887
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5547,
+          "valence": 0.7919,
+          "dominance": 0.653,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 139.64,
+        "energy_mean": 0.014427
+      }
+    },
+    {
+      "segment_id": 116,
+      "start_s": 590.04,
+      "end_s": 593.9,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "a good job of pretty naturally removing a good amount of background noise and videos,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7004
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5635,
+          "valence": 0.7793,
+          "dominance": 0.6485,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 120.43,
+        "energy_mean": 0.012993
+      }
+    },
+    {
+      "segment_id": 117,
+      "start_s": 593.9,
+      "end_s": 601.88,
+      "conflict_score": 0.2934,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.6000 -> 0.2934 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "all the way to photo assist, which lets you edit photos to create entirely new scenes that",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.5152
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4768,
+          "valence": 0.6383,
+          "dominance": 0.5637,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 191.63,
+        "energy_mean": 0.018238
+      }
+    },
+    {
+      "segment_id": 118,
+      "start_s": 601.88,
+      "end_s": 608.42,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "never actually happened. It's a lot. And you can scroll through the Galaxy AI tab on this phone and see a lot of the new stuff",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.4844
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5659,
+          "valence": 0.6166,
+          "dominance": 0.6245,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 139.3,
+        "energy_mean": 0.010115
+      }
+    },
+    {
+      "segment_id": 119,
+      "start_s": 608.42,
+      "end_s": 613.98,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "in here. I think, honestly, take it or leave it. Like, you can choose to use as much of it as you want.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5981
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.6413,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4705,
+          "valence": 0.4339,
+          "dominance": 0.5464,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 129.61,
+        "energy_mean": 0.017147
+      }
+    },
+    {
+      "segment_id": 120,
+      "start_s": 614.04,
+      "end_s": 619.64,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "You can go full slot mode and use all of it all the time, or you can kind of just never",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.4787
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8515,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5585,
+          "valence": 0.6577,
+          "dominance": 0.6203,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 138.01,
+        "energy_mean": 0.016521
+      }
+    },
+    {
+      "segment_id": 121,
+      "start_s": 619.64,
+      "end_s": 625.58,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "use any of it. I will say, I didn't get now nudged to work once, and I also tried many things with the",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5633
+        },
+        "facial_emotion": {
+          "dominant": "fear",
+          "confidence": 0.7054,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6138,
+          "valence": 0.4309,
+          "dominance": 0.6771,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 151.1,
+        "energy_mean": 0.014483
+      }
+    },
+    {
+      "segment_id": 122,
+      "start_s": 625.58,
+      "end_s": 632.02,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "AI text-based photo editor, and to its credit, it refused many of the things I tried to make",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.9018
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4995,
+          "valence": 0.4683,
+          "dominance": 0.584,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 150.92,
+        "energy_mean": 0.015473
+      }
+    },
+    {
+      "segment_id": 123,
+      "start_s": 632.02,
+      "end_s": 638.5400000000001,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "it do. So, you know, yay for safeguards, I guess. I'm just not convinced any of this is a reason to buy this phone, especially when a lot of",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.3886
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8745,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5667,
+          "valence": 0.4896,
+          "dominance": 0.6226,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 156.09,
+        "energy_mean": 0.009295
+      }
+    },
+    {
+      "segment_id": 124,
+      "start_s": 638.5400000000001,
+      "end_s": 644.1400000000001,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "it could, and probably should, make its way to other Samsung devices across the lineup,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5502
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.999,
+          "frame_count": 6,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.479,
+          "valence": 0.4793,
+          "dominance": 0.5698,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 119.48,
+        "energy_mean": 0.013445
+      }
+    },
+    {
+      "segment_id": 125,
+      "start_s": 644.3000000000001,
+      "end_s": 649.5200000000001,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "older stuff, through a software update. So then lastly, while I have your attention, I would just like to take this opportunity",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6318
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9502,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5703,
+          "valence": 0.5809,
+          "dominance": 0.6414,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 163.61,
+        "energy_mean": 0.017441
+      }
+    },
+    {
+      "segment_id": 126,
+      "start_s": 649.5200000000001,
+      "end_s": 657.58,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "to say that the base S26 and S26 Plus are not good deals anymore.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.8188
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9105,
+          "frame_count": 6,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5119,
+          "valence": 0.4098,
+          "dominance": 0.6059,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 154.22,
+        "energy_mean": 0.01412
+      }
+    },
+    {
+      "segment_id": 127,
+      "start_s": 657.7800000000001,
+      "end_s": 662.94,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "Like, those phones feel like afterthoughts. The designs are basically unchanged, fine.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7944
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5163,
+          "valence": 0.5097,
+          "dominance": 0.5826,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 154.14,
+        "energy_mean": 0.014191
+      }
+    },
+    {
+      "segment_id": 128,
+      "start_s": 662.94,
+      "end_s": 666.6400000000001,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "But they've also had basically the same cameras since S23.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7287
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5177,
+          "valence": 0.5765,
+          "dominance": 0.5759,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 126.67,
+        "energy_mean": 0.014699
+      }
+    },
+    {
+      "segment_id": 129,
+      "start_s": 667.0400000000001,
+      "end_s": 671.94,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "They got rid of millimeter wave. It's also an Exynos chip in a lot of regions outside of the US.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6228
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5425,
+          "valence": 0.575,
+          "dominance": 0.587,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 141.86,
+        "energy_mean": 0.012107
+      }
+    },
+    {
+      "segment_id": 130,
+      "start_s": 672.1600000000001,
+      "end_s": 677.34,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "And they got rid of the 128 gig version, which I think is good, but they just kept the 256",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.3993
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.544,
+          "valence": 0.5512,
+          "dominance": 0.6031,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 147.19,
+        "energy_mean": 0.012268
+      }
+    },
+    {
+      "segment_id": 131,
+      "start_s": 677.34,
+      "end_s": 680.46,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "gig at the same price. So that just means the price of entry is higher.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6946
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4851,
+          "valence": 0.4907,
+          "dominance": 0.5733,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 164.44,
+        "energy_mean": 0.012314
+      }
+    },
+    {
+      "segment_id": 132,
+      "start_s": 680.84,
+      "end_s": 686.7600000000001,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "It's now $900 baseline. You can get a lot more phone for $900.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7354
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.963,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6001,
+          "valence": 0.5688,
+          "dominance": 0.6827,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 158.71,
+        "energy_mean": 0.006581
+      }
+    },
+    {
+      "segment_id": 133,
+      "start_s": 686.76,
+      "end_s": 690.2,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "But Samsung doesn't really seem to care.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.6728
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.6259,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEGATIVE",
+          "arousal": 0.3732,
+          "valence": 0.2562,
+          "dominance": 0.4655,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 178.68,
+        "energy_mean": 0.012531
+      }
+    },
+    {
+      "segment_id": 134,
+      "start_s": 690.52,
+      "end_s": 697.22,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "Just wanted to put that out there while I had you. You'd probably have to vote with your wallets to get Samsung to actually do anything.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.49
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.919,
+          "frame_count": 6,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4926,
+          "valence": 0.4168,
+          "dominance": 0.5721,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 114.21,
+        "energy_mean": 0.006113
+      }
+    },
+    {
+      "segment_id": 135,
+      "start_s": 697.4,
+      "end_s": 702.8199999999999,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "You know, this S26 Ultra is $1,300 starting, so it's also very pricey.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.7341
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5518,
+          "valence": 0.5664,
+          "dominance": 0.6114,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 149.15,
+        "energy_mean": 0.011541
+      }
+    },
+    {
+      "segment_id": 136,
+      "start_s": 703.18,
+      "end_s": 706.9,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "But I can at least say it's a really good phone with some clever new features.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8985
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5228,
+          "valence": 0.7896,
+          "dominance": 0.5991,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 137.08,
+        "energy_mean": 0.016765
+      }
+    },
+    {
+      "segment_id": 137,
+      "start_s": 706.9,
+      "end_s": 711.14,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "I just think the price is probably the most ultra thing about this phone.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.3572
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9898,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4264,
+          "valence": 0.4638,
+          "dominance": 0.5432,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 139.57,
+        "energy_mean": 0.011855
+      }
+    },
+    {
+      "segment_id": 138,
+      "start_s": 711.74,
+      "end_s": 717.26,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "You know? Like, it's a big phone, sure. And it's got ultra-ish cameras and chip.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.606
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9124,
+          "frame_count": 6,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5422,
+          "valence": 0.619,
+          "dominance": 0.5802,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 143.3,
+        "energy_mean": 0.006825
+      }
+    },
+    {
+      "segment_id": 139,
+      "start_s": 718.06,
+      "end_s": 723.84,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "But aside from that, this feels like a S26 Plus Plus Pro Max.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.4751
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9871,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4935,
+          "valence": 0.5405,
+          "dominance": 0.5659,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 168.98,
+        "energy_mean": 0.006256
+      }
+    },
+    {
+      "segment_id": 140,
+      "start_s": 724.1,
+      "end_s": 729.54,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "Does that make sense? But it doesn't have a super advanced new silicon carbon battery or super fast charging or wireless",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7126
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9964,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6057,
+          "valence": 0.5405,
+          "dominance": 0.6257,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 134.07,
+        "energy_mean": 0.011655
+      }
+    },
+    {
+      "segment_id": 141,
+      "start_s": 729.54,
+      "end_s": 734.76,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "charging. And it also doesn't have magnets. And they still don't have Bluetooth in the S Pen.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.6947
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8858,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4847,
+          "valence": 0.4356,
+          "dominance": 0.5499,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 117.85,
+        "energy_mean": 0.008741
+      }
+    },
+    {
+      "segment_id": 142,
+      "start_s": 735.1800000000001,
+      "end_s": 742.6600000000001,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "But they do have one super cool, very advanced, one-of-one feature that is in no other smartphone.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.817
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.871,
+          "frame_count": 7,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4465,
+          "valence": 0.6904,
+          "dominance": 0.5473,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 128.15,
+        "energy_mean": 0.013639
+      }
+    },
+    {
+      "segment_id": 143,
+      "start_s": 743.4000000000001,
+      "end_s": 750.26,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "And that's the trade-off that they bet on. Thanks for watching. Catch you guys in the next one. Peace.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8862
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9754,
+          "frame_count": 6,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.517,
+          "valence": 0.6376,
+          "dominance": 0.6096,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 240.68,
+        "energy_mean": 0.003006
+      }
+    }
+  ]
+}

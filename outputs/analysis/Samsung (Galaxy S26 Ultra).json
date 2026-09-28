@@ -1,0 +1,3007 @@
+{
+  "schema": "brandpulse.analysis/1",
+  "status": "complete",
+  "steps": {
+    "claims": true,
+    "topics": true,
+    "comments": true,
+    "prose": true
+  },
+  "created_at": "2026-09-25T11:10:05+00:00",
+  "model": "llama3.1:8b",
+  "num_ctx": 6144,
+  "prompt_versions": {
+    "claims": "11039eb1443c",
+    "topics": "849d75dbc679",
+    "comments": "dda83531df32",
+    "prose": "633ad9a4e222"
+  },
+  "subject": {
+    "brand": "Samsung",
+    "product": "Galaxy S26 Ultra",
+    "title": ""
+  },
+  "facts": {
+    "scores": {
+      "authenticity": 48.1,
+      "brand_health": 76.55
+    },
+    "segments": 144,
+    "flagged": 1,
+    "threshold": 0.75,
+    "duration_s": 750.26,
+    "comments": {
+      "n": 100,
+      "distribution": {
+        "POSITIVE": 56,
+        "NEUTRAL": 27,
+        "NEGATIVE": 17
+      },
+      "label": "POSITIVE"
+    },
+    "reviewer": {
+      "lean": 0.11815288402479203,
+      "se": 0.06149960931504532,
+      "n": 144,
+      "call": "balanced",
+      "counts": {
+        "POSITIVE": 44,
+        "NEUTRAL": 74,
+        "NEGATIVE": 26
+      },
+      "seconds": {
+        "POSITIVE": 219.04,
+        "NEUTRAL": 362.92,
+        "NEGATIVE": 134.4
+      },
+      "unread": 0
+    },
+    "audience": {
+      "lean": 0.39,
+      "se": 0.07640270765734511,
+      "n": 100,
+      "call": "positive",
+      "counts": {
+        "POSITIVE": 56,
+        "NEUTRAL": 27,
+        "NEGATIVE": 17
+      }
+    },
+    "agreement": {
+      "gap": -0.271847115975208,
+      "se": 0.09807943557788733,
+      "low": -0.4640792773318836,
+      "high": -0.07961495461853241,
+      "call": "audience_warmer"
+    },
+    "confidence": {
+      "level": "well_covered",
+      "checks": [
+        {
+          "id": "comments",
+          "label": "Enough comments to read the audience",
+          "value": 100,
+          "target": 30,
+          "unit": "comments",
+          "passed": true,
+          "core": true
+        },
+        {
+          "id": "transcript",
+          "label": "The reviewer's words were read",
+          "value": 1.0,
+          "target": 0.5,
+          "unit": "share",
+          "core": true,
+          "passed": true
+        },
+        {
+          "id": "weak_conflict",
+          "label": "The conflict rests mostly on the stronger channels",
+          "value": 0.1942,
+          "target": 0.5,
+          "unit": "share",
+          "passed": true,
+          "core": false,
+          "no_conflict": false
+        }
+      ],
+      "coverage": {
+        "transcript": {
+          "read": 144,
+          "total": 144,
+          "share": 1.0
+        },
+        "facial": {
+          "read": 71,
+          "total": 144,
+          "share": 0.4930555555555556
+        },
+        "vocal": {
+          "read": 144,
+          "total": 144,
+          "share": 1.0
+        },
+        "comment": {
+          "read": 144,
+          "total": 144,
+          "share": 1.0
+        }
+      },
+      "weak_conflict": {
+        "weak": 14.4565,
+        "total": 74.4565,
+        "share": 0.19416034865995582
+      },
+      "accuracy": {
+        "comment": 78.7,
+        "transcript": 67.8,
+        "vocal": 48.9,
+        "facial": 34.2
+      },
+      "means_not": "How much evidence this reading rests on. Not whether the verdict is right, and not whether anyone in the video was honest.",
+      "ceiling": {
+        "text": "No score in this system has been shown to track human judgement of authenticity. On 119 hand-rated segments the four-channel design scored rho = +0.0575 (95% CI -0.1282 to +0.2364); people agreed with each other at rho = +0.8038.",
+        "n": 119,
+        "rho": 0.0575,
+        "ci": [
+          -0.1282,
+          0.2364
+        ],
+        "human_rho": 0.8038,
+        "source": "baseline_bench/BASELINE_ANALYSIS.md"
+      }
+    },
+    "tone": {
+      "window_s": 60.0,
+      "points": [
+        {
+          "seg": 0,
+          "start": 0.0,
+          "end": 4.5200000000000005,
+          "raw": 0.0,
+          "t": 2.26,
+          "smooth": 0.3949
+        },
+        {
+          "seg": 1,
+          "start": 4.58,
+          "end": 10.42,
+          "raw": 0.9175,
+          "t": 7.5,
+          "smooth": 0.4664
+        },
+        {
+          "seg": 2,
+          "start": 10.48,
+          "end": 13.6,
+          "raw": 0.0,
+          "t": 12.04,
+          "smooth": 0.48
+        },
+        {
+          "seg": 3,
+          "start": 20.92,
+          "end": 25.48,
+          "raw": 0.0,
+          "t": 23.2,
+          "smooth": 0.4567
+        },
+        {
+          "seg": 4,
+          "start": 27.62,
+          "end": 40.3,
+          "raw": 0.7757,
+          "t": 33.96,
+          "smooth": 0.5313
+        },
+        {
+          "seg": 5,
+          "start": 40.3,
+          "end": 40.8,
+          "raw": -0.4184,
+          "t": 40.55,
+          "smooth": 0.4548
+        },
+        {
+          "seg": 6,
+          "start": 44.46,
+          "end": 48.620000000000005,
+          "raw": 0.0,
+          "t": 46.54,
+          "smooth": 0.4673
+        },
+        {
+          "seg": 7,
+          "start": 48.620000000000005,
+          "end": 54.739999999999995,
+          "raw": 0.713,
+          "t": 51.68,
+          "smooth": 0.4621
+        },
+        {
+          "seg": 8,
+          "start": 55.0,
+          "end": 58.239999999999995,
+          "raw": 0.8215,
+          "t": 56.62,
+          "smooth": 0.4526
+        },
+        {
+          "seg": 9,
+          "start": 58.24,
+          "end": 62.04,
+          "raw": 0.4886,
+          "t": 60.14,
+          "smooth": 0.4319
+        },
+        {
+          "seg": 10,
+          "start": 62.04,
+          "end": 68.22,
+          "raw": 0.4363,
+          "t": 65.13,
+          "smooth": 0.4206
+        },
+        {
+          "seg": 11,
+          "start": 68.22,
+          "end": 74.04,
+          "raw": 0.0,
+          "t": 71.13,
+          "smooth": 0.3885
+        },
+        {
+          "seg": 12,
+          "start": 74.14,
+          "end": 78.76,
+          "raw": 0.7959,
+          "t": 76.45,
+          "smooth": 0.3452
+        },
+        {
+          "seg": 13,
+          "start": 78.76,
+          "end": 82.46000000000001,
+          "raw": 0.0,
+          "t": 80.61,
+          "smooth": 0.3209
+        },
+        {
+          "seg": 14,
+          "start": 82.46,
+          "end": 88.25999999999999,
+          "raw": 0.0,
+          "t": 85.36,
+          "smooth": 0.2643
+        },
+        {
+          "seg": 15,
+          "start": 88.46,
+          "end": 92.72,
+          "raw": 0.6924,
+          "t": 90.59,
+          "smooth": 0.2045
+        },
+        {
+          "seg": 16,
+          "start": 93.67999999999999,
+          "end": 99.38,
+          "raw": 0.7245,
+          "t": 96.53,
+          "smooth": 0.1591
+        },
+        {
+          "seg": 17,
+          "start": 99.38,
+          "end": 103.52,
+          "raw": -0.5187,
+          "t": 101.45,
+          "smooth": 0.1466
+        },
+        {
+          "seg": 18,
+          "start": 103.52,
+          "end": 109.19999999999999,
+          "raw": 0.0,
+          "t": 106.36,
+          "smooth": 0.1808
+        },
+        {
+          "seg": 19,
+          "start": 109.19999999999999,
+          "end": 116.94,
+          "raw": 0.0,
+          "t": 113.07,
+          "smooth": 0.21
+        },
+        {
+          "seg": 20,
+          "start": 116.94,
+          "end": 122.22,
+          "raw": 0.0,
+          "t": 119.58,
+          "smooth": 0.1971
+        },
+        {
+          "seg": 21,
+          "start": 122.22,
+          "end": 126.67999999999999,
+          "raw": 0.0,
+          "t": 124.45,
+          "smooth": 0.148
+        },
+        {
+          "seg": 22,
+          "start": 126.68,
+          "end": 132.18,
+          "raw": 0.0,
+          "t": 129.43,
+          "smooth": 0.0884
+        },
+        {
+          "seg": 23,
+          "start": 132.18,
+          "end": 138.62,
+          "raw": 0.9084,
+          "t": 135.4,
+          "smooth": 0.1243
+        },
+        {
+          "seg": 24,
+          "start": 138.84,
+          "end": 142.34,
+          "raw": 0.437,
+          "t": 140.59,
+          "smooth": 0.125
+        },
+        {
+          "seg": 25,
+          "start": 142.34,
+          "end": 148.06,
+          "raw": 0.0,
+          "t": 145.2,
+          "smooth": 0.1255
+        },
+        {
+          "seg": 26,
+          "start": 148.34,
+          "end": 152.82,
+          "raw": 0.0,
+          "t": 150.58,
+          "smooth": 0.1267
+        },
+        {
+          "seg": 27,
+          "start": 152.82,
+          "end": 158.62,
+          "raw": 0.0,
+          "t": 155.72,
+          "smooth": 0.0821
+        },
+        {
+          "seg": 28,
+          "start": 158.62,
+          "end": 163.2,
+          "raw": 0.0,
+          "t": 160.91,
+          "smooth": 0.1328
+        },
+        {
+          "seg": 29,
+          "start": 163.32,
+          "end": 166.48,
+          "raw": 0.0,
+          "t": 164.9,
+          "smooth": 0.1014
+        },
+        {
+          "seg": 30,
+          "start": 166.79999999999998,
+          "end": 172.85999999999999,
+          "raw": 0.0,
+          "t": 169.83,
+          "smooth": 0.0356
+        },
+        {
+          "seg": 31,
+          "start": 173.1,
+          "end": 177.6,
+          "raw": 0.0,
+          "t": 175.35,
+          "smooth": 0.0165
+        },
+        {
+          "seg": 32,
+          "start": 178.16,
+          "end": 182.06,
+          "raw": 0.0,
+          "t": 180.11,
+          "smooth": 0.0164
+        },
+        {
+          "seg": 33,
+          "start": 182.06,
+          "end": 185.82,
+          "raw": -0.71,
+          "t": 183.94,
+          "smooth": 0.0164
+        },
+        {
+          "seg": 34,
+          "start": 185.94,
+          "end": 191.9,
+          "raw": 0.6055,
+          "t": 188.92,
+          "smooth": 0.0165
+        },
+        {
+          "seg": 35,
+          "start": 192.38,
+          "end": 198.1,
+          "raw": 0.0,
+          "t": 195.24,
+          "smooth": -0.0506
+        },
+        {
+          "seg": 36,
+          "start": 198.72,
+          "end": 205.06,
+          "raw": 0.0,
+          "t": 201.89,
+          "smooth": -0.0808
+        },
+        {
+          "seg": 37,
+          "start": 205.48000000000002,
+          "end": 209.92000000000002,
+          "raw": 0.0,
+          "t": 207.7,
+          "smooth": -0.1305
+        },
+        {
+          "seg": 38,
+          "start": 209.92,
+          "end": 213.79999999999998,
+          "raw": 0.0,
+          "t": 211.86,
+          "smooth": -0.1887
+        },
+        {
+          "seg": 39,
+          "start": 213.79999999999998,
+          "end": 216.79999999999998,
+          "raw": 0.0,
+          "t": 215.3,
+          "smooth": -0.1851
+        },
+        {
+          "seg": 40,
+          "start": 216.94,
+          "end": 220.22,
+          "raw": 0.0,
+          "t": 218.58,
+          "smooth": -0.18
+        },
+        {
+          "seg": 41,
+          "start": 220.22,
+          "end": 227.51999999999998,
+          "raw": -0.7632,
+          "t": 223.87,
+          "smooth": -0.2128
+        },
+        {
+          "seg": 42,
+          "start": 227.64,
+          "end": 233.74,
+          "raw": 0.0,
+          "t": 230.69,
+          "smooth": -0.2122
+        },
+        {
+          "seg": 43,
+          "start": 233.74,
+          "end": 239.46,
+          "raw": -0.7295,
+          "t": 236.6,
+          "smooth": -0.2156
+        },
+        {
+          "seg": 44,
+          "start": 239.46,
+          "end": 244.62,
+          "raw": -0.8996,
+          "t": 242.04,
+          "smooth": -0.234
+        },
+        {
+          "seg": 45,
+          "start": 244.62,
+          "end": 247.92,
+          "raw": 0.5738,
+          "t": 246.27,
+          "smooth": -0.2497
+        },
+        {
+          "seg": 46,
+          "start": 247.92,
+          "end": 251.85999999999999,
+          "raw": 0.0,
+          "t": 249.89,
+          "smooth": -0.2564
+        },
+        {
+          "seg": 47,
+          "start": 251.85999999999999,
+          "end": 255.14,
+          "raw": 0.0,
+          "t": 253.5,
+          "smooth": -0.2153
+        },
+        {
+          "seg": 48,
+          "start": 255.23999999999998,
+          "end": 260.08,
+          "raw": 0.0,
+          "t": 257.66,
+          "smooth": -0.2047
+        },
+        {
+          "seg": 49,
+          "start": 260.44,
+          "end": 266.15999999999997,
+          "raw": 0.0,
+          "t": 263.3,
+          "smooth": -0.1657
+        },
+        {
+          "seg": 50,
+          "start": 266.15999999999997,
+          "end": 270.06,
+          "raw": -0.6573,
+          "t": 268.11,
+          "smooth": -0.0447
+        },
+        {
+          "seg": 51,
+          "start": 270.06,
+          "end": 273.12,
+          "raw": 0.5983,
+          "t": 271.59,
+          "smooth": 0.0493
+        },
+        {
+          "seg": 52,
+          "start": 273.12,
+          "end": 277.14,
+          "raw": -0.5006,
+          "t": 275.13,
+          "smooth": 0.132
+        },
+        {
+          "seg": 53,
+          "start": 277.14,
+          "end": 283.24,
+          "raw": 0.0,
+          "t": 280.19,
+          "smooth": 0.1054
+        },
+        {
+          "seg": 54,
+          "start": 283.54,
+          "end": 288.32,
+          "raw": -0.5969,
+          "t": 285.93,
+          "smooth": 0.1324
+        },
+        {
+          "seg": 55,
+          "start": 288.32,
+          "end": 293.26,
+          "raw": 0.5405,
+          "t": 290.79,
+          "smooth": 0.159
+        },
+        {
+          "seg": 56,
+          "start": 293.26,
+          "end": 297.72,
+          "raw": 0.8512,
+          "t": 295.49,
+          "smooth": 0.159
+        },
+        {
+          "seg": 57,
+          "start": 297.82,
+          "end": 304.78000000000003,
+          "raw": 0.7646,
+          "t": 301.3,
+          "smooth": 0.1901
+        },
+        {
+          "seg": 58,
+          "start": 304.90000000000003,
+          "end": 308.08000000000004,
+          "raw": 0.0,
+          "t": 306.49,
+          "smooth": 0.2003
+        },
+        {
+          "seg": 59,
+          "start": 308.36,
+          "end": 312.98,
+          "raw": 0.0,
+          "t": 310.67,
+          "smooth": 0.2063
+        },
+        {
+          "seg": 60,
+          "start": 313.48,
+          "end": 318.44,
+          "raw": 0.6268,
+          "t": 315.96,
+          "smooth": 0.2299
+        },
+        {
+          "seg": 61,
+          "start": 318.64000000000004,
+          "end": 325.20000000000005,
+          "raw": 0.0,
+          "t": 321.92,
+          "smooth": 0.2219
+        },
+        {
+          "seg": 62,
+          "start": 325.20000000000005,
+          "end": 330.34000000000003,
+          "raw": 0.0,
+          "t": 327.77,
+          "smooth": 0.1368
+        },
+        {
+          "seg": 63,
+          "start": 330.34,
+          "end": 334.44,
+          "raw": 0.0,
+          "t": 332.39,
+          "smooth": 0.0413
+        },
+        {
+          "seg": 64,
+          "start": 334.44,
+          "end": 338.73999999999995,
+          "raw": 0.0,
+          "t": 336.59,
+          "smooth": -0.0262
+        },
+        {
+          "seg": 65,
+          "start": 338.85999999999996,
+          "end": 343.41999999999996,
+          "raw": 0.0,
+          "t": 341.14,
+          "smooth": -0.0642
+        },
+        {
+          "seg": 66,
+          "start": 343.41999999999996,
+          "end": 351.44,
+          "raw": 0.0,
+          "t": 347.43,
+          "smooth": -0.125
+        },
+        {
+          "seg": 67,
+          "start": 351.76,
+          "end": 356.79999999999995,
+          "raw": 0.0,
+          "t": 354.28,
+          "smooth": -0.1364
+        },
+        {
+          "seg": 68,
+          "start": 356.8,
+          "end": 361.6,
+          "raw": -0.4539,
+          "t": 359.2,
+          "smooth": -0.1154
+        },
+        {
+          "seg": 69,
+          "start": 361.7,
+          "end": 369.14,
+          "raw": -0.5036,
+          "t": 365.42,
+          "smooth": -0.1063
+        },
+        {
+          "seg": 70,
+          "start": 369.14,
+          "end": 373.58000000000004,
+          "raw": -0.4765,
+          "t": 371.36,
+          "smooth": -0.0365
+        },
+        {
+          "seg": 71,
+          "start": 373.58000000000004,
+          "end": 378.22,
+          "raw": 0.0,
+          "t": 375.9,
+          "smooth": -0.0296
+        },
+        {
+          "seg": 72,
+          "start": 378.6,
+          "end": 383.08000000000004,
+          "raw": 0.0,
+          "t": 380.84,
+          "smooth": -0.0079
+        },
+        {
+          "seg": 73,
+          "start": 383.2,
+          "end": 386.86,
+          "raw": 0.0,
+          "t": 385.03,
+          "smooth": 0.0296
+        },
+        {
+          "seg": 74,
+          "start": 386.86,
+          "end": 390.26,
+          "raw": 0.5285,
+          "t": 388.56,
+          "smooth": 0.0758
+        },
+        {
+          "seg": 75,
+          "start": 390.48,
+          "end": 396.64,
+          "raw": 0.0,
+          "t": 393.56,
+          "smooth": 0.1707
+        },
+        {
+          "seg": 76,
+          "start": 396.64,
+          "end": 401.84000000000003,
+          "raw": 0.8679,
+          "t": 399.24,
+          "smooth": 0.2831
+        },
+        {
+          "seg": 77,
+          "start": 401.84,
+          "end": 405.03999999999996,
+          "raw": 0.0,
+          "t": 403.44,
+          "smooth": 0.3251
+        },
+        {
+          "seg": 78,
+          "start": 405.4,
+          "end": 408.76,
+          "raw": 0.0,
+          "t": 407.08,
+          "smooth": 0.2784
+        },
+        {
+          "seg": 79,
+          "start": 408.94,
+          "end": 412.44,
+          "raw": 0.669,
+          "t": 410.69,
+          "smooth": 0.2291
+        },
+        {
+          "seg": 80,
+          "start": 412.9,
+          "end": 417.62,
+          "raw": 0.5218,
+          "t": 415.26,
+          "smooth": 0.2246
+        },
+        {
+          "seg": 81,
+          "start": 417.62,
+          "end": 420.91999999999996,
+          "raw": 0.5749,
+          "t": 419.27,
+          "smooth": 0.1633
+        },
+        {
+          "seg": 82,
+          "start": 421.38,
+          "end": 425.47999999999996,
+          "raw": 0.8197,
+          "t": 423.43,
+          "smooth": 0.1084
+        },
+        {
+          "seg": 83,
+          "start": 425.47999999999996,
+          "end": 430.02,
+          "raw": 0.5486,
+          "t": 427.75,
+          "smooth": 0.092
+        },
+        {
+          "seg": 84,
+          "start": 430.02,
+          "end": 433.46,
+          "raw": 0.0,
+          "t": 431.74,
+          "smooth": 0.0328
+        },
+        {
+          "seg": 85,
+          "start": 433.46,
+          "end": 441.0,
+          "raw": -0.7648,
+          "t": 437.23,
+          "smooth": 0.067
+        },
+        {
+          "seg": 86,
+          "start": 441.0,
+          "end": 446.15999999999997,
+          "raw": 0.0,
+          "t": 443.58,
+          "smooth": 0.0204
+        },
+        {
+          "seg": 87,
+          "start": 446.15999999999997,
+          "end": 452.85999999999996,
+          "raw": -0.7392,
+          "t": 449.51,
+          "smooth": 0.0074
+        },
+        {
+          "seg": 88,
+          "start": 452.85999999999996,
+          "end": 457.35999999999996,
+          "raw": 0.0,
+          "t": 455.11,
+          "smooth": -0.1101
+        },
+        {
+          "seg": 89,
+          "start": 457.36,
+          "end": 462.08000000000004,
+          "raw": 0.0,
+          "t": 459.72,
+          "smooth": -0.1071
+        },
+        {
+          "seg": 90,
+          "start": 462.08000000000004,
+          "end": 465.6,
+          "raw": 0.5864,
+          "t": 463.84,
+          "smooth": -0.0783
+        },
+        {
+          "seg": 91,
+          "start": 466.32,
+          "end": 470.64,
+          "raw": 0.0,
+          "t": 468.48,
+          "smooth": -0.0185
+        },
+        {
+          "seg": 92,
+          "start": 470.64,
+          "end": 474.82,
+          "raw": 0.0,
+          "t": 472.73,
+          "smooth": 0.0497
+        },
+        {
+          "seg": 93,
+          "start": 474.82,
+          "end": 480.90000000000003,
+          "raw": 0.5179,
+          "t": 477.86,
+          "smooth": 0.0848
+        },
+        {
+          "seg": 94,
+          "start": 480.90000000000003,
+          "end": 485.46000000000004,
+          "raw": -0.9058,
+          "t": 483.18,
+          "smooth": 0.1242
+        },
+        {
+          "seg": 95,
+          "start": 485.46,
+          "end": 491.88,
+          "raw": 0.7326,
+          "t": 488.67,
+          "smooth": 0.0746
+        },
+        {
+          "seg": 96,
+          "start": 491.88,
+          "end": 499.21999999999997,
+          "raw": 0.0,
+          "t": 495.55,
+          "smooth": -0.0374
+        },
+        {
+          "seg": 97,
+          "start": 499.34,
+          "end": 503.03999999999996,
+          "raw": 0.6208,
+          "t": 501.19,
+          "smooth": 0.0012
+        },
+        {
+          "seg": 98,
+          "start": 503.32,
+          "end": 506.41999999999996,
+          "raw": 0.0,
+          "t": 504.87,
+          "smooth": 0.0007
+        },
+        {
+          "seg": 99,
+          "start": 506.88,
+          "end": 510.03999999999996,
+          "raw": 0.5783,
+          "t": 508.46,
+          "smooth": 0.012
+        },
+        {
+          "seg": 100,
+          "start": 510.04,
+          "end": 514.1,
+          "raw": -0.8447,
+          "t": 512.07,
+          "smooth": 0.0504
+        },
+        {
+          "seg": 101,
+          "start": 514.44,
+          "end": 520.58,
+          "raw": -0.5074,
+          "t": 517.51,
+          "smooth": 0.053
+        },
+        {
+          "seg": 102,
+          "start": 520.82,
+          "end": 526.1800000000001,
+          "raw": -0.7392,
+          "t": 523.5,
+          "smooth": 0.0459
+        },
+        {
+          "seg": 103,
+          "start": 526.72,
+          "end": 530.0,
+          "raw": 0.8318,
+          "t": 528.36,
+          "smooth": 0.0513
+        },
+        {
+          "seg": 104,
+          "start": 530.48,
+          "end": 535.62,
+          "raw": 0.0,
+          "t": 533.05,
+          "smooth": 0.0106
+        },
+        {
+          "seg": 105,
+          "start": 535.62,
+          "end": 539.24,
+          "raw": 0.8827,
+          "t": 537.43,
+          "smooth": 0.0049
+        },
+        {
+          "seg": 106,
+          "start": 539.24,
+          "end": 544.22,
+          "raw": 0.6103,
+          "t": 541.73,
+          "smooth": 0.0195
+        },
+        {
+          "seg": 107,
+          "start": 544.5600000000001,
+          "end": 548.36,
+          "raw": -0.9318,
+          "t": 546.46,
+          "smooth": 0.0945
+        },
+        {
+          "seg": 108,
+          "start": 548.98,
+          "end": 553.88,
+          "raw": 0.7866,
+          "t": 551.43,
+          "smooth": 0.1397
+        },
+        {
+          "seg": 109,
+          "start": 554.04,
+          "end": 558.32,
+          "raw": 0.0,
+          "t": 556.18,
+          "smooth": 0.2095
+        },
+        {
+          "seg": 110,
+          "start": 558.32,
+          "end": 562.26,
+          "raw": 0.0,
+          "t": 560.29,
+          "smooth": 0.2083
+        },
+        {
+          "seg": 111,
+          "start": 562.26,
+          "end": 569.0600000000001,
+          "raw": 0.0,
+          "t": 565.66,
+          "smooth": 0.2667
+        },
+        {
+          "seg": 112,
+          "start": 570.0,
+          "end": 574.0600000000001,
+          "raw": 0.5219,
+          "t": 572.03,
+          "smooth": 0.2379
+        },
+        {
+          "seg": 113,
+          "start": 574.22,
+          "end": 579.9,
+          "raw": 0.0,
+          "t": 577.06,
+          "smooth": 0.2537
+        },
+        {
+          "seg": 114,
+          "start": 580.22,
+          "end": 585.5600000000001,
+          "raw": 0.0,
+          "t": 582.89,
+          "smooth": 0.2191
+        },
+        {
+          "seg": 115,
+          "start": 585.5600000000001,
+          "end": 590.04,
+          "raw": 0.6887,
+          "t": 587.8,
+          "smooth": 0.2054
+        },
+        {
+          "seg": 116,
+          "start": 590.04,
+          "end": 593.9,
+          "raw": 0.7004,
+          "t": 591.97,
+          "smooth": 0.2054
+        },
+        {
+          "seg": 117,
+          "start": 593.9,
+          "end": 601.88,
+          "raw": 0.5152,
+          "t": 597.89,
+          "smooth": 0.1698
+        },
+        {
+          "seg": 118,
+          "start": 601.88,
+          "end": 608.42,
+          "raw": 0.0,
+          "t": 605.15,
+          "smooth": 0.0482
+        },
+        {
+          "seg": 119,
+          "start": 608.42,
+          "end": 613.98,
+          "raw": 0.0,
+          "t": 611.2,
+          "smooth": 0.026
+        },
+        {
+          "seg": 120,
+          "start": 614.04,
+          "end": 619.64,
+          "raw": 0.0,
+          "t": 616.84,
+          "smooth": 0.0382
+        },
+        {
+          "seg": 121,
+          "start": 619.64,
+          "end": 625.58,
+          "raw": 0.0,
+          "t": 622.61,
+          "smooth": -0.0428
+        },
+        {
+          "seg": 122,
+          "start": 625.58,
+          "end": 632.02,
+          "raw": -0.9018,
+          "t": 628.8,
+          "smooth": -0.1552
+        },
+        {
+          "seg": 123,
+          "start": 632.02,
+          "end": 638.5400000000001,
+          "raw": -0.3886,
+          "t": 635.28,
+          "smooth": -0.1266
+        },
+        {
+          "seg": 124,
+          "start": 638.5400000000001,
+          "end": 644.1400000000001,
+          "raw": 0.0,
+          "t": 641.34,
+          "smooth": -0.1275
+        },
+        {
+          "seg": 125,
+          "start": 644.3000000000001,
+          "end": 649.5200000000001,
+          "raw": 0.6318,
+          "t": 646.91,
+          "smooth": -0.16
+        },
+        {
+          "seg": 126,
+          "start": 649.5200000000001,
+          "end": 657.58,
+          "raw": -0.8188,
+          "t": 653.55,
+          "smooth": -0.1639
+        },
+        {
+          "seg": 127,
+          "start": 657.7800000000001,
+          "end": 662.94,
+          "raw": 0.7944,
+          "t": 660.36,
+          "smooth": -0.1302
+        },
+        {
+          "seg": 128,
+          "start": 662.94,
+          "end": 666.6400000000001,
+          "raw": 0.0,
+          "t": 664.79,
+          "smooth": -0.0865
+        },
+        {
+          "seg": 129,
+          "start": 667.0400000000001,
+          "end": 671.94,
+          "raw": 0.0,
+          "t": 669.49,
+          "smooth": -0.0881
+        },
+        {
+          "seg": 130,
+          "start": 672.1600000000001,
+          "end": 677.34,
+          "raw": -0.3993,
+          "t": 674.75,
+          "smooth": -0.1111
+        },
+        {
+          "seg": 131,
+          "start": 677.34,
+          "end": 680.46,
+          "raw": 0.0,
+          "t": 678.9,
+          "smooth": -0.123
+        },
+        {
+          "seg": 132,
+          "start": 680.84,
+          "end": 686.7600000000001,
+          "raw": 0.0,
+          "t": 683.8,
+          "smooth": -0.07
+        },
+        {
+          "seg": 133,
+          "start": 686.76,
+          "end": 690.2,
+          "raw": -0.6728,
+          "t": 688.48,
+          "smooth": -0.0225
+        },
+        {
+          "seg": 134,
+          "start": 690.52,
+          "end": 697.22,
+          "raw": 0.0,
+          "t": 693.87,
+          "smooth": -0.0401
+        },
+        {
+          "seg": 135,
+          "start": 697.4,
+          "end": 702.8199999999999,
+          "raw": -0.7341,
+          "t": 700.11,
+          "smooth": -0.0469
+        },
+        {
+          "seg": 136,
+          "start": 703.18,
+          "end": 706.9,
+          "raw": 0.8985,
+          "t": 705.04,
+          "smooth": -0.0836
+        },
+        {
+          "seg": 137,
+          "start": 706.9,
+          "end": 711.14,
+          "raw": 0.0,
+          "t": 709.02,
+          "smooth": -0.0122
+        },
+        {
+          "seg": 138,
+          "start": 711.74,
+          "end": 717.26,
+          "raw": 0.0,
+          "t": 714.5,
+          "smooth": 0.0578
+        },
+        {
+          "seg": 139,
+          "start": 718.06,
+          "end": 723.84,
+          "raw": 0.4751,
+          "t": 720.95,
+          "smooth": 0.1908
+        },
+        {
+          "seg": 140,
+          "start": 724.1,
+          "end": 729.54,
+          "raw": 0.0,
+          "t": 726.82,
+          "smooth": 0.2131
+        },
+        {
+          "seg": 141,
+          "start": 729.54,
+          "end": 734.76,
+          "raw": -0.6947,
+          "t": 732.15,
+          "smooth": 0.3152
+        },
+        {
+          "seg": 142,
+          "start": 735.1800000000001,
+          "end": 742.6600000000001,
+          "raw": 0.817,
+          "t": 738.92,
+          "smooth": 0.2936
+        },
+        {
+          "seg": 143,
+          "start": 743.4000000000001,
+          "end": 750.26,
+          "raw": 0.8862,
+          "t": 746.83,
+          "smooth": 0.3624
+        }
+      ],
+      "turns": [
+        {
+          "seg": 46,
+          "t": 249.89,
+          "kind": "dip",
+          "smooth": -0.2564,
+          "prominence": 0.6188
+        },
+        {
+          "seg": 77,
+          "t": 403.44,
+          "kind": "peak",
+          "smooth": 0.3251,
+          "prominence": 0.489
+        },
+        {
+          "seg": 126,
+          "t": 653.55,
+          "kind": "dip",
+          "smooth": -0.1639,
+          "prominence": 0.489
+        }
+      ]
+    },
+    "moments": [
+      {
+        "seg": 86,
+        "start": 441.0,
+        "end": 446.15999999999997,
+        "time": "7:21",
+        "conflict": 0.8,
+        "flagged": true,
+        "damped": false,
+        "valences": {
+          "transcript": "NEUTRAL",
+          "facial": "NEGATIVE",
+          "vocal": "NEUTRAL",
+          "comment": "POSITIVE"
+        },
+        "text": "magnets in them, Samsung, but wouldn't you also want to maybe win an MVP phone of the"
+      },
+      {
+        "seg": 0,
+        "start": 0.0,
+        "end": 4.5200000000000005,
+        "time": "0:00",
+        "conflict": 0.6,
+        "flagged": false,
+        "damped": false,
+        "valences": {
+          "transcript": "NEUTRAL",
+          "facial": "NEGATIVE",
+          "vocal": "POSITIVE",
+          "comment": "POSITIVE"
+        },
+        "text": "Let's read our final thoughts."
+      },
+      {
+        "seg": 2,
+        "start": 10.48,
+        "end": 13.6,
+        "time": "0:10",
+        "conflict": 0.6,
+        "flagged": false,
+        "damped": false,
+        "valences": {
+          "transcript": "NEUTRAL",
+          "facial": "NEUTRAL",
+          "vocal": "POSITIVE",
+          "comment": "POSITIVE"
+        },
+        "text": "Is our personal story?"
+      }
+    ],
+    "signs": {
+      "title": "Signs of a commercial interest or a mismatch",
+      "disclaimer": "These are signs, not proof. A creator can disclose a sponsor and still review honestly, and an undisclosed deal would leave none of these marks.",
+      "signs": [
+        {
+          "id": "S1",
+          "kind": "fact",
+          "state": "absent",
+          "name": "The creator declared a paid promotion",
+          "evidence": {
+            "label": false,
+            "description": []
+          }
+        },
+        {
+          "id": "S2",
+          "kind": "fact",
+          "state": "absent",
+          "name": "Sponsor, code, affiliate or gift wording in what was said",
+          "evidence": {
+            "speech": []
+          }
+        },
+        {
+          "id": "S3",
+          "kind": "fact",
+          "state": "present",
+          "name": "Affiliate links, discount codes or a gifted unit in the description",
+          "evidence": {
+            "description": [
+              {
+                "category": "affiliate",
+                "pattern": "affiliate",
+                "match": "Affiliate",
+                "context": "Samsung Galaxy S26 Ultra: geni.us/… (Affiliate Link) Playlist of MKBHD Intro music: goo/…"
+              },
+              {
+                "category": "affiliate",
+                "pattern": "affiliate_network",
+                "match": "geni.us",
+                "context": "tp://MKBHD.com Samsung Galaxy S26 Ultra: geni.us/… (Affiliate Link) Playlist of MKBHD Intro m"
+              },
+              {
+                "category": "gifted",
+                "pattern": "provided_by",
+                "match": "provided by",
+                "context": "f MKBHD Intro music: goo.gl/… Phone provided by Samsung for review. ~ twitter.com/… h"
+              }
+            ]
+          }
+        },
+        {
+          "id": "S4",
+          "kind": "inference",
+          "state": "absent",
+          "name": "The reviewer was measurably warmer than the audience",
+          "evidence": {
+            "agreement": {
+              "gap": -0.271847115975208,
+              "se": 0.09807943557788733,
+              "low": -0.4640792773318836,
+              "high": -0.07961495461853241,
+              "call": "audience_warmer"
+            }
+          }
+        },
+        {
+          "id": "S5",
+          "kind": "inference",
+          "state": "absent",
+          "name": "Positive words at moments the controller flagged",
+          "evidence": {
+            "positive_flagged": [],
+            "controller_flag": []
+          }
+        }
+      ],
+      "present": 1,
+      "checked": 5
+    }
+  },
+  "reading": {
+    "claims": [
+      {
+        "seg": 16,
+        "time": "1:33",
+        "start": 93.67999999999999,
+        "aspect": "performance",
+        "stance": "praise",
+        "claim": "The privacy display is an incredibly useful feature.",
+        "quote": "Incredibly useful feature.",
+        "topic": "T0"
+      },
+      {
+        "seg": 16,
+        "time": "1:33",
+        "start": 93.67999999999999,
+        "aspect": "performance",
+        "stance": "praise",
+        "claim": "The privacy display instantly limits the viewing angles pretty dramatically.",
+        "quote": "instantly limits the viewing angles pretty dramatically,",
+        "seg_end": 17,
+        "topic": "T0"
+      },
+      {
+        "seg": 20,
+        "time": "1:56",
+        "start": 116.94,
+        "aspect": "design",
+        "stance": "praise",
+        "claim": "The privacy display can be turned on for just the pixels you want to when you want to.",
+        "quote": "you can turn it on for just the pixels you want to when you want to.",
+        "seg_end": 21,
+        "topic": "T2"
+      },
+      {
+        "seg": 33,
+        "time": "3:02",
+        "start": 182.06,
+        "aspect": "performance",
+        "stance": "criticism",
+        "claim": "Turning on the privacy display cuts the resolution in half.",
+        "quote": "So your resolution is actually quite literally cut in half.",
+        "topic": "T0"
+      },
+      {
+        "seg": 37,
+        "time": "3:25",
+        "start": 205.48000000000002,
+        "aspect": "performance",
+        "stance": "criticism",
+        "claim": "Turning on the privacy display also lowers peak brightness.",
+        "quote": "And also, yes, peak brightness is a bit lower.",
+        "topic": "T0"
+      },
+      {
+        "seg": 40,
+        "time": "3:36",
+        "start": 216.94,
+        "aspect": "performance",
+        "stance": "criticism",
+        "claim": "The display is slightly worse all the time when the privacy display is on.",
+        "quote": "But if you're at a high enough brightness, you will actually see it get a little dimmer",
+        "topic": "T0"
+      },
+      {
+        "seg": 44,
+        "time": "3:59",
+        "start": 239.46,
+        "aspect": "viewing angles",
+        "stance": "criticism",
+        "claim": "The display has poor viewing angles.",
+        "quote": "permanently poor viewing angles",
+        "topic": "T2"
+      },
+      {
+        "seg": 45,
+        "time": "4:04",
+        "start": 244.62,
+        "aspect": "coating",
+        "stance": "criticism",
+        "claim": "The display's coating is not as good as the S25 Ultra's.",
+        "quote": "the anti-reflective thing that was so good on S25 Ultra",
+        "topic": "T2"
+      },
+      {
+        "seg": 46,
+        "time": "4:07",
+        "start": 247.92,
+        "aspect": "color display",
+        "stance": "criticism",
+        "claim": "The display simulates 10-bit color instead of being native 10-bit.",
+        "quote": "simulating 10-bit color instead of a full native 10-bit display",
+        "seg_end": 47,
+        "topic": "T2"
+      },
+      {
+        "seg": 49,
+        "time": "4:20",
+        "start": 260.44,
+        "aspect": "resolution",
+        "stance": "criticism",
+        "claim": "The display is set to 1080p by default.",
+        "quote": "it's set to 1080p by default for everyone",
+        "seg_end": 50,
+        "topic": "T3"
+      },
+      {
+        "seg": 50,
+        "time": "4:26",
+        "start": 266.15999999999997,
+        "aspect": "battery life",
+        "stance": "praise",
+        "claim": "The battery life is slightly longer.",
+        "quote": "the slightly longer battery life as a trade-off",
+        "seg_end": 51,
+        "topic": "T1"
+      },
+      {
+        "seg": 77,
+        "time": "6:41",
+        "start": 401.84,
+        "aspect": "animations",
+        "stance": "praise",
+        "claim": "Animations are smooth.",
+        "quote": "Hey, are animations smooth?",
+        "topic": "T0"
+      },
+      {
+        "seg": 78,
+        "time": "6:45",
+        "start": 405.4,
+        "aspect": "multitasking",
+        "stance": "praise",
+        "claim": "The phone can handle heavy multitasking and gaming.",
+        "quote": "Yup. Can it handle heavy multitasking and gaming?",
+        "topic": "T0"
+      },
+      {
+        "seg": 80,
+        "time": "6:52",
+        "start": 412.9,
+        "aspect": "battery life",
+        "stance": "praise",
+        "claim": "Battery life is slightly better.",
+        "quote": "battery life is actually slightly better",
+        "topic": "T1"
+      },
+      {
+        "seg": 82,
+        "time": "7:01",
+        "start": 421.38,
+        "aspect": "standby time",
+        "stance": "praise",
+        "claim": "The reviewer finds the standby time to be good.",
+        "quote": "Standby time is still not quite as magical as some of its competitors, but it's really good",
+        "topic": "T1"
+      },
+      {
+        "seg": 83,
+        "time": "7:05",
+        "start": 425.47999999999996,
+        "aspect": "battery life",
+        "stance": "praise",
+        "claim": "The reviewer finds the battery life to be good.",
+        "quote": "battery life, and this phone charges slightly faster at a peak 60 watts now.",
+        "topic": "T1"
+      },
+      {
+        "seg": 85,
+        "time": "7:13",
+        "start": 433.46,
+        "aspect": "qi 2 magnets",
+        "stance": "criticism",
+        "claim": "The reviewer criticizes the lack of Qi 2 magnets.",
+        "quote": "No Qi 2 magnets? That seems like it would have been a no-brainer, and I know you want to sell lots of cases with",
+        "topic": "T7"
+      },
+      {
+        "seg": 87,
+        "time": "7:26",
+        "start": 446.15999999999997,
+        "aspect": "silicon carbon battery",
+        "stance": "criticism",
+        "claim": "The reviewer criticizes the lack of a silicon carbon battery.",
+        "quote": "which, you know, I know you've had battery scares in the past, but wouldn't you want to be eligible for a most improved award too?",
+        "seg_end": 88,
+        "topic": "T1"
+      },
+      {
+        "seg": 95,
+        "time": "8:05",
+        "start": 485.46,
+        "aspect": "camera",
+        "stance": "praise",
+        "claim": "The reviewer finds the cameras to be good.",
+        "quote": "These cameras are mostly the same as last year, but I think that actually undersells how good they are.",
+        "seg_end": 96,
+        "topic": "T3"
+      },
+      {
+        "seg": 103,
+        "time": "8:46",
+        "start": 526.72,
+        "aspect": "apv log codec",
+        "stance": "praise",
+        "claim": "The reviewer finds the APV log codec to work great.",
+        "quote": "It works great.",
+        "topic": "T3"
+      },
+      {
+        "seg": 105,
+        "time": "8:55",
+        "start": 535.62,
+        "aspect": "horizon lock",
+        "stance": "praise",
+        "claim": "The reviewer finds the Horizon Lock feature to be one of the best executions.",
+        "quote": "but it is one of the best executions we've seen of it.",
+        "topic": "T7"
+      },
+      {
+        "seg": 115,
+        "time": "9:45",
+        "start": 585.5600000000001,
+        "aspect": "audio eraser",
+        "stance": "praise",
+        "claim": "The reviewer finds the audio eraser to do a good job.",
+        "quote": "which does a good job of pretty naturally removing a good amount of background noise and videos,",
+        "seg_end": 116,
+        "topic": "T3"
+      },
+      {
+        "seg": 126,
+        "time": "10:49",
+        "start": 649.5200000000001,
+        "aspect": "value",
+        "stance": "criticism",
+        "claim": "The base S26 and S26 Plus are not good deals anymore.",
+        "quote": "to say that the base S26 and S26 Plus are not good deals anymore.",
+        "topic": "T4"
+      },
+      {
+        "seg": 128,
+        "time": "11:02",
+        "start": 662.94,
+        "aspect": "design",
+        "stance": "neutral",
+        "claim": "The designs are basically unchanged.",
+        "quote": "But they've also had basically the same cameras since S23.",
+        "topic": "T2"
+      },
+      {
+        "seg": 130,
+        "time": "11:12",
+        "start": 672.1600000000001,
+        "aspect": "storage",
+        "stance": "neutral",
+        "claim": "They got rid of the 128 gig version.",
+        "quote": "They got rid of the 128 gig version, which I think is good,",
+        "topic": "T5"
+      },
+      {
+        "seg": 131,
+        "time": "11:17",
+        "start": 677.34,
+        "aspect": "price",
+        "stance": "criticism",
+        "claim": "The price of entry is higher.",
+        "quote": "So that just means the price of entry is higher.",
+        "topic": "T4"
+      },
+      {
+        "seg": 132,
+        "time": "11:20",
+        "start": 680.84,
+        "aspect": "price",
+        "stance": "criticism",
+        "claim": "You can get a lot more phone for $900.",
+        "quote": "You can get a lot more phone for $900.",
+        "topic": "T4"
+      },
+      {
+        "seg": 135,
+        "time": "11:37",
+        "start": 697.4,
+        "aspect": "price",
+        "stance": "criticism",
+        "claim": "It's also very pricey.",
+        "quote": "You know, this S26 Ultra is $1,300 starting, so it's also very pricey.",
+        "topic": "T4"
+      }
+    ],
+    "topics": [
+      {
+        "id": "T0",
+        "name": "Performance",
+        "aspects": [
+          "performance",
+          "animations",
+          "multitasking"
+        ],
+        "reviewer": {
+          "claims": 7,
+          "stances": {
+            "praise": 4,
+            "criticism": 3,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 5.7,
+            "NEUTRAL": 14.28,
+            "NEGATIVE": 7.9
+          },
+          "segments": [
+            16,
+            17,
+            33,
+            37,
+            40,
+            77,
+            78
+          ],
+          "lean": -0.07890961262553763,
+          "se": 0.31157588054623003,
+          "call": "balanced"
+        },
+        "audience": {
+          "comments": 15,
+          "counts": {
+            "POSITIVE": 9,
+            "NEUTRAL": 1,
+            "NEGATIVE": 5
+          },
+          "lean": 0.26666666666666666,
+          "se": 0.24816788991991207,
+          "call": "balanced",
+          "questions": 1,
+          "examples": [
+            {
+              "i": 3,
+              "quote": "I like how AI is just referred to as \"slop\" now, this is something I'm fully in agreement with",
+              "label": "POSITIVE",
+              "likes": 1923
+            },
+            {
+              "i": 18,
+              "quote": "Imagine buying a microscope just to measure pixels for a singular smartphone. Crazy, but I appreciate the effort",
+              "label": "NEGATIVE",
+              "likes": 850
+            },
+            {
+              "i": 37,
+              "quote": "1:35 that wobble is crazy",
+              "label": "POSITIVE",
+              "likes": 277
+            }
+          ]
+        },
+        "agreement": {
+          "gap": -0.3455762792922043,
+          "se": 0.3983300527520616,
+          "low": -1.126288836646185,
+          "high": 0.4351362780617763,
+          "call": "no_clear_difference"
+        }
+      },
+      {
+        "id": "T1",
+        "name": "Battery Life",
+        "aspects": [
+          "battery life",
+          "standby time",
+          "silicon carbon battery"
+        ],
+        "reviewer": {
+          "claims": 5,
+          "stances": {
+            "praise": 4,
+            "criticism": 1,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 16.42,
+            "NEUTRAL": 4.5,
+            "NEGATIVE": 8.65
+          },
+          "segments": [
+            50,
+            51,
+            80,
+            82,
+            83,
+            87,
+            88
+          ],
+          "lean": 0.2627663172133921,
+          "se": 0.39439611189150725,
+          "call": "balanced"
+        },
+        "audience": {
+          "comments": 5,
+          "counts": {
+            "POSITIVE": 1,
+            "NEUTRAL": 0,
+            "NEGATIVE": 4
+          },
+          "lean": -0.6,
+          "se": 0.4000000000000001,
+          "call": "balanced",
+          "questions": 2,
+          "examples": [
+            {
+              "i": 16,
+              "quote": "Does the privacy display boost battery life since half of the pixels are off?",
+              "label": "NEGATIVE",
+              "likes": 3277
+            },
+            {
+              "i": 70,
+              "quote": "5:30 I don't understand what is the point making phones \"thinner\" if camera is still bumping out and new chips require more battery anyways? 🤷‍♂️",
+              "label": "NEGATIVE",
+              "likes": 155
+            },
+            {
+              "i": 56,
+              "quote": "03:30 If it turns off Pixels, it also saves battery. Win - Win. I bet 90% of people do not care if it's 300 DPI or 600, I bet 98% of people don't even realise it.",
+              "label": "POSITIVE",
+              "likes": 81
+            }
+          ]
+        },
+        "agreement": {
+          "gap": 0.8627663172133921,
+          "se": 0.5617368539406493,
+          "low": -0.23821768529911735,
+          "high": 1.9637503197259016,
+          "call": "no_clear_difference"
+        }
+      },
+      {
+        "id": "T2",
+        "name": "Design",
+        "aspects": [
+          "design",
+          "coating",
+          "color display",
+          "viewing angles"
+        ],
+        "reviewer": {
+          "claims": 5,
+          "stances": {
+            "praise": 1,
+            "criticism": 3,
+            "mixed": 0,
+            "neutral": 1
+          },
+          "seconds": {
+            "POSITIVE": 3.3,
+            "NEUTRAL": 20.66,
+            "NEGATIVE": 5.16
+          },
+          "segments": [
+            20,
+            21,
+            44,
+            45,
+            46,
+            47,
+            128
+          ],
+          "lean": -0.0638736263736268,
+          "se": 0.2226037540125065,
+          "call": "balanced"
+        },
+        "audience": {
+          "comments": 29,
+          "counts": {
+            "POSITIVE": 16,
+            "NEUTRAL": 6,
+            "NEGATIVE": 7
+          },
+          "lean": 0.3103448275862069,
+          "se": 0.15775088139513213,
+          "call": "positive",
+          "questions": 3,
+          "examples": [
+            {
+              "i": 1,
+              "quote": "The phone gets thinner every year but the camera bump is building a whole neighborhood",
+              "label": "NEGATIVE",
+              "likes": 11602
+            },
+            {
+              "i": 13,
+              "quote": "The privacy mode is handsdown the coolest feature on the phone. \n\nI wish samsung innovate more on the s pen software.\n\n\nIt is a special hardware and the software support should be improving with newer generations.\n\nBut it just does the bare minimum",
+              "label": "POSITIVE",
+              "likes": 667
+            },
+            {
+              "i": 7,
+              "quote": "The privacy screen is an awesome feature and one of the biggest innovations in phones over the last 5+ years for sure.",
+              "label": "POSITIVE",
+              "likes": 337
+            }
+          ]
+        },
+        "agreement": {
+          "gap": -0.3742184539598337,
+          "se": 0.2728328643719476,
+          "low": -0.9089610419277523,
+          "high": 0.1605241340080848,
+          "call": "no_clear_difference"
+        }
+      },
+      {
+        "id": "T3",
+        "name": "Camera",
+        "aspects": [
+          "camera",
+          "resolution",
+          "apv log codec",
+          "audio eraser"
+        ],
+        "reviewer": {
+          "claims": 4,
+          "stances": {
+            "praise": 3,
+            "criticism": 1,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 18.04,
+            "NEUTRAL": 13.06,
+            "NEGATIVE": 1.95
+          },
+          "segments": [
+            49,
+            50,
+            95,
+            96,
+            103,
+            115,
+            116
+          ],
+          "lean": 0.48683812405446153,
+          "se": 0.23527390690721262,
+          "call": "positive"
+        },
+        "audience": {
+          "comments": 11,
+          "counts": {
+            "POSITIVE": 8,
+            "NEUTRAL": 2,
+            "NEGATIVE": 1
+          },
+          "lean": 0.6363636363636364,
+          "se": 0.20327890704543541,
+          "call": "positive",
+          "questions": 1,
+          "examples": [
+            {
+              "i": 1,
+              "quote": "The phone gets thinner every year but the camera bump is building a whole neighborhood",
+              "label": "NEGATIVE",
+              "likes": 11602
+            },
+            {
+              "i": 31,
+              "quote": "I just realized with the new steady camera feature we can now get those scary videos without the people shaking the camera so much you can't see anything 😂",
+              "label": "NEUTRAL",
+              "likes": 27
+            },
+            {
+              "i": 50,
+              "quote": "Remind me of fold 7 camera bump",
+              "label": "NEUTRAL",
+              "likes": 18
+            }
+          ]
+        },
+        "agreement": {
+          "gap": -0.14952551230917482,
+          "se": 0.3109278458436467,
+          "low": -0.7589328919533442,
+          "high": 0.45988186733499464,
+          "call": "no_clear_difference"
+        }
+      },
+      {
+        "id": "T4",
+        "name": "Price",
+        "aspects": [
+          "price",
+          "value"
+        ],
+        "reviewer": {
+          "claims": 4,
+          "stances": {
+            "praise": 0,
+            "criticism": 4,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 0.0,
+            "NEUTRAL": 9.04,
+            "NEGATIVE": 13.48
+          },
+          "segments": [
+            126,
+            131,
+            132,
+            135
+          ],
+          "lean": -0.5985790408525717,
+          "se": 0.2866175226478619,
+          "call": "negative"
+        },
+        "audience": {
+          "comments": 11,
+          "counts": {
+            "POSITIVE": 6,
+            "NEUTRAL": 1,
+            "NEGATIVE": 4
+          },
+          "lean": 0.18181818181818182,
+          "se": 0.29597855629272196,
+          "call": "balanced",
+          "questions": 1,
+          "examples": [
+            {
+              "i": 8,
+              "quote": "11:46 \"the price is the most Ultra thing about this phone\"  That should be a T-shirt.",
+              "label": "NEGATIVE",
+              "likes": 900
+            },
+            {
+              "i": 25,
+              "quote": "The price is the most ultra thing about this 😂 11:45",
+              "label": "NEGATIVE",
+              "likes": 860
+            },
+            {
+              "i": 69,
+              "quote": "After 5 long years it's time to upgrade from my S20u.",
+              "label": "POSITIVE",
+              "likes": 43
+            }
+          ]
+        },
+        "agreement": {
+          "gap": -0.7803972226707536,
+          "se": 0.412010813054611,
+          "low": -1.5879235774988563,
+          "high": 0.027129132157349134,
+          "call": "no_clear_difference"
+        }
+      },
+      {
+        "id": "T5",
+        "name": "Storage",
+        "aspects": [
+          "storage"
+        ],
+        "reviewer": {
+          "claims": 1,
+          "stances": {
+            "praise": 0,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 1
+          },
+          "seconds": {
+            "POSITIVE": 0.0,
+            "NEUTRAL": 0.0,
+            "NEGATIVE": 5.18
+          },
+          "segments": [
+            130
+          ],
+          "lean": -1.0,
+          "se": null,
+          "call": "unknown"
+        },
+        "audience": {
+          "comments": 4,
+          "counts": {
+            "POSITIVE": 4,
+            "NEUTRAL": 0,
+            "NEGATIVE": 0
+          },
+          "lean": 1.0,
+          "se": 0.0,
+          "call": "positive",
+          "questions": 0,
+          "examples": [
+            {
+              "i": 13,
+              "quote": "The privacy mode is handsdown the coolest feature on the phone. \n\nI wish samsung innovate more on the s pen software.\n\n\nIt is a special hardware and the software support should be improving with newer generations.\n\nBut it just does the bare minimum",
+              "label": "POSITIVE",
+              "likes": 667
+            },
+            {
+              "i": 39,
+              "quote": "I had the Galaxy S21 Ultra for the past 5 years. It still works great. My new phone, S26 Ultra, is coming in today.",
+              "label": "POSITIVE",
+              "likes": 105
+            },
+            {
+              "i": 11,
+              "quote": "4:55 it sold one at least. My original pick was the S26 plus coming from the iPhone 16 plus. But... the second i found out id get the bigger display AND a built in privacy display, i decided it was worth spending more. Edit: also the S-pen is fun and a bonus as well.",
+              "label": "POSITIVE",
+              "likes": 11
+            }
+          ]
+        },
+        "agreement": {
+          "gap": -2.0,
+          "se": null,
+          "low": null,
+          "high": null,
+          "call": "unknown"
+        }
+      },
+      {
+        "id": "T6",
+        "name": "Comparisons",
+        "aspects": [],
+        "reviewer": {
+          "claims": 0,
+          "stances": {
+            "praise": 0,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 0.0,
+            "NEUTRAL": 0.0,
+            "NEGATIVE": 0.0
+          },
+          "segments": [],
+          "lean": null,
+          "se": null,
+          "call": "unknown"
+        },
+        "audience": {
+          "comments": 16,
+          "counts": {
+            "POSITIVE": 5,
+            "NEUTRAL": 10,
+            "NEGATIVE": 1
+          },
+          "lean": 0.25,
+          "se": 0.14433756729740643,
+          "call": "balanced",
+          "questions": 1,
+          "examples": [
+            {
+              "i": 2,
+              "quote": "MKBHD and MRWHOSETHEBOSS with the same video concept 😆",
+              "label": "NEUTRAL",
+              "likes": 14465
+            },
+            {
+              "i": 4,
+              "quote": "i think mr whos the boss and mkbhd took the same ChatGPT advice for this video.",
+              "label": "NEUTRAL",
+              "likes": 5578
+            },
+            {
+              "i": 6,
+              "quote": "yo wtf how did mkbhd and mrwhostheboss have same video lol",
+              "label": "NEUTRAL",
+              "likes": 1750
+            }
+          ]
+        },
+        "agreement": {
+          "gap": null,
+          "se": null,
+          "low": null,
+          "high": null,
+          "call": "unknown"
+        }
+      },
+      {
+        "id": "T7",
+        "name": "Other",
+        "aspects": [
+          "horizon lock",
+          "qi 2 magnets"
+        ],
+        "reviewer": {
+          "claims": 2,
+          "stances": {
+            "praise": 1,
+            "criticism": 1,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 3.62,
+            "NEUTRAL": 0.0,
+            "NEGATIVE": 7.54
+          },
+          "segments": [
+            85,
+            105
+          ],
+          "lean": -0.351254480286739,
+          "se": 0.876620290078493,
+          "call": "balanced"
+        },
+        "audience": {
+          "comments": 13,
+          "counts": {
+            "POSITIVE": 11,
+            "NEUTRAL": 2,
+            "NEGATIVE": 0
+          },
+          "lean": 0.8461538461538461,
+          "se": 0.10415433852097383,
+          "call": "positive",
+          "questions": 1,
+          "examples": [
+            {
+              "i": 44,
+              "quote": "Damn the xaipondam dudes were right ?",
+              "label": "NEUTRAL",
+              "likes": 1262
+            },
+            {
+              "i": 38,
+              "quote": "0:21 bro's out here listening to the new J Cole. Give us a one-time album review. Would love to hear your thoughts!",
+              "label": "POSITIVE",
+              "likes": 244
+            },
+            {
+              "i": 17,
+              "quote": "privacy screen: blocks the guy next to you. \ndata policy: sells your data to vendors and trackers 🎭",
+              "label": "NEUTRAL",
+              "likes": 171
+            }
+          ]
+        },
+        "agreement": {
+          "gap": -1.197408326440585,
+          "se": 0.8827860778297553,
+          "low": -2.9276372450402786,
+          "high": 0.5328205921591083,
+          "call": "no_clear_difference"
+        }
+      }
+    ],
+    "topic_source": "model",
+    "questions": [
+      {
+        "i": 16,
+        "quote": "Does the privacy display boost battery life since half of the pixels are off?"
+      },
+      {
+        "i": 44,
+        "quote": "Damn the xaipondam dudes were right ?"
+      },
+      {
+        "i": 80,
+        "quote": "0:45 dude perfect merch?"
+      }
+    ],
+    "comment_tags": {
+      "0": [],
+      "1": [
+        "Design",
+        "Camera"
+      ],
+      "2": [
+        "Comparisons"
+      ],
+      "3": [
+        "Performance"
+      ],
+      "4": [
+        "Comparisons"
+      ],
+      "5": [
+        "Comparisons"
+      ],
+      "6": [
+        "Comparisons"
+      ],
+      "7": [
+        "Design"
+      ],
+      "8": [
+        "Price"
+      ],
+      "9": [],
+      "10": [
+        "Design"
+      ],
+      "11": [
+        "Price",
+        "Storage"
+      ],
+      "12": [],
+      "13": [
+        "Design",
+        "Storage"
+      ],
+      "14": [
+        "Design"
+      ],
+      "15": [
+        "Comparisons"
+      ],
+      "16": [
+        "Battery Life"
+      ],
+      "17": [
+        "Design",
+        "Other"
+      ],
+      "18": [
+        "Performance"
+      ],
+      "19": [
+        "Performance"
+      ],
+      "20": [
+        "Performance"
+      ],
+      "21": [
+        "Comparisons"
+      ],
+      "22": [],
+      "23": [],
+      "24": [
+        "Design"
+      ],
+      "25": [
+        "Price"
+      ],
+      "26": [
+        "Comparisons"
+      ],
+      "27": [
+        "Design",
+        "Performance"
+      ],
+      "28": [
+        "Other"
+      ],
+      "29": [
+        "Other"
+      ],
+      "30": [
+        "Performance"
+      ],
+      "31": [
+        "Camera"
+      ],
+      "32": [
+        "Other"
+      ],
+      "33": [
+        "Other"
+      ],
+      "34": [
+        "Other"
+      ],
+      "35": [
+        "Price",
+        "Storage"
+      ],
+      "36": [
+        "Other"
+      ],
+      "37": [
+        "Performance"
+      ],
+      "38": [
+        "Other"
+      ],
+      "39": [
+        "Storage",
+        "Design"
+      ],
+      "40": [
+        "Other"
+      ],
+      "41": [
+        "Comparisons"
+      ],
+      "42": [
+        "Other"
+      ],
+      "43": [
+        "Design",
+        "Performance"
+      ],
+      "44": [
+        "Other"
+      ],
+      "45": [
+        "Other"
+      ],
+      "46": [
+        "Comparisons"
+      ],
+      "47": [
+        "Other"
+      ],
+      "48": [
+        "Design",
+        "Performance"
+      ],
+      "49": [
+        "Design",
+        "Performance"
+      ],
+      "50": [
+        "Design",
+        "Camera"
+      ],
+      "51": [],
+      "52": [
+        "Comparisons"
+      ],
+      "53": [
+        "Performance",
+        "Camera"
+      ],
+      "54": [
+        "Design",
+        "Camera"
+      ],
+      "55": [
+        "Performance"
+      ],
+      "56": [
+        "Battery Life"
+      ],
+      "57": [
+        "Design"
+      ],
+      "58": [
+        "Design"
+      ],
+      "59": [
+        "Design"
+      ],
+      "60": [],
+      "61": [
+        "Comparisons"
+      ],
+      "62": [
+        "Price"
+      ],
+      "63": [
+        "Design",
+        "Camera"
+      ],
+      "64": [],
+      "65": [
+        "Design"
+      ],
+      "66": [
+        "Design",
+        "Battery Life"
+      ],
+      "67": [
+        "Price"
+      ],
+      "68": [],
+      "69": [
+        "Price"
+      ],
+      "70": [
+        "Design",
+        "Battery Life"
+      ],
+      "71": [],
+      "72": [
+        "Design"
+      ],
+      "73": [
+        "Comparisons"
+      ],
+      "74": [
+        "Comparisons"
+      ],
+      "75": [
+        "Design",
+        "Price"
+      ],
+      "76": [
+        "Performance"
+      ],
+      "77": [
+        "Design"
+      ],
+      "78": [],
+      "79": [
+        "Camera"
+      ],
+      "80": [],
+      "81": [
+        "Design",
+        "Price"
+      ],
+      "82": [
+        "Design",
+        "Camera"
+      ],
+      "83": [],
+      "84": [],
+      "85": [
+        "Performance",
+        "Battery Life"
+      ],
+      "86": [
+        "Camera"
+      ],
+      "87": [
+        "Price"
+      ],
+      "88": [],
+      "89": [
+        "Performance",
+        "Price"
+      ],
+      "90": [],
+      "91": [
+        "Design",
+        "Camera"
+      ],
+      "92": [
+        "Comparisons"
+      ],
+      "93": [],
+      "94": [
+        "Design",
+        "Camera"
+      ],
+      "95": [],
+      "96": [
+        "Design"
+      ],
+      "97": [],
+      "98": [
+        "Comparisons"
+      ],
+      "99": [
+        "Comparisons"
+      ]
+    }
+  },
+  "written": {
+    "verdict": {
+      "text": "The reviewer concluded that the Samsung Galaxy S26 Ultra has a unique feature, the privacy display, but it comes with trade-offs, such as reduced resolution and peak brightness. The audience is leaning positive, with 56% positive comments.",
+      "evidence": [
+        "S140",
+        "T0"
+      ],
+      "source": "model"
+    },
+    "brand_health_words": {
+      "text": "Of 100 comments, 56 read positive, 27 neutral and 17 negative.",
+      "evidence": [],
+      "source": "template"
+    },
+    "audience_words": {
+      "text": "100 comments were read; the comments lean positive.",
+      "evidence": [],
+      "source": "template"
+    },
+    "agreement_words": {
+      "text": "The reviewer and audience agree on the trade-offs of the privacy display, but disagree on the display's coating and viewing angles.",
+      "evidence": [
+        "T0",
+        "T2"
+      ],
+      "source": "model"
+    },
+    "takeaways": [
+      {
+        "text": "The brand should address the trade-offs of the privacy display, such as reduced resolution and peak brightness.",
+        "evidence": [
+          "S33",
+          "S37",
+          "S40"
+        ]
+      },
+      {
+        "text": "The brand should improve the display's coating and viewing angles.",
+        "evidence": [
+          "S44",
+          "S45",
+          "T2"
+        ]
+      },
+      {
+        "text": "The brand should consider adding more advanced features, such as a super advanced new silicon carbon battery or super fast charging or wireless charging.",
+        "evidence": [
+          "S140",
+          "T0"
+        ]
+      }
+    ],
+    "moment_notes": [
+      {
+        "seg": 86,
+        "text": "The words read neutral, but the face reads negative, while the comments read positive, discussing the magnets in the phone."
+      },
+      {
+        "seg": 0,
+        "text": "The words read neutral, but the face reads negative, while the comments read positive, discussing the final thoughts."
+      },
+      {
+        "seg": 2,
+        "text": "The words read neutral, but the face reads neutral, while the comments read positive, discussing the personal story."
+      }
+    ],
+    "turn_labels": [
+      {
+        "seg": 46,
+        "label": "The display's coating"
+      },
+      {
+        "seg": 77,
+        "label": "Animations are smooth"
+      }
+    ]
+  },
+  "verifier": {
+    "proposed": 152,
+    "kept": 146,
+    "by_field": {
+      "claim": {
+        "kept": 28,
+        "dropped": 3
+      },
+      "topic": {
+        "kept": 8,
+        "dropped": 0
+      },
+      "comment_tags": {
+        "kept": 100,
+        "dropped": 0
+      },
+      "verdict": {
+        "kept": 1,
+        "dropped": 0
+      },
+      "brand_health_words": {
+        "kept": 0,
+        "dropped": 1
+      },
+      "audience_words": {
+        "kept": 0,
+        "dropped": 1
+      },
+      "agreement_words": {
+        "kept": 1,
+        "dropped": 0
+      },
+      "takeaway": {
+        "kept": 3,
+        "dropped": 0
+      },
+      "moment_note": {
+        "kept": 3,
+        "dropped": 0
+      },
+      "turn_label": {
+        "kept": 2,
+        "dropped": 1
+      }
+    },
+    "dropped": [
+      {
+        "field": "claim",
+        "reasons": [
+          "figure not in the facts: 20",
+          "figure not in the facts: 30"
+        ],
+        "text": "{'seg': 18, 'aspect': 'value', 'stance': 'praise', 'claim': 'A cheap $20, $30 screen protector can achieve a similar effect through polarization.', 'quote': 'does that through polarization.'}"
+      },
+      {
+        "field": "claim",
+        "reasons": [
+          "makes a claim only the signs may make: 'genuinely'"
+        ],
+        "text": "{'seg': 23, 'aspect': 'performance', 'stance': 'praise', 'claim': 'This is a genuinely useful innovation.', 'quote': 'This is a genuinely useful innovation.'}"
+      },
+      {
+        "field": "claim",
+        "reasons": [
+          "makes a claim only the signs may make: 'manipulate'"
+        ],
+        "text": "{'seg': 122, 'aspect': 'AI photo editor', 'stance': 'praise', 'claim': \"The AI text-based photo editor refused many of the reviewer's attempts to manipulate it.\", 'quote': 'to its credit, it refused many of the things I tried to make'}"
+      },
+      {
+        "field": "brand_health_words",
+        "reasons": [
+          "says the comments were positive about Battery Life, which the run does not show"
+        ],
+        "text": "The audience is leaning positive, with 56% positive comments, praising the privacy display and battery life, but criticizing the display's coating and viewing angles."
+      },
+      {
+        "field": "audience_words",
+        "reasons": [
+          "states a proportion that cannot be checked: 'most comments'"
+        ],
+        "text": "The audience is discussing the privacy display, battery life, and design, with the most comments on the design topic."
+      },
+      {
+        "field": "turn_label",
+        "reasons": [
+          "10 words, limit 6"
+        ],
+        "text": "The base S26 and S26 Plus are not good deals"
+      }
+    ],
+    "notes": [
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 17,
+        "to": [
+          16,
+          17
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "segment corrected to where the quote is",
+        "from": 18,
+        "to": 19
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 20,
+        "to": [
+          20,
+          21
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "segment corrected to where the quote is",
+        "from": 41,
+        "to": 40
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 46,
+        "to": [
+          46,
+          47
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 49,
+        "to": [
+          49,
+          50
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 51,
+        "to": [
+          50,
+          51
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "segment corrected to where the quote is",
+        "from": 81,
+        "to": 80
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 87,
+        "to": [
+          87,
+          88
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 96,
+        "to": [
+          95,
+          96
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 116,
+        "to": [
+          115,
+          116
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "segment corrected to where the quote is",
+        "from": 127,
+        "to": 128
+      }
+    ]
+  },
+  "video_meta": {
+    "fetched": true,
+    "at": "2026-09-25T11:05:59+00:00",
+    "has_paid_product_placement": false,
+    "description_hits": [
+      {
+        "category": "affiliate",
+        "pattern": "affiliate",
+        "match": "Affiliate",
+        "context": "Samsung Galaxy S26 Ultra: geni.us/… (Affiliate Link) Playlist of MKBHD Intro music: goo/…"
+      },
+      {
+        "category": "affiliate",
+        "pattern": "affiliate_network",
+        "match": "geni.us",
+        "context": "tp://MKBHD.com Samsung Galaxy S26 Ultra: geni.us/… (Affiliate Link) Playlist of MKBHD Intro m"
+      },
+      {
+        "category": "gifted",
+        "pattern": "provided_by",
+        "match": "provided by",
+        "context": "f MKBHD Intro music: goo.gl/… Phone provided by Samsung for review. ~ twitter.com/… h"
+      }
+    ],
+    "title": "Samsung Galaxy S26 Ultra Review: There's a Catch",
+    "channel": "Marques Brownlee",
+    "published_at": "2026-03-06T20:14:58Z"
+  },
+  "calls": [
+    {
+      "step": "claims",
+      "ok": true,
+      "seconds": 30.99,
+      "prompt_chars": 6980,
+      "prompt_tokens": 2005,
+      "output_tokens": 429
+    },
+    {
+      "step": "claims",
+      "ok": true,
+      "seconds": 24.71,
+      "prompt_chars": 6659,
+      "prompt_tokens": 1895,
+      "output_tokens": 414
+    },
+    {
+      "step": "claims",
+      "ok": true,
+      "seconds": 28.57,
+      "prompt_chars": 6625,
+      "prompt_tokens": 1867,
+      "output_tokens": 509
+    },
+    {
+      "step": "claims",
+      "ok": true,
+      "seconds": 23.76,
+      "prompt_chars": 4962,
+      "prompt_tokens": 1409,
+      "output_tokens": 443
+    },
+    {
+      "step": "topics",
+      "ok": true,
+      "seconds": 16.56,
+      "prompt_chars": 5357,
+      "prompt_tokens": 1420,
+      "output_tokens": 247
+    },
+    {
+      "step": "comments",
+      "ok": true,
+      "seconds": 19.84,
+      "prompt_chars": 3641,
+      "prompt_tokens": 1022,
+      "output_tokens": 368
+    },
+    {
+      "step": "comments",
+      "ok": true,
+      "seconds": 20.21,
+      "prompt_chars": 3661,
+      "prompt_tokens": 1054,
+      "output_tokens": 380
+    },
+    {
+      "step": "comments",
+      "ok": true,
+      "seconds": 21.16,
+      "prompt_chars": 4724,
+      "prompt_tokens": 1288,
+      "output_tokens": 374
+    },
+    {
+      "step": "comments",
+      "ok": true,
+      "seconds": 20.54,
+      "prompt_chars": 4522,
+      "prompt_tokens": 1226,
+      "output_tokens": 366
+    },
+    {
+      "step": "prose",
+      "ok": true,
+      "seconds": 39.29,
+      "prompt_chars": 10440,
+      "prompt_tokens": 3079,
+      "output_tokens": 586
+    }
+  ],
+  "runtime_s": 246.13,
+  "report_ref": {
+    "file": "Samsung (Galaxy S26 Ultra).json",
+    "sha256": "88243feec13ad77979a0aa277edb863d90224b9905940c0415a1347ba9cc3bea"
+  }
+}

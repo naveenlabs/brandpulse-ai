@@ -1,0 +1,36 @@
+{
+ "uid": "4KbrxIpQgkM_71",
+ "system": "three_channel",
+ "video_id": "4KbrxIpQgkM",
+ "segment_id": 71,
+ "split": "selection",
+ "payload": {
+  "segment_id": 71,
+  "start_s": 373.14,
+  "end_s": 376.56,
+  "transcript": "on a phone that is meant to spend a lot of its time face down.",
+  "transcript_sentiment": "NEUTRAL (0.69)",
+  "vocal_emotion": "NEUTRAL (arousal 0.42)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.99)"
+ },
+ "seconds": 4.637,
+ "raw": "{\n  \"segment_id\": 71,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"vocal_prosody\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and tone suggest neutrality, but their facial expression is undetected and their vocal tone is also neutral, which is inconsistent with the positive sentiment expressed by the audience in comments.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 71,
+  "start_s": 373.14,
+  "end_s": 376.56,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: vocal_prosody"
+  ],
+  "flagged": false
+ }
+}

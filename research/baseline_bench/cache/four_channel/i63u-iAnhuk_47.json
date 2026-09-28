@@ -1,0 +1,36 @@
+{
+ "uid": "i63u-iAnhuk_47",
+ "system": "four_channel",
+ "video_id": "i63u-iAnhuk",
+ "segment_id": 47,
+ "split": "selection",
+ "payload": {
+  "segment_id": 47,
+  "start_s": 231.48,
+  "end_s": 236.48,
+  "transcript": "that people are actually going to care about are Tensor and PixelSnap.",
+  "transcript_sentiment": "NEUTRAL (0.71)",
+  "vocal_emotion": "NEUTRAL (arousal 0.53)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "sad (0.73)",
+  "video_comment_sentiment": "POSITIVE (0.97)"
+ },
+ "seconds": 4.629,
+ "raw": "{\n  \"segment_id\": 47,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"video_comment_sentiment\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and tone suggest neutrality, but their facial expression is sad, and the audience's comments are overwhelmingly positive, indicating a conflict between the creator's emotional state and the audience's reaction.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 47,
+  "start_s": 231.48,
+  "end_s": 236.48,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: video_comment_sentiment"
+  ],
+  "flagged": false
+ }
+}

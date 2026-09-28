@@ -1,0 +1,588 @@
+{
+  "reports": [
+    {
+      "file": "Apple (Duo).json",
+      "status": "complete",
+      "runtime_s": 230.8,
+      "calls": 9,
+      "prompts": {
+        "claims": "11039eb1443c",
+        "topics": "849d75dbc679",
+        "comments": "dda83531df32",
+        "prose": "7c7e5734080f"
+      }
+    },
+    {
+      "file": "Nike (Mind 001).json",
+      "status": "complete",
+      "runtime_s": 284.34,
+      "calls": 13,
+      "prompts": {
+        "claims": "11039eb1443c",
+        "topics": "849d75dbc679",
+        "comments": "dda83531df32",
+        "prose": "7c7e5734080f"
+      }
+    },
+    {
+      "file": "1n4Y4SEnALs.json",
+      "status": "complete",
+      "runtime_s": 186.73,
+      "calls": 8,
+      "prompts": {
+        "claims": "11039eb1443c",
+        "topics": "849d75dbc679",
+        "comments": "dda83531df32",
+        "prose": "633ad9a4e222"
+      }
+    },
+    {
+      "file": "L8CswTQyuMw.json",
+      "status": "complete",
+      "runtime_s": 198.32,
+      "calls": 8,
+      "prompts": {
+        "claims": "11039eb1443c",
+        "topics": "849d75dbc679",
+        "comments": "dda83531df32",
+        "prose": "633ad9a4e222"
+      }
+    },
+    {
+      "file": "MQpvfM7T0Ow.json",
+      "status": "complete",
+      "runtime_s": 179.18,
+      "calls": 8,
+      "prompts": {
+        "claims": "11039eb1443c",
+        "topics": "849d75dbc679",
+        "comments": "dda83531df32",
+        "prose": "633ad9a4e222"
+      }
+    },
+    {
+      "file": "RIxJH90lv0E.json",
+      "status": "complete",
+      "runtime_s": 257.9,
+      "calls": 8,
+      "prompts": {
+        "claims": "11039eb1443c",
+        "topics": "849d75dbc679",
+        "comments": "dda83531df32",
+        "prose": "633ad9a4e222"
+      }
+    },
+    {
+      "file": "z0HTxwB3XlU.json",
+      "status": "complete",
+      "runtime_s": 212.6,
+      "calls": 8,
+      "prompts": {
+        "claims": "11039eb1443c",
+        "topics": "849d75dbc679",
+        "comments": "dda83531df32",
+        "prose": "633ad9a4e222"
+      }
+    },
+    {
+      "file": "GbtxgwYJp8o.json",
+      "status": "complete",
+      "runtime_s": 197.89,
+      "calls": 8,
+      "prompts": {
+        "claims": "11039eb1443c",
+        "topics": "849d75dbc679",
+        "comments": "dda83531df32",
+        "prose": "633ad9a4e222"
+      }
+    },
+    {
+      "file": "L8CswTQyuMw.json",
+      "status": "complete",
+      "runtime_s": 226.48,
+      "calls": 8,
+      "prompts": {
+        "claims": "11039eb1443c",
+        "topics": "849d75dbc679",
+        "comments": "dda83531df32",
+        "prose": "633ad9a4e222"
+      }
+    },
+    {
+      "file": "MQpvfM7T0Ow.json",
+      "status": "complete",
+      "runtime_s": 194.53,
+      "calls": 8,
+      "prompts": {
+        "claims": "11039eb1443c",
+        "topics": "849d75dbc679",
+        "comments": "dda83531df32",
+        "prose": "633ad9a4e222"
+      }
+    },
+    {
+      "file": "RIxJH90lv0E.json",
+      "status": "complete",
+      "runtime_s": 187.61,
+      "calls": 8,
+      "prompts": {
+        "claims": "11039eb1443c",
+        "topics": "849d75dbc679",
+        "comments": "dda83531df32",
+        "prose": "633ad9a4e222"
+      }
+    }
+  ],
+  "E1": {
+    "fields": {
+      "claim": {
+        "kept": 196,
+        "dropped": 25
+      },
+      "topic": {
+        "kept": 86,
+        "dropped": 2
+      },
+      "comment_tags": {
+        "kept": 1020,
+        "dropped": 0
+      },
+      "verdict": {
+        "kept": 3,
+        "dropped": 8
+      },
+      "brand_health_words": {
+        "kept": 7,
+        "dropped": 4
+      },
+      "audience_words": {
+        "kept": 8,
+        "dropped": 3
+      },
+      "agreement_words": {
+        "kept": 5,
+        "dropped": 6
+      },
+      "takeaway": {
+        "kept": 33,
+        "dropped": 0
+      },
+      "moment_note": {
+        "kept": 32,
+        "dropped": 4
+      },
+      "turn_label": {
+        "kept": 24,
+        "dropped": 3
+      }
+    },
+    "reasons": {
+      "figure not in the facts": 19,
+      "recheck": 13,
+      "quote not found in its segment": 11,
+      "not one of the moments, or repeated": 4,
+      "says the comments lean negative; the computed call is balanced": 3,
+      "says the comments lean positive; the computed call is balanced": 3,
+      "evidence id not understood": 2,
+      "8 words, limit 6": 2,
+      "states a proportion that cannot be checked": 2,
+      "name not usable or repeated": 2,
+      "says the reviewer were positive about The Reviewer, which the run does not show": 1,
+      "cites no evidence": 1,
+      "contradicts the call": 1,
+      "48 words, limit 45": 1,
+      "7 words, limit 6": 1
+    },
+    "corrections": 54
+  },
+  "E3": {
+    "n": 106,
+    "agree": 74,
+    "rate": 0.6981132075471698,
+    "ci": [
+      0.6050536120416237,
+      0.7773156722971892
+    ]
+  },
+  "E4": {
+    "calls": 94,
+    "failed": 0,
+    "per_step": {
+      "claims": {
+        "n": 30,
+        "median_s": 28.6,
+        "max_prompt_tokens": 2047,
+        "max_output_tokens": 548
+      },
+      "topics": {
+        "n": 11,
+        "median_s": 14.2,
+        "max_prompt_tokens": 1301,
+        "max_output_tokens": 222
+      },
+      "comments": {
+        "n": 42,
+        "median_s": 21.6,
+        "max_prompt_tokens": 1210,
+        "max_output_tokens": 455
+      },
+      "prose": {
+        "n": 11,
+        "median_s": 42.3,
+        "max_prompt_tokens": 3272,
+        "max_output_tokens": 699
+      }
+    },
+    "runtime_s": [
+      230.8,
+      284.34,
+      186.73,
+      198.32,
+      179.18,
+      257.9,
+      212.6,
+      197.89,
+      226.48,
+      194.53,
+      187.61
+    ]
+  },
+  "combined": {
+    "sets": [
+      {
+        "file": "sasmung-s27-ultra-half-12f4e012",
+        "status": "complete",
+        "runtime_s": 22.12,
+        "theme_source": "model",
+        "themes": 8,
+        "themes_in_3_or_more": 4,
+        "placed_share": 0.7079482439926063,
+        "unplaced_topics": 13,
+        "members_written": 5,
+        "labels": {
+          "split": 2,
+          "agreed": 2,
+          "too_few": 4
+        }
+      },
+      {
+        "file": "sasmung-s27-ultra-month-cb910946",
+        "status": "complete",
+        "runtime_s": 22.83,
+        "theme_source": "model",
+        "themes": 8,
+        "themes_in_3_or_more": 2,
+        "placed_share": 0.8915401301518439,
+        "unplaced_topics": 6,
+        "members_written": 4,
+        "labels": {
+          "split": 1,
+          "agreed": 1,
+          "too_few": 5,
+          "neutral": 1
+        }
+      }
+    ],
+    "C1": {
+      "fields": {
+        "theme": {
+          "kept": 16,
+          "dropped": 0
+        },
+        "takeaway": {
+          "kept": 4,
+          "dropped": 2
+        }
+      },
+      "reasons": {
+        "says reviewers were negative about Camera, which the matrix does not show": 1,
+        "says reviewers were negative about Performance, which the matrix does not show": 1,
+        "says what its theme's evidence does not contain": 1
+      },
+      "sources": {
+        "agreement_words:code": 2,
+        "brand_health_words:code": 2,
+        "consensus_words:code": 2,
+        "split_words:code": 2,
+        "verdict:code": 2
+      }
+    },
+    "C4": {
+      "calls": 4,
+      "failed": 0,
+      "per_step": {
+        "themes": {
+          "n": 2,
+          "median_s": 11.2,
+          "max_prompt_tokens": 1624,
+          "max_output_tokens": 263
+        },
+        "set_prose": {
+          "n": 2,
+          "median_s": 11.3,
+          "max_prompt_tokens": 2869,
+          "max_output_tokens": 254
+        }
+      }
+    }
+  },
+  "R1": {
+    "n": 7,
+    "rows": [
+      {
+        "video_id": "B8-JHY94jvI",
+        "sweeps": [
+          "nike-half-19a4d6f6",
+          "nike-week-19a4d6f6"
+        ],
+        "reviewer": [
+          0.2194555383486836,
+          0.26587970770095554
+        ],
+        "audience": [
+          -0.05263157894736842,
+          -0.05263157894736842
+        ],
+        "authenticity": [
+          61.49,
+          61.22
+        ],
+        "brand_health": [
+          53.57,
+          53.46
+        ],
+        "label": [
+          "NEUTRAL",
+          "NEUTRAL"
+        ],
+        "near_tie": [
+          false,
+          false
+        ],
+        "calls_same": true
+      },
+      {
+        "video_id": "BJioCrnBwYw",
+        "sweeps": [
+          "nike-half-19a4d6f6",
+          "nike-week-19a4d6f6"
+        ],
+        "reviewer": [
+          0.22630863358259648,
+          0.22630863358259648
+        ],
+        "audience": [
+          0.46511627906976744,
+          0.46511627906976744
+        ],
+        "authenticity": [
+          51.56,
+          51.56
+        ],
+        "brand_health": [
+          78.93,
+          78.93
+        ],
+        "label": [
+          "POSITIVE",
+          "POSITIVE"
+        ],
+        "near_tie": [
+          false,
+          false
+        ],
+        "calls_same": true
+      },
+      {
+        "video_id": "BrWwyy2k3lU",
+        "sweeps": [
+          "nike-half-19a4d6f6",
+          "nike-week-19a4d6f6"
+        ],
+        "reviewer": [
+          -0.021371416995847596,
+          -0.021371416995847596
+        ],
+        "audience": [
+          0.038461538461538464,
+          0.038461538461538464
+        ],
+        "authenticity": [
+          66.28,
+          66.28
+        ],
+        "brand_health": [
+          55.71,
+          55.71
+        ],
+        "label": [
+          "NEUTRAL",
+          "NEUTRAL"
+        ],
+        "near_tie": [
+          true,
+          true
+        ],
+        "calls_same": true
+      },
+      {
+        "video_id": "lOIDb7ahVhM",
+        "sweeps": [
+          "nike-half-19a4d6f6",
+          "nike-week-19a4d6f6"
+        ],
+        "reviewer": [
+          0.30042153047989617,
+          0.30042153047989617
+        ],
+        "audience": [
+          -0.12,
+          -0.12
+        ],
+        "authenticity": [
+          30.52,
+          30.52
+        ],
+        "brand_health": [
+          12.21,
+          12.21
+        ],
+        "label": [
+          "NEGATIVE",
+          "NEGATIVE"
+        ],
+        "near_tie": [
+          false,
+          false
+        ],
+        "calls_same": true
+      },
+      {
+        "video_id": "L8CswTQyuMw",
+        "sweeps": [
+          "sasmung-s27-ultra-half-12f4e012",
+          "sasmung-s27-ultra-month-cb910946"
+        ],
+        "reviewer": [
+          0.31157212317666116,
+          0.31157212317666116
+        ],
+        "audience": [
+          -0.03,
+          0.04
+        ],
+        "authenticity": [
+          39.89,
+          53.36
+        ],
+        "brand_health": [
+          15.96,
+          79.29
+        ],
+        "label": [
+          "NEGATIVE",
+          "POSITIVE"
+        ],
+        "near_tie": [
+          true,
+          true
+        ],
+        "calls_same": true
+      },
+      {
+        "video_id": "MQpvfM7T0Ow",
+        "sweeps": [
+          "sasmung-s27-ultra-half-12f4e012",
+          "sasmung-s27-ultra-month-cb910946"
+        ],
+        "reviewer": [
+          0.14599924156238128,
+          0.14599924156238128
+        ],
+        "audience": [
+          -0.07,
+          0.0
+        ],
+        "authenticity": [
+          41.95,
+          81.82
+        ],
+        "brand_health": [
+          16.78,
+          61.09
+        ],
+        "label": [
+          "NEGATIVE",
+          "NEUTRAL"
+        ],
+        "near_tie": [
+          false,
+          true
+        ],
+        "calls_same": true
+      },
+      {
+        "video_id": "RIxJH90lv0E",
+        "sweeps": [
+          "sasmung-s27-ultra-half-12f4e012",
+          "sasmung-s27-ultra-month-cb910946"
+        ],
+        "reviewer": [
+          0.14871512607932827,
+          0.16922310402505403
+        ],
+        "audience": [
+          -0.19672131147540983,
+          -0.1694915254237288
+        ],
+        "authenticity": [
+          43.57,
+          42.13
+        ],
+        "brand_health": [
+          17.43,
+          16.85
+        ],
+        "label": [
+          "NEGATIVE",
+          "NEGATIVE"
+        ],
+        "near_tie": [
+          false,
+          false
+        ],
+        "calls_same": true
+      }
+    ],
+    "calls_same": 7,
+    "label_changed": 2,
+    "max_delta": {
+      "reviewer": 0.04642416935227195,
+      "audience": 0.07,
+      "authenticity": 39.86999999999999,
+      "brand_health": 63.330000000000005
+    }
+  },
+  "E2": {
+    "prompts_equal": true,
+    "files": [
+      "sasmung-s27-ultra-month-cb910946/combined.json",
+      "sasmung-s27-ultra-month-cb910946/combined.json"
+    ],
+    "facts": {
+      "a": "67936c7d255f764f",
+      "b": "67936c7d255f764f",
+      "identical": true
+    },
+    "reading": {
+      "a": "80dabe435a58cff6",
+      "b": "80dabe435a58cff6",
+      "identical": true
+    },
+    "written": {
+      "a": "0f17e72fbcca7198",
+      "b": "0f17e72fbcca7198",
+      "identical": true
+    }
+  }
+}

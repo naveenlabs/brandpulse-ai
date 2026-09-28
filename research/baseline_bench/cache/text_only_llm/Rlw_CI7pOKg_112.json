@@ -1,0 +1,27 @@
+{
+ "uid": "Rlw_CI7pOKg_112",
+ "system": "text_only_llm",
+ "video_id": "Rlw_CI7pOKg",
+ "segment_id": 112,
+ "split": "holdout",
+ "payload": {
+  "segment_id": 112,
+  "start_s": 651.92,
+  "end_s": 656.0,
+  "transcript": "cool the chip and you'll get slightly better performance and crucially you can just spec the pros"
+ },
+ "seconds": 3.884,
+ "raw": "{\n  \"segment_id\": 112,\n  \"conflict_score\": 0.8,\n  \"channels_in_conflict\": [],\n  \"flags\": [\"POTENTIAL_PAID_PROMOTION\"],\n  \"narrative\": \"The language used is overly promotional, with a focus on 'slightly better performance' and 'spec the pros', which suggests the creator is trying to sell a product rather than genuinely discussing its features.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 112,
+  "start_s": 651.92,
+  "end_s": 656.0,
+  "conflict_score": 0.8,
+  "conflict_reasons": [
+   "POTENTIAL_PAID_PROMOTION"
+  ],
+  "flagged": true
+ }
+}

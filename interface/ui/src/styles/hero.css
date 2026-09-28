@@ -1,0 +1,84 @@
+/* The opening page's bookends. All materials inherit the product's live theme. */
+.hero {
+  position:relative; isolation:isolate; overflow:clip;
+  color:var(--ink); background:var(--body);
+  padding:110px var(--gutter) 0;
+  min-height:100svh; display:flex; flex-direction:column;
+}
+.hero::before,.close::before {
+  content:"";position:absolute;inset:0;pointer-events:none;z-index:-1;
+  background:url('/static/grain.png');opacity:calc(var(--grain-a) * .45);
+}
+.hero__edition,.close__edition {
+  display:flex;justify-content:space-between;gap:24px;
+  /* 11.5px: the type system's smallest size (tokens.css --t-micro). The
+     landing's labels were set at 6-10px; four of five people in the final
+     evaluation said text was too small or faint (D4; INCLUSIVE_DESIGN.md R10). */
+  font:500 11.5px/1.5 var(--f-inst);letter-spacing:.14em;color:var(--ink-3);
+  padding-bottom:20px;border-bottom:1px solid var(--edge);
+}
+.hero__edition i,.close__badge i {display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--ch-transcript);margin-right:9px;vertical-align:2px}
+.hero__stage {display:grid;grid-template-columns:1.08fr 1fr;align-items:center;gap:2%;flex:1;min-height:460px;padding-block:32px 22px}
+.hero__copy {position:relative;z-index:2;padding-left:clamp(0px,1vw,18px)}
+.hero__eyebrow {font-size:11.5px;letter-spacing:.14em;color:var(--ink-2);margin-bottom:30px}
+.hero__title {font-family:var(--f-inst);font-size:clamp(56px,6.8vw,108px);font-weight:500;line-height:.98;letter-spacing:-.065em;margin:0}
+.hero__title span,.hero__title em {display:block}
+.hero__title em {font-family:var(--f-voice);font-weight:400;letter-spacing:-.045em;line-height:1.08}
+.hero__sub {font-size:clamp(16px,1.35vw,20px);line-height:1.65;color:var(--ink-2);margin-top:28px}
+.hero__actions {display:flex;align-items:center;flex-wrap:wrap;gap:22px;margin-top:34px}
+.hero__cta {min-height:50px;padding-inline:24px;gap:28px}
+.hero__cta>span,.close__cta>span {font-size:21px;font-weight:400}
+.hero__scroll {display:flex;gap:14px;align-items:center;font-size:11.5px;letter-spacing:.1em;color:var(--ink-3)}
+.hero__scroll>span {font-size:20px}
+.hero__instrument {position:relative;min-width:0;align-self:stretch;display:flex;flex-direction:column;justify-content:center}
+.hero__instrument .signal-object {max-width:560px;aspect-ratio:1.25;margin-inline:auto}
+.hero__spec {display:flex;justify-content:space-between;gap:14px;font-size:8px;letter-spacing:.13em;color:var(--ink-3);position:absolute;bottom:0;left:5%;right:0}
+.hero__feats {display:grid;grid-template-columns:repeat(4,1fr);list-style:none;margin:26px 0 0;padding:0;border-block:1px solid var(--edge)}
+.hero__feats li {display:flex;gap:22px;align-items:center;padding:24px 22px;border-right:1px solid var(--edge)}
+.hero__feats li:first-child{padding-left:0}.hero__feats li:last-child{border:0}
+.hero__channel-no {display:flex;flex-direction:column;gap:12px;color:var(--ink-3);font-size:11.5px;font-variant-numeric:tabular-nums}
+.hero__channel-no i {height:2px;width:16px;background:var(--signal)}
+.hero__feats strong {display:block;font-weight:500;font-size:15px;margin-bottom:4px}
+.hero__feats div>span {font-size:12px;color:var(--ink-3)}
+.hero__foot {display:flex;justify-content:space-between;gap:20px;padding:22px 0;font-size:var(--t-note);color:var(--ink-3);line-height:1.5}
+.hero__foot>span:last-child{font-size:11.5px;letter-spacing:.08em}
+.hero__glyph {width:22px;height:22px;fill:currentColor}
+
+/* Four annular metal elements in an actual perspective stack. Conic light,
+   inset bevels and individual engraved dials give each layer a physical edge. */
+.signal-object {--metal-a:color-mix(in srgb,var(--key) 65%,var(--panel));--metal-b:var(--panel);--metal-c:color-mix(in srgb,var(--key) 18%,var(--body));position:relative;width:100%;aspect-ratio:1.15;perspective:1100px;pointer-events:none}
+.signal-object__halo {position:absolute;inset:-15%;background:radial-gradient(ellipse at 52% 48%,rgb(var(--key-rgb) / calc(var(--pool-a) + .03)),transparent 65%)}
+.signal-object__shadow {position:absolute;left:15%;right:5%;height:28%;bottom:1%;border-radius:50%;background:radial-gradient(ellipse,rgb(var(--shade-rgb) / var(--shade-a)),transparent 68%);filter:blur(20px);transform:rotate(-15deg)}
+.signal-object__rig {position:absolute;width:76%;aspect-ratio:1;left:12%;top:12%;transform-style:preserve-3d;transform:rotateX(58deg) rotateY(-13deg) rotateZ(-28deg)}
+.signal-object__layer {position:absolute;inset:0;transform-style:preserve-3d;transform:translateZ(calc(var(--layer) * 52px));border-radius:50%;animation:signal-breathe 10s ease-in-out infinite alternate;animation-delay:calc(var(--layer) * -.8s)}
+.signal-object__rim {position:absolute;inset:0;border-radius:50%;background:conic-gradient(from 25deg,var(--metal-b),var(--metal-a) 12%,var(--metal-c) 25%,var(--metal-b) 40%,var(--metal-a) 60%,var(--metal-c) 74%,var(--metal-a) 86%,var(--metal-b));mask:radial-gradient(circle,transparent 57%,#000 57.4%);box-shadow:inset 0 1px 1px rgb(255 255 255 / .65),inset 0 -3px 2px rgb(var(--shade-rgb) / .6)}
+.signal-object__layer::before {content:"";position:absolute;inset:0;border-radius:50%;border:1px solid color-mix(in srgb,var(--key) 42%,transparent);box-shadow:0 4px 0 var(--metal-c),0 7px 0 var(--panel),0 10px 0 var(--edge),0 16px 22px rgb(var(--shade-rgb) / .2);mask:radial-gradient(circle,transparent 56%,#000 57%)}
+.signal-object__layer::after {content:"";position:absolute;inset:9.5%;border:1px solid color-mix(in srgb,var(--signal) 75%,transparent);border-radius:50%;box-shadow:0 0 12px color-mix(in srgb,var(--signal) 12%,transparent)}
+.signal-object__dial {position:absolute;inset:0;width:100%;height:100%;fill:none;stroke:var(--ink);stroke-opacity:.45;stroke-width:.6;animation:signal-revolve 100s linear infinite;animation-direction:reverse}
+.signal-object__dial text {fill:var(--ink);stroke:none;font:9px var(--f-inst);letter-spacing:2.5px}
+.signal-object__trace {stroke:var(--signal);stroke-width:2;stroke-opacity:.8;stroke-dasharray:210 970;transform-origin:center;transform:rotate(calc(var(--layer) * 80deg))}
+.signal-object__point {position:absolute;width:7px;height:7px;border-radius:50%;background:var(--signal);top:9%;left:49%;box-shadow:0 0 14px color-mix(in srgb,var(--signal) 40%,transparent)}
+.signal-object__core {position:absolute;inset:29%;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:14px;background:radial-gradient(circle at 30% 20%,var(--panel),var(--body) 75%);border:1px solid var(--edge-hi);box-shadow:inset 0 1px 2px var(--glass-hi),0 15px 35px rgb(var(--shade-rgb) / .3);transform:translateZ(-25px)}
+.signal-object__core>span {font:400 clamp(28px,4vw,60px)/1 var(--f-voice);letter-spacing:-.07em}.signal-object__core i{width:28%;height:1px;background:var(--ink-3)}
+.signal-object__core small {font-size:6px;letter-spacing:1px;line-height:1.8;text-align:center;color:var(--ink-3)}
+@keyframes signal-revolve{to{transform:rotate(360deg)}}
+@keyframes signal-breathe{to{transform:translateZ(calc(var(--layer) * 68px)) rotateZ(calc(var(--layer) * 3deg))}}
+.hero:not([data-in-view="true"]) .signal-object__layer,.hero:not([data-in-view="true"]) .signal-object__dial,.close:not([data-in-view="true"]) .signal-object__layer,.close:not([data-in-view="true"]) .signal-object__dial {animation-play-state:paused}
+@media(prefers-reduced-motion:no-preference){
+  html.hero-in .hero__copy{animation:hero-arrive 1.2s var(--ease-out) both}
+  @keyframes hero-arrive{from{opacity:0;translate:0 16px}to{opacity:1;translate:0 0}}
+}
+@media(min-width:1700px){.hero__stage{min-height:560px}.hero__instrument{max-width:800px}}
+@media(max-width:1050px){.hero__title{font-size:clamp(48px,7.2vw,76px)}.hero__feats li{gap:14px;padding-inline:16px}.hero__spec span:last-child{display:none}.hero__stage{min-height:460px}}
+@media(max-width:760px){
+ .hero{padding-top:95px}.hero__edition{font-size:11.5px}.hero__edition>span:last-child{display:none}
+ .hero__stage{grid-template-columns:1fr;padding-block:38px 10px;gap:12px}.hero__copy{padding:0}.hero__title{font-size:clamp(48px,11vw,76px)}
+ .hero__eyebrow{font-size:11.5px;margin-bottom:20px}.hero__sub{margin-top:22px}.hero__actions{margin-top:24px}.hero__scroll{display:none}
+ .hero__instrument{width:min(100%,500px);justify-self:center;height:330px}.hero__instrument .signal-object{aspect-ratio:1.15}.signal-object{max-width:440px;margin-inline:auto}.hero__spec{font-size:7px;bottom:5px}
+ .hero__feats{grid-template-columns:1fr 1fr;margin-top:10px}.hero__feats li{padding:18px 12px}.hero__feats li:nth-child(2){border-right:0}.hero__feats li:nth-child(-n+2){border-bottom:1px solid var(--edge)}.hero__feats li:nth-child(3){padding-left:0}.hero__feats strong{font-size:14px}.hero__feats div>span{font-size:12px}
+ .hero__foot{flex-direction:column;gap:8px;padding-block:18px;font-size:var(--t-note)}
+ .signal-object__layer{animation-name:signal-breathe-small;transform:translateZ(calc(var(--layer) * 34px))}
+ @keyframes signal-breathe-small{to{transform:translateZ(calc(var(--layer) * 42px)) rotateZ(calc(var(--layer) * 3deg))}}
+}
+@media(prefers-reduced-motion:reduce){.hero .signal-object__layer,.hero .signal-object__dial,.close .signal-object__layer,.close .signal-object__dial{animation:none}.hero__copy{animation:none}}
+@media print{.hero{padding-top:20px;min-height:0}.hero__instrument{display:none}.hero__stage{display:block;min-height:0}.hero::before,.close::before{display:none}}

@@ -1,0 +1,36 @@
+{
+ "uid": "i63u-iAnhuk_149",
+ "system": "four_channel",
+ "video_id": "i63u-iAnhuk",
+ "segment_id": 149,
+ "split": "selection",
+ "payload": {
+  "segment_id": 149,
+  "start_s": 679.28,
+  "end_s": 685.12,
+  "transcript": "from across your different apps and services and then surface them where you need them.",
+  "transcript_sentiment": "NEUTRAL (0.78)",
+  "vocal_emotion": "NEUTRAL (arousal 0.45)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "neutral (0.58)",
+  "video_comment_sentiment": "POSITIVE (0.97)"
+ },
+ "seconds": 4.822,
+ "raw": "{\n  \"segment_id\": 149,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"vocal_prosody\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and facial expressions suggest neutrality, but their tone and pitch suggest a slightly positive sentiment, while the audience's comments are strongly positive. This discrepancy between the creator's and audience's sentiments is significant.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 149,
+  "start_s": 679.28,
+  "end_s": 685.12,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: vocal_prosody"
+  ],
+  "flagged": false
+ }
+}

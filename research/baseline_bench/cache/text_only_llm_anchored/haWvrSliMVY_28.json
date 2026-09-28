@@ -1,0 +1,27 @@
+{
+ "uid": "haWvrSliMVY_28",
+ "system": "text_only_llm_anchored",
+ "video_id": "haWvrSliMVY",
+ "segment_id": 28,
+ "split": "holdout",
+ "payload": {
+  "segment_id": 28,
+  "start_s": 200.5,
+  "end_s": 208.12,
+  "transcript": "compliments. Just dressed up one hour ago with my nice navy blue suit. Then I switch to my white Speedo."
+ },
+ "seconds": 3.29,
+ "raw": "{\n  \"segment_id\": 28,\n  \"conflict_score\": 0.75,\n  \"channels_in_conflict\": [],\n  \"flags\": [\"POTENTIAL_PAID_PROMOTION\"],\n  \"narrative\": \"The use of a specific brand name (Speedo) in a seemingly casual and personal anecdote raises suspicions of promotional language.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 28,
+  "start_s": 200.5,
+  "end_s": 208.12,
+  "conflict_score": 0.75,
+  "conflict_reasons": [
+   "POTENTIAL_PAID_PROMOTION"
+  ],
+  "flagged": true
+ }
+}

@@ -1,0 +1,137 @@
+{
+  "video_id": "EXAMPLE_PREVIEW",
+  "video_url": "(fictional example comments — not a real video, for format preview only)",
+  "summary": {
+    "comment_count": 8,
+    "label_distribution": {
+      "tabularisai": {
+        "POSITIVE": 3,
+        "NEUTRAL": 2,
+        "NEGATIVE": 3
+      },
+      "VADER": {
+        "POSITIVE": 4,
+        "NEUTRAL": 1,
+        "NEGATIVE": 3
+      },
+      "cardiffnlp": {
+        "POSITIVE": 4,
+        "NEUTRAL": 2,
+        "NEGATIVE": 2
+      }
+    },
+    "pairwise_agreement": {
+      "tabularisai_vs_VADER": "87.5%",
+      "tabularisai_vs_cardiffnlp": "87.5%",
+      "VADER_vs_cardiffnlp": "75.0%"
+    },
+    "all_three_agree_count": 6,
+    "all_three_agree_pct": 75.0,
+    "all_three_disagree_count": 0,
+    "all_three_disagree_pct": 0.0,
+    "mean_confidence": {
+      "tabularisai": 0.639,
+      "VADER": 0.4917,
+      "cardiffnlp": 0.8771
+    }
+  },
+  "disagreement_highlights": [],
+  "comments": [
+    {
+      "comment_id": "ex1",
+      "text": "This phone is absolutely incredible, best upgrade ever!",
+      "like_count": 12,
+      "published_at": "2026-01-01",
+      "sentiment_label": "POSITIVE",
+      "sentiment_confidence": 0.8838,
+      "vader_label": "POSITIVE",
+      "vader_confidence": 0.7239,
+      "cardiff_label": "POSITIVE",
+      "cardiff_confidence": 0.9851
+    },
+    {
+      "comment_id": "ex2",
+      "text": "Battery life is terrible, really disappointed.",
+      "like_count": 3,
+      "published_at": "2026-01-01",
+      "sentiment_label": "NEGATIVE",
+      "sentiment_confidence": 0.6222,
+      "vader_label": "NEGATIVE",
+      "vader_confidence": 0.7574,
+      "cardiff_label": "NEGATIVE",
+      "cardiff_confidence": 0.9394
+    },
+    {
+      "comment_id": "ex3",
+      "text": "Just got mine in the mail today.",
+      "like_count": 0,
+      "published_at": "2026-01-01",
+      "sentiment_label": "NEUTRAL",
+      "sentiment_confidence": 0.3423,
+      "vader_label": "NEUTRAL",
+      "vader_confidence": 0.0,
+      "cardiff_label": "NEUTRAL",
+      "cardiff_confidence": 0.6188
+    },
+    {
+      "comment_id": "ex4",
+      "text": "my old one never overheated, this new one runs so much cooler, loving it",
+      "like_count": 45,
+      "published_at": "2026-01-01",
+      "sentiment_label": "POSITIVE",
+      "sentiment_confidence": 0.6675,
+      "vader_label": "POSITIVE",
+      "vader_confidence": 0.6326,
+      "cardiff_label": "POSITIVE",
+      "cardiff_confidence": 0.9636
+    },
+    {
+      "comment_id": "ex5",
+      "text": "is it worth upgrading from last years model?",
+      "like_count": 2,
+      "published_at": "2026-01-01",
+      "sentiment_label": "NEUTRAL",
+      "sentiment_confidence": 0.7894,
+      "vader_label": "POSITIVE",
+      "vader_confidence": 0.2263,
+      "cardiff_label": "NEUTRAL",
+      "cardiff_confidence": 0.8796
+    },
+    {
+      "comment_id": "ex6",
+      "text": "dope 🔥🔥 rocking this daily",
+      "like_count": 8,
+      "published_at": "2026-01-01",
+      "sentiment_label": "NEGATIVE",
+      "sentiment_confidence": 0.3211,
+      "vader_label": "NEGATIVE",
+      "vader_confidence": 0.5859,
+      "cardiff_label": "POSITIVE",
+      "cardiff_confidence": 0.9516
+    },
+    {
+      "comment_id": "ex7",
+      "text": "not bad, does what it says, no complaints",
+      "like_count": 1,
+      "published_at": "2026-01-01",
+      "sentiment_label": "POSITIVE",
+      "sentiment_confidence": 0.9301,
+      "vader_label": "POSITIVE",
+      "vader_confidence": 0.6259,
+      "cardiff_label": "POSITIVE",
+      "cardiff_confidence": 0.7411
+    },
+    {
+      "comment_id": "ex8",
+      "text": "I have a 15 pro and it runs hot and the battery is crap",
+      "like_count": 6,
+      "published_at": "2026-01-01",
+      "sentiment_label": "NEGATIVE",
+      "sentiment_confidence": 0.5558,
+      "vader_label": "NEGATIVE",
+      "vader_confidence": 0.3818,
+      "cardiff_label": "NEGATIVE",
+      "cardiff_confidence": 0.9373
+    }
+  ]
+}

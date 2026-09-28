@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en" data-theme="bench">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Analyse — BrandPulse</title>
+<meta name="description" content="Point BrandPulse at one video, a brand, or a product. Watch the four channels record, stage by stage, on your own machine.">
+<script>
+  (function () {
+    try {
+      var saved = localStorage.getItem("brandpulse-theme");
+      if (saved === "bench" || saved === "field") {
+        document.documentElement.dataset.theme = saved; return;
+      }
+    } catch (e) {}
+    document.documentElement.dataset.theme =
+      window.matchMedia("(prefers-color-scheme: light)").matches ? "field" : "bench";
+  })();
+  /* The in-page Reduce motion switch, applied before first paint for the same
+     reason as the theme: a page that starts moving and then stops is the
+     thing the reader asked not to see. */
+  try {
+    if (localStorage.getItem("brandpulse-motion") === "off") {
+      document.documentElement.dataset.motion = "off";
+    }
+  } catch (e) {}
+  document.documentElement.classList.add("js");
+  window.__bpFallback = setTimeout(function () {
+    document.documentElement.classList.remove("js");
+  }, 4000);
+</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23101315'/%3E%3Cg stroke-width='1.2'%3E%3Cpath d='M1 3h14' stroke='%235FD3C0'/%3E%3Cpath d='M1 6.5h14' stroke='%23A9BCC7'/%3E%3Cpath d='M1 10h14' stroke='%23A99BE0'/%3E%3Cpath d='M1 13.5h14' stroke='%23E8A33C'/%3E%3Cpath d='M10 0v16' stroke='%23FF2E88' stroke-width='1.6'/%3E%3C/g%3E%3C/svg%3E">
+<script type="module" src="/src/pages/run.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to the content</a>
+<div class="chassis">
+  <header class="masthead" data-chrome></header>
+
+  <main id="main" data-run>
+    <section class="state" data-boot>
+      <p class="t-label state__tag">Checking</p>
+      <h2 class="t-l">Asking whether this machine is already running something</h2>
+      <p class="t-body">One run at a time: overlapping runs compete for CPU and
+        race on the loaded models.</p>
+    </section>
+
+    <!-- No-script core. Starting a run needs JavaScript, but the honest
+         description of what a run costs and what it needs does not. -->
+    <div data-fallback class="fallback">
+      <h1>Analyse a video</h1>
+      <p>
+        Starting a run needs JavaScript, and this browser is not running it. The
+        API is still reachable: <code>POST /analyse/start</code> with a
+        <code>video_url</code>, a <code>brand_name</code> and a
+        <code>product_name</code>, then poll
+        <code>GET /analyse/status/&lt;job_id&gt;</code>.
+      </p>
+
+      <h2>What a run costs</h2>
+      <p>
+        Four to nine minutes for one video, and considerably longer for a sweep
+        of five. Ollama must be running on <code>localhost:11434</code> with
+        <code>llama3.1:8b</code> pulled. One run at a time.
+      </p>
+
+      <h2>What reaches a network</h2>
+      <p>
+        Two things, and nothing else: the video download and the comment fetch.
+        Every model runs on this machine, and the controller is reached at
+        <code>localhost</code>.
+      </p>
+
+      <h2>Where to go</h2>
+      <ul>
+        <li><a href="/library">Read a report already saved here</a></li>
+        <li><a href="/">What the system measures, and where it is weak</a></li>
+      </ul>
+    </div>
+  </main>
+
+  <!-- Starts held. A footer is the only block in the document until the page
+       module has rendered, and an empty page leaves it halfway up the window,
+       which reads as a flash of some other page. Released by holdUntilSettled()
+       in chrome.js once the boot panel has gone; with scripting off, the rule in
+       chassis.css shows it unconditionally. -->
+  <footer class="foot" data-footer data-waiting></footer>
+</div>
+</body>
+</html>

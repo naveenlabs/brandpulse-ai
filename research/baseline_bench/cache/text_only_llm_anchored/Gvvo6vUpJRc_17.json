@@ -1,0 +1,27 @@
+{
+ "uid": "Gvvo6vUpJRc_17",
+ "system": "text_only_llm_anchored",
+ "video_id": "Gvvo6vUpJRc",
+ "segment_id": 17,
+ "split": "selection",
+ "payload": {
+  "segment_id": 17,
+  "start_s": 103.26,
+  "end_s": 108.64,
+  "transcript": "That's the other type. They're geared for consumption. So now this new pair of very expensive headphones,"
+ },
+ "seconds": 3.97,
+ "raw": "{\n  \"segment_id\": 17,\n  \"conflict_score\": 0.75,\n  \"channels_in_conflict\": [],\n  \"flags\": [\"POTENTIAL_PAID_PROMOTION\"],\n  \"narrative\": \"The use of superlatives ('very expensive') and the mention of a specific product ('headphones') in a way that sounds like advertising copy suggests the creator may not be being entirely genuine in this segment.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 17,
+  "start_s": 103.26,
+  "end_s": 108.64,
+  "conflict_score": 0.75,
+  "conflict_reasons": [
+   "POTENTIAL_PAID_PROMOTION"
+  ],
+  "flagged": true
+ }
+}

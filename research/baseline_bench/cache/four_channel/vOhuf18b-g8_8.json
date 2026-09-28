@@ -1,0 +1,36 @@
+{
+ "uid": "vOhuf18b-g8_8",
+ "system": "four_channel",
+ "video_id": "vOhuf18b-g8",
+ "segment_id": 8,
+ "split": "holdout",
+ "payload": {
+  "segment_id": 8,
+  "start_s": 58.36,
+  "end_s": 63.620000000000005,
+  "transcript": "It's like the idea that you could have a tablet and a laptop in one product, but versatility also comes with the cost.",
+  "transcript_sentiment": "NEUTRAL (0.49)",
+  "vocal_emotion": "NEUTRAL (arousal 0.64)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "neutral (0.91)",
+  "video_comment_sentiment": "POSITIVE (0.97)"
+ },
+ "seconds": 4.447,
+ "raw": "{\n  \"segment_id\": 8,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"video_comment_sentiment\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and facial expressions convey a neutral sentiment, but the audience's comments are overwhelmingly positive, indicating a conflict between the creator's tone and the audience's reaction.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 8,
+  "start_s": 58.36,
+  "end_s": 63.620000000000005,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: video_comment_sentiment"
+  ],
+  "flagged": false
+ }
+}

@@ -1,0 +1,186 @@
+{
+  "sweep_id": "nike-week-24670227",
+  "subject": "Nike",
+  "subject_kind": "brand",
+  "window": "week",
+  "offset_days": 0,
+  "status": "done",
+  "controller": "llama3.1:8b",
+  "finished_at": 1790508682.883105,
+  "summary": {
+    "video_count": 5,
+    "authenticity": {
+      "mean": 53.68,
+      "min": 32.52,
+      "max": 80.54,
+      "spread": 48.02,
+      "stdev": 15.58,
+      "values": [
+        47.06,
+        32.52,
+        53.65,
+        54.63,
+        80.54
+      ]
+    },
+    "brand_health": {
+      "mean": 67.46,
+      "min": 51.18,
+      "max": 79.13,
+      "spread": 27.95,
+      "stdev": 10.22,
+      "values": [
+        76.1,
+        69.8,
+        79.13,
+        51.18,
+        61.08
+      ]
+    },
+    "segments_total": 536,
+    "flagged_total": 51,
+    "flagged_share": 0.09514925373134328,
+    "comments_total": 240,
+    "comment_distribution": {
+      "POSITIVE": 109,
+      "NEUTRAL": 59,
+      "NEGATIVE": 72
+    },
+    "spread_verdict": "these videos disagree sharply with each other",
+    "note": "Mean of 5 videos. Too few to generalise from, and the range matters more than the average.",
+    "means_not": "This is how much the four channels disagreed with each other, averaged across these videos. It is not a measure of whether the brand is liked, and not a measure of whether anyone was honest."
+  },
+  "members": [
+    {
+      "video_id": "U4SrEKxym2k",
+      "title": "I bought the all new Nike Alphafly 4 - here's my honest review!",
+      "channel": "FORDY RUNS",
+      "published_at": "2026-09-20T23:00:08Z",
+      "duration_s": 700,
+      "comment_count": 160,
+      "authenticity_score": 47.06,
+      "brand_health_score": 76.1,
+      "analysed": true
+    },
+    {
+      "video_id": "phQe_ebEPpc",
+      "title": "Running Shoe: Yea or Nay? | ADIDAS ADIZERO ADIOS PRO 5 - NIKE ALPHAFLY 4 + MORE! - EDDBUD",
+      "channel": "EDDBUD",
+      "published_at": "2026-09-23T11:04:36Z",
+      "duration_s": 644,
+      "comment_count": 145,
+      "authenticity_score": 32.52,
+      "brand_health_score": 69.8,
+      "analysed": true
+    },
+    {
+      "video_id": "xkQ-zJ3p1pc",
+      "title": "Nike Air Max 1000.3 review and on foot!",
+      "channel": "Sneakernomics",
+      "published_at": "2026-09-24T14:45:31Z",
+      "duration_s": 516,
+      "comment_count": 78,
+      "authenticity_score": 53.65,
+      "brand_health_score": 79.13,
+      "analysed": true
+    },
+    {
+      "video_id": "G1_0jKNOxHs",
+      "title": "Nike Ja Twelve Time Performance Review By Real Foot Doctor",
+      "channel": "Foot Doctor Zach Dubbs",
+      "published_at": "2026-09-24T13:13:35Z",
+      "duration_s": 616,
+      "comment_count": 71,
+      "authenticity_score": 54.63,
+      "brand_health_score": 51.18,
+      "analysed": true
+    },
+    {
+      "video_id": "w_QWJPWDuNQ",
+      "title": "Should you buy Nike Downshifter 14 Now ?",
+      "channel": "Sachin Pisar",
+      "published_at": "2026-09-22T11:42:18Z",
+      "duration_s": 387,
+      "comment_count": 30,
+      "authenticity_score": 80.54,
+      "brand_health_score": 61.08,
+      "analysed": true
+    }
+  ],
+  "failed": [],
+  "selection": {
+    "query_used": "Nike review",
+    "published_after": "2026-09-20T09:52:41Z",
+    "published_before": null,
+    "considered": 25,
+    "rejected": [
+      {
+        "video_id": "hvxCjmYJQrI",
+        "title": "Top 10 MOST COMFORTABLE ON Sneakers 2026",
+        "verdict": "subject not named in the title"
+      },
+      {
+        "video_id": "eRkFiAuKNcw",
+        "title": "I Finally Got The Nike X One Piece 'Mera Mera' Air Max🔥! (ON FEET REVIEW/UNBOXING)",
+        "verdict": "only 26 comments"
+      },
+      {
+        "video_id": "yVM7N_Cj4IM",
+        "title": "FIRST LOOK! Nike Air Bakin High SP + Caitlin Clark’s FIRST Signature Shoe!",
+        "verdict": "only 13 comments"
+      },
+      {
+        "video_id": "Qprq6Ovy3Mw",
+        "title": "These are RUBBISH!",
+        "verdict": "subject not named in the title"
+      },
+      {
+        "video_id": "SGcPw4nKqPQ",
+        "title": "Nike 24.7 \"Black / Anthracite\": Review & On-Feet",
+        "verdict": "only 17 comments"
+      },
+      {
+        "video_id": "_NdHyZ6rvJ8",
+        "title": "THE ROYALS ARE BACK !! Air Jordan 1 Royal 2026 Early Review + SPECIAL BOX",
+        "verdict": "subject not named in the title"
+      },
+      {
+        "video_id": "PgKPGUZDHqc",
+        "title": "Nike Vomero Premium 450 Mile Review & New Shoe Comparison",
+        "verdict": "only 28 comments"
+      },
+      {
+        "video_id": "T0xIiXeMUP4",
+        "title": "3 Best Nike Sneakers Under ₹7,000 in 2026! 👟",
+        "verdict": "only 10 comments"
+      },
+      {
+        "video_id": "02EgUkgfVLA",
+        "title": "Nike Alphafly 4 Review | My Next Marathon PR Shoe?",
+        "verdict": "only 9 comments"
+      },
+      {
+        "video_id": "Rc-MVTbmRns",
+        "title": "Nike Alphafly 4 - Initial Review",
+        "verdict": "only 13 comments"
+      },
+      {
+        "video_id": "7JR3vvXDMII",
+        "title": "THIS UPCOMING JORDAN IS PROOF THAT JORDAN 1’S ARE DEAD! AND THEY MAY NEVER COME BACK!",
+        "verdict": "subject not named in the title"
+      },
+      {
+        "video_id": "LeZ_xUD4V3g",
+        "title": "Air Jordan 1 Low OG 'Last Dance At The Garden' In Depth Review and On Feet! Lace Swap Included.",
+        "verdict": "subject not named in the title"
+      },
+      {
+        "video_id": "jsZiUZNQP2Y",
+        "title": "It just keeps getting worse...",
+        "verdict": "subject not named in the title"
+      }
+    ]
+  },
+  "bias_caveat": "IMPORTANT: Facial emotion recognition (DeepFace) has documented accuracy disparities across skin tone and gender (Buolamwini & Gebru, 2018; Fan et al., 2023). Authenticity scores informed by facial data should be interpreted with this limitation in mind.",
+  "vocal_caveat": "IMPORTANT: The vocal emotion channel is the second weakest of the four, after facial emotion, and is explicitly down-weighted. Benchmarked on 150 hand-rated clips from 6 speakers (vocal_bench/), the adopted model scores 48.9% three-class accuracy on held-out speakers - better than the model it replaced, which at 34.0% was significantly worse than always guessing NEUTRAL (p = 0.0070), but still not reliably better than that constant. No model tested beat it. Conflicts attributed to the vocal channel alone are damped accordingly, and per-segment claims should not rest on this channel. Read the within-video figure, not the headline: this report compares segments inside one video, and the channel's rank correlation with human judgement measured within a video is +0.159 across 147 clips and +0.056 on unseen speakers (vocal_bench/SPEAKER_NORM_RESULT.md). Most of its apparent accuracy is a between-video effect that says more about the speaker's habitual energy than about any individual moment."
+}

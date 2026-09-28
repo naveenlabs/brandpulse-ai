@@ -1,0 +1,192 @@
+/*
+   gate.css — the door.
+
+   The gate is always dark, in both displays. It is deep water: the FIELD
+   display's light body has no meaning underneath it, and a light gate would
+   have to fight the shader for contrast and lose. So this file sets its own
+   values rather than reading the display tokens, and it is the only surface in
+   the interface that does.
+
+   Layout: the mark owns the middle, because the mark is the thing. The words
+   sit bottom-left over a scrim, on the same left rail as every other page, so
+   the door belongs to the same building as the rooms behind it.
+*/
+
+/* Scroll cannot move while the gate is up, or a reader arrives at the page
+   already halfway down it. */
+html.gated,
+html.gated body {
+  overflow: hidden;
+}
+
+.gate {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: grid;
+  align-items: end;
+  background: #07090B;
+  opacity: 1;
+  transition: opacity var(--t-slow) var(--ease-out);
+}
+
+.gate.is-going {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* The shader's own surface. It is decoration, and it is marked aria-hidden in
+   the DOM; the sentence beside it carries the meaning. */
+.gate__canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  /* 24 Sep 2026: the water's own blue is pulled toward the building's silver
+     key, as the hero's footage is, so the door and the room behind it are
+     lit the same way. The shader is untouched. */
+  filter: saturate(.55);
+}
+
+/* Darken the bottom third so the words read over moving water at any frame.
+   Without it the specular glints cross the text and the contrast is whatever
+   the simulation happens to be doing that second. */
+.gate::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to top, rgba(7, 9, 11, .72) 0%, rgba(7, 9, 11, .28) 16%, rgba(7, 9, 11, 0) 34%),
+    linear-gradient(to bottom, rgba(7, 9, 11, .55) 0%, rgba(7, 9, 11, 0) 15%);
+  pointer-events: none;
+}
+
+/* The label. Small, quiet, in the corner an instrument would put its name --
+   not a headline competing with the mark for the middle of the screen. */
+.gate__name {
+  position: absolute;
+  top: clamp(1.4rem, 3.4vh, 2.2rem);
+  left: clamp(1.25rem, 5vw, 3.2rem);
+  margin: 0;
+  font-family: var(--f-inst);
+  font-variation-settings: "wdth" var(--w-dense), "wght" 560;
+  font-size: .82rem;
+  letter-spacing: .02em;
+  color: #B6C2C8;
+}
+
+/* One line, centred low, and it is the control as well as the instruction. */
+.gate__begin {
+  position: absolute;
+  left: 50%;
+  bottom: clamp(2.2rem, 7vh, 4rem);
+  transform: translateX(-50%);
+  display: grid;
+  justify-items: center;
+  gap: .42rem;
+  appearance: none;
+  margin: 0;
+  padding: .6rem 1.1rem .75rem;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  color: inherit;
+  text-align: center;
+}
+
+.gate__begin__say {
+  font-family: var(--f-inst);
+  font-variation-settings: "wdth" var(--w-dense), "wght" 500;
+  font-size: clamp(.86rem, 1.3vw, .98rem);
+  letter-spacing: .01em;
+  color: #EEF1F2;
+  transition: color var(--t-fast) linear;
+}
+
+.gate__begin__key {
+  font-family: var(--f-inst);
+  font-variation-settings: "wdth" var(--w-dense), "wght" 420;
+  font-size: .78rem;
+  letter-spacing: .01em;
+  color: #95A1A7;
+}
+
+.gate__begin:hover .gate__begin__say {
+  color: #FFFFFF;
+}
+
+.gate__begin:focus-visible {
+  outline: 2px solid #FFFFFF;
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+/* Suppressed only until the first key press -- see gate.js. The control keeps
+   focus the whole time; this hides the ring, never the focus itself. */
+.gate[data-quiet] .gate__begin:focus-visible {
+  outline-color: transparent;
+}
+
+/* The wait, as a hairline under the line that explains it. It is short and
+   centred rather than spanning the screen: at full width it read as a loading
+   bar, which said the page was busy when it was in fact finished and waiting. */
+.gate__hold {
+  display: block;
+  width: 7.5rem;
+  height: 1px;
+  margin-top: .25rem;
+  background: rgba(214, 222, 228, .18);
+  opacity: 0;
+  transition: opacity var(--t-med) linear;
+}
+
+.gate__hold.is-running {
+  opacity: 1;
+}
+
+.gate__hold i {
+  display: block;
+  height: 100%;
+  background: #D6DEE4;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition-property: transform;
+  transition-timing-function: linear;
+  transition-duration: 0ms;   /* set from gate.js, which owns the hold length */
+}
+
+@media (max-width: 720px) {
+  .gate__begin__say {
+    font-size: .88rem;
+  }
+}
+
+/* Reduced motion. The gate still appears and still opens, but nothing
+   animates: the water is drawn once and held, the fade is cut, and the hold
+   bar stops pretending to be a clock. The page behind is reached the same
+   three ways. */
+@media (prefers-reduced-motion: reduce) {
+  .gate,
+  .gate__begin__say,
+  .gate__hold,
+  .gate__hold i {
+    transition-duration: 1ms !important;
+  }
+
+  .gate__hold i {
+    transform: scaleX(1);
+  }
+}
+
+/* A printed page has no door. */
+@media print {
+  .gate {
+    display: none !important;
+  }
+
+  html.gated,
+  html.gated body {
+    overflow: visible;
+  }
+}

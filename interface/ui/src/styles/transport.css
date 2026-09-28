@@ -1,0 +1,231 @@
+/* ===========================================================================
+   transport.css — the instrument's face.
+
+   Four lanes in a lit screen set into the matte chassis. The identity column
+   is fixed width so the four channel names stack into a true column; the lane
+   strip to its right is the time axis, and the playhead is positioned inside
+   that strip so the mark under it and the timecode beside it cannot disagree.
+   ======================================================================== */
+
+.tp {
+  --id-w: 7.25rem;
+  --lane-h: 38px;
+  background: var(--screen);
+  border: var(--hair) solid var(--edge);
+  border-radius: var(--r-screen);
+  overflow: hidden;
+}
+
+/* --- the readout strip --------------------------------------------------- */
+
+.tp__head {
+  display: grid;
+  grid-template-columns: var(--id-w) 1fr auto;
+  align-items: baseline;
+  gap: var(--s-3);
+  padding: var(--s-3) var(--s-4);
+  border-bottom: var(--hair) solid var(--edge);
+}
+
+.tp__now {
+  font-size: var(--t-small);
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.tp__seg { justify-self: start; }
+.tp__seg.is-flagged { color: var(--tear); }
+.tp__dur { justify-self: end; font-size: var(--t-small); }
+
+/* --- the drag surface ----------------------------------------------------
+   The track area IS the shuttle. There is no second jog control: dragging
+   where the eye already is beats a separate widget with the same intent, and
+   the movement carries on release with the velocity it was let go at. */
+
+.tp__field {
+  position: relative;
+  cursor: grab;
+  touch-action: pan-y;          /* vertical page scroll survives a horizontal drag */
+  user-select: none;
+}
+
+.tp__field.is-dragging { cursor: grabbing; }
+
+.tp__field:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: -2px;
+}
+
+.tp__lane {
+  display: grid;
+  grid-template-columns: var(--id-w) 1fr;
+  align-items: center;
+  border-bottom: var(--hair) solid var(--edge);
+}
+
+.tp__lane:last-child { border-bottom: 0; }
+
+.tp__lane canvas {
+  width: 100%;
+  height: var(--lane-h);
+  display: block;
+}
+
+/* --- the four identities -------------------------------------------------
+   This is the ONE context in the build where the typeface's width axis is
+   used semantically, and it works here because the four names sit adjacent at
+   one size: a narrow word only reads as narrow next to a wide one. Width
+   encodes measured trust. The facial channel is set at 76 on every surface in
+   the product because it scores 34.2% on held-out speakers, below an
+   always-NEUTRAL constant's 67.5%. */
+
+.tp__id {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  padding-inline: var(--s-4) var(--s-3);
+  color: var(--ink-2);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.tp__lane[data-channel="transcript"] .tp__id,
+.tp__lane[data-channel="audience"] .tp__id {
+  font-variation-settings: "wdth" var(--w-trust-hi);
+}
+
+.tp__lane[data-channel="vocal"] .tp__id { font-variation-settings: "wdth" 96; }
+
+.tp__lane[data-channel="facial"] .tp__id {
+  font-variation-settings: "wdth" var(--w-trust-lo);
+}
+
+/* --- the four materials --------------------------------------------------
+   Repeated from the canvas so the key and the trace cannot disagree. Hue is
+   never the only carrier: bar, frame, wave and field are four different
+   shapes before they are four different colours. */
+
+.tp__mark { flex: none; display: block; }
+
+.tp__mark[data-mark="transcript"] {
+  width: 11px; height: 3px;
+  background: var(--ch-transcript);
+}
+
+.tp__mark[data-mark="facial"] {
+  width: 11px; height: 7px;
+  border: 1px solid var(--ch-facial);
+}
+
+.tp__mark[data-mark="vocal"] {
+  width: 11px; height: 7px;
+  background: var(--ch-vocal);
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 7'%3E%3Cpath d='M0 3.5 Q1.4 0.4 2.75 3.5 T5.5 3.5 T8.25 3.5 T11 3.5' fill='none' stroke='%23000' stroke-width='1.4'/%3E%3C/svg%3E");
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+}
+
+.tp__mark[data-mark="audience"] {
+  width: 11px; height: 3px;
+  background: repeating-linear-gradient(90deg,
+    var(--ch-audience) 0 2px, transparent 2px 4px);
+}
+
+/* --- the flagged seconds -------------------------------------------------
+   One column through the whole instrument per flagged segment, not four
+   stacked blocks. A tint locates the event and a hairline at its start marks
+   it precisely, which is how a chart recorder has always marked an event.
+
+   This is the only place `--tear` appears on the transport, and it is bound to
+   a measured conflict score at or above CONFLICT_FLAG_THRESHOLD. A report with
+   no flagged segments draws none of it. */
+
+.tp__flags {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--id-w);
+  right: 0;
+  pointer-events: none;
+}
+
+.tp__flags i {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: color-mix(in srgb, var(--tear) 14%, transparent);
+  border-left: 1px solid color-mix(in srgb, var(--tear) 72%, transparent);
+}
+
+/* --- the playhead --------------------------------------------------------
+   Sits inside the lane strip, never over the identity column, so `--at` is a
+   percentage of the time axis and nothing has to be measured in JavaScript to
+   keep it honest. It is bound to the clock and is never itself animated. */
+
+.tp__playhead {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--id-w);
+  right: 0;
+  pointer-events: none;
+}
+
+.tp__playhead::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--at, 0%);
+  width: 1px;
+  background: var(--ink);
+  /* A soft halo in the ground colour, so the head stays findable against a
+     dense trace without the line itself thickening and losing precision. */
+  filter: drop-shadow(0 0 5px var(--screen)) drop-shadow(0 0 2px var(--screen));
+}
+
+/* The head itself: a small solid notch at the top, the way a transport marks
+   its own position. */
+.tp__playhead::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: var(--at, 0%);
+  width: 11px;
+  height: 6px;
+  margin-left: -5px;
+  background: var(--ink);
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+/* --- compact, for a library card or a sweep member ---------------------- */
+
+.tp--compact { --id-w: 0px; --lane-h: 13px; }
+
+/* A run with 53 flagged segments in 77 draws 53 columns. At card width that is
+   a picket fence, and the hairline that makes each one precise at full size is
+   what does the damage. The tint alone carries it here. */
+.tp--compact .tp__flags i {
+  border-left: 0;
+  background: color-mix(in srgb, var(--tear) 20%, transparent);
+}
+.tp--compact .tp__head,
+.tp--compact .tp__id { display: none; }
+.tp--compact .tp__lane { grid-template-columns: 1fr; border-bottom: 0; }
+.tp--compact .tp__playhead { display: none; }
+
+/* --- phone ---------------------------------------------------------------
+   A designed layout, not a squeeze. The identity column narrows to the mark
+   and the first word, the lanes get taller because a thumb is less precise
+   than a pointer, and the drag surface stays the primary control. */
+
+@media (max-width: 860px) {
+  /* Not the compact trace. `.tp` and `.tp--compact` are equally specific, so
+     this rule, coming later, used to win on every library card, compare strip
+     and sweep member below 860px: 40px lanes and a 72px identity column in a
+     thumbnail, with the conflict marks drawn out of line with the trace
+     (INCLUSIVE_DESIGN.md R3). */
+  .tp:not(.tp--compact) { --id-w: 4.5rem; --lane-h: 40px; }
+  .tp__id { font-size: var(--t-micro); padding-inline: var(--s-3) var(--s-2); }
+  .tp__head { grid-template-columns: auto 1fr auto; }
+}

@@ -1,0 +1,36 @@
+{
+ "uid": "0jHtyF_rCqU_36",
+ "system": "four_channel",
+ "video_id": "0jHtyF_rCqU",
+ "segment_id": 36,
+ "split": "selection",
+ "payload": {
+  "segment_id": 36,
+  "start_s": 187.76,
+  "end_s": 191.92000000000002,
+  "transcript": "I tried a whole load of tests and benchmarks on it. And while I wouldn't call it a transformational leap,",
+  "transcript_sentiment": "NEUTRAL (0.54)",
+  "vocal_emotion": "NEUTRAL (arousal 0.60)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.98)"
+ },
+ "seconds": 4.615,
+ "raw": "{\n  \"segment_id\": 36,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"video_comment_sentiment\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and tone suggest neutrality, but their face shows no emotion and the audience's comments are overwhelmingly positive, indicating a conflict between the creator's intended message and the audience's interpretation.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 36,
+  "start_s": 187.76,
+  "end_s": 191.92000000000002,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: video_comment_sentiment"
+  ],
+  "flagged": false
+ }
+}

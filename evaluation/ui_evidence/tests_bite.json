@@ -1,0 +1,843 @@
+{
+  "generated_by": "ui_evidence/verify_tests_bite.py",
+  "measured_at": "2026-09-26T23:47:50",
+  "total": 148,
+  "caught": 85,
+  "missed": 0,
+  "skipped": 63,
+  "errors": 0,
+  "unguarded": 0,
+  "results": [
+    {
+      "mutation": "valence lexicon drifts from the pipeline",
+      "file": "ui/src/lib/contract.js",
+      "test": "test_the_two_lexicons_are_identical",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "surprise is given a valence",
+      "file": "ui/src/lib/contract.js",
+      "test": "test_surprise_is_in_neither",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "the flag threshold drifts",
+      "file": "ui/src/lib/contract.js",
+      "test": "test_the_flag_threshold_is_the_orchestrators",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "a channel accuracy is edited without the evidence moving",
+      "file": "ui/src/lib/contract.js",
+      "test": "test_channel_accuracies_match_the_evidence_file",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "the facial figure is quoted without what it is worse than",
+      "file": "ui/src/lib/contract.js",
+      "test": "test_the_facial_figure_is_never_quoted_without_what_it_is_worse_than",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "an invented percentage is typed into a page",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/pages/report.js"
+    },
+    {
+      "mutation": "a missing reading is defaulted to neutral",
+      "file": "ui/src/lib/contract.js",
+      "test": "test_a_channel_with_no_reading_is_omitted_not_defaulted",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "the absence loses its visible boundary",
+      "status": "SKIPPED",
+      "reason": "ui/src/styles/base.css no longer exists"
+    },
+    {
+      "mutation": "comment text stops being escaped",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/pages/report.js"
+    },
+    {
+      "mutation": "a comment author is rendered",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/pages/report.js"
+    },
+    {
+      "mutation": "a module starts fetching from another host",
+      "file": "ui/src/lib/api.js",
+      "test": "test_no_shipped_code_requests_another_host",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "the bias caveat is put behind a disclosure",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/pages/report.js"
+    },
+    {
+      "mutation": "the bias caveat is clamped by CSS",
+      "status": "SKIPPED",
+      "reason": "ui/src/styles/base.css no longer exists"
+    },
+    {
+      "mutation": "a missing caveat goes quiet instead of saying so",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/pages/report.js"
+    },
+    {
+      "mutation": "the JS motion durations drift from the CSS ones",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/lib/motion.js"
+    },
+    {
+      "mutation": "reduced motion stops being read in JS",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/lib/motion.js"
+    },
+    {
+      "mutation": "the entrance would hide content when the script fails",
+      "status": "SKIPPED",
+      "reason": "ui/src/styles/base.css no longer exists"
+    },
+    {
+      "mutation": "reduced motion cuts instead of transitioning",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/styles/tokens.css"
+    },
+    {
+      "mutation": "the coverage floor drifts from the evidence script",
+      "file": "ui/src/lib/contract.js",
+      "test": "test_the_coverage_floor_matches_the_evidence_script",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "a vocal shape stops being read",
+      "file": "ui/src/lib/contract.js",
+      "test": "test_the_reader_handles_both",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "the live region is written into markup that gets thrown away",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/pages/run.js"
+    },
+    {
+      "mutation": "the live region is attached inside the subtree that is re-rendered",
+      "file": "ui/src/lib/announce.js",
+      "test": "test_the_live_region_is_attached_outside_every_re_rendered_subtree",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "the regions stop being mounted before anything renders",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/lib/chrome.js"
+    },
+    {
+      "mutation": "an ending renders but is never spoken",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/pages/run.js"
+    },
+    {
+      "mutation": "a failure stops interrupting and waits its turn",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/pages/run.js"
+    },
+    {
+      "mutation": "the queued bar claims nought stages complete",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/pages/run.js"
+    },
+    {
+      "mutation": "a stage can be shown but not said",
+      "file": "ui/src/pages/run.js",
+      "test": "test_every_stage_has_a_name_that_can_be_said",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "an HTML entity reaches a spoken stage name",
+      "file": "ui/src/pages/run.js",
+      "test": "test_every_stage_has_a_name_that_can_be_said",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "the finished run announces one score and not the other",
+      "file": "ui/src/pages/run.js",
+      "test": "test_the_finished_run_speaks_both_scores",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "the stage is re-announced on every poll",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/pages/run.js"
+    },
+    {
+      "mutation": "the bar goes back to sweeping end to end for the whole run",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/styles/run.css"
+    },
+    {
+      "mutation": "an injected alert role comes back alongside the live region",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/pages/run.js"
+    },
+    {
+      "mutation": "the overflow mask comes back on the body",
+      "status": "SKIPPED",
+      "reason": "ui/src/styles/base.css no longer exists"
+    },
+    {
+      "mutation": "the overflow mask comes back somewhere else at page level",
+      "file": "ui/src/styles/tokens.css",
+      "test": "test_no_stylesheet_hides_overflow_at_page_level",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "the readout goes back to four readings abreast when narrow",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/styles/report.css"
+    },
+    {
+      "mutation": "a half-visible rail link stops scrolling into view on focus",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/styles/report.css"
+    },
+    {
+      "mutation": "the channel track stops stacking when motion is reduced",
+      "status": "SKIPPED",
+      "reason": "ui/src/styles/overview.css no longer exists"
+    },
+    {
+      "mutation": "the pinned track stops checking the motion preference",
+      "status": "SKIPPED",
+      "reason": "ui/src/pages/overview.js no longer exists"
+    },
+    {
+      "mutation": "the theme toggle stops naming the word on the button",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/lib/chrome.js"
+    },
+    {
+      "mutation": "a ledger chip's name replaces its visible words instead of leading with them",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/pages/report.js"
+    },
+    {
+      "mutation": "the trace goes back to being named by its instructions",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/pages/report.js"
+    },
+    {
+      "mutation": "the trace's keyboard instructions stop being explained anywhere",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/pages/report.js"
+    },
+    {
+      "mutation": "the skip link goes back to being positioned against the document",
+      "status": "SKIPPED",
+      "reason": "ui/src/styles/base.css no longer exists"
+    },
+    {
+      "mutation": "the ledger text goes back to one nowrap line",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/styles/report.css"
+    },
+    {
+      "mutation": "a channel name goes back to being cut instead of breaking",
+      "file": "ui/src/styles/report.css",
+      "test": "test_a_channel_name_can_break_rather_than_be_cut",
+      "status": "SKIPPED",
+      "reason": "the guarding test no longer exists"
+    },
+    {
+      "mutation": "the full quote starts clamping too",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/styles/report.css"
+    },
+    {
+      "mutation": "the ledger clamp is tightened back to a value that loses rows",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/styles/report.css"
+    },
+    {
+      "mutation": "the library stops showing the bias caveat",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/pages/library.js"
+    },
+    {
+      "mutation": "the library hardcodes the caveat instead of reading it off the reports",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/pages/library.js"
+    },
+    {
+      "mutation": "the caveat becomes revealable on hover",
+      "status": "SKIPPED",
+      "reason": "ui/src/styles/base.css no longer exists"
+    },
+    {
+      "mutation": "a headline score loses its plain-language line",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/pages/report.js"
+    },
+    {
+      "mutation": "a gloss drops the half that says what the number is not",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/pages/report.js"
+    },
+    {
+      "mutation": "the limits move behind a disclosure",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/pages/report.js"
+    },
+    {
+      "mutation": "the limits stop naming the controller finding",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/pages/report.js"
+    },
+    {
+      "mutation": "the report's language note is deleted",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/pages/report.js"
+    },
+    {
+      "mutation": "the overview's English-only limit is deleted",
+      "status": "SKIPPED",
+      "reason": "ui/src/pages/overview.js no longer exists"
+    },
+    {
+      "mutation": "a language is invented for every quoted segment",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/pages/report.js"
+    },
+    {
+      "mutation": "the standing statement moves away from the face",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/pages/report.js"
+    },
+    {
+      "mutation": "the facial figure beside the face loses what it is worse than",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/pages/report.js"
+    },
+    {
+      "mutation": "the appeal route is claimed to exist",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/pages/report.js"
+    },
+    {
+      "mutation": "the statement stops saying the number is not about the person",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/pages/report.js"
+    },
+    {
+      "mutation": "the video URL is printed on the page",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/pages/report.js"
+    },
+    {
+      "mutation": "the inclusion analysis drifts from the deployed transcriber",
+      "file": "pipeline/audio_module.py",
+      "test": "test_the_deployed_whisper_model",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "the comments stop being relevance-ordered without the analysis noticing",
+      "file": "pipeline/comment_module.py",
+      "test": "test_the_comment_ordering",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "the report adds the scored creator as a stakeholder and the analysis goes stale",
+      "file": "final_report/source/content_b.py",
+      "test": "test_the_report_still_omits_the_people_it_scores",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "the consent record stops saying the participants are named",
+      "file": "user_pilot/CONSENT.md",
+      "test": "test_the_document_matches_reality_in_both_directions",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "the new instrument is cited before it has been run",
+      "file": "user_pilot/PILOT_QUESTIONS_V2.md",
+      "test": "test_the_new_instrument_is_marked_unrun",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "the write-up starts claiming the system is not biased by skin tone",
+      "file": "fairness_bench/FAIRNESS_ANALYSIS.md",
+      "test": "test_the_write_up_refuses_it[that skin tone causes it-Not** that the system is biased by skin tone]",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "the overlapping spread is quoted as a finding after all",
+      "file": "fairness_bench/FAIRNESS_ANALYSIS.md",
+      "test": "test_the_declared_rule_is_actually_applied",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "the bench re-implements the ground-truth mapping instead of importing it",
+      "file": "fairness_bench/per_speaker.py",
+      "test": "test_it_does_not_reimplement_the_ground_truth",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "the rating tool embeds an unverified colour scale",
+      "file": "fairness_bench/monk_rating.html",
+      "test": "test_the_instrument_does_not_reproduce_the_scale",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "the uncited-disparity admission is removed",
+      "file": "fairness_bench/FAIRNESS_ANALYSIS.md",
+      "test": "test_it_names_the_gap_it_leaves_open",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "a fifth ending renders but is never spoken",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/pages/run.js"
+    },
+    {
+      "mutation": "a live region is written into the run page's own markup",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/pages/run.js"
+    },
+    {
+      "mutation": "the combined report stops saying what it is not",
+      "status": "SKIPPED",
+      "reason": "anchor not found in static/brand.html"
+    },
+    {
+      "mutation": "the combined report's caveat is hard-coded instead of substituted",
+      "file": "static/brand.html",
+      "test": "test_the_bias_caveat_reaches_it_without_javascript",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "a page module stops consulting reduced motion",
+      "status": "SKIPPED",
+      "reason": "ui/src/pages/brand.js no longer exists"
+    },
+    {
+      "mutation": "a chart names a colour instead of reading the theme",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/lib/charts.js"
+    },
+    {
+      "mutation": "the undamped score is divided back out instead of read",
+      "file": "ui/src/lib/contract.js",
+      "test": "test_the_damping_figures_are_read_and_not_divided_back_out",
+      "status": "SKIPPED",
+      "reason": "the guarding test no longer exists"
+    },
+    {
+      "mutation": "a channel pair that never disagreed is dropped from the grid",
+      "file": "ui/src/lib/contract.js",
+      "test": "test_the_grid_keeps_a_pair_that_never_disagreed",
+      "status": "SKIPPED",
+      "reason": "the guarding test no longer exists"
+    },
+    {
+      "mutation": "a member row stops being a link",
+      "status": "SKIPPED",
+      "reason": "ui/src/pages/brand.js no longer exists"
+    },
+    {
+      "mutation": "the member link is taken out of the tab order",
+      "status": "SKIPPED",
+      "reason": "ui/src/styles/brand.css no longer exists"
+    },
+    {
+      "mutation": "the report page forgets it can show a sweep member",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/pages/report.js"
+    },
+    {
+      "mutation": "the comparison quotes the gap between means as clearance",
+      "status": "SKIPPED",
+      "reason": "ui/src/pages/brand.js no longer exists"
+    },
+    {
+      "mutation": "the comparison goes back to assuming five videos a side",
+      "status": "SKIPPED",
+      "reason": "ui/src/pages/brand.js no longer exists"
+    },
+    {
+      "mutation": "the combined report starts printing the analysed video's URL",
+      "status": "SKIPPED",
+      "reason": "ui/src/pages/brand.js no longer exists"
+    },
+    {
+      "mutation": "an unvoiced segment is drawn as a pitch of zero",
+      "status": "SKIPPED",
+      "reason": "anchor not found in ui/src/pages/report.js"
+    },
+    {
+      "mutation": "the page paraphrases the pipeline instead of quoting it",
+      "status": "SKIPPED",
+      "reason": "ui/src/pages/brand.js no longer exists"
+    },
+    {
+      "mutation": "A1 the library caveat leaves one view",
+      "file": "ui/src/pages/library.js",
+      "test": "test_both_views_carry_the_caveat_note",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "A2 an index entry stops taking its volume down",
+      "file": "ui/src/pages/library.js",
+      "test": "test_each_index_entry_takes_its_volume_down",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "A2 the list loses its Delete wiring",
+      "file": "ui/src/pages/library.js",
+      "test": "test_the_list_can_delete_with_two_steps",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "A3 Space is taken at the window again",
+      "file": "ui/src/lib/shelf.js",
+      "test": "test_space_is_left_to_the_control_it_is_pressed_on",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "A4 the closed menu is only transparent",
+      "file": "ui/src/styles/chassis.css",
+      "test": "test_the_closed_panel_is_hidden_not_just_transparent",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "A5 the film hides its beats again",
+      "file": "ui/src/lib/film.js",
+      "test": "test_no_beat_is_removed_from_the_accessibility_tree",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "R2 the film pins on every screen",
+      "file": "ui/src/lib/film.js",
+      "test": "test_the_film_pins_only_where_it_fits",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "1.4.12 the film clips words that do not fit",
+      "file": "ui/src/lib/film.js",
+      "test": "test_words_that_do_not_fit_stack_the_film",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "A6 a modifier key dismisses the boot screen",
+      "file": "ui/src/lib/boot.js",
+      "test": "test_a_modifier_or_a_chord_does_not_dismiss_it",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "A6 the boot screen times a keyboard reader out",
+      "file": "ui/src/lib/boot.js",
+      "test": "test_a_keyboard_reader_is_not_timed_out",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "A6 the boot screen loses its control",
+      "file": "ui/src/lib/boot.js",
+      "test": "test_it_has_a_control_described_by_the_log",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "A7 the page invents an appeal route",
+      "file": "ui/src/pages/report.js",
+      "test": "test_the_person_in_the_video_is_addressed",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "A7 one book loses the standing spread",
+      "file": "ui/src/pages/report.js",
+      "test": "test_both_books_carry_the_spread_and_the_face_points_to_it",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "A7 what the numbers cannot tell is dropped",
+      "file": "ui/src/pages/report.js",
+      "test": "test_what_the_numbers_cannot_tell_you_is_back",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "I1 reduced() stops hearing the switch",
+      "file": "ui/src/lib/motion.js",
+      "test": "test_reduced_answers_to_the_system_or_the_switch",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "I1 the switch overrules the system",
+      "file": "ui/src/lib/chrome.js",
+      "test": "test_the_masthead_offers_it_and_respects_the_system",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "I1 a document forgets the switch before first paint",
+      "file": "ui/run.html",
+      "test": "test_every_document_applies_it_before_first_paint[run.html]",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "I1 a renderer stops following the switch",
+      "file": "ui/src/lib/ribbonfield.js",
+      "test": "test_vendored_renderers_follow_it_live",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "I2 one page hides chapters again",
+      "file": "ui/src/lib/codex.js",
+      "test": "test_one_page_shows_every_chapter",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "R5 printing keeps the dark paper",
+      "file": "ui/src/lib/codex.js",
+      "test": "test_printing_is_the_one_page_reading_on_paper",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "A9 the field edge falls under 3:1",
+      "file": "ui/src/styles/tokens.css",
+      "test": "test_the_field_edge_is_three_to_one_on_every_ground[bench]",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "R3 the phone rule reaches the compact trace",
+      "file": "ui/src/styles/transport.css",
+      "test": "test_the_phone_trace_rule_spares_the_compact_trace",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "A15 a wrong field is not marked invalid",
+      "file": "ui/src/pages/run.js",
+      "test": "test_a_field_with_a_problem_says_so_to_assistive_technology",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "A11 marks vanish under forced colours",
+      "file": "ui/src/styles/chassis.css",
+      "test": "test_forced_colours_keep_the_marks_that_carry_a_reading",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "A12 the library's state heading is an h2 again",
+      "file": "ui/src/pages/library.js",
+      "test": "test_an_error_or_empty_state_is_the_pages_first_heading[pages/library.js]",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "A10 the fallback timer runs on after the bundle",
+      "file": "ui/src/lib/chrome.js",
+      "test": "test_the_fallback_timer_stops_when_the_bundle_runs",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "A13 the ledger has no Tab stop",
+      "file": "ui/src/pages/report.js",
+      "test": "test_the_ledger_is_one_tab_stop",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "A14 the grid's arrow keys turn the page",
+      "file": "ui/src/lib/codex.js",
+      "test": "test_a_grid_keeps_its_own_arrow_keys",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "A17 an overflowing page is not focusable",
+      "file": "ui/src/lib/codex.js",
+      "test": "test_a_page_that_scrolls_can_be_scrolled_from_the_keyboard",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "R7 the small targets lose their hit area",
+      "file": "ui/src/styles/chassis.css",
+      "test": "test_small_targets_get_a_24px_hit_area",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "R1 the library stops following the window",
+      "file": "ui/src/pages/library.js",
+      "test": "test_the_library_follows_the_window",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "the scanner is imported into the product",
+      "file": "ui/src/lib/format.js",
+      "test": "test_the_accessibility_scanner_never_ships",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "the setup template switches the rejected controller back on",
+      "file": ".env.example",
+      "test": "test_the_controller_the_example_documents_is_the_adopted_one",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "every site is granted the API again",
+      "file": "app.py",
+      "test": "test_a_cross_origin_read_carries_no_permission",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "the server goes back to its own narrower address rule",
+      "file": "app.py",
+      "test": "test_analyse_accepts_a_shorts_address_and_downloads_the_watch_form",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "a shorts address reaches the downloader as typed",
+      "file": "app.py",
+      "test": "test_analyse_accepts_a_shorts_address_and_downloads_the_watch_form",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "max_comments goes unchecked on /analyse",
+      "file": "app.py",
+      "test": "test_a_bad_max_comments_is_a_400_on_every_route[lots-whole number-/analyse]",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "python app.py starts the debugger again",
+      "file": "app.py",
+      "test": "test_python_app_py_serves_on_5001_without_the_debugger",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "the model installer stops checking hashes",
+      "file": "models/install_comment_model.py",
+      "test": "test_a_tampered_file_is_refused_and_nothing_is_installed",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "an archive entry is written under its own path",
+      "file": "models/install_comment_model.py",
+      "test": "test_an_archive_writes_only_the_expected_names_inside_the_target",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "a YouTube refusal carries the API key out of the comment fetch",
+      "file": "pipeline/comment_module.py",
+      "test": "test_comments_disabled_reaches_the_caller_without_the_key",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "a YouTube refusal carries the API key out of the video search",
+      "file": "sweep.py",
+      "test": "test_an_exhausted_quota_on_the_search_reaches_the_caller_without_the_key",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "a finished run no longer names the file its report was saved under",
+      "file": "app.py",
+      "test": "test_a_finished_run_names_the_file_its_report_was_saved_under",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "the run page tells a single run's reader to wait for the stop",
+      "file": "ui/src/pages/run.js",
+      "test": "test_the_run_page_says_only_a_five_video_run_stops_at_its_next_checkpoint",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "choosing what to analyse drops keyboard focus",
+      "file": "ui/src/pages/run.js",
+      "test": "test_choosing_what_to_analyse_keeps_focus_on_the_choice",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "Show as a list drops keyboard focus",
+      "file": "ui/src/pages/library.js",
+      "test": "test_the_list_that_replaces_the_shelf_takes_focus_only_from_what_it_replaced",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "the shelf leaves a window listener behind when it is taken down",
+      "file": "ui/src/lib/shelf.js",
+      "test": "test_every_global_listener_the_shelf_adds_is_removed_by_name",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "the list's card traces outlive a repaint",
+      "file": "ui/src/pages/library.js",
+      "test": "test_the_library_lets_go_of_what_it_replaces",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "a report is read without the number guard",
+      "file": "ui/src/lib/api.js",
+      "test": "test_every_saved_file_a_page_reads_is_held_to_numbers_where_it_should_be",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "a moment's time is printed unescaped",
+      "file": "ui/src/lib/written.js",
+      "test": "test_a_moments_readings_and_time_are_escaped_in_both_books",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "the source link follows a report's stored address",
+      "file": "ui/src/pages/report.js",
+      "test": "test_a_reports_stored_address_is_read_only_for_its_video_id",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "the opening film prefers a report the repository does not ship",
+      "file": "ui/src/pages/opening.js",
+      "test": "test_the_opening_film_prefers_reports_the_repository_ships",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "the opening page claims every report names its controller",
+      "file": "ui/src/lib/proof.js",
+      "test": "test_the_opening_page_says_which_reports_name_their_controller",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "the boot screen prints a down-weight the pipeline does not apply",
+      "file": "ui/src/gl/crt.js",
+      "test": "test_the_down_weights_the_pages_print_are_the_orchestrators",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "the dry run crashes on a report that is not there",
+      "file": "write_analysis.py",
+      "test": "test_the_dry_run_names_a_missing_report_and_fails_instead_of_raising",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "the command line prints a traceback when YouTube refuses",
+      "file": "main.py",
+      "test": "test_youtube_refusing_the_comments_is_one_error_line_not_a_traceback",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "a font host appears in a document",
+      "file": "static/index.html",
+      "test": "test_no_built_file_names_a_foreign_host",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "the favicon becomes a request",
+      "file": "static/index.html",
+      "test": "test_the_favicon_is_inline_rather_than_a_request",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "the skip link stops being first",
+      "file": "static/report.html",
+      "test": "test_each_offers_a_skip_link_as_the_first_focusable_thing",
+      "status": "CAUGHT"
+    },
+    {
+      "mutation": "a document loses its language",
+      "file": "static/run.html",
+      "test": "test_each_declares_a_language",
+      "status": "CAUGHT"
+    }
+  ]
+}

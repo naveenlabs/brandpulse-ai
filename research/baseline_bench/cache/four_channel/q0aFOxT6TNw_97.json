@@ -1,0 +1,36 @@
+{
+ "uid": "q0aFOxT6TNw_97",
+ "system": "four_channel",
+ "video_id": "q0aFOxT6TNw",
+ "segment_id": 97,
+ "split": "selection",
+ "payload": {
+  "segment_id": 97,
+  "start_s": 544.94,
+  "end_s": 548.4200000000001,
+  "transcript": "also really enjoy nicer screens, cameras and batteries too.",
+  "transcript_sentiment": "POSITIVE (0.86)",
+  "vocal_emotion": "NEUTRAL (arousal 0.57)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "neutral (0.63)",
+  "video_comment_sentiment": "POSITIVE (0.98)"
+ },
+ "seconds": 4.147,
+ "raw": "{\n  \"segment_id\": 97,\n  \"conflict_score\": 0.5,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"vocal_emotion\", \"facial_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and facial expressions suggest positivity, but their tone is neutral, indicating a potential conflict between verbal and non-verbal cues.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 97,
+  "start_s": 544.94,
+  "end_s": 548.4200000000001,
+  "conflict_score": 0.5,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: vocal_emotion",
+   "channels_in_conflict: facial_emotion"
+  ],
+  "flagged": false
+ }
+}

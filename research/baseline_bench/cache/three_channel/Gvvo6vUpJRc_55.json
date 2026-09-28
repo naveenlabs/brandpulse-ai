@@ -1,0 +1,36 @@
+{
+ "uid": "Gvvo6vUpJRc_55",
+ "system": "three_channel",
+ "video_id": "Gvvo6vUpJRc",
+ "segment_id": 55,
+ "split": "selection",
+ "payload": {
+  "segment_id": 55,
+  "start_s": 289.71999999999997,
+  "end_s": 293.8,
+  "transcript": "Harsh. They're brutal. They squeeze your head like a lot.",
+  "transcript_sentiment": "NEGATIVE (0.96)",
+  "vocal_emotion": "NEUTRAL (arousal 0.62)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.96)"
+ },
+ "seconds": 4.641,
+ "raw": "{\n  \"segment_id\": 55,\n  \"conflict_score\": 0.8,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"video_comment_sentiment\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words convey a strong negative sentiment, but their facial expression is neutral and the audience's comments are overwhelmingly positive, indicating a significant conflict between the creator's verbal and non-verbal cues.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 55,
+  "start_s": 289.71999999999997,
+  "end_s": 293.8,
+  "conflict_score": 0.8,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: video_comment_sentiment"
+  ],
+  "flagged": true
+ }
+}

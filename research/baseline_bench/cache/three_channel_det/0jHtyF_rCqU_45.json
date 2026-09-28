@@ -1,0 +1,36 @@
+{
+ "uid": "0jHtyF_rCqU_45",
+ "system": "three_channel",
+ "video_id": "0jHtyF_rCqU",
+ "segment_id": 45,
+ "split": "selection",
+ "payload": {
+  "segment_id": 45,
+  "start_s": 230.45999999999998,
+  "end_s": 235.44,
+  "transcript": "which makes them like the one launch that they wouldn't want to be adding a potentially expensive-to-produce,",
+  "transcript_sentiment": "NEUTRAL (0.54)",
+  "vocal_emotion": "NEUTRAL (arousal 0.57)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.98)"
+ },
+ "seconds": 4.82,
+ "raw": "{\n  \"segment_id\": 45,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"video_comment_sentiment\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and tone are neutral, but their face shows no emotion, and the audience's comments are overwhelmingly positive, indicating a conflict between the creator's verbal and non-verbal cues and the audience's sentiment.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 45,
+  "start_s": 230.45999999999998,
+  "end_s": 235.44,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: video_comment_sentiment"
+  ],
+  "flagged": false
+ }
+}

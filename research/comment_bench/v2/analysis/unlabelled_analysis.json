@@ -1,0 +1,1574 @@
+{
+  "generated_at": "2026-08-27T08:53:58.357434+00:00",
+  "seed": 42,
+  "bootstrap_iterations": 2000,
+  "corpus": {
+    "videos": 10,
+    "comments": 4843
+  },
+  "label_distribution": {
+    "cardiffnlp": {
+      "POSITIVE": {
+        "n": 2170,
+        "pct": 44.8
+      },
+      "NEUTRAL": {
+        "n": 1721,
+        "pct": 35.5
+      },
+      "NEGATIVE": {
+        "n": 952,
+        "pct": 19.7
+      }
+    },
+    "tabularisai": {
+      "POSITIVE": {
+        "n": 1609,
+        "pct": 33.2
+      },
+      "NEUTRAL": {
+        "n": 1508,
+        "pct": 31.1
+      },
+      "NEGATIVE": {
+        "n": 1726,
+        "pct": 35.6
+      }
+    },
+    "VADER": {
+      "POSITIVE": {
+        "n": 2962,
+        "pct": 61.2
+      },
+      "NEUTRAL": {
+        "n": 1151,
+        "pct": 23.8
+      },
+      "NEGATIVE": {
+        "n": 730,
+        "pct": 15.1
+      }
+    }
+  },
+  "inter_model_agreement": {
+    "cardiffnlp vs tabularisai": {
+      "raw_agreement_pct": 62.2,
+      "cohens_kappa": 0.435
+    },
+    "cardiffnlp vs VADER": {
+      "raw_agreement_pct": 61.7,
+      "cohens_kappa": 0.373
+    },
+    "tabularisai vs VADER": {
+      "raw_agreement_pct": 49.0,
+      "cohens_kappa": 0.237
+    },
+    "all_three_agree_pct": 40.9
+  },
+  "per_video": {
+    "4KbrxIpQgkM": {
+      "title": "Nothing Phone 3 Review: They Lied!",
+      "n": 500,
+      "models": {
+        "cardiffnlp": {
+          "verdict": "POSITIVE",
+          "margin_comments": 43,
+          "margin_fraction": 0.086,
+          "distribution": {
+            "POSITIVE": 217,
+            "NEUTRAL": 174,
+            "NEGATIVE": 109
+          },
+          "mean_continuous_score": 0.2289,
+          "like_weighted_verdict": "NEUTRAL",
+          "like_weighted_changes_verdict": true,
+          "stability": {
+            "at_n_100": {
+              "n": 100,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.1755,
+              "verdicts": {
+                "POSITIVE": 1649,
+                "NEUTRAL": 350,
+                "NEGATIVE": 1
+              }
+            },
+            "at_n_500": {
+              "n": 500,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.0165,
+              "verdicts": {
+                "POSITIVE": 1967,
+                "NEUTRAL": 33
+              }
+            }
+          }
+        },
+        "tabularisai": {
+          "verdict": "NEGATIVE",
+          "margin_comments": 13,
+          "margin_fraction": 0.026,
+          "distribution": {
+            "POSITIVE": 169,
+            "NEUTRAL": 149,
+            "NEGATIVE": 182
+          },
+          "mean_continuous_score": -0.012,
+          "like_weighted_verdict": "NEGATIVE",
+          "like_weighted_changes_verdict": false,
+          "stability": {
+            "at_n_100": {
+              "n": 100,
+              "reference_verdict": "NEGATIVE",
+              "flip_rate": 0.478,
+              "verdicts": {
+                "NEGATIVE": 1044,
+                "POSITIVE": 616,
+                "NEUTRAL": 340
+              }
+            },
+            "at_n_500": {
+              "n": 500,
+              "reference_verdict": "NEGATIVE",
+              "flip_rate": 0.233,
+              "verdicts": {
+                "NEGATIVE": 1534,
+                "POSITIVE": 406,
+                "NEUTRAL": 60
+              }
+            }
+          }
+        },
+        "VADER": {
+          "verdict": "POSITIVE",
+          "margin_comments": 188,
+          "margin_fraction": 0.376,
+          "distribution": {
+            "POSITIVE": 305,
+            "NEUTRAL": 117,
+            "NEGATIVE": 78
+          },
+          "mean_continuous_score": 0.2848,
+          "like_weighted_verdict": "POSITIVE",
+          "like_weighted_changes_verdict": false,
+          "stability": {
+            "at_n_100": {
+              "n": 100,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.0,
+              "verdicts": {
+                "POSITIVE": 2000
+              }
+            },
+            "at_n_500": {
+              "n": 500,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.0,
+              "verdicts": {
+                "POSITIVE": 2000
+              }
+            }
+          }
+        }
+      }
+    },
+    "5VMckmQneCk": {
+      "title": "Samsung S25 Ultra Review - Things just got Messy.",
+      "n": 500,
+      "models": {
+        "cardiffnlp": {
+          "verdict": "NEUTRAL",
+          "margin_comments": 53,
+          "margin_fraction": 0.106,
+          "distribution": {
+            "POSITIVE": 163,
+            "NEUTRAL": 216,
+            "NEGATIVE": 121
+          },
+          "mean_continuous_score": 0.1161,
+          "like_weighted_verdict": "NEUTRAL",
+          "like_weighted_changes_verdict": false,
+          "stability": {
+            "at_n_100": {
+              "n": 100,
+              "reference_verdict": "NEUTRAL",
+              "flip_rate": 0.1025,
+              "verdicts": {
+                "NEUTRAL": 1795,
+                "POSITIVE": 196,
+                "NEGATIVE": 9
+              }
+            },
+            "at_n_500": {
+              "n": 500,
+              "reference_verdict": "NEUTRAL",
+              "flip_rate": 0.0025,
+              "verdicts": {
+                "NEUTRAL": 1995,
+                "POSITIVE": 5
+              }
+            }
+          }
+        },
+        "tabularisai": {
+          "verdict": "NEUTRAL",
+          "margin_comments": 31,
+          "margin_fraction": 0.062,
+          "distribution": {
+            "POSITIVE": 115,
+            "NEUTRAL": 208,
+            "NEGATIVE": 177
+          },
+          "mean_continuous_score": -0.096,
+          "like_weighted_verdict": "NEGATIVE",
+          "like_weighted_changes_verdict": true,
+          "stability": {
+            "at_n_100": {
+              "n": 100,
+              "reference_verdict": "NEUTRAL",
+              "flip_rate": 0.228,
+              "verdicts": {
+                "NEUTRAL": 1544,
+                "NEGATIVE": 452,
+                "POSITIVE": 4
+              }
+            },
+            "at_n_500": {
+              "n": 500,
+              "reference_verdict": "NEUTRAL",
+              "flip_rate": 0.0595,
+              "verdicts": {
+                "NEUTRAL": 1881,
+                "NEGATIVE": 119
+              }
+            }
+          }
+        },
+        "VADER": {
+          "verdict": "POSITIVE",
+          "margin_comments": 147,
+          "margin_fraction": 0.294,
+          "distribution": {
+            "POSITIVE": 283,
+            "NEUTRAL": 136,
+            "NEGATIVE": 81
+          },
+          "mean_continuous_score": 0.2615,
+          "like_weighted_verdict": "POSITIVE",
+          "like_weighted_changes_verdict": false,
+          "stability": {
+            "at_n_100": {
+              "n": 100,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.001,
+              "verdicts": {
+                "POSITIVE": 1998,
+                "NEUTRAL": 2
+              }
+            },
+            "at_n_500": {
+              "n": 500,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.0,
+              "verdicts": {
+                "POSITIVE": 2000
+              }
+            }
+          }
+        }
+      }
+    },
+    "Gvvo6vUpJRc": {
+      "title": "AirPods Max Review: Luxury Listening!",
+      "n": 500,
+      "models": {
+        "cardiffnlp": {
+          "verdict": "POSITIVE",
+          "margin_comments": 67,
+          "margin_fraction": 0.134,
+          "distribution": {
+            "POSITIVE": 217,
+            "NEUTRAL": 150,
+            "NEGATIVE": 133
+          },
+          "mean_continuous_score": 0.1884,
+          "like_weighted_verdict": "NEUTRAL",
+          "like_weighted_changes_verdict": true,
+          "stability": {
+            "at_n_100": {
+              "n": 100,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.0775,
+              "verdicts": {
+                "POSITIVE": 1845,
+                "NEUTRAL": 125,
+                "NEGATIVE": 30
+              }
+            },
+            "at_n_500": {
+              "n": 500,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.0,
+              "verdicts": {
+                "POSITIVE": 2000
+              }
+            }
+          }
+        },
+        "tabularisai": {
+          "verdict": "NEGATIVE",
+          "margin_comments": 24,
+          "margin_fraction": 0.048,
+          "distribution": {
+            "POSITIVE": 177,
+            "NEUTRAL": 122,
+            "NEGATIVE": 201
+          },
+          "mean_continuous_score": -0.015,
+          "like_weighted_verdict": "NEGATIVE",
+          "like_weighted_changes_verdict": false,
+          "stability": {
+            "at_n_100": {
+              "n": 100,
+              "reference_verdict": "NEGATIVE",
+              "flip_rate": 0.337,
+              "verdicts": {
+                "NEGATIVE": 1326,
+                "POSITIVE": 567,
+                "NEUTRAL": 107
+              }
+            },
+            "at_n_500": {
+              "n": 500,
+              "reference_verdict": "NEGATIVE",
+              "flip_rate": 0.111,
+              "verdicts": {
+                "NEGATIVE": 1778,
+                "POSITIVE": 199,
+                "NEUTRAL": 23
+              }
+            }
+          }
+        },
+        "VADER": {
+          "verdict": "POSITIVE",
+          "margin_comments": 219,
+          "margin_fraction": 0.438,
+          "distribution": {
+            "POSITIVE": 322,
+            "NEUTRAL": 103,
+            "NEGATIVE": 75
+          },
+          "mean_continuous_score": 0.3375,
+          "like_weighted_verdict": "POSITIVE",
+          "like_weighted_changes_verdict": false,
+          "stability": {
+            "at_n_100": {
+              "n": 100,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.0,
+              "verdicts": {
+                "POSITIVE": 2000
+              }
+            },
+            "at_n_500": {
+              "n": 500,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.0,
+              "verdicts": {
+                "POSITIVE": 2000
+              }
+            }
+          }
+        }
+      }
+    },
+    "Kk-RKpTAXmA": {
+      "title": "Can they LEGALLY say this?? - Sony WH-1000XM6",
+      "n": 500,
+      "models": {
+        "cardiffnlp": {
+          "verdict": "POSITIVE",
+          "margin_comments": 22,
+          "margin_fraction": 0.044,
+          "distribution": {
+            "POSITIVE": 201,
+            "NEUTRAL": 179,
+            "NEGATIVE": 120
+          },
+          "mean_continuous_score": 0.1723,
+          "like_weighted_verdict": "POSITIVE",
+          "like_weighted_changes_verdict": false,
+          "stability": {
+            "at_n_100": {
+              "n": 100,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.3355,
+              "verdicts": {
+                "POSITIVE": 1329,
+                "NEUTRAL": 662,
+                "NEGATIVE": 9
+              }
+            },
+            "at_n_500": {
+              "n": 500,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.137,
+              "verdicts": {
+                "POSITIVE": 1726,
+                "NEUTRAL": 274
+              }
+            }
+          }
+        },
+        "tabularisai": {
+          "verdict": "NEGATIVE",
+          "margin_comments": 25,
+          "margin_fraction": 0.05,
+          "distribution": {
+            "POSITIVE": 135,
+            "NEUTRAL": 170,
+            "NEGATIVE": 195
+          },
+          "mean_continuous_score": -0.0906,
+          "like_weighted_verdict": "NEGATIVE",
+          "like_weighted_changes_verdict": false,
+          "stability": {
+            "at_n_100": {
+              "n": 100,
+              "reference_verdict": "NEGATIVE",
+              "flip_rate": 0.3285,
+              "verdicts": {
+                "NEGATIVE": 1343,
+                "NEUTRAL": 592,
+                "POSITIVE": 65
+              }
+            },
+            "at_n_500": {
+              "n": 500,
+              "reference_verdict": "NEGATIVE",
+              "flip_rate": 0.0985,
+              "verdicts": {
+                "NEGATIVE": 1803,
+                "NEUTRAL": 197
+              }
+            }
+          }
+        },
+        "VADER": {
+          "verdict": "POSITIVE",
+          "margin_comments": 211,
+          "margin_fraction": 0.422,
+          "distribution": {
+            "POSITIVE": 308,
+            "NEUTRAL": 97,
+            "NEGATIVE": 95
+          },
+          "mean_continuous_score": 0.2707,
+          "like_weighted_verdict": "POSITIVE",
+          "like_weighted_changes_verdict": false,
+          "stability": {
+            "at_n_100": {
+              "n": 100,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.0,
+              "verdicts": {
+                "POSITIVE": 2000
+              }
+            },
+            "at_n_500": {
+              "n": 500,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.0,
+              "verdicts": {
+                "POSITIVE": 2000
+              }
+            }
+          }
+        }
+      }
+    },
+    "Rlw_CI7pOKg": {
+      "title": "MacBook Air M5 Review - Forget the Neo!",
+      "n": 500,
+      "models": {
+        "cardiffnlp": {
+          "verdict": "POSITIVE",
+          "margin_comments": 6,
+          "margin_fraction": 0.012,
+          "distribution": {
+            "POSITIVE": 217,
+            "NEUTRAL": 211,
+            "NEGATIVE": 72
+          },
+          "mean_continuous_score": 0.2817,
+          "like_weighted_verdict": "POSITIVE",
+          "like_weighted_changes_verdict": false,
+          "stability": {
+            "at_n_100": {
+              "n": 100,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.4805,
+              "verdicts": {
+                "POSITIVE": 1039,
+                "NEUTRAL": 961
+              }
+            },
+            "at_n_500": {
+              "n": 500,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.4065,
+              "verdicts": {
+                "POSITIVE": 1187,
+                "NEUTRAL": 813
+              }
+            }
+          }
+        },
+        "tabularisai": {
+          "verdict": "NEUTRAL",
+          "margin_comments": 20,
+          "margin_fraction": 0.04,
+          "distribution": {
+            "POSITIVE": 148,
+            "NEUTRAL": 186,
+            "NEGATIVE": 166
+          },
+          "mean_continuous_score": -0.0371,
+          "like_weighted_verdict": "NEUTRAL",
+          "like_weighted_changes_verdict": false,
+          "stability": {
+            "at_n_100": {
+              "n": 100,
+              "reference_verdict": "NEUTRAL",
+              "flip_rate": 0.359,
+              "verdicts": {
+                "NEUTRAL": 1282,
+                "NEGATIVE": 522,
+                "POSITIVE": 196
+              }
+            },
+            "at_n_500": {
+              "n": 500,
+              "reference_verdict": "NEUTRAL",
+              "flip_rate": 0.139,
+              "verdicts": {
+                "NEUTRAL": 1722,
+                "NEGATIVE": 260,
+                "POSITIVE": 18
+              }
+            }
+          }
+        },
+        "VADER": {
+          "verdict": "POSITIVE",
+          "margin_comments": 144,
+          "margin_fraction": 0.288,
+          "distribution": {
+            "POSITIVE": 286,
+            "NEUTRAL": 142,
+            "NEGATIVE": 72
+          },
+          "mean_continuous_score": 0.2819,
+          "like_weighted_verdict": "POSITIVE",
+          "like_weighted_changes_verdict": false,
+          "stability": {
+            "at_n_100": {
+              "n": 100,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.0015,
+              "verdicts": {
+                "POSITIVE": 1997,
+                "NEUTRAL": 3
+              }
+            },
+            "at_n_500": {
+              "n": 500,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.0,
+              "verdicts": {
+                "POSITIVE": 2000
+              }
+            }
+          }
+        }
+      }
+    },
+    "SSC0RkJuBVw": {
+      "title": "Apple Vision Pro - Is it worth $3500?",
+      "n": 500,
+      "models": {
+        "cardiffnlp": {
+          "verdict": "POSITIVE",
+          "margin_comments": 120,
+          "margin_fraction": 0.24,
+          "distribution": {
+            "POSITIVE": 277,
+            "NEUTRAL": 157,
+            "NEGATIVE": 66
+          },
+          "mean_continuous_score": 0.3927,
+          "like_weighted_verdict": "POSITIVE",
+          "like_weighted_changes_verdict": false,
+          "stability": {
+            "at_n_100": {
+              "n": 100,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.0045,
+              "verdicts": {
+                "POSITIVE": 1991,
+                "NEUTRAL": 9
+              }
+            },
+            "at_n_500": {
+              "n": 500,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.0,
+              "verdicts": {
+                "POSITIVE": 2000
+              }
+            }
+          }
+        },
+        "tabularisai": {
+          "verdict": "POSITIVE",
+          "margin_comments": 17,
+          "margin_fraction": 0.034,
+          "distribution": {
+            "POSITIVE": 205,
+            "NEUTRAL": 107,
+            "NEGATIVE": 188
+          },
+          "mean_continuous_score": 0.0437,
+          "like_weighted_verdict": "POSITIVE",
+          "like_weighted_changes_verdict": false,
+          "stability": {
+            "at_n_100": {
+              "n": 100,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.3845,
+              "verdicts": {
+                "POSITIVE": 1231,
+                "NEGATIVE": 680,
+                "NEUTRAL": 89
+              }
+            },
+            "at_n_500": {
+              "n": 500,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.1905,
+              "verdicts": {
+                "POSITIVE": 1619,
+                "NEGATIVE": 356,
+                "NEUTRAL": 25
+              }
+            }
+          }
+        },
+        "VADER": {
+          "verdict": "POSITIVE",
+          "margin_comments": 259,
+          "margin_fraction": 0.518,
+          "distribution": {
+            "POSITIVE": 351,
+            "NEUTRAL": 92,
+            "NEGATIVE": 57
+          },
+          "mean_continuous_score": 0.3966,
+          "like_weighted_verdict": "POSITIVE",
+          "like_weighted_changes_verdict": false,
+          "stability": {
+            "at_n_100": {
+              "n": 100,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.0,
+              "verdicts": {
+                "POSITIVE": 2000
+              }
+            },
+            "at_n_500": {
+              "n": 500,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.0,
+              "verdicts": {
+                "POSITIVE": 2000
+              }
+            }
+          }
+        }
+      }
+    },
+    "haWvrSliMVY": {
+      "title": "BEFORE YOU BUY - Bleu De Chanel in 2021 | Jeremy Fragrance",
+      "n": 343,
+      "models": {
+        "cardiffnlp": {
+          "verdict": "POSITIVE",
+          "margin_comments": 1,
+          "margin_fraction": 0.0029,
+          "distribution": {
+            "POSITIVE": 150,
+            "NEUTRAL": 149,
+            "NEGATIVE": 44
+          },
+          "mean_continuous_score": 0.2953,
+          "like_weighted_verdict": "POSITIVE",
+          "like_weighted_changes_verdict": false,
+          "stability": {
+            "at_n_100": {
+              "n": 100,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.517,
+              "verdicts": {
+                "NEUTRAL": 1034,
+                "POSITIVE": 966
+              }
+            },
+            "at_n_500": {
+              "n": 343,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.489,
+              "verdicts": {
+                "POSITIVE": 1022,
+                "NEUTRAL": 978
+              }
+            }
+          }
+        },
+        "tabularisai": {
+          "verdict": "POSITIVE",
+          "margin_comments": 27,
+          "margin_fraction": 0.0787,
+          "distribution": {
+            "POSITIVE": 137,
+            "NEUTRAL": 110,
+            "NEGATIVE": 96
+          },
+          "mean_continuous_score": 0.0801,
+          "like_weighted_verdict": "POSITIVE",
+          "like_weighted_changes_verdict": false,
+          "stability": {
+            "at_n_100": {
+              "n": 100,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.2365,
+              "verdicts": {
+                "POSITIVE": 1527,
+                "NEUTRAL": 372,
+                "NEGATIVE": 101
+              }
+            },
+            "at_n_500": {
+              "n": 343,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.0515,
+              "verdicts": {
+                "POSITIVE": 1897,
+                "NEUTRAL": 100,
+                "NEGATIVE": 3
+              }
+            }
+          }
+        },
+        "VADER": {
+          "verdict": "POSITIVE",
+          "margin_comments": 89,
+          "margin_fraction": 0.2595,
+          "distribution": {
+            "POSITIVE": 195,
+            "NEUTRAL": 106,
+            "NEGATIVE": 42
+          },
+          "mean_continuous_score": 0.2851,
+          "like_weighted_verdict": "POSITIVE",
+          "like_weighted_changes_verdict": false,
+          "stability": {
+            "at_n_100": {
+              "n": 100,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.0,
+              "verdicts": {
+                "POSITIVE": 2000
+              }
+            },
+            "at_n_500": {
+              "n": 343,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.0,
+              "verdicts": {
+                "POSITIVE": 2000
+              }
+            }
+          }
+        }
+      }
+    },
+    "i63u-iAnhuk": {
+      "title": "Pixel 10/Pro Review: Good News and Bad News!",
+      "n": 500,
+      "models": {
+        "cardiffnlp": {
+          "verdict": "POSITIVE",
+          "margin_comments": 74,
+          "margin_fraction": 0.148,
+          "distribution": {
+            "POSITIVE": 238,
+            "NEUTRAL": 164,
+            "NEGATIVE": 98
+          },
+          "mean_continuous_score": 0.2681,
+          "like_weighted_verdict": "POSITIVE",
+          "like_weighted_changes_verdict": false,
+          "stability": {
+            "at_n_100": {
+              "n": 100,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.0545,
+              "verdicts": {
+                "POSITIVE": 1891,
+                "NEUTRAL": 109
+              }
+            },
+            "at_n_500": {
+              "n": 500,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.0,
+              "verdicts": {
+                "POSITIVE": 2000
+              }
+            }
+          }
+        },
+        "tabularisai": {
+          "verdict": "POSITIVE",
+          "margin_comments": 12,
+          "margin_fraction": 0.024,
+          "distribution": {
+            "POSITIVE": 185,
+            "NEUTRAL": 173,
+            "NEGATIVE": 142
+          },
+          "mean_continuous_score": 0.0547,
+          "like_weighted_verdict": "NEUTRAL",
+          "like_weighted_changes_verdict": true,
+          "stability": {
+            "at_n_100": {
+              "n": 100,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.4575,
+              "verdicts": {
+                "POSITIVE": 1085,
+                "NEUTRAL": 788,
+                "NEGATIVE": 127
+              }
+            },
+            "at_n_500": {
+              "n": 500,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.2665,
+              "verdicts": {
+                "POSITIVE": 1467,
+                "NEUTRAL": 527,
+                "NEGATIVE": 6
+              }
+            }
+          }
+        },
+        "VADER": {
+          "verdict": "POSITIVE",
+          "margin_comments": 158,
+          "margin_fraction": 0.316,
+          "distribution": {
+            "POSITIVE": 286,
+            "NEUTRAL": 128,
+            "NEGATIVE": 86
+          },
+          "mean_continuous_score": 0.2665,
+          "like_weighted_verdict": "POSITIVE",
+          "like_weighted_changes_verdict": false,
+          "stability": {
+            "at_n_100": {
+              "n": 100,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.0,
+              "verdicts": {
+                "POSITIVE": 2000
+              }
+            },
+            "at_n_500": {
+              "n": 500,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.0,
+              "verdicts": {
+                "POSITIVE": 2000
+              }
+            }
+          }
+        }
+      }
+    },
+    "q0aFOxT6TNw": {
+      "title": "iPhone 17 Pro Review: Paradox in a Box!",
+      "n": 500,
+      "models": {
+        "cardiffnlp": {
+          "verdict": "POSITIVE",
+          "margin_comments": 87,
+          "margin_fraction": 0.174,
+          "distribution": {
+            "POSITIVE": 261,
+            "NEUTRAL": 174,
+            "NEGATIVE": 65
+          },
+          "mean_continuous_score": 0.3808,
+          "like_weighted_verdict": "POSITIVE",
+          "like_weighted_changes_verdict": false,
+          "stability": {
+            "at_n_100": {
+              "n": 100,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.024,
+              "verdicts": {
+                "POSITIVE": 1952,
+                "NEUTRAL": 48
+              }
+            },
+            "at_n_500": {
+              "n": 500,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.0,
+              "verdicts": {
+                "POSITIVE": 2000
+              }
+            }
+          }
+        },
+        "tabularisai": {
+          "verdict": "POSITIVE",
+          "margin_comments": 45,
+          "margin_fraction": 0.09,
+          "distribution": {
+            "POSITIVE": 206,
+            "NEUTRAL": 161,
+            "NEGATIVE": 133
+          },
+          "mean_continuous_score": 0.1134,
+          "like_weighted_verdict": "POSITIVE",
+          "like_weighted_changes_verdict": false,
+          "stability": {
+            "at_n_100": {
+              "n": 100,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.188,
+              "verdicts": {
+                "POSITIVE": 1624,
+                "NEUTRAL": 325,
+                "NEGATIVE": 51
+              }
+            },
+            "at_n_500": {
+              "n": 500,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.007,
+              "verdicts": {
+                "POSITIVE": 1986,
+                "NEUTRAL": 14
+              }
+            }
+          }
+        },
+        "VADER": {
+          "verdict": "POSITIVE",
+          "margin_comments": 160,
+          "margin_fraction": 0.32,
+          "distribution": {
+            "POSITIVE": 298,
+            "NEUTRAL": 138,
+            "NEGATIVE": 64
+          },
+          "mean_continuous_score": 0.3031,
+          "like_weighted_verdict": "POSITIVE",
+          "like_weighted_changes_verdict": false,
+          "stability": {
+            "at_n_100": {
+              "n": 100,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.0005,
+              "verdicts": {
+                "POSITIVE": 1999,
+                "NEUTRAL": 1
+              }
+            },
+            "at_n_500": {
+              "n": 500,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.0,
+              "verdicts": {
+                "POSITIVE": 2000
+              }
+            }
+          }
+        }
+      }
+    },
+    "vOhuf18b-g8": {
+      "title": "Samsung Fold 7 - Why Don't I Love This More??",
+      "n": 500,
+      "models": {
+        "cardiffnlp": {
+          "verdict": "POSITIVE",
+          "margin_comments": 82,
+          "margin_fraction": 0.164,
+          "distribution": {
+            "POSITIVE": 229,
+            "NEUTRAL": 147,
+            "NEGATIVE": 124
+          },
+          "mean_continuous_score": 0.2115,
+          "like_weighted_verdict": "POSITIVE",
+          "like_weighted_changes_verdict": false,
+          "stability": {
+            "at_n_100": {
+              "n": 100,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.034,
+              "verdicts": {
+                "POSITIVE": 1932,
+                "NEUTRAL": 64,
+                "NEGATIVE": 4
+              }
+            },
+            "at_n_500": {
+              "n": 500,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.0,
+              "verdicts": {
+                "POSITIVE": 2000
+              }
+            }
+          }
+        },
+        "tabularisai": {
+          "verdict": "NEGATIVE",
+          "margin_comments": 114,
+          "margin_fraction": 0.228,
+          "distribution": {
+            "POSITIVE": 132,
+            "NEUTRAL": 122,
+            "NEGATIVE": 246
+          },
+          "mean_continuous_score": -0.1672,
+          "like_weighted_verdict": "NEGATIVE",
+          "like_weighted_changes_verdict": false,
+          "stability": {
+            "at_n_100": {
+              "n": 100,
+              "reference_verdict": "NEGATIVE",
+              "flip_rate": 0.003,
+              "verdicts": {
+                "NEGATIVE": 1994,
+                "POSITIVE": 4,
+                "NEUTRAL": 2
+              }
+            },
+            "at_n_500": {
+              "n": 500,
+              "reference_verdict": "NEGATIVE",
+              "flip_rate": 0.0,
+              "verdicts": {
+                "NEGATIVE": 2000
+              }
+            }
+          }
+        },
+        "VADER": {
+          "verdict": "POSITIVE",
+          "margin_comments": 236,
+          "margin_fraction": 0.472,
+          "distribution": {
+            "POSITIVE": 328,
+            "NEUTRAL": 92,
+            "NEGATIVE": 80
+          },
+          "mean_continuous_score": 0.3482,
+          "like_weighted_verdict": "POSITIVE",
+          "like_weighted_changes_verdict": false,
+          "stability": {
+            "at_n_100": {
+              "n": 100,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.0,
+              "verdicts": {
+                "POSITIVE": 2000
+              }
+            },
+            "at_n_500": {
+              "n": 500,
+              "reference_verdict": "POSITIVE",
+              "flip_rate": 0.0,
+              "verdicts": {
+                "POSITIVE": 2000
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "verdict_depends_on_model": {
+    "videos_where_models_disagree_on_verdict": 6,
+    "videos_total": 10,
+    "detail": {
+      "4KbrxIpQgkM": {
+        "cardiffnlp": "POSITIVE",
+        "tabularisai": "NEGATIVE",
+        "VADER": "POSITIVE"
+      },
+      "5VMckmQneCk": {
+        "cardiffnlp": "NEUTRAL",
+        "tabularisai": "NEUTRAL",
+        "VADER": "POSITIVE"
+      },
+      "Gvvo6vUpJRc": {
+        "cardiffnlp": "POSITIVE",
+        "tabularisai": "NEGATIVE",
+        "VADER": "POSITIVE"
+      },
+      "Kk-RKpTAXmA": {
+        "cardiffnlp": "POSITIVE",
+        "tabularisai": "NEGATIVE",
+        "VADER": "POSITIVE"
+      },
+      "Rlw_CI7pOKg": {
+        "cardiffnlp": "POSITIVE",
+        "tabularisai": "NEUTRAL",
+        "VADER": "POSITIVE"
+      },
+      "SSC0RkJuBVw": {
+        "cardiffnlp": "POSITIVE",
+        "tabularisai": "POSITIVE",
+        "VADER": "POSITIVE"
+      },
+      "haWvrSliMVY": {
+        "cardiffnlp": "POSITIVE",
+        "tabularisai": "POSITIVE",
+        "VADER": "POSITIVE"
+      },
+      "i63u-iAnhuk": {
+        "cardiffnlp": "POSITIVE",
+        "tabularisai": "POSITIVE",
+        "VADER": "POSITIVE"
+      },
+      "q0aFOxT6TNw": {
+        "cardiffnlp": "POSITIVE",
+        "tabularisai": "POSITIVE",
+        "VADER": "POSITIVE"
+      },
+      "vOhuf18b-g8": {
+        "cardiffnlp": "POSITIVE",
+        "tabularisai": "NEGATIVE",
+        "VADER": "POSITIVE"
+      }
+    }
+  },
+  "temporal_drift": {
+    "4KbrxIpQgkM": {
+      "title": "Nothing Phone 3 Review: They Lied!",
+      "days_span": 413.5,
+      "quartiles": [
+        {
+          "quartile": 1,
+          "n": 125,
+          "median_age_days": 0.0,
+          "mean_score_cardiffnlp": 0.0158,
+          "pct_negative_cardiffnlp": 36.0
+        },
+        {
+          "quartile": 2,
+          "n": 125,
+          "median_age_days": 2.4,
+          "mean_score_cardiffnlp": 0.235,
+          "pct_negative_cardiffnlp": 23.2
+        },
+        {
+          "quartile": 3,
+          "n": 125,
+          "median_age_days": 12.3,
+          "mean_score_cardiffnlp": 0.3189,
+          "pct_negative_cardiffnlp": 14.4
+        },
+        {
+          "quartile": 4,
+          "n": 125,
+          "median_age_days": 169.4,
+          "mean_score_cardiffnlp": 0.3461,
+          "pct_negative_cardiffnlp": 13.6
+        }
+      ]
+    },
+    "5VMckmQneCk": {
+      "title": "Samsung S25 Ultra Review - Things just got Messy.",
+      "days_span": 553.8,
+      "quartiles": [
+        {
+          "quartile": 1,
+          "n": 125,
+          "median_age_days": 0.0,
+          "mean_score_cardiffnlp": 0.0665,
+          "pct_negative_cardiffnlp": 28.0
+        },
+        {
+          "quartile": 2,
+          "n": 125,
+          "median_age_days": 10.2,
+          "mean_score_cardiffnlp": 0.072,
+          "pct_negative_cardiffnlp": 27.2
+        },
+        {
+          "quartile": 3,
+          "n": 125,
+          "median_age_days": 41.9,
+          "mean_score_cardiffnlp": 0.1654,
+          "pct_negative_cardiffnlp": 21.6
+        },
+        {
+          "quartile": 4,
+          "n": 125,
+          "median_age_days": 224.0,
+          "mean_score_cardiffnlp": 0.1604,
+          "pct_negative_cardiffnlp": 20.0
+        }
+      ]
+    },
+    "Gvvo6vUpJRc": {
+      "title": "AirPods Max Review: Luxury Listening!",
+      "days_span": 1996.4,
+      "quartiles": [
+        {
+          "quartile": 1,
+          "n": 125,
+          "median_age_days": 0.1,
+          "mean_score_cardiffnlp": -0.0834,
+          "pct_negative_cardiffnlp": 32.8
+        },
+        {
+          "quartile": 2,
+          "n": 125,
+          "median_age_days": 0.6,
+          "mean_score_cardiffnlp": -0.1543,
+          "pct_negative_cardiffnlp": 41.6
+        },
+        {
+          "quartile": 3,
+          "n": 125,
+          "median_age_days": 491.7,
+          "mean_score_cardiffnlp": 0.3311,
+          "pct_negative_cardiffnlp": 23.2
+        },
+        {
+          "quartile": 4,
+          "n": 125,
+          "median_age_days": 1066.9,
+          "mean_score_cardiffnlp": 0.6603,
+          "pct_negative_cardiffnlp": 8.8
+        }
+      ]
+    },
+    "Kk-RKpTAXmA": {
+      "title": "Can they LEGALLY say this?? - Sony WH-1000XM6",
+      "days_span": 374.1,
+      "quartiles": [
+        {
+          "quartile": 1,
+          "n": 125,
+          "median_age_days": 0.1,
+          "mean_score_cardiffnlp": 0.2204,
+          "pct_negative_cardiffnlp": 23.2
+        },
+        {
+          "quartile": 2,
+          "n": 125,
+          "median_age_days": 0.2,
+          "mean_score_cardiffnlp": 0.1941,
+          "pct_negative_cardiffnlp": 21.6
+        },
+        {
+          "quartile": 3,
+          "n": 125,
+          "median_age_days": 0.6,
+          "mean_score_cardiffnlp": 0.2044,
+          "pct_negative_cardiffnlp": 19.2
+        },
+        {
+          "quartile": 4,
+          "n": 125,
+          "median_age_days": 11.6,
+          "mean_score_cardiffnlp": 0.0704,
+          "pct_negative_cardiffnlp": 32.0
+        }
+      ]
+    },
+    "Rlw_CI7pOKg": {
+      "title": "MacBook Air M5 Review - Forget the Neo!",
+      "days_span": 170.4,
+      "quartiles": [
+        {
+          "quartile": 1,
+          "n": 125,
+          "median_age_days": 0.1,
+          "mean_score_cardiffnlp": 0.3181,
+          "pct_negative_cardiffnlp": 16.0
+        },
+        {
+          "quartile": 2,
+          "n": 125,
+          "median_age_days": 0.5,
+          "mean_score_cardiffnlp": 0.278,
+          "pct_negative_cardiffnlp": 13.6
+        },
+        {
+          "quartile": 3,
+          "n": 125,
+          "median_age_days": 1.8,
+          "mean_score_cardiffnlp": 0.2579,
+          "pct_negative_cardiffnlp": 15.2
+        },
+        {
+          "quartile": 4,
+          "n": 125,
+          "median_age_days": 24.9,
+          "mean_score_cardiffnlp": 0.2726,
+          "pct_negative_cardiffnlp": 12.8
+        }
+      ]
+    },
+    "SSC0RkJuBVw": {
+      "title": "Apple Vision Pro - Is it worth $3500?",
+      "days_span": 865.2,
+      "quartiles": [
+        {
+          "quartile": 1,
+          "n": 125,
+          "median_age_days": 0.1,
+          "mean_score_cardiffnlp": 0.4113,
+          "pct_negative_cardiffnlp": 13.6
+        },
+        {
+          "quartile": 2,
+          "n": 125,
+          "median_age_days": 1.0,
+          "mean_score_cardiffnlp": 0.4995,
+          "pct_negative_cardiffnlp": 10.4
+        },
+        {
+          "quartile": 3,
+          "n": 125,
+          "median_age_days": 28.2,
+          "mean_score_cardiffnlp": 0.2903,
+          "pct_negative_cardiffnlp": 16.8
+        },
+        {
+          "quartile": 4,
+          "n": 125,
+          "median_age_days": 196.3,
+          "mean_score_cardiffnlp": 0.3697,
+          "pct_negative_cardiffnlp": 12.0
+        }
+      ]
+    },
+    "haWvrSliMVY": {
+      "title": "BEFORE YOU BUY - Bleu De Chanel in 2021 | Jeremy Fragrance",
+      "days_span": 1939.3,
+      "quartiles": [
+        {
+          "quartile": 1,
+          "n": 85,
+          "median_age_days": 0.1,
+          "mean_score_cardiffnlp": 0.4505,
+          "pct_negative_cardiffnlp": 4.7
+        },
+        {
+          "quartile": 2,
+          "n": 85,
+          "median_age_days": 54.7,
+          "mean_score_cardiffnlp": 0.2422,
+          "pct_negative_cardiffnlp": 10.6
+        },
+        {
+          "quartile": 3,
+          "n": 85,
+          "median_age_days": 289.5,
+          "mean_score_cardiffnlp": 0.2944,
+          "pct_negative_cardiffnlp": 21.2
+        },
+        {
+          "quartile": 4,
+          "n": 88,
+          "median_age_days": 1175.5,
+          "mean_score_cardiffnlp": 0.1976,
+          "pct_negative_cardiffnlp": 14.8
+        }
+      ]
+    },
+    "i63u-iAnhuk": {
+      "title": "Pixel 10/Pro Review: Good News and Bad News!",
+      "days_span": 351.1,
+      "quartiles": [
+        {
+          "quartile": 1,
+          "n": 125,
+          "median_age_days": 0.1,
+          "mean_score_cardiffnlp": 0.1346,
+          "pct_negative_cardiffnlp": 31.2
+        },
+        {
+          "quartile": 2,
+          "n": 125,
+          "median_age_days": 9.4,
+          "mean_score_cardiffnlp": 0.1883,
+          "pct_negative_cardiffnlp": 17.6
+        },
+        {
+          "quartile": 3,
+          "n": 125,
+          "median_age_days": 38.8,
+          "mean_score_cardiffnlp": 0.479,
+          "pct_negative_cardiffnlp": 12.0
+        },
+        {
+          "quartile": 4,
+          "n": 125,
+          "median_age_days": 192.5,
+          "mean_score_cardiffnlp": 0.2704,
+          "pct_negative_cardiffnlp": 17.6
+        }
+      ]
+    },
+    "q0aFOxT6TNw": {
+      "title": "iPhone 17 Pro Review: Paradox in a Box!",
+      "days_span": 325.4,
+      "quartiles": [
+        {
+          "quartile": 1,
+          "n": 125,
+          "median_age_days": 0.1,
+          "mean_score_cardiffnlp": 0.283,
+          "pct_negative_cardiffnlp": 16.0
+        },
+        {
+          "quartile": 2,
+          "n": 125,
+          "median_age_days": 2.8,
+          "mean_score_cardiffnlp": 0.4121,
+          "pct_negative_cardiffnlp": 11.2
+        },
+        {
+          "quartile": 3,
+          "n": 125,
+          "median_age_days": 12.1,
+          "mean_score_cardiffnlp": 0.4612,
+          "pct_negative_cardiffnlp": 12.0
+        },
+        {
+          "quartile": 4,
+          "n": 125,
+          "median_age_days": 145.2,
+          "mean_score_cardiffnlp": 0.3669,
+          "pct_negative_cardiffnlp": 12.8
+        }
+      ]
+    },
+    "vOhuf18b-g8": {
+      "title": "Samsung Fold 7 - Why Don't I Love This More??",
+      "days_span": 343.0,
+      "quartiles": [
+        {
+          "quartile": 1,
+          "n": 125,
+          "median_age_days": 0.2,
+          "mean_score_cardiffnlp": 0.1216,
+          "pct_negative_cardiffnlp": 27.2
+        },
+        {
+          "quartile": 2,
+          "n": 125,
+          "median_age_days": 0.5,
+          "mean_score_cardiffnlp": 0.2538,
+          "pct_negative_cardiffnlp": 26.4
+        },
+        {
+          "quartile": 3,
+          "n": 125,
+          "median_age_days": 1.8,
+          "mean_score_cardiffnlp": 0.2114,
+          "pct_negative_cardiffnlp": 27.2
+        },
+        {
+          "quartile": 4,
+          "n": 125,
+          "median_age_days": 23.8,
+          "mean_score_cardiffnlp": 0.259,
+          "pct_negative_cardiffnlp": 18.4
+        }
+      ]
+    }
+  },
+  "tabularisai_5class": {
+    "argmax_distribution": {
+      "Neutral": {
+        "n": 1630,
+        "pct": 33.7
+      },
+      "Negative": {
+        "n": 1446,
+        "pct": 29.9
+      },
+      "Positive": {
+        "n": 1167,
+        "pct": 24.1
+      },
+      "Very Positive": {
+        "n": 386,
+        "pct": 8.0
+      },
+      "Very Negative": {
+        "n": 214,
+        "pct": 4.4
+      }
+    },
+    "note": "Very Negative and Negative both collapse to NEGATIVE in the pipeline; Very Positive and Positive both collapse to POSITIVE. The split shows how much intensity information the 5->3 rule discards."
+  },
+  "vader_threshold_sweep": {
+    "0.05": {
+      "POSITIVE": 61.2,
+      "NEUTRAL": 23.8,
+      "NEGATIVE": 15.1
+    },
+    "0.10": {
+      "POSITIVE": 59.9,
+      "NEUTRAL": 25.7,
+      "NEGATIVE": 14.4
+    },
+    "0.20": {
+      "POSITIVE": 57.6,
+      "NEUTRAL": 30.0,
+      "NEGATIVE": 12.3
+    },
+    "0.30": {
+      "POSITIVE": 53.9,
+      "NEUTRAL": 36.5,
+      "NEGATIVE": 9.7
+    },
+    "0.40": {
+      "POSITIVE": 47.9,
+      "NEUTRAL": 44.7,
+      "NEGATIVE": 7.4
+    },
+    "0.50": {
+      "POSITIVE": 38.2,
+      "NEUTRAL": 56.8,
+      "NEGATIVE": 5.1
+    },
+    "note": "Label share only. Which threshold is BEST cannot be determined without ground truth; that is computed in stage 4b once labels exist."
+  }
+}

@@ -1,0 +1,36 @@
+{
+ "uid": "Kk-RKpTAXmA_36",
+ "system": "four_channel",
+ "video_id": "Kk-RKpTAXmA",
+ "segment_id": 36,
+ "split": "holdout",
+ "payload": {
+  "segment_id": 36,
+  "start_s": 158.32,
+  "end_s": 164.29999999999998,
+  "transcript": "So that's in like your typical speaking frequency. And as low as 40 decibels or even more",
+  "transcript_sentiment": "NEUTRAL (0.76)",
+  "vocal_emotion": "NEUTRAL (arousal 0.59)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "sad (0.84)",
+  "video_comment_sentiment": "POSITIVE (0.97)"
+ },
+ "seconds": 4.664,
+ "raw": "{\n  \"segment_id\": 36,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"video_comment_sentiment\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and tone suggest neutrality, but their facial expression is sad, and the audience's comments are overwhelmingly positive, indicating a conflict between the creator's emotional state and the audience's reaction.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 36,
+  "start_s": 158.32,
+  "end_s": 164.29999999999998,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: video_comment_sentiment"
+  ],
+  "flagged": false
+ }
+}

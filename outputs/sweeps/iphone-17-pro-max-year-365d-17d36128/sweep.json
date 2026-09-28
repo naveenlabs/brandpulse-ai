@@ -1,0 +1,166 @@
+{
+  "sweep_id": "iphone-17-pro-max-year-365d-17d36128",
+  "subject": "iPhone 17 Pro Max",
+  "subject_kind": "product",
+  "window": "year",
+  "offset_days": 365,
+  "status": "partial",
+  "controller": "llama3.1:8b",
+  "finished_at": 1790416078.02245,
+  "summary": {
+    "video_count": 4,
+    "authenticity": {
+      "mean": 53.55,
+      "min": 45.95,
+      "max": 59.86,
+      "spread": 13.91,
+      "stdev": 6.13,
+      "values": [
+        49.11,
+        59.3,
+        59.86,
+        45.95
+      ]
+    },
+    "brand_health": {
+      "mean": 72.38,
+      "min": 52.63,
+      "max": 82.81,
+      "spread": 30.18,
+      "stdev": 11.64,
+      "values": [
+        77.42,
+        52.63,
+        82.81,
+        76.64
+      ]
+    },
+    "segments_total": 761,
+    "flagged_total": 20,
+    "flagged_share": 0.026281208935611037,
+    "comments_total": 400,
+    "comment_distribution": {
+      "POSITIVE": 230,
+      "NEUTRAL": 118,
+      "NEGATIVE": 52
+    },
+    "spread_verdict": "these videos differ noticeably from each other",
+    "note": "Mean of 4 videos. Too few to generalise from, and the range matters more than the average.",
+    "means_not": "This is how much the four channels disagreed with each other, averaged across these videos. It is not a measure of whether the brand is liked, and not a measure of whether anyone was honest."
+  },
+  "members": [
+    {
+      "video_id": "X763A7yGh5E",
+      "title": "iPhone 17 Pro Max Review - Even BETTER Than You Think!",
+      "channel": "Dave2D",
+      "published_at": "2025-09-17T12:11:12Z",
+      "duration_s": 589,
+      "comment_count": 2268,
+      "authenticity_score": null,
+      "brand_health_score": null,
+      "analysed": false
+    },
+    {
+      "video_id": "xRla0izRxqU",
+      "title": "iPhone 17 Pro Review - Something’s Missing",
+      "channel": "Mrwhosetheboss",
+      "published_at": "2025-09-22T14:45:45Z",
+      "duration_s": 693,
+      "comment_count": 4286,
+      "authenticity_score": 49.11,
+      "brand_health_score": 77.42,
+      "analysed": true
+    },
+    {
+      "video_id": "LhiH6V30LvY",
+      "title": "iPhone 17 & iPhone 17 Pro Max Unboxing Test - This Time its Different!",
+      "channel": "Technology Gyan",
+      "published_at": "2025-09-19T03:00:45Z",
+      "duration_s": 1046,
+      "comment_count": 2075,
+      "authenticity_score": 59.3,
+      "brand_health_score": 52.63,
+      "analysed": true
+    },
+    {
+      "video_id": "M4CvP6ndrBw",
+      "title": "iPhone 17 Pro | Pro Max - TIPS, TRICKS & HIDDEN FEATURES!",
+      "channel": "Hayls World",
+      "published_at": "2025-09-22T20:03:45Z",
+      "duration_s": 705,
+      "comment_count": 1671,
+      "authenticity_score": 59.86,
+      "brand_health_score": 82.81,
+      "analysed": true
+    },
+    {
+      "video_id": "TZfNHV24sR4",
+      "title": "Apple made an iPhone for me - iPhone 17 Pro",
+      "channel": "ShortCircuit",
+      "published_at": "2025-09-25T19:15:30Z",
+      "duration_s": 832,
+      "comment_count": 1665,
+      "authenticity_score": 45.95,
+      "brand_health_score": 76.64,
+      "analysed": true
+    }
+  ],
+  "failed": [
+    {
+      "video_id": "X763A7yGh5E",
+      "title": "iPhone 17 Pro Max Review - Even BETTER Than You Think!",
+      "reason": "yt-dlp failed to download 'https://youtu.be/X763A7yGh5E': ERROR: unable to download video data: HTTP Error 403: Forbidden",
+      "detail": "RuntimeError"
+    }
+  ],
+  "selection": {
+    "query_used": "iPhone 17 Pro Max review",
+    "published_after": "2024-09-26T07:49:38Z",
+    "published_before": "2025-09-26T07:49:38Z",
+    "considered": 25,
+    "rejected": [
+      {
+        "video_id": "TA6XKckCXVY",
+        "title": "iPhone 17 Pro Max ကဘာထူးလဲ?",
+        "verdict": "not English (my)"
+      },
+      {
+        "video_id": "e2l8BFXWMmc",
+        "title": "The REALITY of iPhone 17 Pro Max After Detailed Testing!",
+        "verdict": "not English (hi)"
+      },
+      {
+        "video_id": "hc8pWLBgt5Y",
+        "title": "iPhone 17, iPhone 17 Pro Max Unboxing & First Look ⚡Well Done Apple!",
+        "verdict": "not English (hi)"
+      },
+      {
+        "video_id": "QmTylpvtMOk",
+        "title": "iPhone 17 Pro Max Unboxing in ಕನ್ನಡ 🤯 ಹೊಸ Look ⚡ಹೊಸ Color | Time to Upgrade??",
+        "verdict": "not English (kn)"
+      },
+      {
+        "video_id": "uycCCHeoh6Y",
+        "title": "Realiti sebenar  iPhone 17 Pro Max... (72 jam kemudian)",
+        "verdict": "not English (ms)"
+      },
+      {
+        "video_id": "zSvmGD-K7n8",
+        "title": "முடிச்சுரலாமா‼️  iPhone 17 Series📱 Unboxing 🔥 @MrPalamOfficial SHOCKED",
+        "verdict": "not English (ta)"
+      },
+      {
+        "video_id": "hBrDdKVXKkE",
+        "title": "iPhone 17 Pro & iPhone 17 Pro Max Unboxing & First Look - The Ultimate \"PRO\" Experience!🔥🔥🔥",
+        "verdict": "not English (hi)"
+      },
+      {
+        "video_id": "uMUaqZ7uesM",
+        "title": "iPhone 17 Pro Max Unboxing HandsOn | First In Pakistan?",
+        "verdict": "not English (ur)"
+      }
+    ]
+  },
+  "bias_caveat": "IMPORTANT: Facial emotion recognition (DeepFace) has documented accuracy disparities across skin tone and gender (Buolamwini & Gebru, 2018; Fan et al., 2023). Authenticity scores informed by facial data should be interpreted with this limitation in mind.",
+  "vocal_caveat": "IMPORTANT: The vocal emotion channel is the second weakest of the four, after facial emotion, and is explicitly down-weighted. Benchmarked on 150 hand-rated clips from 6 speakers (vocal_bench/), the adopted model scores 48.9% three-class accuracy on held-out speakers - better than the model it replaced, which at 34.0% was significantly worse than always guessing NEUTRAL (p = 0.0070), but still not reliably better than that constant. No model tested beat it. Conflicts attributed to the vocal channel alone are damped accordingly, and per-segment claims should not rest on this channel. Read the within-video figure, not the headline: this report compares segments inside one video, and the channel's rank correlation with human judgement measured within a video is +0.159 across 147 clips and +0.056 on unseen speakers (vocal_bench/SPEAKER_NORM_RESULT.md). Most of its apparent accuracy is a between-video effect that says more about the speaker's habitual energy than about any individual moment."
+}

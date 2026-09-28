@@ -1,0 +1,151 @@
+{
+  "n": 150,
+  "truth_distribution": {
+    "POSITIVE": 98,
+    "NEUTRAL": 33,
+    "NEGATIVE": 19
+  },
+  "note": "Near-domain generalisation test. Decision rule in holdout/HOLDOUT_PROTOCOL.md.",
+  "primary_negative_recall": {
+    "n_negatives": 19,
+    "base_correct": 7,
+    "finetuned_correct": 12,
+    "base_recall": 0.3684210526315789,
+    "finetuned_recall": 0.631578947368421,
+    "delta": 0.2631578947368421,
+    "mcnemar": {
+      "only_base": 0,
+      "only_finetuned": 5,
+      "p_value_exact": 0.0625,
+      "significant": false
+    },
+    "original_test_set_for_comparison": {
+      "base_recall": 0.493,
+      "finetuned_recall": 0.672,
+      "delta": 0.179,
+      "p": 0.0118,
+      "n_negatives": 67
+    }
+  },
+  "base": {
+    "correct": 104,
+    "accuracy": 0.6933333333333334,
+    "ci95": [
+      0.61548006161501,
+      0.761531097915312
+    ],
+    "per_class": {
+      "NEGATIVE": {
+        "precision": 0.5833333333333334,
+        "recall": 0.3684210526315789,
+        "f1": 0.4516129032258065,
+        "support": 19,
+        "tp": 7,
+        "fp": 5,
+        "fn": 12
+      },
+      "NEUTRAL": {
+        "precision": 0.4444444444444444,
+        "recall": 0.7272727272727273,
+        "f1": 0.5517241379310345,
+        "support": 33,
+        "tp": 24,
+        "fp": 30,
+        "fn": 9
+      },
+      "POSITIVE": {
+        "precision": 0.8690476190476191,
+        "recall": 0.7448979591836735,
+        "f1": 0.8021978021978022,
+        "support": 98,
+        "tp": 73,
+        "fp": 11,
+        "fn": 25
+      },
+      "macro_f1": 0.6018449477848811
+    },
+    "pred_distribution": {
+      "POSITIVE": 84,
+      "NEUTRAL": 54,
+      "NEGATIVE": 12
+    }
+  },
+  "fine_tuned": {
+    "correct": 118,
+    "accuracy": 0.7866666666666666,
+    "ci95": [
+      0.7143779835916132,
+      0.8446385632981747
+    ],
+    "per_class": {
+      "NEGATIVE": {
+        "precision": 0.631578947368421,
+        "recall": 0.631578947368421,
+        "f1": 0.631578947368421,
+        "support": 19,
+        "tp": 12,
+        "fp": 7,
+        "fn": 7
+      },
+      "NEUTRAL": {
+        "precision": 0.5853658536585366,
+        "recall": 0.7272727272727273,
+        "f1": 0.6486486486486487,
+        "support": 33,
+        "tp": 24,
+        "fp": 17,
+        "fn": 9
+      },
+      "POSITIVE": {
+        "precision": 0.9111111111111111,
+        "recall": 0.8367346938775511,
+        "f1": 0.8723404255319148,
+        "support": 98,
+        "tp": 82,
+        "fp": 8,
+        "fn": 16
+      },
+      "macro_f1": 0.7175226738496615
+    },
+    "pred_distribution": {
+      "POSITIVE": 90,
+      "NEUTRAL": 41,
+      "NEGATIVE": 19
+    }
+  },
+  "accuracy_comparison": {
+    "delta_pts": 9.333333333333334,
+    "mcnemar": {
+      "only_base": 5,
+      "only_finetuned": 19,
+      "p_value_exact": 0.006610751152038574,
+      "significant": true
+    }
+  },
+  "false_negative_alarms": {
+    "base": 5,
+    "finetuned": 7
+  },
+  "video_level": {
+    "per_video": {
+      "0jHtyF_rCqU": {
+        "human_net": 66.66666666666667,
+        "base_net": 52.0,
+        "finetuned_net": 58.666666666666664,
+        "base_error": -14.666666666666671,
+        "finetuned_error": -8.000000000000007,
+        "n": 75
+      },
+      "32slGhAH3Xc": {
+        "human_net": 38.666666666666664,
+        "base_net": 44.0,
+        "finetuned_net": 36.0,
+        "base_error": 5.333333333333336,
+        "finetuned_error": -2.6666666666666643,
+        "n": 75
+      }
+    },
+    "mae_base": 10.000000000000004,
+    "mae_finetuned": 5.333333333333336
+  }
+}

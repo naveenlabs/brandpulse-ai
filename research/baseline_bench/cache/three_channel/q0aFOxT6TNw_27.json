@@ -1,0 +1,36 @@
+{
+ "uid": "q0aFOxT6TNw_27",
+ "system": "three_channel",
+ "video_id": "q0aFOxT6TNw",
+ "segment_id": 27,
+ "split": "selection",
+ "payload": {
+  "segment_id": 27,
+  "start_s": 173.42,
+  "end_s": 178.1,
+  "transcript": "they do specifically process each of the images shot in a 2x crop to be slightly sharper",
+  "transcript_sentiment": "NEUTRAL (0.61)",
+  "vocal_emotion": "NEUTRAL (arousal 0.58)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.98)"
+ },
+ "seconds": 4.599,
+ "raw": "{\n  \"segment_id\": 27,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"video_comment_sentiment\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and tone suggest neutrality, but their face shows no emotion and the audience's comments are overwhelmingly positive, indicating a conflict between the creator's intended message and their actual emotional expression.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 27,
+  "start_s": 173.42,
+  "end_s": 178.1,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: video_comment_sentiment"
+  ],
+  "flagged": false
+ }
+}

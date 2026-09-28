@@ -1,0 +1,36 @@
+{
+ "uid": "4KbrxIpQgkM_50",
+ "system": "three_channel",
+ "video_id": "4KbrxIpQgkM",
+ "segment_id": 50,
+ "split": "selection",
+ "payload": {
+  "segment_id": 50,
+  "start_s": 262.78,
+  "end_s": 265.94,
+  "transcript": "Well, technically no. The Snapdragon 8 Elite still smokes this.",
+  "transcript_sentiment": "NEUTRAL (0.57)",
+  "vocal_emotion": "NEUTRAL (arousal 0.55)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.99)"
+ },
+ "seconds": 4.639,
+ "raw": "{\n  \"segment_id\": 50,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"vocal_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and tone suggest neutrality, but their facial expression is undetected and their vocal tone is also neutral, which is inconsistent with the positive sentiment expressed by the audience in the comments.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 50,
+  "start_s": 262.78,
+  "end_s": 265.94,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: vocal_emotion"
+  ],
+  "flagged": false
+ }
+}

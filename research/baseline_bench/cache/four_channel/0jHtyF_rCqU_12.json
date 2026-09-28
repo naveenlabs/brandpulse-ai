@@ -1,0 +1,36 @@
+{
+ "uid": "0jHtyF_rCqU_12",
+ "system": "four_channel",
+ "video_id": "0jHtyF_rCqU",
+ "segment_id": 12,
+ "split": "selection",
+ "payload": {
+  "segment_id": 12,
+  "start_s": 66.4,
+  "end_s": 70.28,
+  "transcript": "The USB-C cable. And a little insert, which has the case.",
+  "transcript_sentiment": "NEUTRAL (0.54)",
+  "vocal_emotion": "NEUTRAL (arousal 0.48)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.98)"
+ },
+ "seconds": 9.743,
+ "raw": "{\n  \"segment_id\": 12,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"vocal_prosody\"],\n  \"flags\": [],\n  \"narrative\": \"The transcript and vocal channels indicate a neutral sentiment, but the facial emotion channel shows no emotion detected, and the video comment channel indicates a strongly positive sentiment, indicating a conflict between the creator's words and the audience's response.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 12,
+  "start_s": 66.4,
+  "end_s": 70.28,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: vocal_prosody"
+  ],
+  "flagged": false
+ }
+}

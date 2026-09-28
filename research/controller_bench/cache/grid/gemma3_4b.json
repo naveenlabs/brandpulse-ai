@@ -1,0 +1,2762 @@
+{
+ "grid_000": {
+  "probe_id": "grid_000",
+  "raw": {
+   "segment_id": 0,
+   "conflict_score": 0.1,
+   "channels_in_conflict": [],
+   "flags": [],
+   "narrative": "All channels indicate a positive sentiment regarding the product description. There is minimal disagreement between the channels, and the vocal channel's reliability score suggests its assessment may be less trustworthy than the other channels."
+  },
+  "parsed": true,
+  "conflict_score": 0.1,
+  "channels": [],
+  "flags": [],
+  "narrative": "All channels indicate a positive sentiment regarding the product description. There is minimal disagreement between the channels, and the vocal channel's reliability score suggests its assessment may be less trustworthy than the other channels.",
+  "latency_s": 6.7957,
+  "error": null
+ },
+ "grid_001": {
+  "probe_id": "grid_001",
+  "raw": {
+   "segment_id": 1,
+   "conflict_score": 0.15,
+   "channels_in_conflict": [
+    "vocal_reliability",
+    "vocal_emotion",
+    "facial_emotion"
+   ],
+   "flags": [],
+   "narrative": "There's a minor disagreement between the creator's stated positive sentiment and their facial expression, both rated as positive. The vocal channel's low reliability score (0.489) makes its positive arousal reading less convincing, and the audience comments remain neutral. This suggests a small level of uncertainty about the creator's genuine enthusiasm."
+  },
+  "parsed": true,
+  "conflict_score": 0.15,
+  "channels": [
+   "vocal_reliability",
+   "vocal_emotion",
+   "facial_emotion"
+  ],
+  "flags": [],
+  "narrative": "There's a minor disagreement between the creator's stated positive sentiment and their facial expression, both rated as positive. The vocal channel's low reliability score (0.489) makes its positive arousal reading less convincing, and the audience comments remain neutral. This suggests a small level of uncertainty about the creator's genuine enthusiasm.",
+  "latency_s": 4.214,
+  "error": null
+ },
+ "grid_002": {
+  "probe_id": "grid_002",
+  "raw": {
+   "segment_id": 2,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement between the creator's factual description (POSITIVE), their apparent happiness (POSITIVE), and the audience's negative reaction (NEGATIVE). The low vocal reliability (0.489) further suggests that the vocal channel's assessment is questionable, making the conflict between the transcript and comment channels particularly concerning."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement between the creator's factual description (POSITIVE), their apparent happiness (POSITIVE), and the audience's negative reaction (NEGATIVE). The low vocal reliability (0.489) further suggests that the vocal channel's assessment is questionable, making the conflict between the transcript and comment channels particularly concerning.",
+  "latency_s": 4.1058,
+  "error": null
+ },
+ "grid_003": {
+  "probe_id": "grid_003",
+  "raw": {
+   "segment_id": 3,
+   "conflict_score": 0.1,
+   "channels_in_conflict": [
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a minor disagreement between the creator's neutral facial expression and the positive sentiment expressed in both the transcript and the audience comments. The creator's voice also exhibits positive sentiment, but the low vocal reliability score suggests this is a weak signal. Overall, the segment indicates a generally positive reaction to the product description."
+  },
+  "parsed": true,
+  "conflict_score": 0.1,
+  "channels": [
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a minor disagreement between the creator's neutral facial expression and the positive sentiment expressed in both the transcript and the audience comments. The creator's voice also exhibits positive sentiment, but the low vocal reliability score suggests this is a weak signal. Overall, the segment indicates a generally positive reaction to the product description.",
+  "latency_s": 4.1186,
+  "error": null
+ },
+ "grid_004": {
+  "probe_id": "grid_004",
+  "raw": {
+   "segment_id": 4,
+   "conflict_score": 0.15,
+   "channels_in_conflict": [
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a minor disagreement between the creator's stated neutral facial expression and the positive vocal emotion and comment sentiment. The low vocal reliability score suggests the voice data is less trustworthy, leading to a low conflict score. Overall, the segment appears to be conveying a neutral message."
+  },
+  "parsed": true,
+  "conflict_score": 0.15,
+  "channels": [
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a minor disagreement between the creator's stated neutral facial expression and the positive vocal emotion and comment sentiment. The low vocal reliability score suggests the voice data is less trustworthy, leading to a low conflict score. Overall, the segment appears to be conveying a neutral message.",
+  "latency_s": 3.9116,
+  "error": null
+ },
+ "grid_005": {
+  "probe_id": "grid_005",
+  "raw": {
+   "segment_id": 5,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement between the neutral facial expression, the positive transcript and vocal sentiment, and the negative audience comment. The low vocal reliability score further suggests the vocal channel is unreliable in this instance, highlighting a potential disconnect between the creator's stated enthusiasm and audience reaction. This indicates a possible issue with the product or creator's delivery."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement between the neutral facial expression, the positive transcript and vocal sentiment, and the negative audience comment. The low vocal reliability score further suggests the vocal channel is unreliable in this instance, highlighting a potential disconnect between the creator's stated enthusiasm and audience reaction. This indicates a possible issue with the product or creator's delivery.",
+  "latency_s": 4.1327,
+  "error": null
+ },
+ "grid_006": {
+  "probe_id": "grid_006",
+  "raw": {
+   "segment_id": 6,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "vocal_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement in sentiment across the channels. While the transcript and comments express positive sentiment, the creator's facial expression and vocal tone are both identified as sad. The low vocal reliability further complicates the assessment, suggesting the vocal channel's judgment is unreliable in this instance."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "vocal_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement in sentiment across the channels. While the transcript and comments express positive sentiment, the creator's facial expression and vocal tone are both identified as sad. The low vocal reliability further complicates the assessment, suggesting the vocal channel's judgment is unreliable in this instance.",
+  "latency_s": 3.9445,
+  "error": null
+ },
+ "grid_007": {
+  "probe_id": "grid_007",
+  "raw": {
+   "segment_id": 7,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "vocal_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant conflict in sentiment here: the transcript and video comments express positivity, while the creator's face and voice also convey sadness. Given the low reliability of the vocal channel, the disagreement between the facial expression and the vocal channel is the most concerning indicator of potential incongruity in the creator's genuine feelings."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "vocal_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant conflict in sentiment here: the transcript and video comments express positivity, while the creator's face and voice also convey sadness. Given the low reliability of the vocal channel, the disagreement between the facial expression and the vocal channel is the most concerning indicator of potential incongruity in the creator's genuine feelings.",
+  "latency_s": 4.1312,
+  "error": null
+ },
+ "grid_008": {
+  "probe_id": "grid_008",
+  "raw": {
+   "segment_id": 8,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement in sentiment across the channels. While the transcript and video comments express positive sentiment, the creator's facial expression indicates sadness. The low vocal reliability further complicates the assessment, suggesting the vocal channel's positive assessment is not well-supported."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement in sentiment across the channels. While the transcript and video comments express positive sentiment, the creator's facial expression indicates sadness. The low vocal reliability further complicates the assessment, suggesting the vocal channel's positive assessment is not well-supported.",
+  "latency_s": 3.6879,
+  "error": null
+ },
+ "grid_009": {
+  "probe_id": "grid_009",
+  "raw": {
+   "segment_id": 9,
+   "conflict_score": 0.05,
+   "channels_in_conflict": [],
+   "flags": [],
+   "narrative": "All channels indicate a positive sentiment regarding the product description. The transcript, facial expression, and comment sentiment all align with a positive valence, while the vocal channel provides supporting evidence but with low reliability."
+  },
+  "parsed": true,
+  "conflict_score": 0.05,
+  "channels": [],
+  "flags": [],
+  "narrative": "All channels indicate a positive sentiment regarding the product description. The transcript, facial expression, and comment sentiment all align with a positive valence, while the vocal channel provides supporting evidence but with low reliability.",
+  "latency_s": 3.012,
+  "error": null
+ },
+ "grid_010": {
+  "probe_id": "grid_010",
+  "raw": {
+   "segment_id": 10,
+   "conflict_score": 0.15,
+   "channels_in_conflict": [
+    "vocal_emotion",
+    "transcript_sentiment",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a minor disagreement between the transcript and the video comments, both of which are neutral, and the vocal channel which indicates a positive sentiment. The low vocal reliability score suggests this is a weak signal, and the lack of facial emotion data further reduces the confidence in the overall sentiment assessment."
+  },
+  "parsed": true,
+  "conflict_score": 0.15,
+  "channels": [
+   "vocal_emotion",
+   "transcript_sentiment",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a minor disagreement between the transcript and the video comments, both of which are neutral, and the vocal channel which indicates a positive sentiment. The low vocal reliability score suggests this is a weak signal, and the lack of facial emotion data further reduces the confidence in the overall sentiment assessment.",
+  "latency_s": 3.9626,
+  "error": null
+ },
+ "grid_011": {
+  "probe_id": "grid_011",
+  "raw": {
+   "segment_id": 11,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "vocal_prosody",
+    "comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement between the creator's factual description (POSITIVE), the neutral facial expression, and the audience's negative reaction. The creator's voice exhibits positive arousal, but this is contradicted by the audience's sentiment, suggesting a potential disconnect between the product's perceived value and the audience's opinion. Given the low reliability of the vocal channel, this conflict warrants careful attention."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "vocal_prosody",
+   "comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement between the creator's factual description (POSITIVE), the neutral facial expression, and the audience's negative reaction. The creator's voice exhibits positive arousal, but this is contradicted by the audience's sentiment, suggesting a potential disconnect between the product's perceived value and the audience's opinion. Given the low reliability of the vocal channel, this conflict warrants careful attention.",
+  "latency_s": 4.4566,
+  "error": null
+ },
+ "grid_012": {
+  "probe_id": "grid_012",
+  "raw": {
+   "segment_id": 12,
+   "conflict_score": 0.1,
+   "channels_in_conflict": [
+    "vocal_emotion",
+    "transcript_sentiment",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There is a minor disagreement between the channels regarding the sentiment of the segment. The transcript, facial expression, and comment sentiment all indicate a positive tone, while the vocal channel reports a neutral sentiment with low arousal. Given the low reliability of the vocal channel, this conflict is considered weak."
+  },
+  "parsed": true,
+  "conflict_score": 0.1,
+  "channels": [
+   "vocal_emotion",
+   "transcript_sentiment",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There is a minor disagreement between the channels regarding the sentiment of the segment. The transcript, facial expression, and comment sentiment all indicate a positive tone, while the vocal channel reports a neutral sentiment with low arousal. Given the low reliability of the vocal channel, this conflict is considered weak.",
+  "latency_s": 4.0402,
+  "error": null
+ },
+ "grid_013": {
+  "probe_id": "grid_013",
+  "raw": {
+   "segment_id": 13,
+   "conflict_score": 0.15,
+   "channels_in_conflict": [
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a minor disagreement between the creator's stated positive sentiment and their facial expression and the audience's comments, which are also neutral. The vocal channel's low reliability score suggests its assessment is questionable, and the overall sentiment is leaning towards neutral due to the lack of strong signals from any single channel."
+  },
+  "parsed": true,
+  "conflict_score": 0.15,
+  "channels": [
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a minor disagreement between the creator's stated positive sentiment and their facial expression and the audience's comments, which are also neutral. The vocal channel's low reliability score suggests its assessment is questionable, and the overall sentiment is leaning towards neutral due to the lack of strong signals from any single channel.",
+  "latency_s": 3.9898,
+  "error": null
+ },
+ "grid_014": {
+  "probe_id": "grid_014",
+  "raw": {
+   "segment_id": 14,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement between the creator's stated positive sentiment, their apparent happiness, and the audience's negative reaction to the product description. The low vocal reliability score further complicates the interpretation, suggesting the creator's tone may not align with the overall sentiment. This indicates a potential issue with the product or the way it's being presented."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement between the creator's stated positive sentiment, their apparent happiness, and the audience's negative reaction to the product description. The low vocal reliability score further complicates the interpretation, suggesting the creator's tone may not align with the overall sentiment. This indicates a potential issue with the product or the way it's being presented.",
+  "latency_s": 4.1385,
+  "error": null
+ },
+ "grid_015": {
+  "probe_id": "grid_015",
+  "raw": {
+   "segment_id": 15,
+   "conflict_score": 0.05,
+   "channels_in_conflict": [],
+   "flags": [],
+   "narrative": "All channels indicate a positive sentiment regarding the product description. There is minimal disagreement, with the vocal channel exhibiting neutral emotion and a low reliability score, suggesting it may not be a reliable indicator of the creator's true feelings."
+  },
+  "parsed": true,
+  "conflict_score": 0.05,
+  "channels": [],
+  "flags": [],
+  "narrative": "All channels indicate a positive sentiment regarding the product description. There is minimal disagreement, with the vocal channel exhibiting neutral emotion and a low reliability score, suggesting it may not be a reliable indicator of the creator's true feelings.",
+  "latency_s": 3.1943,
+  "error": null
+ },
+ "grid_016": {
+  "probe_id": "grid_016",
+  "raw": {
+   "segment_id": 16,
+   "conflict_score": 0.15,
+   "channels_in_conflict": [
+    "vocal_emotion",
+    "transcript_sentiment",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There is a minor disagreement between the transcript, facial expression, and comment sentiment, all indicating neutral sentiment. The vocal channel's low reliability score suggests its assessment is uncertain, and the overall sentiment is consistent across the other channels. This indicates a very low level of conflict."
+  },
+  "parsed": true,
+  "conflict_score": 0.15,
+  "channels": [
+   "vocal_emotion",
+   "transcript_sentiment",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There is a minor disagreement between the transcript, facial expression, and comment sentiment, all indicating neutral sentiment. The vocal channel's low reliability score suggests its assessment is uncertain, and the overall sentiment is consistent across the other channels. This indicates a very low level of conflict.",
+  "latency_s": 3.7856,
+  "error": null
+ },
+ "grid_017": {
+  "probe_id": "grid_017",
+  "raw": {
+   "segment_id": 17,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "vocal_prosody",
+    "comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement between the creator's stated positive sentiment about the product, the neutral facial expression, and the negative audience comments. The creator's voice also appears neutral, but with low reliability, further complicating the assessment. This suggests a potential disconnect between the creator's intended message and the audience's reaction."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "vocal_prosody",
+   "comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement between the creator's stated positive sentiment about the product, the neutral facial expression, and the negative audience comments. The creator's voice also appears neutral, but with low reliability, further complicating the assessment. This suggests a potential disconnect between the creator's intended message and the audience's reaction.",
+  "latency_s": 4.1354,
+  "error": null
+ },
+ "grid_018": {
+  "probe_id": "grid_018",
+  "raw": {
+   "segment_id": 18,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "vocal_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement between the creator's stated positive sentiment, their facial expression of sadness, and the positive sentiment of the audience comments. The neutral vocal emotion, combined with low vocal reliability, further complicates the assessment, suggesting a potential disconnect between the creator's intended tone and the audience's reaction. This indicates a notable conflict in the overall brand sentiment."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "vocal_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement between the creator's stated positive sentiment, their facial expression of sadness, and the positive sentiment of the audience comments. The neutral vocal emotion, combined with low vocal reliability, further complicates the assessment, suggesting a potential disconnect between the creator's intended tone and the audience's reaction. This indicates a notable conflict in the overall brand sentiment.",
+  "latency_s": 4.3359,
+  "error": null
+ },
+ "grid_019": {
+  "probe_id": "grid_019",
+  "raw": {
+   "segment_id": 19,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "vocal_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant conflict in sentiment here: the transcript and comments express positivity, while the creator's face and voice convey sadness. The low vocal reliability further complicates the assessment, suggesting the voice data is unreliable and doesn't support the overall positive sentiment."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "vocal_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant conflict in sentiment here: the transcript and comments express positivity, while the creator's face and voice convey sadness. The low vocal reliability further complicates the assessment, suggesting the voice data is unreliable and doesn't support the overall positive sentiment.",
+  "latency_s": 3.8525,
+  "error": null
+ },
+ "grid_020": {
+  "probe_id": "grid_020",
+  "raw": {
+   "segment_id": 20,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement between the creator's stated positive sentiment, their facial expression of sadness, and the audience's negative comments. The vocal channel's low reliability further complicates the interpretation, suggesting the creator may not be genuinely expressing positivity. This indicates a potential disconnect between the creator's intended message and the audience's reaction."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement between the creator's stated positive sentiment, their facial expression of sadness, and the audience's negative comments. The vocal channel's low reliability further complicates the interpretation, suggesting the creator may not be genuinely expressing positivity. This indicates a potential disconnect between the creator's intended message and the audience's reaction.",
+  "latency_s": 4.0681,
+  "error": null
+ },
+ "grid_021": {
+  "probe_id": "grid_021",
+  "raw": {
+   "segment_id": 21,
+   "conflict_score": 0.1,
+   "channels_in_conflict": [
+    "vocal_emotion",
+    "facial_emotion",
+    "vocal_reliability"
+   ],
+   "flags": [],
+   "narrative": "There is a minor disagreement between the transcript and the vocal channel, both of which express positive sentiment. The facial and video comment channels detect no emotion, suggesting a lack of emotional expression from the creator, while the vocal channel's low reliability score further diminishes its significance in this assessment."
+  },
+  "parsed": true,
+  "conflict_score": 0.1,
+  "channels": [
+   "vocal_emotion",
+   "facial_emotion",
+   "vocal_reliability"
+  ],
+  "flags": [],
+  "narrative": "There is a minor disagreement between the transcript and the vocal channel, both of which express positive sentiment. The facial and video comment channels detect no emotion, suggesting a lack of emotional expression from the creator, while the vocal channel's low reliability score further diminishes its significance in this assessment.",
+  "latency_s": 3.7368,
+  "error": null
+ },
+ "grid_022": {
+  "probe_id": "grid_022",
+  "raw": {
+   "segment_id": 22,
+   "conflict_score": 0.15,
+   "channels_in_conflict": [
+    "vocal_emotion",
+    "transcript_sentiment",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There is a minor disagreement between the transcript and the vocal channel, both indicating positive sentiment, but the facial and comment channels detect no emotion. The low vocal reliability score further reduces the significance of this conflict."
+  },
+  "parsed": true,
+  "conflict_score": 0.15,
+  "channels": [
+   "vocal_emotion",
+   "transcript_sentiment",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There is a minor disagreement between the transcript and the vocal channel, both indicating positive sentiment, but the facial and comment channels detect no emotion. The low vocal reliability score further reduces the significance of this conflict.",
+  "latency_s": 3.428,
+  "error": null
+ },
+ "grid_023": {
+  "probe_id": "grid_023",
+  "raw": {
+   "segment_id": 23,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "vocal_prosody",
+    "comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement between the creator's positive transcript, the neutral vocal tone, and the negative audience sentiment regarding this product description. The lack of facial emotion data further complicates the assessment, suggesting a potential disconnect between the creator's intended message and the audience's reaction. Given the low reliability of the vocal channel, the conflict is substantial."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "vocal_prosody",
+   "comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement between the creator's positive transcript, the neutral vocal tone, and the negative audience sentiment regarding this product description. The lack of facial emotion data further complicates the assessment, suggesting a potential disconnect between the creator's intended message and the audience's reaction. Given the low reliability of the vocal channel, the conflict is substantial.",
+  "latency_s": 4.2224,
+  "error": null
+ },
+ "grid_024": {
+  "probe_id": "grid_024",
+  "raw": {
+   "segment_id": 24,
+   "conflict_score": 0.35,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a notable disagreement between the creator's stated positive sentiment about the product and their vocal tone, which appears negative. The creator's face and the audience's comments also express positive sentiment, suggesting a potential disconnect between the creator's genuine feelings and the perceived value of the product. Given the low reliability of the vocal channel, this conflict is moderate."
+  },
+  "parsed": true,
+  "conflict_score": 0.35,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a notable disagreement between the creator's stated positive sentiment about the product and their vocal tone, which appears negative. The creator's face and the audience's comments also express positive sentiment, suggesting a potential disconnect between the creator's genuine feelings and the perceived value of the product. Given the low reliability of the vocal channel, this conflict is moderate.",
+  "latency_s": 4.3592,
+  "error": null
+ },
+ "grid_025": {
+  "probe_id": "grid_025",
+  "raw": {
+   "segment_id": 25,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant conflict between the creator's stated positive sentiment about the product and their negative vocal tone, as well as their happy facial expression. The audience comments remain neutral, suggesting a disconnect between the creator's apparent enthusiasm and the objective description of the product's dimensions. Given the low reliability of the vocal channel, this disagreement is notable."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant conflict between the creator's stated positive sentiment about the product and their negative vocal tone, as well as their happy facial expression. The audience comments remain neutral, suggesting a disconnect between the creator's apparent enthusiasm and the objective description of the product's dimensions. Given the low reliability of the vocal channel, this disagreement is notable.",
+  "latency_s": 4.2866,
+  "error": null
+ },
+ "grid_026": {
+  "probe_id": "grid_026",
+  "raw": {
+   "segment_id": 26,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant conflict between the creator's stated positive sentiment about the product and the negative sentiment expressed by both their facial expression and the audience's comments. The creator's voice also indicates negative emotion, though with low confidence, suggesting a potential disconnect between the creator's intended message and the actual emotional response being conveyed."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant conflict between the creator's stated positive sentiment about the product and the negative sentiment expressed by both their facial expression and the audience's comments. The creator's voice also indicates negative emotion, though with low confidence, suggesting a potential disconnect between the creator's intended message and the actual emotional response being conveyed.",
+  "latency_s": 4.1712,
+  "error": null
+ },
+ "grid_027": {
+  "probe_id": "grid_027",
+  "raw": {
+   "segment_id": 27,
+   "conflict_score": 0.35,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a notable disagreement between the creator's stated positive sentiment about the product and the negative emotional tone conveyed through their voice and facial expression. The audience also expresses positive sentiment, suggesting a potential disconnect between the creator's genuine feelings and the perceived value of the product. Given the low reliability of the vocal channel, this conflict is moderate."
+  },
+  "parsed": true,
+  "conflict_score": 0.35,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a notable disagreement between the creator's stated positive sentiment about the product and the negative emotional tone conveyed through their voice and facial expression. The audience also expresses positive sentiment, suggesting a potential disconnect between the creator's genuine feelings and the perceived value of the product. Given the low reliability of the vocal channel, this conflict is moderate.",
+  "latency_s": 4.2856,
+  "error": null
+ },
+ "grid_028": {
+  "probe_id": "grid_028",
+  "raw": {
+   "segment_id": 28,
+   "conflict_score": 0.35,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a notable conflict between the positive sentiment of the transcript and the negative vocal emotion detected, alongside a neutral facial expression and neutral audience comments. The low vocal reliability (0.489) suggests the vocal channel's assessment is questionable, making the disagreement between the transcript and vocal channels more significant. This indicates a potential disconnect between the creator's stated enthusiasm and their actual delivery or the audience's reaction."
+  },
+  "parsed": true,
+  "conflict_score": 0.35,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a notable conflict between the positive sentiment of the transcript and the negative vocal emotion detected, alongside a neutral facial expression and neutral audience comments. The low vocal reliability (0.489) suggests the vocal channel's assessment is questionable, making the disagreement between the transcript and vocal channels more significant. This indicates a potential disconnect between the creator's stated enthusiasm and their actual delivery or the audience's reaction.",
+  "latency_s": 4.7447,
+  "error": null
+ },
+ "grid_029": {
+  "probe_id": "grid_029",
+  "raw": {
+   "segment_id": 29,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement between the creator's stated positive sentiment about the product's dimensions and the negative sentiment expressed by both the creator's facial expression and the audience's comments. The creator's voice also exhibits negative characteristics, though with low confidence, suggesting a potential disconnect between the creator's intended message and the audience's reaction. This warrants a high conflict score due to the convergence of negative signals across multiple channels."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement between the creator's stated positive sentiment about the product's dimensions and the negative sentiment expressed by both the creator's facial expression and the audience's comments. The creator's voice also exhibits negative characteristics, though with low confidence, suggesting a potential disconnect between the creator's intended message and the audience's reaction. This warrants a high conflict score due to the convergence of negative signals across multiple channels.",
+  "latency_s": 4.8382,
+  "error": null
+ },
+ "grid_030": {
+  "probe_id": "grid_030",
+  "raw": {
+   "segment_id": 30,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant conflict between the positive sentiment expressed in the transcript, the creator's facial expression of sadness, and the positive comments from the audience. The creator's voice, while neutral in sentiment, exhibits negative arousal, suggesting a mismatch between the spoken words and the emotional tone. This indicates a potential disconnect between the creator's intended message and the audience's reaction, warranting further investigation."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant conflict between the positive sentiment expressed in the transcript, the creator's facial expression of sadness, and the positive comments from the audience. The creator's voice, while neutral in sentiment, exhibits negative arousal, suggesting a mismatch between the spoken words and the emotional tone. This indicates a potential disconnect between the creator's intended message and the audience's reaction, warranting further investigation.",
+  "latency_s": 4.5986,
+  "error": null
+ },
+ "grid_031": {
+  "probe_id": "grid_031",
+  "raw": {
+   "segment_id": 31,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion"
+   ],
+   "flags": [],
+   "narrative": "There's a significant conflict between the positive sentiment of the transcript and the negative facial and vocal emotions displayed by the creator. The creator is stating facts about a product, but their expression and tone suggest a negative feeling, while the audience comments remain neutral. This suggests a potential disconnect between the creator's intended message and their genuine emotional state."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion"
+  ],
+  "flags": [],
+  "narrative": "There's a significant conflict between the positive sentiment of the transcript and the negative facial and vocal emotions displayed by the creator. The creator is stating facts about a product, but their expression and tone suggest a negative feeling, while the audience comments remain neutral. This suggests a potential disconnect between the creator's intended message and their genuine emotional state.",
+  "latency_s": 4.0365,
+  "error": null
+ },
+ "grid_032": {
+  "probe_id": "grid_032",
+  "raw": {
+   "segment_id": 32,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant conflict between the neutral transcript describing a product specification and the negative sentiment expressed by both the creator's facial expression and the audience's comments. The creator's voice also exhibits negative characteristics, though with low reliability, suggesting a potential disconnect between the stated facts and the perceived experience. This indicates a potentially serious issue with the product or presentation."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant conflict between the neutral transcript describing a product specification and the negative sentiment expressed by both the creator's facial expression and the audience's comments. The creator's voice also exhibits negative characteristics, though with low reliability, suggesting a potential disconnect between the stated facts and the perceived experience. This indicates a potentially serious issue with the product or presentation.",
+  "latency_s": 4.2769,
+  "error": null
+ },
+ "grid_033": {
+  "probe_id": "grid_033",
+  "raw": {
+   "segment_id": 33,
+   "conflict_score": 0.35,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "vocal_reliability"
+   ],
+   "flags": [],
+   "narrative": "There's a notable conflict between the positive sentiment expressed in the transcript and the negative vocal emotion detected. The creator's voice sounds unhappy despite the positive description of the product, while the audience also expresses positive sentiment. Given the low reliability of the vocal channel, this disagreement is moderate."
+  },
+  "parsed": true,
+  "conflict_score": 0.35,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "vocal_reliability"
+  ],
+  "flags": [],
+  "narrative": "There's a notable conflict between the positive sentiment expressed in the transcript and the negative vocal emotion detected. The creator's voice sounds unhappy despite the positive description of the product, while the audience also expresses positive sentiment. Given the low reliability of the vocal channel, this disagreement is moderate.",
+  "latency_s": 3.7877,
+  "error": null
+ },
+ "grid_034": {
+  "probe_id": "grid_034",
+  "raw": {
+   "segment_id": 34,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "vocal_reliability",
+    "facial_emotion"
+   ],
+   "flags": [],
+   "narrative": "There's a significant conflict between the positive sentiment of the transcript and the negative vocal emotion detected. The creator's words describe a product detail, but their voice sounds unhappy, and the facial expression shows no emotion. Given the low reliability of the vocal channel, this disagreement is notable, particularly when combined with the neutral sentiment of the audience comments."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "vocal_reliability",
+   "facial_emotion"
+  ],
+  "flags": [],
+  "narrative": "There's a significant conflict between the positive sentiment of the transcript and the negative vocal emotion detected. The creator's words describe a product detail, but their voice sounds unhappy, and the facial expression shows no emotion. Given the low reliability of the vocal channel, this disagreement is notable, particularly when combined with the neutral sentiment of the audience comments.",
+  "latency_s": 4.1626,
+  "error": null
+ },
+ "grid_035": {
+  "probe_id": "grid_035",
+  "raw": {
+   "segment_id": 35,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant conflict between the positive sentiment of the transcript and the product description, and the negative sentiment expressed by both the audience comments and the creator's vocal tone. The creator's voice sounds negative, while the audience and the product description are positive, suggesting a potential disconnect or dissatisfaction with the product."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant conflict between the positive sentiment of the transcript and the product description, and the negative sentiment expressed by both the audience comments and the creator's vocal tone. The creator's voice sounds negative, while the audience and the product description are positive, suggesting a potential disconnect or dissatisfaction with the product.",
+  "latency_s": 3.9513,
+  "error": null
+ },
+ "grid_036": {
+  "probe_id": "grid_036",
+  "raw": {
+   "segment_id": 36,
+   "conflict_score": 0.1,
+   "channels_in_conflict": [
+    "vocal_emotion",
+    "transcript_sentiment",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a minor disagreement between the creator's neutral transcript and the positive sentiment expressed through their facial expression and the audience's comments. The creator's voice sounds positive, but the text and visual cues suggest a neutral product description. Given the low vocal reliability, this conflict is minimal."
+  },
+  "parsed": true,
+  "conflict_score": 0.1,
+  "channels": [
+   "vocal_emotion",
+   "transcript_sentiment",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a minor disagreement between the creator's neutral transcript and the positive sentiment expressed through their facial expression and the audience's comments. The creator's voice sounds positive, but the text and visual cues suggest a neutral product description. Given the low vocal reliability, this conflict is minimal.",
+  "latency_s": 4.0537,
+  "error": null
+ },
+ "grid_037": {
+  "probe_id": "grid_037",
+  "raw": {
+   "segment_id": 37,
+   "conflict_score": 0.15,
+   "channels_in_conflict": [
+    "vocal_emotion",
+    "facial_emotion",
+    "transcript_sentiment",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a minor disagreement between the neutral transcript and the positive facial and vocal expressions, suggesting a slight mismatch in the creator's intended tone. The low vocal reliability score further diminishes the significance of the vocal channel's positive reading, indicating a weak signal. Overall, the segment appears to be conveying a neutral message."
+  },
+  "parsed": true,
+  "conflict_score": 0.15,
+  "channels": [
+   "vocal_emotion",
+   "facial_emotion",
+   "transcript_sentiment",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a minor disagreement between the neutral transcript and the positive facial and vocal expressions, suggesting a slight mismatch in the creator's intended tone. The low vocal reliability score further diminishes the significance of the vocal channel's positive reading, indicating a weak signal. Overall, the segment appears to be conveying a neutral message.",
+  "latency_s": 4.1162,
+  "error": null
+ },
+ "grid_038": {
+  "probe_id": "grid_038",
+  "raw": {
+   "segment_id": 38,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement between the neutral transcript, the happy facial expression, and the negative audience sentiment. The creator's voice sounds positive, but the audience clearly dislikes the product description, suggesting a potential disconnect between the creator's intended tone and the audience's reaction. Given the low reliability of the vocal channel, the conflict is substantial."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement between the neutral transcript, the happy facial expression, and the negative audience sentiment. The creator's voice sounds positive, but the audience clearly dislikes the product description, suggesting a potential disconnect between the creator's intended tone and the audience's reaction. Given the low reliability of the vocal channel, the conflict is substantial.",
+  "latency_s": 4.0804,
+  "error": null
+ },
+ "grid_039": {
+  "probe_id": "grid_039",
+  "raw": {
+   "segment_id": 39,
+   "conflict_score": 0.1,
+   "channels_in_conflict": [
+    "vocal_emotion",
+    "transcript_sentiment",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a minor disagreement between the creator's neutral tone and the positive sentiment expressed in the transcript, facial expression, and audience comments. The creator's voice sounds positive, but the visual and textual data suggest a neutral product description. Given the low reliability of the vocal channel, this conflict is considered minimal."
+  },
+  "parsed": true,
+  "conflict_score": 0.1,
+  "channels": [
+   "vocal_emotion",
+   "transcript_sentiment",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a minor disagreement between the creator's neutral tone and the positive sentiment expressed in the transcript, facial expression, and audience comments. The creator's voice sounds positive, but the visual and textual data suggest a neutral product description. Given the low reliability of the vocal channel, this conflict is considered minimal.",
+  "latency_s": 4.0457,
+  "error": null
+ },
+ "grid_040": {
+  "probe_id": "grid_040",
+  "raw": {
+   "segment_id": 40,
+   "conflict_score": 0.1,
+   "channels_in_conflict": [
+    "vocal_emotion",
+    "transcript_sentiment",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a minor disagreement between the creator's spoken words (NEUTRAL) and their facial expression (NEUTRAL) and the audience's comments (NEUTRAL). The creator's voice, however, expresses a positive sentiment (POSITIVE), but this is considered weak evidence due to the low reliability of the vocal channel."
+  },
+  "parsed": true,
+  "conflict_score": 0.1,
+  "channels": [
+   "vocal_emotion",
+   "transcript_sentiment",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a minor disagreement between the creator's spoken words (NEUTRAL) and their facial expression (NEUTRAL) and the audience's comments (NEUTRAL). The creator's voice, however, expresses a positive sentiment (POSITIVE), but this is considered weak evidence due to the low reliability of the vocal channel.",
+  "latency_s": 4.1278,
+  "error": null
+ },
+ "grid_041": {
+  "probe_id": "grid_041",
+  "raw": {
+   "segment_id": 41,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement between the neutral transcript, positive vocal tone, neutral facial expression, and negative audience comments. The vocal channel's low reliability (48.9%) makes its positive assessment less trustworthy, suggesting a potential disconnect between the creator's intended tone and the audience's reaction. This indicates a notable conflict in sentiment."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement between the neutral transcript, positive vocal tone, neutral facial expression, and negative audience comments. The vocal channel's low reliability (48.9%) makes its positive assessment less trustworthy, suggesting a potential disconnect between the creator's intended tone and the audience's reaction. This indicates a notable conflict in sentiment.",
+  "latency_s": 4.1935,
+  "error": null
+ },
+ "grid_042": {
+  "probe_id": "grid_042",
+  "raw": {
+   "segment_id": 42,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement in sentiment across channels. While the transcript and comments express a neutral tone, the creator's facial expression and vocal delivery indicate sadness. The low vocal reliability further complicates the assessment, suggesting the vocal channel's interpretation is unreliable in this instance."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement in sentiment across channels. While the transcript and comments express a neutral tone, the creator's facial expression and vocal delivery indicate sadness. The low vocal reliability further complicates the assessment, suggesting the vocal channel's interpretation is unreliable in this instance.",
+  "latency_s": 3.8844,
+  "error": null
+ },
+ "grid_043": {
+  "probe_id": "grid_043",
+  "raw": {
+   "segment_id": 43,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "vocal_emotion"
+   ],
+   "flags": [],
+   "narrative": "There's a significant conflict between the neutral transcript, the sad facial expression, and the positive vocal tone. The creator is describing a product detail, but their face and voice suggest a negative emotional state, indicating a potential disconnect between expressed content and genuine feeling. Given the low reliability of the vocal channel, this disagreement is notable."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "vocal_emotion"
+  ],
+  "flags": [],
+  "narrative": "There's a significant conflict between the neutral transcript, the sad facial expression, and the positive vocal tone. The creator is describing a product detail, but their face and voice suggest a negative emotional state, indicating a potential disconnect between expressed content and genuine feeling. Given the low reliability of the vocal channel, this disagreement is notable.",
+  "latency_s": 3.9836,
+  "error": null
+ },
+ "grid_044": {
+  "probe_id": "grid_044",
+  "raw": {
+   "segment_id": 44,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement between the neutral transcript, the creator's sad facial expression, and the negative audience comments. The creator's voice sounds positive, but this is a low-confidence signal given the vocal channel's reliability score. This suggests the creator may be unintentionally conveying a negative impression, or the audience is reacting negatively to the product description."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement between the neutral transcript, the creator's sad facial expression, and the negative audience comments. The creator's voice sounds positive, but this is a low-confidence signal given the vocal channel's reliability score. This suggests the creator may be unintentionally conveying a negative impression, or the audience is reacting negatively to the product description.",
+  "latency_s": 4.1301,
+  "error": null
+ },
+ "grid_045": {
+  "probe_id": "grid_045",
+  "raw": {
+   "segment_id": 45,
+   "conflict_score": 0.15,
+   "channels_in_conflict": [
+    "vocal_emotion",
+    "transcript_sentiment",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a minor disagreement between the neutral transcript and the positive sentiment expressed by both the vocal channel and the audience comments. The vocal channel's positive arousal suggests enthusiasm, while the text and comments indicate a straightforward factual description, leading to a low conflict score due to the weak reliability of the vocal channel."
+  },
+  "parsed": true,
+  "conflict_score": 0.15,
+  "channels": [
+   "vocal_emotion",
+   "transcript_sentiment",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a minor disagreement between the neutral transcript and the positive sentiment expressed by both the vocal channel and the audience comments. The vocal channel's positive arousal suggests enthusiasm, while the text and comments indicate a straightforward factual description, leading to a low conflict score due to the weak reliability of the vocal channel.",
+  "latency_s": 3.9157,
+  "error": null
+ },
+ "grid_046": {
+  "probe_id": "grid_046",
+  "raw": {
+   "segment_id": 46,
+   "conflict_score": 0.1,
+   "channels_in_conflict": [],
+   "flags": [],
+   "narrative": "There is no significant conflict between the channels in this segment. The transcript, facial emotion, and video comment sentiment all indicate neutrality, while the vocal channel suggests a positive sentiment, but its reliability is low.  The low vocal reliability score minimizes the impact of this minor discrepancy."
+  },
+  "parsed": true,
+  "conflict_score": 0.1,
+  "channels": [],
+  "flags": [],
+  "narrative": "There is no significant conflict between the channels in this segment. The transcript, facial emotion, and video comment sentiment all indicate neutrality, while the vocal channel suggests a positive sentiment, but its reliability is low.  The low vocal reliability score minimizes the impact of this minor discrepancy.",
+  "latency_s": 3.3714,
+  "error": null
+ },
+ "grid_047": {
+  "probe_id": "grid_047",
+  "raw": {
+   "segment_id": 47,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement between the neutral transcript describing a product specification, the positive vocal emotion detected in the creator's voice, and the negative audience sentiment regarding the same product. The low vocal reliability score further suggests the vocal channel's assessment is questionable, making the conflict between the transcript and comment channels particularly concerning. This indicates a potential disconnect between the creator's intended tone and the audience's reaction."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement between the neutral transcript describing a product specification, the positive vocal emotion detected in the creator's voice, and the negative audience sentiment regarding the same product. The low vocal reliability score further suggests the vocal channel's assessment is questionable, making the conflict between the transcript and comment channels particularly concerning. This indicates a potential disconnect between the creator's intended tone and the audience's reaction.",
+  "latency_s": 4.4196,
+  "error": null
+ },
+ "grid_048": {
+  "probe_id": "grid_048",
+  "raw": {
+   "segment_id": 48,
+   "conflict_score": 0.15,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a minor disagreement between the creator's neutral tone, their happy facial expression, and the positive audience comments regarding the product description. The low vocal reliability score suggests the voice data is less trustworthy, making the conflict less significant.  The transcript, facial expression, and comment sentiment all align on a positive assessment of the product details."
+  },
+  "parsed": true,
+  "conflict_score": 0.15,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a minor disagreement between the creator's neutral tone, their happy facial expression, and the positive audience comments regarding the product description. The low vocal reliability score suggests the voice data is less trustworthy, making the conflict less significant.  The transcript, facial expression, and comment sentiment all align on a positive assessment of the product details.",
+  "latency_s": 4.239,
+  "error": null
+ },
+ "grid_049": {
+  "probe_id": "grid_049",
+  "raw": {
+   "segment_id": 49,
+   "conflict_score": 0.1,
+   "channels_in_conflict": [],
+   "flags": [],
+   "narrative": "All channels align on a neutral sentiment regarding this product description. The transcript, facial expression, and video comment all indicate neutrality, while the vocal features also suggest a neutral tone. Given the low vocal reliability score, this segment presents minimal conflict."
+  },
+  "parsed": true,
+  "conflict_score": 0.1,
+  "channels": [],
+  "flags": [],
+  "narrative": "All channels align on a neutral sentiment regarding this product description. The transcript, facial expression, and video comment all indicate neutrality, while the vocal features also suggest a neutral tone. Given the low vocal reliability score, this segment presents minimal conflict.",
+  "latency_s": 3.2278,
+  "error": null
+ },
+ "grid_050": {
+  "probe_id": "grid_050",
+  "raw": {
+   "segment_id": 50,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement between the creator's neutral tone, their happy facial expression, and the audience's negative comments regarding this product description. The low vocal reliability score further suggests the vocal channel is not a reliable indicator of the situation, making the conflict between the other channels more concerning. This suggests the creator may be unintentionally conveying a negative impression despite their stated neutral sentiment."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement between the creator's neutral tone, their happy facial expression, and the audience's negative comments regarding this product description. The low vocal reliability score further suggests the vocal channel is not a reliable indicator of the situation, making the conflict between the other channels more concerning. This suggests the creator may be unintentionally conveying a negative impression despite their stated neutral sentiment.",
+  "latency_s": 4.2057,
+  "error": null
+ },
+ "grid_051": {
+  "probe_id": "grid_051",
+  "raw": {
+   "segment_id": 51,
+   "conflict_score": 0.1,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a minor disagreement between the creator's neutral statement about the product dimensions and the positive sentiment expressed by both the creator's facial expression and the audience's comments. The low vocal reliability score further reduces the weight of the vocal channel's neutrality, suggesting a small, isolated discrepancy."
+  },
+  "parsed": true,
+  "conflict_score": 0.1,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a minor disagreement between the creator's neutral statement about the product dimensions and the positive sentiment expressed by both the creator's facial expression and the audience's comments. The low vocal reliability score further reduces the weight of the vocal channel's neutrality, suggesting a small, isolated discrepancy.",
+  "latency_s": 3.8607,
+  "error": null
+ },
+ "grid_052": {
+  "probe_id": "grid_052",
+  "raw": {
+   "segment_id": 52,
+   "conflict_score": 0.05,
+   "channels_in_conflict": [],
+   "flags": [],
+   "narrative": "All channels align on a neutral sentiment for this segment describing a product's dimensions and included cable. There is minimal disagreement, indicated by the low conflict score, and no flags were raised."
+  },
+  "parsed": true,
+  "conflict_score": 0.05,
+  "channels": [],
+  "flags": [],
+  "narrative": "All channels align on a neutral sentiment for this segment describing a product's dimensions and included cable. There is minimal disagreement, indicated by the low conflict score, and no flags were raised.",
+  "latency_s": 3.0362,
+  "error": null
+ },
+ "grid_053": {
+  "probe_id": "grid_053",
+  "raw": {
+   "segment_id": 53,
+   "conflict_score": 0.35,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a notable disagreement between the creator's neutral statement about the product dimensions, the neutral facial expression, and the negative audience sentiment regarding the video. The low vocal reliability score further suggests the vocal channel's assessment is questionable, making this a moderate conflict. This suggests the audience may be reacting negatively to the product description itself."
+  },
+  "parsed": true,
+  "conflict_score": 0.35,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a notable disagreement between the creator's neutral statement about the product dimensions, the neutral facial expression, and the negative audience sentiment regarding the video. The low vocal reliability score further suggests the vocal channel's assessment is questionable, making this a moderate conflict. This suggests the audience may be reacting negatively to the product description itself.",
+  "latency_s": 4.0139,
+  "error": null
+ },
+ "grid_054": {
+  "probe_id": "grid_054",
+  "raw": {
+   "segment_id": 54,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement in sentiment across the channels. The transcript and both the facial and comment channels express neutral sentiment, while the vocal channel indicates sadness. Given the low reliability of the vocal channel, this conflict suggests the creator may be conveying a different emotional state than what is apparent from their words or the audience's reaction."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement in sentiment across the channels. The transcript and both the facial and comment channels express neutral sentiment, while the vocal channel indicates sadness. Given the low reliability of the vocal channel, this conflict suggests the creator may be conveying a different emotional state than what is apparent from their words or the audience's reaction.",
+  "latency_s": 4.0106,
+  "error": null
+ },
+ "grid_055": {
+  "probe_id": "grid_055",
+  "raw": {
+   "segment_id": 55,
+   "conflict_score": 0.15,
+   "channels_in_conflict": [
+    "facial_emotion",
+    "transcript_sentiment",
+    "vocal_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a minor disagreement between the creator's facial expression (sad) and the neutral sentiment of the transcript, vocal emotion, and video comments. The low vocal reliability score further suggests that the vocal channel's assessment of arousal is unreliable, contributing to the small conflict score."
+  },
+  "parsed": true,
+  "conflict_score": 0.15,
+  "channels": [
+   "facial_emotion",
+   "transcript_sentiment",
+   "vocal_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a minor disagreement between the creator's facial expression (sad) and the neutral sentiment of the transcript, vocal emotion, and video comments. The low vocal reliability score further suggests that the vocal channel's assessment of arousal is unreliable, contributing to the small conflict score.",
+  "latency_s": 3.9419,
+  "error": null
+ },
+ "grid_056": {
+  "probe_id": "grid_056",
+  "raw": {
+   "segment_id": 56,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement between the creator's neutral tone (transcript and vocal), their sad facial expression, and the negative audience sentiment regarding the product description. The low vocal reliability further suggests this conflict is likely due to a mismatch between the creator's stated neutrality and the audience's negative reaction, potentially indicating a problem with the product or a sarcastic delivery."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement between the creator's neutral tone (transcript and vocal), their sad facial expression, and the negative audience sentiment regarding the product description. The low vocal reliability further suggests this conflict is likely due to a mismatch between the creator's stated neutrality and the audience's negative reaction, potentially indicating a problem with the product or a sarcastic delivery.",
+  "latency_s": 4.154,
+  "error": null
+ },
+ "grid_057": {
+  "probe_id": "grid_057",
+  "raw": {
+   "segment_id": 57,
+   "conflict_score": 0.15,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "vocal_emotion"
+   ],
+   "flags": [],
+   "narrative": "There's a minor disagreement between the neutral transcript and positive audience comments regarding the sentiment of this product description. The creator's voice and facial expression are also neutral, suggesting a lack of emotional engagement with the product details. This low conflict score reflects the overall consistency of the data."
+  },
+  "parsed": true,
+  "conflict_score": 0.15,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "vocal_emotion"
+  ],
+  "flags": [],
+  "narrative": "There's a minor disagreement between the neutral transcript and positive audience comments regarding the sentiment of this product description. The creator's voice and facial expression are also neutral, suggesting a lack of emotional engagement with the product details. This low conflict score reflects the overall consistency of the data.",
+  "latency_s": 3.7391,
+  "error": null
+ },
+ "grid_058": {
+  "probe_id": "grid_058",
+  "raw": {
+   "segment_id": 58,
+   "conflict_score": 0.1,
+   "channels_in_conflict": [],
+   "flags": [],
+   "narrative": "All channels align on a neutral sentiment regarding this product description. There is no significant disagreement between the transcript, facial expression, vocal emotion, or audience comments. The low vocal reliability score does not warrant a higher conflict score."
+  },
+  "parsed": true,
+  "conflict_score": 0.1,
+  "channels": [],
+  "flags": [],
+  "narrative": "All channels align on a neutral sentiment regarding this product description. There is no significant disagreement between the transcript, facial expression, vocal emotion, or audience comments. The low vocal reliability score does not warrant a higher conflict score.",
+  "latency_s": 3.0912,
+  "error": null
+ },
+ "grid_059": {
+  "probe_id": "grid_059",
+  "raw": {
+   "segment_id": 59,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "vocal_prosody",
+    "comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement between the neutral transcript and the negative audience comments regarding this product description. The creator's neutral vocal tone and lack of facial expression further complicate the situation, suggesting a potential disconnect between the product's features and the audience's perception. The low vocal reliability score adds to the uncertainty."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "vocal_prosody",
+   "comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement between the neutral transcript and the negative audience comments regarding this product description. The creator's neutral vocal tone and lack of facial expression further complicate the situation, suggesting a potential disconnect between the product's features and the audience's perception. The low vocal reliability score adds to the uncertainty.",
+  "latency_s": 4.0306,
+  "error": null
+ },
+ "grid_060": {
+  "probe_id": "grid_060",
+  "raw": {
+   "segment_id": 60,
+   "conflict_score": 0.35,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a notable disagreement between the neutral transcript, the happy facial expression, and the positive audience comments regarding this product description. The creator's voice, however, expresses negative emotion, and the vocal channel's reliability is low, suggesting this conflict may be spurious. This indicates a potential disconnect between the creator's intended tone and the audience's reaction."
+  },
+  "parsed": true,
+  "conflict_score": 0.35,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a notable disagreement between the neutral transcript, the happy facial expression, and the positive audience comments regarding this product description. The creator's voice, however, expresses negative emotion, and the vocal channel's reliability is low, suggesting this conflict may be spurious. This indicates a potential disconnect between the creator's intended tone and the audience's reaction.",
+  "latency_s": 4.3365,
+  "error": null
+ },
+ "grid_061": {
+  "probe_id": "grid_061",
+  "raw": {
+   "segment_id": 61,
+   "conflict_score": 0.35,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a notable disagreement between the neutral transcript and the negative vocal emotion, alongside the happy facial expression and neutral audience sentiment. The low vocal reliability (0.489) suggests the vocal channel's assessment is questionable, making the conflict less severe but still present. This indicates a potential disconnect between the creator's stated facts and their perceived emotional state, or perhaps a mismatch between the creator's intended tone and the audience's reaction."
+  },
+  "parsed": true,
+  "conflict_score": 0.35,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a notable disagreement between the neutral transcript and the negative vocal emotion, alongside the happy facial expression and neutral audience sentiment. The low vocal reliability (0.489) suggests the vocal channel's assessment is questionable, making the conflict less severe but still present. This indicates a potential disconnect between the creator's stated facts and their perceived emotional state, or perhaps a mismatch between the creator's intended tone and the audience's reaction.",
+  "latency_s": 4.7021,
+  "error": null
+ },
+ "grid_062": {
+  "probe_id": "grid_062",
+  "raw": {
+   "segment_id": 62,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement between the neutral transcript, the negative vocal emotion, the happy facial expression, and the negative audience sentiment. The vocal channel's low reliability (49%) makes this conflict particularly noteworthy, suggesting a potential disconnect between the creator's stated tone and their actual emotional presentation or the audience's reaction. This warrants further investigation into the source of the discrepancy."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement between the neutral transcript, the negative vocal emotion, the happy facial expression, and the negative audience sentiment. The vocal channel's low reliability (49%) makes this conflict particularly noteworthy, suggesting a potential disconnect between the creator's stated tone and their actual emotional presentation or the audience's reaction. This warrants further investigation into the source of the discrepancy.",
+  "latency_s": 4.3888,
+  "error": null
+ },
+ "grid_063": {
+  "probe_id": "grid_063",
+  "raw": {
+   "segment_id": 63,
+   "conflict_score": 0.35,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a notable disagreement between the neutral transcript, the negative vocal tone, the neutral facial expression, and the positive audience sentiment. The vocal channel's low reliability (49%) makes this conflict less severe, but the combination of negative vocal cues and positive audience reaction suggests a potential disconnect between the creator's intended tone and the audience's perception."
+  },
+  "parsed": true,
+  "conflict_score": 0.35,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a notable disagreement between the neutral transcript, the negative vocal tone, the neutral facial expression, and the positive audience sentiment. The vocal channel's low reliability (49%) makes this conflict less severe, but the combination of negative vocal cues and positive audience reaction suggests a potential disconnect between the creator's intended tone and the audience's perception.",
+  "latency_s": 4.2836,
+  "error": null
+ },
+ "grid_064": {
+  "probe_id": "grid_064",
+  "raw": {
+   "segment_id": 64,
+   "conflict_score": 0.25,
+   "channels_in_conflict": [
+    "vocal_emotion",
+    "transcript_sentiment",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a slight disagreement between the creator's spoken words (NEUTRAL) and their facial expression (NEUTRAL) and the audience's comments (NEUTRAL). The creator's voice, however, exhibits a slightly negative emotional tone, suggesting a potential mismatch in how the content is being perceived. Given the low reliability of the vocal channel, this conflict is considered minor."
+  },
+  "parsed": true,
+  "conflict_score": 0.25,
+  "channels": [
+   "vocal_emotion",
+   "transcript_sentiment",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a slight disagreement between the creator's spoken words (NEUTRAL) and their facial expression (NEUTRAL) and the audience's comments (NEUTRAL). The creator's voice, however, exhibits a slightly negative emotional tone, suggesting a potential mismatch in how the content is being perceived. Given the low reliability of the vocal channel, this conflict is considered minor.",
+  "latency_s": 4.3943,
+  "error": null
+ },
+ "grid_065": {
+  "probe_id": "grid_065",
+  "raw": {
+   "segment_id": 65,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement between the neutral transcript, the negative vocal emotion, and the negative comment sentiment regarding this product description. The creator's words and the audience's reaction suggest a negative perception, despite the neutral transcript, indicating a potential issue with the product or delivery. The low vocal reliability further complicates the assessment."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement between the neutral transcript, the negative vocal emotion, and the negative comment sentiment regarding this product description. The creator's words and the audience's reaction suggest a negative perception, despite the neutral transcript, indicating a potential issue with the product or delivery. The low vocal reliability further complicates the assessment.",
+  "latency_s": 4.1134,
+  "error": null
+ },
+ "grid_066": {
+  "probe_id": "grid_066",
+  "raw": {
+   "segment_id": 66,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement between the neutral transcript, the negative vocal tone, the sad facial expression, and the positive audience sentiment. The creator states a factual description, while their voice and face convey negativity, and the audience responds positively, suggesting a potential misinterpretation or a disconnect between the creator's intended message and the audience's reaction. Given the low vocal reliability, this conflict warrants careful attention."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement between the neutral transcript, the negative vocal tone, the sad facial expression, and the positive audience sentiment. The creator states a factual description, while their voice and face convey negativity, and the audience responds positively, suggesting a potential misinterpretation or a disconnect between the creator's intended message and the audience's reaction. Given the low vocal reliability, this conflict warrants careful attention.",
+  "latency_s": 4.5036,
+  "error": null
+ },
+ "grid_067": {
+  "probe_id": "grid_067",
+  "raw": {
+   "segment_id": 67,
+   "conflict_score": 0.35,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a notable conflict between the neutral transcript and the negative vocal and facial expressions, suggesting the creator is not genuinely enthusiastic about the product. The audience comments also align with a neutral sentiment, further complicating the assessment of the creator's true feelings. Given the low reliability of the vocal channel, this conflict is moderate."
+  },
+  "parsed": true,
+  "conflict_score": 0.35,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a notable conflict between the neutral transcript and the negative vocal and facial expressions, suggesting the creator is not genuinely enthusiastic about the product. The audience comments also align with a neutral sentiment, further complicating the assessment of the creator's true feelings. Given the low reliability of the vocal channel, this conflict is moderate.",
+  "latency_s": 4.1675,
+  "error": null
+ },
+ "grid_068": {
+  "probe_id": "grid_068",
+  "raw": {
+   "segment_id": 68,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement between the neutral transcript, the negative vocal emotion, sad facial expression, and negative audience comments. The creator's words describe a product detail, while their voice and facial expression convey negativity, and the audience shares this negative sentiment. Given the low reliability of the vocal channel, the conflict is primarily driven by the transcript and comment channels."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement between the neutral transcript, the negative vocal emotion, sad facial expression, and negative audience comments. The creator's words describe a product detail, while their voice and facial expression convey negativity, and the audience shares this negative sentiment. Given the low reliability of the vocal channel, the conflict is primarily driven by the transcript and comment channels.",
+  "latency_s": 4.2624,
+  "error": null
+ },
+ "grid_069": {
+  "probe_id": "grid_069",
+  "raw": {
+   "segment_id": 69,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement between the neutral transcript, the negatively-toned voice, and the positive audience comments. The voice's negative arousal suggests a dissatisfaction with the product description, while the audience appears to be receptive. Given the low reliability of the vocal channel, this conflict warrants further investigation."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement between the neutral transcript, the negatively-toned voice, and the positive audience comments. The voice's negative arousal suggests a dissatisfaction with the product description, while the audience appears to be receptive. Given the low reliability of the vocal channel, this conflict warrants further investigation.",
+  "latency_s": 3.858,
+  "error": null
+ },
+ "grid_070": {
+  "probe_id": "grid_070",
+  "raw": {
+   "segment_id": 70,
+   "conflict_score": 0.35,
+   "channels_in_conflict": [
+    "vocal_emotion",
+    "transcript_sentiment",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a notable disagreement between the transcript and vocal channels, both indicating neutral sentiment, while the video comment sentiment also aligns. However, the vocal channel's negative arousal suggests a subtle emotional undercurrent that doesn't fully align with the neutral sentiment expressed in the transcript and comments, leading to a moderate conflict score."
+  },
+  "parsed": true,
+  "conflict_score": 0.35,
+  "channels": [
+   "vocal_emotion",
+   "transcript_sentiment",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a notable disagreement between the transcript and vocal channels, both indicating neutral sentiment, while the video comment sentiment also aligns. However, the vocal channel's negative arousal suggests a subtle emotional undercurrent that doesn't fully align with the neutral sentiment expressed in the transcript and comments, leading to a moderate conflict score.",
+  "latency_s": 3.987,
+  "error": null
+ },
+ "grid_071": {
+  "probe_id": "grid_071",
+  "raw": {
+   "segment_id": 71,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement between the neutral transcript, the negative vocal emotion (indicated by low arousal), and the negative audience sentiment. The vocal channel's low reliability further complicates the assessment, suggesting the negative vocal cues may be unreliable. This indicates a potential issue with the product description or the creator's delivery."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement between the neutral transcript, the negative vocal emotion (indicated by low arousal), and the negative audience sentiment. The vocal channel's low reliability further complicates the assessment, suggesting the negative vocal cues may be unreliable. This indicates a potential issue with the product description or the creator's delivery.",
+  "latency_s": 3.9955,
+  "error": null
+ },
+ "grid_072": {
+  "probe_id": "grid_072",
+  "raw": {
+   "segment_id": 72,
+   "conflict_score": 0.35,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a notable disagreement between the transcript's negative sentiment regarding product specifications and the overwhelmingly positive sentiment expressed by the creator's facial expression, vocal emotion, and audience comments. The low vocal reliability score further weakens the credibility of the vocal channel's positive assessment, suggesting a potential mismatch between the creator's stated opinion and their genuine emotional response."
+  },
+  "parsed": true,
+  "conflict_score": 0.35,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a notable disagreement between the transcript's negative sentiment regarding product specifications and the overwhelmingly positive sentiment expressed by the creator's facial expression, vocal emotion, and audience comments. The low vocal reliability score further weakens the credibility of the vocal channel's positive assessment, suggesting a potential mismatch between the creator's stated opinion and their genuine emotional response.",
+  "latency_s": 4.3078,
+  "error": null
+ },
+ "grid_073": {
+  "probe_id": "grid_073",
+  "raw": {
+   "segment_id": 73,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "vocal_reliability",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant conflict between the neutral description of the product (transcript) and the positive emotional tone expressed by both the creator's voice and facial expression. The audience comments also remain neutral, suggesting a disconnect between the factual information and the creator's apparent enthusiasm, likely due to the low reliability of the vocal channel."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "vocal_reliability",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant conflict between the neutral description of the product (transcript) and the positive emotional tone expressed by both the creator's voice and facial expression. The audience comments also remain neutral, suggesting a disconnect between the factual information and the creator's apparent enthusiasm, likely due to the low reliability of the vocal channel.",
+  "latency_s": 4.277,
+  "error": null
+ },
+ "grid_074": {
+  "probe_id": "grid_074",
+  "raw": {
+   "segment_id": 74,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement between the creator's words (negative sentiment), their facial expression (happy), and audience comments (negative), while their voice sounds positive. The low vocal reliability score further suggests this conflict is likely due to a mismatch between the creator's intended tone and the perceived emotional response of the audience and their own expression."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement between the creator's words (negative sentiment), their facial expression (happy), and audience comments (negative), while their voice sounds positive. The low vocal reliability score further suggests this conflict is likely due to a mismatch between the creator's intended tone and the perceived emotional response of the audience and their own expression.",
+  "latency_s": 4.1706,
+  "error": null
+ },
+ "grid_075": {
+  "probe_id": "grid_075",
+  "raw": {
+   "segment_id": 75,
+   "conflict_score": 0.35,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a notable disagreement between the transcript's negative sentiment regarding the product's dimensions and the positive sentiment expressed by both the creator's vocal tone and facial expression, as well as the audience's comments. The low vocal reliability score further suggests caution when interpreting the vocal channel's assessment, indicating a potential mismatch between the creator's stated opinion and their genuine emotional state."
+  },
+  "parsed": true,
+  "conflict_score": 0.35,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a notable disagreement between the transcript's negative sentiment regarding the product's dimensions and the positive sentiment expressed by both the creator's vocal tone and facial expression, as well as the audience's comments. The low vocal reliability score further suggests caution when interpreting the vocal channel's assessment, indicating a potential mismatch between the creator's stated opinion and their genuine emotional state.",
+  "latency_s": 4.4134,
+  "error": null
+ },
+ "grid_076": {
+  "probe_id": "grid_076",
+  "raw": {
+   "segment_id": 76,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant conflict between the transcript's negative sentiment regarding the product's dimensions and the creator's positive vocal emotion and neutral facial expression, which is mirrored by the audience's neutral comment sentiment. The low vocal reliability score further suggests caution when interpreting the vocal channel's assessment, indicating a potentially misleading signal."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant conflict between the transcript's negative sentiment regarding the product's dimensions and the creator's positive vocal emotion and neutral facial expression, which is mirrored by the audience's neutral comment sentiment. The low vocal reliability score further suggests caution when interpreting the vocal channel's assessment, indicating a potentially misleading signal.",
+  "latency_s": 4.145,
+  "error": null
+ },
+ "grid_077": {
+  "probe_id": "grid_077",
+  "raw": {
+   "segment_id": 77,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement between the creator's stated negative sentiment about the product dimensions, the positive emotional tone of their voice, and the neutral facial expression, all mirrored by a negative audience sentiment. The low vocal reliability score further complicates the interpretation, suggesting the voice data is unreliable. This indicates a potential disconnect between the creator's intended message and the audience's reaction, warranting further investigation."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement between the creator's stated negative sentiment about the product dimensions, the positive emotional tone of their voice, and the neutral facial expression, all mirrored by a negative audience sentiment. The low vocal reliability score further complicates the interpretation, suggesting the voice data is unreliable. This indicates a potential disconnect between the creator's intended message and the audience's reaction, warranting further investigation.",
+  "latency_s": 4.4587,
+  "error": null
+ },
+ "grid_078": {
+  "probe_id": "grid_078",
+  "raw": {
+   "segment_id": 78,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant conflict in sentiment across this segment. While the transcript and comments express a positive view, the creator's facial expression and vocal tone indicate sadness. Given the low reliability of the vocal channel, this disagreement is notable and suggests a potential disconnect between the creator's stated information and their genuine emotional response."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant conflict in sentiment across this segment. While the transcript and comments express a positive view, the creator's facial expression and vocal tone indicate sadness. Given the low reliability of the vocal channel, this disagreement is notable and suggests a potential disconnect between the creator's stated information and their genuine emotional response.",
+  "latency_s": 4.1032,
+  "error": null
+ },
+ "grid_079": {
+  "probe_id": "grid_079",
+  "raw": {
+   "segment_id": 79,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion"
+   ],
+   "flags": [],
+   "narrative": "There's a significant conflict between the neutral sentiment of the audience comments and the negative transcript sentiment, coupled with the creator's sad facial expression and positive vocal tone. The low reliability of the vocal channel further complicates the assessment, suggesting a potential misinterpretation of the creator's intent. This indicates a mismatch between the stated product information and the creator's perceived emotional state."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion"
+  ],
+  "flags": [],
+  "narrative": "There's a significant conflict between the neutral sentiment of the audience comments and the negative transcript sentiment, coupled with the creator's sad facial expression and positive vocal tone. The low reliability of the vocal channel further complicates the assessment, suggesting a potential misinterpretation of the creator's intent. This indicates a mismatch between the stated product information and the creator's perceived emotional state.",
+  "latency_s": 4.2095,
+  "error": null
+ },
+ "grid_080": {
+  "probe_id": "grid_080",
+  "raw": {
+   "segment_id": 80,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant conflict in sentiment across the channels: the transcript, facial expression, and video comments express negative sentiment, while the vocal track indicates a positive emotional state. Given the low reliability of the vocal channel, this disagreement is particularly noteworthy, suggesting a potential disconnect between the creator's stated information and their genuine emotional response or the audience's reaction."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant conflict in sentiment across the channels: the transcript, facial expression, and video comments express negative sentiment, while the vocal track indicates a positive emotional state. Given the low reliability of the vocal channel, this disagreement is particularly noteworthy, suggesting a potential disconnect between the creator's stated information and their genuine emotional response or the audience's reaction.",
+  "latency_s": 4.2725,
+  "error": null
+ },
+ "grid_081": {
+  "probe_id": "grid_081",
+  "raw": {
+   "segment_id": 81,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement between the transcript's negative sentiment, the creator's positive vocal emotion, and the positive audience sentiment. The low vocal reliability score further suggests the vocal channel is unreliable in this instance, making the conflict between the transcript and comment channels particularly noteworthy. This indicates a potential disconnect between the creator's stated description and the audience's perceived reaction."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement between the transcript's negative sentiment, the creator's positive vocal emotion, and the positive audience sentiment. The low vocal reliability score further suggests the vocal channel is unreliable in this instance, making the conflict between the transcript and comment channels particularly noteworthy. This indicates a potential disconnect between the creator's stated description and the audience's perceived reaction.",
+  "latency_s": 4.2209,
+  "error": null
+ },
+ "grid_082": {
+  "probe_id": "grid_082",
+  "raw": {
+   "segment_id": 82,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "vocal_reliability",
+    "facial_emotion"
+   ],
+   "flags": [],
+   "narrative": "There's a significant conflict between the transcript's negative sentiment and the creator's positive vocal emotion, suggesting a potential disconnect in the creator's genuine feeling about the product. The lack of facial emotion and the low reliability of the vocal channel further complicate the assessment, indicating a potentially misleading signal. The comment sentiment being neutral doesn't resolve the core disagreement."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "vocal_reliability",
+   "facial_emotion"
+  ],
+  "flags": [],
+  "narrative": "There's a significant conflict between the transcript's negative sentiment and the creator's positive vocal emotion, suggesting a potential disconnect in the creator's genuine feeling about the product. The lack of facial emotion and the low reliability of the vocal channel further complicate the assessment, indicating a potentially misleading signal. The comment sentiment being neutral doesn't resolve the core disagreement.",
+  "latency_s": 4.2583,
+  "error": null
+ },
+ "grid_083": {
+  "probe_id": "grid_083",
+  "raw": {
+   "segment_id": 83,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "vocal_reliability",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement between the transcript, vocal emotion, and video comment sentiment, all indicating negative sentiment. The transcript and comments express negativity, while the vocal emotion channel reports a positive sentiment, though with low reliability. This suggests a potential misinterpretation of the creator's intent or a sarcastic tone that isn't captured by the vocal analysis."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "vocal_reliability",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement between the transcript, vocal emotion, and video comment sentiment, all indicating negative sentiment. The transcript and comments express negativity, while the vocal emotion channel reports a positive sentiment, though with low reliability. This suggests a potential misinterpretation of the creator's intent or a sarcastic tone that isn't captured by the vocal analysis.",
+  "latency_s": 4.2289,
+  "error": null
+ },
+ "grid_084": {
+  "probe_id": "grid_084",
+  "raw": {
+   "segment_id": 84,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement between the creator's stated negative sentiment regarding the product's dimensions, the creator's happy facial expression, and the positive audience sentiment. The low vocal reliability score further complicates the interpretation, suggesting the voice data is unreliable in this context. This indicates a potential disconnect between the creator's intended tone and the audience's reaction, or a misinterpretation of the product's features."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement between the creator's stated negative sentiment regarding the product's dimensions, the creator's happy facial expression, and the positive audience sentiment. The low vocal reliability score further complicates the interpretation, suggesting the voice data is unreliable in this context. This indicates a potential disconnect between the creator's intended tone and the audience's reaction, or a misinterpretation of the product's features.",
+  "latency_s": 4.4402,
+  "error": null
+ },
+ "grid_085": {
+  "probe_id": "grid_085",
+  "raw": {
+   "segment_id": 85,
+   "conflict_score": 0.35,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "vocal_prosody",
+    "comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a notable disagreement between the transcript's negative sentiment and the creator's happy facial expression and neutral comment sentiment. The vocal channel's neutrality, with low reliability, further complicates the assessment, suggesting a potential disconnect between the creator's stated opinion and their genuine emotional state or the audience's reaction."
+  },
+  "parsed": true,
+  "conflict_score": 0.35,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "vocal_prosody",
+   "comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a notable disagreement between the transcript's negative sentiment and the creator's happy facial expression and neutral comment sentiment. The vocal channel's neutrality, with low reliability, further complicates the assessment, suggesting a potential disconnect between the creator's stated opinion and their genuine emotional state or the audience's reaction.",
+  "latency_s": 4.1174,
+  "error": null
+ },
+ "grid_086": {
+  "probe_id": "grid_086",
+  "raw": {
+   "segment_id": 86,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement between the creator's stated sentiment (NEGATIVE), their facial expression (HAPPY), and audience comments (NEGATIVE). The vocal channel's low reliability (0.489) further complicates the interpretation, suggesting the overall sentiment is likely negative, but the source is unreliable. This indicates a potential issue with the creator's genuine reaction or the audience's perception of the product."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement between the creator's stated sentiment (NEGATIVE), their facial expression (HAPPY), and audience comments (NEGATIVE). The vocal channel's low reliability (0.489) further complicates the interpretation, suggesting the overall sentiment is likely negative, but the source is unreliable. This indicates a potential issue with the creator's genuine reaction or the audience's perception of the product.",
+  "latency_s": 4.3509,
+  "error": null
+ },
+ "grid_087": {
+  "probe_id": "grid_087",
+  "raw": {
+   "segment_id": 87,
+   "conflict_score": 0.35,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a notable disagreement between the creator's stated negative sentiment regarding the product's dimensions, the neutral facial expression, and the positive audience response. The low vocal reliability score further weakens the significance of the vocal channel's neutrality, suggesting a potential disconnect between the creator's words and their genuine feelings or the audience's perception. This indicates a moderate level of conflict."
+  },
+  "parsed": true,
+  "conflict_score": 0.35,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a notable disagreement between the creator's stated negative sentiment regarding the product's dimensions, the neutral facial expression, and the positive audience response. The low vocal reliability score further weakens the significance of the vocal channel's neutrality, suggesting a potential disconnect between the creator's words and their genuine feelings or the audience's perception. This indicates a moderate level of conflict.",
+  "latency_s": 4.2564,
+  "error": null
+ },
+ "grid_088": {
+  "probe_id": "grid_088",
+  "raw": {
+   "segment_id": 88,
+   "conflict_score": 0.15,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "vocal_reliability",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There is a very minor disagreement between the transcript and the other channels, which suggests a low level of conflict. The transcript indicates a negative sentiment, while the facial, vocal, and comment channels all report neutral sentiment. The low vocal reliability score further reduces the significance of any potential disagreement."
+  },
+  "parsed": true,
+  "conflict_score": 0.15,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "vocal_reliability",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There is a very minor disagreement between the transcript and the other channels, which suggests a low level of conflict. The transcript indicates a negative sentiment, while the facial, vocal, and comment channels all report neutral sentiment. The low vocal reliability score further reduces the significance of any potential disagreement.",
+  "latency_s": 4.0759,
+  "error": null
+ },
+ "grid_089": {
+  "probe_id": "grid_089",
+  "raw": {
+   "segment_id": 89,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "vocal_prosody",
+    "comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement across channels regarding the sentiment of this product description. The transcript, facial expression, and comment sentiment all indicate negative feelings, while the vocal prosody remains neutral. This suggests the creator is describing a product with negative connotations, and the audience shares this perception."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "vocal_prosody",
+   "comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement across channels regarding the sentiment of this product description. The transcript, facial expression, and comment sentiment all indicate negative feelings, while the vocal prosody remains neutral. This suggests the creator is describing a product with negative connotations, and the audience shares this perception.",
+  "latency_s": 3.8877,
+  "error": null
+ },
+ "grid_090": {
+  "probe_id": "grid_090",
+  "raw": {
+   "segment_id": 90,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement between the creator's stated negative sentiment about the product dimensions, the creator's sad facial expression, and the positive audience sentiment. The low vocal reliability score further complicates the interpretation, suggesting the vocal channel's assessment is unreliable. This indicates a potential issue with the product or the creator's genuine reaction."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement between the creator's stated negative sentiment about the product dimensions, the creator's sad facial expression, and the positive audience sentiment. The low vocal reliability score further complicates the interpretation, suggesting the vocal channel's assessment is unreliable. This indicates a potential issue with the product or the creator's genuine reaction.",
+  "latency_s": 4.0662,
+  "error": null
+ },
+ "grid_091": {
+  "probe_id": "grid_091",
+  "raw": {
+   "segment_id": 91,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "vocal_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant conflict between the creator's stated product description (NEGATIVE sentiment) and their expressed emotion (sad) and the audience's neutral reaction. The vocal channel's neutrality and low reliability further complicate the picture, suggesting a disconnect between the creator's apparent emotional state and the objective facts presented."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "vocal_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant conflict between the creator's stated product description (NEGATIVE sentiment) and their expressed emotion (sad) and the audience's neutral reaction. The vocal channel's neutrality and low reliability further complicate the picture, suggesting a disconnect between the creator's apparent emotional state and the objective facts presented.",
+  "latency_s": 4.1029,
+  "error": null
+ },
+ "grid_092": {
+  "probe_id": "grid_092",
+  "raw": {
+   "segment_id": 92,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement across channels regarding the sentiment of this segment. The transcript, facial expression, and video comments all indicate negative sentiment, while the vocal channel reports neutral emotion. This suggests a potential issue with the vocal channel's reliability, as the other channels strongly align in their negative assessment."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement across channels regarding the sentiment of this segment. The transcript, facial expression, and video comments all indicate negative sentiment, while the vocal channel reports neutral emotion. This suggests a potential issue with the vocal channel's reliability, as the other channels strongly align in their negative assessment.",
+  "latency_s": 3.8534,
+  "error": null
+ },
+ "grid_093": {
+  "probe_id": "grid_093",
+  "raw": {
+   "segment_id": 93,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "vocal_prosody",
+    "comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement between the transcript's negative sentiment, the neutral vocal tone, and the positive audience comments. The lack of facial emotion data further complicates the assessment, suggesting a potential disconnect between the creator's stated opinion and the audience's reaction. Given the low reliability of the vocal channel, this conflict warrants careful consideration."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "vocal_prosody",
+   "comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement between the transcript's negative sentiment, the neutral vocal tone, and the positive audience comments. The lack of facial emotion data further complicates the assessment, suggesting a potential disconnect between the creator's stated opinion and the audience's reaction. Given the low reliability of the vocal channel, this conflict warrants careful consideration.",
+  "latency_s": 4.1513,
+  "error": null
+ },
+ "grid_094": {
+  "probe_id": "grid_094",
+  "raw": {
+   "segment_id": 94,
+   "conflict_score": 0.15,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "vocal_reliability"
+   ],
+   "flags": [],
+   "narrative": "There is a minor disagreement between the transcript and the vocal channel, both indicating neutral sentiment. The facial and video comment channels show no emotion, further supporting the overall neutral assessment. The low vocal reliability score suggests the vocal channel's assessment is not trustworthy."
+  },
+  "parsed": true,
+  "conflict_score": 0.15,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "vocal_reliability"
+  ],
+  "flags": [],
+  "narrative": "There is a minor disagreement between the transcript and the vocal channel, both indicating neutral sentiment. The facial and video comment channels show no emotion, further supporting the overall neutral assessment. The low vocal reliability score suggests the vocal channel's assessment is not trustworthy.",
+  "latency_s": 3.6373,
+  "error": null
+ },
+ "grid_095": {
+  "probe_id": "grid_095",
+  "raw": {
+   "segment_id": 95,
+   "conflict_score": 0.85,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a strong disagreement between the transcript, vocal, and comment channels, all indicating negative sentiment. The transcript and comments both describe a negative assessment of the product, while the vocal channel reports neutral emotion. Given the low reliability of the vocal channel, this conflict is highly significant, suggesting a potentially serious issue with the product or the creator's delivery."
+  },
+  "parsed": true,
+  "conflict_score": 0.85,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a strong disagreement between the transcript, vocal, and comment channels, all indicating negative sentiment. The transcript and comments both describe a negative assessment of the product, while the vocal channel reports neutral emotion. Given the low reliability of the vocal channel, this conflict is highly significant, suggesting a potentially serious issue with the product or the creator's delivery.",
+  "latency_s": 4.1364,
+  "error": null
+ },
+ "grid_096": {
+  "probe_id": "grid_096",
+  "raw": {
+   "segment_id": 96,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement between the creator's stated negative sentiment about the product dimensions, the creator's happy facial expression, and the positive audience comments. The creator's voice also expresses negative sentiment, but with low confidence, suggesting a potential disconnect between the creator's genuine feelings and their presentation. This conflict warrants further investigation due to the relatively high conflict score."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement between the creator's stated negative sentiment about the product dimensions, the creator's happy facial expression, and the positive audience comments. The creator's voice also expresses negative sentiment, but with low confidence, suggesting a potential disconnect between the creator's genuine feelings and their presentation. This conflict warrants further investigation due to the relatively high conflict score.",
+  "latency_s": 4.3861,
+  "error": null
+ },
+ "grid_097": {
+  "probe_id": "grid_097",
+  "raw": {
+   "segment_id": 97,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant conflict between the neutral sentiment of the audience comments and the negative sentiment expressed in the transcript and the creator's vocal delivery. The creator appears happy based on their facial expression, further complicating the situation, while the vocal channel's low reliability makes its assessment questionable. This suggests a potential disconnect between the creator's intended tone and the audience's reaction."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant conflict between the neutral sentiment of the audience comments and the negative sentiment expressed in the transcript and the creator's vocal delivery. The creator appears happy based on their facial expression, further complicating the situation, while the vocal channel's low reliability makes its assessment questionable. This suggests a potential disconnect between the creator's intended tone and the audience's reaction.",
+  "latency_s": 4.4067,
+  "error": null
+ },
+ "grid_098": {
+  "probe_id": "grid_098",
+  "raw": {
+   "segment_id": 98,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement between the creator's stated neutral description of the product ('NEGATIVE') and the audience's negative reaction ('NEGATIVE'), as well as the creator's facial expression ('happy') and vocal tone ('NEGATIVE'). The low vocal reliability (0.489) further complicates the interpretation, suggesting the vocal channel's assessment is unreliable. This indicates a potential issue with the product or a misinterpretation of the information."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement between the creator's stated neutral description of the product ('NEGATIVE') and the audience's negative reaction ('NEGATIVE'), as well as the creator's facial expression ('happy') and vocal tone ('NEGATIVE'). The low vocal reliability (0.489) further complicates the interpretation, suggesting the vocal channel's assessment is unreliable. This indicates a potential issue with the product or a misinterpretation of the information.",
+  "latency_s": 4.6584,
+  "error": null
+ },
+ "grid_099": {
+  "probe_id": "grid_099",
+  "raw": {
+   "segment_id": 99,
+   "conflict_score": 0.45,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a notable disagreement between the creator's stated negative sentiment about the product dimensions, the neutral facial expression, and the positive audience comments. The low vocal reliability score further complicates the assessment, suggesting the creator's tone may not accurately reflect the overall sentiment. This indicates a potential issue with the product or a mismatch between the creator's perception and audience reaction."
+  },
+  "parsed": true,
+  "conflict_score": 0.45,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a notable disagreement between the creator's stated negative sentiment about the product dimensions, the neutral facial expression, and the positive audience comments. The low vocal reliability score further complicates the assessment, suggesting the creator's tone may not accurately reflect the overall sentiment. This indicates a potential issue with the product or a mismatch between the creator's perception and audience reaction.",
+  "latency_s": 4.1876,
+  "error": null
+ },
+ "grid_100": {
+  "probe_id": "grid_100",
+  "raw": {
+   "segment_id": 100,
+   "conflict_score": 0.25,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a slight disagreement between the transcript, which describes a factual product detail, and the creator's vocal tone and facial expression, both indicating negativity. The audience comments also lean towards neutrality, suggesting a potential disconnect between the creator's intended message and the audience's perception. The low vocal reliability further reduces the weight of this conflict."
+  },
+  "parsed": true,
+  "conflict_score": 0.25,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a slight disagreement between the transcript, which describes a factual product detail, and the creator's vocal tone and facial expression, both indicating negativity. The audience comments also lean towards neutrality, suggesting a potential disconnect between the creator's intended message and the audience's perception. The low vocal reliability further reduces the weight of this conflict.",
+  "latency_s": 4.2656,
+  "error": null
+ },
+ "grid_101": {
+  "probe_id": "grid_101",
+  "raw": {
+   "segment_id": 101,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement across channels regarding the sentiment of this product description. The transcript, facial expression, and comment sentiment all indicate negative feelings, while the vocal emotion shows a slight negative arousal but is considered unreliable. This suggests a potential issue with the product or a negative reaction from the audience."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement across channels regarding the sentiment of this product description. The transcript, facial expression, and comment sentiment all indicate negative feelings, while the vocal emotion shows a slight negative arousal but is considered unreliable. This suggests a potential issue with the product or a negative reaction from the audience.",
+  "latency_s": 3.9911,
+  "error": null
+ },
+ "grid_102": {
+  "probe_id": "grid_102",
+  "raw": {
+   "segment_id": 102,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement in sentiment across the channels. While the transcript and comments express a negative sentiment, the creator's facial expression and vocal tone also indicate sadness. Given the low reliability of the vocal channel, this conflict suggests the creator may be conveying dissatisfaction with the product, despite the positive audience reaction."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement in sentiment across the channels. While the transcript and comments express a negative sentiment, the creator's facial expression and vocal tone also indicate sadness. Given the low reliability of the vocal channel, this conflict suggests the creator may be conveying dissatisfaction with the product, despite the positive audience reaction.",
+  "latency_s": 3.9483,
+  "error": null
+ },
+ "grid_103": {
+  "probe_id": "grid_103",
+  "raw": {
+   "segment_id": 103,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "vocal_emotion"
+   ],
+   "flags": [],
+   "narrative": "There's a significant conflict between the neutral sentiment of the audience comments and the negative sentiment expressed in the transcript and the creator's facial expression. The creator's voice also conveys a negative sentiment, though with low confidence. This suggests the creator may be unintentionally conveying a negative impression despite a neutral audience reaction."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "vocal_emotion"
+  ],
+  "flags": [],
+  "narrative": "There's a significant conflict between the neutral sentiment of the audience comments and the negative sentiment expressed in the transcript and the creator's facial expression. The creator's voice also conveys a negative sentiment, though with low confidence. This suggests the creator may be unintentionally conveying a negative impression despite a neutral audience reaction.",
+  "latency_s": 3.9449,
+  "error": null
+ },
+ "grid_104": {
+  "probe_id": "grid_104",
+  "raw": {
+   "segment_id": 104,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "video_comment_sentiment",
+    "vocal_emotion"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement across channels regarding the sentiment of this segment. The transcript, facial expression, and video comments all indicate negative sentiment, while the vocal emotion also suggests negativity, though with low reliability. This suggests a potential issue with the creator's genuine emotional state or a deliberate attempt to convey a negative impression."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "video_comment_sentiment",
+   "vocal_emotion"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement across channels regarding the sentiment of this segment. The transcript, facial expression, and video comments all indicate negative sentiment, while the vocal emotion also suggests negativity, though with low reliability. This suggests a potential issue with the creator's genuine emotional state or a deliberate attempt to convey a negative impression.",
+  "latency_s": 4.1151,
+  "error": null
+ },
+ "grid_105": {
+  "probe_id": "grid_105",
+  "raw": {
+   "segment_id": 105,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "vocal_emotion",
+    "comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a significant disagreement between the creator's stated negative sentiment about the product dimensions, the neutral facial expression, the slightly negative vocal tone, and the positive audience reaction. The low vocal reliability further complicates the assessment, suggesting the vocal channel's judgment is questionable. This indicates a potential issue with the product or a misinterpretation of the creator's intent."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "vocal_emotion",
+   "comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a significant disagreement between the creator's stated negative sentiment about the product dimensions, the neutral facial expression, the slightly negative vocal tone, and the positive audience reaction. The low vocal reliability further complicates the assessment, suggesting the vocal channel's judgment is questionable. This indicates a potential issue with the product or a misinterpretation of the creator's intent.",
+  "latency_s": 4.2649,
+  "error": null
+ },
+ "grid_106": {
+  "probe_id": "grid_106",
+  "raw": {
+   "segment_id": 106,
+   "conflict_score": 0.35,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "vocal_reliability"
+   ],
+   "flags": [],
+   "narrative": "There's a moderate conflict between the transcript's negative sentiment and the creator's negative vocal emotion, though the facial expression and audience comments are neutral. The low vocal reliability score further suggests caution when interpreting the vocal channel's assessment, indicating a potential misinterpretation of the creator's tone."
+  },
+  "parsed": true,
+  "conflict_score": 0.35,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "vocal_reliability"
+  ],
+  "flags": [],
+  "narrative": "There's a moderate conflict between the transcript's negative sentiment and the creator's negative vocal emotion, though the facial expression and audience comments are neutral. The low vocal reliability score further suggests caution when interpreting the vocal channel's assessment, indicating a potential misinterpretation of the creator's tone.",
+  "latency_s": 3.8812,
+  "error": null
+ },
+ "grid_107": {
+  "probe_id": "grid_107",
+  "raw": {
+   "segment_id": 107,
+   "conflict_score": 0.85,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a strong disagreement across all channels regarding the sentiment of this segment. The transcript, vocal emotion, and video comments all express negative sentiment, suggesting a significant issue with the product being described. Given the low reliability of the vocal channel, the conflict is primarily driven by the transcript and comment channels."
+  },
+  "parsed": true,
+  "conflict_score": 0.85,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a strong disagreement across all channels regarding the sentiment of this segment. The transcript, vocal emotion, and video comments all express negative sentiment, suggesting a significant issue with the product being described. Given the low reliability of the vocal channel, the conflict is primarily driven by the transcript and comment channels.",
+  "latency_s": 3.9014,
+  "error": null
+ }
+}

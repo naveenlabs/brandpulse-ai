@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en" data-theme="bench">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Accessibility — BrandPulse</title>
+<meta name="description" content="How BrandPulse is built to be used by as many people as possible, how that was tested, what does not work yet, and who the reports are about.">
+<script>
+  /* The same first-paint script as every other document: the theme, then the
+     reader's Reduce motion choice, before anything is drawn. This page reads in
+     full without JavaScript; the script only sets the display. */
+  (function () {
+    try {
+      var saved = localStorage.getItem("brandpulse-theme");
+      if (saved === "bench" || saved === "field") {
+        document.documentElement.dataset.theme = saved; return;
+      }
+    } catch (e) {}
+    document.documentElement.dataset.theme =
+      window.matchMedia("(prefers-color-scheme: light)").matches ? "field" : "bench";
+  })();
+  try {
+    if (localStorage.getItem("brandpulse-motion") === "off") {
+      document.documentElement.dataset.motion = "off";
+    }
+  } catch (e) {}
+  document.documentElement.classList.add("js");
+  window.__bpFallback = setTimeout(function () {
+    document.documentElement.classList.remove("js");
+  }, 4000);
+</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23101315'/%3E%3Cg stroke-width='1.2'%3E%3Cpath d='M1 3h14' stroke='%235FD3C0'/%3E%3Cpath d='M1 6.5h14' stroke='%23A9BCC7'/%3E%3Cpath d='M1 10h14' stroke='%23A99BE0'/%3E%3Cpath d='M1 13.5h14' stroke='%23E8A33C'/%3E%3Cpath d='M10 0v16' stroke='%23FF2E88' stroke-width='1.6'/%3E%3C/g%3E%3C/svg%3E">
+  <script type="module" crossorigin src="/static/assets/statement-DzhEzjIh.js"></script>
+  <link rel="modulepreload" crossorigin href="/static/assets/chrome-Bbzm0knH.js">
+  <link rel="stylesheet" crossorigin href="/static/assets/chrome-Cpgf7-kA.css">
+  <link rel="stylesheet" crossorigin href="/static/assets/statement-CamFDBUT.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to the statement</a>
+<div class="chassis">
+  <header class="masthead" data-chrome></header>
+
+  <!-- The whole statement is written into the document: nothing on this page
+       needs JavaScript to be read, so it has no separate no-script core. -->
+  <main id="main" class="stmt">
+    <h1 class="t-l">Accessibility</h1>
+    <p class="t-lede">
+      BrandPulse is meant to be usable by as many people as possible: by
+      keyboard alone, with a screen reader, zoomed to 400%, on a phone held
+      either way, without motion, in either display, and printed. This page
+      says how far that is true, how it was checked, and what is not done.
+    </p>
+
+    <section aria-labelledby="st-status">
+      <h2 id="st-status" class="t-m">Where it stands</h2>
+      <p>
+        The target is the Web Content Accessibility Guidelines (WCAG) 2.2 at
+        level AA. It <strong>partially conforms</strong>: the automated checks
+        below pass on every page in both displays, and the parts that are not
+        met are listed further down rather than left out.
+      </p>
+    </section>
+
+    <section aria-labelledby="st-change">
+      <h2 id="st-change" class="t-m">What you can change here</h2>
+      <ul>
+        <li><strong>Reduce motion</strong>, in the bar at the top of every page, stops
+          everything that moves on its own. Your system&rsquo;s own setting is always honoured.</li>
+        <li><strong>Dark or Light</strong>, beside it.</li>
+        <li><strong>Read as one page</strong>, in any report&rsquo;s chapter bar: the whole
+          report down one column, for a screen reader, for zooming, or for printing.</li>
+        <li><strong>Show as a list</strong>, under the Library&rsquo;s shelf, which is also
+          what a phone, a small window and reduced motion get.</li>
+        <li>Zoom to 400%, or set your own text spacing: nothing should be cut off or
+          need scrolling sideways.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="st-how">
+      <h2 id="st-how" class="t-m">How this was checked</h2>
+      <ul>
+        <li>In a real browser, on every page, in both displays, at thirteen window
+          sizes from a small phone to an ultrawide screen: the axe-core scanner
+          (WCAG 2.2 A and AA rules), keyboard reach and visible focus, reflow, text
+          spacing, target size, contrast, reduced motion, forced colours, print,
+          and simulated colour blindness, blur and low contrast
+          (<code>ui_evidence/verify_ui.py</code>).</li>
+        <li>In the code, by tests that fail if any of these fixes is undone, each
+          one shown to fail when its fix is deliberately broken.</li>
+        <li>With people: two studies with eight readers in all, one of whom read on a
+          phone and reported low vision. Neither study tested a keyboard, a screen
+          reader or zoom with a person using them.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="st-not">
+      <h2 id="st-not" class="t-m">What does not work yet</h2>
+      <ul>
+        <li><strong>No disabled person has tested this.</strong> The checks above show it
+          can be operated; they cannot show it is comfortable to use every day.</li>
+        <li>It has been checked with VoiceOver on a Mac only by its developer, and not
+          at all with NVDA or JAWS on Windows.</li>
+        <li>Some labels are set at 11.5 pixels, the smallest size the design allows.
+          Zoom, or Read as one page, enlarges them.</li>
+        <li>The charts are pictures with a written summary; the summary, the tables and
+          the text say everything the charts show.</li>
+        <li>Everything it reads is assumed to be in English.</li>
+        <li>Turning a book&rsquo;s pages, only the title spread carries the report&rsquo;s
+          main heading; Read as one page gives the whole outline at once.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="st-who">
+      <h2 id="st-who" class="t-m">Who the reports are about</h2>
+      <p>
+        Every report is about a person who never agreed to be read: the reviewer in
+        the video, whose face, voice and words are scored, and the people whose
+        comments make up most of Brand health. None of them was asked, and in this
+        build none of them can contest a reading. Each report carries a page written
+        to the person in the video saying so. A deployed version would owe them a
+        named person to contact, the right to see what a reading was drawn from, a
+        way to have a reading struck, and a say, before release, from disabled
+        readers and from the people it scores.
+      </p>
+    </section>
+
+    <section aria-labelledby="st-contact">
+      <h2 id="st-contact" class="t-m">Telling us about a problem</h2>
+      <p>
+        This is a final-year project that runs on one machine, with no service
+        behind it and no one on call, so there is nowhere to send a report yet. That
+        is itself one of the gaps above, and the report for this project says so.
+      </p>
+      <p class="stmt__onward"><a href="/">Back to the opening page</a> <a href="/library">The Library</a></p>
+    </section>
+  </main>
+</div>
+</body>
+</html>

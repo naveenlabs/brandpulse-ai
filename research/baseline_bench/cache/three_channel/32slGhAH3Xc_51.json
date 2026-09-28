@@ -1,0 +1,36 @@
+{
+ "uid": "32slGhAH3Xc_51",
+ "system": "three_channel",
+ "video_id": "32slGhAH3Xc",
+ "segment_id": 51,
+ "split": "selection",
+ "payload": {
+  "segment_id": 51,
+  "start_s": 245.76,
+  "end_s": 249.28,
+  "transcript": "Okay, there's a couple of things that I don't like. Not you.",
+  "transcript_sentiment": "NEGATIVE (0.90)",
+  "vocal_emotion": "NEUTRAL (arousal 0.65)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.98)"
+ },
+ "seconds": 4.52,
+ "raw": "{\n  \"segment_id\": 51,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"video_comment_sentiment\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words convey a negative sentiment, but their facial expression is neutral and the audience's comments are positive, indicating a conflict between the creator's verbal and non-verbal cues.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 51,
+  "start_s": 245.76,
+  "end_s": 249.28,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: video_comment_sentiment"
+  ],
+  "flagged": false
+ }
+}

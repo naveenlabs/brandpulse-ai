@@ -1,0 +1,36 @@
+{
+ "uid": "q0aFOxT6TNw_81",
+ "system": "four_channel",
+ "video_id": "q0aFOxT6TNw",
+ "segment_id": 81,
+ "split": "selection",
+ "payload": {
+  "segment_id": 81,
+  "start_s": 457.47999999999996,
+  "end_s": 463.03999999999996,
+  "transcript": "but there's even more going on under the surface. The A19 Pro chip, shocker, is pretty great.",
+  "transcript_sentiment": "POSITIVE (0.87)",
+  "vocal_emotion": "NEUTRAL (arousal 0.56)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.98)"
+ },
+ "seconds": 4.971,
+ "raw": "{\n  \"segment_id\": 81,\n  \"conflict_score\": 0.5,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The transcript and facial emotion channels disagree, with the transcript indicating a positive sentiment and the facial emotion channel indicating no emotion detected. This discrepancy suggests that the creator's verbal and non-verbal cues may not be aligned, which could be indicative of a nuanced or complex sentiment.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 81,
+  "start_s": 457.47999999999996,
+  "end_s": 463.03999999999996,
+  "conflict_score": 0.2445,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+  ],
+  "flagged": false
+ }
+}

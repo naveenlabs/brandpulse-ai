@@ -1,0 +1,1828 @@
+{
+ "clips": [
+  "0jHtyF_rCqU",
+  "32slGhAH3Xc",
+  "4KbrxIpQgkM",
+  "5VMckmQneCk",
+  "Gvvo6vUpJRc",
+  "Kk-RKpTAXmA",
+  "Rlw_CI7pOKg",
+  "SSC0RkJuBVw",
+  "haWvrSliMVY",
+  "i63u-iAnhuk",
+  "q0aFOxT6TNw",
+  "vOhuf18b-g8"
+ ],
+ "reference_words": 1887,
+ "scores": [
+  {
+   "model": "base",
+   "parameters_millions": 71.8,
+   "realtime_factor": 17.21,
+   "total_wall_s": 30.4,
+   "n_segments": 186,
+   "substitutions": 35,
+   "deletions": 10,
+   "insertions": 14,
+   "ref_words": 1887,
+   "hyp_words": 1891,
+   "errors": 59,
+   "wer": 0.03126656067832538,
+   "word_accuracy": 0.9687334393216747,
+   "word_accuracy_ci": [
+    0.959878927616154,
+    0.9756833109129751
+   ]
+  },
+  {
+   "model": "base.en",
+   "parameters_millions": 71.8,
+   "realtime_factor": 17.06,
+   "total_wall_s": 30.7,
+   "n_segments": 197,
+   "substitutions": 33,
+   "deletions": 12,
+   "insertions": 13,
+   "ref_words": 1887,
+   "hyp_words": 1888,
+   "errors": 58,
+   "wer": 0.03073661897191309,
+   "word_accuracy": 0.969263381028087,
+   "word_accuracy_ci": [
+    0.9604718234212389,
+    0.9761481451684094
+   ]
+  },
+  {
+   "model": "large-v1",
+   "parameters_millions": 1541.4,
+   "realtime_factor": 1.32,
+   "total_wall_s": 396.5,
+   "n_segments": 183,
+   "substitutions": 22,
+   "deletions": 10,
+   "insertions": 14,
+   "ref_words": 1887,
+   "hyp_words": 1891,
+   "errors": 46,
+   "wer": 0.024377318494965553,
+   "word_accuracy": 0.9756226815050344,
+   "word_accuracy_ci": [
+    0.9676382785006582,
+    0.9816744508152188
+   ]
+  },
+  {
+   "model": "large-v2",
+   "parameters_millions": 1541.4,
+   "realtime_factor": 1.23,
+   "total_wall_s": 426.3,
+   "n_segments": 186,
+   "substitutions": 17,
+   "deletions": 7,
+   "insertions": 20,
+   "ref_words": 1887,
+   "hyp_words": 1900,
+   "errors": 44,
+   "wer": 0.023317435082140965,
+   "word_accuracy": 0.976682564917859,
+   "word_accuracy_ci": [
+    0.9688433559742449,
+    0.9825848334626703
+   ]
+  },
+  {
+   "model": "large-v3",
+   "parameters_millions": 1541.6,
+   "realtime_factor": 1.31,
+   "total_wall_s": 398.8,
+   "n_segments": 197,
+   "substitutions": 15,
+   "deletions": 8,
+   "insertions": 11,
+   "ref_words": 1887,
+   "hyp_words": 1890,
+   "errors": 34,
+   "wer": 0.018018018018018018,
+   "word_accuracy": 0.9819819819819819,
+   "word_accuracy_ci": [
+    0.9749276887391427,
+    0.9870778013029633
+   ]
+  },
+  {
+   "model": "large-v3-turbo",
+   "parameters_millions": 807.0,
+   "realtime_factor": 4.68,
+   "total_wall_s": 111.8,
+   "n_segments": 181,
+   "substitutions": 17,
+   "deletions": 6,
+   "insertions": 13,
+   "ref_words": 1887,
+   "hyp_words": 1894,
+   "errors": 36,
+   "wer": 0.019077901430842606,
+   "word_accuracy": 0.9809220985691574,
+   "word_accuracy_ci": [
+    0.973701973401902,
+    0.986188056519166
+   ]
+  },
+  {
+   "model": "medium",
+   "parameters_millions": 762.3,
+   "realtime_factor": 2.26,
+   "total_wall_s": 231.3,
+   "n_segments": 201,
+   "substitutions": 21,
+   "deletions": 9,
+   "insertions": 12,
+   "ref_words": 1887,
+   "hyp_words": 1890,
+   "errors": 42,
+   "wer": 0.022257551669316374,
+   "word_accuracy": 0.9777424483306836,
+   "word_accuracy_ci": [
+    0.9700520023750352,
+    0.9834916471829183
+   ]
+  },
+  {
+   "model": "medium.en",
+   "parameters_millions": 762.3,
+   "realtime_factor": 2.26,
+   "total_wall_s": 231.2,
+   "n_segments": 199,
+   "substitutions": 25,
+   "deletions": 11,
+   "insertions": 12,
+   "ref_words": 1887,
+   "hyp_words": 1888,
+   "errors": 48,
+   "wer": 0.025437201907790145,
+   "word_accuracy": 0.9745627980922098,
+   "word_accuracy_ci": [
+    0.9664365496775191,
+    0.9807607195173198
+   ]
+  },
+  {
+   "model": "small",
+   "parameters_millions": 240.6,
+   "realtime_factor": 6.78,
+   "total_wall_s": 77.2,
+   "n_segments": 183,
+   "substitutions": 29,
+   "deletions": 7,
+   "insertions": 13,
+   "ref_words": 1887,
+   "hyp_words": 1893,
+   "errors": 49,
+   "wer": 0.025967143614202437,
+   "word_accuracy": 0.9740328563857975,
+   "word_accuracy_ci": [
+    0.965836878326778,
+    0.9803026608075417
+   ]
+  },
+  {
+   "model": "small.en",
+   "parameters_millions": 240.6,
+   "realtime_factor": 6.74,
+   "total_wall_s": 77.6,
+   "n_segments": 180,
+   "substitutions": 33,
+   "deletions": 7,
+   "insertions": 10,
+   "ref_words": 1887,
+   "hyp_words": 1890,
+   "errors": 50,
+   "wer": 0.026497085320614733,
+   "word_accuracy": 0.9735029146793853,
+   "word_accuracy_ci": [
+    0.9652379714167227,
+    0.9798438376570782
+   ]
+  },
+  {
+   "model": "tiny",
+   "parameters_millions": 37.2,
+   "realtime_factor": 32.49,
+   "total_wall_s": 16.1,
+   "n_segments": 182,
+   "substitutions": 52,
+   "deletions": 18,
+   "insertions": 21,
+   "ref_words": 1887,
+   "hyp_words": 1890,
+   "errors": 91,
+   "wer": 0.04822469528351881,
+   "word_accuracy": 0.9517753047164812,
+   "word_accuracy_ci": [
+    0.9411571768491735,
+    0.9605576997433449
+   ]
+  },
+  {
+   "model": "tiny.en",
+   "parameters_millions": 37.2,
+   "realtime_factor": 32.89,
+   "total_wall_s": 15.9,
+   "n_segments": 170,
+   "substitutions": 48,
+   "deletions": 15,
+   "insertions": 20,
+   "ref_words": 1887,
+   "hyp_words": 1892,
+   "errors": 83,
+   "wer": 0.04398516163222046,
+   "word_accuracy": 0.9560148383677796,
+   "word_accuracy_ci": [
+    0.945799021088296,
+    0.964377695988375
+   ]
+  }
+ ],
+ "per_clip": {
+  "base": {
+   "0jHtyF_rCqU": {
+    "substitutions": 2,
+    "deletions": 1,
+    "insertions": 1,
+    "ref_words": 150,
+    "hyp_words": 150,
+    "errors": 4,
+    "wer": 0.02666666666666667
+   },
+   "32slGhAH3Xc": {
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 2,
+    "ref_words": 174,
+    "hyp_words": 176,
+    "errors": 2,
+    "wer": 0.011494252873563218
+   },
+   "4KbrxIpQgkM": {
+    "substitutions": 2,
+    "deletions": 0,
+    "insertions": 1,
+    "ref_words": 154,
+    "hyp_words": 155,
+    "errors": 3,
+    "wer": 0.01948051948051948
+   },
+   "5VMckmQneCk": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "ref_words": 187,
+    "hyp_words": 187,
+    "errors": 1,
+    "wer": 0.0053475935828877
+   },
+   "Gvvo6vUpJRc": {
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 0,
+    "ref_words": 152,
+    "hyp_words": 152,
+    "errors": 0,
+    "wer": 0.0
+   },
+   "Kk-RKpTAXmA": {
+    "substitutions": 3,
+    "deletions": 1,
+    "insertions": 1,
+    "ref_words": 133,
+    "hyp_words": 133,
+    "errors": 5,
+    "wer": 0.03759398496240601
+   },
+   "Rlw_CI7pOKg": {
+    "substitutions": 7,
+    "deletions": 0,
+    "insertions": 2,
+    "ref_words": 181,
+    "hyp_words": 183,
+    "errors": 9,
+    "wer": 0.049723756906077346
+   },
+   "SSC0RkJuBVw": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 1,
+    "ref_words": 169,
+    "hyp_words": 170,
+    "errors": 2,
+    "wer": 0.011834319526627219
+   },
+   "haWvrSliMVY": {
+    "substitutions": 11,
+    "deletions": 6,
+    "insertions": 0,
+    "ref_words": 115,
+    "hyp_words": 109,
+    "errors": 17,
+    "wer": 0.14782608695652175
+   },
+   "i63u-iAnhuk": {
+    "substitutions": 5,
+    "deletions": 2,
+    "insertions": 3,
+    "ref_words": 135,
+    "hyp_words": 136,
+    "errors": 10,
+    "wer": 0.07407407407407407
+   },
+   "q0aFOxT6TNw": {
+    "substitutions": 2,
+    "deletions": 0,
+    "insertions": 3,
+    "ref_words": 161,
+    "hyp_words": 164,
+    "errors": 5,
+    "wer": 0.031055900621118012
+   },
+   "vOhuf18b-g8": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "ref_words": 176,
+    "hyp_words": 176,
+    "errors": 1,
+    "wer": 0.005681818181818182
+   }
+  },
+  "base.en": {
+   "0jHtyF_rCqU": {
+    "substitutions": 2,
+    "deletions": 1,
+    "insertions": 1,
+    "ref_words": 150,
+    "hyp_words": 150,
+    "errors": 4,
+    "wer": 0.02666666666666667
+   },
+   "32slGhAH3Xc": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 3,
+    "ref_words": 174,
+    "hyp_words": 177,
+    "errors": 4,
+    "wer": 0.022988505747126436
+   },
+   "4KbrxIpQgkM": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "ref_words": 154,
+    "hyp_words": 154,
+    "errors": 1,
+    "wer": 0.006493506493506494
+   },
+   "5VMckmQneCk": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "ref_words": 187,
+    "hyp_words": 187,
+    "errors": 1,
+    "wer": 0.0053475935828877
+   },
+   "Gvvo6vUpJRc": {
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 0,
+    "ref_words": 152,
+    "hyp_words": 152,
+    "errors": 0,
+    "wer": 0.0
+   },
+   "Kk-RKpTAXmA": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "ref_words": 133,
+    "hyp_words": 133,
+    "errors": 1,
+    "wer": 0.007518796992481203
+   },
+   "Rlw_CI7pOKg": {
+    "substitutions": 7,
+    "deletions": 1,
+    "insertions": 2,
+    "ref_words": 181,
+    "hyp_words": 182,
+    "errors": 10,
+    "wer": 0.055248618784530384
+   },
+   "SSC0RkJuBVw": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 1,
+    "ref_words": 169,
+    "hyp_words": 170,
+    "errors": 2,
+    "wer": 0.011834319526627219
+   },
+   "haWvrSliMVY": {
+    "substitutions": 10,
+    "deletions": 4,
+    "insertions": 0,
+    "ref_words": 115,
+    "hyp_words": 111,
+    "errors": 14,
+    "wer": 0.12173913043478261
+   },
+   "i63u-iAnhuk": {
+    "substitutions": 4,
+    "deletions": 0,
+    "insertions": 3,
+    "ref_words": 135,
+    "hyp_words": 138,
+    "errors": 7,
+    "wer": 0.05185185185185185
+   },
+   "q0aFOxT6TNw": {
+    "substitutions": 3,
+    "deletions": 0,
+    "insertions": 3,
+    "ref_words": 161,
+    "hyp_words": 164,
+    "errors": 6,
+    "wer": 0.037267080745341616
+   },
+   "vOhuf18b-g8": {
+    "substitutions": 2,
+    "deletions": 6,
+    "insertions": 0,
+    "ref_words": 176,
+    "hyp_words": 170,
+    "errors": 8,
+    "wer": 0.045454545454545456
+   }
+  },
+  "large-v1": {
+   "0jHtyF_rCqU": {
+    "substitutions": 1,
+    "deletions": 1,
+    "insertions": 0,
+    "ref_words": 150,
+    "hyp_words": 149,
+    "errors": 2,
+    "wer": 0.013333333333333334
+   },
+   "32slGhAH3Xc": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 3,
+    "ref_words": 174,
+    "hyp_words": 177,
+    "errors": 4,
+    "wer": 0.022988505747126436
+   },
+   "4KbrxIpQgkM": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "ref_words": 154,
+    "hyp_words": 154,
+    "errors": 1,
+    "wer": 0.006493506493506494
+   },
+   "5VMckmQneCk": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "ref_words": 187,
+    "hyp_words": 187,
+    "errors": 1,
+    "wer": 0.0053475935828877
+   },
+   "Gvvo6vUpJRc": {
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 0,
+    "ref_words": 152,
+    "hyp_words": 152,
+    "errors": 0,
+    "wer": 0.0
+   },
+   "Kk-RKpTAXmA": {
+    "substitutions": 3,
+    "deletions": 0,
+    "insertions": 0,
+    "ref_words": 133,
+    "hyp_words": 133,
+    "errors": 3,
+    "wer": 0.022556390977443608
+   },
+   "Rlw_CI7pOKg": {
+    "substitutions": 3,
+    "deletions": 1,
+    "insertions": 1,
+    "ref_words": 181,
+    "hyp_words": 181,
+    "errors": 5,
+    "wer": 0.027624309392265192
+   },
+   "SSC0RkJuBVw": {
+    "substitutions": 2,
+    "deletions": 1,
+    "insertions": 3,
+    "ref_words": 169,
+    "hyp_words": 171,
+    "errors": 6,
+    "wer": 0.03550295857988166
+   },
+   "haWvrSliMVY": {
+    "substitutions": 6,
+    "deletions": 5,
+    "insertions": 1,
+    "ref_words": 115,
+    "hyp_words": 111,
+    "errors": 12,
+    "wer": 0.10434782608695652
+   },
+   "i63u-iAnhuk": {
+    "substitutions": 3,
+    "deletions": 2,
+    "insertions": 3,
+    "ref_words": 135,
+    "hyp_words": 136,
+    "errors": 8,
+    "wer": 0.05925925925925926
+   },
+   "q0aFOxT6TNw": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 3,
+    "ref_words": 161,
+    "hyp_words": 164,
+    "errors": 4,
+    "wer": 0.024844720496894408
+   },
+   "vOhuf18b-g8": {
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 0,
+    "ref_words": 176,
+    "hyp_words": 176,
+    "errors": 0,
+    "wer": 0.0
+   }
+  },
+  "large-v2": {
+   "0jHtyF_rCqU": {
+    "substitutions": 1,
+    "deletions": 1,
+    "insertions": 2,
+    "ref_words": 150,
+    "hyp_words": 151,
+    "errors": 4,
+    "wer": 0.02666666666666667
+   },
+   "32slGhAH3Xc": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 2,
+    "ref_words": 174,
+    "hyp_words": 176,
+    "errors": 3,
+    "wer": 0.017241379310344827
+   },
+   "4KbrxIpQgkM": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "ref_words": 154,
+    "hyp_words": 154,
+    "errors": 1,
+    "wer": 0.006493506493506494
+   },
+   "5VMckmQneCk": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "ref_words": 187,
+    "hyp_words": 187,
+    "errors": 1,
+    "wer": 0.0053475935828877
+   },
+   "Gvvo6vUpJRc": {
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 0,
+    "ref_words": 152,
+    "hyp_words": 152,
+    "errors": 0,
+    "wer": 0.0
+   },
+   "Kk-RKpTAXmA": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 1,
+    "ref_words": 133,
+    "hyp_words": 134,
+    "errors": 2,
+    "wer": 0.015037593984962405
+   },
+   "Rlw_CI7pOKg": {
+    "substitutions": 3,
+    "deletions": 1,
+    "insertions": 1,
+    "ref_words": 181,
+    "hyp_words": 181,
+    "errors": 5,
+    "wer": 0.027624309392265192
+   },
+   "SSC0RkJuBVw": {
+    "substitutions": 3,
+    "deletions": 2,
+    "insertions": 3,
+    "ref_words": 169,
+    "hyp_words": 170,
+    "errors": 8,
+    "wer": 0.047337278106508875
+   },
+   "haWvrSliMVY": {
+    "substitutions": 1,
+    "deletions": 3,
+    "insertions": 6,
+    "ref_words": 115,
+    "hyp_words": 118,
+    "errors": 10,
+    "wer": 0.08695652173913043
+   },
+   "i63u-iAnhuk": {
+    "substitutions": 4,
+    "deletions": 0,
+    "insertions": 3,
+    "ref_words": 135,
+    "hyp_words": 138,
+    "errors": 7,
+    "wer": 0.05185185185185185
+   },
+   "q0aFOxT6TNw": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 2,
+    "ref_words": 161,
+    "hyp_words": 163,
+    "errors": 3,
+    "wer": 0.018633540372670808
+   },
+   "vOhuf18b-g8": {
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 0,
+    "ref_words": 176,
+    "hyp_words": 176,
+    "errors": 0,
+    "wer": 0.0
+   }
+  },
+  "large-v3": {
+   "0jHtyF_rCqU": {
+    "substitutions": 1,
+    "deletions": 1,
+    "insertions": 0,
+    "ref_words": 150,
+    "hyp_words": 149,
+    "errors": 2,
+    "wer": 0.013333333333333334
+   },
+   "32slGhAH3Xc": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 3,
+    "ref_words": 174,
+    "hyp_words": 177,
+    "errors": 4,
+    "wer": 0.022988505747126436
+   },
+   "4KbrxIpQgkM": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "ref_words": 154,
+    "hyp_words": 154,
+    "errors": 1,
+    "wer": 0.006493506493506494
+   },
+   "5VMckmQneCk": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "ref_words": 187,
+    "hyp_words": 187,
+    "errors": 1,
+    "wer": 0.0053475935828877
+   },
+   "Gvvo6vUpJRc": {
+    "substitutions": 0,
+    "deletions": 2,
+    "insertions": 0,
+    "ref_words": 152,
+    "hyp_words": 150,
+    "errors": 2,
+    "wer": 0.013157894736842105
+   },
+   "Kk-RKpTAXmA": {
+    "substitutions": 1,
+    "deletions": 1,
+    "insertions": 0,
+    "ref_words": 133,
+    "hyp_words": 132,
+    "errors": 2,
+    "wer": 0.015037593984962405
+   },
+   "Rlw_CI7pOKg": {
+    "substitutions": 3,
+    "deletions": 1,
+    "insertions": 1,
+    "ref_words": 181,
+    "hyp_words": 181,
+    "errors": 5,
+    "wer": 0.027624309392265192
+   },
+   "SSC0RkJuBVw": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 1,
+    "ref_words": 169,
+    "hyp_words": 170,
+    "errors": 2,
+    "wer": 0.011834319526627219
+   },
+   "haWvrSliMVY": {
+    "substitutions": 1,
+    "deletions": 3,
+    "insertions": 0,
+    "ref_words": 115,
+    "hyp_words": 112,
+    "errors": 4,
+    "wer": 0.034782608695652174
+   },
+   "i63u-iAnhuk": {
+    "substitutions": 3,
+    "deletions": 0,
+    "insertions": 3,
+    "ref_words": 135,
+    "hyp_words": 138,
+    "errors": 6,
+    "wer": 0.044444444444444446
+   },
+   "q0aFOxT6TNw": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 3,
+    "ref_words": 161,
+    "hyp_words": 164,
+    "errors": 4,
+    "wer": 0.024844720496894408
+   },
+   "vOhuf18b-g8": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "ref_words": 176,
+    "hyp_words": 176,
+    "errors": 1,
+    "wer": 0.005681818181818182
+   }
+  },
+  "large-v3-turbo": {
+   "0jHtyF_rCqU": {
+    "substitutions": 1,
+    "deletions": 1,
+    "insertions": 0,
+    "ref_words": 150,
+    "hyp_words": 149,
+    "errors": 2,
+    "wer": 0.013333333333333334
+   },
+   "32slGhAH3Xc": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 3,
+    "ref_words": 174,
+    "hyp_words": 177,
+    "errors": 4,
+    "wer": 0.022988505747126436
+   },
+   "4KbrxIpQgkM": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "ref_words": 154,
+    "hyp_words": 154,
+    "errors": 1,
+    "wer": 0.006493506493506494
+   },
+   "5VMckmQneCk": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "ref_words": 187,
+    "hyp_words": 187,
+    "errors": 1,
+    "wer": 0.0053475935828877
+   },
+   "Gvvo6vUpJRc": {
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 0,
+    "ref_words": 152,
+    "hyp_words": 152,
+    "errors": 0,
+    "wer": 0.0
+   },
+   "Kk-RKpTAXmA": {
+    "substitutions": 1,
+    "deletions": 1,
+    "insertions": 1,
+    "ref_words": 133,
+    "hyp_words": 133,
+    "errors": 3,
+    "wer": 0.022556390977443608
+   },
+   "Rlw_CI7pOKg": {
+    "substitutions": 5,
+    "deletions": 1,
+    "insertions": 1,
+    "ref_words": 181,
+    "hyp_words": 181,
+    "errors": 7,
+    "wer": 0.03867403314917127
+   },
+   "SSC0RkJuBVw": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 3,
+    "ref_words": 169,
+    "hyp_words": 172,
+    "errors": 4,
+    "wer": 0.023668639053254437
+   },
+   "haWvrSliMVY": {
+    "substitutions": 1,
+    "deletions": 3,
+    "insertions": 0,
+    "ref_words": 115,
+    "hyp_words": 112,
+    "errors": 4,
+    "wer": 0.034782608695652174
+   },
+   "i63u-iAnhuk": {
+    "substitutions": 4,
+    "deletions": 0,
+    "insertions": 3,
+    "ref_words": 135,
+    "hyp_words": 138,
+    "errors": 7,
+    "wer": 0.05185185185185185
+   },
+   "q0aFOxT6TNw": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 2,
+    "ref_words": 161,
+    "hyp_words": 163,
+    "errors": 3,
+    "wer": 0.018633540372670808
+   },
+   "vOhuf18b-g8": {
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 0,
+    "ref_words": 176,
+    "hyp_words": 176,
+    "errors": 0,
+    "wer": 0.0
+   }
+  },
+  "medium": {
+   "0jHtyF_rCqU": {
+    "substitutions": 2,
+    "deletions": 1,
+    "insertions": 0,
+    "ref_words": 150,
+    "hyp_words": 149,
+    "errors": 3,
+    "wer": 0.02
+   },
+   "32slGhAH3Xc": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 3,
+    "ref_words": 174,
+    "hyp_words": 177,
+    "errors": 4,
+    "wer": 0.022988505747126436
+   },
+   "4KbrxIpQgkM": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "ref_words": 154,
+    "hyp_words": 154,
+    "errors": 1,
+    "wer": 0.006493506493506494
+   },
+   "5VMckmQneCk": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "ref_words": 187,
+    "hyp_words": 187,
+    "errors": 1,
+    "wer": 0.0053475935828877
+   },
+   "Gvvo6vUpJRc": {
+    "substitutions": 0,
+    "deletions": 2,
+    "insertions": 0,
+    "ref_words": 152,
+    "hyp_words": 150,
+    "errors": 2,
+    "wer": 0.013157894736842105
+   },
+   "Kk-RKpTAXmA": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 1,
+    "ref_words": 133,
+    "hyp_words": 134,
+    "errors": 2,
+    "wer": 0.015037593984962405
+   },
+   "Rlw_CI7pOKg": {
+    "substitutions": 3,
+    "deletions": 1,
+    "insertions": 1,
+    "ref_words": 181,
+    "hyp_words": 181,
+    "errors": 5,
+    "wer": 0.027624309392265192
+   },
+   "SSC0RkJuBVw": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 1,
+    "ref_words": 169,
+    "hyp_words": 170,
+    "errors": 2,
+    "wer": 0.011834319526627219
+   },
+   "haWvrSliMVY": {
+    "substitutions": 7,
+    "deletions": 3,
+    "insertions": 0,
+    "ref_words": 115,
+    "hyp_words": 112,
+    "errors": 10,
+    "wer": 0.08695652173913043
+   },
+   "i63u-iAnhuk": {
+    "substitutions": 3,
+    "deletions": 2,
+    "insertions": 3,
+    "ref_words": 135,
+    "hyp_words": 136,
+    "errors": 8,
+    "wer": 0.05925925925925926
+   },
+   "q0aFOxT6TNw": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 3,
+    "ref_words": 161,
+    "hyp_words": 164,
+    "errors": 4,
+    "wer": 0.024844720496894408
+   },
+   "vOhuf18b-g8": {
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 0,
+    "ref_words": 176,
+    "hyp_words": 176,
+    "errors": 0,
+    "wer": 0.0
+   }
+  },
+  "medium.en": {
+   "0jHtyF_rCqU": {
+    "substitutions": 1,
+    "deletions": 1,
+    "insertions": 0,
+    "ref_words": 150,
+    "hyp_words": 149,
+    "errors": 2,
+    "wer": 0.013333333333333334
+   },
+   "32slGhAH3Xc": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 3,
+    "ref_words": 174,
+    "hyp_words": 177,
+    "errors": 4,
+    "wer": 0.022988505747126436
+   },
+   "4KbrxIpQgkM": {
+    "substitutions": 2,
+    "deletions": 0,
+    "insertions": 1,
+    "ref_words": 154,
+    "hyp_words": 155,
+    "errors": 3,
+    "wer": 0.01948051948051948
+   },
+   "5VMckmQneCk": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "ref_words": 187,
+    "hyp_words": 187,
+    "errors": 1,
+    "wer": 0.0053475935828877
+   },
+   "Gvvo6vUpJRc": {
+    "substitutions": 0,
+    "deletions": 2,
+    "insertions": 0,
+    "ref_words": 152,
+    "hyp_words": 150,
+    "errors": 2,
+    "wer": 0.013157894736842105
+   },
+   "Kk-RKpTAXmA": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "ref_words": 133,
+    "hyp_words": 133,
+    "errors": 1,
+    "wer": 0.007518796992481203
+   },
+   "Rlw_CI7pOKg": {
+    "substitutions": 3,
+    "deletions": 1,
+    "insertions": 1,
+    "ref_words": 181,
+    "hyp_words": 181,
+    "errors": 5,
+    "wer": 0.027624309392265192
+   },
+   "SSC0RkJuBVw": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 1,
+    "ref_words": 169,
+    "hyp_words": 170,
+    "errors": 2,
+    "wer": 0.011834319526627219
+   },
+   "haWvrSliMVY": {
+    "substitutions": 9,
+    "deletions": 5,
+    "insertions": 0,
+    "ref_words": 115,
+    "hyp_words": 110,
+    "errors": 14,
+    "wer": 0.12173913043478261
+   },
+   "i63u-iAnhuk": {
+    "substitutions": 4,
+    "deletions": 2,
+    "insertions": 3,
+    "ref_words": 135,
+    "hyp_words": 136,
+    "errors": 9,
+    "wer": 0.06666666666666667
+   },
+   "q0aFOxT6TNw": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 3,
+    "ref_words": 161,
+    "hyp_words": 164,
+    "errors": 4,
+    "wer": 0.024844720496894408
+   },
+   "vOhuf18b-g8": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "ref_words": 176,
+    "hyp_words": 176,
+    "errors": 1,
+    "wer": 0.005681818181818182
+   }
+  },
+  "small": {
+   "0jHtyF_rCqU": {
+    "substitutions": 2,
+    "deletions": 2,
+    "insertions": 1,
+    "ref_words": 150,
+    "hyp_words": 149,
+    "errors": 5,
+    "wer": 0.03333333333333333
+   },
+   "32slGhAH3Xc": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 3,
+    "ref_words": 174,
+    "hyp_words": 177,
+    "errors": 4,
+    "wer": 0.022988505747126436
+   },
+   "4KbrxIpQgkM": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "ref_words": 154,
+    "hyp_words": 154,
+    "errors": 1,
+    "wer": 0.006493506493506494
+   },
+   "5VMckmQneCk": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "ref_words": 187,
+    "hyp_words": 187,
+    "errors": 1,
+    "wer": 0.0053475935828877
+   },
+   "Gvvo6vUpJRc": {
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 0,
+    "ref_words": 152,
+    "hyp_words": 152,
+    "errors": 0,
+    "wer": 0.0
+   },
+   "Kk-RKpTAXmA": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "ref_words": 133,
+    "hyp_words": 133,
+    "errors": 1,
+    "wer": 0.007518796992481203
+   },
+   "Rlw_CI7pOKg": {
+    "substitutions": 3,
+    "deletions": 0,
+    "insertions": 1,
+    "ref_words": 181,
+    "hyp_words": 182,
+    "errors": 4,
+    "wer": 0.022099447513812154
+   },
+   "SSC0RkJuBVw": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 1,
+    "ref_words": 169,
+    "hyp_words": 170,
+    "errors": 2,
+    "wer": 0.011834319526627219
+   },
+   "haWvrSliMVY": {
+    "substitutions": 13,
+    "deletions": 5,
+    "insertions": 1,
+    "ref_words": 115,
+    "hyp_words": 111,
+    "errors": 19,
+    "wer": 0.16521739130434782
+   },
+   "i63u-iAnhuk": {
+    "substitutions": 4,
+    "deletions": 0,
+    "insertions": 3,
+    "ref_words": 135,
+    "hyp_words": 138,
+    "errors": 7,
+    "wer": 0.05185185185185185
+   },
+   "q0aFOxT6TNw": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 3,
+    "ref_words": 161,
+    "hyp_words": 164,
+    "errors": 4,
+    "wer": 0.024844720496894408
+   },
+   "vOhuf18b-g8": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "ref_words": 176,
+    "hyp_words": 176,
+    "errors": 1,
+    "wer": 0.005681818181818182
+   }
+  },
+  "small.en": {
+   "0jHtyF_rCqU": {
+    "substitutions": 1,
+    "deletions": 1,
+    "insertions": 0,
+    "ref_words": 150,
+    "hyp_words": 149,
+    "errors": 2,
+    "wer": 0.013333333333333334
+   },
+   "32slGhAH3Xc": {
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 2,
+    "ref_words": 174,
+    "hyp_words": 176,
+    "errors": 2,
+    "wer": 0.011494252873563218
+   },
+   "4KbrxIpQgkM": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "ref_words": 154,
+    "hyp_words": 154,
+    "errors": 1,
+    "wer": 0.006493506493506494
+   },
+   "5VMckmQneCk": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "ref_words": 187,
+    "hyp_words": 187,
+    "errors": 1,
+    "wer": 0.0053475935828877
+   },
+   "Gvvo6vUpJRc": {
+    "substitutions": 0,
+    "deletions": 2,
+    "insertions": 0,
+    "ref_words": 152,
+    "hyp_words": 150,
+    "errors": 2,
+    "wer": 0.013157894736842105
+   },
+   "Kk-RKpTAXmA": {
+    "substitutions": 2,
+    "deletions": 0,
+    "insertions": 0,
+    "ref_words": 133,
+    "hyp_words": 133,
+    "errors": 2,
+    "wer": 0.015037593984962405
+   },
+   "Rlw_CI7pOKg": {
+    "substitutions": 4,
+    "deletions": 0,
+    "insertions": 1,
+    "ref_words": 181,
+    "hyp_words": 182,
+    "errors": 5,
+    "wer": 0.027624309392265192
+   },
+   "SSC0RkJuBVw": {
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 1,
+    "ref_words": 169,
+    "hyp_words": 170,
+    "errors": 2,
+    "wer": 0.011834319526627219
+   },
+   "haWvrSliMVY": {
+    "substitutions": 12,
+    "deletions": 4,
+    "insertions": 1,
+    "ref_words": 115,
+    "hyp_words": 112,
+    "errors": 17,
+    "wer": 0.14782608695652175
+   },
+   "i63u-iAnhuk": {
+    "substitutions": 7,
+    "deletions": 0,
+    "insertions": 3,
+    "ref_words": 135,
+    "hyp_words": 138,
+    "errors": 10,
+    "wer": 0.07407407407407407
+   },
+   "q0aFOxT6TNw": {
+    "substitutions": 2,
+    "deletions": 0,
+    "insertions": 2,
+    "ref_words": 161,
+    "hyp_words": 163,
+    "errors": 4,
+    "wer": 0.024844720496894408
+   },
+   "vOhuf18b-g8": {
+    "substitutions": 2,
+    "deletions": 0,
+    "insertions": 0,
+    "ref_words": 176,
+    "hyp_words": 176,
+    "errors": 2,
+    "wer": 0.011363636363636364
+   }
+  },
+  "tiny": {
+   "0jHtyF_rCqU": {
+    "substitutions": 4,
+    "deletions": 1,
+    "insertions": 3,
+    "ref_words": 150,
+    "hyp_words": 152,
+    "errors": 8,
+    "wer": 0.05333333333333334
+   },
+   "32slGhAH3Xc": {
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 2,
+    "ref_words": 174,
+    "hyp_words": 176,
+    "errors": 2,
+    "wer": 0.011494252873563218
+   },
+   "4KbrxIpQgkM": {
+    "substitutions": 3,
+    "deletions": 1,
+    "insertions": 2,
+    "ref_words": 154,
+    "hyp_words": 155,
+    "errors": 6,
+    "wer": 0.03896103896103896
+   },
+   "5VMckmQneCk": {
+    "substitutions": 0,
+    "deletions": 1,
+    "insertions": 1,
+    "ref_words": 187,
+    "hyp_words": 187,
+    "errors": 2,
+    "wer": 0.0106951871657754
+   },
+   "Gvvo6vUpJRc": {
+    "substitutions": 0,
+    "deletions": 1,
+    "insertions": 0,
+    "ref_words": 152,
+    "hyp_words": 151,
+    "errors": 1,
+    "wer": 0.006578947368421052
+   },
+   "Kk-RKpTAXmA": {
+    "substitutions": 10,
+    "deletions": 2,
+    "insertions": 1,
+    "ref_words": 133,
+    "hyp_words": 132,
+    "errors": 13,
+    "wer": 0.09774436090225563
+   },
+   "Rlw_CI7pOKg": {
+    "substitutions": 9,
+    "deletions": 4,
+    "insertions": 3,
+    "ref_words": 181,
+    "hyp_words": 180,
+    "errors": 16,
+    "wer": 0.08839779005524862
+   },
+   "SSC0RkJuBVw": {
+    "substitutions": 2,
+    "deletions": 1,
+    "insertions": 0,
+    "ref_words": 169,
+    "hyp_words": 168,
+    "errors": 3,
+    "wer": 0.01775147928994083
+   },
+   "haWvrSliMVY": {
+    "substitutions": 10,
+    "deletions": 7,
+    "insertions": 1,
+    "ref_words": 115,
+    "hyp_words": 109,
+    "errors": 18,
+    "wer": 0.1565217391304348
+   },
+   "i63u-iAnhuk": {
+    "substitutions": 6,
+    "deletions": 0,
+    "insertions": 3,
+    "ref_words": 135,
+    "hyp_words": 138,
+    "errors": 9,
+    "wer": 0.06666666666666667
+   },
+   "q0aFOxT6TNw": {
+    "substitutions": 3,
+    "deletions": 0,
+    "insertions": 3,
+    "ref_words": 161,
+    "hyp_words": 164,
+    "errors": 6,
+    "wer": 0.037267080745341616
+   },
+   "vOhuf18b-g8": {
+    "substitutions": 5,
+    "deletions": 0,
+    "insertions": 2,
+    "ref_words": 176,
+    "hyp_words": 178,
+    "errors": 7,
+    "wer": 0.03977272727272727
+   }
+  },
+  "tiny.en": {
+   "0jHtyF_rCqU": {
+    "substitutions": 2,
+    "deletions": 4,
+    "insertions": 0,
+    "ref_words": 150,
+    "hyp_words": 146,
+    "errors": 6,
+    "wer": 0.04
+   },
+   "32slGhAH3Xc": {
+    "substitutions": 2,
+    "deletions": 1,
+    "insertions": 3,
+    "ref_words": 174,
+    "hyp_words": 176,
+    "errors": 6,
+    "wer": 0.034482758620689655
+   },
+   "4KbrxIpQgkM": {
+    "substitutions": 2,
+    "deletions": 0,
+    "insertions": 1,
+    "ref_words": 154,
+    "hyp_words": 155,
+    "errors": 3,
+    "wer": 0.01948051948051948
+   },
+   "5VMckmQneCk": {
+    "substitutions": 3,
+    "deletions": 0,
+    "insertions": 0,
+    "ref_words": 187,
+    "hyp_words": 187,
+    "errors": 3,
+    "wer": 0.016042780748663103
+   },
+   "Gvvo6vUpJRc": {
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 0,
+    "ref_words": 152,
+    "hyp_words": 152,
+    "errors": 0,
+    "wer": 0.0
+   },
+   "Kk-RKpTAXmA": {
+    "substitutions": 6,
+    "deletions": 0,
+    "insertions": 2,
+    "ref_words": 133,
+    "hyp_words": 135,
+    "errors": 8,
+    "wer": 0.06015037593984962
+   },
+   "Rlw_CI7pOKg": {
+    "substitutions": 9,
+    "deletions": 0,
+    "insertions": 5,
+    "ref_words": 181,
+    "hyp_words": 186,
+    "errors": 14,
+    "wer": 0.07734806629834254
+   },
+   "SSC0RkJuBVw": {
+    "substitutions": 3,
+    "deletions": 0,
+    "insertions": 1,
+    "ref_words": 169,
+    "hyp_words": 170,
+    "errors": 4,
+    "wer": 0.023668639053254437
+   },
+   "haWvrSliMVY": {
+    "substitutions": 11,
+    "deletions": 5,
+    "insertions": 1,
+    "ref_words": 115,
+    "hyp_words": 111,
+    "errors": 17,
+    "wer": 0.14782608695652175
+   },
+   "i63u-iAnhuk": {
+    "substitutions": 6,
+    "deletions": 1,
+    "insertions": 3,
+    "ref_words": 135,
+    "hyp_words": 137,
+    "errors": 10,
+    "wer": 0.07407407407407407
+   },
+   "q0aFOxT6TNw": {
+    "substitutions": 3,
+    "deletions": 1,
+    "insertions": 4,
+    "ref_words": 161,
+    "hyp_words": 164,
+    "errors": 8,
+    "wer": 0.049689440993788817
+   },
+   "vOhuf18b-g8": {
+    "substitutions": 1,
+    "deletions": 3,
+    "insertions": 0,
+    "ref_words": 176,
+    "hyp_words": 173,
+    "errors": 4,
+    "wer": 0.022727272727272728
+   }
+  }
+ },
+ "vs_incumbent": {
+  "large-v3": {
+   "observed_diff": -0.013248542660307363,
+   "ci_low": -0.030320044918585063,
+   "ci_high": -0.0015067805123053727,
+   "p_value": 0.0244,
+   "significant": true,
+   "clips_a_better": 7,
+   "clips_b_better": 2,
+   "clips_tied": 3,
+   "resamples": 10000,
+   "seed": 42
+  },
+  "large-v3-turbo": {
+   "observed_diff": -0.012188659247482775,
+   "ci_low": -0.029041095890410963,
+   "ci_high": -0.0014962593516209474,
+   "p_value": 0.0212,
+   "significant": true,
+   "clips_a_better": 8,
+   "clips_b_better": 2,
+   "clips_tied": 2,
+   "resamples": 10000,
+   "seed": 42
+  },
+  "medium": {
+   "observed_diff": -0.009009009009009007,
+   "ci_low": -0.019020172910662825,
+   "ci_high": -0.0009876543209876541,
+   "p_value": 0.0344,
+   "significant": true,
+   "clips_a_better": 8,
+   "clips_b_better": 2,
+   "clips_tied": 2,
+   "resamples": 10000,
+   "seed": 42
+  },
+  "large-v2": {
+   "observed_diff": -0.007949125596184416,
+   "ci_low": -0.019340159271899887,
+   "ci_high": 0.003094378545642082,
+   "p_value": 0.1674,
+   "significant": false,
+   "clips_a_better": 7,
+   "clips_b_better": 2,
+   "clips_tied": 3,
+   "resamples": 10000,
+   "seed": 42
+  },
+  "large-v1": {
+   "observed_diff": -0.006889242183359828,
+   "ci_low": -0.015561959654178677,
+   "ci_high": 0.0015822784810126563,
+   "p_value": 0.1252,
+   "significant": false,
+   "clips_a_better": 8,
+   "clips_b_better": 2,
+   "clips_tied": 2,
+   "resamples": 10000,
+   "seed": 42
+  },
+  "medium.en": {
+   "observed_diff": -0.005829358770535236,
+   "ci_low": -0.013325257419745606,
+   "ci_high": 0.0010235414534288632,
+   "p_value": 0.1114,
+   "significant": false,
+   "clips_a_better": 6,
+   "clips_b_better": 2,
+   "clips_tied": 4,
+   "resamples": 10000,
+   "seed": 42
+  },
+  "small": {
+   "observed_diff": -0.005299417064122944,
+   "ci_low": -0.013383297644539615,
+   "ci_high": 0.0021447721179624624,
+   "p_value": 0.1936,
+   "significant": false,
+   "clips_a_better": 5,
+   "clips_b_better": 3,
+   "clips_tied": 4,
+   "resamples": 10000,
+   "seed": 42
+  },
+  "small.en": {
+   "observed_diff": -0.004769475357710648,
+   "ci_low": -0.010893246187363835,
+   "ci_high": 0.0005913660555884048,
+   "p_value": 0.1186,
+   "significant": false,
+   "clips_a_better": 5,
+   "clips_b_better": 2,
+   "clips_tied": 5,
+   "resamples": 10000,
+   "seed": 42
+  },
+  "base.en": {
+   "observed_diff": -0.0005299417064122923,
+   "ci_low": -0.010297482837528606,
+   "ci_high": 0.009493670886075944,
+   "p_value": 0.9374,
+   "significant": false,
+   "clips_a_better": 4,
+   "clips_b_better": 4,
+   "clips_tied": 4,
+   "resamples": 10000,
+   "seed": 42
+  },
+  "tiny.en": {
+   "observed_diff": 0.012718600953895078,
+   "ci_low": 0.0072869955156950675,
+   "ci_high": 0.017883755588673625,
+   "p_value": 0.0,
+   "significant": true,
+   "clips_a_better": 0,
+   "clips_b_better": 8,
+   "clips_tied": 4,
+   "resamples": 10000,
+   "seed": 42
+  },
+  "tiny": {
+   "observed_diff": 0.01695813460519343,
+   "ci_low": 0.00765027322404372,
+   "ci_high": 0.027537796976241903,
+   "p_value": 0.0,
+   "significant": true,
+   "clips_a_better": 1,
+   "clips_b_better": 10,
+   "clips_tied": 1,
+   "resamples": 10000,
+   "seed": 42
+  }
+ },
+ "decision": {
+  "best_wer_model": "large-v3",
+  "best_wer": 0.018018018018018018,
+  "qualifiers": [
+   {
+    "model": "large-v1",
+    "test": {
+     "observed_diff": 0.006359300476947535,
+     "ci_low": -0.001544004117344313,
+     "ci_high": 0.017351069982648928,
+     "p_value": 0.1664,
+     "significant": false,
+     "clips_a_better": 2,
+     "clips_b_better": 4,
+     "clips_tied": 6,
+     "resamples": 10000,
+     "seed": 42
+    },
+    "is_best": false
+   },
+   {
+    "model": "large-v2",
+    "test": {
+     "observed_diff": 0.005299417064122947,
+     "ci_low": -0.002847650688182249,
+     "ci_high": 0.015625000000000003,
+     "p_value": 0.2692,
+     "significant": false,
+     "clips_a_better": 4,
+     "clips_b_better": 4,
+     "clips_tied": 4,
+     "resamples": 10000,
+     "seed": 42
+    },
+    "is_best": false
+   },
+   {
+    "model": "large-v3",
+    "test": null,
+    "is_best": true
+   },
+   {
+    "model": "large-v3-turbo",
+    "test": {
+     "observed_diff": 0.001059883412824588,
+     "ci_low": -0.003056546102903719,
+     "ci_high": 0.005151983513652755,
+     "p_value": 0.6994,
+     "significant": false,
+     "clips_a_better": 3,
+     "clips_b_better": 4,
+     "clips_tied": 5,
+     "resamples": 10000,
+     "seed": 42
+    },
+    "is_best": false
+   },
+   {
+    "model": "medium",
+    "test": {
+     "observed_diff": 0.004239533651298356,
+     "ci_low": -0.000514933058702368,
+     "ci_high": 0.012331838565022419,
+     "p_value": 0.1978,
+     "significant": false,
+     "clips_a_better": 1,
+     "clips_b_better": 3,
+     "clips_tied": 8,
+     "resamples": 10000,
+     "seed": 42
+    },
+    "is_best": false
+   },
+   {
+    "model": "medium.en",
+    "test": {
+     "observed_diff": 0.007419183889772127,
+     "ci_low": -0.0005040322580645192,
+     "ci_high": 0.020352035203520354,
+     "p_value": 0.1022,
+     "significant": false,
+     "clips_a_better": 1,
+     "clips_b_better": 3,
+     "clips_tied": 8,
+     "resamples": 10000,
+     "seed": 42
+    },
+    "is_best": false
+   },
+   {
+    "model": "small",
+    "test": {
+     "observed_diff": 0.00794912559618442,
+     "ci_low": -0.0030706243602865915,
+     "ci_high": 0.02704164413196322,
+     "p_value": 0.411,
+     "significant": false,
+     "clips_a_better": 3,
+     "clips_b_better": 3,
+     "clips_tied": 6,
+     "resamples": 10000,
+     "seed": 42
+    },
+    "is_best": false
+   },
+   {
+    "model": "small.en",
+    "test": {
+     "observed_diff": 0.008479067302596715,
+     "ci_low": -0.0015251652262328417,
+     "ci_high": 0.02547065337763012,
+     "p_value": 0.2204,
+     "significant": false,
+     "clips_a_better": 1,
+     "clips_b_better": 3,
+     "clips_tied": 8,
+     "resamples": 10000,
+     "seed": 42
+    },
+    "is_best": false
+   }
+  ],
+  "adopt": "small",
+  "adopt_is_best_wer": false
+ }
+}

@@ -1,0 +1,461 @@
+/* ===========================================================================
+   seam.css — the mark apart.
+
+   Two layouts out of one DOM.
+
+   The default is an ordinary article: a heading, an illustrated four-row
+   ledger, a closing paragraph. It needs no JavaScript, it is what a reader
+   with prefers-reduced-motion or a short viewport gets, and it is finished
+   rather than degraded.
+
+   `.is-play` is added by seam.js only when there is room and permission to
+   move. It collapses the same three blocks into one pinned viewport, stacked
+   in a single grid cell, so the mark holds still in the left column while the
+   text in the right column is exchanged beneath it.
+   ======================================================================== */
+
+.seam {
+  /* The two numbers the whole geometry is built on. --mh is the assembled
+     mark's height; --row is the pitch the pieces spread to. seam.js emits each
+     piece's rest position as a calc() against both, so a breakpoint moves the
+     choreography with the layout and nothing has to be told about it. */
+  --mh: 220px;
+  --row: 112px;
+  --gw: calc(var(--mh) * 0.83778);   /* the mark's ink is 15.08 x 18 units */
+  --gap: clamp(16px, 3.4vw, 52px);
+  --maxw: 900px;
+
+  /* How much larger the mark stands before it comes apart. The pieces spread
+     to a pitch 2.7x their own spacing in the drawing, and the mark shrinks
+     into the ledger as they go, so the separation reads as a journey rather
+     than as a nudge. Capped so the swollen mark never reaches the text: the
+     overhang is (--gw * (--pop - 1) / 2) and it has to stay inside --gap. */
+  --pop: 1.45;
+
+  /* The channel hues and the ink are the page's own now.
+
+     Until 24 Sep 2026 this section was black under both themes and pinned
+     every colour to its BENCH value, so under FIELD the page went stone,
+     black, stone again. It sits on the environment like every other section:
+     under BENCH the ribbon field is light ADDED to the graphite (screen), and
+     under FIELD the same field is printed INTO the stone (multiply) as an
+     etched lattice. The shader is untouched in both; only how its pixels
+     meet the page changes. */
+  --s-transcript: var(--ch-transcript);
+  --s-facial: var(--ch-facial);
+  --s-vocal: var(--ch-vocal);
+  --s-audience: var(--ch-audience);
+
+  --s-ink: var(--ink);
+  --s-ink-2: var(--ink-2);
+  /* The note line carries the facial channel's constant, which contract.js
+     requires wherever 34.2% is shown, so it is set at ink-2, not ink-3. */
+  --s-ink-3: var(--ink-2);
+  --s-hair: color-mix(in srgb, var(--ink) 17%, transparent);
+
+  position: relative;
+  isolation: isolate;
+  padding: clamp(72px, 12vh, 132px) var(--gutter);
+  background: var(--body);
+  color: var(--s-ink);
+  font-family: var(--f-inst);
+}
+
+/* The ribbon field, mirrored.
+
+   The shader is untouched; the flip is a presentation decision and it is the
+   reason this effect was chosen at all. Its own `rightFade` puts the light on
+   one side and its `centerDark` suppresses the other, so reversed, the light
+   falls under the glyph column and the quiet falls under the ledger. See
+   ribbonfield.js for the provenance and for what the flip does to the pointer
+   drift. */
+.seam__field {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  transform: scaleX(-1);
+  /* Its own palette (teal, cyan, indigo, purple) is pulled toward the
+     building's silver key, so the lattice reads as instrument light rather
+     than a wash of its own; the four channel colours on the pieces stay the
+     only strong hues in the section. */
+  filter: saturate(.5);
+  mix-blend-mode: screen;
+}
+
+[data-theme="field"] .seam__field {
+  filter: invert(1) hue-rotate(180deg) saturate(.5);
+  mix-blend-mode: multiply;
+  opacity: .85;
+}
+
+.seam__field canvas {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* The field is a picture, not a backdrop, so it has to be put back under the
+   type. This ramps from nothing over the mark to near-solid over the ledger.
+   The numbers are set by measurement, not by eye: the note line is the
+   tightest thing on the plate and the ramp is only as heavy as it has to be to
+   keep it clear of the floor. */
+.seam__air {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  /* The ramp pulls toward the page's own ground rather than toward black,
+     so the ledger's side of the section IS the environment and the top and
+     bottom edges meet the sections either side of it on the same colour. */
+  background:
+    linear-gradient(90deg,
+      color-mix(in srgb, var(--body) 0%, transparent) 0%,
+      color-mix(in srgb, var(--body) 4%, transparent) 18%,
+      color-mix(in srgb, var(--body) 22%, transparent) 26%,
+      color-mix(in srgb, var(--body) 55%, transparent) 32%,
+      color-mix(in srgb, var(--body) 84%, transparent) 38%,
+      color-mix(in srgb, var(--body) 92%, transparent) 46%,
+      color-mix(in srgb, var(--body) 95%, transparent) 100%),
+    linear-gradient(180deg,
+      var(--body) 0%,
+      color-mix(in srgb, var(--body) 0%, transparent) 22%,
+      color-mix(in srgb, var(--body) 0%, transparent) 78%,
+      var(--body) 100%);
+}
+
+/* Hidden, but not display:none -- a gradient in a collapsed subtree is still
+   referenceable, a gradient in a display:none one is not, on every engine. */
+.seam__defs {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.seam__open,
+.seam__stage,
+.seam__shut {
+  position: relative;
+  z-index: 2;
+  width: min(100%, var(--maxw));
+  margin-inline: auto;
+}
+
+/* --- the words ---------------------------------------------------------- */
+
+.seam__h,
+.seam__h2 {
+  margin: 0;
+  color: var(--s-ink);
+  font-size: clamp(30px, 3.6vw, 46px);
+  line-height: 1.12;
+  letter-spacing: -0.021em;
+  font-variation-settings: "wdth" var(--w-mid);
+  font-weight: 640;
+  text-wrap: balance;
+}
+
+.seam__sub,
+.seam__body {
+  margin: var(--s-4) 0 0;
+  max-width: 54ch;
+  color: var(--s-ink-2);
+  font-size: var(--t-lede);
+  line-height: 1.52;
+}
+
+.seam__open { margin-bottom: clamp(48px, 7vh, 88px); }
+.seam__shut { margin-top: clamp(48px, 7vh, 88px); }
+
+/* --- the composition ---------------------------------------------------- */
+
+.seam__stage {
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+}
+
+.seam__glyph {
+  position: relative;
+  flex: none;
+  width: var(--gw);
+  height: var(--mh);
+  color: var(--ink);
+}
+
+/* The four pieces are identically framed and stacked, so at rest they are
+   indistinguishable from one drawing of the whole mark. Everything that
+   happens to them afterwards is one translation on the Y axis. */
+.seam__piece,
+.seam__ghost {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.seam__piece {
+  transform: translateY(var(--dy));
+}
+
+.seam__piece[data-piece="transcript"] { --s-chip: var(--s-transcript); }
+.seam__piece[data-piece="facial"]     { --s-chip: var(--s-facial); }
+.seam__piece[data-piece="vocal"]      { --s-chip: var(--s-vocal); }
+.seam__piece[data-piece="audience"]   { --s-chip: var(--s-audience); }
+
+/* The extruded body. Eight stepped copies of the same path, each a little more
+   transparent than the last, which builds a solid edge that fades into the
+   ground instead of ending on a hard line. */
+.seam__extrude path { fill: #12171f; }
+
+/* In daylight the milled side of the metal catches light too; a near-black
+   edge read as a hard cast shadow under every piece on stone. */
+[data-theme="field"] .seam__extrude path { fill: #59606a; }
+
+/* The tint blends in `color`, which takes the hue and leaves the luminosity
+   alone -- so the piece becomes coloured metal rather than a coloured shape,
+   and the highlight survives. Isolated so the blend cannot reach the field
+   behind it. */
+.seam__top { isolation: isolate; }
+
+.seam__tint {
+  fill: var(--s-chip, #ffffff);
+  mix-blend-mode: color;
+  opacity: .88;
+}
+
+/* Whole, the mark is the mark: no channel belongs to it until it comes apart. */
+.seam.is-play .seam__tint { opacity: 0; }
+
+/* Where the mark should be.
+
+   It is drawn only for the last beat. While the pieces are apart it would sit
+   directly under the two slabs -- they travel barely a third of their own
+   height, which is all four evenly spaced rows allow -- and read as a tangle.
+   Held back, it arrives as the pieces come home and becomes the one thing the
+   broken piece can be seen to miss. */
+.seam__ghost {
+  opacity: 0;
+  fill: none;
+  stroke: #ffffff;
+  /* A hairline, and one that stays a hairline. The viewBox is 15 units wide
+     inside a 160px box, so any stroke expressed in user units is multiplied by
+     about ten; non-scaling-stroke takes it off the drawing's coordinate system
+     and puts it on the screen's, which also holds it steady while the glyph is
+     being scaled. */
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+  stroke-linejoin: round;
+}
+
+.seam__ghost { stroke: color-mix(in srgb, var(--ink) 62%, transparent); }
+
+/* --- the ledger --------------------------------------------------------- */
+
+.seam__rows {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-auto-rows: var(--row);
+}
+
+.seam__row {
+  position: relative;
+  display: grid;
+  align-content: center;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas:
+    "name num"
+    "note note";
+  column-gap: var(--s-5);
+  row-gap: 2px;
+}
+
+/* Sits on the row's top edge rather than in its content, so the text block
+   stays optically centred on the piece beside it. */
+.seam__rule {
+  position: absolute;
+  inset-inline: 0;
+  top: 0;
+  height: 1px;
+  background: var(--s-hair);
+  transform-origin: left center;
+}
+
+/* The head of each rule carries its own piece's colour, so the ledger is tied
+   to the four shapes beside it by something other than proximity. */
+.seam__rule::after {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 84px;
+  background: var(--s-chip, transparent);
+  opacity: .9;
+}
+
+.seam__row[data-channel="transcript"] { --s-chip: var(--s-transcript); }
+.seam__row[data-channel="facial"]     { --s-chip: var(--s-facial); }
+.seam__row[data-channel="vocal"]      { --s-chip: var(--s-vocal); }
+.seam__row[data-channel="audience"]   { --s-chip: var(--s-audience); }
+
+.seam__name {
+  grid-area: name;
+  margin: 0;
+  color: var(--s-ink);
+  font-size: clamp(15px, 1.25vw, 18px);
+  line-height: 1.24;
+  font-weight: 600;
+  font-variation-settings: "wdth" var(--w-trust-hi);
+}
+
+.seam__num {
+  grid-area: num;
+  align-self: start;
+  color: var(--s-ink);
+  font-size: clamp(22px, 2.1vw, 30px);
+  line-height: 1;
+  font-weight: 620;
+  font-variant-numeric: tabular-nums slashed-zero;
+  font-variation-settings: "wdth" var(--w-wide);
+  letter-spacing: -0.014em;
+}
+
+.seam__note {
+  grid-area: note;
+  margin: var(--s-2) 0 0;
+  color: var(--s-ink-3);
+  /* Not --t-micro. On the facial row this line carries the constant the 34.2%
+     is only meaningful against, which contract.js requires to be shown wherever
+     that number is, so it is set at label size rather than footnote size. */
+  font-size: var(--t-label);
+  line-height: 1.42;
+}
+
+/* The width axis carries trust in this build, and it is not decorative here:
+   --w-thin is reserved for the facial channel, everywhere, permanently. The
+   row that reports 34.2% is set narrower than the three around it. */
+.seam__row[data-channel="facial"] .seam__name,
+.seam__row[data-channel="facial"] .seam__num {
+  font-variation-settings: "wdth" var(--w-thin);
+}
+
+/* --- the pinned version ------------------------------------------------- */
+
+.seam.is-play {
+  /* chassis.css gives every [id] a 6rem scroll-margin. This one is pinned at
+     `top top`, so the margin would start the pin 96px early. The film below
+     makes the same exception for the same reason. */
+  scroll-margin-top: 0;
+
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  height: 100svh;
+  padding-block: 0;
+  overflow: hidden;
+}
+
+/* Three blocks, one cell. The stage never moves; the text either side of it is
+   exchanged in place, indented to land exactly over the ledger column. */
+.seam.is-play > .seam__open,
+.seam.is-play > .seam__stage,
+.seam.is-play > .seam__shut {
+  grid-area: 1 / 1;
+  margin: 0;
+}
+
+.seam.is-play > .seam__open,
+.seam.is-play > .seam__shut {
+  padding-inline-start: calc(var(--gw) + var(--gap));
+}
+
+.seam.is-play .seam__air { z-index: 0; }
+
+/* The opening state, before the timeline has run a frame: mark whole, one
+   line of text, nothing else drawn. */
+.seam.is-play .seam__ghost { opacity: 0; }
+.seam.is-play .seam__shut { opacity: 0; visibility: hidden; }
+.seam.is-play .seam__rule { transform: scaleX(0); }
+.seam.is-play .seam__row > :not(.seam__rule) { opacity: 0; }
+
+/* --- narrower ----------------------------------------------------------- */
+
+@media (max-width: 1100px) {
+  .seam { --mh: 190px; --row: 108px; --pop: 1.38; }
+}
+
+@media (max-width: 860px) {
+  .seam { --mh: 160px; --row: 104px; --pop: 1.35; }
+  .seam__num { font-size: 22px; }
+}
+
+@media (max-width: 560px) {
+  .seam {
+    --mh: 120px;
+    --row: 112px;
+    --gap: 16px;
+    --pop: 1.25;
+  }
+  .seam__row { column-gap: var(--s-4); }
+  .seam__num { align-self: baseline; font-size: 20px; }
+  .seam__sub,
+  .seam__body { font-size: var(--t-small); }
+}
+
+/* A phone in landscape is under the 640px height gate, so it never pins; this
+   only has to keep the still article readable. */
+@media (max-height: 639px) {
+  .seam { --mh: 132px; --row: 100px; padding-block: 64px; }
+}
+
+/* --- still ---------------------------------------------------------------
+   Nothing to switch off: the moving version is only ever built when this
+   query does not match, so the rules above are already the finished page.
+   The one thing worth saying explicitly is that the pieces stay apart, which
+   is the state that carries the information. */
+@media (prefers-reduced-motion: reduce) {
+  .seam__piece { transform: translateY(var(--dy)); }
+}
+
+/* --- print ---------------------------------------------------------------
+   Back to the article, on white, with the ink inverted so a black plate does
+   not arrive as a full page of toner. */
+@media print {
+  .seam {
+    height: auto;
+    display: block;
+    padding: 24pt 0;
+    background: #fff;
+    color: #000;
+    --s-ink: #000;
+    --s-ink-2: #333;
+    --s-ink-3: #555;
+    --s-hair: #bbb;
+  }
+  .seam__air,
+  .seam__field,
+  .seam__defs { display: none; }
+  .seam__extrude { display: none; }
+  .seam__face { fill: #000 !important; }
+  .seam__tint { display: none; }
+  .seam.is-play > .seam__open,
+  .seam.is-play > .seam__shut {
+    padding-inline-start: 0;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  .seam.is-play > .seam__open,
+  .seam.is-play > .seam__stage,
+  .seam.is-play > .seam__shut { grid-area: auto; }
+  .seam__glyph { color: #000; }
+  .seam__ghost { display: none; }
+  .seam__rule { transform: none !important; background: #bbb; }
+  .seam__row > * { opacity: 1 !important; }
+  .seam__num { color: #000; }
+}

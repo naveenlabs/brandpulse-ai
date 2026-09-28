@@ -1,0 +1,5191 @@
+{
+  "video_url": "https://youtu.be/M4CvP6ndrBw",
+  "brand_name": "iPhone 17 Pro Max",
+  "authenticity_score": 59.86,
+  "brand_health_score": 82.81,
+  "segment_count": 138,
+  "flagged_segments": [
+    {
+      "segment_id": 1,
+      "start_s": 6.98,
+      "end_s": 11.26,
+      "conflict_score": 0.8,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": true,
+      "text": "The iPhone 17 Pro and 17 Pro Max are going to blow you away with all their",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.408
+        },
+        "facial_emotion": {
+          "dominant": "sad",
+          "confidence": 0.982,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.8411,
+          "valence": 0.776,
+          "dominance": 0.7857,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 296.98,
+        "energy_mean": 0.059933
+      }
+    },
+    {
+      "segment_id": 64,
+      "start_s": 344.54,
+      "end_s": 348.14,
+      "conflict_score": 0.8,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": true,
+      "text": "you can use any song as a ringtone for free.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6005
+        },
+        "facial_emotion": {
+          "dominant": "fear",
+          "confidence": 0.6486,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6635,
+          "valence": 0.6199,
+          "dominance": 0.6758,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 312.9,
+        "energy_mean": 0.03604
+      }
+    }
+  ],
+  "comment_sentiment": {
+    "label": "POSITIVE",
+    "confidence": 0.9811,
+    "comment_count": 100,
+    "distribution": {
+      "POSITIVE": 83,
+      "NEUTRAL": 12,
+      "NEGATIVE": 5
+    }
+  },
+  "bias_caveat": "IMPORTANT: Facial emotion recognition (DeepFace) has documented accuracy disparities across skin tone and gender (Buolamwini & Gebru, 2018; Fan et al., 2023). Authenticity scores informed by facial data should be interpreted with this limitation in mind.",
+  "vocal_caveat": "IMPORTANT: The vocal emotion channel is the second weakest of the four, after facial emotion, and is explicitly down-weighted. Benchmarked on 150 hand-rated clips from 6 speakers (vocal_bench/), the adopted model scores 48.9% three-class accuracy on held-out speakers - better than the model it replaced, which at 34.0% was significantly worse than always guessing NEUTRAL (p = 0.0070), but still not reliably better than that constant. No model tested beat it. Conflicts attributed to the vocal channel alone are damped accordingly, and per-segment claims should not rest on this channel. Read the within-video figure, not the headline: this report compares segments inside one video, and the channel's rank correlation with human judgement measured within a video is +0.159 across 147 clips and +0.056 on unseen speakers (vocal_bench/SPEAKER_NORM_RESULT.md). Most of its apparent accuracy is a between-video effect that says more about the speaker's habitual energy than about any individual moment.",
+  "vocal_licence_note": "The adopted vocal model (audeering/wav2vec2-large-robust-12-ft-emotion-msp-dim) is licensed CC-BY-NC-SA-4.0 and may not be used commercially. Every configuration measured in vocal_bench/ that showed usable signal was non-commercially licensed; the permissively-licensed alternatives measured at the bottom of every table. A commercial deployment would need to ship without this channel or replace it.",
+  "all_comments": [
+    {
+      "text": "Hey Guys, you can check out ESR's products here 😊👇🏻\n\nUS Amazon:\n▪ ESR Cyber Tough Magnetic Case ( Camera Control, Stash Stand ): https://amzn.to/41HN2gd\n▪ ESR UltraFit Armorite Pro Screen Protector: https://amzn.to/45ThS7V\n▪ Check out all ESR iPhone 17 accessories: https://amzn.to/3JOS8Rz\n\nUK Amazon:\n▪ ESR Classic Hybrid Magnetic Case ( Camera Control, Stash Stand ): https://amzn.to/3JShPAL\n▪ ESR UltraFit Armorite Pro Screen Protector: https://amzn.to/47PZ2Ab\n▪ Check out all ESR iPhone 17 accessories: https://amzn.to/3HL0vx2",
+      "label": "NEUTRAL",
+      "confidence": 0.634,
+      "like_count": 230
+    },
+    {
+      "text": "Who are watching this on iphone 17 pro/pro max❤\n\n\nEdit: MOMMA IM FAMOUS!!!❤",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 1720
+    },
+    {
+      "text": "Thank you for the video, went from iPhone 11 to 17 Pro. HUGE change!",
+      "label": "POSITIVE",
+      "confidence": 0.9993,
+      "like_count": 101
+    },
+    {
+      "text": "Your editor is freaking insane. Seriously Kudos to you all. You make the video really cool to watch",
+      "label": "POSITIVE",
+      "confidence": 0.9991,
+      "like_count": 667
+    },
+    {
+      "text": "Not me watching this while my data transfers lol😂",
+      "label": "NEUTRAL",
+      "confidence": 0.7847,
+      "like_count": 186
+    },
+    {
+      "text": "The first real upgrade since iPhone 10 and 13 😂",
+      "label": "POSITIVE",
+      "confidence": 0.9993,
+      "like_count": 164
+    },
+    {
+      "text": "I've had my iphone 11 for 7 years now and I just upgraded today to the 17 pro max. Major upgrade, its exciting to have a new phone after so much time has passed. Learning all these new things!",
+      "label": "POSITIVE",
+      "confidence": 0.9993,
+      "like_count": 19
+    },
+    {
+      "text": "I just bought an iPhone 17 Pro and I learned some cool things from this video.",
+      "label": "POSITIVE",
+      "confidence": 0.9994,
+      "like_count": 28
+    },
+    {
+      "text": "Give this woman a medal 🏅",
+      "label": "POSITIVE",
+      "confidence": 0.9986,
+      "like_count": 24
+    },
+    {
+      "text": "I genually didn't know you could match your icons to your phone case, pretty crazy feature. Good video!",
+      "label": "POSITIVE",
+      "confidence": 0.9994,
+      "like_count": 25
+    },
+    {
+      "text": "3:45 thank you so much I was wondering why my pictures were lackluster in quality, and now the pictures remind me of the micro photography I used to do with decent cameras back in the day",
+      "label": "POSITIVE",
+      "confidence": 0.999,
+      "like_count": 2
+    },
+    {
+      "text": "I’ll definitely rewatch this later.",
+      "label": "POSITIVE",
+      "confidence": 0.9993,
+      "like_count": 3
+    },
+    {
+      "text": "Finalllyyyyy we can make ringtones for freeeeee! The robots have always tried to hang this over our heads but not anymore 😂",
+      "label": "POSITIVE",
+      "confidence": 0.9977,
+      "like_count": 0
+    },
+    {
+      "text": "Been sticking with the iPhone 12 for years now,and it’s all cracked up does very fast and sometimes restarts on it own,would be so refreshing when receiving my 17 pro max on Wednesday.",
+      "label": "POSITIVE",
+      "confidence": 0.999,
+      "like_count": 43
+    },
+    {
+      "text": "You make me feel like I do love iPHONE so badly due to your amazing reviews and tricks. Courage",
+      "label": "POSITIVE",
+      "confidence": 0.9991,
+      "like_count": 0
+    },
+    {
+      "text": "Just bought a 17 pro max can’t wait",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 3
+    },
+    {
+      "text": "Watching this video before planning to buy 17pro max but for now save money first😅",
+      "label": "NEUTRAL",
+      "confidence": 0.8694,
+      "like_count": 0
+    },
+    {
+      "text": "I been going one by one trying everything she says pause the video as you go 😂",
+      "label": "POSITIVE",
+      "confidence": 0.9964,
+      "like_count": 3
+    },
+    {
+      "text": "Whoever your editor is deserves a huge raise. His work is simply terrific!",
+      "label": "POSITIVE",
+      "confidence": 0.9988,
+      "like_count": 0
+    },
+    {
+      "text": "And then there’s me watching with my iPhone 6 😂😂",
+      "label": "NEUTRAL",
+      "confidence": 0.7408,
+      "like_count": 31
+    },
+    {
+      "text": "I love that you show most or all of the hidden little features in a smartphone.",
+      "label": "POSITIVE",
+      "confidence": 0.9991,
+      "like_count": 0
+    },
+    {
+      "text": "Studying video editing seems to make me understand the value behind this video, could you please make one about screen protectors pleaseee",
+      "label": "POSITIVE",
+      "confidence": 0.9846,
+      "like_count": 407
+    },
+    {
+      "text": "This reminded me of my childhood, Anyone else?",
+      "label": "POSITIVE",
+      "confidence": 0.6074,
+      "like_count": 0
+    },
+    {
+      "text": "Everything was explained clearly.",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 6
+    },
+    {
+      "text": "WHATCHED THIS ON MY TV BUT NOW IM WATCHING IT ALL IN MY NEW IPHONE 17",
+      "label": "POSITIVE",
+      "confidence": 0.9989,
+      "like_count": 0
+    },
+    {
+      "text": "Been waiting for this video long time. 😍",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 8
+    },
+    {
+      "text": "Watching from my iPhone 6S Plus in 2026. Today is the day I upgrade. There will be some differences, so here I am. 😂",
+      "label": "POSITIVE",
+      "confidence": 0.9519,
+      "like_count": 0
+    },
+    {
+      "text": "I have been waiting for you!!",
+      "label": "POSITIVE",
+      "confidence": 0.9993,
+      "like_count": 22
+    },
+    {
+      "text": "This is super helpful. Thank you so much. I had this phone for 5mos now and now with the tips I was able to maximise its usage. Thank you❤",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 0
+    },
+    {
+      "text": "I'm getting delivered this week the new iPhone 17 Pro Max and by far this is the best by review/recap for tips and tricks on the new features I've seen so far and I've looked at maybe 20 videos surrounding this phone... Great work and yes I did subscribe...",
+      "label": "POSITIVE",
+      "confidence": 0.9993,
+      "like_count": 32
+    },
+    {
+      "text": "Hello!! I won't get my iPhone 17 Pro Max until the middle of the month, but wanted to watch this video anyway. I have my iPhone 16 Pro Max running iOS 26. On the beta software. I truly love your videos!! You always give such amazing tips! I look forward to them. Such enthusiasm! Please never stop what you're doing!!",
+      "label": "POSITIVE",
+      "confidence": 0.9994,
+      "like_count": 1
+    },
+    {
+      "text": "Got my iphone 17 pro yesterday. Thanks for the tips!",
+      "label": "POSITIVE",
+      "confidence": 0.9994,
+      "like_count": 6
+    },
+    {
+      "text": "Great instructional video, I just baught the apple iphone 17 pro orange and plan on trying all your new tips and tricks.",
+      "label": "POSITIVE",
+      "confidence": 0.9994,
+      "like_count": 0
+    },
+    {
+      "text": "New sub! 👋 These are some great tips!\nHuge day for me! I pre-ordered the iPhone 17 Pro Max in Cosmic Orange four weeks ago and it's arriving today! It's going to be my very first iPhone ever—I've been on a Samsung S9 since 2018! Massive upgrade, wish me luck with the switch! 😁",
+      "label": "POSITIVE",
+      "confidence": 0.9995,
+      "like_count": 3
+    },
+    {
+      "text": "I often upgrade my phones and your channel is the first thing i check for the tips and tricks. Thank you",
+      "label": "POSITIVE",
+      "confidence": 0.9994,
+      "like_count": 0
+    },
+    {
+      "text": "Currently watching this from my new iPhone and, as a life-long android user, your video was a great help to get the hang of it… 🎉",
+      "label": "POSITIVE",
+      "confidence": 0.9994,
+      "like_count": 23
+    },
+    {
+      "text": "Thanks so much for this, it was way more helpful than I expected. I was really frustrated that the camera button was not simply zooming like before. I also absolutely love dropping the app names. Keep it up!",
+      "label": "POSITIVE",
+      "confidence": 0.9984,
+      "like_count": 0
+    },
+    {
+      "text": "I got my girl a Pro max for Christmas and I'm watching this to learn about new features she can use only to realize these are just features that have been on Android for years 😂",
+      "label": "POSITIVE",
+      "confidence": 0.916,
+      "like_count": 6
+    },
+    {
+      "text": "Hayls is the best! I have the iPhone Air, and I would have NEVER known about the backgrounds for messages if it weren't for Hayls!",
+      "label": "POSITIVE",
+      "confidence": 0.9994,
+      "like_count": 0
+    },
+    {
+      "text": "No matter how lengthy your videos are, I always watch till the end because you're super good at what you do, other creators on here spend hours saying same thing over and over again. Kudos 💯😊",
+      "label": "POSITIVE",
+      "confidence": 0.999,
+      "like_count": 4
+    },
+    {
+      "text": "Yo you really be putting me on to all the features I never even knew iPhone could do lmfao",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 0
+    },
+    {
+      "text": "Great Video and Prestige quality 🌟",
+      "label": "POSITIVE",
+      "confidence": 0.999,
+      "like_count": 9
+    },
+    {
+      "text": "Just got my first iPhone 17 pro and it’s the best phone out honestly 🤳🏽😎😮‍💨🔥",
+      "label": "POSITIVE",
+      "confidence": 0.999,
+      "like_count": 0
+    },
+    {
+      "text": "The best on YouTube.   Thank you.  \nGreat video.",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 3
+    },
+    {
+      "text": "Watching from iPhone 11 🤭😭 last time using it. I love your videos 🙃😊",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 0
+    },
+    {
+      "text": "The eye shadow that matches the orange phone was really on point 😉",
+      "label": "POSITIVE",
+      "confidence": 0.9989,
+      "like_count": 7
+    },
+    {
+      "text": "Watched this video when the video came out first, now watching again but in my 17 pro max😁",
+      "label": "POSITIVE",
+      "confidence": 0.9994,
+      "like_count": 0
+    },
+    {
+      "text": "Love it – super fast and crystal clear! Most people talk for hours just to explain something simple.👍",
+      "label": "POSITIVE",
+      "confidence": 0.9987,
+      "like_count": 14
+    },
+    {
+      "text": "Man I freaking love this phone . Blown away by it . Best phone I’ve ever bought",
+      "label": "POSITIVE",
+      "confidence": 0.9988,
+      "like_count": 0
+    },
+    {
+      "text": "I was patiently awaiting this video, and it was fantastic. Thank you, Hayls. 👍🥰❤️",
+      "label": "POSITIVE",
+      "confidence": 0.9991,
+      "like_count": 21
+    },
+    {
+      "text": "Me watching with my iphone 17 and it actually works guys",
+      "label": "POSITIVE",
+      "confidence": 0.9982,
+      "like_count": 2
+    },
+    {
+      "text": "I rarely comment on YouTube videos, but this one deserved it. Your editing skills are excellent! The way you put everything together is truly unique. Congratulations to the entire team!",
+      "label": "POSITIVE",
+      "confidence": 0.9991,
+      "like_count": 3
+    },
+    {
+      "text": "I've had the dual record feature on my 4 year old Samsung and I've only used it once😮‍💨",
+      "label": "POSITIVE",
+      "confidence": 0.9963,
+      "like_count": 0
+    },
+    {
+      "text": "I don't like apple products but I like the way u do ur reviews that's why am here",
+      "label": "POSITIVE",
+      "confidence": 0.9993,
+      "like_count": 49
+    },
+    {
+      "text": "Solid edit and strong delivery, kept my attention all the way through. Thanks for sharing!",
+      "label": "POSITIVE",
+      "confidence": 0.9991,
+      "like_count": 0
+    },
+    {
+      "text": "How do I get the wallpaper you are using?",
+      "label": "NEUTRAL",
+      "confidence": 0.9989,
+      "like_count": 9
+    },
+    {
+      "text": "Got my silver ip17pm.. must watch this",
+      "label": "POSITIVE",
+      "confidence": 0.9994,
+      "like_count": 0
+    },
+    {
+      "text": "What's unbelievable about dual recording is i used this om my android devices like 2 to 3 years ago",
+      "label": "POSITIVE",
+      "confidence": 0.9954,
+      "like_count": 16
+    },
+    {
+      "text": "I got me this phone but now want to go back to Samsung after watching your 26 Ultra video.",
+      "label": "POSITIVE",
+      "confidence": 0.8686,
+      "like_count": 0
+    },
+    {
+      "text": "Can you please share your orange wallpaper?",
+      "label": "NEUTRAL",
+      "confidence": 0.999,
+      "like_count": 18
+    },
+    {
+      "text": "Yess! I'm so happy you popped in my fyp, I forgot your channel name and was greatly disappointed I thought I lost this channel, you bring great quality to your videos you just dont get from other videos. Thank you for that! ❤\n\nI found you when I got my iphone 16 pro max and you help me a lot, that was my first iphone!",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 0
+    },
+    {
+      "text": "This is a useful tips video, but I think it mixes three different things together: real iPhone 17 Pro hardware features, iOS 26 features, and sponsored accessory talk. That does not make the video useless, but it is worth separating them, because not everything here is actually specific to the 17 Pro or 17 Pro Max.\n\nThe camera stuff is probably the most relevant part. The new 18 MP Center Stage front camera is actually one of the more practical upgrades, because being able to switch between portrait and landscape framing without physically rotating the phone is useful if you record yourself, do video calls, or make quick clips. Dual Capture is also useful, especially for vlog-style recording, because front and rear camera recording at the same time is something people will actually use.\n\nBut the rear camera part needs a bit more context. Yes, all three rear cameras are 48 MP now, and yes, 4x and 8x are useful. But 8x is not the same thing as having a real 200 mm lens. On the 17 Pro and 17 Pro Max, 1x is around 24 mm, 2x is around 48 mm, 4x is around 100 mm, and 8x is around 200 mm full-frame equivalent. That sounds more meaningful than just saying “8x zoom.” But the 8x mode is still 12 MP “optical-quality,” meaning it is using crop/processing from the telephoto sensor, not a separate true 200 mm optical lens.\n\nThat is why I wish phone videos would stop talking only in x-zoom. I use a Nikon D7500, and my 70-200 mm on that crop sensor is roughly 105-300 mm full-frame equivalent. So even that lens is already tighter at the long end than the iPhone’s 8x. That does not mean the iPhone camera is bad. It is impressive for a phone. But “40x zoom” is digital zoom, and at that point people need realistic expectations. It is not magic glass. It is a phone using a small sensor, processing, and a lot of software.\n\nThe battery tips are more useful than they sound, but Adaptive Power should also be explained properly. It can help stretch battery life, but it does that by making small performance adjustments, lowering brightness, and limiting background activity. So if someone is filming, gaming, navigating, or using the phone hard, they should understand what it does instead of just turning it on blindly. Battery-saving features are always a trade-off somewhere.\n\nCall Screening is probably one of the best practical features here. Unknown callers are a pain, and having the phone ask for the caller’s name and reason before bothering you is genuinely useful. But again, that is more of an iOS 26 feature than an iPhone 17 Pro Max feature. Same with lock screen customization, app icon styles, iMessage backgrounds, animated album art, battery percentage, Visual Intelligence from screenshots, and a lot of the “hidden” stuff. Good tips, but not all of them require buying a 17 Pro.\n\nThe spatial photo / spatial wallpaper thing is cool, but I see it more as a fun visual feature than a reason to buy the phone. It is one of those things people will play with a lot for the first week, then only use when it actually fits a good photo. Same with tinted icons and clear icons. Nice to have, but not something I would call a Pro feature.\n\nThe ringtone part is interesting, because Apple has made custom ringtones easier over time, but I would still be careful how it is presented. Traditionally, Apple’s official method for custom ringtones has involved GarageBand, and ringtones have the 30-second limit. If Files-to-ringtone is now showing directly for short MP3 files, that is a good change, but it is also one of those things that can vary depending on file type, DRM, and where the audio came from.\n\nThe case and screen protector section is where I get more skeptical, mostly because it turns into sponsored accessory talk. I agree that using a case and screen protector makes sense on a phone this expensive. But “same manufacturer as Apple’s cover glass” does not automatically mean the screen protector performs like Apple’s actual glass. Manufacturing source is not the same thing as final design, coating, lamination, hardness, drop protection, or quality control. A good third-party case can absolutely be better value than Apple’s cases, but I would judge it by fit, raised edges, MagSafe strength, camera bump protection, button feel, and how it works with Camera Control.\n\nThe Camera Control customization tip is one of the better ones. Turning off the options you do not use and leaving only zoom or exposure makes sense, because otherwise it can feel like you are fighting the button instead of using it. Personally, I would rather have fewer controls that I actually use than five modes I accidentally scroll through.\n\nSo overall, good video for new users, but I would not frame all of this as “iPhone 17 Pro tricks.” A lot of it is iOS 26, some of it is camera hardware, and some of it is sponsored accessories. The useful stuff is Call Screening, Camera Control customization, Dual Capture, 48 MP resolution control, Adaptive Power, and knowing what 4x/8x actually means. The less useful stuff is the flashy customization unless someone really cares about making the phone look different.\n\nFor me, the important thing is still whether the phone works as a tool. I use both iPhone and Android daily, and I also use a real camera, so I do not really care about brand worship. I care about what works. The 17 Pro/Pro Max cameras and video features are serious for a phone, but people should still understand the limits instead of just hearing “48 MP,” “8x,” and “40x zoom” and thinking it replaces real camera gear.",
+      "label": "POSITIVE",
+      "confidence": 0.9324,
+      "like_count": 6
+    },
+    {
+      "text": "just got my IP17PM and this video is great",
+      "label": "POSITIVE",
+      "confidence": 0.9994,
+      "like_count": 0
+    },
+    {
+      "text": "Best video of iphone 17 I've watched so far.. I learned a lot about the phone, only sad thing is can't afford it yet :p ❤❤❤❤❤❤❤",
+      "label": "POSITIVE",
+      "confidence": 0.9987,
+      "like_count": 29
+    },
+    {
+      "text": "Thanks a ton!! Can't wait to try all these features and tricks in my new 17 pro max that I ordered today..🤩",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 0
+    },
+    {
+      "text": "Loving my Silver Pro Max so far!!",
+      "label": "POSITIVE",
+      "confidence": 0.9989,
+      "like_count": 33
+    },
+    {
+      "text": "Imagine still having a big camera bezel on your screen after almost 10 years😂",
+      "label": "NEGATIVE",
+      "confidence": 0.9981,
+      "like_count": 1
+    },
+    {
+      "text": "Watching from my iPhone 17 pro max 👍🏾",
+      "label": "POSITIVE",
+      "confidence": 0.9994,
+      "like_count": 5
+    },
+    {
+      "text": "This iPhone Max Bros is incredible people just love the resolution. The matter of life is incredible but she covers the camera app and there’s a lot more to that than most other videos and it’s clear what she says and she doesn’t go on and on this is a perfect video one of the best I’ve ever seen. And I upgraded from a 13 which is a piece of junk the extra $300 as well worth it that’s a few cups of coffee. I’m a certified court Mediator ! I need accurate quick photos. I need to zoom I get it all here because I need to use the camera for a lot of professional use",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 0
+    },
+    {
+      "text": "Pls make video on Apple Watch series 11 & it’s hidden feature I want to buy.",
+      "label": "NEUTRAL",
+      "confidence": 0.9965,
+      "like_count": 6
+    },
+    {
+      "text": "loved it. Armed with this information , I feel truly on another level with my iPhone 17 pro. Immediately subscribed also.",
+      "label": "POSITIVE",
+      "confidence": 0.9991,
+      "like_count": 0
+    },
+    {
+      "text": "This video was actually super cool and the most helpful & informative one I’ve seen so far! Currently waiting for my 17 pro to come in the mail!😊",
+      "label": "POSITIVE",
+      "confidence": 0.9993,
+      "like_count": 6
+    },
+    {
+      "text": "Thank you, I made my iPhone 17 pro Max orange but somewhat pleasant thanks to your video ❤",
+      "label": "POSITIVE",
+      "confidence": 0.9993,
+      "like_count": 0
+    },
+    {
+      "text": "Do I have an 17 pro max. No\nDo am still watching this. Yes",
+      "label": "NEUTRAL",
+      "confidence": 0.9947,
+      "like_count": 7
+    },
+    {
+      "text": "GREAT video‼️\n\nMy Silver iPhone 17 Pro Max 1 TB arrived TODAY!  Will be going to AT&T store in the morning to set it up!\n\nCan't WAIT to try the tips you have provided!  You ROCK! 🎸",
+      "label": "POSITIVE",
+      "confidence": 0.9994,
+      "like_count": 0
+    },
+    {
+      "text": "I absolutely love your channel and presentation style! I just got my iphone 17 Pro Max in silver and normally when I watch tutorials I get bored and start doing something else but not this time! I've watched this video at least 5 times trying to get the most out of my iphone and you've helped me a lot! Thank you!",
+      "label": "POSITIVE",
+      "confidence": 0.9994,
+      "like_count": 6
+    },
+    {
+      "text": "One thing she failed to mention is that the front camera has a center stage feature that keeps follows your head & keeps you in the frame when you’re on FaceTime,  during videos and photos.  It basically follows your you’re a head movement to keep you in the frame. So dope 🔥🔥🔥🔥",
+      "label": "POSITIVE",
+      "confidence": 0.999,
+      "like_count": 0
+    },
+    {
+      "text": "You are the best ever 🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉 i adore your content",
+      "label": "POSITIVE",
+      "confidence": 0.999,
+      "like_count": 30
+    },
+    {
+      "text": "Wow, there are so many tricks that I haven't know! especially, the flash light and the zoom on the edge! thank you so much!",
+      "label": "POSITIVE",
+      "confidence": 0.9991,
+      "like_count": 0
+    },
+    {
+      "text": "I thought the 17 pro looked ugly, but it actually looks cool",
+      "label": "POSITIVE",
+      "confidence": 0.9633,
+      "like_count": 4
+    },
+    {
+      "text": "Girl you’re always at the top of my YouTube when I look up tips and tricks and I love itttt !!",
+      "label": "POSITIVE",
+      "confidence": 0.9991,
+      "like_count": 0
+    },
+    {
+      "text": "6:35 I can’t change it to the color of my phone. It’s the silver one but the button seems to be disabled (little darker and unable to press it) 😢😢",
+      "label": "NEGATIVE",
+      "confidence": 0.998,
+      "like_count": 3
+    },
+    {
+      "text": "One of the best iPhone 17 features videos…",
+      "label": "POSITIVE",
+      "confidence": 0.9993,
+      "like_count": 0
+    },
+    {
+      "text": "Like if you just watching without any plans of buying 😂",
+      "label": "NEGATIVE",
+      "confidence": 0.9868,
+      "like_count": 70
+    },
+    {
+      "text": "I didn’t know that flashlight could be focused at something like that. Thanks 🙏",
+      "label": "POSITIVE",
+      "confidence": 0.977,
+      "like_count": 0
+    },
+    {
+      "text": "Nothing new except the camera setting",
+      "label": "NEGATIVE",
+      "confidence": 0.9974,
+      "like_count": 6
+    },
+    {
+      "text": "Thank you .. I never knew all these features, only the incoming call query",
+      "label": "POSITIVE",
+      "confidence": 0.9956,
+      "like_count": 0
+    },
+    {
+      "text": "Awesome video !!! Thank you I learned a bunch !!",
+      "label": "POSITIVE",
+      "confidence": 0.9991,
+      "like_count": 5
+    },
+    {
+      "text": "Just got my 512gb 17 pro max cosmic orange I'm in heaven!",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 1
+    },
+    {
+      "text": "9:16 can it work for Spotify as well?",
+      "label": "NEUTRAL",
+      "confidence": 0.9989,
+      "like_count": 4
+    },
+    {
+      "text": "Nice video. Now all I need is to rewatch it again and again to learn the customization.👍🏼👍🏼😍",
+      "label": "POSITIVE",
+      "confidence": 0.9991,
+      "like_count": 0
+    },
+    {
+      "text": "2:00 I don't have those buttons and I have the 17 Pro Max. What is going on?",
+      "label": "NEUTRAL",
+      "confidence": 0.9937,
+      "like_count": 5
+    },
+    {
+      "text": "I actually have both the iPhone 17 Pro MAX and the Galaxy S27 ULTRA! Both DOPE ass phones! I love them equally lol! Best year for them so far as friendly competitors of contrast tech!",
+      "label": "POSITIVE",
+      "confidence": 0.999,
+      "like_count": 1
+    },
+    {
+      "text": "5:48 That is my ringtone on my Iphone 16e",
+      "label": "NEUTRAL",
+      "confidence": 0.9983,
+      "like_count": 3
+    },
+    {
+      "text": "Lowkey will miss my pink iPhone 15 pro max but I’m overall happy with the new features.",
+      "label": "POSITIVE",
+      "confidence": 0.9989,
+      "like_count": 0
+    },
+    {
+      "text": "5:03 how to do that please, i tried already in my 17 pro max 😢 it didn’t work",
+      "label": "NEGATIVE",
+      "confidence": 0.9979,
+      "like_count": 10
+    },
+    {
+      "text": "I just got iPhone 17 pro today. Am watching and doing the settings. It’s fun. Love your videos ❤",
+      "label": "POSITIVE",
+      "confidence": 0.9993,
+      "like_count": 0
+    },
+    {
+      "text": "4:14 Samsung with 100x zoom 😂",
+      "label": "NEUTRAL",
+      "confidence": 0.9965,
+      "like_count": 7
+    },
+    {
+      "text": "YOU HAD ME AT RINGTONES OMFG",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 1
+    },
+    {
+      "text": "Why am I laughing so much? Because I’m watching this on my 2 year old Samsung S23 Ultra 😆 Honestly, I could watch this on a 10 year old Android phone and still have more cool features..",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 4
+    }
+  ],
+  "all_segments": [
+    {
+      "segment_id": 0,
+      "start_s": 0.0,
+      "end_s": 6.8,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "It has a brand new camera, new customization options, new selfie cam features, and a lot of new hidden settings.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.5774
+        },
+        "facial_emotion": {
+          "dominant": "happy",
+          "confidence": 0.9805,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.8498,
+          "valence": 0.7111,
+          "dominance": 0.8197,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 268.42,
+        "energy_mean": 0.054233
+      }
+    },
+    {
+      "segment_id": 1,
+      "start_s": 6.98,
+      "end_s": 11.26,
+      "conflict_score": 0.8,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": true,
+      "text": "The iPhone 17 Pro and 17 Pro Max are going to blow you away with all their",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.408
+        },
+        "facial_emotion": {
+          "dominant": "sad",
+          "confidence": 0.982,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.8411,
+          "valence": 0.776,
+          "dominance": 0.7857,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 296.98,
+        "energy_mean": 0.059933
+      }
+    },
+    {
+      "segment_id": 2,
+      "start_s": 11.26,
+      "end_s": 15.200000000000001,
+      "conflict_score": 0.2052,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "facial_channel_downweighted[structural]: 0.6000 -> 0.2052 (x0.342, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "Pro tips and tricks. Let's go.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8226
+        },
+        "facial_emotion": {
+          "dominant": "sad",
+          "confidence": 0.9917,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7501,
+          "valence": 0.7257,
+          "dominance": 0.7322,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 212.73,
+        "energy_mean": 0.025278
+      }
+    },
+    {
+      "segment_id": 3,
+      "start_s": 18.16,
+      "end_s": 23.28,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Okay, so the first thing you've got to try is head into your Photos app, open up one of your favorite pictures,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6505
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7201,
+          "valence": 0.9076,
+          "dominance": 0.7342,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 264.07,
+        "energy_mean": 0.030894
+      }
+    },
+    {
+      "segment_id": 4,
+      "start_s": 23.48,
+      "end_s": 30.26,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "and in the corner, you'll see this new icon. Tap it, then wait a few seconds and tilt your iPhone, because vah-bam!",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.4628
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7594,
+          "valence": 0.635,
+          "dominance": 0.7258,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 255.66,
+        "energy_mean": 0.037681
+      }
+    },
+    {
+      "segment_id": 5,
+      "start_s": 30.6,
+      "end_s": 34.02,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "You just transformed that photo into a 3D spatial photo.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5001
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6648,
+          "valence": 0.6389,
+          "dominance": 0.6726,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 279.37,
+        "energy_mean": 0.048216
+      }
+    },
+    {
+      "segment_id": 6,
+      "start_s": 34.44,
+      "end_s": 39.74,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "You can do this with any picture you've taken on the iPhone 17 Pro and even pictures you've downloaded.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.67
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7151,
+          "valence": 0.681,
+          "dominance": 0.7143,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 238.69,
+        "energy_mean": 0.04341
+      }
+    },
+    {
+      "segment_id": 7,
+      "start_s": 39.980000000000004,
+      "end_s": 46.38,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "This is just so cool. Then another Pro trick I've got to show you guys is inside settings, if you go all the way down to apps.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8083
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7026,
+          "valence": 0.8937,
+          "dominance": 0.7299,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 237.1,
+        "energy_mean": 0.032074
+      }
+    },
+    {
+      "segment_id": 8,
+      "start_s": 46.760000000000005,
+      "end_s": 55.56,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "Then tap on the P to quickly get to the phone application. Scroll down again to this new section called Screen Unknown Callers, and change it to Ask Reason for Calling.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7993
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6495,
+          "valence": 0.5821,
+          "dominance": 0.6715,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 241.49,
+        "energy_mean": 0.036824
+      }
+    },
+    {
+      "segment_id": 9,
+      "start_s": 55.56,
+      "end_s": 62.68,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Because now, when you get a call from someone not saved as a contact, not only will your iPhone automatically answer for you,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.756
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6553,
+          "valence": 0.5142,
+          "dominance": 0.6838,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 231.04,
+        "energy_mean": 0.048156
+      }
+    },
+    {
+      "segment_id": 10,
+      "start_s": 62.88,
+      "end_s": 69.08,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "but it'll also say this. Hi, if you record your name and reason for calling, I'll see if this person is available.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.8405
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7049,
+          "frame_count": 6,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6115,
+          "valence": 0.6047,
+          "dominance": 0.6313,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 268.34,
+        "energy_mean": 0.019892
+      }
+    },
+    {
+      "segment_id": 11,
+      "start_s": 69.76,
+      "end_s": 74.5,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "Then once it gets all that info, it'll ring and show you what the other person said,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.8168
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7333,
+          "valence": 0.6475,
+          "dominance": 0.727,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 251.4,
+        "energy_mean": 0.061639
+      }
+    },
+    {
+      "segment_id": 12,
+      "start_s": 74.6,
+      "end_s": 78.5,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "so you can choose whether to answer or not. I mean, that is so damn nifty.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6358
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6737,
+          "valence": 0.2804,
+          "dominance": 0.7099,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 257.79,
+        "energy_mean": 0.044747
+      }
+    },
+    {
+      "segment_id": 13,
+      "start_s": 78.5,
+      "end_s": 85.46,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "As for my next Pro trick, this one is hidden inside battery settings, then under power mode, and it's called adaptive power.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.725
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6152,
+          "valence": 0.7111,
+          "dominance": 0.648,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 237.31,
+        "energy_mean": 0.027214
+      }
+    },
+    {
+      "segment_id": 14,
+      "start_s": 85.68,
+      "end_s": 90.36,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "Make sure you turn this on, because when you do, your iPhone will stretch out its power as much as possible",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.5083
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7319,
+          "valence": 0.7556,
+          "dominance": 0.7326,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 269.24,
+        "energy_mean": 0.048255
+      }
+    },
+    {
+      "segment_id": 15,
+      "start_s": 90.36,
+      "end_s": 94.56,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "by making different adjustments to basically get the best battery life possible.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.498
+        },
+        "facial_emotion": {
+          "dominant": "happy",
+          "confidence": 0.9788,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7303,
+          "valence": 0.6689,
+          "dominance": 0.7639,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 257.79,
+        "energy_mean": 0.032368
+      }
+    },
+    {
+      "segment_id": 16,
+      "start_s": 94.86,
+      "end_s": 101.86,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "Neat! But that's not even the best trick yet. Because now, open up your camera, because there's a lot of new things I've got to show you.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.4416
+        },
+        "facial_emotion": {
+          "dominant": "happy",
+          "confidence": 0.8722,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7286,
+          "valence": 0.646,
+          "dominance": 0.7337,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 301.03,
+        "energy_mean": 0.030821
+      }
+    },
+    {
+      "segment_id": 17,
+      "start_s": 101.86,
+      "end_s": 110.56,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "Okay, so now, every back camera on the 17 Pro and Pro Max is 48 megapixels.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7782
+        },
+        "facial_emotion": {
+          "dominant": "happy",
+          "confidence": 0.991,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7505,
+          "valence": 0.6995,
+          "dominance": 0.7578,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 269.69,
+        "energy_mean": 0.024134
+      }
+    },
+    {
+      "segment_id": 18,
+      "start_s": 110.74,
+      "end_s": 116.86,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "But we first got to talk about this new 18 megapixel front camera, because there are some sick new features.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.4335
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7062,
+          "valence": 0.6235,
+          "dominance": 0.7401,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 295.69,
+        "energy_mean": 0.031615
+      }
+    },
+    {
+      "segment_id": 19,
+      "start_s": 117.12,
+      "end_s": 121.1,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Like, when you open it up, at the center, you'll now notice this new button,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.497
+        },
+        "facial_emotion": {
+          "dominant": "happy",
+          "confidence": 0.9766,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7196,
+          "valence": 0.5109,
+          "dominance": 0.7401,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 279.59,
+        "energy_mean": 0.039289
+      }
+    },
+    {
+      "segment_id": 20,
+      "start_s": 121.36,
+      "end_s": 124.4,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "which literally switches between portrait and landscape mode.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7205
+        },
+        "facial_emotion": {
+          "dominant": "happy",
+          "confidence": 0.8252,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6142,
+          "valence": 0.6117,
+          "dominance": 0.6335,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 287.1,
+        "energy_mean": 0.035473
+      }
+    },
+    {
+      "segment_id": 21,
+      "start_s": 124.5,
+      "end_s": 128.32,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "And I mean, as you guys can see, it does that without physically rotating your phone.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6811
+        },
+        "facial_emotion": {
+          "dominant": "happy",
+          "confidence": 0.6748,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6921,
+          "valence": 0.4303,
+          "dominance": 0.7268,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 282.28,
+        "energy_mean": 0.041561
+      }
+    },
+    {
+      "segment_id": 22,
+      "start_s": 128.32,
+      "end_s": 133.38,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "This way, when you're on a video call or taking pictures, your eyes are naturally more centered,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5741
+        },
+        "facial_emotion": {
+          "dominant": "sad",
+          "confidence": 0.9096,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6227,
+          "valence": 0.6233,
+          "dominance": 0.6755,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 273.62,
+        "energy_mean": 0.036016
+      }
+    },
+    {
+      "segment_id": 23,
+      "start_s": 133.66,
+      "end_s": 137.6,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "and your arm is never in the way, compared to shooting in landscape.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7009
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6254,
+          "valence": 0.4974,
+          "dominance": 0.6712,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 261.57,
+        "energy_mean": 0.045501
+      }
+    },
+    {
+      "segment_id": 24,
+      "start_s": 138.45999999999998,
+      "end_s": 143.9,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "Sweet! And you still have the zoom button next to it to switch between normal or ultrawide.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6784
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6624,
+          "valence": 0.6734,
+          "dominance": 0.6988,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 282.71,
+        "energy_mean": 0.038234
+      }
+    },
+    {
+      "segment_id": 25,
+      "start_s": 144.35999999999999,
+      "end_s": 151.22,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "Nice! Now, you also get this new button at the top here called center stage, which then has these two options.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.648
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6736,
+          "valence": 0.6716,
+          "dominance": 0.693,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 305.78,
+        "energy_mean": 0.035687
+      }
+    },
+    {
+      "segment_id": 26,
+      "start_s": 151.22,
+      "end_s": 156.02,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "And if you turn them both on, you're essentially telling your phone to automatically zoom in and out,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6862
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7205,
+          "valence": 0.7107,
+          "dominance": 0.7093,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 274.64,
+        "energy_mean": 0.037032
+      }
+    },
+    {
+      "segment_id": 27,
+      "start_s": 156.16,
+      "end_s": 161.14,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "or switch between portrait and landscape, based on how many people are in the shot.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7432
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7063,
+          "valence": 0.4213,
+          "dominance": 0.7089,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 326.19,
+        "energy_mean": 0.044789
+      }
+    },
+    {
+      "segment_id": 28,
+      "start_s": 161.78,
+      "end_s": 166.72,
+      "conflict_score": 0.2052,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "facial_channel_downweighted[structural]: 0.6000 -> 0.2052 (x0.342, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "But here's a really fun new trick you can do with both the front and the back cameras.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7441
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.386,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7287,
+          "valence": 0.8131,
+          "dominance": 0.7502,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 265.58,
+        "energy_mean": 0.035013
+      }
+    },
+    {
+      "segment_id": 29,
+      "start_s": 167.04,
+      "end_s": 171.57999999999998,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "So inside selfie mode, if you switch to video, then tap on these little dots in the corner,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6969
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.71,
+          "valence": 0.6446,
+          "dominance": 0.679,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 251.81,
+        "energy_mean": 0.038678
+      }
+    },
+    {
+      "segment_id": 30,
+      "start_s": 171.76,
+      "end_s": 179.18,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "you'll see this new option, dual record. And once you tap on it, it'll open up both the back and the front camera at the same time.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5169
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.718,
+          "valence": 0.7574,
+          "dominance": 0.7114,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 287.71,
+        "energy_mean": 0.033005
+      }
+    },
+    {
+      "segment_id": 31,
+      "start_s": 179.18,
+      "end_s": 184.70000000000002,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "Then you can just hit record, and it'll capture whatever is in both frames, which is so cool.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7381
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7854,
+          "valence": 0.9271,
+          "dominance": 0.7485,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 299.44,
+        "energy_mean": 0.042007
+      }
+    },
+    {
+      "segment_id": 32,
+      "start_s": 185.02,
+      "end_s": 188.46,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "You can also move the window around to any corner just by dragging it.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5923
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6978,
+          "valence": 0.4608,
+          "dominance": 0.718,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 226.24,
+        "energy_mean": 0.045554
+      }
+    },
+    {
+      "segment_id": 33,
+      "start_s": 188.68,
+      "end_s": 195.24,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Just keep in mind, it'll actually show that in the recording. But once you've done, you've basically got one video showing both cameras.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6918
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.783,
+          "valence": 0.6441,
+          "dominance": 0.7929,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 254.54,
+        "energy_mean": 0.039716
+      }
+    },
+    {
+      "segment_id": 34,
+      "start_s": 195.82,
+      "end_s": 196.04000000000002,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "Sweet!",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8182
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "unknown",
+          "arousal": null,
+          "valence": null,
+          "dominance": null,
+          "reliability": 0.0,
+          "reason": "segment_too_short"
+        },
+        "pitch_mean_hz": 0.0,
+        "energy_mean": 0.0
+      }
+    },
+    {
+      "segment_id": 35,
+      "start_s": 199.32,
+      "end_s": 203.96,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "Okay, so now let me show you how to take full advantage of these pro cameras.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.5761
+        },
+        "facial_emotion": {
+          "dominant": "happy",
+          "confidence": 0.9487,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.68,
+          "valence": 0.6828,
+          "dominance": 0.7406,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 249.4,
+        "energy_mean": 0.038136
+      }
+    },
+    {
+      "segment_id": 36,
+      "start_s": 203.96,
+      "end_s": 208.92000000000002,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "For the best resolution on every pick, what you want to do is hit inside settings,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7161
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6118,
+          "valence": 0.6868,
+          "dominance": 0.6565,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 213.75,
+        "energy_mean": 0.035796
+      }
+    },
+    {
+      "segment_id": 37,
+      "start_s": 209.18,
+      "end_s": 213.20000000000002,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "then go into camera settings and tap on this option, formats.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5927
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5688,
+          "valence": 0.6142,
+          "dominance": 0.6146,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 231.69,
+        "energy_mean": 0.024833
+      }
+    },
+    {
+      "segment_id": 38,
+      "start_s": 213.46,
+      "end_s": 216.82,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "Now, here's the trick, make sure resolution control is turned on.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6693
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6399,
+          "valence": 0.5834,
+          "dominance": 0.6863,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 235.49,
+        "energy_mean": 0.038125
+      }
+    },
+    {
+      "segment_id": 39,
+      "start_s": 217.06,
+      "end_s": 223.46,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Because now, when you open the camera, you'll see a new option to switch from 24 megapixels to 48,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.517
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7063,
+          "valence": 0.687,
+          "dominance": 0.7228,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 247.23,
+        "energy_mean": 0.039457
+      }
+    },
+    {
+      "segment_id": 40,
+      "start_s": 223.76000000000002,
+      "end_s": 229.58,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "which is the highest resolution. And so when you take a 0.5, 1x, or 4x picture,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6714
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6939,
+          "valence": 0.6921,
+          "dominance": 0.7069,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 256.72,
+        "energy_mean": 0.035363
+      }
+    },
+    {
+      "segment_id": 41,
+      "start_s": 229.58,
+      "end_s": 233.54000000000002,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "you'll have super crisp, high quality, 48 megapixel picks.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.713
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7336,
+          "valence": 0.7068,
+          "dominance": 0.7495,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 253.53,
+        "energy_mean": 0.031671
+      }
+    },
+    {
+      "segment_id": 42,
+      "start_s": 233.54,
+      "end_s": 239.0,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "And here's another little tip, the 2x and 8x zooms are only 12 megapixels.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7549
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6589,
+          "valence": 0.6199,
+          "dominance": 0.6769,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 250.5,
+        "energy_mean": 0.034457
+      }
+    },
+    {
+      "segment_id": 43,
+      "start_s": 239.0,
+      "end_s": 242.78,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "So they won't be as high quality, but they'll still be really good.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7392
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6262,
+          "valence": 0.6144,
+          "dominance": 0.6594,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 258.95,
+        "energy_mean": 0.040159
+      }
+    },
+    {
+      "segment_id": 44,
+      "start_s": 243.0,
+      "end_s": 249.78,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "Okay? And while we're talking about zoom, you know how older iPhones maxed out at 25 times zoom?",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7129
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6705,
+          "valence": 0.7215,
+          "dominance": 0.6796,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 261.54,
+        "energy_mean": 0.036164
+      }
+    },
+    {
+      "segment_id": 45,
+      "start_s": 250.28,
+      "end_s": 255.45999999999998,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Well now, on the 17 Pro and Pro Max, it's almost double that at 40 times zoom.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6945
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7195,
+          "valence": 0.6035,
+          "dominance": 0.7048,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 285.8,
+        "energy_mean": 0.041835
+      }
+    },
+    {
+      "segment_id": 46,
+      "start_s": 255.72,
+      "end_s": 262.21999999999997,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "Sheesh! Meaning you can snap pics now from further away and still get some crisp, natural detail, which is great.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.9027
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6959,
+          "valence": 0.6628,
+          "dominance": 0.7011,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 248.55,
+        "energy_mean": 0.030218
+      }
+    },
+    {
+      "segment_id": 47,
+      "start_s": 262.22,
+      "end_s": 265.52000000000004,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "By the way, if you've already learned something, then make sure you subscribe.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5195
+        },
+        "facial_emotion": {
+          "dominant": "sad",
+          "confidence": 0.8709,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6572,
+          "valence": 0.6708,
+          "dominance": 0.6738,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 232.82,
+        "energy_mean": 0.043605
+      }
+    },
+    {
+      "segment_id": 48,
+      "start_s": 265.72,
+      "end_s": 267.94000000000005,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "But now, onto some hidden features.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.622
+        },
+        "facial_emotion": {
+          "dominant": "sad",
+          "confidence": 0.5939,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5249,
+          "valence": 0.5949,
+          "dominance": 0.5432,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 248.6,
+        "energy_mean": 0.059396
+      }
+    },
+    {
+      "segment_id": 49,
+      "start_s": 271.1,
+      "end_s": 274.76000000000005,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Okay, now here's a few hidden things you need to know about your iPhone.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7466
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.701,
+          "valence": 0.5442,
+          "dominance": 0.7241,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 259.99,
+        "energy_mean": 0.03912
+      }
+    },
+    {
+      "segment_id": 50,
+      "start_s": 275.02000000000004,
+      "end_s": 281.18,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "When you plug your phone into charge on the lock screen, you can now see right over here how much time it's going to take to charge.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7419
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7623,
+          "valence": 0.5992,
+          "dominance": 0.7634,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 263.55,
+        "energy_mean": 0.035989
+      }
+    },
+    {
+      "segment_id": 51,
+      "start_s": 281.34000000000003,
+      "end_s": 284.68,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "But there's another spot you can see this with even more details.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.5305
+        },
+        "facial_emotion": {
+          "dominant": "sad",
+          "confidence": 0.8624,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6261,
+          "valence": 0.4837,
+          "dominance": 0.6726,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 262.76,
+        "energy_mean": 0.045039
+      }
+    },
+    {
+      "segment_id": 52,
+      "start_s": 284.98,
+      "end_s": 290.15999999999997,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "If you go back inside settings, then to battery, right at the top here, while your iPhone is charging,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.763
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7536,
+          "valence": 0.6805,
+          "dominance": 0.7396,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 270.65,
+        "energy_mean": 0.036889
+      }
+    },
+    {
+      "segment_id": 53,
+      "start_s": 290.41999999999996,
+      "end_s": 293.85999999999996,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "you can now see the time left until it hits 80 or 100%.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.8205
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.677,
+          "valence": 0.405,
+          "dominance": 0.713,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 293.87,
+        "energy_mean": 0.035563
+      }
+    },
+    {
+      "segment_id": 54,
+      "start_s": 293.85999999999996,
+      "end_s": 298.7,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "So basically, the coolest thing about this feature is it'll show you the fastest way to charge your phone.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7488
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6862,
+          "valence": 0.7159,
+          "dominance": 0.7455,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 287.25,
+        "energy_mean": 0.045097
+      }
+    },
+    {
+      "segment_id": 55,
+      "start_s": 298.79999999999995,
+      "end_s": 302.06,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Whether that's wired charging, wireless, or even with a power bank.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.8138
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6878,
+          "valence": 0.3475,
+          "dominance": 0.7021,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 286.05,
+        "energy_mean": 0.037768
+      }
+    },
+    {
+      "segment_id": 56,
+      "start_s": 302.34,
+      "end_s": 307.44,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "Nice! Now, another hidden trick is when you take a screenshot and it automatically opens up,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.621
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6413,
+          "valence": 0.6159,
+          "dominance": 0.6804,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 247.96,
+        "energy_mean": 0.029736
+      }
+    },
+    {
+      "segment_id": 57,
+      "start_s": 307.55999999999995,
+      "end_s": 314.47999999999996,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "you can now draw around anything on the screenshot. And in a couple of seconds, your iPhone will instantly search the web for that thing",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.624
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7595,
+          "valence": 0.6002,
+          "dominance": 0.76,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 303.28,
+        "energy_mean": 0.042981
+      }
+    },
+    {
+      "segment_id": 58,
+      "start_s": 314.48,
+      "end_s": 320.64000000000004,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "and show you a bunch of results. What's so cool about this is if you see something unusual or just don't know where to buy it,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7343
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7439,
+          "valence": 0.7207,
+          "dominance": 0.7494,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 286.95,
+        "energy_mean": 0.045794
+      }
+    },
+    {
+      "segment_id": 59,
+      "start_s": 320.70000000000005,
+      "end_s": 324.24,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "you can quickly search it up and even see where to buy it. Sweet!",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.824
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7386,
+          "valence": 0.4423,
+          "dominance": 0.7633,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 328.86,
+        "energy_mean": 0.032102
+      }
+    },
+    {
+      "segment_id": 60,
+      "start_s": 324.78000000000003,
+      "end_s": 328.34000000000003,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "But for my favorite new hidden trick, if you open up files,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5452
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6589,
+          "valence": 0.6825,
+          "dominance": 0.6811,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 294.74,
+        "energy_mean": 0.040045
+      }
+    },
+    {
+      "segment_id": 61,
+      "start_s": 328.48,
+      "end_s": 333.68,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "then go to your downloads. And in here, if you've got any MP3 song, you can now open it.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5433
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6651,
+          "valence": 0.7343,
+          "dominance": 0.6776,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 293.06,
+        "energy_mean": 0.037811
+      }
+    },
+    {
+      "segment_id": 62,
+      "start_s": 333.78000000000003,
+      "end_s": 338.70000000000005,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Then tap the share icon and right over here, you can use it as a ringtone.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5121
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7769,
+          "valence": 0.6661,
+          "dominance": 0.778,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 303.2,
+        "energy_mean": 0.042342
+      }
+    },
+    {
+      "segment_id": 63,
+      "start_s": 338.92,
+      "end_s": 344.4,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "Like, finally! And just as long as that MP3 is less than 30 seconds,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6789
+        },
+        "facial_emotion": {
+          "dominant": "happy",
+          "confidence": 0.9994,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7554,
+          "valence": 0.6731,
+          "dominance": 0.7429,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 297.93,
+        "energy_mean": 0.041591
+      }
+    },
+    {
+      "segment_id": 64,
+      "start_s": 344.54,
+      "end_s": 348.14,
+      "conflict_score": 0.8,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": true,
+      "text": "you can use any song as a ringtone for free.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6005
+        },
+        "facial_emotion": {
+          "dominant": "fear",
+          "confidence": 0.6486,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6635,
+          "valence": 0.6199,
+          "dominance": 0.6758,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 312.9,
+        "energy_mean": 0.03604
+      }
+    },
+    {
+      "segment_id": 65,
+      "start_s": 349.92,
+      "end_s": 350.36,
+      "conflict_score": 0.2736,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "facial_channel_downweighted[structural]: 0.8000 -> 0.2736 (x0.342, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "Sweet!",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8182
+        },
+        "facial_emotion": {
+          "dominant": "sad",
+          "confidence": 0.9818,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "unknown",
+          "arousal": null,
+          "valence": null,
+          "dominance": null,
+          "reliability": 0.0,
+          "reason": "segment_too_short"
+        },
+        "pitch_mean_hz": 0.0,
+        "energy_mean": 0.0
+      }
+    },
+    {
+      "segment_id": 66,
+      "start_s": 354.04,
+      "end_s": 359.24,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "So now that you've got a custom ringtone, let me show you some new customization options.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5771
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6688,
+          "valence": 0.7362,
+          "dominance": 0.6849,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 236.73,
+        "energy_mean": 0.030225
+      }
+    },
+    {
+      "segment_id": 67,
+      "start_s": 359.6,
+      "end_s": 364.4,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "First up, if you tap and hold down anywhere on the screen, once everything starts jiggling around,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6746
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7628,
+          "valence": 0.5199,
+          "dominance": 0.7761,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 242.63,
+        "energy_mean": 0.036815
+      }
+    },
+    {
+      "segment_id": 68,
+      "start_s": 364.62,
+      "end_s": 370.66,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "tap on edit and then choose customize. And the first thing I'd recommend you try is this button, which resizes your apps.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.5849
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7086,
+          "valence": 0.6173,
+          "dominance": 0.7494,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 229.24,
+        "energy_mean": 0.031692
+      }
+    },
+    {
+      "segment_id": 69,
+      "start_s": 370.92,
+      "end_s": 376.54,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "You can choose to have large app icons without labels or stick with smaller app icons with labels.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6309
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6641,
+          "valence": 0.6847,
+          "dominance": 0.71,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 230.42,
+        "energy_mean": 0.025248
+      }
+    },
+    {
+      "segment_id": 70,
+      "start_s": 376.82,
+      "end_s": 379.94,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Once you've done that, the next thing you're going to do is change the app style.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6978
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6754,
+          "valence": 0.6145,
+          "dominance": 0.709,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 237.18,
+        "energy_mean": 0.037283
+      }
+    },
+    {
+      "segment_id": 71,
+      "start_s": 380.24,
+      "end_s": 385.88,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "So there's default, dark, clear, and tinted, which you can customize to any color.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5853
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6958,
+          "valence": 0.5283,
+          "dominance": 0.7379,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 238.26,
+        "energy_mean": 0.039261
+      }
+    },
+    {
+      "segment_id": 72,
+      "start_s": 386.12,
+      "end_s": 389.82,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "So I'd suggest you go with tinted because it has the most customization",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7139
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7373,
+          "valence": 0.6854,
+          "dominance": 0.7188,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 238.26,
+        "energy_mean": 0.03518
+      }
+    },
+    {
+      "segment_id": 73,
+      "start_s": 389.82,
+      "end_s": 393.2,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "and because it has these four extra options.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.4937
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.647,
+          "valence": 0.5955,
+          "dominance": 0.686,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 207.81,
+        "energy_mean": 0.036782
+      }
+    },
+    {
+      "segment_id": 74,
+      "start_s": 393.5,
+      "end_s": 398.4,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "So the first option actually changes the color of your icons to match the color of your phone.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6143
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6639,
+          "valence": 0.6985,
+          "dominance": 0.6643,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 232.89,
+        "energy_mean": 0.032312
+      }
+    },
+    {
+      "segment_id": 75,
+      "start_s": 398.7,
+      "end_s": 403.65999999999997,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "Wow! The second option changes all the icons to match the color of your case.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6487
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6907,
+          "valence": 0.6835,
+          "dominance": 0.6898,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 229.9,
+        "energy_mean": 0.032979
+      }
+    },
+    {
+      "segment_id": 76,
+      "start_s": 403.84,
+      "end_s": 407.53999999999996,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "So clear icons to match my clear case. And like on my Pro,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.4714
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6396,
+          "valence": 0.5302,
+          "dominance": 0.6494,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 236.85,
+        "energy_mean": 0.036156
+      }
+    },
+    {
+      "segment_id": 77,
+      "start_s": 407.65999999999997,
+      "end_s": 411.44,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "I have this kind of blue-gray option to match my blue-gray case.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5412
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6256,
+          "valence": 0.6415,
+          "dominance": 0.6562,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 216.64,
+        "energy_mean": 0.038482
+      }
+    },
+    {
+      "segment_id": 78,
+      "start_s": 411.56,
+      "end_s": 417.42,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "Pretty cool! But this feature only works with Apple cases, which cost like 60 bucks.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.4823
+        },
+        "facial_emotion": {
+          "dominant": "happy",
+          "confidence": 0.8045,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6975,
+          "valence": 0.5409,
+          "dominance": 0.6999,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 256.22,
+        "energy_mean": 0.042197
+      }
+    },
+    {
+      "segment_id": 79,
+      "start_s": 417.74,
+      "end_s": 423.58000000000004,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "So instead, you could go for the third option, which will automatically choose the best color to match your wallpaper.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5091
+        },
+        "facial_emotion": {
+          "dominant": "happy",
+          "confidence": 0.9771,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6456,
+          "valence": 0.7022,
+          "dominance": 0.6904,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 238.12,
+        "energy_mean": 0.04081
+      }
+    },
+    {
+      "segment_id": 80,
+      "start_s": 423.84000000000003,
+      "end_s": 429.08000000000004,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Or with the fourth option, you can actually go and color pick a specific color from your wallpaper.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6002
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7383,
+          "valence": 0.6403,
+          "dominance": 0.7529,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 286.92,
+        "energy_mean": 0.039638
+      }
+    },
+    {
+      "segment_id": 81,
+      "start_s": 429.48,
+      "end_s": 433.44,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "And once you've done that, you can then pair your phone with any case,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5925
+        },
+        "facial_emotion": {
+          "dominant": "sad",
+          "confidence": 0.7505,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.701,
+          "valence": 0.4785,
+          "dominance": 0.721,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 274.89,
+        "energy_mean": 0.053724
+      }
+    },
+    {
+      "segment_id": 82,
+      "start_s": 433.5,
+      "end_s": 437.40000000000003,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "like one of these from ESR, which are half the price of Apple cases",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.8127
+        },
+        "facial_emotion": {
+          "dominant": "angry",
+          "confidence": 0.4378,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6226,
+          "valence": 0.4416,
+          "dominance": 0.6444,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 230.6,
+        "energy_mean": 0.032768
+      }
+    },
+    {
+      "segment_id": 83,
+      "start_s": 437.40000000000003,
+      "end_s": 441.09999999999997,
+      "conflict_score": 0.2052,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "facial_channel_downweighted[structural]: 0.6000 -> 0.2052 (x0.342, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "and actually even better value for money. These are honestly my favorite cases,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8907
+        },
+        "facial_emotion": {
+          "dominant": "disgust",
+          "confidence": 0.3099,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7595,
+          "valence": 0.3739,
+          "dominance": 0.7652,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 261.98,
+        "energy_mean": 0.036336
+      }
+    },
+    {
+      "segment_id": 84,
+      "start_s": 441.38,
+      "end_s": 447.64,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "not just because they come in so many different colors and designs, but because they are the toughest cases I have ever used.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.4915
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7079,
+          "valence": 0.494,
+          "dominance": 0.7256,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 218.45,
+        "energy_mean": 0.037408
+      }
+    },
+    {
+      "segment_id": 85,
+      "start_s": 447.8,
+      "end_s": 452.14,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "They are seriously durable. They also have MagSafe that is so much stronger than Apple's.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8241
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7211,
+          "valence": 0.6665,
+          "dominance": 0.7699,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 245.82,
+        "energy_mean": 0.038107
+      }
+    },
+    {
+      "segment_id": 86,
+      "start_s": 452.21999999999997,
+      "end_s": 456.5,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "I mean, it practically glues any accessory to it. Like that's crazy strong.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.3791
+        },
+        "facial_emotion": {
+          "dominant": "happy",
+          "confidence": 0.9158,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.77,
+          "valence": 0.4594,
+          "dominance": 0.7763,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 288.34,
+        "energy_mean": 0.041518
+      }
+    },
+    {
+      "segment_id": 87,
+      "start_s": 456.78,
+      "end_s": 460.14,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Plus, they also have a camera guard around the new bump to protect it,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5037
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7221,
+          "valence": 0.6833,
+          "dominance": 0.7272,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 278.3,
+        "energy_mean": 0.039418
+      }
+    },
+    {
+      "segment_id": 88,
+      "start_s": 460.32,
+      "end_s": 464.09999999999997,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "which doubles up as a kickstand. So nifty.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7939
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.642,
+          "valence": 0.4748,
+          "dominance": 0.6487,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 302.51,
+        "energy_mean": 0.03704
+      }
+    },
+    {
+      "segment_id": 89,
+      "start_s": 464.44,
+      "end_s": 469.62,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "And all that is just 25 bucks. So you could actually grab an ESR screen protector too",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5494
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7592,
+          "valence": 0.6735,
+          "dominance": 0.7773,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 262.35,
+        "energy_mean": 0.037707
+      }
+    },
+    {
+      "segment_id": 90,
+      "start_s": 469.62,
+      "end_s": 472.94,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "for less than one Apple case and still have some change left.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6937
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6119,
+          "valence": 0.546,
+          "dominance": 0.6451,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 253.75,
+        "energy_mean": 0.033439
+      }
+    },
+    {
+      "segment_id": 91,
+      "start_s": 473.22,
+      "end_s": 477.26,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "Their screen protector is literally the easiest one on the planet to install.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6624
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6449,
+          "valence": 0.701,
+          "dominance": 0.673,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 229.89,
+        "energy_mean": 0.048001
+      }
+    },
+    {
+      "segment_id": 92,
+      "start_s": 477.46000000000004,
+      "end_s": 483.04,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "And you don't get any bubbles, none of that jazz. And it's also made from the same manufacturer as Apple's cover glass.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.658
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6762,
+          "valence": 0.5488,
+          "dominance": 0.7,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 228.45,
+        "energy_mean": 0.036185
+      }
+    },
+    {
+      "segment_id": 93,
+      "start_s": 483.2,
+      "end_s": 486.90000000000003,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "So it'll be absorbing all the damage to save the actual iPhone screen.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6125
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6133,
+          "valence": 0.5082,
+          "dominance": 0.6429,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 247.92,
+        "energy_mean": 0.049572
+      }
+    },
+    {
+      "segment_id": 94,
+      "start_s": 487.04,
+      "end_s": 492.24,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "So if you want to grab some ESR cases, check out the link below. But now onto the lock screen.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7727
+        },
+        "facial_emotion": {
+          "dominant": "happy",
+          "confidence": 0.9766,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6911,
+          "valence": 0.6414,
+          "dominance": 0.6892,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 241.5,
+        "energy_mean": 0.025128
+      }
+    },
+    {
+      "segment_id": 95,
+      "start_s": 492.24,
+      "end_s": 498.74,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "Okay, so there are some fun tricks you can do with the lock screen now.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7394
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7036,
+          "valence": 0.5216,
+          "dominance": 0.7142,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 234.64,
+        "energy_mean": 0.025859
+      }
+    },
+    {
+      "segment_id": 96,
+      "start_s": 498.84000000000003,
+      "end_s": 502.74,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "If you tap and hold down, then go into create a new custom lock screen,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6776
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.615,
+          "valence": 0.6249,
+          "dominance": 0.667,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 206.93,
+        "energy_mean": 0.038031
+      }
+    },
+    {
+      "segment_id": 97,
+      "start_s": 503.06,
+      "end_s": 506.44,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "open up your photo gallery and choose one of your favorite pics.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5591
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6006,
+          "valence": 0.8051,
+          "dominance": 0.677,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 255.65,
+        "energy_mean": 0.034348
+      }
+    },
+    {
+      "segment_id": 98,
+      "start_s": 506.82,
+      "end_s": 511.04,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "As soon as that's done, you'll notice the same spatial scene button is now also here.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5609
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6294,
+          "valence": 0.5614,
+          "dominance": 0.6321,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 260.72,
+        "energy_mean": 0.048278
+      }
+    },
+    {
+      "segment_id": 99,
+      "start_s": 511.22,
+      "end_s": 515.48,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "And if you tap it, the bam, it turns that pic into a 3D spatial scene.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6516
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7692,
+          "valence": 0.644,
+          "dominance": 0.7392,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 238.71,
+        "energy_mean": 0.032735
+      }
+    },
+    {
+      "segment_id": 100,
+      "start_s": 515.48,
+      "end_s": 522.4,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "And you've now got a sick lock screen background. You can do this with any of your regular photos or even downloaded pictures,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.9188
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7164,
+          "valence": 0.4937,
+          "dominance": 0.7361,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 252.1,
+        "energy_mean": 0.043226
+      }
+    },
+    {
+      "segment_id": 101,
+      "start_s": 522.82,
+      "end_s": 527.54,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "literally anything you want. So have some fun with this. Then once you've got your wallpaper set up,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.5608
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6713,
+          "valence": 0.6402,
+          "dominance": 0.6981,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 247.33,
+        "energy_mean": 0.036592
+      }
+    },
+    {
+      "segment_id": 102,
+      "start_s": 527.66,
+      "end_s": 530.7,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "tap on the clock and make sure you've got the first font selected.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7769
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6587,
+          "valence": 0.708,
+          "dominance": 0.702,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 246.0,
+        "energy_mean": 0.025637
+      }
+    },
+    {
+      "segment_id": 103,
+      "start_s": 530.86,
+      "end_s": 536.5,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Because you'll now see this little handle, which if you pull will resize the clock just like this.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5403
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7218,
+          "valence": 0.5658,
+          "dominance": 0.7238,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 278.73,
+        "energy_mean": 0.049619
+      }
+    },
+    {
+      "segment_id": 104,
+      "start_s": 536.84,
+      "end_s": 542.04,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "And if you're a fan of that clock style, another thing you could do is set up a photo shuffle wallpaper instead.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.557
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6755,
+          "valence": 0.5974,
+          "dominance": 0.7084,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 241.09,
+        "energy_mean": 0.036385
+      }
+    },
+    {
+      "segment_id": 105,
+      "start_s": 542.04,
+      "end_s": 545.24,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Because now each time the wallpaper shuffles to a different one,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6494
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7354,
+          "valence": 0.5424,
+          "dominance": 0.7361,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 237.89,
+        "energy_mean": 0.052142
+      }
+    },
+    {
+      "segment_id": 106,
+      "start_s": 545.42,
+      "end_s": 548.5799999999999,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "the clock automatically resizes itself to match the pic.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7082
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6836,
+          "valence": 0.5617,
+          "dominance": 0.7047,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 297.22,
+        "energy_mean": 0.038534
+      }
+    },
+    {
+      "segment_id": 107,
+      "start_s": 549.36,
+      "end_s": 553.38,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "Oh, and I love this one. Inside settings, if you scroll all the way down to apps,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.83
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6454,
+          "valence": 0.8978,
+          "dominance": 0.6963,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 233.01,
+        "energy_mean": 0.030743
+      }
+    },
+    {
+      "segment_id": 108,
+      "start_s": 553.78,
+      "end_s": 560.64,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "then tap the M to quickly go to music settings, scroll down and under animated art, make sure this is turned on.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6147
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7338,
+          "valence": 0.6895,
+          "dominance": 0.7438,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 234.97,
+        "energy_mean": 0.036417
+      }
+    },
+    {
+      "segment_id": 109,
+      "start_s": 560.9,
+      "end_s": 563.92,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Because now if you tap the album artwork from Apple Music,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.8407
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6851,
+          "valence": 0.6663,
+          "dominance": 0.6897,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 259.0,
+        "energy_mean": 0.045974
+      }
+    },
+    {
+      "segment_id": 110,
+      "start_s": 564.24,
+      "end_s": 568.52,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "it animates on the lock screen. And again, this just looks too cool.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8128
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7461,
+          "valence": 0.541,
+          "dominance": 0.7273,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 297.94,
+        "energy_mean": 0.0381
+      }
+    },
+    {
+      "segment_id": 111,
+      "start_s": 568.52,
+      "end_s": 574.5,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "So by now, I'm pretty sure you guys are familiar with the camera button.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5601
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6572,
+          "valence": 0.6148,
+          "dominance": 0.6953,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 246.81,
+        "energy_mean": 0.026689
+      }
+    },
+    {
+      "segment_id": 112,
+      "start_s": 574.8,
+      "end_s": 580.68,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "A single press opens it up. You can then click to snap a pic or double press to shuffle through different modes.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.624
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6711,
+          "valence": 0.5678,
+          "dominance": 0.6991,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 227.52,
+        "energy_mean": 0.034095
+      }
+    },
+    {
+      "segment_id": 113,
+      "start_s": 580.96,
+      "end_s": 584.96,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "Pretty cool. But here's the trick. You can now customize this.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7148
+        },
+        "facial_emotion": {
+          "dominant": "happy",
+          "confidence": 0.9501,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7184,
+          "valence": 0.4598,
+          "dominance": 0.7683,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 235.55,
+        "energy_mean": 0.030743
+      }
+    },
+    {
+      "segment_id": 114,
+      "start_s": 585.24,
+      "end_s": 591.1,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "And it's actually really cool. You just head into the camera settings, then camera control and right over here, customize.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.754
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7216,
+          "valence": 0.8157,
+          "dominance": 0.7307,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 263.75,
+        "energy_mean": 0.037336
+      }
+    },
+    {
+      "segment_id": 115,
+      "start_s": 591.76,
+      "end_s": 599.28,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "And now what you can do is turn all of these off, but just leave the zoom on because what that'll do is when you open the camera and swipe,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6091
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6985,
+          "valence": 0.5739,
+          "dominance": 0.708,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 257.51,
+        "energy_mean": 0.043768
+      }
+    },
+    {
+      "segment_id": 116,
+      "start_s": 599.56,
+      "end_s": 603.4,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "boom, you can immediately zoom in and out. This is the only setting.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.4781
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6996,
+          "valence": 0.5749,
+          "dominance": 0.7195,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 253.04,
+        "energy_mean": 0.053945
+      }
+    },
+    {
+      "segment_id": 117,
+      "start_s": 603.6,
+      "end_s": 608.3399999999999,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "And so you don't have to faff with all the other modes. So depending on what it is you like to use the most,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6527
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6515,
+          "valence": 0.5972,
+          "dominance": 0.6975,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 229.65,
+        "energy_mean": 0.045555
+      }
+    },
+    {
+      "segment_id": 118,
+      "start_s": 608.48,
+      "end_s": 613.9,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "just go into those settings and toggle on or off what you'd like instead of having all the options.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5108
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6522,
+          "valence": 0.5603,
+          "dominance": 0.6772,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 249.37,
+        "energy_mean": 0.034727
+      }
+    },
+    {
+      "segment_id": 119,
+      "start_s": 614.2199999999999,
+      "end_s": 620.56,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "So now instead of zooming with me, I prefer changing the exposure and I can just swipe either way to make it darker or brighter.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.4985
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7068,
+          "valence": 0.5662,
+          "dominance": 0.7171,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 244.39,
+        "energy_mean": 0.02868
+      }
+    },
+    {
+      "segment_id": 120,
+      "start_s": 620.98,
+      "end_s": 621.62,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "Love it.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8791
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5943,
+          "valence": 0.876,
+          "dominance": 0.6474,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 234.84,
+        "energy_mean": 0.043986
+      }
+    },
+    {
+      "segment_id": 121,
+      "start_s": 624.16,
+      "end_s": 629.6999999999999,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "Okay, now for my favorite quick tips. Did you know you can now change your iMessage backgrounds?",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.5592
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7251,
+          "valence": 0.6835,
+          "dominance": 0.7352,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 259.56,
+        "energy_mean": 0.03545
+      }
+    },
+    {
+      "segment_id": 122,
+      "start_s": 630.16,
+      "end_s": 634.66,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "All you do is open the chat you want to add a background to, then tap on the chat name.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6742
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7081,
+          "valence": 0.723,
+          "dominance": 0.7213,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 212.41,
+        "energy_mean": 0.037904
+      }
+    },
+    {
+      "segment_id": 123,
+      "start_s": 635.1,
+      "end_s": 641.52,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "And right over here, you'll now see this option, backgrounds. There are so many different designs and color options to choose from,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6252
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6919,
+          "valence": 0.7263,
+          "dominance": 0.6999,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 242.41,
+        "energy_mean": 0.032644
+      }
+    },
+    {
+      "segment_id": 124,
+      "start_s": 641.6999999999999,
+      "end_s": 645.02,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "like different sky options. You just swipe left to change them.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6346
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6237,
+          "valence": 0.625,
+          "dominance": 0.6363,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 219.0,
+        "energy_mean": 0.033764
+      }
+    },
+    {
+      "segment_id": 125,
+      "start_s": 645.4399999999999,
+      "end_s": 651.16,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "Some crazy cool colors that animate. And my personal fave is definitely Aurora.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.9323
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6552,
+          "valence": 0.6581,
+          "dominance": 0.6586,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 255.2,
+        "energy_mean": 0.031563
+      }
+    },
+    {
+      "segment_id": 126,
+      "start_s": 651.16,
+      "end_s": 655.9599999999999,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Another quick tip to never forget is if you tap and hold on any app,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6857
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6665,
+          "valence": 0.6421,
+          "dominance": 0.6968,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 241.15,
+        "energy_mean": 0.036358
+      }
+    },
+    {
+      "segment_id": 127,
+      "start_s": 656.0799999999999,
+      "end_s": 660.9599999999999,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "you can lock it using Face ID. You just select the require Face ID option.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.773
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6107,
+          "valence": 0.551,
+          "dominance": 0.6478,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 242.39,
+        "energy_mean": 0.041582
+      }
+    },
+    {
+      "segment_id": 128,
+      "start_s": 661.14,
+      "end_s": 664.6,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "And now anytime you or someone else tries to open the app,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.524
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6658,
+          "valence": 0.5126,
+          "dominance": 0.6674,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 259.81,
+        "energy_mean": 0.04263
+      }
+    },
+    {
+      "segment_id": 129,
+      "start_s": 664.98,
+      "end_s": 670.12,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "they'll need your face for permission. Another one I love is inside the control center.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.527
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6299,
+          "valence": 0.6562,
+          "dominance": 0.6696,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 258.7,
+        "energy_mean": 0.026741
+      }
+    },
+    {
+      "segment_id": 130,
+      "start_s": 670.12,
+      "end_s": 674.66,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "If you turn on the flashlight, everyone knows you can swipe up and down to change the brightness.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.561
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6654,
+          "valence": 0.761,
+          "dominance": 0.6846,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 234.14,
+        "energy_mean": 0.032335
+      }
+    },
+    {
+      "segment_id": 131,
+      "start_s": 675.04,
+      "end_s": 680.32,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "But in case you didn't know, try instead swiping from left to right to change the beam intensity.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6439
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7207,
+          "valence": 0.5313,
+          "dominance": 0.7279,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 223.07,
+        "energy_mean": 0.035139
+      }
+    },
+    {
+      "segment_id": 132,
+      "start_s": 680.68,
+      "end_s": 684.14,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "This way you can change it to either have it more focused or flooded.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5329
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5593,
+          "valence": 0.534,
+          "dominance": 0.6283,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 199.83,
+        "energy_mean": 0.031031
+      }
+    },
+    {
+      "segment_id": 133,
+      "start_s": 684.38,
+      "end_s": 687.82,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Another super quick tip inside your battery settings, right at the bottom,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5493
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7548,
+          "valence": 0.739,
+          "dominance": 0.7385,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 229.64,
+        "energy_mean": 0.041472
+      }
+    },
+    {
+      "segment_id": 134,
+      "start_s": 688.0600000000001,
+      "end_s": 691.0600000000001,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "when you swipe down, make sure to turn on battery percentage.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7501
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7337,
+          "valence": 0.5535,
+          "dominance": 0.7152,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 276.67,
+        "energy_mean": 0.043346
+      }
+    },
+    {
+      "segment_id": 135,
+      "start_s": 691.06,
+      "end_s": 694.6999999999999,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "This will show you your actual battery life instead of just the icon,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7996
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.67,
+          "valence": 0.6096,
+          "dominance": 0.7024,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 208.06,
+        "energy_mean": 0.03551
+      }
+    },
+    {
+      "segment_id": 136,
+      "start_s": 694.8399999999999,
+      "end_s": 699.9399999999999,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "so you know how much juice you got. And for my last quick tip, make sure you save this video for later.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5974
+        },
+        "facial_emotion": {
+          "dominant": "sad",
+          "confidence": 0.7843,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7525,
+          "valence": 0.753,
+          "dominance": 0.7611,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 257.33,
+        "energy_mean": 0.046224
+      }
+    },
+    {
+      "segment_id": 137,
+      "start_s": 700.3399999999999,
+      "end_s": 703.76,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "Subscribe to the channel and I'll see you in the next one. Toodles!",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6098
+        },
+        "facial_emotion": {
+          "dominant": "happy",
+          "confidence": 0.8936,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6933,
+          "valence": 0.7796,
+          "dominance": 0.6596,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 297.57,
+        "energy_mean": 0.033772
+      }
+    }
+  ],
+  "video_title": "iPhone 17 Pro | Pro Max - TIPS, TRICKS & HIDDEN FEATURES!",
+  "sweep_id": "iphone-17-pro-max-year-365d-17d36128"
+}

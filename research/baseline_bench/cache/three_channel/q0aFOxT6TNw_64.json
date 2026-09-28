@@ -1,0 +1,37 @@
+{
+ "uid": "q0aFOxT6TNw_64",
+ "system": "three_channel",
+ "video_id": "q0aFOxT6TNw",
+ "segment_id": 64,
+ "split": "selection",
+ "payload": {
+  "segment_id": 64,
+  "start_s": 366.84,
+  "end_s": 373.0,
+  "transcript": "And Corning's Ceramic Shield 2, in case you haven't already heard, is also clearly awesome for preventing scratches to the front glass.",
+  "transcript_sentiment": "POSITIVE (0.81)",
+  "vocal_emotion": "NEUTRAL (arousal 0.53)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.98)"
+ },
+ "seconds": 4.538,
+ "raw": "{\n  \"segment_id\": 64,\n  \"conflict_score\": 0.5,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"vocal_emotion\", \"facial_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words express a strong positive sentiment, but their tone and facial expression convey a neutral or possibly even negative emotional state, which is inconsistent with the audience's overwhelmingly positive response.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 64,
+  "start_s": 366.84,
+  "end_s": 373.0,
+  "conflict_score": 0.2445,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: vocal_emotion",
+   "channels_in_conflict: facial_emotion",
+   "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+  ],
+  "flagged": false
+ }
+}

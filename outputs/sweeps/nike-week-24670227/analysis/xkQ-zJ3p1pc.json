@@ -1,0 +1,2126 @@
+{
+  "schema": "brandpulse.analysis/1",
+  "status": "complete",
+  "steps": {
+    "claims": true,
+    "topics": true,
+    "comments": true,
+    "prose": true
+  },
+  "created_at": "2026-09-27T10:53:22+00:00",
+  "model": "llama3.1:8b",
+  "num_ctx": 6144,
+  "prompt_versions": {
+    "claims": "11039eb1443c",
+    "topics": "849d75dbc679",
+    "comments": "dda83531df32",
+    "prose": "633ad9a4e222"
+  },
+  "subject": {
+    "brand": "Nike",
+    "product": "",
+    "title": "Nike Air Max 1000.3 review and on foot!"
+  },
+  "facts": {
+    "scores": {
+      "authenticity": 53.65,
+      "brand_health": 79.13
+    },
+    "segments": 79,
+    "flagged": 4,
+    "threshold": 0.75,
+    "duration_s": 509.74,
+    "comments": {
+      "n": 45,
+      "distribution": {
+        "POSITIVE": 21,
+        "NEUTRAL": 6,
+        "NEGATIVE": 18
+      },
+      "label": "POSITIVE"
+    },
+    "reviewer": {
+      "lean": 0.3491417880094362,
+      "se": 0.08755997883979516,
+      "n": 79,
+      "call": "positive",
+      "counts": {
+        "POSITIVE": 38,
+        "NEUTRAL": 29,
+        "NEGATIVE": 12
+      },
+      "seconds": {
+        "POSITIVE": 245.5,
+        "NEUTRAL": 172.4,
+        "NEGATIVE": 73.82
+      },
+      "unread": 0
+    },
+    "audience": {
+      "lean": 0.06666666666666667,
+      "se": 0.1399855692418315,
+      "n": 45,
+      "call": "balanced",
+      "counts": {
+        "POSITIVE": 21,
+        "NEUTRAL": 6,
+        "NEGATIVE": 18
+      }
+    },
+    "agreement": {
+      "gap": 0.28247512134276953,
+      "se": 0.16511423164096115,
+      "low": -0.04114282600851815,
+      "high": 0.6060930686940572,
+      "call": "no_clear_difference"
+    },
+    "confidence": {
+      "level": "well_covered",
+      "checks": [
+        {
+          "id": "comments",
+          "label": "Enough comments to read the audience",
+          "value": 45,
+          "target": 30,
+          "unit": "comments",
+          "passed": true,
+          "core": true
+        },
+        {
+          "id": "transcript",
+          "label": "The reviewer's words were read",
+          "value": 1.0,
+          "target": 0.5,
+          "unit": "share",
+          "core": true,
+          "passed": true
+        },
+        {
+          "id": "weak_conflict",
+          "label": "The conflict rests mostly on the stronger channels",
+          "value": 0.2799,
+          "target": 0.5,
+          "unit": "share",
+          "passed": true,
+          "core": false,
+          "no_conflict": false
+        }
+      ],
+      "coverage": {
+        "transcript": {
+          "read": 79,
+          "total": 79,
+          "share": 1.0
+        },
+        "facial": {
+          "read": 52,
+          "total": 79,
+          "share": 0.6582278481012658
+        },
+        "vocal": {
+          "read": 79,
+          "total": 79,
+          "share": 1.0
+        },
+        "comment": {
+          "read": 79,
+          "total": 79,
+          "share": 1.0
+        }
+      },
+      "weak_conflict": {
+        "weak": 9.8741,
+        "total": 35.2741,
+        "share": 0.2799249307565608
+      },
+      "accuracy": {
+        "comment": 78.7,
+        "transcript": 67.8,
+        "vocal": 48.9,
+        "facial": 34.2
+      },
+      "means_not": "How much evidence this reading rests on. Not whether the verdict is right, and not whether anyone in the video was honest.",
+      "ceiling": {
+        "text": "No score in this system has been shown to track human judgement of authenticity. On 119 hand-rated segments the four-channel design scored rho = +0.0575 (95% CI -0.1282 to +0.2364); people agreed with each other at rho = +0.8038.",
+        "n": 119,
+        "rho": 0.0575,
+        "ci": [
+          -0.1282,
+          0.2364
+        ],
+        "human_rho": 0.8038,
+        "source": "baseline_bench/BASELINE_ANALYSIS.md"
+      }
+    },
+    "tone": {
+      "window_s": 60.0,
+      "points": [
+        {
+          "seg": 0,
+          "start": 0.0,
+          "end": 3.2600000000000002,
+          "raw": 0.836,
+          "t": 1.63,
+          "smooth": 0.3452
+        },
+        {
+          "seg": 1,
+          "start": 3.84,
+          "end": 6.92,
+          "raw": 0.0,
+          "t": 5.38,
+          "smooth": 0.3167
+        },
+        {
+          "seg": 2,
+          "start": 7.12,
+          "end": 15.18,
+          "raw": 0.0,
+          "t": 11.15,
+          "smooth": 0.2729
+        },
+        {
+          "seg": 3,
+          "start": 15.46,
+          "end": 21.38,
+          "raw": 0.0,
+          "t": 18.42,
+          "smooth": 0.2312
+        },
+        {
+          "seg": 4,
+          "start": 21.38,
+          "end": 31.96,
+          "raw": 0.7637,
+          "t": 26.67,
+          "smooth": 0.2495
+        },
+        {
+          "seg": 5,
+          "start": 32.16,
+          "end": 36.72,
+          "raw": 0.0,
+          "t": 34.44,
+          "smooth": 0.288
+        },
+        {
+          "seg": 6,
+          "start": 36.8,
+          "end": 40.120000000000005,
+          "raw": 0.0,
+          "t": 38.46,
+          "smooth": 0.287
+        },
+        {
+          "seg": 7,
+          "start": 40.34,
+          "end": 43.56,
+          "raw": 0.0,
+          "t": 41.95,
+          "smooth": 0.2923
+        },
+        {
+          "seg": 8,
+          "start": 43.68,
+          "end": 49.22,
+          "raw": 0.0,
+          "t": 46.45,
+          "smooth": 0.2909
+        },
+        {
+          "seg": 9,
+          "start": 49.22,
+          "end": 53.22,
+          "raw": 0.0,
+          "t": 51.22,
+          "smooth": 0.2909
+        },
+        {
+          "seg": 10,
+          "start": 53.58,
+          "end": 63.04,
+          "raw": 0.9144,
+          "t": 58.31,
+          "smooth": 0.1988
+        },
+        {
+          "seg": 11,
+          "start": 63.48,
+          "end": 69.84,
+          "raw": 0.0,
+          "t": 66.66,
+          "smooth": 0.1444
+        },
+        {
+          "seg": 12,
+          "start": 70.9,
+          "end": 77.62,
+          "raw": 0.0,
+          "t": 74.26,
+          "smooth": 0.0684
+        },
+        {
+          "seg": 13,
+          "start": 77.62,
+          "end": 89.26,
+          "raw": 0.0,
+          "t": 83.44,
+          "smooth": 0.1211
+        },
+        {
+          "seg": 14,
+          "start": 89.34,
+          "end": 92.64,
+          "raw": 0.9344,
+          "t": 90.99,
+          "smooth": -0.0118
+        },
+        {
+          "seg": 15,
+          "start": 92.74000000000001,
+          "end": 98.52000000000001,
+          "raw": -0.8735,
+          "t": 95.63,
+          "smooth": -0.072
+        },
+        {
+          "seg": 16,
+          "start": 99.06,
+          "end": 105.67999999999999,
+          "raw": -0.5308,
+          "t": 102.37,
+          "smooth": 0.0223
+        },
+        {
+          "seg": 17,
+          "start": 105.82,
+          "end": 110.08,
+          "raw": 0.8722,
+          "t": 107.95,
+          "smooth": 0.0542
+        },
+        {
+          "seg": 18,
+          "start": 110.69999999999999,
+          "end": 119.46,
+          "raw": 0.0,
+          "t": 115.08,
+          "smooth": 0.0606
+        },
+        {
+          "seg": 19,
+          "start": 119.62,
+          "end": 124.86,
+          "raw": -0.5696,
+          "t": 122.24,
+          "smooth": 0.0988
+        },
+        {
+          "seg": 20,
+          "start": 124.86,
+          "end": 134.66,
+          "raw": 0.8055,
+          "t": 129.76,
+          "smooth": 0.1289
+        },
+        {
+          "seg": 21,
+          "start": 134.96,
+          "end": 144.54,
+          "raw": 0.0,
+          "t": 139.75,
+          "smooth": 0.1702
+        },
+        {
+          "seg": 22,
+          "start": 144.54,
+          "end": 152.85999999999999,
+          "raw": 0.6897,
+          "t": 148.7,
+          "smooth": 0.242
+        },
+        {
+          "seg": 23,
+          "start": 153.07999999999998,
+          "end": 157.98,
+          "raw": -0.7511,
+          "t": 155.53,
+          "smooth": 0.3229
+        },
+        {
+          "seg": 24,
+          "start": 158.04,
+          "end": 161.84,
+          "raw": 0.0,
+          "t": 159.94,
+          "smooth": 0.3258
+        },
+        {
+          "seg": 25,
+          "start": 162.26,
+          "end": 166.76,
+          "raw": 0.0,
+          "t": 164.51,
+          "smooth": 0.3294
+        },
+        {
+          "seg": 26,
+          "start": 166.82,
+          "end": 174.8,
+          "raw": 0.9033,
+          "t": 170.81,
+          "smooth": 0.4191
+        },
+        {
+          "seg": 27,
+          "start": 175.0,
+          "end": 182.66000000000003,
+          "raw": 0.0,
+          "t": 178.83,
+          "smooth": 0.4742
+        },
+        {
+          "seg": 28,
+          "start": 182.96,
+          "end": 186.20000000000002,
+          "raw": 0.8758,
+          "t": 184.58,
+          "smooth": 0.5283
+        },
+        {
+          "seg": 29,
+          "start": 186.3,
+          "end": 195.8,
+          "raw": 0.8516,
+          "t": 191.05,
+          "smooth": 0.6512
+        },
+        {
+          "seg": 30,
+          "start": 195.8,
+          "end": 203.78,
+          "raw": 0.8752,
+          "t": 199.79,
+          "smooth": 0.6474
+        },
+        {
+          "seg": 31,
+          "start": 204.02,
+          "end": 209.98000000000002,
+          "raw": 0.7228,
+          "t": 207.0,
+          "smooth": 0.5697
+        },
+        {
+          "seg": 32,
+          "start": 210.4,
+          "end": 214.78,
+          "raw": 0.9269,
+          "t": 212.59,
+          "smooth": 0.571
+        },
+        {
+          "seg": 33,
+          "start": 214.88000000000002,
+          "end": 224.82000000000002,
+          "raw": 0.7112,
+          "t": 219.85,
+          "smooth": 0.4877
+        },
+        {
+          "seg": 34,
+          "start": 224.82,
+          "end": 229.51999999999998,
+          "raw": 0.0,
+          "t": 227.17,
+          "smooth": 0.4572
+        },
+        {
+          "seg": 35,
+          "start": 229.66,
+          "end": 234.62,
+          "raw": 0.0,
+          "t": 232.14,
+          "smooth": 0.4154
+        },
+        {
+          "seg": 36,
+          "start": 234.78,
+          "end": 240.88,
+          "raw": 0.0,
+          "t": 237.83,
+          "smooth": 0.3458
+        },
+        {
+          "seg": 37,
+          "start": 241.01999999999998,
+          "end": 247.9,
+          "raw": 0.0,
+          "t": 244.46,
+          "smooth": 0.357
+        },
+        {
+          "seg": 38,
+          "start": 247.9,
+          "end": 259.98,
+          "raw": 0.6109,
+          "t": 253.94,
+          "smooth": 0.3072
+        },
+        {
+          "seg": 39,
+          "start": 260.4,
+          "end": 264.06,
+          "raw": 0.0,
+          "t": 262.23,
+          "smooth": 0.3895
+        },
+        {
+          "seg": 40,
+          "start": 264.4,
+          "end": 267.66,
+          "raw": 0.0,
+          "t": 266.03,
+          "smooth": 0.4465
+        },
+        {
+          "seg": 41,
+          "start": 267.78000000000003,
+          "end": 274.32,
+          "raw": 0.9356,
+          "t": 271.05,
+          "smooth": 0.5243
+        },
+        {
+          "seg": 42,
+          "start": 274.96000000000004,
+          "end": 279.04,
+          "raw": 0.8883,
+          "t": 277.0,
+          "smooth": 0.5719
+        },
+        {
+          "seg": 43,
+          "start": 279.3,
+          "end": 285.2,
+          "raw": 0.0,
+          "t": 282.25,
+          "smooth": 0.5253
+        },
+        {
+          "seg": 44,
+          "start": 285.84000000000003,
+          "end": 290.06,
+          "raw": 0.7749,
+          "t": 287.95,
+          "smooth": 0.3974
+        },
+        {
+          "seg": 45,
+          "start": 290.12,
+          "end": 295.84,
+          "raw": 0.899,
+          "t": 292.98,
+          "smooth": 0.2962
+        },
+        {
+          "seg": 46,
+          "start": 296.14,
+          "end": 303.92,
+          "raw": 0.9091,
+          "t": 300.03,
+          "smooth": 0.3275
+        },
+        {
+          "seg": 47,
+          "start": 304.12,
+          "end": 313.6,
+          "raw": 0.0,
+          "t": 308.86,
+          "smooth": 0.3134
+        },
+        {
+          "seg": 48,
+          "start": 313.6,
+          "end": 323.94,
+          "raw": -0.8755,
+          "t": 318.77,
+          "smooth": 0.4004
+        },
+        {
+          "seg": 49,
+          "start": 324.06,
+          "end": 327.78000000000003,
+          "raw": 0.7665,
+          "t": 325.92,
+          "smooth": 0.3295
+        },
+        {
+          "seg": 50,
+          "start": 327.88,
+          "end": 332.5,
+          "raw": 0.9151,
+          "t": 330.19,
+          "smooth": 0.2247
+        },
+        {
+          "seg": 51,
+          "start": 332.88,
+          "end": 340.02000000000004,
+          "raw": 0.75,
+          "t": 336.45,
+          "smooth": 0.1982
+        },
+        {
+          "seg": 52,
+          "start": 340.54,
+          "end": 352.9,
+          "raw": 0.8207,
+          "t": 346.72,
+          "smooth": 0.2183
+        },
+        {
+          "seg": 53,
+          "start": 353.28000000000003,
+          "end": 362.26,
+          "raw": -0.5523,
+          "t": 357.77,
+          "smooth": 0.423
+        },
+        {
+          "seg": 54,
+          "start": 362.38,
+          "end": 367.72,
+          "raw": 0.7387,
+          "t": 365.05,
+          "smooth": 0.2363
+        },
+        {
+          "seg": 55,
+          "start": 367.9,
+          "end": 374.78000000000003,
+          "raw": -0.6095,
+          "t": 371.34,
+          "smooth": 0.1323
+        },
+        {
+          "seg": 56,
+          "start": 374.86,
+          "end": 386.84000000000003,
+          "raw": 0.8826,
+          "t": 380.85,
+          "smooth": -0.0827
+        },
+        {
+          "seg": 57,
+          "start": 387.0,
+          "end": 392.54,
+          "raw": -0.6912,
+          "t": 389.77,
+          "smooth": 0.0199
+        },
+        {
+          "seg": 58,
+          "start": 392.54,
+          "end": 397.74,
+          "raw": -0.6243,
+          "t": 395.14,
+          "smooth": 0.071
+        },
+        {
+          "seg": 59,
+          "start": 398.06,
+          "end": 404.32,
+          "raw": 0.0,
+          "t": 401.19,
+          "smooth": 0.1451
+        },
+        {
+          "seg": 60,
+          "start": 404.42,
+          "end": 410.36,
+          "raw": -0.8099,
+          "t": 407.39,
+          "smooth": 0.2359
+        },
+        {
+          "seg": 61,
+          "start": 410.5,
+          "end": 414.2,
+          "raw": 0.0,
+          "t": 412.35,
+          "smooth": 0.1859
+        },
+        {
+          "seg": 62,
+          "start": 414.91999999999996,
+          "end": 420.96,
+          "raw": 0.8438,
+          "t": 417.94,
+          "smooth": 0.1369
+        },
+        {
+          "seg": 63,
+          "start": 421.12,
+          "end": 429.96,
+          "raw": 0.6549,
+          "t": 425.54,
+          "smooth": 0.2805
+        },
+        {
+          "seg": 64,
+          "start": 430.02,
+          "end": 434.73999999999995,
+          "raw": 0.9157,
+          "t": 432.38,
+          "smooth": 0.3026
+        },
+        {
+          "seg": 65,
+          "start": 434.74,
+          "end": 439.16,
+          "raw": 0.7917,
+          "t": 436.95,
+          "smooth": 0.3371
+        },
+        {
+          "seg": 66,
+          "start": 439.5,
+          "end": 446.86,
+          "raw": 0.0,
+          "t": 443.18,
+          "smooth": 0.4628
+        },
+        {
+          "seg": 67,
+          "start": 447.0,
+          "end": 454.40000000000003,
+          "raw": 0.5041,
+          "t": 450.7,
+          "smooth": 0.4455
+        },
+        {
+          "seg": 68,
+          "start": 454.48,
+          "end": 463.44,
+          "raw": 0.0,
+          "t": 458.96,
+          "smooth": 0.4542
+        },
+        {
+          "seg": 69,
+          "start": 463.44,
+          "end": 467.9,
+          "raw": 0.0,
+          "t": 465.67,
+          "smooth": 0.3811
+        },
+        {
+          "seg": 70,
+          "start": 467.94,
+          "end": 473.68,
+          "raw": 0.8809,
+          "t": 470.81,
+          "smooth": 0.2813
+        },
+        {
+          "seg": 71,
+          "start": 474.08,
+          "end": 477.44,
+          "raw": 0.5207,
+          "t": 475.76,
+          "smooth": 0.3336
+        },
+        {
+          "seg": 72,
+          "start": 478.38,
+          "end": 483.14,
+          "raw": 0.6042,
+          "t": 480.76,
+          "smooth": 0.3583
+        },
+        {
+          "seg": 73,
+          "start": 483.24,
+          "end": 489.34,
+          "raw": 0.7712,
+          "t": 486.29,
+          "smooth": 0.3606
+        },
+        {
+          "seg": 74,
+          "start": 489.94,
+          "end": 492.96,
+          "raw": 0.8918,
+          "t": 491.45,
+          "smooth": 0.4016
+        },
+        {
+          "seg": 75,
+          "start": 492.96,
+          "end": 496.64,
+          "raw": -0.633,
+          "t": 494.8,
+          "smooth": 0.4336
+        },
+        {
+          "seg": 76,
+          "start": 497.03999999999996,
+          "end": 501.76,
+          "raw": -0.626,
+          "t": 499.4,
+          "smooth": 0.452
+        },
+        {
+          "seg": 77,
+          "start": 502.06,
+          "end": 506.09999999999997,
+          "raw": 0.9438,
+          "t": 504.08,
+          "smooth": 0.3967
+        },
+        {
+          "seg": 78,
+          "start": 506.21999999999997,
+          "end": 509.74,
+          "raw": 0.744,
+          "t": 507.98,
+          "smooth": 0.3827
+        }
+      ],
+      "turns": [
+        {
+          "seg": 15,
+          "t": 95.63,
+          "kind": "dip",
+          "smooth": -0.072,
+          "prominence": 0.4172
+        },
+        {
+          "seg": 29,
+          "t": 191.05,
+          "kind": "peak",
+          "smooth": 0.6512,
+          "prominence": 0.7232
+        },
+        {
+          "seg": 56,
+          "t": 380.85,
+          "kind": "dip",
+          "smooth": -0.0827,
+          "prominence": 0.5455
+        }
+      ]
+    },
+    "moments": [
+      {
+        "seg": 47,
+        "start": 304.12,
+        "end": 313.6,
+        "time": "5:04",
+        "conflict": 0.8,
+        "flagged": true,
+        "damped": false,
+        "valences": {
+          "transcript": "NEUTRAL",
+          "facial": "NEGATIVE",
+          "vocal": "NEUTRAL",
+          "comment": "POSITIVE"
+        },
+        "text": "True to size, you could probably get away with going true to size. But I always think when it comes to 3D printed shoes or foam footwear, it's probably better to go up than down."
+      },
+      {
+        "seg": 53,
+        "start": 353.28000000000003,
+        "end": 362.26,
+        "time": "5:53",
+        "conflict": 0.8,
+        "flagged": true,
+        "damped": false,
+        "valences": {
+          "transcript": "NEGATIVE",
+          "facial": "NEGATIVE",
+          "vocal": "NEUTRAL",
+          "comment": "POSITIVE"
+        },
+        "text": "Probably not going to get to a situation in the immediate future whereby they can literally churn out millions of pairs of these."
+      },
+      {
+        "seg": 58,
+        "start": 392.54,
+        "end": 397.74,
+        "time": "6:32",
+        "conflict": 0.8,
+        "flagged": true,
+        "damped": false,
+        "valences": {
+          "transcript": "NEGATIVE",
+          "facial": "NEGATIVE",
+          "vocal": "NEUTRAL",
+          "comment": "POSITIVE"
+        },
+        "text": "But I feel like Nike need to be a bit more cagey in their strategy about democratizing every release."
+      }
+    ],
+    "signs": {
+      "title": "Signs of a commercial interest or a mismatch",
+      "disclaimer": "These are signs, not proof. A creator can disclose a sponsor and still review honestly, and an undisclosed deal would leave none of these marks.",
+      "signs": [
+        {
+          "id": "S1",
+          "kind": "fact",
+          "state": "absent",
+          "name": "The creator declared a paid promotion",
+          "evidence": {
+            "label": false,
+            "description": []
+          }
+        },
+        {
+          "id": "S2",
+          "kind": "fact",
+          "state": "absent",
+          "name": "Sponsor, code, affiliate or gift wording in what was said",
+          "evidence": {
+            "speech": []
+          }
+        },
+        {
+          "id": "S3",
+          "kind": "fact",
+          "state": "absent",
+          "name": "Affiliate links, discount codes or a gifted unit in the description",
+          "evidence": {
+            "description": []
+          }
+        },
+        {
+          "id": "S4",
+          "kind": "inference",
+          "state": "absent",
+          "name": "The reviewer was measurably warmer than the audience",
+          "evidence": {
+            "agreement": {
+              "gap": 0.28247512134276953,
+              "se": 0.16511423164096115,
+              "low": -0.04114282600851815,
+              "high": 0.6060930686940572,
+              "call": "no_clear_difference"
+            }
+          }
+        },
+        {
+          "id": "S5",
+          "kind": "inference",
+          "state": "absent",
+          "name": "Positive words at moments the controller flagged",
+          "evidence": {
+            "positive_flagged": [],
+            "controller_flag": []
+          }
+        }
+      ],
+      "present": 0,
+      "checked": 5
+    }
+  },
+  "reading": {
+    "claims": [
+      {
+        "seg": 10,
+        "time": "0:53",
+        "start": 53.58,
+        "aspect": "price",
+        "stance": "praise",
+        "claim": "The reviewer thinks the shoes are worth $179.",
+        "quote": "They're $179 US dollars",
+        "topic": "T4"
+      },
+      {
+        "seg": 14,
+        "time": "1:29",
+        "start": 89.34,
+        "aspect": "durability",
+        "stance": "praise",
+        "claim": "The reviewer finds the shoes to be remarkably durable.",
+        "quote": "And I'm pleased to say these things held up remarkably well",
+        "topic": "T2"
+      },
+      {
+        "seg": 17,
+        "time": "1:45",
+        "start": 105.82,
+        "aspect": "durability",
+        "stance": "praise",
+        "claim": "The reviewer finds the shoes to be unbelievable in their recovery powers.",
+        "quote": "These things are unbelievable when it comes to their powers of recovery",
+        "topic": "T2"
+      },
+      {
+        "seg": 18,
+        "time": "1:50",
+        "start": 110.69999999999999,
+        "aspect": "durability",
+        "stance": "praise",
+        "claim": "The reviewer finds the shoes to be able to recover from creasing, bashing, and dirtiness.",
+        "quote": "You can crease them up, you can bash them up, you can dirty them up, and they will pretty much return to normal with a scrub and a wash",
+        "topic": "T2"
+      },
+      {
+        "seg": 20,
+        "time": "2:04",
+        "start": 124.86,
+        "aspect": "technology",
+        "stance": "praise",
+        "claim": "The reviewer thinks the technology to produce the shoes is remarkable.",
+        "quote": "So the technology to produce these is remarkable",
+        "topic": "T7"
+      },
+      {
+        "seg": 23,
+        "time": "2:33",
+        "start": 153.07999999999998,
+        "aspect": "design",
+        "stance": "praise",
+        "claim": "The reviewer finds the silhouette of the shoe to be attention arresting.",
+        "quote": "And the actual silhouette of the shoe itself is really attention arresting",
+        "topic": "T1"
+      },
+      {
+        "seg": 24,
+        "time": "2:38",
+        "start": 158.04,
+        "aspect": "design",
+        "stance": "praise",
+        "claim": "The reviewer finds the shoes to be like wearable art.",
+        "quote": "They look like some sort of wearable art",
+        "topic": "T1"
+      },
+      {
+        "seg": 26,
+        "time": "2:46",
+        "start": 166.82,
+        "aspect": "design",
+        "stance": "praise",
+        "claim": "The reviewer finds the shoes to be visually striking.",
+        "quote": "They really stand out on feet",
+        "topic": "T1"
+      },
+      {
+        "seg": 33,
+        "time": "3:34",
+        "start": 214.88000000000002,
+        "aspect": "weight",
+        "stance": "praise",
+        "claim": "The reviewer finds the shoe noticeably lighter.",
+        "quote": "In comparing these things to the 1000s and the 1000.2s is that these things are noticeably lighter.",
+        "topic": "T7"
+      },
+      {
+        "seg": 39,
+        "time": "4:20",
+        "start": 260.4,
+        "aspect": "weight",
+        "stance": "praise",
+        "claim": "The reviewer finds the shoe lighter and softer.",
+        "quote": "Joking. They're basically lighter and they're a little bit softer.",
+        "topic": "T7"
+      },
+      {
+        "seg": 43,
+        "time": "4:39",
+        "start": 279.3,
+        "aspect": "weight",
+        "stance": "praise",
+        "claim": "The reviewer finds the shoe way lighter.",
+        "quote": "So if you have the previous iterations and you throw these on, the first thing you'll notice is that these things are way lighter.",
+        "topic": "T7"
+      },
+      {
+        "seg": 44,
+        "time": "4:45",
+        "start": 285.84000000000003,
+        "aspect": "comfort",
+        "stance": "praise",
+        "claim": "The reviewer finds the shoe way softer on the foot.",
+        "quote": "They're way softer on the foot. And they're pretty comparable in terms of the ride.",
+        "topic": "T0"
+      },
+      {
+        "seg": 45,
+        "time": "4:50",
+        "start": 290.12,
+        "aspect": "ride",
+        "stance": "praise",
+        "claim": "The reviewer finds the ride firm but nice.",
+        "quote": "It is quite a firm ride. But they definitely feel a lot nicer on feet compared to the previous iterations.",
+        "topic": "T0"
+      },
+      {
+        "seg": 46,
+        "time": "4:56",
+        "start": 296.14,
+        "aspect": "fit",
+        "stance": "praise",
+        "claim": "The reviewer finds the shoe nice to wear.",
+        "quote": "It's a nice shoe. It's a nice shoe to wear.",
+        "topic": "T3"
+      },
+      {
+        "seg": 46,
+        "time": "4:56",
+        "start": 296.14,
+        "aspect": "fit",
+        "stance": "neutral",
+        "claim": "The reviewer recommends going a half size up.",
+        "quote": "If you're in the market for a pair of these, I'd recommend going a half size up.",
+        "topic": "T3"
+      },
+      {
+        "seg": 54,
+        "time": "6:02",
+        "start": 362.38,
+        "aspect": "availability",
+        "stance": "praise",
+        "claim": "The reviewer thinks the limited availability is clever.",
+        "quote": "But I think the way that they're rolling it out is clever because this is a special shoe.",
+        "topic": "T5"
+      },
+      {
+        "seg": 62,
+        "time": "6:54",
+        "start": 414.91999999999996,
+        "aspect": "price",
+        "stance": "praise",
+        "claim": "The reviewer recommends the shoe at the retail price.",
+        "quote": "Yes. Yes, I would. I would totally recommend this shoe if you can pick them up for the retail price.",
+        "topic": "T4"
+      },
+      {
+        "seg": 63,
+        "time": "7:01",
+        "start": 421.12,
+        "aspect": "comfort",
+        "stance": "praise",
+        "claim": "The reviewer finds the shoe comfortable.",
+        "quote": "As said, they're comfy.",
+        "topic": "T0"
+      },
+      {
+        "seg": 64,
+        "time": "7:10",
+        "start": 430.02,
+        "aspect": "design",
+        "stance": "praise",
+        "claim": "The reviewer thinks the shoe looks cool.",
+        "quote": "They look super cool.",
+        "topic": "T1"
+      },
+      {
+        "seg": 65,
+        "time": "7:14",
+        "start": 434.74,
+        "aspect": "design",
+        "stance": "praise",
+        "claim": "The reviewer likes the shoe's 3D printed design.",
+        "quote": "3D printed shoes that have this really cool design about them.",
+        "topic": "T1"
+      },
+      {
+        "seg": 67,
+        "time": "7:27",
+        "start": 447.0,
+        "aspect": "durability",
+        "stance": "praise",
+        "claim": "The reviewer thinks the shoe is indestructible.",
+        "quote": "the fact that they are pretty indestructible, like they're pretty hard to mash up.",
+        "topic": "T2"
+      },
+      {
+        "seg": 68,
+        "time": "7:34",
+        "start": 454.48,
+        "aspect": "value",
+        "stance": "praise",
+        "claim": "The reviewer thinks the shoe is a sneakerhead's dream.",
+        "quote": "It's like a sneakerhead's dream shoe, basically.",
+        "topic": "T6"
+      },
+      {
+        "seg": 68,
+        "time": "7:34",
+        "start": 454.48,
+        "aspect": "design",
+        "stance": "praise",
+        "claim": "The reviewer likes the OG colorway.",
+        "quote": "Out of the three colorways that I have, I think I've got to go with the OG colorway.",
+        "topic": "T1"
+      },
+      {
+        "seg": 73,
+        "time": "8:03",
+        "start": 483.24,
+        "aspect": "hype",
+        "stance": "mixed",
+        "claim": "The reviewer likes the shoe but thinks the hype is not justified.",
+        "quote": "I do like them. But yeah, we've got the Zellefeld Air Max 1 collection or the 1000s going pretty strong now.",
+        "topic": "T5"
+      }
+    ],
+    "topics": [
+      {
+        "id": "T0",
+        "name": "Comfort",
+        "aspects": [
+          "comfort",
+          "ride"
+        ],
+        "reviewer": {
+          "claims": 3,
+          "stances": {
+            "praise": 3,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 18.78,
+            "NEUTRAL": 0.0,
+            "NEGATIVE": 0.0
+          },
+          "segments": [
+            44,
+            45,
+            63
+          ],
+          "lean": 1.0,
+          "se": 0.0,
+          "call": "positive"
+        },
+        "audience": {
+          "comments": 4,
+          "counts": {
+            "POSITIVE": 2,
+            "NEUTRAL": 1,
+            "NEGATIVE": 1
+          },
+          "lean": 0.25,
+          "se": 0.478713553878169,
+          "call": "balanced",
+          "questions": 1,
+          "examples": [
+            {
+              "i": 3,
+              "quote": "Duuuuude envy you!! Need these ones",
+              "label": "POSITIVE",
+              "likes": 2
+            },
+            {
+              "i": 4,
+              "quote": "Good review. Tempted by these as wanted a light colour pair. I have the 1000.2 and really like the comfort. Find putting them on with socks a pain though as they bunch up at the toes!",
+              "label": "NEGATIVE",
+              "likes": 2
+            },
+            {
+              "i": 24,
+              "quote": "Are these even breathable?",
+              "label": "NEUTRAL",
+              "likes": 0
+            }
+          ]
+        },
+        "agreement": {
+          "gap": 0.75,
+          "se": 0.478713553878169,
+          "low": -0.18826132451238597,
+          "high": 1.688261324512386,
+          "call": "no_clear_difference"
+        }
+      },
+      {
+        "id": "T1",
+        "name": "Design",
+        "aspects": [
+          "design"
+        ],
+        "reviewer": {
+          "claims": 6,
+          "stances": {
+            "praise": 6,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 17.12,
+            "NEUTRAL": 8.28,
+            "NEGATIVE": 4.9
+          },
+          "segments": [
+            23,
+            24,
+            26,
+            64,
+            65,
+            68
+          ],
+          "lean": 0.4033003300330031,
+          "se": 0.3438491146787053,
+          "call": "balanced"
+        },
+        "audience": {
+          "comments": 12,
+          "counts": {
+            "POSITIVE": 7,
+            "NEUTRAL": 1,
+            "NEGATIVE": 4
+          },
+          "lean": 0.25,
+          "se": 0.27866021451135636,
+          "call": "balanced",
+          "questions": 2,
+          "examples": [
+            {
+              "i": 1,
+              "quote": "The Air Max 1000 line is for sure the coolest thing that Nike did for the past 5+ years....",
+              "label": "POSITIVE",
+              "likes": 2
+            },
+            {
+              "i": 12,
+              "quote": "all white might be cool to dye  (if possible.. not sure if you can boil these) or just customize with airbrushing/painting",
+              "label": "NEUTRAL",
+              "likes": 2
+            },
+            {
+              "i": 4,
+              "quote": "Good review. Tempted by these as wanted a light colour pair. I have the 1000.2 and really like the comfort. Find putting them on with socks a pain though as they bunch up at the toes!",
+              "label": "NEGATIVE",
+              "likes": 2
+            }
+          ]
+        },
+        "agreement": {
+          "gap": 0.15330033003300308,
+          "se": 0.44258753802704903,
+          "low": -0.7141553045062645,
+          "high": 1.0207559645722708,
+          "call": "no_clear_difference"
+        }
+      },
+      {
+        "id": "T2",
+        "name": "Durability",
+        "aspects": [
+          "durability"
+        ],
+        "reviewer": {
+          "claims": 4,
+          "stances": {
+            "praise": 4,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 14.96,
+            "NEUTRAL": 8.76,
+            "NEGATIVE": 0.0
+          },
+          "segments": [
+            14,
+            17,
+            18,
+            67
+          ],
+          "lean": 0.6306913996627324,
+          "se": 0.3153092459203058,
+          "call": "positive"
+        },
+        "audience": {
+          "comments": 2,
+          "counts": {
+            "POSITIVE": 1,
+            "NEUTRAL": 0,
+            "NEGATIVE": 1
+          },
+          "lean": 0.0,
+          "se": 1.0000000000000002,
+          "call": "balanced",
+          "questions": 0,
+          "examples": [
+            {
+              "i": 25,
+              "quote": "Although I'm excited for the new pair , my glacier blues ripped after 2 weeks of daily wear . Now needing to either choose for a $89 refund or ship the shoes back and wait for them to reprint",
+              "label": "NEGATIVE",
+              "likes": 0
+            }
+          ]
+        },
+        "agreement": {
+          "gap": 0.6306913996627324,
+          "se": 1.0485322696812112,
+          "low": -1.4243940855404809,
+          "high": 2.6857768848659456,
+          "call": "no_clear_difference"
+        }
+      },
+      {
+        "id": "T3",
+        "name": "Fit",
+        "aspects": [
+          "fit"
+        ],
+        "reviewer": {
+          "claims": 2,
+          "stances": {
+            "praise": 1,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 1
+          },
+          "seconds": {
+            "POSITIVE": 7.78,
+            "NEUTRAL": 0.0,
+            "NEGATIVE": 0.0
+          },
+          "segments": [
+            46
+          ],
+          "lean": 1.0,
+          "se": null,
+          "call": "unknown"
+        },
+        "audience": {
+          "comments": 8,
+          "counts": {
+            "POSITIVE": 4,
+            "NEUTRAL": 2,
+            "NEGATIVE": 2
+          },
+          "lean": 0.25,
+          "se": 0.3133915852640044,
+          "call": "balanced",
+          "questions": 3,
+          "examples": [
+            {
+              "i": 20,
+              "quote": "Had the 1000.2s, sold them because it felt impossible to get my feet in wearing socks because the 3D printed material pulls on the socks so much (and I was a full size up).\n\nThey look great on you at least!",
+              "label": "POSITIVE",
+              "likes": 1
+            },
+            {
+              "i": 19,
+              "quote": "I’ve gone for almost every pair and I never got until this pair on SNKRS! I’m a size 9 and got a 10 though so hopefully they don’t fit too big 🤙🏼",
+              "label": "POSITIVE",
+              "likes": 0
+            },
+            {
+              "i": 29,
+              "quote": "These come only in full size M.Nomics, no half size 😬 On my part, allready have 2 pairs - I think TTS is the Best 😉",
+              "label": "POSITIVE",
+              "likes": 0
+            }
+          ]
+        },
+        "agreement": {
+          "gap": 0.75,
+          "se": null,
+          "low": null,
+          "high": null,
+          "call": "unknown"
+        }
+      },
+      {
+        "id": "T4",
+        "name": "Price",
+        "aspects": [
+          "price"
+        ],
+        "reviewer": {
+          "claims": 2,
+          "stances": {
+            "praise": 2,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 15.5,
+            "NEUTRAL": 0.0,
+            "NEGATIVE": 0.0
+          },
+          "segments": [
+            10,
+            62
+          ],
+          "lean": 1.0,
+          "se": 0.0,
+          "call": "positive"
+        },
+        "audience": {
+          "comments": 5,
+          "counts": {
+            "POSITIVE": 1,
+            "NEUTRAL": 0,
+            "NEGATIVE": 4
+          },
+          "lean": -0.6,
+          "se": 0.4000000000000001,
+          "call": "balanced",
+          "questions": 1,
+          "examples": [
+            {
+              "i": 30,
+              "quote": "I love those all whites.  But I just can't spend that kind of money on them and feel good about myself.  As a Managed IT Cybersecurity owner here in the states, though, I feel like I could design those and 3d print them myself.  I may do that and call them: The Copies! LOL",
+              "label": "POSITIVE",
+              "likes": 0
+            },
+            {
+              "i": 25,
+              "quote": "Although I'm excited for the new pair , my glacier blues ripped after 2 weeks of daily wear . Now needing to either choose for a $89 refund or ship the shoes back and wait for them to reprint",
+              "label": "NEGATIVE",
+              "likes": 0
+            },
+            {
+              "i": 38,
+              "quote": "He’s trying to sell the first ones ! You can’t go half size up, US sizing in I got a 10 hopeless, could not wear them, sold them for retail what I paid for them, Id of gladly given them away, they look and feel awful. GO HALF SIZE UP, NO HALF SIZES oh and good luck in the raffles haha",
+              "label": "NEGATIVE",
+              "likes": 0
+            }
+          ]
+        },
+        "agreement": {
+          "gap": 1.6,
+          "se": 0.4000000000000001,
+          "low": 0.8160144061839784,
+          "high": 2.3839855938160217,
+          "call": "reviewer_warmer"
+        }
+      },
+      {
+        "id": "T5",
+        "name": "Availability",
+        "aspects": [
+          "availability",
+          "hype"
+        ],
+        "reviewer": {
+          "claims": 2,
+          "stances": {
+            "praise": 1,
+            "criticism": 0,
+            "mixed": 1,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 11.44,
+            "NEUTRAL": 0.0,
+            "NEGATIVE": 0.0
+          },
+          "segments": [
+            54,
+            73
+          ],
+          "lean": 1.0,
+          "se": 0.0,
+          "call": "positive"
+        },
+        "audience": {
+          "comments": 12,
+          "counts": {
+            "POSITIVE": 4,
+            "NEUTRAL": 0,
+            "NEGATIVE": 8
+          },
+          "lean": -0.3333333333333333,
+          "se": 0.28426762180748055,
+          "call": "balanced",
+          "questions": 1,
+          "examples": [
+            {
+              "i": 2,
+              "quote": "just copped mine off snkrs today 🙏💪",
+              "label": "POSITIVE",
+              "likes": 4
+            },
+            {
+              "i": 42,
+              "quote": "Yeah, let's keep the new tech exclusive so only a few bozos can have them. I can't wait for another company to catch up, make them cheap/popular and take all the market that Nike could have.",
+              "label": "NEGATIVE",
+              "likes": 2
+            },
+            {
+              "i": 23,
+              "quote": "These are sick I got the 1000.2s and went for the 1000.3 on SNKRS this morning and it was so cooked. I was right there clicking at 7am and the app glitched out. I wish they would just do a draw on shoes like these. Crossing my fingers for the zellerfeld raffle",
+              "label": "POSITIVE",
+              "likes": 1
+            }
+          ]
+        },
+        "agreement": {
+          "gap": 1.3333333333333333,
+          "se": 0.28426762180748055,
+          "low": 0.7761790326198185,
+          "high": 1.8904876340468482,
+          "call": "reviewer_warmer"
+        }
+      },
+      {
+        "id": "T6",
+        "name": "Value",
+        "aspects": [
+          "value"
+        ],
+        "reviewer": {
+          "claims": 1,
+          "stances": {
+            "praise": 1,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 0.0,
+            "NEUTRAL": 4.48,
+            "NEGATIVE": 0.0
+          },
+          "segments": [
+            68
+          ],
+          "lean": 0.0,
+          "se": null,
+          "call": "unknown"
+        },
+        "audience": {
+          "comments": 9,
+          "counts": {
+            "POSITIVE": 1,
+            "NEUTRAL": 0,
+            "NEGATIVE": 8
+          },
+          "lean": -0.7777777777777778,
+          "se": 0.22222222222222227,
+          "call": "negative",
+          "questions": 1,
+          "examples": [
+            {
+              "i": 32,
+              "quote": "💯 disagree with your hot take. If you want something to catch on, make it available. If not, people just move on. Kind of an irritating take honestly.",
+              "label": "NEGATIVE",
+              "likes": 2
+            },
+            {
+              "i": 42,
+              "quote": "Yeah, let's keep the new tech exclusive so only a few bozos can have them. I can't wait for another company to catch up, make them cheap/popular and take all the market that Nike could have.",
+              "label": "NEGATIVE",
+              "likes": 2
+            },
+            {
+              "i": 34,
+              "quote": "Things like that pushing people away from Nike. Sending pairs to i influencers when normal sneakerheads can't even have a sniff.",
+              "label": "NEGATIVE",
+              "likes": 1
+            }
+          ]
+        },
+        "agreement": {
+          "gap": 0.7777777777777778,
+          "se": null,
+          "low": null,
+          "high": null,
+          "call": "unknown"
+        }
+      },
+      {
+        "id": "T7",
+        "name": "Other",
+        "aspects": [
+          "technology",
+          "weight"
+        ],
+        "reviewer": {
+          "claims": 4,
+          "stances": {
+            "praise": 4,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 19.74,
+            "NEUTRAL": 9.56,
+            "NEGATIVE": 0.0
+          },
+          "segments": [
+            20,
+            33,
+            39,
+            43
+          ],
+          "lean": 0.6737201365187713,
+          "se": 0.2572912028276466,
+          "call": "positive"
+        },
+        "audience": {
+          "comments": 6,
+          "counts": {
+            "POSITIVE": 2,
+            "NEUTRAL": 1,
+            "NEGATIVE": 3
+          },
+          "lean": -0.16666666666666666,
+          "se": 0.4013864859597432,
+          "call": "balanced",
+          "questions": 1,
+          "examples": [
+            {
+              "i": 43,
+              "quote": "Got them but cancelled my order. Im so done with sneakers bruv.",
+              "label": "NEGATIVE",
+              "likes": 1
+            },
+            {
+              "i": 28,
+              "quote": "They tickle my fancy mate",
+              "label": "POSITIVE",
+              "likes": 0
+            },
+            {
+              "i": 36,
+              "quote": "Come on do the hood classic properly. Be interesting. Let them feel the passion when I talk about the bangers on God, no cap.",
+              "label": "POSITIVE",
+              "likes": 0
+            }
+          ]
+        },
+        "agreement": {
+          "gap": 0.8403868031854379,
+          "se": 0.47677025301879766,
+          "low": -0.09406572163145455,
+          "high": 1.7748393280023302,
+          "call": "no_clear_difference"
+        }
+      }
+    ],
+    "topic_source": "model",
+    "questions": [
+      {
+        "i": 9,
+        "quote": "Do these run true to size ?"
+      },
+      {
+        "i": 22,
+        "quote": "Jordan ...I gotta ask man, have you seen any of the Tupac trial? One of the lawyers is your doppelganger bro."
+      },
+      {
+        "i": 44,
+        "quote": "Remember allnthe \"buy what you like\" talk? I say \"Review what you like!\" 😂 You spoiled bratwurst🌭 — you overcooked this one. Tastes a lot like sponsored content, but somehow goes down smooth like opinionated subjectivity. 😂"
+      }
+    ],
+    "comment_tags": {
+      "0": [],
+      "1": [
+        "Design"
+      ],
+      "2": [
+        "Availability"
+      ],
+      "3": [
+        "Comfort"
+      ],
+      "4": [
+        "Comfort",
+        "Design"
+      ],
+      "5": [
+        "Availability",
+        "Price"
+      ],
+      "6": [],
+      "7": [
+        "Comfort",
+        "Design"
+      ],
+      "8": [
+        "Design",
+        "Fit"
+      ],
+      "9": [
+        "Fit"
+      ],
+      "10": [
+        "Availability"
+      ],
+      "11": [],
+      "12": [
+        "Design"
+      ],
+      "13": [
+        "Design",
+        "Price"
+      ],
+      "14": [
+        "Design",
+        "Value"
+      ],
+      "15": [
+        "Design"
+      ],
+      "16": [
+        "Fit"
+      ],
+      "17": [
+        "Availability"
+      ],
+      "18": [
+        "Durability"
+      ],
+      "19": [
+        "Fit"
+      ],
+      "20": [
+        "Fit"
+      ],
+      "21": [
+        "Design"
+      ],
+      "22": [],
+      "23": [
+        "Availability"
+      ],
+      "24": [
+        "Comfort"
+      ],
+      "25": [
+        "Durability",
+        "Price"
+      ],
+      "26": [
+        "Fit"
+      ],
+      "27": [
+        "Availability"
+      ],
+      "28": [
+        "Other"
+      ],
+      "29": [
+        "Design",
+        "Fit"
+      ],
+      "30": [
+        "Design",
+        "Price"
+      ],
+      "31": [
+        "Availability",
+        "Value"
+      ],
+      "32": [
+        "Value"
+      ],
+      "33": [
+        "Availability",
+        "Value"
+      ],
+      "34": [
+        "Availability",
+        "Value"
+      ],
+      "35": [
+        "Design",
+        "Value"
+      ],
+      "36": [
+        "Other"
+      ],
+      "37": [
+        "Availability",
+        "Value"
+      ],
+      "38": [
+        "Fit",
+        "Price"
+      ],
+      "39": [
+        "Availability",
+        "Value"
+      ],
+      "40": [
+        "Other"
+      ],
+      "41": [
+        "Other"
+      ],
+      "42": [
+        "Availability",
+        "Value"
+      ],
+      "43": [
+        "Other"
+      ],
+      "44": [
+        "Other"
+      ]
+    }
+  },
+  "written": {
+    "verdict": {
+      "text": "The reviewer's words lean positive, the comments are balanced, and there is no clear difference between the reviewer and the audience.",
+      "evidence": [],
+      "source": "template"
+    },
+    "brand_health_words": {
+      "text": "Of 45 comments, 21 read positive, 6 neutral and 18 negative.",
+      "evidence": [],
+      "source": "template"
+    },
+    "audience_words": {
+      "text": "45 comments were read; the comments are balanced.",
+      "evidence": [],
+      "source": "template"
+    },
+    "agreement_words": {
+      "text": "There is no clear difference between the reviewer and the audience.",
+      "evidence": [],
+      "source": "template"
+    },
+    "takeaways": [
+      {
+        "text": "The brand should focus on improving the availability of the product, as the reviewer mentions that it's difficult to get a pair.",
+        "evidence": [
+          "S53"
+        ]
+      },
+      {
+        "text": "The brand should consider making the product more affordable, as the reviewer thinks it's worth $179.",
+        "evidence": [
+          "S10"
+        ]
+      },
+      {
+        "text": "The brand should emphasize the product's durability and recovery powers, as the reviewer praises these features.",
+        "evidence": [
+          "S14",
+          "S17",
+          "S18"
+        ]
+      }
+    ],
+    "moment_notes": [
+      {
+        "seg": 47,
+        "text": "The words read neutral as the reviewer mentions that the shoes are true to size, while the face reads negative and the voice is neutral. The comments are positive."
+      },
+      {
+        "seg": 53,
+        "text": "The words read negative as the reviewer mentions that the shoes are not widely available, while the face reads negative and the voice is neutral. The comments are positive."
+      }
+    ],
+    "turn_labels": [
+      {
+        "seg": 15,
+        "label": "The price"
+      },
+      {
+        "seg": 29,
+        "label": "Trying them on"
+      },
+      {
+        "seg": 56,
+        "label": "The strategy"
+      }
+    ]
+  },
+  "verifier": {
+    "proposed": 90,
+    "kept": 85,
+    "by_field": {
+      "claim": {
+        "kept": 24,
+        "dropped": 0
+      },
+      "topic": {
+        "kept": 8,
+        "dropped": 0
+      },
+      "comment_tags": {
+        "kept": 45,
+        "dropped": 0
+      },
+      "verdict": {
+        "kept": 0,
+        "dropped": 1
+      },
+      "brand_health_words": {
+        "kept": 0,
+        "dropped": 1
+      },
+      "audience_words": {
+        "kept": 0,
+        "dropped": 1
+      },
+      "agreement_words": {
+        "kept": 0,
+        "dropped": 1
+      },
+      "takeaway": {
+        "kept": 3,
+        "dropped": 0
+      },
+      "moment_note": {
+        "kept": 2,
+        "dropped": 1
+      },
+      "turn_label": {
+        "kept": 3,
+        "dropped": 0
+      }
+    },
+    "dropped": [
+      {
+        "field": "verdict",
+        "reasons": [
+          "says the comments lean positive; the computed call is balanced"
+        ],
+        "text": "The reviewer concludes that the Nike Air Max 1000.3 is a great product, praising its comfort, design, durability, and value. The audience is generally positive, with 47% of comments being positive and 40% negative."
+      },
+      {
+        "field": "brand_health_words",
+        "reasons": [
+          "says the comments were positive about Price, which the run does not show",
+          "says the reviewer were negative about Durability, which the run does not show",
+          "says the comments lean positive; the computed call is balanced"
+        ],
+        "text": "The audience is generally positive about the product, with 47% of comments being positive and 40% negative. Some comments mention that the product is worth the price, while others express concern about the availability and durability."
+      },
+      {
+        "field": "audience_words",
+        "reasons": [
+          "says the comments were positive about Price, which the run does not show",
+          "says the reviewer were negative about Durability, which the run does not show"
+        ],
+        "text": "The audience is discussing the product's comfort, design, durability, and value. Some comments mention that the product is worth the price, while others express concern about the availability and durability."
+      },
+      {
+        "field": "agreement_words",
+        "reasons": [
+          "says the comments lean positive; the computed call is balanced"
+        ],
+        "text": "There is no clear difference between the reviewer and the audience, as both are generally positive about the product."
+      },
+      {
+        "field": "moment_note",
+        "reasons": [
+          "32 words, limit 30"
+        ],
+        "text": "The words read negative as the reviewer mentions that Nike needs to be more careful with their strategy, while the face reads negative and the voice is neutral. The comments are positive."
+      }
+    ],
+    "notes": [
+      {
+        "field": "claim",
+        "what": "segment corrected to where the quote is",
+        "from": 21,
+        "to": 20
+      },
+      {
+        "field": "claim",
+        "what": "segment corrected to where the quote is",
+        "from": 47,
+        "to": 46
+      },
+      {
+        "field": "claim",
+        "what": "segment corrected to where the quote is",
+        "from": 55,
+        "to": 54
+      },
+      {
+        "field": "claim",
+        "what": "segment corrected to where the quote is",
+        "from": 63,
+        "to": 64
+      },
+      {
+        "field": "claim",
+        "what": "segment corrected to where the quote is",
+        "from": 72,
+        "to": 68
+      }
+    ]
+  },
+  "video_meta": {
+    "fetched": true,
+    "at": "2026-09-27T10:50:11+00:00",
+    "has_paid_product_placement": false,
+    "description_hits": [],
+    "title": "Nike Air Max 1000.3 review and on foot!",
+    "channel": "Sneakernomics",
+    "published_at": "2026-09-24T14:45:31Z"
+  },
+  "calls": [
+    {
+      "step": "claims",
+      "ok": true,
+      "seconds": 31.01,
+      "prompt_chars": 6428,
+      "prompt_tokens": 1800,
+      "output_tokens": 449
+    },
+    {
+      "step": "claims",
+      "ok": true,
+      "seconds": 27.27,
+      "prompt_chars": 6120,
+      "prompt_tokens": 1682,
+      "output_tokens": 479
+    },
+    {
+      "step": "claims",
+      "ok": true,
+      "seconds": 24.36,
+      "prompt_chars": 4233,
+      "prompt_tokens": 1198,
+      "output_tokens": 461
+    },
+    {
+      "step": "topics",
+      "ok": true,
+      "seconds": 15.2,
+      "prompt_chars": 5681,
+      "prompt_tokens": 1517,
+      "output_tokens": 190
+    },
+    {
+      "step": "comments",
+      "ok": true,
+      "seconds": 22.78,
+      "prompt_chars": 4324,
+      "prompt_tokens": 1269,
+      "output_tokens": 373
+    },
+    {
+      "step": "comments",
+      "ok": true,
+      "seconds": 19.98,
+      "prompt_chars": 3990,
+      "prompt_tokens": 1108,
+      "output_tokens": 323
+    },
+    {
+      "step": "prose",
+      "ok": true,
+      "seconds": 50.58,
+      "prompt_chars": 11364,
+      "prompt_tokens": 3305,
+      "output_tokens": 656
+    }
+  ],
+  "runtime_s": 191.35,
+  "report_ref": {
+    "file": "xkQ-zJ3p1pc.json",
+    "sha256": "6c125f14f7d6a31a3e6f309cdd3fa321ed198c2606c3eefe1800d7c123a47424"
+  }
+}

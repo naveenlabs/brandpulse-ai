@@ -1,0 +1,1964 @@
+{
+  "schema": "brandpulse.analysis/1",
+  "status": "complete",
+  "steps": {
+    "claims": true,
+    "topics": true,
+    "comments": true,
+    "prose": true
+  },
+  "created_at": "2026-09-27T11:31:22+00:00",
+  "model": "llama3.1:8b",
+  "num_ctx": 6144,
+  "prompt_versions": {
+    "claims": "11039eb1443c",
+    "topics": "849d75dbc679",
+    "comments": "dda83531df32",
+    "prose": "633ad9a4e222"
+  },
+  "subject": {
+    "brand": "Nike",
+    "product": "",
+    "title": "Should you buy Nike Downshifter 14 Now ?"
+  },
+  "facts": {
+    "scores": {
+      "authenticity": 80.54,
+      "brand_health": 61.08
+    },
+    "segments": 94,
+    "flagged": 0,
+    "threshold": 0.75,
+    "duration_s": 387.34,
+    "comments": {
+      "n": 16,
+      "distribution": {
+        "POSITIVE": 3,
+        "NEUTRAL": 13,
+        "NEGATIVE": 0
+      },
+      "label": "NEUTRAL"
+    },
+    "reviewer": {
+      "lean": -0.07647274057811933,
+      "se": 0.06546215278476789,
+      "n": 94,
+      "call": "balanced",
+      "counts": {
+        "POSITIVE": 15,
+        "NEUTRAL": 59,
+        "NEGATIVE": 20
+      },
+      "seconds": {
+        "POSITIVE": 54.46,
+        "NEUTRAL": 244.44,
+        "NEGATIVE": 83.72
+      },
+      "unread": 0
+    },
+    "audience": {
+      "lean": 0.1875,
+      "se": 0.10077822185373186,
+      "n": 16,
+      "call": "balanced",
+      "counts": {
+        "POSITIVE": 3,
+        "NEUTRAL": 13,
+        "NEGATIVE": 0
+      }
+    },
+    "agreement": {
+      "gap": -0.2639727405781193,
+      "se": 0.12017297303144453,
+      "low": -0.4995074396348538,
+      "high": -0.02843804152138482,
+      "call": "audience_warmer"
+    },
+    "confidence": {
+      "level": "thinly_covered",
+      "checks": [
+        {
+          "id": "comments",
+          "label": "Enough comments to read the audience",
+          "value": 16,
+          "target": 30,
+          "unit": "comments",
+          "passed": false,
+          "core": true
+        },
+        {
+          "id": "transcript",
+          "label": "The reviewer's words were read",
+          "value": 1.0,
+          "target": 0.5,
+          "unit": "share",
+          "core": true,
+          "passed": true
+        },
+        {
+          "id": "weak_conflict",
+          "label": "The conflict rests mostly on the stronger channels",
+          "value": 0.0267,
+          "target": 0.5,
+          "unit": "share",
+          "passed": true,
+          "core": false,
+          "no_conflict": false
+        }
+      ],
+      "coverage": {
+        "transcript": {
+          "read": 94,
+          "total": 94,
+          "share": 1.0
+        },
+        "facial": {
+          "read": 88,
+          "total": 94,
+          "share": 0.9361702127659575
+        },
+        "vocal": {
+          "read": 94,
+          "total": 94,
+          "share": 1.0
+        },
+        "comment": {
+          "read": 94,
+          "total": 94,
+          "share": 1.0
+        }
+      },
+      "weak_conflict": {
+        "weak": 0.489,
+        "total": 18.289,
+        "share": 0.02673738312646946
+      },
+      "accuracy": {
+        "comment": 78.7,
+        "transcript": 67.8,
+        "vocal": 48.9,
+        "facial": 34.2
+      },
+      "means_not": "How much evidence this reading rests on. Not whether the verdict is right, and not whether anyone in the video was honest.",
+      "ceiling": {
+        "text": "No score in this system has been shown to track human judgement of authenticity. On 119 hand-rated segments the four-channel design scored rho = +0.0575 (95% CI -0.1282 to +0.2364); people agreed with each other at rho = +0.8038.",
+        "n": 119,
+        "rho": 0.0575,
+        "ci": [
+          -0.1282,
+          0.2364
+        ],
+        "human_rho": 0.8038,
+        "source": "baseline_bench/BASELINE_ANALYSIS.md"
+      }
+    },
+    "tone": {
+      "window_s": 60.0,
+      "points": [
+        {
+          "seg": 0,
+          "start": 0.0,
+          "end": 6.0,
+          "raw": 0.0,
+          "t": 3.0,
+          "smooth": 0.0
+        },
+        {
+          "seg": 1,
+          "start": 6.0,
+          "end": 11.0,
+          "raw": 0.0,
+          "t": 8.5,
+          "smooth": 0.0
+        },
+        {
+          "seg": 2,
+          "start": 11.0,
+          "end": 14.0,
+          "raw": 0.0,
+          "t": 12.5,
+          "smooth": 0.0
+        },
+        {
+          "seg": 3,
+          "start": 14.0,
+          "end": 18.0,
+          "raw": 0.0,
+          "t": 16.0,
+          "smooth": 0.0
+        },
+        {
+          "seg": 4,
+          "start": 18.0,
+          "end": 23.0,
+          "raw": 0.0,
+          "t": 20.5,
+          "smooth": 0.0241
+        },
+        {
+          "seg": 5,
+          "start": 23.0,
+          "end": 30.0,
+          "raw": 0.0,
+          "t": 26.5,
+          "smooth": 0.0863
+        },
+        {
+          "seg": 6,
+          "start": 30.0,
+          "end": 33.0,
+          "raw": 0.0,
+          "t": 31.5,
+          "smooth": 0.0812
+        },
+        {
+          "seg": 7,
+          "start": 33.0,
+          "end": 38.0,
+          "raw": 0.0,
+          "t": 35.5,
+          "smooth": 0.0812
+        },
+        {
+          "seg": 8,
+          "start": 38.0,
+          "end": 42.0,
+          "raw": 0.0,
+          "t": 40.0,
+          "smooth": 0.0812
+        },
+        {
+          "seg": 9,
+          "start": 42.0,
+          "end": 46.0,
+          "raw": 0.0,
+          "t": 44.0,
+          "smooth": 0.0812
+        },
+        {
+          "seg": 10,
+          "start": 46.0,
+          "end": 49.0,
+          "raw": 0.0,
+          "t": 47.5,
+          "smooth": 0.0948
+        },
+        {
+          "seg": 11,
+          "start": 49.0,
+          "end": 55.0,
+          "raw": 0.8122,
+          "t": 52.0,
+          "smooth": 0.1175
+        },
+        {
+          "seg": 12,
+          "start": 55.0,
+          "end": 59.0,
+          "raw": 0.0,
+          "t": 57.0,
+          "smooth": 0.0874
+        },
+        {
+          "seg": 13,
+          "start": 59.0,
+          "end": 63.0,
+          "raw": 0.0,
+          "t": 61.0,
+          "smooth": 0.1112
+        },
+        {
+          "seg": 14,
+          "start": 63.0,
+          "end": 66.0,
+          "raw": 0.0,
+          "t": 64.5,
+          "smooth": 0.123
+        },
+        {
+          "seg": 15,
+          "start": 66.0,
+          "end": 71.0,
+          "raw": 0.0,
+          "t": 68.5,
+          "smooth": 0.1305
+        },
+        {
+          "seg": 16,
+          "start": 71.0,
+          "end": 76.0,
+          "raw": 0.0,
+          "t": 73.5,
+          "smooth": 0.183
+        },
+        {
+          "seg": 17,
+          "start": 76.0,
+          "end": 80.0,
+          "raw": 0.5436,
+          "t": 78.0,
+          "smooth": 0.1691
+        },
+        {
+          "seg": 18,
+          "start": 80.0,
+          "end": 83.0,
+          "raw": 0.0,
+          "t": 81.5,
+          "smooth": 0.1283
+        },
+        {
+          "seg": 19,
+          "start": 83.0,
+          "end": 86.0,
+          "raw": -0.6011,
+          "t": 84.5,
+          "smooth": 0.1117
+        },
+        {
+          "seg": 20,
+          "start": 86.0,
+          "end": 89.0,
+          "raw": 0.0,
+          "t": 87.5,
+          "smooth": 0.1449
+        },
+        {
+          "seg": 21,
+          "start": 89.0,
+          "end": 92.0,
+          "raw": 0.7127,
+          "t": 90.5,
+          "smooth": 0.1884
+        },
+        {
+          "seg": 22,
+          "start": 92.0,
+          "end": 95.0,
+          "raw": 0.0,
+          "t": 93.5,
+          "smooth": 0.1679
+        },
+        {
+          "seg": 23,
+          "start": 95.0,
+          "end": 98.0,
+          "raw": 0.0,
+          "t": 96.5,
+          "smooth": 0.1624
+        },
+        {
+          "seg": 24,
+          "start": 98.0,
+          "end": 102.0,
+          "raw": 0.8994,
+          "t": 100.0,
+          "smooth": 0.1644
+        },
+        {
+          "seg": 25,
+          "start": 102.0,
+          "end": 106.0,
+          "raw": 0.0,
+          "t": 104.0,
+          "smooth": 0.1534
+        },
+        {
+          "seg": 26,
+          "start": 106.0,
+          "end": 109.0,
+          "raw": -0.4166,
+          "t": 107.5,
+          "smooth": 0.1098
+        },
+        {
+          "seg": 27,
+          "start": 109.0,
+          "end": 112.0,
+          "raw": 0.0,
+          "t": 110.5,
+          "smooth": 0.0857
+        },
+        {
+          "seg": 28,
+          "start": 112.0,
+          "end": 115.0,
+          "raw": 0.5757,
+          "t": 113.5,
+          "smooth": 0.0908
+        },
+        {
+          "seg": 29,
+          "start": 115.0,
+          "end": 118.0,
+          "raw": 0.8449,
+          "t": 116.5,
+          "smooth": 0.1161
+        },
+        {
+          "seg": 30,
+          "start": 118.0,
+          "end": 121.0,
+          "raw": 0.873,
+          "t": 119.5,
+          "smooth": 0.0937
+        },
+        {
+          "seg": 31,
+          "start": 121.0,
+          "end": 124.0,
+          "raw": -0.6646,
+          "t": 122.5,
+          "smooth": 0.0473
+        },
+        {
+          "seg": 32,
+          "start": 124.0,
+          "end": 127.76,
+          "raw": 0.0,
+          "t": 125.88,
+          "smooth": 0.0473
+        },
+        {
+          "seg": 33,
+          "start": 128.48,
+          "end": 132.72,
+          "raw": 0.0,
+          "t": 130.6,
+          "smooth": 0.0444
+        },
+        {
+          "seg": 34,
+          "start": 132.72,
+          "end": 137.64,
+          "raw": -0.5061,
+          "t": 135.18,
+          "smooth": -0.0229
+        },
+        {
+          "seg": 35,
+          "start": 137.64,
+          "end": 142.0,
+          "raw": 0.0,
+          "t": 139.82,
+          "smooth": -0.0259
+        },
+        {
+          "seg": 36,
+          "start": 142.0,
+          "end": 145.0,
+          "raw": 0.0,
+          "t": 143.5,
+          "smooth": -0.0405
+        },
+        {
+          "seg": 37,
+          "start": 145.0,
+          "end": 148.0,
+          "raw": 0.0,
+          "t": 146.5,
+          "smooth": -0.0896
+        },
+        {
+          "seg": 38,
+          "start": 148.0,
+          "end": 151.0,
+          "raw": -0.6461,
+          "t": 149.5,
+          "smooth": -0.155
+        },
+        {
+          "seg": 39,
+          "start": 151.0,
+          "end": 155.0,
+          "raw": 0.0,
+          "t": 153.0,
+          "smooth": -0.1547
+        },
+        {
+          "seg": 40,
+          "start": 155.0,
+          "end": 158.0,
+          "raw": 0.0,
+          "t": 156.5,
+          "smooth": -0.1435
+        },
+        {
+          "seg": 41,
+          "start": 158.0,
+          "end": 161.0,
+          "raw": 0.832,
+          "t": 159.5,
+          "smooth": -0.1417
+        },
+        {
+          "seg": 42,
+          "start": 161.0,
+          "end": 165.0,
+          "raw": -0.7435,
+          "t": 163.0,
+          "smooth": -0.1394
+        },
+        {
+          "seg": 43,
+          "start": 165.0,
+          "end": 168.0,
+          "raw": -0.5062,
+          "t": 166.5,
+          "smooth": -0.1099
+        },
+        {
+          "seg": 44,
+          "start": 168.0,
+          "end": 171.0,
+          "raw": 0.0,
+          "t": 169.5,
+          "smooth": -0.1002
+        },
+        {
+          "seg": 45,
+          "start": 171.0,
+          "end": 175.0,
+          "raw": 0.0,
+          "t": 173.0,
+          "smooth": -0.1002
+        },
+        {
+          "seg": 46,
+          "start": 175.0,
+          "end": 179.0,
+          "raw": -0.5198,
+          "t": 177.0,
+          "smooth": -0.1002
+        },
+        {
+          "seg": 47,
+          "start": 179.0,
+          "end": 185.0,
+          "raw": 0.0,
+          "t": 182.0,
+          "smooth": -0.0991
+        },
+        {
+          "seg": 48,
+          "start": 185.0,
+          "end": 189.0,
+          "raw": 0.0,
+          "t": 187.0,
+          "smooth": -0.1417
+        },
+        {
+          "seg": 49,
+          "start": 189.0,
+          "end": 193.0,
+          "raw": 0.0,
+          "t": 191.0,
+          "smooth": -0.1833
+        },
+        {
+          "seg": 50,
+          "start": 193.0,
+          "end": 197.0,
+          "raw": 0.0,
+          "t": 195.0,
+          "smooth": -0.1337
+        },
+        {
+          "seg": 51,
+          "start": 197.0,
+          "end": 201.0,
+          "raw": 0.0,
+          "t": 199.0,
+          "smooth": -0.1465
+        },
+        {
+          "seg": 52,
+          "start": 201.0,
+          "end": 205.0,
+          "raw": 0.0,
+          "t": 203.0,
+          "smooth": -0.1465
+        },
+        {
+          "seg": 53,
+          "start": 205.0,
+          "end": 209.0,
+          "raw": 0.0,
+          "t": 207.0,
+          "smooth": -0.1648
+        },
+        {
+          "seg": 54,
+          "start": 209.0,
+          "end": 213.0,
+          "raw": -0.6232,
+          "t": 211.0,
+          "smooth": -0.1875
+        },
+        {
+          "seg": 55,
+          "start": 213.0,
+          "end": 217.0,
+          "raw": -0.4827,
+          "t": 215.0,
+          "smooth": -0.2331
+        },
+        {
+          "seg": 56,
+          "start": 217.0,
+          "end": 221.0,
+          "raw": 0.0,
+          "t": 219.0,
+          "smooth": -0.2025
+        },
+        {
+          "seg": 57,
+          "start": 221.0,
+          "end": 225.0,
+          "raw": 0.0,
+          "t": 223.0,
+          "smooth": -0.2486
+        },
+        {
+          "seg": 58,
+          "start": 225.0,
+          "end": 229.0,
+          "raw": -0.5722,
+          "t": 227.0,
+          "smooth": -0.2823
+        },
+        {
+          "seg": 59,
+          "start": 229.0,
+          "end": 233.0,
+          "raw": 0.0,
+          "t": 231.0,
+          "smooth": -0.2823
+        },
+        {
+          "seg": 60,
+          "start": 233.0,
+          "end": 237.0,
+          "raw": -0.5338,
+          "t": 235.0,
+          "smooth": -0.246
+        },
+        {
+          "seg": 61,
+          "start": 237.0,
+          "end": 241.0,
+          "raw": -0.6004,
+          "t": 239.0,
+          "smooth": -0.1895
+        },
+        {
+          "seg": 62,
+          "start": 241.0,
+          "end": 245.0,
+          "raw": -0.6835,
+          "t": 243.0,
+          "smooth": -0.1328
+        },
+        {
+          "seg": 63,
+          "start": 245.0,
+          "end": 249.0,
+          "raw": 0.459,
+          "t": 247.0,
+          "smooth": -0.123
+        },
+        {
+          "seg": 64,
+          "start": 249.0,
+          "end": 253.0,
+          "raw": -0.6929,
+          "t": 251.0,
+          "smooth": -0.123
+        },
+        {
+          "seg": 65,
+          "start": 253.0,
+          "end": 257.0,
+          "raw": -0.5044,
+          "t": 255.0,
+          "smooth": -0.1636
+        },
+        {
+          "seg": 66,
+          "start": 257.0,
+          "end": 261.0,
+          "raw": 0.0,
+          "t": 259.0,
+          "smooth": -0.1255
+        },
+        {
+          "seg": 67,
+          "start": 261.0,
+          "end": 264.0,
+          "raw": 0.4637,
+          "t": 262.5,
+          "smooth": -0.1481
+        },
+        {
+          "seg": 68,
+          "start": 264.0,
+          "end": 267.0,
+          "raw": 0.784,
+          "t": 265.5,
+          "smooth": -0.1711
+        },
+        {
+          "seg": 69,
+          "start": 267.0,
+          "end": 270.0,
+          "raw": 0.9103,
+          "t": 268.5,
+          "smooth": -0.1568
+        },
+        {
+          "seg": 70,
+          "start": 270.0,
+          "end": 274.0,
+          "raw": 0.0,
+          "t": 272.0,
+          "smooth": -0.122
+        },
+        {
+          "seg": 71,
+          "start": 274.0,
+          "end": 277.0,
+          "raw": -0.4475,
+          "t": 275.5,
+          "smooth": -0.0895
+        },
+        {
+          "seg": 72,
+          "start": 277.0,
+          "end": 281.0,
+          "raw": 0.0,
+          "t": 279.0,
+          "smooth": -0.1182
+        },
+        {
+          "seg": 73,
+          "start": 281.0,
+          "end": 284.0,
+          "raw": -0.8123,
+          "t": 282.5,
+          "smooth": -0.0749
+        },
+        {
+          "seg": 74,
+          "start": 284.0,
+          "end": 287.0,
+          "raw": 0.0,
+          "t": 285.5,
+          "smooth": -0.0462
+        },
+        {
+          "seg": 75,
+          "start": 287.0,
+          "end": 291.0,
+          "raw": 0.0,
+          "t": 289.0,
+          "smooth": 0.0178
+        },
+        {
+          "seg": 76,
+          "start": 291.0,
+          "end": 296.0,
+          "raw": -0.9046,
+          "t": 293.5,
+          "smooth": -0.0564
+        },
+        {
+          "seg": 77,
+          "start": 300.0,
+          "end": 303.0,
+          "raw": 0.0,
+          "t": 301.5,
+          "smooth": -0.2466
+        },
+        {
+          "seg": 78,
+          "start": 303.0,
+          "end": 307.78,
+          "raw": 0.0,
+          "t": 305.39,
+          "smooth": -0.2381
+        },
+        {
+          "seg": 79,
+          "start": 307.78,
+          "end": 311.92,
+          "raw": 0.0,
+          "t": 309.85,
+          "smooth": -0.2027
+        },
+        {
+          "seg": 80,
+          "start": 311.92,
+          "end": 315.54,
+          "raw": 0.0,
+          "t": 313.73,
+          "smooth": -0.1223
+        },
+        {
+          "seg": 81,
+          "start": 315.54,
+          "end": 318.92,
+          "raw": 0.8521,
+          "t": 317.23,
+          "smooth": -0.1184
+        },
+        {
+          "seg": 82,
+          "start": 318.92,
+          "end": 331.72,
+          "raw": -0.6665,
+          "t": 325.32,
+          "smooth": -0.0486
+        },
+        {
+          "seg": 83,
+          "start": 331.72,
+          "end": 338.04,
+          "raw": 0.0,
+          "t": 334.88,
+          "smooth": -0.0351
+        },
+        {
+          "seg": 84,
+          "start": 338.04,
+          "end": 343.12,
+          "raw": 0.6974,
+          "t": 340.58,
+          "smooth": 0.0047
+        },
+        {
+          "seg": 85,
+          "start": 343.12,
+          "end": 347.24,
+          "raw": 0.0,
+          "t": 345.18,
+          "smooth": 0.0047
+        },
+        {
+          "seg": 86,
+          "start": 347.24,
+          "end": 355.3,
+          "raw": 0.0,
+          "t": 351.27,
+          "smooth": -0.0172
+        },
+        {
+          "seg": 87,
+          "start": 355.3,
+          "end": 359.34000000000003,
+          "raw": 0.0,
+          "t": 357.32,
+          "smooth": 0.05
+        },
+        {
+          "seg": 88,
+          "start": 359.34,
+          "end": 365.34,
+          "raw": 0.0,
+          "t": 362.34,
+          "smooth": 0.1078
+        },
+        {
+          "seg": 89,
+          "start": 365.34,
+          "end": 369.34,
+          "raw": 0.5969,
+          "t": 367.34,
+          "smooth": 0.1186
+        },
+        {
+          "seg": 90,
+          "start": 369.34,
+          "end": 375.34,
+          "raw": 0.0,
+          "t": 372.34,
+          "smooth": 0.0651
+        },
+        {
+          "seg": 91,
+          "start": 375.34,
+          "end": 378.34,
+          "raw": 0.0,
+          "t": 376.84,
+          "smooth": 0.059
+        },
+        {
+          "seg": 92,
+          "start": 378.34,
+          "end": 383.34,
+          "raw": 0.0,
+          "t": 380.84,
+          "smooth": 0.0654
+        },
+        {
+          "seg": 93,
+          "start": 383.34,
+          "end": 387.34,
+          "raw": 0.0,
+          "t": 385.34,
+          "smooth": 0.0746
+        }
+      ],
+      "turns": [
+        {
+          "seg": 58,
+          "t": 227.0,
+          "kind": "dip",
+          "smooth": -0.2823,
+          "prominence": 0.4009
+        },
+        {
+          "seg": 75,
+          "t": 289.0,
+          "kind": "peak",
+          "smooth": 0.0178,
+          "prominence": 0.2644
+        }
+      ]
+    },
+    "moments": [
+      {
+        "seg": 19,
+        "start": 83.0,
+        "end": 86.0,
+        "time": "1:23",
+        "conflict": 0.6,
+        "flagged": false,
+        "damped": false,
+        "valences": {
+          "transcript": "NEGATIVE",
+          "facial": "NEGATIVE",
+          "vocal": "NEUTRAL",
+          "comment": "NEUTRAL"
+        },
+        "text": "but I don't know why white colors are very good"
+      },
+      {
+        "seg": 84,
+        "start": 338.04,
+        "end": 343.12,
+        "time": "5:38",
+        "conflict": 0.6,
+        "flagged": false,
+        "damped": false,
+        "valences": {
+          "transcript": "POSITIVE",
+          "facial": "NEUTRAL",
+          "vocal": "NEUTRAL",
+          "comment": "NEUTRAL"
+        },
+        "text": "20 good running kerpetute one of the best options say take which is power"
+      },
+      {
+        "seg": 89,
+        "start": 365.34,
+        "end": 369.34,
+        "time": "6:05",
+        "conflict": 0.6,
+        "flagged": false,
+        "damped": false,
+        "valences": {
+          "transcript": "POSITIVE",
+          "facial": "NEUTRAL",
+          "vocal": "NEUTRAL",
+          "comment": "NEUTRAL"
+        },
+        "text": "you can do it, you can do it, then you can do it, if you have a big option, you can do it,"
+      }
+    ],
+    "signs": {
+      "title": "Signs of a commercial interest or a mismatch",
+      "disclaimer": "These are signs, not proof. A creator can disclose a sponsor and still review honestly, and an undisclosed deal would leave none of these marks.",
+      "signs": [
+        {
+          "id": "S1",
+          "kind": "fact",
+          "state": "absent",
+          "name": "The creator declared a paid promotion",
+          "evidence": {
+            "label": false,
+            "description": []
+          }
+        },
+        {
+          "id": "S2",
+          "kind": "fact",
+          "state": "absent",
+          "name": "Sponsor, code, affiliate or gift wording in what was said",
+          "evidence": {
+            "speech": []
+          }
+        },
+        {
+          "id": "S3",
+          "kind": "fact",
+          "state": "absent",
+          "name": "Affiliate links, discount codes or a gifted unit in the description",
+          "evidence": {
+            "description": []
+          }
+        },
+        {
+          "id": "S4",
+          "kind": "inference",
+          "state": "absent",
+          "name": "The reviewer was measurably warmer than the audience",
+          "evidence": {
+            "agreement": {
+              "gap": -0.2639727405781193,
+              "se": 0.12017297303144453,
+              "low": -0.4995074396348538,
+              "high": -0.02843804152138482,
+              "call": "audience_warmer"
+            }
+          }
+        },
+        {
+          "id": "S5",
+          "kind": "inference",
+          "state": "absent",
+          "name": "Positive words at moments the controller flagged",
+          "evidence": {
+            "positive_flagged": [],
+            "controller_flag": []
+          }
+        }
+      ],
+      "present": 0,
+      "checked": 5
+    }
+  },
+  "reading": {
+    "claims": [
+      {
+        "seg": 24,
+        "time": "1:38",
+        "start": 98.0,
+        "aspect": "comfort",
+        "stance": "praise",
+        "claim": "The comfort is very good.",
+        "quote": "which is very good recently I have brought in Goa",
+        "topic": "T0"
+      },
+      {
+        "seg": 28,
+        "time": "1:52",
+        "start": 112.0,
+        "aspect": "fit",
+        "stance": "praise",
+        "claim": "The narrow fit is good.",
+        "quote": "is good narrow fit so it is good",
+        "topic": "T3"
+      },
+      {
+        "seg": 29,
+        "time": "1:55",
+        "start": 115.0,
+        "aspect": "comfort",
+        "stance": "praise",
+        "claim": "The midsole is good.",
+        "quote": "which is overall comfort which is good so",
+        "seg_end": 30,
+        "topic": "T0"
+      },
+      {
+        "seg": 41,
+        "time": "2:38",
+        "start": 158.0,
+        "aspect": "grip",
+        "stance": "praise",
+        "claim": "The grip is good.",
+        "quote": "The grip is good",
+        "topic": "T0"
+      },
+      {
+        "seg": 46,
+        "time": "2:55",
+        "start": 175.0,
+        "aspect": "weight",
+        "stance": "criticism",
+        "claim": "The increase in weight is a negative point.",
+        "quote": "The first negative point I have found the increase in weight",
+        "topic": "T2"
+      },
+      {
+        "seg": 47,
+        "time": "2:59",
+        "start": 179.0,
+        "aspect": "weight",
+        "stance": "criticism",
+        "claim": "The weight is higher.",
+        "quote": "The weight is higher UK 11 size is 250-260 grams",
+        "topic": "T2"
+      },
+      {
+        "seg": 57,
+        "time": "3:41",
+        "start": 221.0,
+        "aspect": "durability",
+        "stance": "praise",
+        "claim": "The upper is very durable.",
+        "quote": "The upper is very durable",
+        "topic": "T1"
+      },
+      {
+        "seg": 58,
+        "time": "3:45",
+        "start": 225.0,
+        "aspect": "durability",
+        "stance": "criticism",
+        "claim": "The lower shoes are not durable.",
+        "quote": "The lower shoes are not The lower ones are not",
+        "topic": "T1"
+      },
+      {
+        "seg": 69,
+        "time": "4:27",
+        "start": 267.0,
+        "aspect": "comfort",
+        "stance": "praise",
+        "claim": "You can get a lot of comfort.",
+        "quote": "You can get a lot of comfort.",
+        "topic": "T0"
+      },
+      {
+        "seg": 72,
+        "time": "4:37",
+        "start": 277.0,
+        "aspect": "durability",
+        "stance": "criticism",
+        "claim": "you will be running in the rain. You will be running in the rain",
+        "quote": "you will be running in the rain. You will be running in the rain",
+        "topic": "T1"
+      },
+      {
+        "seg": 84,
+        "time": "5:38",
+        "start": 338.04,
+        "aspect": "value",
+        "stance": "praise",
+        "claim": "one of the best options say take which is power",
+        "quote": "one of the best options say take which is power",
+        "topic": "T4"
+      },
+      {
+        "seg": 85,
+        "time": "5:43",
+        "start": 343.12,
+        "aspect": "price",
+        "stance": "criticism",
+        "claim": "make 6 rear return박ival now go extra short we start running long run",
+        "quote": "make 6 rear return박ival now go extra short we start running long run",
+        "topic": "T4"
+      }
+    ],
+    "topics": [
+      {
+        "id": "T0",
+        "name": "Cushioning and Comfort",
+        "aspects": [
+          "comfort",
+          "grip"
+        ],
+        "reviewer": {
+          "claims": 4,
+          "stances": {
+            "praise": 4,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 16.0,
+            "NEUTRAL": 0.0,
+            "NEGATIVE": 0.0
+          },
+          "segments": [
+            24,
+            29,
+            30,
+            41,
+            69
+          ],
+          "lean": 1.0,
+          "se": 0.0,
+          "call": "positive"
+        },
+        "audience": {
+          "comments": 3,
+          "counts": {
+            "POSITIVE": 0,
+            "NEUTRAL": 3,
+            "NEGATIVE": 0
+          },
+          "lean": 0.0,
+          "se": 0.0,
+          "call": "balanced",
+          "questions": 1,
+          "examples": [
+            {
+              "i": 14,
+              "quote": "After 8-9 kms knee pain hua",
+              "label": "NEUTRAL",
+              "likes": 2
+            },
+            {
+              "i": 3,
+              "quote": "I have to start my basic gym like treadmill, exercise and basic strength training, should I buy this?",
+              "label": "NEUTRAL",
+              "likes": 0
+            },
+            {
+              "i": 12,
+              "quote": "Mai weak me 2,3din  5KM  running krta hu normal 5:30 ke pace se. Aur casual bhi phan skta hu ...\nIse isbaar sell me lene ki soch rha hu under 3k kya downshifter 14 sahi rahega",
+              "label": "NEUTRAL",
+              "likes": 0
+            }
+          ]
+        },
+        "agreement": {
+          "gap": 1.0,
+          "se": 0.0,
+          "low": 1.0,
+          "high": 1.0,
+          "call": "reviewer_warmer"
+        }
+      },
+      {
+        "id": "T1",
+        "name": "Durability",
+        "aspects": [
+          "durability"
+        ],
+        "reviewer": {
+          "claims": 3,
+          "stances": {
+            "praise": 1,
+            "criticism": 2,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 0.0,
+            "NEUTRAL": 8.0,
+            "NEGATIVE": 4.0
+          },
+          "segments": [
+            57,
+            58,
+            72
+          ],
+          "lean": -0.3333333333333333,
+          "se": 0.3333333333333333,
+          "call": "balanced"
+        },
+        "audience": {
+          "comments": 1,
+          "counts": {
+            "POSITIVE": 0,
+            "NEUTRAL": 1,
+            "NEGATIVE": 0
+          },
+          "lean": 0.0,
+          "se": null,
+          "call": "unknown",
+          "questions": 1,
+          "examples": [
+            {
+              "i": 3,
+              "quote": "I have to start my basic gym like treadmill, exercise and basic strength training, should I buy this?",
+              "label": "NEUTRAL",
+              "likes": 0
+            }
+          ]
+        },
+        "agreement": {
+          "gap": -0.3333333333333333,
+          "se": null,
+          "low": null,
+          "high": null,
+          "call": "unknown"
+        }
+      },
+      {
+        "id": "T2",
+        "name": "Weight",
+        "aspects": [
+          "weight"
+        ],
+        "reviewer": {
+          "claims": 2,
+          "stances": {
+            "praise": 0,
+            "criticism": 2,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 0.0,
+            "NEUTRAL": 6.0,
+            "NEGATIVE": 4.0
+          },
+          "segments": [
+            46,
+            47
+          ],
+          "lean": -0.4,
+          "se": 0.48000000000000004,
+          "call": "balanced"
+        },
+        "audience": {
+          "comments": 2,
+          "counts": {
+            "POSITIVE": 0,
+            "NEUTRAL": 2,
+            "NEGATIVE": 0
+          },
+          "lean": 0.0,
+          "se": 0.0,
+          "call": "balanced",
+          "questions": 1,
+          "examples": [
+            {
+              "i": 5,
+              "quote": "Bro 3.2km under 12mint + 5km -10km long running k lea konsa shoe behtar rahega?",
+              "label": "NEUTRAL",
+              "likes": 0
+            },
+            {
+              "i": 8,
+              "quote": "bhai duramo speed ka bhi weight to jyada hai 265 gram in uk 8.5",
+              "label": "NEUTRAL",
+              "likes": 0
+            }
+          ]
+        },
+        "agreement": {
+          "gap": -0.4,
+          "se": 0.48000000000000004,
+          "low": -1.340782712579226,
+          "high": 0.5407827125792259,
+          "call": "no_clear_difference"
+        }
+      },
+      {
+        "id": "T3",
+        "name": "Fit",
+        "aspects": [
+          "fit"
+        ],
+        "reviewer": {
+          "claims": 1,
+          "stances": {
+            "praise": 1,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 3.0,
+            "NEUTRAL": 0.0,
+            "NEGATIVE": 0.0
+          },
+          "segments": [
+            28
+          ],
+          "lean": 1.0,
+          "se": null,
+          "call": "unknown"
+        },
+        "audience": {
+          "comments": 0,
+          "counts": {
+            "POSITIVE": 0,
+            "NEUTRAL": 0,
+            "NEGATIVE": 0
+          },
+          "lean": null,
+          "se": null,
+          "call": "unknown",
+          "questions": 0,
+          "examples": []
+        },
+        "agreement": {
+          "gap": null,
+          "se": null,
+          "low": null,
+          "high": null,
+          "call": "unknown"
+        }
+      },
+      {
+        "id": "T4",
+        "name": "Price and Value",
+        "aspects": [
+          "price",
+          "value"
+        ],
+        "reviewer": {
+          "claims": 2,
+          "stances": {
+            "praise": 1,
+            "criticism": 1,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 5.08,
+            "NEUTRAL": 4.12,
+            "NEGATIVE": 0.0
+          },
+          "segments": [
+            84,
+            85
+          ],
+          "lean": 0.5521739130434772,
+          "se": 0.4945557655954633,
+          "call": "balanced"
+        },
+        "audience": {
+          "comments": 4,
+          "counts": {
+            "POSITIVE": 1,
+            "NEUTRAL": 3,
+            "NEGATIVE": 0
+          },
+          "lean": 0.25,
+          "se": 0.24999999999999997,
+          "call": "balanced",
+          "questions": 0,
+          "examples": [
+            {
+              "i": 4,
+              "quote": "Bro how is juniper trail 3, is it worth for 2900. for daily use",
+              "label": "NEUTRAL",
+              "likes": 1
+            },
+            {
+              "i": 11,
+              "quote": "I make my mind to buy Nike revolution 8.. on its price.. uk 12 size and black colour... Did I am doing right... Because... I saved money for so long time...",
+              "label": "POSITIVE",
+              "likes": 0
+            },
+            {
+              "i": 6,
+              "quote": "Bhaiya muzhe genuinely btao mera budget 3000 toh hai pr main soch rha hu redtapeflow plus 3 lelu kyuki main park running or kabhi college wear ke liye chaiye, colour bhi btsna",
+              "label": "NEUTRAL",
+              "likes": 0
+            }
+          ]
+        },
+        "agreement": {
+          "gap": 0.3021739130434772,
+          "se": 0.5541528717634827,
+          "low": -0.7839457575423919,
+          "high": 1.3882935836293462,
+          "call": "no_clear_difference"
+        }
+      },
+      {
+        "id": "T5",
+        "name": "Where to Buy",
+        "aspects": [],
+        "reviewer": {
+          "claims": 0,
+          "stances": {
+            "praise": 0,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 0.0,
+            "NEUTRAL": 0.0,
+            "NEGATIVE": 0.0
+          },
+          "segments": [],
+          "lean": null,
+          "se": null,
+          "call": "unknown"
+        },
+        "audience": {
+          "comments": 2,
+          "counts": {
+            "POSITIVE": 1,
+            "NEUTRAL": 1,
+            "NEGATIVE": 0
+          },
+          "lean": 0.5,
+          "se": 0.5000000000000001,
+          "call": "balanced",
+          "questions": 0,
+          "examples": [
+            {
+              "i": 0,
+              "quote": "NIKE DOWNSHIFTER 14 SHOES LINK:\r\nlink.amazon/…\r\n----------------------------\r\nBlack SHoes Link:\r\nlink.amazon/…",
+              "label": "NEUTRAL",
+              "likes": 1
+            }
+          ]
+        },
+        "agreement": {
+          "gap": null,
+          "se": null,
+          "low": null,
+          "high": null,
+          "call": "unknown"
+        }
+      },
+      {
+        "id": "T6",
+        "name": "Comparisons",
+        "aspects": [],
+        "reviewer": {
+          "claims": 0,
+          "stances": {
+            "praise": 0,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 0.0,
+            "NEUTRAL": 0.0,
+            "NEGATIVE": 0.0
+          },
+          "segments": [],
+          "lean": null,
+          "se": null,
+          "call": "unknown"
+        },
+        "audience": {
+          "comments": 8,
+          "counts": {
+            "POSITIVE": 2,
+            "NEUTRAL": 6,
+            "NEGATIVE": 0
+          },
+          "lean": 0.25,
+          "se": 0.16366341767699427,
+          "call": "balanced",
+          "questions": 1,
+          "examples": [
+            {
+              "i": 2,
+              "quote": "this vs redtape flow+3 btw first comment ❤",
+              "label": "POSITIVE",
+              "likes": 1
+            },
+            {
+              "i": 4,
+              "quote": "Bro how is juniper trail 3, is it worth for 2900. for daily use",
+              "label": "NEUTRAL",
+              "likes": 1
+            },
+            {
+              "i": 11,
+              "quote": "I make my mind to buy Nike revolution 8.. on its price.. uk 12 size and black colour... Did I am doing right... Because... I saved money for so long time...",
+              "label": "POSITIVE",
+              "likes": 0
+            }
+          ]
+        },
+        "agreement": {
+          "gap": null,
+          "se": null,
+          "low": null,
+          "high": null,
+          "call": "unknown"
+        }
+      },
+      {
+        "id": "T7",
+        "name": "The Reviewer",
+        "aspects": [],
+        "reviewer": {
+          "claims": 0,
+          "stances": {
+            "praise": 0,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 0.0,
+            "NEUTRAL": 0.0,
+            "NEGATIVE": 0.0
+          },
+          "segments": [],
+          "lean": null,
+          "se": null,
+          "call": "unknown"
+        },
+        "audience": {
+          "comments": 2,
+          "counts": {
+            "POSITIVE": 0,
+            "NEUTRAL": 2,
+            "NEGATIVE": 0
+          },
+          "lean": 0.0,
+          "se": 0.0,
+          "call": "balanced",
+          "questions": 0,
+          "examples": [
+            {
+              "i": 10,
+              "quote": "Adidas and puma new shoes ka update nahin dete Hain",
+              "label": "NEUTRAL",
+              "likes": 0
+            },
+            {
+              "i": 15,
+              "quote": "Sachin Waise bhi iss shoes ka bahut Negatives bata diya hai..Ab iss shoes ko Cut karke Dikhana padega tumhe.",
+              "label": "NEUTRAL",
+              "likes": 0
+            }
+          ]
+        },
+        "agreement": {
+          "gap": null,
+          "se": null,
+          "low": null,
+          "high": null,
+          "call": "unknown"
+        }
+      }
+    ],
+    "topic_source": "model",
+    "questions": [
+      {
+        "i": 5,
+        "quote": "Bro 3.2km under 12mint + 5km -10km long running k lea konsa shoe behtar rahega?"
+      },
+      {
+        "i": 3,
+        "quote": "I have to start my basic gym like treadmill, exercise and basic strength training, should I buy this?"
+      }
+    ],
+    "comment_tags": {
+      "0": [
+        "Where to Buy"
+      ],
+      "1": [
+        "Comparisons"
+      ],
+      "2": [
+        "Comparisons"
+      ],
+      "3": [
+        "Cushioning and Comfort",
+        "Durability"
+      ],
+      "4": [
+        "Comparisons",
+        "Price and Value"
+      ],
+      "5": [
+        "Comparisons",
+        "Weight"
+      ],
+      "6": [
+        "Comparisons",
+        "Price and Value"
+      ],
+      "7": [],
+      "8": [
+        "Comparisons",
+        "Weight"
+      ],
+      "9": [
+        "Price and Value"
+      ],
+      "10": [
+        "The Reviewer"
+      ],
+      "11": [
+        "Comparisons",
+        "Price and Value"
+      ],
+      "12": [
+        "Comparisons",
+        "Cushioning and Comfort"
+      ],
+      "13": [
+        "Where to Buy"
+      ],
+      "14": [
+        "Cushioning and Comfort"
+      ],
+      "15": [
+        "The Reviewer"
+      ]
+    }
+  },
+  "written": {
+    "verdict": {
+      "text": "The reviewer's words are balanced between praise and criticism, the comments are balanced, and the audience is measurably warmer than the reviewer.",
+      "evidence": [],
+      "source": "template"
+    },
+    "brand_health_words": {
+      "text": "Of 16 comments, 3 read positive, 13 neutral and 0 negative.",
+      "evidence": [],
+      "source": "template"
+    },
+    "audience_words": {
+      "text": "The audience is discussing the comfort and cushioning of the shoe, as well as the weight and durability. They are also asking about where to buy the shoe and comparing it to other options.",
+      "evidence": [
+        "C14",
+        "C3",
+        "C5",
+        "C8",
+        "C4",
+        "C11",
+        "T0",
+        "T2",
+        "T4",
+        "T5",
+        "T6"
+      ],
+      "source": "model"
+    },
+    "agreement_words": {
+      "text": "The audience is measurably warmer than the reviewer.",
+      "evidence": [],
+      "source": "template"
+    },
+    "takeaways": [
+      {
+        "text": "The brand should address concerns about the weight of the shoe, as it may be a negative point for some users.",
+        "evidence": [
+          "T2",
+          "S46",
+          "S47"
+        ]
+      },
+      {
+        "text": "The brand should consider improving the durability of the lower shoes.",
+        "evidence": [
+          "T1",
+          "S58"
+        ]
+      },
+      {
+        "text": "The brand should highlight the comfort and cushioning of the shoe as a key selling point.",
+        "evidence": [
+          "T0",
+          "S24",
+          "S29",
+          "S41"
+        ]
+      }
+    ],
+    "moment_notes": [
+      {
+        "seg": 19,
+        "text": "The words read negative as the reviewer says 'but I don't know why white colors are very good', while the face reads negative."
+      },
+      {
+        "seg": 84,
+        "text": "The words read positive as the reviewer says 'one of the best options say take which is power', while the face reads neutral."
+      },
+      {
+        "seg": 89,
+        "text": "The words read positive as the reviewer says 'do it, you can find it', while the face reads neutral."
+      }
+    ],
+    "turn_labels": [
+      {
+        "seg": 58,
+        "label": "The lower shoes are not durable"
+      },
+      {
+        "seg": 75,
+        "label": "You will run in rainy season"
+      }
+    ]
+  },
+  "verifier": {
+    "proposed": 52,
+    "kept": 45,
+    "by_field": {
+      "claim": {
+        "kept": 12,
+        "dropped": 4
+      },
+      "topic": {
+        "kept": 8,
+        "dropped": 0
+      },
+      "comment_tags": {
+        "kept": 16,
+        "dropped": 0
+      },
+      "verdict": {
+        "kept": 0,
+        "dropped": 1
+      },
+      "brand_health_words": {
+        "kept": 0,
+        "dropped": 1
+      },
+      "audience_words": {
+        "kept": 1,
+        "dropped": 0
+      },
+      "agreement_words": {
+        "kept": 0,
+        "dropped": 1
+      },
+      "takeaway": {
+        "kept": 3,
+        "dropped": 0
+      },
+      "moment_note": {
+        "kept": 3,
+        "dropped": 0
+      },
+      "turn_label": {
+        "kept": 2,
+        "dropped": 0
+      }
+    },
+    "dropped": [
+      {
+        "field": "claim",
+        "reasons": [
+          "figure not in the facts: six"
+        ],
+        "text": "{'seg': 87, 'aspect': 'price', 'stance': 'criticism', 'claim': 'suits that be 23 know tell me a six cap spicyOM water and Xu', 'quote': 'suits that be 23 know tell me a six cap spicyOM water and Xu'}"
+      },
+      {
+        "field": "claim",
+        "reasons": [
+          "22 words, limit 20"
+        ],
+        "text": "{'seg': 88, 'aspect': 'design', 'stance': 'neutral', 'claim': \"I have a lot of options, but from running perspective, I feel like I'm doing it, but if you see the rounderness\", 'quote': \"I have a lot of options, but from running perspective, I feel like I'm doing it, but if you see the rounderness,\""
+      },
+      {
+        "field": "claim",
+        "reasons": [
+          "23 words, limit 20"
+        ],
+        "text": "{'seg': 89, 'aspect': 'design', 'stance': 'praise', 'claim': 'you can do it, you can do it, then you can do it, if you have a big option, you can do it', 'quote': 'you can do it, you can do it, then you can do it, if you have a big option, you can do it,'}"
+      },
+      {
+        "field": "claim",
+        "reasons": [
+          "21 words, limit 20"
+        ],
+        "text": "{'seg': 90, 'aspect': 'design', 'stance': 'praise', 'claim': 'you can find it, you can find it, and you can find it in the description, so you can find it', 'quote': 'you can find it, you can find it, and you can find it in the description, so you can find it,'}"
+      },
+      {
+        "field": "verdict",
+        "reasons": [
+          "says the comments lean positive; the computed call is balanced"
+        ],
+        "text": "The reviewer concludes that the Nike Downshifter 14 is a good option for running, but notes that it may not be suitable for rainy conditions. The audience is generally positive about the product."
+      },
+      {
+        "field": "brand_health_words",
+        "reasons": [
+          "says the comments lean positive; the computed call is balanced"
+        ],
+        "text": "The audience is generally positive about the product, with 19% of comments being positive and 81% neutral. The brand's authenticity score is 80.54."
+      },
+      {
+        "field": "agreement_words",
+        "reasons": [
+          "says the comments lean positive; the computed call is balanced"
+        ],
+        "text": "The reviewer and audience agree that the shoe is comfortable and has good cushioning, but disagree on the weight and durability."
+      }
+    ],
+    "notes": [
+      {
+        "field": "claim",
+        "what": "segment corrected to where the quote is",
+        "from": 23,
+        "to": 24
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 29,
+        "to": [
+          29,
+          30
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "segment corrected to where the quote is",
+        "from": 71,
+        "to": 72
+      }
+    ]
+  },
+  "video_meta": {
+    "fetched": true,
+    "at": "2026-09-27T11:29:11+00:00",
+    "has_paid_product_placement": false,
+    "description_hits": [],
+    "title": "Should you buy Nike Downshifter 14 Now ?",
+    "channel": "Sachin Pisar",
+    "published_at": "2026-09-22T11:42:18Z"
+  },
+  "calls": [
+    {
+      "step": "claims",
+      "ok": true,
+      "seconds": 29.39,
+      "prompt_chars": 7467,
+      "prompt_tokens": 2398,
+      "output_tokens": 374
+    },
+    {
+      "step": "claims",
+      "ok": true,
+      "seconds": 27.66,
+      "prompt_chars": 4560,
+      "prompt_tokens": 1380,
+      "output_tokens": 548
+    },
+    {
+      "step": "topics",
+      "ok": true,
+      "seconds": 10.99,
+      "prompt_chars": 2372,
+      "prompt_tokens": 697,
+      "output_tokens": 177
+    },
+    {
+      "step": "comments",
+      "ok": true,
+      "seconds": 17.99,
+      "prompt_chars": 2142,
+      "prompt_tokens": 717,
+      "output_tokens": 321
+    },
+    {
+      "step": "prose",
+      "ok": true,
+      "seconds": 44.81,
+      "prompt_chars": 9613,
+      "prompt_tokens": 2984,
+      "output_tokens": 642
+    }
+  ],
+  "runtime_s": 131.02,
+  "report_ref": {
+    "file": "w_QWJPWDuNQ.json",
+    "sha256": "c8f9279cb0e554a6f2ccd15274bdcacc760857d50f599c4163e779b0262d1899"
+  }
+}

@@ -1,0 +1,27 @@
+{
+ "uid": "Rlw_CI7pOKg_6",
+ "system": "text_only_llm",
+ "video_id": "Rlw_CI7pOKg",
+ "segment_id": 6,
+ "split": "holdout",
+ "payload": {
+  "segment_id": 6,
+  "start_s": 32.160000000000004,
+  "end_s": 41.68,
+  "transcript": "are going to want to buy to be fair though this new macbook neo at 599 499 for student teacher"
+ },
+ "seconds": 3.726,
+ "raw": "{\n  \"segment_id\": 6,\n  \"conflict_score\": 0.8,\n  \"channels_in_conflict\": [],\n  \"flags\": [\"POTENTIAL_PAID_PROMOTION\"],\n  \"narrative\": \"The creator's tone is overly promotional, mentioning a specific price point and targeting a specific demographic (students and teachers) in a way that suggests a clear attempt to influence purchasing decisions.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 6,
+  "start_s": 32.160000000000004,
+  "end_s": 41.68,
+  "conflict_score": 0.8,
+  "conflict_reasons": [
+   "POTENTIAL_PAID_PROMOTION"
+  ],
+  "flagged": true
+ }
+}

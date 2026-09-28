@@ -1,0 +1,486 @@
+{
+  "probe_frames": [
+    "data/1VjPETN3m6U/frames/frame_0400.jpg",
+    "data/JpN1DQdV4G4/frames/frame_0300.jpg",
+    "data/SAb4zRyxrD4/frames/frame_0200.jpg"
+  ],
+  "detectors": {
+    "opencv": {
+      "backend": "opencv",
+      "available": true,
+      "error": null,
+      "frames": [
+        {
+          "frame": "frame_0400.jpg",
+          "video": "1VjPETN3m6U",
+          "n_regions": 1,
+          "n_confident": 1,
+          "confidences": [
+            0.92
+          ],
+          "seconds": 0.386
+        },
+        {
+          "frame": "frame_0300.jpg",
+          "video": "JpN1DQdV4G4",
+          "n_regions": 1,
+          "n_confident": 0,
+          "confidences": [
+            0.0
+          ],
+          "seconds": 0.232
+        },
+        {
+          "frame": "frame_0200.jpg",
+          "video": "SAb4zRyxrD4",
+          "n_regions": 1,
+          "n_confident": 0,
+          "confidences": [
+            0.0
+          ],
+          "seconds": 0.173
+        }
+      ],
+      "total_seconds": 0.79
+    },
+    "ssd": {
+      "backend": "ssd",
+      "available": true,
+      "error": null,
+      "frames": [
+        {
+          "frame": "frame_0400.jpg",
+          "video": "1VjPETN3m6U",
+          "n_regions": 1,
+          "n_confident": 1,
+          "confidences": [
+            1.0
+          ],
+          "seconds": 1.726
+        },
+        {
+          "frame": "frame_0300.jpg",
+          "video": "JpN1DQdV4G4",
+          "n_regions": 1,
+          "n_confident": 0,
+          "confidences": [
+            0.0
+          ],
+          "seconds": 0.081
+        },
+        {
+          "frame": "frame_0200.jpg",
+          "video": "SAb4zRyxrD4",
+          "n_regions": 1,
+          "n_confident": 0,
+          "confidences": [
+            0.0
+          ],
+          "seconds": 0.082
+        }
+      ],
+      "total_seconds": 1.889
+    },
+    "mtcnn": {
+      "backend": "mtcnn",
+      "available": true,
+      "error": null,
+      "frames": [
+        {
+          "frame": "frame_0400.jpg",
+          "video": "1VjPETN3m6U",
+          "n_regions": 1,
+          "n_confident": 1,
+          "confidences": [
+            1.0
+          ],
+          "seconds": 1.538
+        },
+        {
+          "frame": "frame_0300.jpg",
+          "video": "JpN1DQdV4G4",
+          "n_regions": 1,
+          "n_confident": 0,
+          "confidences": [
+            0.0
+          ],
+          "seconds": 1.131
+        },
+        {
+          "frame": "frame_0200.jpg",
+          "video": "SAb4zRyxrD4",
+          "n_regions": 1,
+          "n_confident": 0,
+          "confidences": [
+            0.0
+          ],
+          "seconds": 1.058
+        }
+      ],
+      "total_seconds": 3.727
+    },
+    "retinaface": {
+      "backend": "retinaface",
+      "available": true,
+      "error": null,
+      "frames": [
+        {
+          "frame": "frame_0400.jpg",
+          "video": "1VjPETN3m6U",
+          "n_regions": 1,
+          "n_confident": 1,
+          "confidences": [
+            1.0
+          ],
+          "seconds": 5.404
+        },
+        {
+          "frame": "frame_0300.jpg",
+          "video": "JpN1DQdV4G4",
+          "n_regions": 1,
+          "n_confident": 0,
+          "confidences": [
+            0.0
+          ],
+          "seconds": 1.131
+        },
+        {
+          "frame": "frame_0200.jpg",
+          "video": "SAb4zRyxrD4",
+          "n_regions": 1,
+          "n_confident": 0,
+          "confidences": [
+            0.0
+          ],
+          "seconds": 1.217
+        }
+      ],
+      "total_seconds": 7.753
+    },
+    "yunet": {
+      "backend": "yunet",
+      "available": true,
+      "error": null,
+      "frames": [
+        {
+          "frame": "frame_0400.jpg",
+          "video": "1VjPETN3m6U",
+          "n_regions": 1,
+          "n_confident": 1,
+          "confidences": [
+            0.93
+          ],
+          "seconds": 0.462
+        },
+        {
+          "frame": "frame_0300.jpg",
+          "video": "JpN1DQdV4G4",
+          "n_regions": 1,
+          "n_confident": 0,
+          "confidences": [
+            0.0
+          ],
+          "seconds": 0.076
+        },
+        {
+          "frame": "frame_0200.jpg",
+          "video": "SAb4zRyxrD4",
+          "n_regions": 1,
+          "n_confident": 0,
+          "confidences": [
+            0.0
+          ],
+          "seconds": 0.07
+        }
+      ],
+      "total_seconds": 0.608
+    },
+    "centerface": {
+      "backend": "centerface",
+      "available": false,
+      "error": "UnboundLocalError: cannot access local variable 'boxes_np' where it is not associated with a value",
+      "frames": [
+        {
+          "frame": "frame_0400.jpg",
+          "video": "1VjPETN3m6U",
+          "n_regions": 1,
+          "n_confident": 1,
+          "confidences": [
+            0.9
+          ],
+          "seconds": 3.335
+        }
+      ],
+      "total_seconds": 4.423
+    },
+    "yolov8": {
+      "backend": "yolov8",
+      "available": false,
+      "error": "UnimplementedError: Invalid model_name passed - face_detector/yolov8",
+      "frames": [],
+      "total_seconds": 0.019
+    },
+    "mediapipe": {
+      "backend": "mediapipe",
+      "available": false,
+      "error": "ImportError: MediaPipe is an optional detector, ensure the library is installed. Please install using 'pip install mediapipe'",
+      "frames": [],
+      "total_seconds": 0.02
+    },
+    "dlib": {
+      "backend": "dlib",
+      "available": false,
+      "error": "ImportError: Dlib is an optional detector, ensure the library is installed. Please install using 'pip install dlib'",
+      "frames": [],
+      "total_seconds": 0.019
+    }
+  },
+  "classifiers": {
+    "deepface_emotion": {
+      "name": "deepface_emotion",
+      "kind": "deepface",
+      "model_id": null,
+      "available": true,
+      "error": null,
+      "labels": [
+        "angry",
+        "disgust",
+        "fear",
+        "happy",
+        "neutral",
+        "sad",
+        "surprise"
+      ],
+      "frames": [
+        {
+          "frame": "frame_0400.jpg",
+          "top": "angry",
+          "scores": {
+            "angry": 49.01,
+            "disgust": 1.29,
+            "fear": 15.1,
+            "happy": 0.01,
+            "sad": 34.3,
+            "surprise": 0.08,
+            "neutral": 0.2
+          },
+          "seconds": 0.614
+        },
+        {
+          "frame": "frame_0300.jpg",
+          "top": "angry",
+          "scores": {
+            "angry": 98.84,
+            "disgust": 0.21,
+            "fear": 0.57,
+            "happy": 0.0,
+            "sad": 0.12,
+            "surprise": 0.0,
+            "neutral": 0.26
+          },
+          "seconds": 0.518
+        },
+        {
+          "frame": "frame_0200.jpg",
+          "top": "angry",
+          "scores": {
+            "angry": 96.23,
+            "disgust": 0.0,
+            "fear": 0.0,
+            "happy": 0.0,
+            "sad": 0.0,
+            "surprise": 0.0,
+            "neutral": 3.77
+          },
+          "seconds": 0.511
+        }
+      ],
+      "load_seconds": 0.07
+    },
+    "trpakov_vit": {
+      "name": "trpakov_vit",
+      "kind": "hf",
+      "model_id": "trpakov/vit-face-expression",
+      "available": true,
+      "error": null,
+      "labels": [
+        "angry",
+        "disgust",
+        "fear",
+        "happy",
+        "neutral",
+        "sad",
+        "surprise"
+      ],
+      "frames": [
+        {
+          "frame": "frame_0400.jpg",
+          "top": "happy",
+          "scores": {
+            "happy": 0.5104,
+            "angry": 0.3671,
+            "sad": 0.0804,
+            "surprise": 0.0164,
+            "neutral": 0.0121
+          },
+          "seconds": 0.851
+        },
+        {
+          "frame": "frame_0300.jpg",
+          "top": "angry",
+          "scores": {
+            "angry": 0.641,
+            "happy": 0.1638,
+            "sad": 0.0997,
+            "surprise": 0.0388,
+            "fear": 0.0383
+          },
+          "seconds": 0.107
+        },
+        {
+          "frame": "frame_0200.jpg",
+          "top": "happy",
+          "scores": {
+            "happy": 0.3619,
+            "angry": 0.2832,
+            "sad": 0.1162,
+            "surprise": 0.1032,
+            "neutral": 0.0867
+          },
+          "seconds": 0.098
+        }
+      ],
+      "load_seconds": 10.41
+    },
+    "motheecreator_vit": {
+      "name": "motheecreator_vit",
+      "kind": "hf",
+      "model_id": "motheecreator/vit-Facial-Expression-Recognition",
+      "available": true,
+      "error": null,
+      "labels": [
+        "anger",
+        "disgust",
+        "fear",
+        "happy",
+        "neutral",
+        "sad",
+        "surprise"
+      ],
+      "frames": [
+        {
+          "frame": "frame_0400.jpg",
+          "top": "surprise",
+          "scores": {
+            "surprise": 0.777,
+            "neutral": 0.1782,
+            "disgust": 0.0219,
+            "happy": 0.0094,
+            "sad": 0.0046
+          },
+          "seconds": 0.887
+        },
+        {
+          "frame": "frame_0300.jpg",
+          "top": "neutral",
+          "scores": {
+            "neutral": 0.5289,
+            "surprise": 0.2132,
+            "disgust": 0.091,
+            "happy": 0.0736,
+            "anger": 0.0649
+          },
+          "seconds": 0.11
+        },
+        {
+          "frame": "frame_0200.jpg",
+          "top": "neutral",
+          "scores": {
+            "neutral": 0.7059,
+            "happy": 0.2078,
+            "surprise": 0.0269,
+            "anger": 0.0257,
+            "sad": 0.0191
+          },
+          "seconds": 0.098
+        }
+      ],
+      "load_seconds": 11.94
+    },
+    "dima806_vit": {
+      "name": "dima806_vit",
+      "kind": "hf",
+      "model_id": "dima806/facial_emotions_image_detection",
+      "available": true,
+      "error": null,
+      "labels": [
+        "sad",
+        "disgust",
+        "angry",
+        "neutral",
+        "fear",
+        "surprise",
+        "happy"
+      ],
+      "frames": [
+        {
+          "frame": "frame_0400.jpg",
+          "top": "happy",
+          "scores": {
+            "happy": 0.3845,
+            "angry": 0.2471,
+            "sad": 0.1018,
+            "fear": 0.1007,
+            "surprise": 0.0939
+          },
+          "seconds": 0.286
+        },
+        {
+          "frame": "frame_0300.jpg",
+          "top": "surprise",
+          "scores": {
+            "surprise": 0.2326,
+            "fear": 0.224,
+            "angry": 0.1651,
+            "sad": 0.1629,
+            "happy": 0.1194
+          },
+          "seconds": 0.105
+        },
+        {
+          "frame": "frame_0200.jpg",
+          "top": "surprise",
+          "scores": {
+            "surprise": 0.2142,
+            "fear": 0.211,
+            "neutral": 0.1769,
+            "angry": 0.13,
+            "happy": 0.1185
+          },
+          "seconds": 0.102
+        }
+      ],
+      "load_seconds": 9.92
+    },
+    "hardlyhumans_vit": {
+      "name": "hardlyhumans_vit",
+      "kind": "hf",
+      "model_id": "HardlyHumans/Facial-expression-detection",
+      "available": false,
+      "error": "ValueError: Unrecognized image processor in HardlyHumans/Facial-expression-detection. Should have a `image_processor_type` key in its preprocessor_config.json of config.json, or one of the following `model_type` keys in its config.json: aria, beit, bit, blip, bridgetower, chameleon, chinese_clip, chmv2, clip, cohere2_vision, conditional_detr, convnext, deepseek_ocr2, deepseek_vl, deepseek_vl_hybrid, deformable_detr, deit, depth_pro, detr, dinov3_vit, dpt, efficientloftr, efficientnet, eomt, ernie4_5_vl_moe, flava, fuyu, gemma3, gemma4, gemma4_unified, glm46v, glm4v, glm_image, glmga, glpn, got_ocr2, grounding-dino, idefics, idefics2, idefics3, imagegpt, janus, layoutlmv2, layoutlmv3, levit, lfm2_vl, lightglue, llama4, llava, llava_next, llava_onevision, mask2former, maskformer, minicpmv4_6, minimax_m3_vl, mllama, mobilenet_v1, mobilenet_v2, mobilevit, nougat, oneformer, ovis2, owlv2, owlvit, paddleocr_vl, perceiver, perception_lm, phi4_multimodal, pi0, pix2struct, pixtral, poolformer, pp_chart2table, pp_doclayout_v2, pp_doclayout_v3, pp_formulanet, pp_lcnet, pp_ocrv5_server_det, pp_ocrv5_server_rec, pp_ocrv6_small_rec, prompt_depth_anything, pvt, qwen2_vl, rf_detr, rt_detr, sam, sam2, sam3, sapiens2, segformer, seggpt, siglip, siglip2, slanext, smolvlm, superglue, superpoint, swin2sr, textnet, tvp, uvdoc, video_llama_3, videomae, vilt, vit, vitmatte, vitpose, yolos, zoedepth, aimv2, aimv2_vision_model, align, altclip, aya_vision, blip-2, clipseg, colpali, colqwen2, convnextv2, cosmos3_omni, cvt, data2vec-vision, deimv2, depth_anything, dinat, dinov2, donut-swin, edgetam, emu3, eomt_dinov3, exaone4_5, florence2, focalnet, gemma3n, git, granite4_vision, groupvit, hiera, ijepa, instructblip, internvl, kosmos-2, kosmos-2.5, layoutxlm, lighton_ocr, llava_next_video, lw_detr, metaclip_2, mgp-str, mistral3, mlcd, mm-grounding-dino, mobilevitv2, omdet-turbo, paligemma, pixio, pp_ocrv5_mobile_det, pp_ocrv5_mobile_rec, pp_ocrv6_medium_det, pp_ocrv6_small_det, pp_ocrv6_tiny_rec, pvt_v2, qianfan_ocr, qwen2_5_omni, qwen2_5_vl, qwen3_5, qwen3_5_moe, qwen3_omni_moe, qwen3_vl, regnet, resnet, sam2_video, sam3_lite_text, sam3_tracker, sam3_tracker_video, sam3_video, sam_hq, shieldgemma2, slanet, swiftformer, swin, swinv2, t5gemma2, t5gemma2_encoder, table-transformer, timesformer, timm_wrapper, trocr, udop, upernet, video_llava, vipllava, vit_mae, vit_msn, vivit, xclip",
+      "labels": null,
+      "frames": [],
+      "traceback": "m, sam2, sam3, sapiens2, segformer, seggpt, siglip, siglip2, slanext, smolvlm, superglue, superpoint, swin2sr, textnet, tvp, uvdoc, video_llama_3, videomae, vilt, vit, vitmatte, vitpose, yolos, zoedepth, aimv2, aimv2_vision_model, align, altclip, aya_vision, blip-2, clipseg, colpali, colqwen2, convnextv2, cosmos3_omni, cvt, data2vec-vision, deimv2, depth_anything, dinat, dinov2, donut-swin, edgetam, emu3, eomt_dinov3, exaone4_5, florence2, focalnet, gemma3n, git, granite4_vision, groupvit, hiera, ijepa, instructblip, internvl, kosmos-2, kosmos-2.5, layoutxlm, lighton_ocr, llava_next_video, lw_detr, metaclip_2, mgp-str, mistral3, mlcd, mm-grounding-dino, mobilevitv2, omdet-turbo, paligemma, pixio, pp_ocrv5_mobile_det, pp_ocrv5_mobile_rec, pp_ocrv6_medium_det, pp_ocrv6_small_det, pp_ocrv6_tiny_rec, pvt_v2, qianfan_ocr, qwen2_5_omni, qwen2_5_vl, qwen3_5, qwen3_5_moe, qwen3_omni_moe, qwen3_vl, regnet, resnet, sam2_video, sam3_lite_text, sam3_tracker, sam3_tracker_video, sam3_video, sam_hq, shieldgemma2, slanet, swiftformer, swin, swinv2, t5gemma2, t5gemma2_encoder, table-transformer, timesformer, timm_wrapper, trocr, udop, upernet, video_llava, vipllava, vit_mae, vit_msn, vivit, xclip\n"
+    },
+    "tanneru_beit_l": {
+      "name": "tanneru_beit_l",
+      "kind": "hf",
+      "model_id": "Tanneru/Facial-Emotion-Detection-FER-RAFDB-AffectNet-BEIT-Large",
+      "available": false,
+      "error": "ValueError: Unrecognized image processor in Tanneru/Facial-Emotion-Detection-FER-RAFDB-AffectNet-BEIT-Large. Should have a `image_processor_type` key in its preprocessor_config.json of config.json, or one of the following `model_type` keys in its config.json: aria, beit, bit, blip, bridgetower, chameleon, chinese_clip, chmv2, clip, cohere2_vision, conditional_detr, convnext, deepseek_ocr2, deepseek_vl, deepseek_vl_hybrid, deformable_detr, deit, depth_pro, detr, dinov3_vit, dpt, efficientloftr, efficientnet, eomt, ernie4_5_vl_moe, flava, fuyu, gemma3, gemma4, gemma4_unified, glm46v, glm4v, glm_image, glmga, glpn, got_ocr2, grounding-dino, idefics, idefics2, idefics3, imagegpt, janus, layoutlmv2, layoutlmv3, levit, lfm2_vl, lightglue, llama4, llava, llava_next, llava_onevision, mask2former, maskformer, minicpmv4_6, minimax_m3_vl, mllama, mobilenet_v1, mobilenet_v2, mobilevit, nougat, oneformer, ovis2, owlv2, owlvit, paddleocr_vl, perceiver, perception_lm, phi4_multimodal, pi0, pix2struct, pixtral, poolformer, pp_chart2table, pp_doclayout_v2, pp_doclayout_v3, pp_formulanet, pp_lcnet, pp_ocrv5_server_det, pp_ocrv5_server_rec, pp_ocrv6_small_rec, prompt_depth_anything, pvt, qwen2_vl, rf_detr, rt_detr, sam, sam2, sam3, sapiens2, segformer, seggpt, siglip, siglip2, slanext, smolvlm, superglue, superpoint, swin2sr, textnet, tvp, uvdoc, video_llama_3, videomae, vilt, vit, vitmatte, vitpose, yolos, zoedepth, aimv2, aimv2_vision_model, align, altclip, aya_vision, blip-2, clipseg, colpali, colqwen2, convnextv2, cosmos3_omni, cvt, data2vec-vision, deimv2, depth_anything, dinat, dinov2, donut-swin, edgetam, emu3, eomt_dinov3, exaone4_5, florence2, focalnet, gemma3n, git, granite4_vision, groupvit, hiera, ijepa, instructblip, internvl, kosmos-2, kosmos-2.5, layoutxlm, lighton_ocr, llava_next_video, lw_detr, metaclip_2, mgp-str, mistral3, mlcd, mm-grounding-dino, mobilevitv2, omdet-turbo, paligemma, pixio, pp_ocrv5_mobile_det, pp_ocrv5_mobile_rec, pp_ocrv6_medium_det, pp_ocrv6_small_det, pp_ocrv6_tiny_rec, pvt_v2, qianfan_ocr, qwen2_5_omni, qwen2_5_vl, qwen3_5, qwen3_5_moe, qwen3_omni_moe, qwen3_vl, regnet, resnet, sam2_video, sam3_lite_text, sam3_tracker, sam3_tracker_video, sam3_video, sam_hq, shieldgemma2, slanet, swiftformer, swin, swinv2, t5gemma2, t5gemma2_encoder, table-transformer, timesformer, timm_wrapper, trocr, udop, upernet, video_llava, vipllava, vit_mae, vit_msn, vivit, xclip",
+      "labels": null,
+      "frames": [],
+      "traceback": "m, sam2, sam3, sapiens2, segformer, seggpt, siglip, siglip2, slanext, smolvlm, superglue, superpoint, swin2sr, textnet, tvp, uvdoc, video_llama_3, videomae, vilt, vit, vitmatte, vitpose, yolos, zoedepth, aimv2, aimv2_vision_model, align, altclip, aya_vision, blip-2, clipseg, colpali, colqwen2, convnextv2, cosmos3_omni, cvt, data2vec-vision, deimv2, depth_anything, dinat, dinov2, donut-swin, edgetam, emu3, eomt_dinov3, exaone4_5, florence2, focalnet, gemma3n, git, granite4_vision, groupvit, hiera, ijepa, instructblip, internvl, kosmos-2, kosmos-2.5, layoutxlm, lighton_ocr, llava_next_video, lw_detr, metaclip_2, mgp-str, mistral3, mlcd, mm-grounding-dino, mobilevitv2, omdet-turbo, paligemma, pixio, pp_ocrv5_mobile_det, pp_ocrv5_mobile_rec, pp_ocrv6_medium_det, pp_ocrv6_small_det, pp_ocrv6_tiny_rec, pvt_v2, qianfan_ocr, qwen2_5_omni, qwen2_5_vl, qwen3_5, qwen3_5_moe, qwen3_omni_moe, qwen3_vl, regnet, resnet, sam2_video, sam3_lite_text, sam3_tracker, sam3_tracker_video, sam3_video, sam_hq, shieldgemma2, slanet, swiftformer, swin, swinv2, t5gemma2, t5gemma2_encoder, table-transformer, timesformer, timm_wrapper, trocr, udop, upernet, video_llava, vipllava, vit_mae, vit_msn, vivit, xclip\n"
+    }
+  }
+}

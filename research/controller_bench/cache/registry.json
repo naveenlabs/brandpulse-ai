@@ -1,0 +1,82 @@
+{
+ "llama3.2": {
+  "tag": "llama3.2:latest",
+  "note": "incumbent",
+  "family": "llama",
+  "parameter_size": "3.2B",
+  "quantization": "Q4_K_M",
+  "context_length": 131072,
+  "licence_first_line": "LLAMA 3.2 COMMUNITY LICENSE AGREEMENT",
+  "licence_chars": 13639
+ },
+ "llama3.1_8b": {
+  "tag": "llama3.1:8b",
+  "note": "same family, 2.5x params",
+  "family": "llama",
+  "parameter_size": "8.0B",
+  "quantization": "Q4_K_M",
+  "context_length": 131072,
+  "licence_first_line": "LLAMA 3.1 COMMUNITY LICENSE AGREEMENT",
+  "licence_chars": 12233
+ },
+ "qwen2.5_7b": {
+  "tag": "qwen2.5:7b-instruct",
+  "note": "instruct, structured output",
+  "family": "qwen2",
+  "parameter_size": "7.6B",
+  "quantization": "Q4_K_M",
+  "context_length": 32768,
+  "licence_first_line": "Apache License",
+  "licence_chars": 11309
+ },
+ "qwen3_8b": {
+  "tag": "qwen3:8b",
+  "note": "newer generation",
+  "family": "qwen3",
+  "parameter_size": "8.2B",
+  "quantization": "Q4_K_M",
+  "context_length": 40960,
+  "licence_first_line": "Apache License",
+  "licence_chars": 11305
+ },
+ "mistral_7b": {
+  "tag": "mistral:7b",
+  "note": "named in the work plan",
+  "family": "llama",
+  "parameter_size": "7.2B",
+  "quantization": "Q4_K_M",
+  "context_length": 32768,
+  "licence_first_line": "Apache License",
+  "licence_chars": 11323
+ },
+ "gemma3_4b": {
+  "tag": "gemma3:4b",
+  "note": "nearest size peer",
+  "family": "gemma3",
+  "parameter_size": "4.3B",
+  "quantization": "Q4_K_M",
+  "context_length": 131072,
+  "licence_first_line": "Gemma Terms of Use ",
+  "licence_chars": 8431
+ },
+ "phi4_mini": {
+  "tag": "phi4-mini:latest",
+  "note": "reasoning-dense size peer",
+  "family": "phi3",
+  "parameter_size": "3.8B",
+  "quantization": "Q4_K_M",
+  "context_length": 131072,
+  "licence_first_line": "Microsoft.",
+  "licence_chars": 1084
+ },
+ "granite3.3_8b": {
+  "tag": "granite3.3:8b",
+  "note": "enterprise structured output",
+  "family": "granite",
+  "parameter_size": "8.2B",
+  "quantization": "Q4_K_M",
+  "context_length": 131072,
+  "licence_first_line": "Apache License",
+  "licence_chars": 11299
+ }
+}

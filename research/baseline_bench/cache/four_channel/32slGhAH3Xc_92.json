@@ -1,0 +1,35 @@
+{
+ "uid": "32slGhAH3Xc_92",
+ "system": "four_channel",
+ "video_id": "32slGhAH3Xc",
+ "segment_id": 92,
+ "split": "selection",
+ "payload": {
+  "segment_id": 92,
+  "start_s": 431.66,
+  "end_s": 436.46000000000004,
+  "transcript": "as surprisingly appealing as it is. The first, and the most obvious, is the style.",
+  "transcript_sentiment": "POSITIVE (0.81)",
+  "vocal_emotion": "NEUTRAL (arousal 0.57)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "sad (0.51)",
+  "video_comment_sentiment": "POSITIVE (0.98)"
+ },
+ "seconds": 3.924,
+ "raw": "{\n  \"segment_id\": 92,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words convey a positive sentiment, but their facial expression shows sadness, indicating a conflict between their verbal and non-verbal cues.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 92,
+  "start_s": 431.66,
+  "end_s": 436.46000000000004,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion"
+  ],
+  "flagged": false
+ }
+}

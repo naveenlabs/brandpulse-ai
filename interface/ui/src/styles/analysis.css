@@ -1,0 +1,324 @@
+/* ===========================================================================
+   analysis.css — the written report's pages (lib/written.js, lib/charts.js).
+
+   Printed on the book's own paper in the book's own type: Newsreader for what
+   a person said or what the report concludes, Archivo for what was measured.
+   Every colour is a token from tokens.css, so both themes hold. The reviewer
+   is the transcript's colour and the audience the audience's; `--tear` still
+   means one thing only, a flagged conflict.
+   ======================================================================== */
+
+/* --- evidence -------------------------------------------------------------
+
+   Every sentence the model wrote carries where it came from. A time opens
+   that moment; a comment number opens that comment. Real buttons, small, set
+   in the measured face so they read as references rather than prose. */
+
+.evs { display: inline-flex; flex-wrap: wrap; gap: 4px; vertical-align: baseline; }
+.ev {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.45rem;
+  padding: 0 0.45rem;
+  border: var(--hair) solid var(--leaf-rule);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink-2);
+  font: 500 11.5px/1 var(--f-inst);
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+  transition: border-color var(--t-fast) var(--ease-out), color var(--t-fast) var(--ease-out);
+}
+.ev:hover { border-color: var(--ink-3); color: var(--ink); }
+.ev:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.ev--c { border-style: dashed; }
+
+.src {
+  margin-left: 0.3rem;
+  font: 500 11.5px/1 var(--f-inst);
+  color: var(--ink-3);
+  white-space: nowrap;
+}
+
+/* --- the not-yet state ---------------------------------------------------- */
+
+.ny {
+  display: grid;
+  gap: 0.4rem;
+  padding: var(--s-4) var(--s-4) var(--s-4) calc(var(--s-4) + 2px);
+  border-left: 2px solid var(--leaf-rule);
+}
+.ny__h { margin: 0; font: italic 400 17px/1.3 var(--f-voice); color: var(--ink); }
+.ny__p { margin: 0; font: 400 13px/1.5 var(--f-inst); color: var(--ink-2); max-width: 52ch; }
+.ny__cmd code { font-size: 12px; color: var(--ink-2); overflow-wrap: anywhere; }
+
+/* --- the coverage pill and its level -------------------------------------- */
+
+.lvl {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 1.75rem;
+  padding: 0 0.7rem 0 0.55rem;
+  border: var(--hair) solid var(--leaf-rule);
+  border-radius: 999px;
+  color: var(--ink);
+  font: 500 12px/1 var(--f-inst);
+  text-decoration: none;
+}
+.lvl:hover { border-color: var(--ink-3); }
+.lvl:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.lvl__dots { display: inline-flex; gap: 3px; }
+.lvl__dots i { width: 7px; height: 7px; border-radius: 50%; border: 1px solid var(--ink-3); }
+.lvl__dots i[data-on] { background: var(--ink); border-color: var(--ink); }
+.lvl__dots--big i { width: 12px; height: 12px; }
+
+/* --- the reading (overview recto) ----------------------------------------- */
+
+.rd { display: flex; flex-direction: column; gap: clamp(0.7rem, 1.4svh, 1rem); }
+.rd__head { display: flex; align-items: center; justify-content: space-between; gap: var(--s-4); }
+.rd__head .cx-kicker { margin: 0; }
+.vd {
+  margin: 0;
+  font: 400 clamp(1.1rem, 1.35vw, 1.3rem)/1.38 var(--f-voice);
+  color: var(--ink);
+  text-wrap: pretty;
+}
+.vd--code { font-size: clamp(1rem, 1.2vw, 1.15rem); }
+.vd__src { margin: 0; font: 400 12px/1.4 var(--f-inst); color: var(--ink-3); }
+.rd .fi__scores { gap: var(--s-5); }
+.rd .fi__v .t-read { font-size: clamp(2.1rem, min(3vw, 5.2svh), 2.9rem); }
+
+/* --- takeaways ------------------------------------------------------------ */
+
+.tk { display: flex; flex-direction: column; gap: var(--s-4); }
+.tk__list { display: grid; gap: var(--s-4); margin: 0; padding: 0; list-style: none; }
+.tk__item {
+  display: grid;
+  grid-template-columns: 2.4rem minmax(0, 1fr);
+  gap: var(--s-3);
+  padding-top: var(--s-3);
+  border-top: var(--hair) solid var(--leaf-rule);
+}
+.tk__n { font: 400 2rem/1 var(--f-voice); color: var(--ink-3); font-variant-numeric: lining-nums; }
+.tk__text { margin: 0 0 0.45rem; font: 400 16px/1.5 var(--f-inst); color: var(--ink); text-wrap: pretty; }
+
+/* --- agreement ------------------------------------------------------------ */
+
+.ag { display: flex; flex-direction: column; gap: var(--s-4); }
+.ag__fig { margin: 0; display: grid; gap: 0.4rem; }
+.ag__part { display: grid; gap: 0.35rem; }
+.ag__k { margin: 0; font: 600 12.5px/1.2 var(--f-inst); color: var(--ink-2); }
+.ag__words { margin: 0; font: 400 16px/1.5 var(--f-voice); color: var(--ink); text-wrap: pretty; }
+
+.tug { display: block; width: 100%; height: auto; overflow: visible; }
+.tug__axis { stroke: var(--ink-3); stroke-width: 1; }
+.tug__tick { stroke: var(--ink-3); stroke-width: 1; }
+.tug__tick--zero { stroke: var(--ink-2); }
+.tug__end, .tug__lab { font: 500 11.5px var(--f-inst); fill: var(--ink-2); }
+.tug__lab { fill: var(--ink); font-variant-numeric: tabular-nums; }
+.tug__ci { stroke: var(--ink-2); stroke-width: 1.5; }
+.tug__gap { stroke: var(--ink-3); stroke-width: 1; stroke-dasharray: 3 3; }
+.tug__gap.is-clear { stroke: var(--ink); stroke-width: 1.5; stroke-dasharray: none; }
+.tug__r { fill: var(--ch-transcript); stroke: var(--leaf); stroke-width: 2; }
+.tug__a { fill: var(--ch-audience); stroke: var(--leaf); stroke-width: 2; }
+
+/* --- the tone line -------------------------------------------------------- */
+
+.tn { display: flex; flex-direction: column; gap: var(--s-4); }
+.tn__head { display: grid; gap: 0.4rem; max-width: 72ch; }
+.tn__fig { margin: 0; }
+.ta { display: block; width: 100%; height: auto; overflow: visible; }
+.ta__grid { stroke: var(--leaf-rule); stroke-width: 1; }
+.ta__zero { stroke: var(--ink-3); stroke-width: 1; }
+.ta__time, .ta__axis { font: 500 12px var(--f-inst); fill: var(--ink-3); font-variant-numeric: tabular-nums; }
+.ta__pos { fill: var(--ch-transcript); fill-opacity: 0.22; }
+.ta__hatch { stroke: var(--ch-transcript); stroke-opacity: 0.55; }
+.ch-bg { fill: transparent; }
+.ta__line { fill: none; stroke: var(--ch-transcript); stroke-width: 2.2; stroke-linejoin: round; stroke-linecap: round; }
+.ta__flag { fill: var(--tear); }
+.ta__stem { stroke: var(--ink-3); stroke-width: 1; }
+.ta__dot { fill: var(--leaf); stroke: var(--ink); stroke-width: 1.6; }
+.ta__lab { font: 500 12.5px var(--f-inst); fill: var(--ink); }
+.ta__n { font-weight: 700; }
+.tn__turns { display: flex; flex-wrap: wrap; gap: var(--s-2) var(--s-5); margin: 0; padding: 0; list-style: none; }
+.tn__turns li { display: inline-flex; align-items: center; gap: 0.5rem; font: 400 13.5px/1.3 var(--f-inst); color: var(--ink); }
+.tn__n {
+  display: inline-grid; place-items: center; width: 1.3rem; height: 1.3rem;
+  border: 1px solid var(--ink); border-radius: 50%; font: 700 11.5px/1 var(--f-inst);
+}
+
+/* --- time, topics, dumbbells ---------------------------------------------- */
+
+.tt, .tv, .tl, .ak { display: flex; flex-direction: column; gap: var(--s-4); }
+
+.tb, .th, .db { display: grid; gap: 0.55rem; margin: 0; padding: 0; list-style: none; }
+.tb__row { display: grid; grid-template-columns: 8.5rem minmax(0, 1fr) 3.2rem; align-items: center; gap: var(--s-3); }
+.tb__name, .th__name, .db__name { font: 500 13px/1.25 var(--f-inst); color: var(--ink); overflow-wrap: anywhere; }
+.tb__track { display: block; height: 14px; }
+.tb__bar { display: flex; height: 100%; gap: 1px; }
+.tb__seg { display: block; height: 100%; }
+.tb__seg--pos { background: var(--ch-transcript); }
+.tb__seg--neu { background: color-mix(in srgb, var(--ch-transcript) 36%, var(--leaf)); }
+.tb__seg--neg {
+  background: repeating-linear-gradient(135deg, var(--ch-transcript) 0 2px,
+    color-mix(in srgb, var(--ch-transcript) 16%, var(--leaf)) 2px 6px);
+}
+.tb__n { font-size: 13px; color: var(--ink-2); text-align: right; }
+
+.tt__key { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem 0.9rem; margin: 0;
+  font: 500 11.5px/1 var(--f-inst); color: var(--ink-3); }
+.k { display: inline-block; width: 12px; height: 9px; margin-right: 0.3rem; vertical-align: -1px; }
+.k--pos { background: var(--ch-transcript); }
+.k--neu { background: color-mix(in srgb, var(--ch-transcript) 36%, var(--leaf)); }
+.k--neg { background: repeating-linear-gradient(135deg, var(--ch-transcript) 0 2px,
+  color-mix(in srgb, var(--ch-transcript) 16%, var(--leaf)) 2px 6px); }
+.k--r { width: 10px; height: 10px; border-radius: 50%; background: var(--ch-transcript); }
+.k--a { width: 9px; height: 9px; background: var(--ch-audience); }
+
+.db__row { display: grid; grid-template-columns: 8.5rem minmax(0, 1fr) 8rem; align-items: center; gap: var(--s-3); }
+.db__svg { display: block; width: 100%; height: 22px; overflow: visible; }
+.db__axis { stroke: var(--leaf-rule); stroke-width: 1; }
+.db__zero { stroke: var(--ink-3); stroke-width: 1; }
+.db__gap { stroke: var(--ink-2); stroke-width: 1.5; }
+.db__r { fill: var(--ch-transcript); stroke: var(--leaf); stroke-width: 1.5; }
+.db__a { fill: var(--ch-audience); stroke: var(--leaf); stroke-width: 1.5; }
+.db__note { font: 400 12px/1.3 var(--f-inst); color: var(--ink-2); }
+
+.th__row { display: grid; grid-template-columns: 8.5rem minmax(0, 1fr) minmax(0, 1fr) 5rem; align-items: center; gap: 0 2px; }
+.th__neg, .th__pos { display: flex; align-items: center; gap: 0.35rem; height: 14px; }
+.th__neg { flex-direction: row-reverse; border-right: 1px solid var(--ink-3); padding-right: 2px; }
+.th__pos { padding-left: 2px; }
+.th__neg i, .th__pos i { display: block; height: 100%; }
+.th__pos i { background: var(--ch-audience); }
+.th__neg i { background: repeating-linear-gradient(135deg, var(--ch-audience) 0 2px,
+  color-mix(in srgb, var(--ch-audience) 18%, var(--leaf)) 2px 6px); }
+.th__neg b, .th__pos b { font-size: 12px; font-weight: 500; color: var(--ink-2); }
+.th__neu { padding-left: var(--s-3); font: 400 11.5px/1 var(--f-inst); color: var(--ink-3); }
+.th__keyl, .th__keyr { flex: 1 1 0; }
+.th__keyl { text-align: right; padding-right: 0.5rem; }
+.tl .tt__key { padding-left: calc(8.5rem + 2px); padding-right: 5rem; }
+
+/* --- claims --------------------------------------------------------------- */
+
+.cl__list { display: grid; gap: var(--s-4); margin: 0; padding: 0; list-style: none; }
+.cl__head { display: grid; gap: 0.25rem; }
+.cl__head .cx-h3 { margin: 0; }
+.cl { display: grid; gap: 0.35rem; padding-top: var(--s-3); border-top: var(--hair) solid var(--leaf-rule); }
+.cl__meta { display: flex; align-items: center; justify-content: space-between; gap: var(--s-3); margin: 0; }
+.cl__topic { font: 600 11.5px/1.2 var(--f-inst); letter-spacing: 0.02em; color: var(--ink-2); }
+.cl__claim { margin: 0; font: 500 14.5px/1.45 var(--f-inst); color: var(--ink); }
+.cl__quote { margin: 0; font: italic 400 15px/1.45 var(--f-voice); color: var(--ink-2); }
+.cl[data-stance="praise"] .cl__claim::before,
+.cl[data-stance="criticism"] .cl__claim::before {
+  content: ""; display: inline-block; width: 8px; height: 8px; margin-right: 0.5rem; vertical-align: 1px;
+  background: var(--ch-transcript);
+}
+.cl[data-stance="criticism"] .cl__claim::before {
+  background: repeating-linear-gradient(135deg, var(--ch-transcript) 0 2px,
+    color-mix(in srgb, var(--ch-transcript) 16%, var(--leaf)) 2px 5px);
+}
+
+/* --- what they ask ---------------------------------------------------------- */
+
+.tl__words { margin: 0; font: 400 16px/1.5 var(--f-voice); color: var(--ink); }
+.ak__qs { display: grid; gap: var(--s-3); margin: 0; padding: 0; list-style: none; }
+.ak__qs li { display: grid; gap: 0.3rem; }
+.ak__q { margin: 0; font: italic 400 15.5px/1.45 var(--f-voice); color: var(--ink); overflow-wrap: anywhere; }
+.ak__voices { display: grid; gap: var(--s-3); }
+.ak__voice { margin: 0; display: grid; gap: 0.3rem; padding-top: var(--s-3); border-top: var(--hair) solid var(--leaf-rule); }
+.ak__voice blockquote { margin: 0; font: italic 400 15px/1.45 var(--f-voice); color: var(--ink-2); overflow-wrap: anywhere; }
+
+/* --- the moments that do not add up --------------------------------------- */
+
+.omx { display: flex; flex-direction: column; gap: var(--s-4); }
+.omx__head { display: grid; gap: 0.35rem; max-width: 76ch; }
+.omx__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--s-5); align-items: start; }
+.om { display: flex; flex-direction: column; gap: 0.55rem; min-width: 0; }
+/* The frames give up height first on a short window: at a true 1512x830 the
+   three cards ran 24px past their page at a fixed 11.5rem. */
+.om__frame { position: relative; aspect-ratio: 16 / 9; max-height: min(11.5rem, 19svh); background: var(--screen); overflow: hidden; }
+.om__frame img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.om__none { position: absolute; inset: 0; display: grid; place-items: center; font: 500 12px/1.3 var(--f-inst); color: var(--ink-2); }
+.om__when { display: flex; align-items: baseline; justify-content: space-between; gap: var(--s-3); margin: 0; }
+.om__when .t-time { font-size: 15px; font-weight: 600; color: var(--ink); }
+.om__c { font: 500 12px/1.2 var(--f-inst); color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.om__c.is-flagged { color: var(--tear); }
+.om__said { margin: 0; font: italic 400 14.5px/1.42 var(--f-voice); color: var(--ink); overflow-wrap: anywhere; }
+.om__reads { display: grid; grid-template-columns: 1fr 1fr; gap: 2px 0.9rem; margin: 0; padding: 0; list-style: none; }
+.om__reads li { display: flex; justify-content: space-between; gap: 0.5rem; font: 400 12px/1.5 var(--f-inst); }
+.om__ch { color: var(--ink-3); }
+.om__v { color: var(--ink); }
+.om__reads li[data-v="none"] .om__v { color: var(--ink-3); font-style: italic; }
+.om__note { margin: 0; font: 400 13px/1.45 var(--f-inst); color: var(--ink); }
+.om .cx-btn { align-self: flex-start; }
+
+/* --- trust ----------------------------------------------------------------- */
+
+.tr, .sg { display: flex; flex-direction: column; gap: clamp(0.75rem, 1.4svh, 1rem); }
+.tr__level { display: flex; align-items: center; gap: var(--s-3); }
+.tr__word { margin: 0; font: 400 clamp(1.6rem, 2.2vw, 2.1rem)/1.05 var(--f-voice); color: var(--ink); }
+.tr__checks { width: 100%; border-collapse: collapse; }
+.tr__checks th, .tr__checks td {
+  padding: 0.5rem 0.75rem 0.5rem 0;
+  border-bottom: var(--hair) solid var(--leaf-rule);
+  text-align: left;
+  font: 400 13px/1.35 var(--f-inst);
+  color: var(--ink);
+  vertical-align: baseline;
+}
+.tr__checks thead th { font: 500 11.5px/1.2 var(--f-inst); color: var(--ink-3); }
+.tr__checks td { color: var(--ink-2); }
+.tr__checks .t-read { color: var(--ink); font-size: 14px; }
+.tr__res { text-align: right; white-space: nowrap; }
+.tr__checks tr[data-pass="yes"] .tr__res { color: var(--ink); }
+.tr__checks tr[data-pass="no"] .tr__res { color: var(--tear); font-weight: 600; }
+.tr__ceiling { display: grid; gap: 0.35rem; padding-top: var(--s-3); border-top: var(--hair) solid var(--leaf-rule); }
+
+.sg__sum { margin: 0; font: 400 15px/1.4 var(--f-inst); color: var(--ink-2); }
+.sg__sum .t-read { font-size: 2rem; color: var(--ink); margin-right: 0.35rem; }
+.sg__list { display: grid; gap: 0; margin: 0; padding: 0; list-style: none; }
+.sg__row {
+  display: grid;
+  grid-template-columns: 1.4rem minmax(0, 1fr);
+  gap: var(--s-3);
+  padding: clamp(0.4rem, 0.8svh, 0.6rem) 0;
+  border-top: var(--hair) solid var(--leaf-rule);
+}
+.sg__mark { width: 12px; height: 12px; margin-top: 0.3rem; border-radius: 50%; border: 1.5px solid var(--ink-3); }
+.sg__row[data-state="present"] .sg__mark { background: var(--ink); border-color: var(--ink); }
+.sg__row[data-state="not_checked"] .sg__mark { border-style: dashed; }
+.sg__body { display: grid; gap: 0.2rem; min-width: 0; }
+.sg__name { margin: 0; font: 500 14px/1.35 var(--f-inst); color: var(--ink); }
+.sg__kind { margin-left: 0.35rem; font: 500 11.5px/1 var(--f-inst); color: var(--ink-3); }
+.sg__state { margin: 0; font: 500 12px/1.3 var(--f-inst); color: var(--ink-2); }
+.sg__row[data-state="present"] .sg__state { color: var(--ink); }
+.sg__ev { margin: 0; font: 400 12.5px/1.45 var(--f-inst); color: var(--ink-2); overflow-wrap: anywhere; }
+.sg__disc { margin: 0; font: italic 400 14px/1.45 var(--f-voice); color: var(--ink-2); }
+
+@media (prefers-reduced-motion: reduce) {
+  .ev, .lvl { transition: none; }
+}
+
+/* On a phone the tone line is drawn at a third of its size, and its labels
+   with it; the numbered list under the chart says the same, so the chart keeps
+   its points and its time axis, set large enough to read. */
+@media (max-width: 720px) {
+  .ta__lab, .ta__stem, .ta__axis { display: none; }
+  .ta__time { font-size: 30px; }
+  /* The tug's 520-unit drawing is about 300px wide on a phone, so its 11.5-unit
+     labels were drawn at 7px (verify_ui.py check 19, 25 Sep 2026; R8). In
+     drawing units, so this is about 10.5px on screen. */
+  .tug__end, .tug__lab { font-size: 18px; }
+}
+
+/* One page at a time below 1100px: the three moments stack. */
+@media (max-width: 1099.98px) {
+  .omx__grid { grid-template-columns: minmax(0, 1fr); }
+  .tb__row, .db__row { grid-template-columns: 6.5rem minmax(0, 1fr) 3.2rem; }
+  .db__row { grid-template-columns: 6.5rem minmax(0, 1fr); }
+  .db__note { grid-column: 2; }
+  .th__row { grid-template-columns: 6.5rem minmax(0, 1fr) minmax(0, 1fr); }
+  .th__neu { grid-column: 2 / -1; padding-left: 0; }
+  .tl .tt__key { padding-left: calc(6.5rem + 2px); padding-right: 0; }
+}

@@ -1,0 +1,27 @@
+{
+ "uid": "q0aFOxT6TNw_64",
+ "system": "text_only_llm_anchored",
+ "video_id": "q0aFOxT6TNw",
+ "segment_id": 64,
+ "split": "selection",
+ "payload": {
+  "segment_id": 64,
+  "start_s": 366.84,
+  "end_s": 373.0,
+  "transcript": "And Corning's Ceramic Shield 2, in case you haven't already heard, is also clearly awesome for preventing scratches to the front glass."
+ },
+ "seconds": 3.769,
+ "raw": "{\n  \"segment_id\": 64,\n  \"conflict_score\": 0.75,\n  \"channels_in_conflict\": [],\n  \"flags\": [\"PROMOTIONAL_LANGUAGE\"],\n  \"narrative\": \"The use of superlatives ('clearly awesome') and the phrase 'in case you haven't already heard' suggests that the creator is using promotional language, which may not be entirely sincere.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 64,
+  "start_s": 366.84,
+  "end_s": 373.0,
+  "conflict_score": 0.75,
+  "conflict_reasons": [
+   "PROMOTIONAL_LANGUAGE"
+  ],
+  "flagged": true
+ }
+}

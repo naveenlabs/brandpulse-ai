@@ -1,0 +1,1583 @@
+{
+ "generated": "2026-08-31T13:09:32+00:00",
+ "base_model": "cardiffnlp/twitter-xlm-roberta-base-sentiment",
+ "hyperparameters": {
+  "epochs": 6,
+  "lr": 5e-06,
+  "batch_size": 8,
+  "max_len": 64,
+  "val_frac": 0.2,
+  "seed": 42,
+  "device": "cpu"
+ },
+ "data": {
+  "train": 320,
+  "val": 80,
+  "test": 199,
+  "train_speakers": [
+   "Marques Brownlee",
+   "Mrwhosetheboss"
+  ],
+  "test_speakers": [
+   "Dave2D",
+   "Jeremy Fragrance",
+   "ShortCircuit",
+   "The Tech Chap"
+  ],
+  "holdout_use_count": 2
+ },
+ "best_epoch": 4,
+ "history": [
+  {
+   "epoch": 0,
+   "val_macro_f1": 0.5753596980894725,
+   "train_loss": null
+  },
+  {
+   "epoch": 1,
+   "val_macro_f1": 0.6025194473470336,
+   "val_acc": 0.6,
+   "val_neutral_recall": 0.6129032258064516,
+   "train_loss": 0.8281882055103779
+  },
+  {
+   "epoch": 2,
+   "val_macro_f1": 0.5752097970335677,
+   "val_acc": 0.575,
+   "val_neutral_recall": 0.5483870967741935,
+   "train_loss": 0.7324795633554458
+  },
+  {
+   "epoch": 3,
+   "val_macro_f1": 0.5965367965367966,
+   "val_acc": 0.6,
+   "val_neutral_recall": 0.6774193548387096,
+   "train_loss": 0.6055973384529352
+  },
+  {
+   "epoch": 4,
+   "val_macro_f1": 0.6230585424133811,
+   "val_acc": 0.625,
+   "val_neutral_recall": 0.5806451612903226,
+   "train_loss": 0.52184435762465
+  },
+  {
+   "epoch": 5,
+   "val_macro_f1": 0.6230585424133811,
+   "val_acc": 0.625,
+   "val_neutral_recall": 0.5806451612903226,
+   "train_loss": 0.44775162264704704
+  },
+  {
+   "epoch": 6,
+   "val_macro_f1": 0.6230585424133811,
+   "val_acc": 0.625,
+   "val_neutral_recall": 0.5806451612903226,
+   "train_loss": 0.43835205510258674
+  }
+ ],
+ "base_test": {
+  "n": 199,
+  "accuracy": 0.678391959798995,
+  "accuracy_ci95": [
+   0.6106438719620402,
+   0.7393829469942292
+  ],
+  "macro_f1": 0.6624797460928068,
+  "neutral_recall": 0.7395833333333334,
+  "neutral_predicted": 102,
+  "per_class": {
+   "POSITIVE": {
+    "precision": 0.7755102040816326,
+    "recall": 0.59375,
+    "f1": 0.672566371681416,
+    "support": 64,
+    "predicted": 49
+   },
+   "NEUTRAL": {
+    "precision": 0.696078431372549,
+    "recall": 0.7395833333333334,
+    "f1": 0.7171717171717172,
+    "support": 96,
+    "predicted": 102
+   },
+   "NEGATIVE": {
+    "precision": 0.5416666666666666,
+    "recall": 0.6666666666666666,
+    "f1": 0.5977011494252873,
+    "support": 39,
+    "predicted": 48
+   }
+  },
+  "confusion": {
+   "POSITIVE": {
+    "POSITIVE": 38,
+    "NEUTRAL": 19,
+    "NEGATIVE": 7
+   },
+   "NEUTRAL": {
+    "POSITIVE": 10,
+    "NEUTRAL": 71,
+    "NEGATIVE": 15
+   },
+   "NEGATIVE": {
+    "POSITIVE": 1,
+    "NEUTRAL": 12,
+    "NEGATIVE": 26
+   }
+  }
+ },
+ "finetuned_test": {
+  "n": 199,
+  "accuracy": 0.6532663316582915,
+  "accuracy_ci95": [
+   0.5848024504061005,
+   0.7159248165844974
+  ],
+  "macro_f1": 0.6416840905390001,
+  "neutral_recall": 0.65625,
+  "neutral_predicted": 88,
+  "per_class": {
+   "POSITIVE": {
+    "precision": 0.6721311475409836,
+    "recall": 0.640625,
+    "f1": 0.6559999999999999,
+    "support": 64,
+    "predicted": 61
+   },
+   "NEUTRAL": {
+    "precision": 0.7159090909090909,
+    "recall": 0.65625,
+    "f1": 0.6847826086956522,
+    "support": 96,
+    "predicted": 88
+   },
+   "NEGATIVE": {
+    "precision": 0.52,
+    "recall": 0.6666666666666666,
+    "f1": 0.5842696629213484,
+    "support": 39,
+    "predicted": 50
+   }
+  },
+  "confusion": {
+   "POSITIVE": {
+    "POSITIVE": 41,
+    "NEUTRAL": 15,
+    "NEGATIVE": 8
+   },
+   "NEUTRAL": {
+    "POSITIVE": 17,
+    "NEUTRAL": 63,
+    "NEGATIVE": 16
+   },
+   "NEGATIVE": {
+    "POSITIVE": 3,
+    "NEUTRAL": 10,
+    "NEGATIVE": 26
+   }
+  }
+ },
+ "mcnemar_ft_vs_base": {
+  "b": 6,
+  "c": 11,
+  "n_discordant": 17,
+  "p_value": 0.332305908203125,
+  "min_attainable_p": 1.52587890625e-05
+ },
+ "test_predictions": [
+  {
+   "segment_uid": "Kk-RKpTAXmA:118",
+   "channel": "ShortCircuit",
+   "gold": "NEGATIVE",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:102",
+   "channel": "ShortCircuit",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:76",
+   "channel": "The Tech Chap",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:16",
+   "channel": "Jeremy Fragrance",
+   "gold": "NEGATIVE",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:14",
+   "channel": "The Tech Chap",
+   "gold": "POSITIVE",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:3",
+   "channel": "ShortCircuit",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:40",
+   "channel": "ShortCircuit",
+   "gold": "NEUTRAL",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:2",
+   "channel": "The Tech Chap",
+   "gold": "POSITIVE",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:95",
+   "channel": "ShortCircuit",
+   "gold": "POSITIVE",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:61",
+   "channel": "The Tech Chap",
+   "gold": "NEGATIVE",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:37",
+   "channel": "Jeremy Fragrance",
+   "gold": "NEUTRAL",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:9",
+   "channel": "Dave2D",
+   "gold": "NEGATIVE",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:35",
+   "channel": "ShortCircuit",
+   "gold": "NEGATIVE",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:51",
+   "channel": "Dave2D",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:143",
+   "channel": "The Tech Chap",
+   "gold": "POSITIVE",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:10",
+   "channel": "Jeremy Fragrance",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:143",
+   "channel": "ShortCircuit",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:0",
+   "channel": "Dave2D",
+   "gold": "POSITIVE",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:159",
+   "channel": "ShortCircuit",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:20",
+   "channel": "The Tech Chap",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:17",
+   "channel": "Jeremy Fragrance",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:69",
+   "channel": "Dave2D",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:130",
+   "channel": "The Tech Chap",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:13",
+   "channel": "Jeremy Fragrance",
+   "gold": "POSITIVE",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:40",
+   "channel": "The Tech Chap",
+   "gold": "NEUTRAL",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:34",
+   "channel": "Jeremy Fragrance",
+   "gold": "POSITIVE",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:26",
+   "channel": "Jeremy Fragrance",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:60",
+   "channel": "The Tech Chap",
+   "gold": "NEGATIVE",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:114",
+   "channel": "ShortCircuit",
+   "gold": "NEUTRAL",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:27",
+   "channel": "The Tech Chap",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:39",
+   "channel": "Jeremy Fragrance",
+   "gold": "NEUTRAL",
+   "base": "NEGATIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:99",
+   "channel": "ShortCircuit",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:65",
+   "channel": "Dave2D",
+   "gold": "POSITIVE",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:17",
+   "channel": "The Tech Chap",
+   "gold": "NEGATIVE",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:2",
+   "channel": "Jeremy Fragrance",
+   "gold": "POSITIVE",
+   "base": "NEUTRAL",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:62",
+   "channel": "Dave2D",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:97",
+   "channel": "ShortCircuit",
+   "gold": "NEGATIVE",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:63",
+   "channel": "ShortCircuit",
+   "gold": "POSITIVE",
+   "base": "NEUTRAL",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:32",
+   "channel": "Jeremy Fragrance",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:8",
+   "channel": "Dave2D",
+   "gold": "NEGATIVE",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:52",
+   "channel": "The Tech Chap",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:44",
+   "channel": "Jeremy Fragrance",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:45",
+   "channel": "Jeremy Fragrance",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:149",
+   "channel": "The Tech Chap",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:30",
+   "channel": "The Tech Chap",
+   "gold": "POSITIVE",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:46",
+   "channel": "Dave2D",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:19",
+   "channel": "ShortCircuit",
+   "gold": "POSITIVE",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:20",
+   "channel": "Dave2D",
+   "gold": "NEGATIVE",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:48",
+   "channel": "ShortCircuit",
+   "gold": "POSITIVE",
+   "base": "NEUTRAL",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:67",
+   "channel": "The Tech Chap",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:11",
+   "channel": "Jeremy Fragrance",
+   "gold": "POSITIVE",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:23",
+   "channel": "ShortCircuit",
+   "gold": "POSITIVE",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:7",
+   "channel": "Jeremy Fragrance",
+   "gold": "NEGATIVE",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:133",
+   "channel": "The Tech Chap",
+   "gold": "NEUTRAL",
+   "base": "NEGATIVE",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:14",
+   "channel": "Dave2D",
+   "gold": "POSITIVE",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:28",
+   "channel": "Dave2D",
+   "gold": "NEGATIVE",
+   "base": "NEGATIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:29",
+   "channel": "Jeremy Fragrance",
+   "gold": "NEUTRAL",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:137",
+   "channel": "ShortCircuit",
+   "gold": "POSITIVE",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:47",
+   "channel": "Jeremy Fragrance",
+   "gold": "POSITIVE",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:29",
+   "channel": "Dave2D",
+   "gold": "NEGATIVE",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:37",
+   "channel": "Dave2D",
+   "gold": "POSITIVE",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:31",
+   "channel": "Dave2D",
+   "gold": "NEGATIVE",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:23",
+   "channel": "Dave2D",
+   "gold": "NEGATIVE",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:165",
+   "channel": "ShortCircuit",
+   "gold": "POSITIVE",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:35",
+   "channel": "Jeremy Fragrance",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:128",
+   "channel": "The Tech Chap",
+   "gold": "NEGATIVE",
+   "base": "NEUTRAL",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:144",
+   "channel": "The Tech Chap",
+   "gold": "POSITIVE",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:31",
+   "channel": "Jeremy Fragrance",
+   "gold": "NEGATIVE",
+   "base": "NEGATIVE",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:73",
+   "channel": "Dave2D",
+   "gold": "NEGATIVE",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:33",
+   "channel": "Dave2D",
+   "gold": "POSITIVE",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:68",
+   "channel": "The Tech Chap",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:49",
+   "channel": "Dave2D",
+   "gold": "NEGATIVE",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:121",
+   "channel": "The Tech Chap",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:12",
+   "channel": "Jeremy Fragrance",
+   "gold": "POSITIVE",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:1",
+   "channel": "Jeremy Fragrance",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:155",
+   "channel": "The Tech Chap",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:157",
+   "channel": "The Tech Chap",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:30",
+   "channel": "Dave2D",
+   "gold": "NEGATIVE",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:15",
+   "channel": "Dave2D",
+   "gold": "NEUTRAL",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:71",
+   "channel": "ShortCircuit",
+   "gold": "POSITIVE",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:11",
+   "channel": "Dave2D",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:54",
+   "channel": "ShortCircuit",
+   "gold": "NEUTRAL",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:8",
+   "channel": "The Tech Chap",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:10",
+   "channel": "The Tech Chap",
+   "gold": "POSITIVE",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:8",
+   "channel": "Jeremy Fragrance",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:37",
+   "channel": "ShortCircuit",
+   "gold": "POSITIVE",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:35",
+   "channel": "Dave2D",
+   "gold": "POSITIVE",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:4",
+   "channel": "Jeremy Fragrance",
+   "gold": "NEUTRAL",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:10",
+   "channel": "Dave2D",
+   "gold": "NEGATIVE",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:70",
+   "channel": "Dave2D",
+   "gold": "POSITIVE",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:22",
+   "channel": "Jeremy Fragrance",
+   "gold": "POSITIVE",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:30",
+   "channel": "Jeremy Fragrance",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:73",
+   "channel": "ShortCircuit",
+   "gold": "POSITIVE",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:48",
+   "channel": "Jeremy Fragrance",
+   "gold": "POSITIVE",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:94",
+   "channel": "ShortCircuit",
+   "gold": "POSITIVE",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:145",
+   "channel": "The Tech Chap",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:53",
+   "channel": "Dave2D",
+   "gold": "NEGATIVE",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:56",
+   "channel": "Dave2D",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:27",
+   "channel": "Jeremy Fragrance",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:18",
+   "channel": "Dave2D",
+   "gold": "NEGATIVE",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:7",
+   "channel": "Dave2D",
+   "gold": "POSITIVE",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:7",
+   "channel": "ShortCircuit",
+   "gold": "POSITIVE",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:24",
+   "channel": "Jeremy Fragrance",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:80",
+   "channel": "The Tech Chap",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:104",
+   "channel": "ShortCircuit",
+   "gold": "POSITIVE",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:76",
+   "channel": "Dave2D",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:138",
+   "channel": "ShortCircuit",
+   "gold": "POSITIVE",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:12",
+   "channel": "The Tech Chap",
+   "gold": "NEGATIVE",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:24",
+   "channel": "Dave2D",
+   "gold": "NEGATIVE",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:25",
+   "channel": "Jeremy Fragrance",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:44",
+   "channel": "Dave2D",
+   "gold": "NEGATIVE",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:124",
+   "channel": "ShortCircuit",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:112",
+   "channel": "The Tech Chap",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:48",
+   "channel": "Dave2D",
+   "gold": "NEGATIVE",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:47",
+   "channel": "Dave2D",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:60",
+   "channel": "ShortCircuit",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:32",
+   "channel": "Dave2D",
+   "gold": "NEUTRAL",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:129",
+   "channel": "ShortCircuit",
+   "gold": "POSITIVE",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:131",
+   "channel": "The Tech Chap",
+   "gold": "POSITIVE",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:54",
+   "channel": "Dave2D",
+   "gold": "NEGATIVE",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:42",
+   "channel": "Jeremy Fragrance",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:27",
+   "channel": "ShortCircuit",
+   "gold": "POSITIVE",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:101",
+   "channel": "The Tech Chap",
+   "gold": "POSITIVE",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:18",
+   "channel": "Jeremy Fragrance",
+   "gold": "NEGATIVE",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:113",
+   "channel": "ShortCircuit",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:59",
+   "channel": "Dave2D",
+   "gold": "NEGATIVE",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:60",
+   "channel": "Dave2D",
+   "gold": "NEGATIVE",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:46",
+   "channel": "Jeremy Fragrance",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:152",
+   "channel": "The Tech Chap",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:166",
+   "channel": "ShortCircuit",
+   "gold": "POSITIVE",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:123",
+   "channel": "ShortCircuit",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:6",
+   "channel": "Jeremy Fragrance",
+   "gold": "NEGATIVE",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:103",
+   "channel": "The Tech Chap",
+   "gold": "POSITIVE",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:117",
+   "channel": "The Tech Chap",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:12",
+   "channel": "ShortCircuit",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:55",
+   "channel": "Dave2D",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:66",
+   "channel": "The Tech Chap",
+   "gold": "NEUTRAL",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:86",
+   "channel": "ShortCircuit",
+   "gold": "NEGATIVE",
+   "base": "NEUTRAL",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:28",
+   "channel": "Jeremy Fragrance",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:21",
+   "channel": "Jeremy Fragrance",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:58",
+   "channel": "Dave2D",
+   "gold": "POSITIVE",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:33",
+   "channel": "The Tech Chap",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:46",
+   "channel": "ShortCircuit",
+   "gold": "POSITIVE",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:57",
+   "channel": "Dave2D",
+   "gold": "NEUTRAL",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:6",
+   "channel": "Dave2D",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:42",
+   "channel": "ShortCircuit",
+   "gold": "NEGATIVE",
+   "base": "NEUTRAL",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:23",
+   "channel": "Jeremy Fragrance",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:163",
+   "channel": "ShortCircuit",
+   "gold": "POSITIVE",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:19",
+   "channel": "Jeremy Fragrance",
+   "gold": "NEGATIVE",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:15",
+   "channel": "Jeremy Fragrance",
+   "gold": "NEUTRAL",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:166",
+   "channel": "The Tech Chap",
+   "gold": "NEUTRAL",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:20",
+   "channel": "Jeremy Fragrance",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:79",
+   "channel": "Dave2D",
+   "gold": "NEUTRAL",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:107",
+   "channel": "The Tech Chap",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:41",
+   "channel": "Dave2D",
+   "gold": "NEUTRAL",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:122",
+   "channel": "The Tech Chap",
+   "gold": "POSITIVE",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:44",
+   "channel": "The Tech Chap",
+   "gold": "NEUTRAL",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:74",
+   "channel": "ShortCircuit",
+   "gold": "POSITIVE",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:69",
+   "channel": "ShortCircuit",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:5",
+   "channel": "Jeremy Fragrance",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:47",
+   "channel": "The Tech Chap",
+   "gold": "POSITIVE",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:27",
+   "channel": "Dave2D",
+   "gold": "NEGATIVE",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:39",
+   "channel": "ShortCircuit",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:64",
+   "channel": "The Tech Chap",
+   "gold": "NEUTRAL",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:63",
+   "channel": "The Tech Chap",
+   "gold": "POSITIVE",
+   "base": "NEUTRAL",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:5",
+   "channel": "Dave2D",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:64",
+   "channel": "Dave2D",
+   "gold": "POSITIVE",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:108",
+   "channel": "ShortCircuit",
+   "gold": "NEUTRAL",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:3",
+   "channel": "Jeremy Fragrance",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:116",
+   "channel": "ShortCircuit",
+   "gold": "POSITIVE",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:119",
+   "channel": "The Tech Chap",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:139",
+   "channel": "The Tech Chap",
+   "gold": "POSITIVE",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:18",
+   "channel": "The Tech Chap",
+   "gold": "POSITIVE",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:25",
+   "channel": "ShortCircuit",
+   "gold": "POSITIVE",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:14",
+   "channel": "Jeremy Fragrance",
+   "gold": "NEGATIVE",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:9",
+   "channel": "Jeremy Fragrance",
+   "gold": "POSITIVE",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:38",
+   "channel": "Jeremy Fragrance",
+   "gold": "NEUTRAL",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:16",
+   "channel": "The Tech Chap",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:63",
+   "channel": "Dave2D",
+   "gold": "POSITIVE",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:41",
+   "channel": "Jeremy Fragrance",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:145",
+   "channel": "ShortCircuit",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:39",
+   "channel": "Dave2D",
+   "gold": "NEUTRAL",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:43",
+   "channel": "Jeremy Fragrance",
+   "gold": "POSITIVE",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:135",
+   "channel": "The Tech Chap",
+   "gold": "POSITIVE",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:40",
+   "channel": "Jeremy Fragrance",
+   "gold": "NEUTRAL",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:33",
+   "channel": "Jeremy Fragrance",
+   "gold": "NEGATIVE",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:3",
+   "channel": "Dave2D",
+   "gold": "POSITIVE",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:25",
+   "channel": "The Tech Chap",
+   "gold": "POSITIVE",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:36",
+   "channel": "Jeremy Fragrance",
+   "gold": "NEUTRAL",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "haWvrSliMVY:0",
+   "channel": "Jeremy Fragrance",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "vOhuf18b-g8:25",
+   "channel": "Dave2D",
+   "gold": "NEGATIVE",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:142",
+   "channel": "The Tech Chap",
+   "gold": "POSITIVE",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "Rlw_CI7pOKg:161",
+   "channel": "The Tech Chap",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:15",
+   "channel": "ShortCircuit",
+   "gold": "POSITIVE",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:142",
+   "channel": "ShortCircuit",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:0",
+   "channel": "ShortCircuit",
+   "gold": "NEUTRAL",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:67",
+   "channel": "ShortCircuit",
+   "gold": "POSITIVE",
+   "base": "POSITIVE",
+   "finetuned": "POSITIVE"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:49",
+   "channel": "ShortCircuit",
+   "gold": "POSITIVE",
+   "base": "NEUTRAL",
+   "finetuned": "NEUTRAL"
+  },
+  {
+   "segment_uid": "Kk-RKpTAXmA:140",
+   "channel": "ShortCircuit",
+   "gold": "NEUTRAL",
+   "base": "NEGATIVE",
+   "finetuned": "NEGATIVE"
+  }
+ ]
+}

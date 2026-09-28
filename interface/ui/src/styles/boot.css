@@ -1,0 +1,79 @@
+/*
+   boot.css — the second screen.
+
+   Like the gate, this sets its own values rather than reading the display
+   tokens: it is a cathode-ray tube in a dark room, and neither display has an
+   opinion about that. It is also the only green in the interface, which is the
+   point -- phosphor green belongs to the machine starting up, not to the
+   product's palette, and it never appears again.
+*/
+
+html.booting,
+html.booting body {
+  overflow: hidden;
+}
+
+.boot {
+  position: fixed;
+  inset: 0;
+  /* Below the gate on purpose: it is mounted while the water is still fading,
+     so the water dissolves onto it. Above everything else. */
+  z-index: 190;
+  background: #03100a;
+  opacity: 1;
+  transition: opacity var(--t-slow) var(--ease-out);
+}
+
+.boot.is-going {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.boot__canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .boot {
+    transition-duration: 1ms !important;
+  }
+}
+
+@media print {
+  .boot {
+    display: none !important;
+  }
+
+  html.booting,
+  html.booting body {
+    overflow: visible;
+  }
+}
+
+/* Continue (boot.js). Shown to keyboard focus only; a pointer reader clicks
+   anywhere on the screen, as they always could. In the tube's own colours. */
+.boot__go {
+  position: absolute;
+  z-index: 2;
+  right: max(24px, env(safe-area-inset-right));
+  bottom: max(24px, env(safe-area-inset-bottom));
+  min-height: 44px;
+  padding: 0 18px;
+  font: 600 14px/1 ui-monospace, "SF Mono", Menlo, monospace;
+  letter-spacing: 0.08em;
+  color: #8df0b4;
+  background: #03100a;
+  border: 1px solid #4f9a76;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0;
+}
+.boot__go:focus-visible {
+  opacity: 1;
+  outline: 2px solid #8df0b4;
+  outline-offset: 3px;
+}

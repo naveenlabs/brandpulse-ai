@@ -1,0 +1,440 @@
+{
+ "grid_000": {
+  "probe_id": "grid_000",
+  "raw": {
+   "segment_id": 0,
+   "conflict_score": 0.0,
+   "channels_in_conflict": [],
+   "flags": [],
+   "narrative": "All channels align in expressing a positive sentiment. The transcript, vocal emotion, facial emotion, and comment sentiment all indicate a positive valence. There is no conflict as all channels concur."
+  },
+  "parsed": true,
+  "conflict_score": 0.0,
+  "channels": [],
+  "flags": [],
+  "narrative": "All channels align in expressing a positive sentiment. The transcript, vocal emotion, facial emotion, and comment sentiment all indicate a positive valence. There is no conflict as all channels concur.",
+  "latency_s": 16.0788,
+  "error": null
+ },
+ "grid_001": {
+  "probe_id": "grid_001",
+  "raw": {
+   "segment_id": 1,
+   "conflict_score": 0.3,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion"
+   ],
+   "flags": [],
+   "narrative": "The transcript, vocal emotion, and facial emotion channels all report a positive sentiment, while the comment sentiment remains neutral. This disagreement suggests that the creator's words and facial expressions convey enthusiasm, but the audience's response is unemotional or indifferent."
+  },
+  "parsed": true,
+  "conflict_score": 0.3,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion"
+  ],
+  "flags": [],
+  "narrative": "The transcript, vocal emotion, and facial emotion channels all report a positive sentiment, while the comment sentiment remains neutral. This disagreement suggests that the creator's words and facial expressions convey enthusiasm, but the audience's response is unemotional or indifferent.",
+  "latency_s": 7.669,
+  "error": null
+ },
+ "grid_002": {
+  "probe_id": "grid_002",
+  "raw": {
+   "segment_id": 2,
+   "conflict_score": 0.75,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "The creator's transcript, vocal tone, and facial expression all indicate a positive sentiment, while the audience's comments express a negative sentiment. This disagreement suggests a potential disconnect between the creator's intended message and the audience's perception."
+  },
+  "parsed": true,
+  "conflict_score": 0.75,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "The creator's transcript, vocal tone, and facial expression all indicate a positive sentiment, while the audience's comments express a negative sentiment. This disagreement suggests a potential disconnect between the creator's intended message and the audience's perception.",
+  "latency_s": 7.9123,
+  "error": null
+ },
+ "grid_003": {
+  "probe_id": "grid_003",
+  "raw": {
+   "segment_id": 3,
+   "conflict_score": 0.0,
+   "channels_in_conflict": [],
+   "flags": [],
+   "narrative": "All channels align in their sentiment, indicating no conflict. The transcript, vocal emotion, facial emotion, and comment sentiment all express a positive valence."
+  },
+  "parsed": true,
+  "conflict_score": 0.0,
+  "channels": [],
+  "flags": [],
+  "narrative": "All channels align in their sentiment, indicating no conflict. The transcript, vocal emotion, facial emotion, and comment sentiment all express a positive valence.",
+  "latency_s": 5.7654,
+  "error": null
+ },
+ "grid_004": {
+  "probe_id": "grid_004",
+  "raw": {
+   "segment_id": 4,
+   "conflict_score": 0.3,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion"
+   ],
+   "flags": [],
+   "narrative": "The transcript and facial emotion channels express a positive sentiment, while the vocal emotion channel indicates a positive arousal, albeit with low reliability. The video comments remain neutral. The disagreement between the transcript and facial emotion channels suggests a potential mismatch between verbal and visual cues, indicating a possible emphasis on features rather than overall sentiment."
+  },
+  "parsed": true,
+  "conflict_score": 0.3,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion"
+  ],
+  "flags": [],
+  "narrative": "The transcript and facial emotion channels express a positive sentiment, while the vocal emotion channel indicates a positive arousal, albeit with low reliability. The video comments remain neutral. The disagreement between the transcript and facial emotion channels suggests a potential mismatch between verbal and visual cues, indicating a possible emphasis on features rather than overall sentiment.",
+  "latency_s": 8.5806,
+  "error": null
+ },
+ "grid_005": {
+  "probe_id": "grid_005",
+  "raw": {
+   "segment_id": 5,
+   "conflict_score": 0.75,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "The creator's transcript and facial emotion indicate a positive sentiment, while the audience's comment sentiment is negative, suggesting a discrepancy between the creator's intended tone and the audience's perception. The vocal channel, though weak evidence, also indicates positivity, but its low reliability suggests it may not be a reliable indicator in this case."
+  },
+  "parsed": true,
+  "conflict_score": 0.75,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "The creator's transcript and facial emotion indicate a positive sentiment, while the audience's comment sentiment is negative, suggesting a discrepancy between the creator's intended tone and the audience's perception. The vocal channel, though weak evidence, also indicates positivity, but its low reliability suggests it may not be a reliable indicator in this case.",
+  "latency_s": 7.6229,
+  "error": null
+ },
+ "grid_006": {
+  "probe_id": "grid_006",
+  "raw": {
+   "segment_id": 6,
+   "conflict_score": 0.75,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "The creator's transcript and comments express a positive sentiment, but the facial emotion indicates sadness, conflicting with the positive sentiment. The vocal prosody, though weak evidence, also suggests positivity, but the facial emotion and written comments disagree, leading to a moderate conflict score."
+  },
+  "parsed": true,
+  "conflict_score": 0.75,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "The creator's transcript and comments express a positive sentiment, but the facial emotion indicates sadness, conflicting with the positive sentiment. The vocal prosody, though weak evidence, also suggests positivity, but the facial emotion and written comments disagree, leading to a moderate conflict score.",
+  "latency_s": 6.4982,
+  "error": null
+ },
+ "grid_007": {
+  "probe_id": "grid_007",
+  "raw": {
+   "segment_id": 7,
+   "conflict_score": 0.75,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion"
+   ],
+   "flags": [],
+   "narrative": "The creator's transcript and facial emotion channels disagree, with the transcript expressing a positive sentiment and the facial emotion indicating sadness. This discrepancy suggests a potential mismatch between the creator's intended tone and their actual emotional expression."
+  },
+  "parsed": true,
+  "conflict_score": 0.75,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion"
+  ],
+  "flags": [],
+  "narrative": "The creator's transcript and facial emotion channels disagree, with the transcript expressing a positive sentiment and the facial emotion indicating sadness. This discrepancy suggests a potential mismatch between the creator's intended tone and their actual emotional expression.",
+  "latency_s": 5.7433,
+  "error": null
+ },
+ "grid_008": {
+  "probe_id": "grid_008",
+  "raw": {
+   "segment_id": 8,
+   "conflict_score": 0.8,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "The creator's transcript and comments express a positive sentiment, while the facial emotion and audience comments indicate a negative sentiment. This discrepancy suggests a potential disconnect between the creator's intended message and the audience's perception."
+  },
+  "parsed": true,
+  "conflict_score": 0.8,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "The creator's transcript and comments express a positive sentiment, while the facial emotion and audience comments indicate a negative sentiment. This discrepancy suggests a potential disconnect between the creator's intended message and the audience's perception.",
+  "latency_s": 6.5036,
+  "error": null
+ },
+ "grid_009": {
+  "probe_id": "grid_009",
+  "raw": {
+   "segment_id": 9,
+   "conflict_score": 0.0,
+   "channels_in_conflict": [],
+   "flags": [],
+   "narrative": "All channels align in their sentiment, indicating a positive sentiment towards the product description, its height, and the included cable."
+  },
+  "parsed": true,
+  "conflict_score": 0.0,
+  "channels": [],
+  "flags": [],
+  "narrative": "All channels align in their sentiment, indicating a positive sentiment towards the product description, its height, and the included cable.",
+  "latency_s": 4.6304,
+  "error": null
+ },
+ "grid_010": {
+  "probe_id": "grid_010",
+  "raw": {
+   "segment_id": 10,
+   "conflict_score": 0.6,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "The transcript and video comments express a neutral sentiment, while the vocal emotion indicates positivity. This disagreement suggests that the speaker's tone of voice does not align with the written or audience-expressed sentiment, possibly due to a lack of expressive language or emotional inflection in the speech."
+  },
+  "parsed": true,
+  "conflict_score": 0.6,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "The transcript and video comments express a neutral sentiment, while the vocal emotion indicates positivity. This disagreement suggests that the speaker's tone of voice does not align with the written or audience-expressed sentiment, possibly due to a lack of expressive language or emotional inflection in the speech.",
+  "latency_s": 8.2648,
+  "error": null
+ },
+ "grid_011": {
+  "probe_id": "grid_011",
+  "raw": {
+   "segment_id": 11,
+   "conflict_score": 0.8,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "The creator's transcript and vocal cues indicate a positive sentiment, while the audience's comments show a negative sentiment, suggesting a discrepancy between the creator's intended tone and the audience's perception."
+  },
+  "parsed": true,
+  "conflict_score": 0.8,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "The creator's transcript and vocal cues indicate a positive sentiment, while the audience's comments show a negative sentiment, suggesting a discrepancy between the creator's intended tone and the audience's perception.",
+  "latency_s": 6.4968,
+  "error": null
+ },
+ "grid_012": {
+  "probe_id": "grid_012",
+  "raw": {
+   "segment_id": 12,
+   "conflict_score": 0.0,
+   "channels_in_conflict": [],
+   "flags": [],
+   "narrative": "All channels align in their sentiment, indicating a positive sentiment towards the product description."
+  },
+  "parsed": true,
+  "conflict_score": 0.0,
+  "channels": [],
+  "flags": [],
+  "narrative": "All channels align in their sentiment, indicating a positive sentiment towards the product description.",
+  "latency_s": 3.6644,
+  "error": null
+ },
+ "grid_013": {
+  "probe_id": "grid_013",
+  "raw": {
+   "segment_id": 13,
+   "conflict_score": 0.0,
+   "channels_in_conflict": [],
+   "flags": [],
+   "narrative": "All channels align in their sentiment, with the transcript, facial emotion, and comment sentiment all expressing a positive or neutral valence. The vocal channel, despite its low reliability, also indicates a neutral arousal, further supporting the agreement among channels."
+  },
+  "parsed": true,
+  "conflict_score": 0.0,
+  "channels": [],
+  "flags": [],
+  "narrative": "All channels align in their sentiment, with the transcript, facial emotion, and comment sentiment all expressing a positive or neutral valence. The vocal channel, despite its low reliability, also indicates a neutral arousal, further supporting the agreement among channels.",
+  "latency_s": 5.352,
+  "error": null
+ },
+ "grid_014": {
+  "probe_id": "grid_014",
+  "raw": {
+   "segment_id": 14,
+   "conflict_score": 0.75,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "The creator's transcript and facial emotion channels express a positive sentiment, with the transcript conveying a positive message and the facial emotion indicating happiness. However, the audience's comment sentiment is negative, suggesting a disagreement between what the creator intends to convey and the audience's perception. This conflict is significant as it indicates a potential mismatch between the creator's intended message and the audience's interpretation."
+  },
+  "parsed": true,
+  "conflict_score": 0.75,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "The creator's transcript and facial emotion channels express a positive sentiment, with the transcript conveying a positive message and the facial emotion indicating happiness. However, the audience's comment sentiment is negative, suggesting a disagreement between what the creator intends to convey and the audience's perception. This conflict is significant as it indicates a potential mismatch between the creator's intended message and the audience's interpretation.",
+  "latency_s": 7.6011,
+  "error": null
+ },
+ "grid_015": {
+  "probe_id": "grid_015",
+  "raw": {
+   "segment_id": 15,
+   "conflict_score": 0.0,
+   "channels_in_conflict": [],
+   "flags": [],
+   "narrative": "All channels align in their sentiment, with the transcript, vocal emotion, facial emotion, and comment sentiment all expressing a positive valence. The vocal channel's low reliability does not elevate the conflict score, as there is no disagreement among the other channels."
+  },
+  "parsed": true,
+  "conflict_score": 0.0,
+  "channels": [],
+  "flags": [],
+  "narrative": "All channels align in their sentiment, with the transcript, vocal emotion, facial emotion, and comment sentiment all expressing a positive valence. The vocal channel's low reliability does not elevate the conflict score, as there is no disagreement among the other channels.",
+  "latency_s": 5.5477,
+  "error": null
+ },
+ "grid_016": {
+  "probe_id": "grid_016",
+  "raw": {
+   "segment_id": 16,
+   "conflict_score": 0.0,
+   "channels_in_conflict": [],
+   "flags": [],
+   "narrative": "All channels align in their sentiment, indicating no conflict. The transcript, vocal emotion, facial emotion, and comment sentiment all convey a neutral stance."
+  },
+  "parsed": true,
+  "conflict_score": 0.0,
+  "channels": [],
+  "flags": [],
+  "narrative": "All channels align in their sentiment, indicating no conflict. The transcript, vocal emotion, facial emotion, and comment sentiment all convey a neutral stance.",
+  "latency_s": 4.5026,
+  "error": null
+ },
+ "grid_017": {
+  "probe_id": "grid_017",
+  "raw": {
+   "segment_id": 17,
+   "conflict_score": 0.75,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "The creator's transcript and facial emotion channels express a positive sentiment, while the video comment sentiment indicates a negative response. This discrepancy suggests a potential disconnect between the creator's intended tone and the audience's perception."
+  },
+  "parsed": true,
+  "conflict_score": 0.75,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "The creator's transcript and facial emotion channels express a positive sentiment, while the video comment sentiment indicates a negative response. This discrepancy suggests a potential disconnect between the creator's intended tone and the audience's perception.",
+  "latency_s": 5.8298,
+  "error": null
+ },
+ "grid_018": {
+  "probe_id": "grid_018",
+  "raw": {
+   "segment_id": 18,
+   "conflict_score": 0.6,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion"
+   ],
+   "flags": [],
+   "narrative": "The transcript and facial emotion channels disagree, as the speaker's transcribed sentiment is positive while their facial expression indicates sadness. This discrepancy suggests a potential mismatch between the speaker's intended tone and their actual emotional display."
+  },
+  "parsed": true,
+  "conflict_score": 0.6,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion"
+  ],
+  "flags": [],
+  "narrative": "The transcript and facial emotion channels disagree, as the speaker's transcribed sentiment is positive while their facial expression indicates sadness. This discrepancy suggests a potential mismatch between the speaker's intended tone and their actual emotional display.",
+  "latency_s": 5.5798,
+  "error": null
+ },
+ "grid_019": {
+  "probe_id": "grid_019",
+  "raw": {
+   "segment_id": 19,
+   "conflict_score": 0.6,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion"
+   ],
+   "flags": [],
+   "narrative": "The transcript sentiment is positive, indicating the creator is expressing a positive sentiment about the product. However, the facial emotion channel detects sadness, suggesting a discrepancy between what is being said and the creator's actual emotional state. The vocal prosody is neutral and due to its low reliability, it does not significantly contribute to the conflict score. The audience comment sentiment is neutral, aligning with the facial emotion channel but not with the transcript sentiment."
+  },
+  "parsed": true,
+  "conflict_score": 0.6,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion"
+  ],
+  "flags": [],
+  "narrative": "The transcript sentiment is positive, indicating the creator is expressing a positive sentiment about the product. However, the facial emotion channel detects sadness, suggesting a discrepancy between what is being said and the creator's actual emotional state. The vocal prosody is neutral and due to its low reliability, it does not significantly contribute to the conflict score. The audience comment sentiment is neutral, aligning with the facial emotion channel but not with the transcript sentiment.",
+  "latency_s": 7.8256,
+  "error": null
+ }
+}

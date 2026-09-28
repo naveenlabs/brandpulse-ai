@@ -1,0 +1,35 @@
+{
+ "uid": "vOhuf18b-g8_60",
+ "system": "four_channel",
+ "video_id": "vOhuf18b-g8",
+ "segment_id": 60,
+ "split": "holdout",
+ "payload": {
+  "segment_id": 60,
+  "start_s": 355.06,
+  "end_s": 362.28000000000003,
+  "transcript": "And I just like the form factor of this a little bit more. I really like the kind of just the shape of that more stout book type feel.",
+  "transcript_sentiment": "POSITIVE (0.76)",
+  "vocal_emotion": "NEUTRAL (arousal 0.58)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "neutral (0.76)",
+  "video_comment_sentiment": "POSITIVE (0.97)"
+ },
+ "seconds": 3.998,
+ "raw": "{\n  \"segment_id\": 60,\n  \"conflict_score\": 0.5,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and facial expressions convey a positive sentiment, but their tone is neutral, indicating a discrepancy between their verbal and non-verbal cues.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 60,
+  "start_s": 355.06,
+  "end_s": 362.28000000000003,
+  "conflict_score": 0.5,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion"
+  ],
+  "flagged": false
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "uid": "i63u-iAnhuk_94",
+ "system": "four_channel",
+ "video_id": "i63u-iAnhuk",
+ "segment_id": 94,
+ "split": "selection",
+ "payload": {
+  "segment_id": 94,
+  "start_s": 441.96,
+  "end_s": 445.4,
+  "transcript": "if you did head-to-head comparisons with graphically intense games",
+  "transcript_sentiment": "NEUTRAL (0.61)",
+  "vocal_emotion": "NEUTRAL (arousal 0.44)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.97)"
+ },
+ "seconds": 4.666,
+ "raw": "{\n  \"segment_id\": 94,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"vocal_prosody\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and tone suggest neutrality, but their facial expression is undetected and their vocal tone is also neutral, which is inconsistent with the positive sentiment expressed by the audience in comments.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 94,
+  "start_s": 441.96,
+  "end_s": 445.4,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: vocal_prosody"
+  ],
+  "flagged": false
+ }
+}

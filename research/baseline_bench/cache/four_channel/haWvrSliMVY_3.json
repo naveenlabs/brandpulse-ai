@@ -1,0 +1,36 @@
+{
+ "uid": "haWvrSliMVY_3",
+ "system": "four_channel",
+ "video_id": "haWvrSliMVY",
+ "segment_id": 3,
+ "split": "holdout",
+ "payload": {
+  "segment_id": 3,
+  "start_s": 30.64,
+  "end_s": 37.760000000000005,
+  "transcript": "note but in the air it doesn't annoy people as much as some people think because when I started",
+  "transcript_sentiment": "NEGATIVE (0.59)",
+  "vocal_emotion": "NEUTRAL (arousal 0.58)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "angry (0.73)",
+  "video_comment_sentiment": "POSITIVE (0.99)"
+ },
+ "seconds": 4.526,
+ "raw": "{\n  \"segment_id\": 3,\n  \"conflict_score\": 0.8,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"video_comment_sentiment\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and facial expressions convey a negative sentiment, but the audience's comments suggest a positive sentiment, indicating a significant conflict between the creator's tone and the audience's reaction.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 3,
+  "start_s": 30.64,
+  "end_s": 37.760000000000005,
+  "conflict_score": 0.8,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: video_comment_sentiment"
+  ],
+  "flagged": true
+ }
+}

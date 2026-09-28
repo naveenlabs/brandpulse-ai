@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en" data-theme="bench">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Combined report — BrandPulse</title>
+<meta name="description" content="Five videos about one subject, combined, with the range they actually covered rather than only their average.">
+<script>
+  /* Set the display before first paint so the page never flashes the wrong
+     ground. Inlined deliberately: an external file would be a second request
+     and the flash would happen while it loaded. */
+  (function () {
+    try {
+      var saved = localStorage.getItem("brandpulse-theme");
+      if (saved === "bench" || saved === "field") {
+        document.documentElement.dataset.theme = saved; return;
+      }
+    } catch (e) {}
+    document.documentElement.dataset.theme =
+      window.matchMedia("(prefers-color-scheme: light)").matches ? "field" : "bench";
+  })();
+  /* The in-page Reduce motion switch, applied before first paint for the same
+     reason as the theme: a page that starts moving and then stops is the
+     thing the reader asked not to see. */
+  try {
+    if (localStorage.getItem("brandpulse-motion") === "off") {
+      document.documentElement.dataset.motion = "off";
+    }
+  } catch (e) {}
+  /* Read as one page (codex.js readsAsPage): set before first paint so the
+     book is never drawn as spreads and then re-flowed. */
+  if (/[?&]read=page(&|$)/.test(location.search)) {
+    document.documentElement.dataset.read = "page";
+  }
+  /* A VOLUME IS BEING CARRIED IN, SO THERE IS NO LOADING SCREEN.
+
+     The same rule as report.html: when this page is reached by opening a
+     combined volume on the shelf, the cover flying to the desk is the loading
+     state, and the boot panel would be a second screen between the shelf and
+     the book. Decided before first paint, checked against the same six
+     seconds leaf.js honours, and the timer below still un-marks the document
+     if nothing reports in. */
+  try {
+    var carried = sessionStorage.getItem("brandpulse-volume");
+    if (carried && Date.now() - (JSON.parse(carried).at || 0) < 6000) {
+      document.documentElement.dataset.carrying = "yes";
+    }
+  } catch (e) {}
+
+  /* See the note in index.html. Adding `.js` is not proof the interface will
+     render, so a timer un-marks the document if no page module reports in and
+     the in-page fallback returns. */
+  document.documentElement.classList.add("js");
+  window.__bpFallback = setTimeout(function () {
+    document.documentElement.classList.remove("js");
+  }, 4000);
+</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23101315'/%3E%3Cg stroke-width='1.2'%3E%3Cpath d='M1 3h14' stroke='%235FD3C0'/%3E%3Cpath d='M1 6.5h14' stroke='%23A9BCC7'/%3E%3Cpath d='M1 10h14' stroke='%23A99BE0'/%3E%3Cpath d='M1 13.5h14' stroke='%23E8A33C'/%3E%3Cpath d='M10 0v16' stroke='%23FF2E88' stroke-width='1.6'/%3E%3C/g%3E%3C/svg%3E">
+<script type="module" src="/src/pages/sweep.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to the content</a>
+<div class="chassis">
+  <header class="masthead" data-chrome></header>
+
+  <main id="main" data-sweep>
+    <!-- Every panel below is rendered from the report JSON. Before it arrives
+         this is the loading state, which is a designed state rather than a
+         spinner: the chassis and the masthead are already drawn, so the page
+         has a shape while it waits. -->
+    <section class="state" data-boot>
+      <p class="t-label state__tag">Reading</p>
+      <h2 class="t-l">Opening the combined report</h2>
+      <p class="t-body">Loading five runs from this machine&rsquo;s own
+        <code>outputs/sweeps/</code> directory.</p>
+    </section>
+
+    <!-- No-script core.
+
+         The caveat markup below is not written here. Flask substitutes
+         BP:CAVEATS at serve time with the exact strings from
+         pipeline/scorer.py, so there is one source of truth and the text in the
+         document cannot drift from the text in the reports. The project requires
+         BIAS_CAVEAT on every surface that presents a facial-derived score; it
+         used to reach the page only through JavaScript, which meant that with
+         scripting off the disclosure did not exist in the document at all. -->
+    <div data-fallback class="fallback">
+      <h1>A combined report</h1>
+      <p>
+        Reading a combined report needs JavaScript, and this browser is not
+        running it. The sweep itself is plain JSON on this machine and the API
+        that serves it is still reachable under <code>/sweeps/</code>.
+      </p>
+      <!--BP:CAVEATS-->
+      <h2>What a combined score is not</h2>
+      <p>
+        It is the mean of five single-video scores, so it inherits every caveat
+        above and adds one of its own: five videos is far too few to generalise
+        from, and the range those five covered matters more than what they
+        average to. A combined score is not a measurement of the subject. It is
+        a statement about five particular videos, scored by one controller model
+        on one day.
+      </p>
+      <h2>Where to go</h2>
+      <ul>
+        <li><a href="/library">Back to the library</a></li>
+        <li><a href="/">What the system measures, and where it is weak</a></li>
+      </ul>
+    </div>
+  </main>
+
+  <!-- Starts held. A footer is the only block in the document until the page
+       module has rendered, and an empty page leaves it halfway up the window,
+       which reads as a flash of some other page. Released by holdUntilSettled()
+       in chrome.js once the boot panel has gone; with scripting off, the rule in
+       chassis.css shows it unconditionally. -->
+  <!-- One line, not the grey band: the book is sized to one screen and this
+       line shares it. chrome.js renders it for data-footer="slim". -->
+  <footer class="foot foot--slim" data-footer="slim" data-waiting></footer>
+</div>
+</body>
+</html>

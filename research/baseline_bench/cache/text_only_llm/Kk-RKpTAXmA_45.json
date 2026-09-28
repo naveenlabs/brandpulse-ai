@@ -1,0 +1,27 @@
+{
+ "uid": "Kk-RKpTAXmA_45",
+ "system": "text_only_llm",
+ "video_id": "Kk-RKpTAXmA",
+ "segment_id": 45,
+ "split": "holdout",
+ "payload": {
+  "segment_id": 45,
+  "start_s": 200.48,
+  "end_s": 205.48,
+  "transcript": "Number one is the really, really soft memory type foam"
+ },
+ "seconds": 3.758,
+ "raw": "{\n  \"segment_id\": 45,\n  \"conflict_score\": 0.8,\n  \"channels_in_conflict\": [],\n  \"flags\": [\"POTENTIAL_PAID_PROMOTION\"],\n  \"narrative\": \"The language used is overly promotional, describing the memory foam as 'really, really soft', which may indicate that the creator is trying to sell a product rather than genuinely discussing its features.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 45,
+  "start_s": 200.48,
+  "end_s": 205.48,
+  "conflict_score": 0.8,
+  "conflict_reasons": [
+   "POTENTIAL_PAID_PROMOTION"
+  ],
+  "flagged": true
+ }
+}

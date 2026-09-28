@@ -1,0 +1,36 @@
+{
+ "uid": "Kk-RKpTAXmA_45",
+ "system": "three_channel",
+ "video_id": "Kk-RKpTAXmA",
+ "segment_id": 45,
+ "split": "holdout",
+ "payload": {
+  "segment_id": 45,
+  "start_s": 200.48,
+  "end_s": 205.48,
+  "transcript": "Number one is the really, really soft memory type foam",
+  "transcript_sentiment": "NEUTRAL (0.50)",
+  "vocal_emotion": "NEUTRAL (arousal 0.63)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.97)"
+ },
+ "seconds": 4.881,
+ "raw": "{\n  \"segment_id\": 45,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"vocal_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and tone suggest neutrality, but their facial expression and vocal tone also suggest neutrality, which is consistent. However, the audience's comments are overwhelmingly positive, creating a conflict between the creator's and audience's sentiments.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 45,
+  "start_s": 200.48,
+  "end_s": 205.48,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: vocal_emotion"
+  ],
+  "flagged": false
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "uid": "SSC0RkJuBVw_9",
+ "system": "four_channel",
+ "video_id": "SSC0RkJuBVw",
+ "segment_id": 9,
+ "split": "selection",
+ "payload": {
+  "segment_id": 9,
+  "start_s": 35.120000000000005,
+  "end_s": 40.480000000000004,
+  "transcript": "Well, the main thing that you're going to be seeing is the screens. There's two of them. There's one for each of your eyes, which you know how in the real world,",
+  "transcript_sentiment": "NEUTRAL (0.77)",
+  "vocal_emotion": "NEUTRAL (arousal 0.62)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "fear (0.96)",
+  "video_comment_sentiment": "POSITIVE (0.95)"
+ },
+ "seconds": 4.781,
+ "raw": "{\n  \"segment_id\": 9,\n  \"conflict_score\": 0.8,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"video_comment_sentiment\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and tone suggest neutrality, but their facial expression shows fear, and the audience's comments are overwhelmingly positive, indicating a significant conflict between the creator's verbal and non-verbal cues.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 9,
+  "start_s": 35.120000000000005,
+  "end_s": 40.480000000000004,
+  "conflict_score": 0.8,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: video_comment_sentiment"
+  ],
+  "flagged": true
+ }
+}

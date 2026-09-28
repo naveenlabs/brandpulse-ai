@@ -1,0 +1,28 @@
+{
+ "uid": "q0aFOxT6TNw_54",
+ "system": "text_only_llm",
+ "video_id": "q0aFOxT6TNw",
+ "segment_id": 54,
+ "split": "selection",
+ "payload": {
+  "segment_id": 54,
+  "start_s": 315.58000000000004,
+  "end_s": 321.0,
+  "transcript": "that's designed just to be super thin so that if you want a thin phone, go get the Air."
+ },
+ "seconds": 4.128,
+ "raw": "{\n  \"segment_id\": 54,\n  \"conflict_score\": 0.9,\n  \"channels_in_conflict\": [],\n  \"flags\": [\"POTENTIAL_PAID_PROMOTION\", \"SARCASM_DETECTED\"],\n  \"narrative\": \"The creator's tone and language suggest a scripted endorsement, with a clear attempt to promote a competing product. The phrase 'go get the Air' implies a recommendation, which may not be genuine.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 54,
+  "start_s": 315.58000000000004,
+  "end_s": 321.0,
+  "conflict_score": 0.9,
+  "conflict_reasons": [
+   "POTENTIAL_PAID_PROMOTION",
+   "SARCASM_DETECTED"
+  ],
+  "flagged": true
+ }
+}

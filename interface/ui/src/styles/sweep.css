@@ -1,0 +1,316 @@
+/* ===========================================================================
+   sweep.css — what is printed on the pages of a combined volume.
+
+   The book is codex.css, and the pieces every volume shares (the title page,
+   the notes, the audience band, the channel marks) are there too. This file
+   is what only a sweep has: a contents list of its videos, the range plot,
+   the videos themselves on one clock, each audience drawn separately, the
+   comparison between two periods, and where the videos came from.
+   ======================================================================== */
+
+/* --- the title page: a contents list under the title ---------------------- */
+
+.ti--sweep .ti__block { flex: 0 0 auto; }
+
+.sp__partial { color: var(--ink); }
+
+/* --- the combined findings ------------------------------------------------- */
+
+.sf { display: flex; flex-direction: column; gap: 0.9rem; }
+.sf__verdict {
+  margin: 0;
+  font-family: var(--f-voice);
+  font-size: clamp(1.5rem, 2.1vw, 2rem);
+  line-height: 1.15;
+  color: var(--ink);
+  text-wrap: balance;
+}
+.sf__verdict::first-letter { text-transform: capitalize; }
+.sf__plots { display: grid; gap: 1.1rem; }
+/* On a spread the combined overview must fit whole, because its last line is
+   the facial disclosure: the space between its parts, and the verdict's size
+   on a short window, give way first. Unchanged on a tall one. */
+@media (min-width: 1100px) {
+  .sf { gap: clamp(0.5rem, 1svh, 0.9rem); }
+  .sf__plots { gap: clamp(0.6rem, 1.1svh, 1.1rem); }
+  /* "These videos disagree sharply with each other." is the longest of the
+     three verdicts and took two lines at a true 1512x830 (65px against 32px),
+     pushing the disclosure past the folio. */
+  .sf__verdict { font-size: clamp(1.3rem, min(2.1vw, 2.7svh), 2rem); }
+  /* The range plots give up a little height before the facial disclosure
+     under them does: at a true 1512x830 its last line sat below the folio. */
+  .spr__axis { height: clamp(2.3rem, 5svh, 2.9rem); }
+  .sf__not { font-size: clamp(12.5px, 1.6svh, 13.5px); }
+  .sf__fn.cav { font-size: clamp(12px, 1.5svh, 12.5px); line-height: 1.5; }
+  .ti--sweep .ti__block { gap: clamp(0.4rem, 0.9svh, 0.7rem); }
+  .ti--sweep .toc__list li { padding-block: clamp(0.25rem, 0.6svh, 0.4rem); }
+}
+.sf__not { color: var(--ink-2); }
+.sf__fn.cav { font-size: 12.5px; line-height: 1.55; color: var(--ink-2); }
+
+/* The range plot. Numbered marks on a real axis, the observed range as a
+   band, the mean as a rule among the points rather than above them. */
+.spr { display: grid; gap: 0.35rem; margin: 0; }
+.spr__cap { font: 400 12.5px/1.3 var(--f-inst); color: var(--ink-2); }
+.spr__cap b { font-weight: 600; color: var(--ink); }
+.spr__axis {
+  position: relative;
+  height: 2.9rem;
+  background: linear-gradient(var(--leaf-rule), var(--leaf-rule)) center 70% / 100% 1px no-repeat;
+}
+.spr__band {
+  position: absolute;
+  top: 18%;
+  bottom: 12%;
+  background: color-mix(in srgb, var(--ink) 7%, transparent);
+  border-inline: 1px solid var(--leaf-rule);
+}
+.spr__mean { position: absolute; top: 4%; bottom: 0; width: 2px; margin-left: -1px; background: var(--ink-2); }
+.spr__pt {
+  position: absolute;
+  bottom: calc(30% - 9px + var(--lv, 0) * 17px);
+  width: 18px;
+  height: 18px;
+  margin-left: -9px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--ink);
+  /* A ring in the paper's colour, so two videos with close scores stay two
+     marks rather than merging into one blob. Drawing, not elevation. */
+  box-shadow: 0 0 0 2px var(--leaf);
+}
+.spr__pt b { font: 600 9.5px/1 var(--f-inst); color: var(--leaf); font-variant-numeric: tabular-nums; }
+.spr__ends { display: flex; justify-content: space-between; font: 400 11.5px/1 var(--f-inst); color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.spr__key { display: grid; grid-template-columns: repeat(5, auto); justify-content: space-between; gap: 0.2rem 0.8rem; margin: 0.15rem 0 0; }
+.spr__key div { display: grid; gap: 1px; }
+.spr__key dt { font: 400 12px/1.2 var(--f-inst); color: var(--ink-3); }
+.spr__key dd { margin: 0; font-size: 13.5px; color: var(--ink); }
+.spr__key .is-mean dt, .spr__key .is-mean dd { color: var(--ink); font-weight: 700; }
+
+/* --- the videos ------------------------------------------------------------ */
+
+.mem__head { display: grid; gap: 0.6rem; }
+.mem { display: grid; align-content: start; gap: 1rem; margin: 0; padding: 0; list-style: none; }
+.mem__one {
+  display: grid;
+  grid-template-columns: clamp(7.5rem, 11vw, 10.5rem) minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+  padding-bottom: 1rem;
+  border-bottom: var(--hair) solid var(--leaf-rule);
+}
+.mem__one:focus { outline: none; }
+.mem__one:focus-visible { outline: 2px solid var(--focus); outline-offset: 4px; }
+
+/* The frame, or -- until it arrives, or if it never was derived -- the
+   numbered plate in the cover's cloth. The box is its final size from the
+   start, so nothing moves when the picture lands. */
+.mem__plate {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background:
+    radial-gradient(90% 120% at 50% 110%, rgb(72 83 90 / .7), rgb(72 83 90 / 0) 70%),
+    var(--cx-cloth);
+}
+.mem__plate img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+.mem__n {
+  position: absolute;
+  left: 0.45rem;
+  top: 0.4rem;
+  z-index: 1;
+  padding: 0.15rem 0.35rem;
+  font-size: 11.5px;
+  color: #e7ecee;
+  /* 0.9, not 0.72: at 0.72 the number's ground depended on whatever the
+     frame was under it, and on the paper theme's empty plate the harness read
+     it against the page at 1.11:1 (verify_ui.py check 2, 25 Sep 2026). At 0.9
+     the badge is its own ground: at least 13.89:1 even over pure white. */
+  background: rgb(4 6 7 / .9);
+}
+.mem__body { display: grid; gap: 0.4rem; min-width: 0; }
+.mem__t { margin: 0; font: 400 1.12rem/1.25 var(--f-voice); color: var(--ink); overflow-wrap: anywhere; }
+.mem__t a { color: inherit; text-decoration: none; }
+.mem__t a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.mem__t a:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.mem__meta { margin: 0; font: 400 12px/1.3 var(--f-inst); color: var(--ink-2); }
+.mem__sep { display: inline-block; width: 1px; height: 0.85em; margin-inline: 0.45rem; vertical-align: -1px; background: var(--leaf-rule); }
+
+/* One clock for every video: a trace's width is its own length against the
+   longest in the sweep, so a shorter video stops where it actually stops.
+   The box holds the height of the trace before it is drawn. */
+.mem__trace { width: 100%; min-height: 54px; }
+.mem__scaled .tp { border-color: var(--leaf-rule); }
+.mem__loading { margin: 0; padding-block: 0.4rem; font: 400 12px/1.3 var(--f-inst); color: var(--ink-3); }
+.mem__nums { display: flex; gap: 1.2rem; margin: 0; }
+.mem__nums div { display: flex; align-items: baseline; gap: 0.45rem; }
+.mem__nums dt { font: 400 12px/1.2 var(--f-inst); color: var(--ink-3); }
+.mem__nums dd { margin: 0; font-size: 15px; color: var(--ink); }
+.mem__one.is-failed .mem__t { color: var(--ink-2); }
+.mem__failed { margin: 0; font: 400 13px/1.5 var(--f-inst); color: var(--ink-2); overflow-wrap: anywhere; }
+
+/* --- channels across the set ------------------------------------------------ */
+
+.cv { display: flex; flex-direction: column; gap: 1.2rem; }
+.cv [data-channels] { display: grid; gap: 1.2rem; }
+.cvx { display: grid; margin: 0; padding: 0; list-style: none; border-top: var(--hair) solid var(--leaf-rule); }
+.cvx__row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+  grid-template-areas: "name v" "track track";
+  gap: 0.45rem 1rem;
+  /* Gives way on a short window: at a true 1512x830 the channels page ran
+     18px past its folio at a fixed 0.7rem (measured 23 Sep 2026). */
+  padding-block: clamp(0.45rem, 1svh, 0.7rem);
+  border-bottom: var(--hair) solid var(--leaf-rule);
+}
+.cvx__name { grid-area: name; display: flex; align-items: center; flex-wrap: wrap; gap: 0.2rem 0.5rem; margin: 0; font: 600 13.5px/1.25 var(--f-inst); color: var(--ink); }
+.cvx__name span { flex-basis: 100%; padding-left: calc(11px + 0.5rem); font: italic 400 14px/1.3 var(--f-voice); color: var(--ink-2); }
+.cvx__row[data-channel="facial"] .cvx__name { font-variation-settings: "wdth" var(--w-thin); }
+.cvx__track { grid-area: track; display: block; height: 6px; background: color-mix(in srgb, var(--ink) 9%, transparent); }
+.cvx__track i { display: block; height: 100%; width: var(--to, 0%); background: var(--ch); }
+.cvx__v { grid-area: v; margin: 0; text-align: right; font: 400 12.5px/1.4 var(--f-inst); color: var(--ink-2); }
+.cvx__v .t-read { display: block; font-size: 16px; color: var(--ink); }
+.sp__count { font-size: 16px; }
+
+/* The disclosure. Never collapsed, never clipped, never behind a summary and
+   never revealed on hover; tests/test_ui_contracts.py asserts all four
+   against this rule. A combined score is an average of several
+   facial-derived ones, so the rule applies here too. */
+.cav {
+  margin: 0;
+  max-width: 68ch;
+  overflow-wrap: anywhere;
+  font: 400 13px/1.56 var(--f-inst);
+  color: var(--ink);
+}
+
+/* --- which channels the controller named ------------------------------------ */
+
+.pairs { display: grid; gap: 0.6rem; padding-top: 1rem; border-top: var(--hair) solid var(--leaf-rule); }
+.pairs__list { display: grid; gap: 0.5rem; margin: 0.2rem 0 0; padding: 0; list-style: none; }
+.pairs__list li {
+  display: grid;
+  grid-template-columns: minmax(0, 11rem) minmax(0, 1fr) 2.75rem 3.75rem;
+  gap: 0.75rem;
+  align-items: center;
+}
+.pairs__who { display: flex; align-items: center; gap: 0.4rem; font: 500 12.5px/1.25 var(--f-inst); color: var(--ink-2); }
+.pairs__who i { flex: none; width: 9px; height: 9px; background: var(--ch); }
+.pairs__who i + i { margin-left: -4px; }
+.pairs__track { display: block; height: 6px; background: color-mix(in srgb, var(--ink) 9%, transparent); }
+.pairs__track i { display: block; height: 100%; width: var(--to, 0%); background: var(--ink-2); }
+.pairs__list .t-read { text-align: right; font-size: 14px; color: var(--ink); }
+.pairs__share { text-align: right; font: 400 12px/1 var(--f-inst); color: var(--ink-3); }
+
+/* --- the audience ----------------------------------------------------------- */
+
+.pool__tie { color: var(--ink); }
+.ea { display: flex; flex-direction: column; gap: 1.1rem; }
+.each { display: grid; gap: 0.9rem; margin: 0; padding: 0; list-style: none; }
+.each__one { display: grid; gap: 0.4rem; }
+.each__t { display: flex; gap: 0.6rem; margin: 0; font: 400 14.5px/1.3 var(--f-voice); color: var(--ink); overflow-wrap: anywhere; }
+.each__t .t-read { flex: none; font: 500 12px/1.6 var(--f-inst); color: var(--ink-3); }
+.each .au__band { height: 1rem; }
+.each__v { margin: 0; font: 400 12px/1.35 var(--f-inst); color: var(--ink-2); }
+
+/* --- the comparison ----------------------------------------------------------
+
+   Two states of one subject on one axis, with a divider between them. The
+   handle is a range input: draggable, steppable with the arrow keys, and it
+   announces its own value, which a bare div never does. */
+
+.cpp { display: flex; flex-direction: column; gap: 1.1rem; }
+.cp__pick { display: flex; flex-wrap: wrap; gap: var(--s-2); }
+.cp__host { display: grid; gap: 1rem; }
+.cp { display: grid; gap: 1.1rem; }
+.cp__heads { display: flex; justify-content: space-between; gap: 1rem; }
+.cp__right { text-align: right; }
+.cp__stage {
+  position: relative;
+  overflow: hidden;
+  min-height: 10rem;
+  background: var(--leaf-panel);
+  border: var(--hair) solid var(--leaf-rule);
+}
+.cp__side {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: var(--s-3);
+  padding: var(--s-5) var(--s-4);
+  align-content: center;
+}
+/* The later period is drawn over the earlier one and cut to the divider, so
+   dragging reveals it rather than cross-fading: the value underneath is
+   always a real value, never a blend of two. */
+.cp__side--b { background: var(--screen); clip-path: inset(0 0 0 var(--split, 50%)); }
+.cp__row { display: grid; gap: var(--s-2); }
+.cp__k { font: 400 11.5px/1.2 var(--f-inst); color: var(--ink-3); }
+.cp__row .t-read { font-size: 1.35rem; color: var(--ink); }
+.cp__line { position: absolute; top: 0; bottom: 0; left: var(--split, 50%); width: 2px; margin-left: -1px; background: var(--ink); pointer-events: none; }
+.cp__handle {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: ew-resize;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+}
+.cp__handle:focus-visible { opacity: 1; outline: 2px solid var(--focus); outline-offset: -2px; }
+.cp__table { width: 100%; border-collapse: collapse; }
+.cp__table th, .cp__table td { padding: 0.5rem 0.75rem 0.5rem 0; border-bottom: var(--hair) solid var(--leaf-rule); text-align: left; }
+.cp__table thead th { font: 500 11.5px/1.2 var(--f-inst); color: var(--ink-3); }
+.cp__table tbody th { font: 600 12.5px/1.2 var(--f-inst); color: var(--ink-2); }
+.cp__table td { text-align: right; color: var(--ink); }
+.cp__table td.is-tear { color: var(--tear); }
+
+/* The refusal. A designed page, not an error: it says what would have to be
+   true for the comparison to mean anything. */
+.cp__refuse { display: grid; gap: 1rem; }
+.cp__why { display: grid; gap: 0.8rem; margin: 0; padding-left: 1.2rem; }
+.cp__why li::marker { font-family: var(--f-voice); color: var(--ink-2); }
+
+/* --- provenance -------------------------------------------------------------- */
+
+.prv { display: flex; flex-direction: column; gap: 1.2rem; }
+.prov { display: grid; margin: 0; border-top: var(--hair) solid var(--leaf-rule); }
+.prov div {
+  display: grid;
+  grid-template-columns: 9.5rem minmax(0, 1fr);
+  gap: var(--s-4);
+  padding-block: 0.5rem;
+  border-bottom: var(--hair) solid var(--leaf-rule);
+}
+.prov dt { font: 400 12.5px/1.4 var(--f-inst); color: var(--ink-3); }
+.prov dd { margin: 0; font: 400 13.5px/1.4 var(--f-inst); color: var(--ink); overflow-wrap: anywhere; }
+.prov code, .ti code { font: 500 13px/1.4 var(--f-inst); font-variation-settings: "wdth" var(--w-code); }
+.prov__failed { display: grid; gap: 0.5rem; }
+.prov__failed:focus { outline: none; }
+.prov__failed:focus-visible { outline: 2px solid var(--focus); outline-offset: 4px; }
+.prov__list { display: grid; align-content: start; gap: 0.65rem; margin: 0; padding: 0; list-style: none; }
+.prov__list li { display: grid; gap: 0.15rem; }
+.prov__list b { font: 400 14.5px/1.35 var(--f-voice); color: var(--ink); overflow-wrap: anywhere; }
+.prov__list span { font: 400 12.5px/1.4 var(--f-inst); color: var(--ink-2); overflow-wrap: anywhere; }
+.ref__head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; padding-bottom: 0.55rem; border-bottom: var(--hair) solid var(--leaf-rule); }
+.ref__range { margin: 0; font: 400 12px/1.3 var(--f-inst); color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.ref__range--cont { padding-bottom: 0.55rem; border-bottom: var(--hair) solid var(--leaf-rule); }
+
+/* =============================================================== phone ==== */
+
+@media (max-width: 720px) {
+  .mem__one { grid-template-columns: minmax(0, 1fr); }
+  .mem__plate { max-width: 16rem; }
+  .pairs__list li { grid-template-columns: minmax(0, 1fr) 2.5rem 3.5rem; row-gap: 0.3rem; }
+  .pairs__track { grid-column: 1 / -1; order: 3; }
+  .prov div { grid-template-columns: minmax(0, 1fr); gap: 0.15rem; }
+  .cp__side { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s-3); padding: var(--s-4); }
+  .cp__stage { min-height: 16rem; }
+  .cp__table { font-size: 13px; }
+  .spr__key { grid-template-columns: repeat(3, auto); justify-content: start; }
+}

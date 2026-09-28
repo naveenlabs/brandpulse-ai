@@ -1,0 +1,36 @@
+{
+ "uid": "4KbrxIpQgkM_25",
+ "system": "four_channel",
+ "video_id": "4KbrxIpQgkM",
+ "segment_id": 25,
+ "split": "selection",
+ "payload": {
+  "segment_id": 25,
+  "start_s": 140.54,
+  "end_s": 146.28,
+  "transcript": "Hear me out. $799 is the same price as a Samsung Galaxy S25 or the Pixel 9",
+  "transcript_sentiment": "NEUTRAL (0.78)",
+  "vocal_emotion": "NEUTRAL (arousal 0.57)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.99)"
+ },
+ "seconds": 4.61,
+ "raw": "{\n  \"segment_id\": 25,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"video_comment_sentiment\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and tone suggest neutrality, but their face shows no emotion and the audience's comments are overwhelmingly positive, indicating a conflict between the creator's intended message and their actual emotional expression.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 25,
+  "start_s": 140.54,
+  "end_s": 146.28,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: video_comment_sentiment"
+  ],
+  "flagged": false
+ }
+}

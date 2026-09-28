@@ -1,0 +1,36 @@
+{
+ "uid": "i63u-iAnhuk_182",
+ "system": "four_channel",
+ "video_id": "i63u-iAnhuk",
+ "segment_id": 182,
+ "split": "selection",
+ "payload": {
+  "segment_id": 182,
+  "start_s": 815.36,
+  "end_s": 819.4599999999999,
+  "transcript": "We'll see. There's a couple other things like the Journal app and Notebook LM,",
+  "transcript_sentiment": "NEUTRAL (0.82)",
+  "vocal_emotion": "NEUTRAL (arousal 0.58)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.97)"
+ },
+ "seconds": 4.619,
+ "raw": "{\n  \"segment_id\": 182,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"video_comment_sentiment\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and tone are neutral, but their face shows no emotion, and the audience's comments are overwhelmingly positive, indicating a conflict between the creator's verbal and non-verbal cues.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 182,
+  "start_s": 815.36,
+  "end_s": 819.4599999999999,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: video_comment_sentiment"
+  ],
+  "flagged": false
+ }
+}

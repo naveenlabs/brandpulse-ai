@@ -1,0 +1,35 @@
+{
+ "uid": "5VMckmQneCk_132",
+ "system": "four_channel",
+ "video_id": "5VMckmQneCk",
+ "segment_id": 132,
+ "split": "selection",
+ "payload": {
+  "segment_id": 132,
+  "start_s": 583.0,
+  "end_s": 586.34,
+  "transcript": "it needs to truly understand and to be able to run them by me,",
+  "transcript_sentiment": "NEUTRAL (0.45)",
+  "vocal_emotion": "NEUTRAL (arousal 0.52)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "happy (0.80)",
+  "video_comment_sentiment": "POSITIVE (0.95)"
+ },
+ "seconds": 4.823,
+ "raw": "{\n  \"segment_id\": 132,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words convey a neutral sentiment, but their facial expression shows happiness, which is in conflict with their neutral tone. The audience's comments also express a positive sentiment, further indicating a discrepancy between the creator's verbal and non-verbal cues.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 132,
+  "start_s": 583.0,
+  "end_s": 586.34,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion"
+  ],
+  "flagged": false
+ }
+}

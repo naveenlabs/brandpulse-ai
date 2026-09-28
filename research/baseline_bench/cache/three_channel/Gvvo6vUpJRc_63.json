@@ -1,0 +1,36 @@
+{
+ "uid": "Gvvo6vUpJRc_63",
+ "system": "three_channel",
+ "video_id": "Gvvo6vUpJRc",
+ "segment_id": 63,
+ "split": "selection",
+ "payload": {
+  "segment_id": 63,
+  "start_s": 321.76,
+  "end_s": 325.84,
+  "transcript": "probably reconsider. Apple went with over ear headphones here instead of on ear.",
+  "transcript_sentiment": "NEUTRAL (0.63)",
+  "vocal_emotion": "NEUTRAL (arousal 0.56)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.96)"
+ },
+ "seconds": 5.198,
+ "raw": "{\n  \"segment_id\": 63,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"vocal_prosody\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and tone suggest neutrality, but their facial expression is neutral and their vocal tone is also neutral, which is unusual. The audience's comments, however, are overwhelmingly positive, indicating a discrepancy between the creator's emotional expression and the audience's interpretation.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 63,
+  "start_s": 321.76,
+  "end_s": 325.84,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: vocal_prosody"
+  ],
+  "flagged": false
+ }
+}

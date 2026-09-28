@@ -1,0 +1,36 @@
+{
+ "uid": "vOhuf18b-g8_65",
+ "system": "four_channel",
+ "video_id": "vOhuf18b-g8",
+ "segment_id": 65,
+ "split": "holdout",
+ "payload": {
+  "segment_id": 65,
+  "start_s": 389.88,
+  "end_s": 400.85999999999996,
+  "transcript": "I was like so confident that this would be the one. But I'm just not the type of person that takes advantage of the multitasking and just the utility of the inner screen for what this form factor is really designed for.",
+  "transcript_sentiment": "NEUTRAL (0.42)",
+  "vocal_emotion": "NEUTRAL (arousal 0.60)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "neutral (0.79)",
+  "video_comment_sentiment": "POSITIVE (0.97)"
+ },
+ "seconds": 4.977,
+ "raw": "{\n  \"segment_id\": 65,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"vocal_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and facial expressions suggest neutrality, but their tone and pitch are also neutral, which is consistent. However, the audience's comments are overwhelmingly positive, creating a conflict between the creator's and audience's sentiments.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 65,
+  "start_s": 389.88,
+  "end_s": 400.85999999999996,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: vocal_emotion"
+  ],
+  "flagged": false
+ }
+}

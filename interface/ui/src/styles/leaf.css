@@ -1,0 +1,222 @@
+/* ===========================================================================
+   leaf.css — the cover's own swing, and the paper it uncovers.
+
+   The turning surface here is ported from the registered ThreeUI `Sketchbook`
+   component (revision 3938bc8d…, all four digests verified — see the header of
+   lib/leaf.js). The selectors are renamed to this project's block and the
+   hinge is moved from a centre gutter to the spine, because what turns here is
+   a COVER, not a page between two spreads. The geometry, the nesting, the seam
+   overlap and the two lighting layers are the registered ones.
+
+   The palette is NOT ported. That component is cream paper under a warm lamp;
+   this one has two designed themes in tokens.css and keeps them. What is
+   borrowed is the idea that paper is a warm object even in a cool room, so the
+   leaf carries a slight warm cast against the anodised chassis around it —
+   about four points of hue, which is the difference between a page lying on an
+   instrument and a panel welded into it.
+   ======================================================================== */
+
+/* --- the paper ----------------------------------------------------------
+   A leaf, in both themes. Not a screen: screens in this build are DARKER than
+   the body they sit in (see tokens.css), and paper is the one surface that is
+   allowed to be lighter and warmer than its surroundings, because that is what
+   distinguishes an object lying on the bench from an aperture cut into it.
+
+   The leaf is WARM where the chassis is cool. tokens.css builds the body from
+   a neutral graphite with a faint cyan cast (#101315, blue channel highest);
+   paper here inverts that relationship -- red channel highest -- and sits a
+   clear step lighter. Those two differences are the whole reason a sheet reads
+   as an object lying on the bench rather than as another panel of it, and they
+   are what let the leaf stay dark in BENCH instead of turning beige. */
+:root {
+  --leaf: #1B2226;          /* toned paper under low light                  */
+  --leaf-hi: #2A343A;       /* the lit side of the gutter                   */
+  --leaf-edge: #536068;     /* the cut edge of the block                    */
+  /* A tint block, and therefore DARKER than the sheet it is printed on --
+     which is also what keeps --ink-3 and --tear clear of 4.5:1 on it. A
+     lighter block measured 4.15 and 4.31, under the floor tokens.css holds. */
+  --leaf-panel: #161C20;    /* a shaded box printed on the page             */
+  --leaf-rule: #344047;     /* a ruled line                                 */
+  --leaf-grain: 220 232 238;
+  --lf-shade: 4 9 12;        /* what an unlit face is shaded with            */
+  --lf-cast: 0 0 0;         /* the pool the volume throws on the bench      */
+  --lf-cast-a: .62;
+  --desk: 0 0 0;            /* the bench falling away around the pool       */
+  --desk-a: .46;
+}
+[data-theme="field"] {
+  --leaf: #F4F0E8;          /* the same leaf in daylight                    */
+  --leaf-hi: #FAF7F1;
+  --leaf-edge: #C6BCA8;
+  --leaf-panel: #ECE7DD;
+  --leaf-rule: #D2C9B8;
+  /* A specular is light in BOTH themes -- it is the lamp, not the paper. The
+     first pass set this to the shade colour in FIELD, which drew the gloss on
+     a turning page as a dark smudge running the wrong way. */
+  --leaf-grain: 255 252 244;
+  --lf-shade: 58 43 20;
+  --lf-cast: 58 44 26;
+  --lf-cast-a: .34;
+  --desk: 74 62 44;
+  --desk-a: .20;
+}
+
+/* --- the stage the opening plays on ------------------------------------- */
+.lf {
+  position: fixed; inset: 0; z-index: 90; pointer-events: none;
+  perspective: 1750px; perspective-origin: 50% 46%;
+}
+
+.lf__box {
+  position: absolute;
+  transform-style: preserve-3d;
+  --bw: 0px;
+  --pg: 0%;          /* a cover is shaded edge to edge; a plate is not */
+  --shade: 0;
+  will-change: transform;
+}
+
+/* The leaf being uncovered. It is only ever seen for the length of the swing;
+   the real page takes over underneath it at --revealAt. */
+.lf__under {
+  position: absolute; inset: 0;
+  background: var(--leaf);
+  border: 1px solid var(--leaf-edge);
+  border-radius: 1px 2px 2px 1px;
+}
+
+/* The pool the volume throws on the bench. Three blobs at three blurs, all
+   easing off while the cover is in the air — the registered arrangement, in
+   this project's neutrals. No element here has an edge of its own. */
+.lf__cast { position: absolute; pointer-events: none; z-index: 0; }
+.lf__cast--ambient {
+  left: 5%; right: 5%; top: 27%; bottom: 2%;
+  background: radial-gradient(50% 50% at 50% 58%,
+    rgb(var(--lf-cast) / calc(var(--lf-cast-a) * .66)) 0%,
+    rgb(var(--lf-cast) / calc(var(--lf-cast-a) * .37)) 40%,
+    rgb(var(--lf-cast) / 0) 74%);
+  filter: blur(26px);
+  opacity: calc(1 - var(--shade, 0) * .42);
+}
+.lf__cast--contact {
+  left: 9%; right: 9%; top: 62%; bottom: 10%;
+  background: radial-gradient(50% 44% at 50% 42%,
+    rgb(var(--lf-cast) / calc(var(--lf-cast-a) * .78)) 0%,
+    rgb(var(--lf-cast) / calc(var(--lf-cast-a) * .33)) 48%,
+    rgb(var(--lf-cast) / 0) 78%);
+  filter: blur(11px);
+  opacity: calc(1 - var(--shade, 0) * .5);
+}
+.lf__cast--hair {
+  left: 12%; right: 12%; top: 70%; bottom: 17%;
+  background: radial-gradient(50% 52% at 50% 40%,
+    rgb(var(--lf-cast) / calc(var(--lf-cast-a) * .66)) 0%,
+    rgb(var(--lf-cast) / 0) 76%);
+  filter: blur(4px);
+  opacity: calc(1 - var(--shade, 0) * .62);
+}
+
+/* --- the turning surface ------------------------------------------------
+   PORTED. A chain of nested strips: each strip is a child of the one before
+   it and adds --td to the angle, so the chain's tangent sweeps an arc and the
+   surface bends. A single rotated plane would pivot like a door, which is the
+   thing this mechanism exists to avoid.
+
+   Hinged at the spine rather than at a centre gutter, so --span is 1. */
+.lf__curl {
+  position: absolute; top: 0; height: 100%; left: 0;
+  width: calc(var(--bw, 0px) * var(--span, 1));
+  transform-style: preserve-3d; z-index: 6;
+  transform-origin: left center;
+  transform: rotateY(calc(-1 * var(--tt, 0deg)));
+}
+.lf__strip {
+  position: absolute; top: 0; height: 100%;
+  width: calc(var(--bw, 0px) * var(--span, 1) / var(--n));
+  transform-style: preserve-3d;
+  transform-origin: left center;
+}
+.lf__curl > .lf__strip { left: 0; }
+.lf__strip .lf__strip { left: 100%; transform: rotateY(var(--td, 0deg)); }
+
+/* `right: -1.1px` is the registered seam overlap. Strips are laid edge to
+   edge in a rotated 3D chain and sub-pixel rounding opens hairline gaps
+   between them; overlapping each face slightly closes them for good. */
+.lf__face {
+  position: absolute; top: 0; bottom: 0; left: 0; right: -1.1px;
+  backface-visibility: hidden; -webkit-backface-visibility: hidden;
+  background-repeat: no-repeat;
+  background-size: var(--bw, 0px) 100%;
+}
+.lf__face--back {
+  transform: rotateY(180deg);
+  background: linear-gradient(180deg, var(--leaf-hi), var(--leaf));
+}
+/* The endpaper carries the hinge it is folded against -- ONCE, on the strip
+   at the spine. The chain is nested, so the direct child of the curl is strip
+   zero and no other. Putting this on every back face drew eighteen hinges and
+   turned a sheet of endpaper into a set of louvre blinds. */
+.lf__curl > .lf__strip > .lf__face--back::after {
+  content: ""; position: absolute; right: 0; top: 0; bottom: 0; width: 60%;
+  background: linear-gradient(270deg, rgb(var(--lf-shade) / .3), rgb(var(--lf-shade) / 0));
+}
+
+/* The outermost strip is the cut edge of the board, so its shading is feathered
+   off rather than stopping square — otherwise the leading edge reads as a cut
+   line all the way through the swing. */
+.lf__strip.is-edge .lf__sh,
+.lf__strip.is-edge .lf__gl {
+  -webkit-mask-image: linear-gradient(90deg, #000 0 22%, transparent 96%);
+  mask-image: linear-gradient(90deg, #000 0 22%, transparent 96%);
+}
+.lf__strip.is-edge .lf__face--back .lf__sh,
+.lf__strip.is-edge .lf__face--back .lf__gl {
+  -webkit-mask-image: linear-gradient(270deg, #000 0 22%, transparent 96%);
+  mask-image: linear-gradient(270deg, #000 0 22%, transparent 96%);
+}
+
+/* Two lighting layers per face, both driven per-strip per-frame from
+   applyTurn: --a1/--a2 is how far this strip has turned away from the light,
+   and --lit squared is the specular that comes back as it turns into it. */
+.lf__sh {
+  position: absolute; left: 0; right: 0;
+  top: var(--pg, 0%); bottom: var(--pg, 0%); pointer-events: none;
+  background: linear-gradient(90deg,
+    rgb(var(--lf-shade) / var(--a1, 0)), rgb(var(--lf-shade) / var(--a2, 0)));
+}
+.lf__face--back .lf__sh {
+  background: linear-gradient(90deg,
+    rgb(var(--lf-shade) / var(--a2, 0)), rgb(var(--lf-shade) / var(--a1, 0)));
+}
+.lf__gl {
+  position: absolute; left: 0; right: 0;
+  top: var(--pg, 0%); bottom: var(--pg, 0%); pointer-events: none;
+  background: rgb(var(--leaf-grain));
+  opacity: calc(var(--shade, 0) * var(--lit, 1) * var(--lit, 1) * .2);
+}
+
+/* The backing and the pools go the moment the document behind them is worth
+   seeing; the cover keeps swinging over the top of it and leaves last. */
+.lf__under.is-gone,
+.lf__cast.is-gone { opacity: 0; transition: opacity 300ms linear; }
+
+/* The last of the swing, once the real page underneath has taken over. */
+.lf__box.is-open { opacity: 0; transition: opacity 180ms ease-out; }
+
+/* The live spread stays under the board until the cover passes the midpoint. */
+.lf__box.is-closing { opacity: 0; transition: opacity 200ms linear; }
+.lf__box.is-closing.is-shown { opacity: 1; }
+/* Three classes deep on purpose: the box is still .is-closing.is-shown when
+   it starts to leave, and a two-class rule lost to that and left the closed
+   volume at full strength until the page changed under it. */
+.lf__box.is-closing.is-leaving {
+  opacity: 0;
+  transform: translateY(8px) scale(.985);
+  transition: opacity 260ms ease-in, transform 260ms ease-in;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* openVolume() returns before drawing anything under this setting, so this
+     is belt and braces for a preference changed mid-flight. */
+  .lf { display: none; }
+}

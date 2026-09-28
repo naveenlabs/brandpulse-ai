@@ -1,0 +1,36 @@
+{
+ "uid": "Kk-RKpTAXmA_110",
+ "system": "four_channel",
+ "video_id": "Kk-RKpTAXmA",
+ "segment_id": 110,
+ "split": "holdout",
+ "payload": {
+  "segment_id": 110,
+  "start_s": 477.36,
+  "end_s": 481.21999999999997,
+  "transcript": "Okay. So that gives a minute. So realistically, I mean, if someone's lecturing at you",
+  "transcript_sentiment": "NEUTRAL (0.69)",
+  "vocal_emotion": "NEUTRAL (arousal 0.56)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "neutral (0.81)",
+  "video_comment_sentiment": "POSITIVE (0.97)"
+ },
+ "seconds": 4.385,
+ "raw": "{\n  \"segment_id\": 110,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"vocal_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and facial expressions suggest neutrality, but the audience's comments are overwhelmingly positive, indicating a conflict between the creator's tone and the audience's reaction.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 110,
+  "start_s": 477.36,
+  "end_s": 481.21999999999997,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: vocal_emotion"
+  ],
+  "flagged": false
+ }
+}

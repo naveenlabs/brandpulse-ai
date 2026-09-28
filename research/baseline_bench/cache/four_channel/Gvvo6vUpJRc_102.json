@@ -1,0 +1,35 @@
+{
+ "uid": "Gvvo6vUpJRc_102",
+ "system": "four_channel",
+ "video_id": "Gvvo6vUpJRc",
+ "segment_id": 102,
+ "split": "selection",
+ "payload": {
+  "segment_id": 102,
+  "start_s": 526.2,
+  "end_s": 529.9200000000001,
+  "transcript": "listening to Spotify and Apple Music and maybe Tidal,",
+  "transcript_sentiment": "NEUTRAL (0.81)",
+  "vocal_emotion": "NEUTRAL (arousal 0.56)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "happy (0.79)",
+  "video_comment_sentiment": "POSITIVE (0.96)"
+ },
+ "seconds": 4.653,
+ "raw": "{\n  \"segment_id\": 102,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words convey a neutral sentiment, but their facial expression shows happiness, which is a positive emotion. The audience's comments also express a positive sentiment, creating a conflict between the creator's verbal and non-verbal cues.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 102,
+  "start_s": 526.2,
+  "end_s": 529.9200000000001,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion"
+  ],
+  "flagged": false
+ }
+}

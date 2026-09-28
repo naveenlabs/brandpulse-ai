@@ -1,0 +1,36 @@
+{
+ "uid": "i63u-iAnhuk_47",
+ "system": "three_channel",
+ "video_id": "i63u-iAnhuk",
+ "segment_id": 47,
+ "split": "selection",
+ "payload": {
+  "segment_id": 47,
+  "start_s": 231.48,
+  "end_s": 236.48,
+  "transcript": "that people are actually going to care about are Tensor and PixelSnap.",
+  "transcript_sentiment": "NEUTRAL (0.71)",
+  "vocal_emotion": "NEUTRAL (arousal 0.53)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.97)"
+ },
+ "seconds": 4.993,
+ "raw": "{\n  \"segment_id\": 47,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"video_comment_sentiment\"],\n  \"flags\": [],\n  \"narrative\": \"There is a conflict between the transcript, facial emotion, and video comment sentiment channels. The transcript and facial emotion channels are neutral, while the video comment sentiment channel is positive, indicating a disagreement between the creator's words and the audience's response.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 47,
+  "start_s": 231.48,
+  "end_s": 236.48,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: video_comment_sentiment"
+  ],
+  "flagged": false
+ }
+}

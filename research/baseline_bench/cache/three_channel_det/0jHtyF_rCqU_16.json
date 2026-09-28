@@ -1,0 +1,36 @@
+{
+ "uid": "0jHtyF_rCqU_16",
+ "system": "three_channel",
+ "video_id": "0jHtyF_rCqU",
+ "segment_id": 16,
+ "split": "selection",
+ "payload": {
+  "segment_id": 16,
+  "start_s": 88.66,
+  "end_s": 91.66,
+  "transcript": "With the naming and the design. And to be fair, even the user interface.",
+  "transcript_sentiment": "NEUTRAL (0.54)",
+  "vocal_emotion": "NEUTRAL (arousal 0.57)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.98)"
+ },
+ "seconds": 4.81,
+ "raw": "{\n  \"segment_id\": 16,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"video_comment_sentiment\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and tone are neutral, but their face shows no emotion, and the audience's comments are overwhelmingly positive, indicating a conflict between the creator's verbal and non-verbal cues and the audience's sentiment.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 16,
+  "start_s": 88.66,
+  "end_s": 91.66,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: video_comment_sentiment"
+  ],
+  "flagged": false
+ }
+}

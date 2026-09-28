@@ -1,0 +1,35 @@
+{
+ "uid": "haWvrSliMVY_17",
+ "system": "three_channel",
+ "video_id": "haWvrSliMVY",
+ "segment_id": 17,
+ "split": "holdout",
+ "payload": {
+  "segment_id": 17,
+  "start_s": 128.88,
+  "end_s": 134.18,
+  "transcript": "most important, the best. I explain you now how that thing works. So Jacques Polsch, Chanel always has",
+  "transcript_sentiment": "NEUTRAL (0.52)",
+  "vocal_emotion": "POSITIVE (arousal 0.72)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.99)"
+ },
+ "seconds": 4.279,
+ "raw": "{\n  \"segment_id\": 17,\n  \"conflict_score\": 0.5,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and facial expression do not match, with the transcript being neutral and the facial emotion not detected, while the vocal emotion is positive and the video comments are also positive.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 17,
+  "start_s": 128.88,
+  "end_s": 134.18,
+  "conflict_score": 0.5,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion"
+  ],
+  "flagged": false
+ }
+}

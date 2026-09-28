@@ -1,0 +1,45 @@
+# BrandPulse AI — the application: pipeline, Flask server, CLI.
+#
+#   pip install -r requirements.txt          # run the application
+#   pip install -r requirements-dev.txt      # also run the tests, the browser
+#                                            # harness, the benches and the report build
+#   requirements-lock.txt                    # exact versions of the environment
+#                                            # the test suite was last run in
+#
+# Python 3.11. Run setup.sh or setup.ps1 for the complete environment. System
+# tools cannot be installed by pip: ffmpeg (audio extraction, called as a
+# subprocess by pipeline/downloader.py) and Ollama with llama3.1:8b (README).
+
+# ── Models ───────────────────────────────────────────────────────────────────
+torch>=2.2.0                # backend for Whisper and the transformers models
+transformers>=4.40.0        # transcript sentiment (cardiffnlp XLM-R), comment sentiment
+                            # (fine-tuned cardiffnlp RoBERTa), vocal emotion (audeering)
+sentencepiece>=0.2.0        # the XLM-R tokenizer ships only sentencepiece.bpe.model; without
+                            # this, transformers falls back to tiktoken and the run fails with
+                            # "Error parsing line b'\x0e'" (found on a fresh Mac, 28 Sep 2026)
+openai-whisper>=20231117    # transcription; its segments are the spine of every report
+deepface>=0.0.93            # face detection (yunet) and the FER-2013 emotion head
+tf-keras>=2.16              # deepface's TensorFlow backend on TensorFlow 2.16+ (Keras 3):
+                            # without it `from deepface import DeepFace` raises
+ultralytics>=8.2.0          # YOLOv8n in visual_module.detect_logos, a structural placeholder:
+                            # COCO-80 has no brand logos, so it finds no brand
+pyAudioAnalysis>=0.3.7      # energy and spectral centroid per segment
+
+# ── Media ────────────────────────────────────────────────────────────────────
+yt-dlp>=2024.4.9            # video download (academic use only)
+opencv-python>=4.9.0        # frame extraction at 1 fps
+pillow>=10.3.0              # the report page's imagery, derived from those frames
+                            # (frame_cache.py at run time, ui_build/build_frames.py ahead)
+scipy>=1.11                 # WAV reading in audio_module
+
+# ── YouTube, server, local LLM ──────────────────────────────────────────────
+google-api-python-client>=2.130.0   # YouTube Data API v3: comments, search, details
+flask>=3.0.3                # the server and every page
+python-dotenv>=1.0.1        # .env loading (YOUTUBE_API_KEY, optional overrides)
+requests>=2.32.0            # Ollama at localhost:11434, candidate thumbnails
+numpy>=1.26.0
+
+# Not imported by this repository's code; declared by deepface (and, for tqdm,
+# by whisper and huggingface_hub) and kept at the floors they were tested with.
+pandas>=2.2.0
+tqdm>=4.66.0

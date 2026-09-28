@@ -1,0 +1,32 @@
+# Everything requirements.txt installs, plus what the test suite, the browser
+# harness, the report build and the research benches need. None of this is
+# imported by the application itself.
+-r requirements.txt
+
+# ── Tests ────────────────────────────────────────────────────────────────────
+pytest>=8.2.0
+scikit-learn>=1.4           # tests/test_baseline_bench.py checks against its metrics
+
+# ── Browser harness, screenshots, evaluation form (ui_evidence/, user_eval/) ─
+playwright>=1.44            # drives the installed Google Chrome (channel="chrome");
+                            # `python -m playwright install chrome` if it is missing
+
+# ── The author's report build and figures (not in this repository) ─────────
+python-docx>=1.1
+matplotlib>=3.8
+
+# ── Research benches: re-running a bench, not running the application ──────
+vaderSentiment>=3.3.2       # comment_bench, transcript_bench: the lexicon baseline
+soundfile>=0.12             # baseline_bench/sample.py, vocal_bench clip cutting
+speechbrain>=1.0.0          # vocal_bench: the superseded IEMOCAP incumbent
+torchaudio>=2.2             # vocal_bench/vendor (vox-profile)
+funasr>=1.1                 # vocal_bench: emotion2vec candidates
+huggingface_hub>=0.23       # vocal_bench: checkpoint downloads
+loralib>=0.1.2              # vocal_bench/vendor (vox-profile)
+torchvision>=0.17           # facial_bench candidates
+timm>=1.0.0                 # facial_bench: EfficientNet backbones for EmotiEffNet
+emotiefflib>=1.1.0          # facial_bench: HSEmotion/EmotiEffNet AffectNet-8 weights, run
+                            # on its ONNX engine, which its base install carries (onnx,
+                            # onnxruntime). ONNX deliberately: the older `hsemotion` package
+                            # ships pickled timm modules that will not unpickle against
+                            # timm 1.0.x. Measured 03 Sep 2026.

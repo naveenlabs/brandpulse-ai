@@ -1,0 +1,1232 @@
+{
+ "protocol": "baseline_bench/PROTOCOL.md",
+ "seed": 42,
+ "n_boot": 10000,
+ "ground_truth": {
+  "n_presented": 120,
+  "n_dropped": 1,
+  "dropped": [
+   {
+    "uid": "Kk-RKpTAXmA_139",
+    "text": "Reese. Wah! Wah! Wah!",
+    "channel": "ShortCircuit",
+    "split": "holdout",
+    "usable_raters": 1,
+    "per_rater": {
+     "rater1": [
+      3
+     ],
+     "rater2": [
+      0
+     ],
+     "rater3": [
+      0
+     ],
+     "rater4": [
+      0
+     ]
+    }
+   }
+  ],
+  "n_kept": 119,
+  "n_selection": 80,
+  "n_holdout": 39
+ },
+ "power_floor": {
+  "floor_total": 90,
+  "floor_holdout": 30,
+  "kept": 119,
+  "holdout": 39,
+  "total_met": true,
+  "holdout_met": true,
+  "underpowered": false
+ },
+ "h_distribution": {
+  "all": {
+   "n": 119,
+   "mean": 3.972689075630252,
+   "sd": 0.8025646892761154,
+   "min": 1.625,
+   "q1": 3.25,
+   "median": 4.0,
+   "q3": 4.75,
+   "max": 5.0,
+   "distinct_values": 18
+  },
+  "selection": {
+   "n": 80,
+   "mean": 3.90625,
+   "sd": 0.8342689894964591,
+   "min": 1.625,
+   "q1": 3.25,
+   "median": 4.0,
+   "q3": 4.75,
+   "max": 5.0,
+   "distinct_values": 14
+  },
+  "holdout": {
+   "n": 39,
+   "mean": 4.108974358974359,
+   "sd": 0.7244436880945081,
+   "min": 2.625,
+   "q1": 3.5,
+   "median": 4.25,
+   "q3": 4.75,
+   "max": 5.0,
+   "distinct_values": 15
+  }
+ },
+ "raters": {
+  "rater1": {
+   "counts": {
+    "0": 0,
+    "1": 2,
+    "2": 7,
+    "3": 45,
+    "4": 46,
+    "5": 50
+   },
+   "n_unratable": 0,
+   "n_usable": 150,
+   "mean": 3.9,
+   "sd": 0.9675957889213115,
+   "entropy_bits": 1.861741802118565,
+   "pct_extreme_1_or_5": 0.3466666666666667,
+   "pct_midpoint_3": 0.3,
+   "pct_negative_1_or_2": 0.06,
+   "order_rho": 0.04791681707538988,
+   "mean_first_half": 3.8,
+   "mean_second_half": 4.0,
+   "longest_run": 5,
+   "longest_run_null_mean": 4.8359,
+   "longest_run_p": 0.5681
+  },
+  "rater2": {
+   "counts": {
+    "0": 1,
+    "1": 0,
+    "2": 4,
+    "3": 42,
+    "4": 48,
+    "5": 55
+   },
+   "n_unratable": 1,
+   "n_usable": 149,
+   "mean": 4.033557046979865,
+   "sd": 0.8731436476857196,
+   "entropy_bits": 1.7122536477428345,
+   "pct_extreme_1_or_5": 0.3691275167785235,
+   "pct_midpoint_3": 0.28187919463087246,
+   "pct_negative_1_or_2": 0.026845637583892617,
+   "order_rho": 0.0806338707002836,
+   "mean_first_half": 3.9864864864864864,
+   "mean_second_half": 4.08,
+   "longest_run": 5,
+   "longest_run_null_mean": 5.0533,
+   "longest_run_p": 0.6535
+  },
+  "rater3": {
+   "counts": {
+    "0": 1,
+    "1": 2,
+    "2": 5,
+    "3": 36,
+    "4": 51,
+    "5": 55
+   },
+   "n_unratable": 1,
+   "n_usable": 149,
+   "mean": 4.02013422818792,
+   "sd": 0.9333881804343623,
+   "entropy_bits": 1.8030918948865735,
+   "pct_extreme_1_or_5": 0.3825503355704698,
+   "pct_midpoint_3": 0.24161073825503357,
+   "pct_negative_1_or_2": 0.04697986577181208,
+   "order_rho": -0.05493580141365815,
+   "mean_first_half": 4.054054054054054,
+   "mean_second_half": 3.986666666666667,
+   "longest_run": 4,
+   "longest_run_null_mean": 5.0826,
+   "longest_run_p": 0.9716
+  },
+  "rater4": {
+   "counts": {
+    "0": 1,
+    "1": 0,
+    "2": 9,
+    "3": 47,
+    "4": 40,
+    "5": 53
+   },
+   "n_unratable": 1,
+   "n_usable": 149,
+   "mean": 3.9194630872483223,
+   "sd": 0.9551905040179577,
+   "entropy_bits": 1.8094241652328074,
+   "pct_extreme_1_or_5": 0.35570469798657717,
+   "pct_midpoint_3": 0.31543624161073824,
+   "pct_negative_1_or_2": 0.06040268456375839,
+   "order_rho": -0.1392825053790462,
+   "mean_first_half": 4.094594594594595,
+   "mean_second_half": 3.7466666666666666,
+   "longest_run": 4,
+   "longest_run_null_mean": 4.9,
+   "longest_run_p": 0.9549
+  }
+ },
+ "within_rater": {
+  "rater1": {
+   "n_pairs": 30,
+   "exact": 0.6333333333333333,
+   "within_1": 0.9333333333333333,
+   "rho": 0.7556616985028655,
+   "kappa_linear": 0.603658536585366,
+   "kappa_quadratic": 0.7194719471947195,
+   "mad": 0.43333333333333335,
+   "mean_signed_second_minus_first": 0.03333333333333333
+  },
+  "rater2": {
+   "n_pairs": 30,
+   "exact": 0.9,
+   "within_1": 1.0,
+   "rho": 0.9387205739138699,
+   "kappa_linear": 0.9013157894736842,
+   "kappa_quadratic": 0.9432534678436317,
+   "mad": 0.1,
+   "mean_signed_second_minus_first": -0.03333333333333333
+  },
+  "rater3": {
+   "n_pairs": 30,
+   "exact": 0.8333333333333334,
+   "within_1": 0.9666666666666667,
+   "rho": 0.8328311081817987,
+   "kappa_linear": 0.8155737704918032,
+   "kappa_quadratic": 0.8751300728407908,
+   "mad": 0.2,
+   "mean_signed_second_minus_first": -0.06666666666666667
+  },
+  "rater4": {
+   "n_pairs": 30,
+   "exact": 0.8333333333333334,
+   "within_1": 0.9666666666666667,
+   "rho": 0.8845732418249758,
+   "kappa_linear": 0.8295454545454546,
+   "kappa_quadratic": 0.8840579710144928,
+   "mad": 0.2,
+   "mean_signed_second_minus_first": -0.06666666666666667
+  }
+ },
+ "alpha": {
+  "all": {
+   "ordinal": {
+    "alpha": 0.7296037206240151,
+    "n_units": 119,
+    "n_pairable": 596,
+    "d_obs": 14456.810242889102,
+    "d_exp": 53465.2705882353,
+    "metric": "ordinal"
+   },
+   "interval": {
+    "alpha": 0.7177727915331837,
+    "n_units": 119,
+    "n_pairable": 596,
+    "d_obs": 0.49089165867689366,
+    "d_exp": 1.7393491624837856,
+    "metric": "interval"
+   },
+   "nominal": {
+    "alpha": 0.539620701782864,
+    "n_units": 119,
+    "n_pairable": 596,
+    "d_obs": 0.319910514541387,
+    "d_exp": 0.6948846652755062,
+    "metric": "nominal"
+   }
+  },
+  "selection": {
+   "ordinal": {
+    "alpha": 0.769833559894921,
+    "n_units": 80,
+    "n_pairable": 380,
+    "d_obs": 5031.629072681705,
+    "d_exp": 21860.828496042217,
+    "metric": "ordinal"
+   },
+   "interval": {
+    "alpha": 0.7612940166046379,
+    "n_units": 80,
+    "n_pairable": 380,
+    "d_obs": 0.4300751879699247,
+    "d_exp": 1.8016942091376198,
+    "metric": "interval"
+   },
+   "nominal": {
+    "alpha": 0.5915390391026927,
+    "n_units": 80,
+    "n_pairable": 380,
+    "d_obs": 0.2867167919799499,
+    "d_exp": 0.7019441744202194,
+    "metric": "nominal"
+   }
+  },
+  "holdout": {
+   "ordinal": {
+    "alpha": 0.6377117735208551,
+    "n_units": 39,
+    "n_pairable": 216,
+    "d_obs": 2482.2927689594358,
+    "d_exp": 6851.706976744186,
+    "metric": "ordinal"
+   },
+   "interval": {
+    "alpha": 0.6110808734071844,
+    "n_units": 39,
+    "n_pairable": 216,
+    "d_obs": 0.597883597883598,
+    "d_exp": 1.5372954349698535,
+    "metric": "interval"
+   },
+   "nominal": {
+    "alpha": 0.43360076637528444,
+    "n_units": 39,
+    "n_pairable": 216,
+    "d_obs": 0.37830687830687826,
+    "d_exp": 0.6679155900086132,
+    "metric": "nominal"
+   }
+  },
+  "all_ordinal_bootstrap_ci": {
+   "point": 0.7296037206240151,
+   "lo": 0.6447391819117099,
+   "hi": 0.7978419458329558,
+   "n": 119,
+   "n_boot": 10000,
+   "n_degenerate": 0
+  }
+ },
+ "pairwise": {
+  "rater1|rater2": {
+   "n": 119,
+   "rho": 0.7330773263890238,
+   "pearson": 0.7183106938005096,
+   "mad": 0.37815126050420167,
+   "mean_signed": -0.12605042016806722,
+   "identical": 0.6386554621848739
+  },
+  "rater1|rater3": {
+   "n": 119,
+   "rho": 0.6541317460118433,
+   "pearson": 0.6340460207952735,
+   "mad": 0.4495798319327731,
+   "mean_signed": -0.12184873949579832,
+   "identical": 0.5798319327731093
+  },
+  "rater1|rater4": {
+   "n": 119,
+   "rho": 0.647212388764983,
+   "pearson": 0.6219285557596338,
+   "mad": 0.42436974789915966,
+   "mean_signed": -0.029411764705882353,
+   "identical": 0.6302521008403361
+  },
+  "rater2|rater3": {
+   "n": 119,
+   "rho": 0.7719076589422756,
+   "pearson": 0.7892264313740174,
+   "mad": 0.31512605042016806,
+   "mean_signed": 0.004201680672268907,
+   "identical": 0.6722689075630253
+  },
+  "rater2|rater4": {
+   "n": 119,
+   "rho": 0.7469351330088607,
+   "pearson": 0.7512172624828117,
+   "mad": 0.3403361344537815,
+   "mean_signed": 0.09663865546218488,
+   "identical": 0.6638655462184874
+  },
+  "rater3|rater4": {
+   "n": 119,
+   "rho": 0.8601258511490494,
+   "pearson": 0.852856408546348,
+   "mad": 0.24369747899159663,
+   "mean_signed": 0.09243697478991597,
+   "identical": 0.7394957983193278
+  }
+ },
+ "ceiling": {
+  "all": {
+   "rater1": {
+    "rho": 0.7306626799436212,
+    "pearson": 0.7058826950054973,
+    "n": 119
+   },
+   "rater2": {
+    "rho": 0.8248486078398046,
+    "pearson": 0.8407885295301244,
+    "n": 119
+   },
+   "rater3": {
+    "rho": 0.8362729344855201,
+    "pearson": 0.8478716173019643,
+    "n": 119
+   },
+   "rater4": {
+    "rho": 0.8233696816283733,
+    "pearson": 0.8233315201448778,
+    "n": 119
+   },
+   "mean_rho": 0.8037884759743298
+  },
+  "selection": {
+   "rater1": {
+    "rho": 0.7011634441733452,
+    "pearson": 0.6792753993347023,
+    "n": 80
+   },
+   "rater2": {
+    "rho": 0.8968556436337034,
+    "pearson": 0.9073155747270447,
+    "n": 80
+   },
+   "rater3": {
+    "rho": 0.8656029452989743,
+    "pearson": 0.8747659776957067,
+    "n": 80
+   },
+   "rater4": {
+    "rho": 0.8407881526326602,
+    "pearson": 0.8540798098691027,
+    "n": 80
+   },
+   "mean_rho": 0.8261025464346707
+  },
+  "holdout": {
+   "rater1": {
+    "rho": 0.8016187977769227,
+    "pearson": 0.7669918765360181,
+    "n": 39
+   },
+   "rater2": {
+    "rho": 0.6473393091497808,
+    "pearson": 0.6682825755574823,
+    "n": 39
+   },
+   "rater3": {
+    "rho": 0.7731131941727444,
+    "pearson": 0.768370254957722,
+    "n": 39
+   },
+   "rater4": {
+    "rho": 0.8231257988455633,
+    "pearson": 0.7958555478693473,
+    "n": 39
+   },
+   "mean_rho": 0.7612992749862527
+  },
+  "all_bootstrap_ci": {
+   "point": 0.8037884759743298,
+   "lo": 0.7342672100452852,
+   "hi": 0.8559156698381247,
+   "n": 119,
+   "n_boot": 1000,
+   "n_degenerate": 0
+  }
+ },
+ "icc": {
+  "note": "NOT pre-registered; supplementary",
+  "icc_2_1": 0.7225725554235255,
+  "icc_2_k": 0.9124204004888176,
+  "ms_rows": 2.5764403218914684,
+  "ms_cols": 0.4908963585434177,
+  "ms_err": 0.2235940986564085,
+  "n": 119,
+  "k": 4,
+  "mean_pairwise_rho": 0.7355650173776725,
+  "spearman_brown": {
+   "1": 0.7355650173776725,
+   "2": 0.8476375243942911,
+   "3": 0.8929902599607602,
+   "4": 0.9175365981724918,
+   "5": 0.9329229990006345,
+   "6": 0.9434705279247142,
+   "8": 0.9569951353699847,
+   "10": 0.9652976341871632
+  }
+ },
+ "author_sensitivity": {
+  "rho_h4_vs_h3": 0.9774819322967546,
+  "pearson_h4_vs_h3": 0.9782814137976915,
+  "mean_h4": 3.972689075630252,
+  "mean_h3": 3.995798319327731,
+  "max_abs_shift": 0.916666666666667,
+  "alpha_ordinal_without_author": 0.7859557738709892,
+  "alpha_ordinal_with_author": 0.7296037206240151,
+  "icc_2k_without_author": 0.921335841465925,
+  "ceiling_among_blind_only": 0.8374558994859186,
+  "deviation_profile": {
+   "rater1": {
+    "mean_signed": -0.09243697478991597,
+    "mean_abs": 0.4033613445378152,
+    "n_ge_1p5_below": 5,
+    "n_ge_1p5_above": 2
+   },
+   "rater2": {
+    "mean_signed": 0.0756302521008403,
+    "mean_abs": 0.29971988795518223,
+    "n_ge_1p5_below": 0,
+    "n_ge_1p5_above": 2
+   },
+   "rater3": {
+    "mean_signed": 0.07002801120448178,
+    "mean_abs": 0.31652661064425774,
+    "n_ge_1p5_below": 0,
+    "n_ge_1p5_above": 1
+   },
+   "rater4": {
+    "mean_signed": -0.05322128851540617,
+    "mean_abs": 0.3249299719887956,
+    "n_ge_1p5_below": 1,
+    "n_ge_1p5_above": 1
+   }
+  }
+ },
+ "duplicate_sensitivity": {
+  "rho_averaged_vs_first_only": 0.9959680706111996,
+  "mean_averaged": 3.972689075630252,
+  "mean_first_only": 3.976890756302521,
+  "max_abs_diff": 0.25,
+  "n_segments_changed": 16
+ },
+ "disagreement": {
+  "sd_summary": {
+   "n": 119,
+   "mean": 0.32744101693032945,
+   "sd": 0.3458728000654579,
+   "min": 0.0,
+   "q1": 0.0,
+   "median": 0.47871355387816905,
+   "q3": 0.5,
+   "max": 1.8929694486000912
+  },
+  "n_unanimous": 52,
+  "n_sd_ge_1": 5,
+  "most_contested": [
+   {
+    "uid": "q0aFOxT6TNw_64",
+    "sd": 1.8929694486000912,
+    "h": 3.75,
+    "ratings": {
+     "rater1": 1.0,
+     "rater2": 4.0,
+     "rater3": 5.0,
+     "rater4": 5.0
+    },
+    "text": "And Corning's Ceramic Shield 2, in case you haven't already heard, is also clearly awesome for preventing scratches to the front glass.",
+    "channel": "Marques Brownlee",
+    "split": "selection",
+    "duration": 6.16,
+    "transcript": "POSITIVE",
+    "vocal": "NEUTRAL",
+    "facial": null
+   },
+   {
+    "uid": "haWvrSliMVY_27",
+    "sd": 1.3149778198382918,
+    "h": 3.875,
+    "ratings": {
+     "rater1": 4.5,
+     "rater2": 5.0,
+     "rater3": 4.0,
+     "rater4": 2.0
+    },
+    "text": "should know, placebo effect works. I myself know how the stupid game works. I wear a suit. I get",
+    "channel": "Jeremy Fragrance",
+    "split": "holdout",
+    "duration": 8.14,
+    "transcript": "NEUTRAL",
+    "vocal": "POSITIVE",
+    "facial": "neutral"
+   },
+   {
+    "uid": "SSC0RkJuBVw_23",
+    "sd": 1.0801234497346435,
+    "h": 4.0,
+    "ratings": {
+     "rater1": 2.5,
+     "rater2": 4.0,
+     "rater3": 4.5,
+     "rater4": 5.0
+    },
+    "text": "and one day be able to use all the apps that you've gotten used to, but in a whole new dimension.",
+    "channel": "Mrwhosetheboss",
+    "split": "selection",
+    "duration": 3.8,
+    "transcript": "POSITIVE",
+    "vocal": "NEUTRAL",
+    "facial": "happy"
+   },
+   {
+    "uid": "Kk-RKpTAXmA_24",
+    "sd": 1.0,
+    "h": 3.5,
+    "ratings": {
+     "rater1": 3.0,
+     "rater2": 5.0,
+     "rater3": 3.0,
+     "rater4": 3.0
+    },
+    "text": "Shout out Sony's other division. Now, in my tiny hands, they look like quarter-inch jacks.",
+    "channel": "ShortCircuit",
+    "split": "holdout",
+    "duration": 4.56,
+    "transcript": "POSITIVE",
+    "vocal": "NEUTRAL",
+    "facial": "neutral"
+   },
+   {
+    "uid": "SSC0RkJuBVw_147",
+    "sd": 1.0,
+    "h": 3.5,
+    "ratings": {
+     "rater1": 5.0,
+     "rater2": 3.0,
+     "rater3": 3.0,
+     "rater4": 3.0
+    },
+    "text": "and gathered around it will start to fade. And that brings me onto the why.",
+    "channel": "Mrwhosetheboss",
+    "split": "selection",
+    "duration": 4.56,
+    "transcript": "NEGATIVE",
+    "vocal": "NEUTRAL",
+    "facial": "happy"
+   },
+   {
+    "uid": "Rlw_CI7pOKg_99",
+    "sd": 0.9574271077563381,
+    "h": 4.25,
+    "ratings": {
+     "rater1": 3.0,
+     "rater2": 4.0,
+     "rater3": 5.0,
+     "rater4": 5.0
+    },
+    "text": "down it's gonna have to throttle more quickly versus a macbook pro which of course does have a fan so",
+    "channel": "The Tech Chap",
+    "split": "holdout",
+    "duration": 4.16,
+    "transcript": "NEGATIVE",
+    "vocal": "NEUTRAL",
+    "facial": null
+   },
+   {
+    "uid": "SSC0RkJuBVw_9",
+    "sd": 0.9574271077563381,
+    "h": 4.25,
+    "ratings": {
+     "rater1": 3.0,
+     "rater2": 4.0,
+     "rater3": 5.0,
+     "rater4": 5.0
+    },
+    "text": "Well, the main thing that you're going to be seeing is the screens. There's two of them. There's one for each of your eyes, which you know how in the real world,",
+    "channel": "Mrwhosetheboss",
+    "split": "selection",
+    "duration": 5.36,
+    "transcript": "NEUTRAL",
+    "vocal": "NEUTRAL",
+    "facial": "fear"
+   },
+   {
+    "uid": "haWvrSliMVY_33",
+    "sd": 0.9574271077563381,
+    "h": 3.25,
+    "ratings": {
+     "rater1": 2.0,
+     "rater2": 4.0,
+     "rater3": 4.0,
+     "rater4": 3.0
+    },
+    "text": "makes you yourself more confident. So if you care about that fact,",
+    "channel": "Jeremy Fragrance",
+    "split": "holdout",
+    "duration": 4.78,
+    "transcript": "POSITIVE",
+    "vocal": "NEUTRAL",
+    "facial": "happy"
+   },
+   {
+    "uid": "i63u-iAnhuk_182",
+    "sd": 0.8539125638299665,
+    "h": 2.875,
+    "ratings": {
+     "rater1": 4.0,
+     "rater2": 3.0,
+     "rater3": 2.0,
+     "rater4": 2.5
+    },
+    "text": "We'll see. There's a couple other things like the Journal app and Notebook LM,",
+    "channel": "Marques Brownlee",
+    "split": "selection",
+    "duration": 4.1,
+    "transcript": "NEUTRAL",
+    "vocal": "NEUTRAL",
+    "facial": null
+   },
+   {
+    "uid": "0jHtyF_rCqU_147",
+    "sd": 0.816496580927726,
+    "h": 4.0,
+    "ratings": {
+     "rater1": 3.0,
+     "rater2": 4.0,
+     "rater3": 4.0,
+     "rater4": 5.0
+    },
+    "text": "Xiaomi have actually gone as far as to create a completely bespoke case",
+    "channel": "Mrwhosetheboss",
+    "split": "selection",
+    "duration": 3.66,
+    "transcript": "NEUTRAL",
+    "vocal": "NEUTRAL",
+    "facial": null
+   }
+  ],
+  "lowest_h": [
+   {
+    "uid": "32slGhAH3Xc_41",
+    "sd": 0.47871355387816905,
+    "h": 1.625,
+    "ratings": {
+     "rater1": 1.5,
+     "rater2": 2.0,
+     "rater3": 1.0,
+     "rater4": 2.0
+    },
+    "text": "to how to display notifications, to the exact shade of color that you want,",
+    "channel": "Mrwhosetheboss",
+    "split": "selection",
+    "duration": 3.64,
+    "transcript": "NEUTRAL",
+    "vocal": "NEUTRAL",
+    "facial": null
+   },
+   {
+    "uid": "Gvvo6vUpJRc_55",
+    "sd": 0.0,
+    "h": 2.0,
+    "ratings": {
+     "rater1": 2.0,
+     "rater2": 2.0,
+     "rater3": 2.0,
+     "rater4": 2.0
+    },
+    "text": "Harsh. They're brutal. They squeeze your head like a lot.",
+    "channel": "Marques Brownlee",
+    "split": "selection",
+    "duration": 4.08,
+    "transcript": "NEGATIVE",
+    "vocal": "NEUTRAL",
+    "facial": "neutral"
+   },
+   {
+    "uid": "q0aFOxT6TNw_16",
+    "sd": 0.0,
+    "h": 2.0,
+    "ratings": {
+     "rater1": 2.0,
+     "rater2": 2.0,
+     "rater3": 2.0,
+     "rater4": 2.0
+    },
+    "text": "oh yeah, thank gosh I have eight lenses now in my smartphone.",
+    "channel": "Marques Brownlee",
+    "split": "selection",
+    "duration": 3.2,
+    "transcript": "POSITIVE",
+    "vocal": "POSITIVE",
+    "facial": null
+   },
+   {
+    "uid": "Kk-RKpTAXmA_20",
+    "sd": 0.47871355387816905,
+    "h": 2.625,
+    "ratings": {
+     "rater1": 3.0,
+     "rater2": 3.0,
+     "rater3": 2.5,
+     "rater4": 2.0
+    },
+    "text": "Sony Sound Connect. We're going to need an app because everything does.",
+    "channel": "ShortCircuit",
+    "split": "holdout",
+    "duration": 5.16,
+    "transcript": "NEUTRAL",
+    "vocal": "NEUTRAL",
+    "facial": null
+   },
+   {
+    "uid": "i63u-iAnhuk_182",
+    "sd": 0.8539125638299665,
+    "h": 2.875,
+    "ratings": {
+     "rater1": 4.0,
+     "rater2": 3.0,
+     "rater3": 2.0,
+     "rater4": 2.5
+    },
+    "text": "We'll see. There's a couple other things like the Journal app and Notebook LM,",
+    "channel": "Marques Brownlee",
+    "split": "selection",
+    "duration": 4.1,
+    "transcript": "NEUTRAL",
+    "vocal": "NEUTRAL",
+    "facial": null
+   },
+   {
+    "uid": "0jHtyF_rCqU_12",
+    "sd": 0.0,
+    "h": 3.0,
+    "ratings": {
+     "rater1": 3.0,
+     "rater2": 3.0,
+     "rater3": 3.0,
+     "rater4": 3.0
+    },
+    "text": "The USB-C cable. And a little insert, which has the case.",
+    "channel": "Mrwhosetheboss",
+    "split": "selection",
+    "duration": 3.88,
+    "transcript": "NEUTRAL",
+    "vocal": "NEUTRAL",
+    "facial": null
+   },
+   {
+    "uid": "32slGhAH3Xc_44",
+    "sd": 0.0,
+    "h": 3.0,
+    "ratings": {
+     "rater1": 3.0,
+     "rater2": 3.0,
+     "rater3": 3.0,
+     "rater4": 3.0
+    },
+    "text": "with the sheer number of cases being offered, including these rather fancy smart ones that, when applied,",
+    "channel": "Mrwhosetheboss",
+    "split": "selection",
+    "duration": 4.66,
+    "transcript": "POSITIVE",
+    "vocal": "NEUTRAL",
+    "facial": null
+   },
+   {
+    "uid": "4KbrxIpQgkM_109",
+    "sd": 0.0,
+    "h": 3.0,
+    "ratings": {
+     "rater1": 3.0,
+     "rater2": 3.0,
+     "rater3": 3.0,
+     "rater4": 3.0
+    },
+    "text": "I'm sure we'll see this in like a Jerry-g-everything-teared-on video at some point.",
+    "channel": "Marques Brownlee",
+    "split": "selection",
+    "duration": 3.0,
+    "transcript": "NEUTRAL",
+    "vocal": "NEUTRAL",
+    "facial": "neutral"
+   },
+   {
+    "uid": "4KbrxIpQgkM_4",
+    "sd": 0.0,
+    "h": 3.0,
+    "ratings": {
+     "rater1": 3.0,
+     "rater2": 3.0,
+     "rater3": 3.0,
+     "rater4": 3.0
+    },
+    "text": "Okay, all right. Carcinization. I learned about this recently.",
+    "channel": "Marques Brownlee",
+    "split": "selection",
+    "duration": 3.24,
+    "transcript": "NEUTRAL",
+    "vocal": "NEUTRAL",
+    "facial": "sad"
+   },
+   {
+    "uid": "5VMckmQneCk_132",
+    "sd": 0.0,
+    "h": 3.0,
+    "ratings": {
+     "rater1": 3.0,
+     "rater2": 3.0,
+     "rater3": 3.0,
+     "rater4": 3.0
+    },
+    "text": "it needs to truly understand and to be able to run them by me,",
+    "channel": "Mrwhosetheboss",
+    "split": "selection",
+    "duration": 3.34,
+    "transcript": "NEUTRAL",
+    "vocal": "NEUTRAL",
+    "facial": "happy"
+   }
+  ],
+  "highest_h": [
+   {
+    "uid": "0jHtyF_rCqU_98",
+    "sd": 0.0,
+    "h": 5.0,
+    "ratings": {
+     "rater1": 5.0,
+     "rater2": 5.0,
+     "rater3": 5.0,
+     "rater4": 5.0
+    },
+    "text": "then the back of your phone can carry that timer on, with this liquid actually depleting along with your time.",
+    "channel": "Mrwhosetheboss",
+    "split": "selection",
+    "duration": 5.36,
+    "transcript": "NEUTRAL",
+    "vocal": "NEUTRAL",
+    "facial": null
+   },
+   {
+    "uid": "32slGhAH3Xc_0",
+    "sd": 0.0,
+    "h": 5.0,
+    "ratings": {
+     "rater1": 5.0,
+     "rater2": 5.0,
+     "rater3": 5.0,
+     "rater4": 5.0
+    },
+    "text": "This is the just announced Samsung Galaxy Z Flip 5. And when you first look at it, it doesn't make any sense.",
+    "channel": "Mrwhosetheboss",
+    "split": "selection",
+    "duration": 5.78,
+    "transcript": "NEGATIVE",
+    "vocal": "NEUTRAL",
+    "facial": "happy"
+   },
+   {
+    "uid": "32slGhAH3Xc_102",
+    "sd": 0.0,
+    "h": 5.0,
+    "ratings": {
+     "rater1": 5.0,
+     "rater2": 5.0,
+     "rater3": 5.0,
+     "rater4": 5.0
+    },
+    "text": "then its selfie camera is about a 5. Whereas with the Z Flip,",
+    "channel": "Mrwhosetheboss",
+    "split": "selection",
+    "duration": 3.18,
+    "transcript": "NEUTRAL",
+    "vocal": "NEUTRAL",
+    "facial": "neutral"
+   },
+   {
+    "uid": "32slGhAH3Xc_85",
+    "sd": 0.0,
+    "h": 5.0,
+    "ratings": {
+     "rater1": 5.0,
+     "rater2": 5.0,
+     "rater3": 5.0,
+     "rater4": 5.0
+    },
+    "text": "Why is it that people keep paying this premium to compromise on specs",
+    "channel": "Mrwhosetheboss",
+    "split": "selection",
+    "duration": 3.3,
+    "transcript": "NEGATIVE",
+    "vocal": "NEUTRAL",
+    "facial": null
+   },
+   {
+    "uid": "4KbrxIpQgkM_50",
+    "sd": 0.0,
+    "h": 5.0,
+    "ratings": {
+     "rater1": 5.0,
+     "rater2": 5.0,
+     "rater3": 5.0,
+     "rater4": 5.0
+    },
+    "text": "Well, technically no. The Snapdragon 8 Elite still smokes this.",
+    "channel": "Marques Brownlee",
+    "split": "selection",
+    "duration": 3.16,
+    "transcript": "NEUTRAL",
+    "vocal": "NEUTRAL",
+    "facial": "neutral"
+   }
+  ]
+ },
+ "per_video": {
+  "0jHtyF_rCqU": {
+   "channel": "Mrwhosetheboss",
+   "split": "selection",
+   "n": 10,
+   "h_mean": 3.975,
+   "h_sd": 0.6713378020374278,
+   "alpha_ordinal": 0.6363687584885742
+  },
+  "32slGhAH3Xc": {
+   "channel": "Mrwhosetheboss",
+   "split": "selection",
+   "n": 10,
+   "h_mean": 4.1875,
+   "h_sd": 1.0853346898025922,
+   "alpha_ordinal": 0.7927693474644104
+  },
+  "4KbrxIpQgkM": {
+   "channel": "Marques Brownlee",
+   "split": "selection",
+   "n": 10,
+   "h_mean": 3.95,
+   "h_sd": 0.7434902674398487,
+   "alpha_ordinal": 0.8094360594360595
+  },
+  "5VMckmQneCk": {
+   "channel": "Mrwhosetheboss",
+   "split": "selection",
+   "n": 10,
+   "h_mean": 3.9375,
+   "h_sd": 0.6903350635742038,
+   "alpha_ordinal": 0.7528773279506418
+  },
+  "Gvvo6vUpJRc": {
+   "channel": "Marques Brownlee",
+   "split": "selection",
+   "n": 10,
+   "h_mean": 3.9125,
+   "h_sd": 1.0929858441697933,
+   "alpha_ordinal": 0.9103107858841804
+  },
+  "Kk-RKpTAXmA": {
+   "channel": "ShortCircuit",
+   "split": "holdout",
+   "n": 9,
+   "h_mean": 3.9583333333333335,
+   "h_sd": 0.85923294280422,
+   "alpha_ordinal": 0.6917266906762705
+  },
+  "Rlw_CI7pOKg": {
+   "channel": "The Tech Chap",
+   "split": "holdout",
+   "n": 10,
+   "h_mean": 3.775,
+   "h_sd": 0.6917168656482378,
+   "alpha_ordinal": 0.5332533632169032
+  },
+  "SSC0RkJuBVw": {
+   "channel": "Mrwhosetheboss",
+   "split": "selection",
+   "n": 10,
+   "h_mean": 3.975,
+   "h_sd": 0.7016844811673628,
+   "alpha_ordinal": 0.47302565751858205
+  },
+  "haWvrSliMVY": {
+   "channel": "Jeremy Fragrance",
+   "split": "holdout",
+   "n": 10,
+   "h_mean": 3.9875,
+   "h_sd": 0.6164695630947422,
+   "alpha_ordinal": 0.44591857546745206
+  },
+  "i63u-iAnhuk": {
+   "channel": "Marques Brownlee",
+   "split": "selection",
+   "n": 10,
+   "h_mean": 3.5375,
+   "h_sd": 0.6873105799660976,
+   "alpha_ordinal": 0.5840419784203073
+  },
+  "q0aFOxT6TNw": {
+   "channel": "Marques Brownlee",
+   "split": "selection",
+   "n": 10,
+   "h_mean": 3.775,
+   "h_sd": 1.0100192517417126,
+   "alpha_ordinal": 0.7632545129648258
+  },
+  "vOhuf18b-g8": {
+   "channel": "Dave2D",
+   "split": "holdout",
+   "n": 10,
+   "h_mean": 4.7,
+   "h_sd": 0.3872983346207417,
+   "alpha_ordinal": 0.5334821428571428
+  }
+ },
+ "channel_diagnostic": {
+  "note": "NOT pre-registered; direction not assumed",
+  "transcript_sentiment": {
+   "groups": {
+    "NEUTRAL": {
+     "n": 75,
+     "mean": 3.87,
+     "sd": 0.7812844586995219,
+     "min": 1.625,
+     "q1": 3.25,
+     "median": 3.75,
+     "q3": 4.6875,
+     "max": 5.0
+    },
+    "NEGATIVE": {
+     "n": 15,
+     "mean": 4.391666666666667,
+     "sd": 0.8112857226708257,
+     "min": 2.0,
+     "q1": 4.25,
+     "median": 4.75,
+     "q3": 5.0,
+     "max": 5.0
+    },
+    "POSITIVE": {
+     "n": 29,
+     "mean": 4.021551724137931,
+     "sd": 0.8046107127144021,
+     "min": 2.0,
+     "q1": 3.5,
+     "median": 4.0,
+     "q3": 4.75,
+     "max": 5.0
+    }
+   },
+   "n_labels": 3,
+   "permutation_p": 0.03369831508424579
+  },
+  "vocal_emotion": {
+   "groups": {
+    "NEUTRAL": {
+     "n": 95,
+     "mean": 3.9973684210526317,
+     "sd": 0.8125468373096709,
+     "min": 1.625,
+     "q1": 3.25,
+     "median": 4.0,
+     "q3": 4.75,
+     "max": 5.0
+    },
+    "POSITIVE": {
+     "n": 24,
+     "mean": 3.875,
+     "sd": 0.770551750371122,
+     "min": 2.0,
+     "q1": 3.25,
+     "median": 3.8125,
+     "q3": 4.3125,
+     "max": 5.0
+    }
+   },
+   "n_labels": 2,
+   "permutation_p": 0.5749712514374281
+  },
+  "facial_emotion": {
+   "groups": {
+    "None": {
+     "n": 34,
+     "mean": 3.8088235294117645,
+     "sd": 0.9375557024450154,
+     "min": 1.625,
+     "q1": 3.0,
+     "median": 3.75,
+     "q3": 4.75,
+     "max": 5.0
+    },
+    "happy": {
+     "n": 19,
+     "mean": 4.105263157894737,
+     "sd": 0.7651969130815113,
+     "min": 3.0,
+     "q1": 3.375,
+     "median": 4.0,
+     "q3": 4.75,
+     "max": 5.0
+    },
+    "neutral": {
+     "n": 40,
+     "mean": 4.021875,
+     "sd": 0.7970737245925861,
+     "min": 2.0,
+     "q1": 3.5,
+     "median": 4.0,
+     "q3": 4.90625,
+     "max": 5.0
+    },
+    "sad": {
+     "n": 15,
+     "mean": 3.95,
+     "sd": 0.6908199062397832,
+     "min": 3.0,
+     "q1": 3.25,
+     "median": 3.75,
+     "q3": 4.5625,
+     "max": 5.0
+    },
+    "fear": {
+     "n": 5,
+     "mean": 4.25,
+     "sd": 0.46770717334674267,
+     "min": 3.75,
+     "q1": 4.0,
+     "median": 4.25,
+     "q3": 4.25,
+     "max": 5.0
+    },
+    "surprise": {
+     "n": 3,
+     "mean": 4.166666666666667,
+     "sd": 0.8779711460710616,
+     "min": 3.25,
+     "q1": 3.75,
+     "median": 4.25,
+     "q3": 4.625,
+     "max": 5.0
+    },
+    "angry": {
+     "n": 3,
+     "mean": 3.7916666666666665,
+     "sd": 0.5636562191028618,
+     "min": 3.25,
+     "q1": 3.5,
+     "median": 3.75,
+     "q3": 4.0625,
+     "max": 4.375
+    }
+   },
+   "n_labels": 7,
+   "permutation_p": 0.8525573721313934
+  },
+  "video_comment_sentiment": {
+   "groups": {
+    "POSITIVE": {
+     "n": 119,
+     "mean": 3.972689075630252,
+     "sd": 0.8025646892761154,
+     "min": 1.625,
+     "q1": 3.25,
+     "median": 4.0,
+     "q3": 4.75,
+     "max": 5.0
+    }
+   },
+   "n_labels": 1,
+   "permutation_p": null
+  }
+ },
+ "confounds": {
+  "rho_h_vs_duration": 0.1746389862437878,
+  "rho_h_vs_rms": -0.025655152394369503,
+  "rho_h_vs_facial_frame_count": 0.15011844998859142,
+  "rho_h_vs_text_length": 0.17318148611493026
+ }
+}

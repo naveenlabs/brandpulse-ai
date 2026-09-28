@@ -1,0 +1,27 @@
+/* ===========================================================================
+   opening.css — the opening page's own stylesheet.
+
+   It is empty of rules, and that is the current correct state.
+
+   This file used to hold the whole of the third section: 705 lines of
+   .film__*, .shot*, .wit*, .weak__*, .seal*, .lanes* and .film__hud, plus
+   their pins, their reduced-motion blocks and their breakpoints. That section
+   was rebuilt as the signal chamber, which owns its markup in lib/film.js and
+   its styling in styles/film.css, in the same one-section-one-sheet pattern as
+   seam.css, proof.css and close.css.
+
+   Every rule in here was left behind by that rebuild, and all of them were
+   verified unreachable before removal: no module under ui/src emits any of
+   those class names, and the only remaining matches anywhere in the tree are
+   the words "shot" and "lanes" appearing in prose inside comments, plus an
+   unrelated .tp__lanes in transport.css.
+
+   The import in pages/opening.js was left in place. If the opening page ever
+   needs a rule that belongs to the page rather than to one of its sections, it
+   belongs here.
+
+   NOTE, 22 Sep 2026: tests/test_ui_contracts.py's
+   test_every_surface_declares_a_narrow_layout was repointed from this file to
+   styles/film.css in the same change, because the narrow layout it checks for
+   moved there with the section it describes.
+   ======================================================================== */

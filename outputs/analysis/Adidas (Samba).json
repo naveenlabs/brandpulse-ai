@@ -1,0 +1,2443 @@
+{
+  "schema": "brandpulse.analysis/1",
+  "status": "complete",
+  "steps": {
+    "claims": true,
+    "topics": true,
+    "comments": true,
+    "prose": true
+  },
+  "created_at": "2026-09-26T19:18:15+00:00",
+  "model": "llama3.1:8b",
+  "num_ctx": 6144,
+  "prompt_versions": {
+    "claims": "11039eb1443c",
+    "topics": "849d75dbc679",
+    "comments": "dda83531df32",
+    "prose": "633ad9a4e222"
+  },
+  "subject": {
+    "brand": "Adidas",
+    "product": "Samba",
+    "title": ""
+  },
+  "facts": {
+    "scores": {
+      "authenticity": 47.63,
+      "brand_health": 77.37
+    },
+    "segments": 97,
+    "flagged": 5,
+    "threshold": 0.75,
+    "duration_s": 477.46,
+    "comments": {
+      "n": 100,
+      "distribution": {
+        "POSITIVE": 66,
+        "NEUTRAL": 28,
+        "NEGATIVE": 6
+      },
+      "label": "POSITIVE"
+    },
+    "reviewer": {
+      "lean": 0.08748653887572654,
+      "se": 0.06710597344473533,
+      "n": 97,
+      "call": "balanced",
+      "counts": {
+        "POSITIVE": 26,
+        "NEUTRAL": 57,
+        "NEGATIVE": 14
+      },
+      "seconds": {
+        "POSITIVE": 115.56,
+        "NEUTRAL": 273.8,
+        "NEGATIVE": 74.94
+      },
+      "unread": 0
+    },
+    "audience": {
+      "lean": 0.6,
+      "se": 0.06030226891555272,
+      "n": 100,
+      "call": "positive",
+      "counts": {
+        "POSITIVE": 66,
+        "NEUTRAL": 28,
+        "NEGATIVE": 6
+      }
+    },
+    "agreement": {
+      "gap": -0.5125134611242734,
+      "se": 0.09021959492443513,
+      "low": -0.6893406178759589,
+      "high": -0.33568630437258795,
+      "call": "audience_warmer"
+    },
+    "confidence": {
+      "level": "well_covered",
+      "checks": [
+        {
+          "id": "comments",
+          "label": "Enough comments to read the audience",
+          "value": 100,
+          "target": 30,
+          "unit": "comments",
+          "passed": true,
+          "core": true
+        },
+        {
+          "id": "transcript",
+          "label": "The reviewer's words were read",
+          "value": 1.0,
+          "target": 0.5,
+          "unit": "share",
+          "core": true,
+          "passed": true
+        },
+        {
+          "id": "weak_conflict",
+          "label": "The conflict rests mostly on the stronger channels",
+          "value": 0.1177,
+          "target": 0.5,
+          "unit": "share",
+          "passed": true,
+          "core": false,
+          "no_conflict": false
+        }
+      ],
+      "coverage": {
+        "transcript": {
+          "read": 97,
+          "total": 97,
+          "share": 1.0
+        },
+        "facial": {
+          "read": 72,
+          "total": 97,
+          "share": 0.7422680412371134
+        },
+        "vocal": {
+          "read": 97,
+          "total": 97,
+          "share": 1.0
+        },
+        "comment": {
+          "read": 97,
+          "total": 97,
+          "share": 1.0
+        }
+      },
+      "weak_conflict": {
+        "weak": 5.8179,
+        "total": 49.4179,
+        "share": 0.11772859631833801
+      },
+      "accuracy": {
+        "comment": 78.7,
+        "transcript": 67.8,
+        "vocal": 48.9,
+        "facial": 34.2
+      },
+      "means_not": "How much evidence this reading rests on. Not whether the verdict is right, and not whether anyone in the video was honest.",
+      "ceiling": {
+        "text": "No score in this system has been shown to track human judgement of authenticity. On 119 hand-rated segments the four-channel design scored rho = +0.0575 (95% CI -0.1282 to +0.2364); people agreed with each other at rho = +0.8038.",
+        "n": 119,
+        "rho": 0.0575,
+        "ci": [
+          -0.1282,
+          0.2364
+        ],
+        "human_rho": 0.8038,
+        "source": "baseline_bench/BASELINE_ANALYSIS.md"
+      }
+    },
+    "tone": {
+      "window_s": 60.0,
+      "points": [
+        {
+          "seg": 0,
+          "start": 0.0,
+          "end": 7.44,
+          "raw": 0.0,
+          "t": 3.72,
+          "smooth": 0.0441
+        },
+        {
+          "seg": 1,
+          "start": 13.4,
+          "end": 17.2,
+          "raw": 0.5866,
+          "t": 15.3,
+          "smooth": 0.031
+        },
+        {
+          "seg": 2,
+          "start": 17.2,
+          "end": 20.88,
+          "raw": 0.6659,
+          "t": 19.04,
+          "smooth": 0.0092
+        },
+        {
+          "seg": 3,
+          "start": 21.04,
+          "end": 26.72,
+          "raw": 0.0,
+          "t": 23.88,
+          "smooth": -0.0735
+        },
+        {
+          "seg": 4,
+          "start": 26.72,
+          "end": 32.16,
+          "raw": -0.6366,
+          "t": 29.44,
+          "smooth": -0.0661
+        },
+        {
+          "seg": 5,
+          "start": 32.16,
+          "end": 36.879999999999995,
+          "raw": 0.0,
+          "t": 34.52,
+          "smooth": -0.0655
+        },
+        {
+          "seg": 6,
+          "start": 36.879999999999995,
+          "end": 42.04,
+          "raw": 0.0,
+          "t": 39.46,
+          "smooth": -0.0366
+        },
+        {
+          "seg": 7,
+          "start": 42.04,
+          "end": 48.04,
+          "raw": 0.0,
+          "t": 45.04,
+          "smooth": -0.028
+        },
+        {
+          "seg": 8,
+          "start": 48.04,
+          "end": 53.8,
+          "raw": -0.8206,
+          "t": 50.92,
+          "smooth": -0.0903
+        },
+        {
+          "seg": 9,
+          "start": 53.8,
+          "end": 58.9,
+          "raw": 0.0,
+          "t": 56.35,
+          "smooth": -0.0901
+        },
+        {
+          "seg": 10,
+          "start": 59.08,
+          "end": 63.42,
+          "raw": 0.0,
+          "t": 61.25,
+          "smooth": -0.0419
+        },
+        {
+          "seg": 11,
+          "start": 63.519999999999996,
+          "end": 67.42,
+          "raw": 0.0,
+          "t": 65.47,
+          "smooth": -0.0322
+        },
+        {
+          "seg": 12,
+          "start": 67.42,
+          "end": 71.3,
+          "raw": 0.7232,
+          "t": 69.36,
+          "smooth": -0.0322
+        },
+        {
+          "seg": 13,
+          "start": 71.3,
+          "end": 79.75999999999999,
+          "raw": 0.0,
+          "t": 75.53,
+          "smooth": -0.0322
+        },
+        {
+          "seg": 14,
+          "start": 79.76,
+          "end": 85.36,
+          "raw": 0.0,
+          "t": 82.56,
+          "smooth": 0.1136
+        },
+        {
+          "seg": 15,
+          "start": 85.36,
+          "end": 90.76,
+          "raw": 0.0,
+          "t": 88.06,
+          "smooth": 0.1625
+        },
+        {
+          "seg": 16,
+          "start": 90.76,
+          "end": 95.72,
+          "raw": 0.0,
+          "t": 93.24,
+          "smooth": 0.162
+        },
+        {
+          "seg": 17,
+          "start": 95.78,
+          "end": 100.96000000000001,
+          "raw": 0.0,
+          "t": 98.37,
+          "smooth": 0.2028
+        },
+        {
+          "seg": 18,
+          "start": 100.96000000000001,
+          "end": 106.16000000000001,
+          "raw": 0.0,
+          "t": 103.56,
+          "smooth": 0.1803
+        },
+        {
+          "seg": 19,
+          "start": 106.16,
+          "end": 111.1,
+          "raw": 0.8638,
+          "t": 108.63,
+          "smooth": 0.2109
+        },
+        {
+          "seg": 20,
+          "start": 111.1,
+          "end": 116.42,
+          "raw": 0.4926,
+          "t": 113.76,
+          "smooth": 0.2429
+        },
+        {
+          "seg": 21,
+          "start": 116.42,
+          "end": 119.78,
+          "raw": 0.0,
+          "t": 118.1,
+          "smooth": 0.2429
+        },
+        {
+          "seg": 22,
+          "start": 119.78,
+          "end": 124.24,
+          "raw": 0.0,
+          "t": 122.01,
+          "smooth": 0.2435
+        },
+        {
+          "seg": 23,
+          "start": 124.24,
+          "end": 129.38,
+          "raw": 0.7621,
+          "t": 126.81,
+          "smooth": 0.2794
+        },
+        {
+          "seg": 24,
+          "start": 129.38,
+          "end": 135.62,
+          "raw": 0.0,
+          "t": 132.5,
+          "smooth": 0.2807
+        },
+        {
+          "seg": 25,
+          "start": 135.96,
+          "end": 141.51999999999998,
+          "raw": 0.6609,
+          "t": 138.74,
+          "smooth": 0.2433
+        },
+        {
+          "seg": 26,
+          "start": 141.51999999999998,
+          "end": 149.18,
+          "raw": 0.0,
+          "t": 145.35,
+          "smooth": 0.1739
+        },
+        {
+          "seg": 27,
+          "start": 149.32,
+          "end": 152.84,
+          "raw": 0.0,
+          "t": 151.08,
+          "smooth": 0.165
+        },
+        {
+          "seg": 28,
+          "start": 152.84,
+          "end": 156.96,
+          "raw": 0.541,
+          "t": 154.9,
+          "smooth": 0.1354
+        },
+        {
+          "seg": 29,
+          "start": 156.96,
+          "end": 162.12,
+          "raw": 0.0,
+          "t": 159.54,
+          "smooth": 0.0582
+        },
+        {
+          "seg": 30,
+          "start": 162.12,
+          "end": 167.16,
+          "raw": 0.0,
+          "t": 164.64,
+          "smooth": 0.0966
+        },
+        {
+          "seg": 31,
+          "start": 167.16,
+          "end": 172.36,
+          "raw": 0.0,
+          "t": 169.76,
+          "smooth": 0.0541
+        },
+        {
+          "seg": 32,
+          "start": 172.36,
+          "end": 177.20000000000002,
+          "raw": 0.0,
+          "t": 174.78,
+          "smooth": 0.0346
+        },
+        {
+          "seg": 33,
+          "start": 177.20000000000002,
+          "end": 182.76000000000002,
+          "raw": 0.0,
+          "t": 179.98,
+          "smooth": 0.0346
+        },
+        {
+          "seg": 34,
+          "start": 182.76,
+          "end": 188.28,
+          "raw": -0.5888,
+          "t": 185.52,
+          "smooth": 0.0134
+        },
+        {
+          "seg": 35,
+          "start": 188.28,
+          "end": 193.1,
+          "raw": 0.6421,
+          "t": 190.69,
+          "smooth": 0.0555
+        },
+        {
+          "seg": 36,
+          "start": 193.1,
+          "end": 198.28,
+          "raw": 0.0,
+          "t": 195.69,
+          "smooth": 0.0563
+        },
+        {
+          "seg": 37,
+          "start": 198.28,
+          "end": 204.16,
+          "raw": 0.0,
+          "t": 201.22,
+          "smooth": 0.1153
+        },
+        {
+          "seg": 38,
+          "start": 204.16,
+          "end": 209.79999999999998,
+          "raw": 0.0,
+          "t": 206.98,
+          "smooth": 0.1349
+        },
+        {
+          "seg": 39,
+          "start": 209.8,
+          "end": 215.26000000000002,
+          "raw": 0.0,
+          "t": 212.53,
+          "smooth": 0.0803
+        },
+        {
+          "seg": 40,
+          "start": 215.26000000000002,
+          "end": 220.34,
+          "raw": 0.6855,
+          "t": 217.8,
+          "smooth": 0.1531
+        },
+        {
+          "seg": 41,
+          "start": 220.34,
+          "end": 225.46,
+          "raw": 0.0,
+          "t": 222.9,
+          "smooth": 0.1103
+        },
+        {
+          "seg": 42,
+          "start": 225.62,
+          "end": 229.48000000000002,
+          "raw": 0.5958,
+          "t": 227.55,
+          "smooth": 0.1401
+        },
+        {
+          "seg": 43,
+          "start": 229.48000000000002,
+          "end": 234.38000000000002,
+          "raw": 0.732,
+          "t": 231.93,
+          "smooth": 0.1404
+        },
+        {
+          "seg": 44,
+          "start": 234.52,
+          "end": 239.4,
+          "raw": -0.4713,
+          "t": 236.96,
+          "smooth": 0.1509
+        },
+        {
+          "seg": 45,
+          "start": 239.4,
+          "end": 244.5,
+          "raw": -0.6777,
+          "t": 241.95,
+          "smooth": 0.2107
+        },
+        {
+          "seg": 46,
+          "start": 244.5,
+          "end": 247.96,
+          "raw": 0.8224,
+          "t": 246.23,
+          "smooth": 0.2404
+        },
+        {
+          "seg": 47,
+          "start": 247.96,
+          "end": 254.22,
+          "raw": 0.0,
+          "t": 251.09,
+          "smooth": 0.1998
+        },
+        {
+          "seg": 48,
+          "start": 254.22,
+          "end": 259.58,
+          "raw": 0.573,
+          "t": 256.9,
+          "smooth": 0.1866
+        },
+        {
+          "seg": 49,
+          "start": 259.58,
+          "end": 264.22,
+          "raw": -0.4878,
+          "t": 261.9,
+          "smooth": 0.152
+        },
+        {
+          "seg": 50,
+          "start": 264.22,
+          "end": 268.5,
+          "raw": 0.6352,
+          "t": 266.36,
+          "smooth": 0.1663
+        },
+        {
+          "seg": 51,
+          "start": 268.5,
+          "end": 272.9,
+          "raw": 0.7526,
+          "t": 270.7,
+          "smooth": 0.1789
+        },
+        {
+          "seg": 52,
+          "start": 272.9,
+          "end": 277.0,
+          "raw": 0.5162,
+          "t": 274.95,
+          "smooth": 0.1992
+        },
+        {
+          "seg": 53,
+          "start": 277.0,
+          "end": 281.8,
+          "raw": 0.0,
+          "t": 279.4,
+          "smooth": 0.1581
+        },
+        {
+          "seg": 54,
+          "start": 281.8,
+          "end": 286.24,
+          "raw": 0.0,
+          "t": 284.02,
+          "smooth": 0.1594
+        },
+        {
+          "seg": 55,
+          "start": 286.24,
+          "end": 290.3,
+          "raw": 0.0,
+          "t": 288.27,
+          "smooth": 0.1207
+        },
+        {
+          "seg": 56,
+          "start": 290.3,
+          "end": 294.22,
+          "raw": 0.7733,
+          "t": 292.26,
+          "smooth": 0.1301
+        },
+        {
+          "seg": 57,
+          "start": 294.42,
+          "end": 298.34,
+          "raw": 0.0,
+          "t": 296.38,
+          "smooth": 0.1058
+        },
+        {
+          "seg": 58,
+          "start": 298.5,
+          "end": 302.08,
+          "raw": -0.7214,
+          "t": 300.29,
+          "smooth": 0.0138
+        },
+        {
+          "seg": 59,
+          "start": 302.08,
+          "end": 305.08,
+          "raw": 0.0,
+          "t": 303.58,
+          "smooth": -0.0256
+        },
+        {
+          "seg": 60,
+          "start": 305.23999999999995,
+          "end": 309.4,
+          "raw": 0.0,
+          "t": 307.32,
+          "smooth": -0.0208
+        },
+        {
+          "seg": 61,
+          "start": 309.76,
+          "end": 313.0,
+          "raw": 0.0,
+          "t": 311.38,
+          "smooth": -0.0369
+        },
+        {
+          "seg": 62,
+          "start": 313.12,
+          "end": 316.26,
+          "raw": 0.0,
+          "t": 314.69,
+          "smooth": -0.0455
+        },
+        {
+          "seg": 63,
+          "start": 316.55999999999995,
+          "end": 321.4,
+          "raw": 0.0,
+          "t": 318.98,
+          "smooth": -0.0188
+        },
+        {
+          "seg": 64,
+          "start": 321.4,
+          "end": 324.97999999999996,
+          "raw": 0.0,
+          "t": 323.19,
+          "smooth": -0.0264
+        },
+        {
+          "seg": 65,
+          "start": 324.97999999999996,
+          "end": 330.12,
+          "raw": -0.7231,
+          "t": 327.55,
+          "smooth": -0.0399
+        },
+        {
+          "seg": 66,
+          "start": 330.12,
+          "end": 334.22,
+          "raw": 0.0,
+          "t": 332.17,
+          "smooth": 0.0411
+        },
+        {
+          "seg": 67,
+          "start": 334.22,
+          "end": 338.3,
+          "raw": 0.6603,
+          "t": 336.26,
+          "smooth": 0.0265
+        },
+        {
+          "seg": 68,
+          "start": 338.3,
+          "end": 342.36,
+          "raw": -0.5163,
+          "t": 340.33,
+          "smooth": -0.0078
+        },
+        {
+          "seg": 69,
+          "start": 342.36,
+          "end": 346.96,
+          "raw": 0.0,
+          "t": 344.66,
+          "smooth": -0.0078
+        },
+        {
+          "seg": 70,
+          "start": 347.08,
+          "end": 351.14,
+          "raw": 0.827,
+          "t": 349.11,
+          "smooth": -0.0078
+        },
+        {
+          "seg": 71,
+          "start": 351.14,
+          "end": 354.97999999999996,
+          "raw": 0.0,
+          "t": 353.06,
+          "smooth": -0.0078
+        },
+        {
+          "seg": 72,
+          "start": 354.97999999999996,
+          "end": 359.34,
+          "raw": 0.0,
+          "t": 357.16,
+          "smooth": 0.0186
+        },
+        {
+          "seg": 73,
+          "start": 359.34,
+          "end": 363.82,
+          "raw": 0.772,
+          "t": 361.58,
+          "smooth": 0.0544
+        },
+        {
+          "seg": 74,
+          "start": 363.88,
+          "end": 368.52,
+          "raw": -0.897,
+          "t": 366.2,
+          "smooth": 0.0325
+        },
+        {
+          "seg": 75,
+          "start": 368.52,
+          "end": 372.56,
+          "raw": 0.0,
+          "t": 370.54,
+          "smooth": 0.0287
+        },
+        {
+          "seg": 76,
+          "start": 372.62,
+          "end": 376.5,
+          "raw": 0.0,
+          "t": 374.56,
+          "smooth": 0.0444
+        },
+        {
+          "seg": 77,
+          "start": 376.5,
+          "end": 381.12,
+          "raw": 0.0,
+          "t": 378.81,
+          "smooth": 0.0204
+        },
+        {
+          "seg": 78,
+          "start": 381.12,
+          "end": 385.94,
+          "raw": 0.0,
+          "t": 383.53,
+          "smooth": 0.0335
+        },
+        {
+          "seg": 79,
+          "start": 385.94,
+          "end": 390.34,
+          "raw": 0.0,
+          "t": 388.14,
+          "smooth": 0.0341
+        },
+        {
+          "seg": 80,
+          "start": 390.34,
+          "end": 393.64,
+          "raw": 0.0,
+          "t": 391.99,
+          "smooth": -0.0272
+        },
+        {
+          "seg": 81,
+          "start": 393.64,
+          "end": 398.0,
+          "raw": 0.0,
+          "t": 395.82,
+          "smooth": -0.0094
+        },
+        {
+          "seg": 82,
+          "start": 398.0,
+          "end": 402.0,
+          "raw": 0.0,
+          "t": 400.0,
+          "smooth": 0.0758
+        },
+        {
+          "seg": 83,
+          "start": 402.0,
+          "end": 406.4,
+          "raw": 0.0,
+          "t": 404.2,
+          "smooth": 0.1015
+        },
+        {
+          "seg": 84,
+          "start": 406.4,
+          "end": 410.44,
+          "raw": 0.0,
+          "t": 408.42,
+          "smooth": 0.1144
+        },
+        {
+          "seg": 85,
+          "start": 410.44,
+          "end": 413.78,
+          "raw": 0.8769,
+          "t": 412.11,
+          "smooth": 0.1712
+        },
+        {
+          "seg": 86,
+          "start": 413.78,
+          "end": 417.7,
+          "raw": 0.0,
+          "t": 415.74,
+          "smooth": 0.2244
+        },
+        {
+          "seg": 87,
+          "start": 417.7,
+          "end": 423.5,
+          "raw": -0.4218,
+          "t": 420.6,
+          "smooth": 0.2345
+        },
+        {
+          "seg": 88,
+          "start": 423.5,
+          "end": 429.32,
+          "raw": 0.5935,
+          "t": 426.41,
+          "smooth": 0.2471
+        },
+        {
+          "seg": 89,
+          "start": 429.32,
+          "end": 432.7,
+          "raw": 0.8936,
+          "t": 431.01,
+          "smooth": 0.2356
+        },
+        {
+          "seg": 90,
+          "start": 432.7,
+          "end": 436.14,
+          "raw": -0.577,
+          "t": 434.42,
+          "smooth": 0.1787
+        },
+        {
+          "seg": 91,
+          "start": 436.4,
+          "end": 442.23999999999995,
+          "raw": 0.9209,
+          "t": 439.32,
+          "smooth": 0.0971
+        },
+        {
+          "seg": 92,
+          "start": 442.23999999999995,
+          "end": 446.17999999999995,
+          "raw": 0.8733,
+          "t": 444.21,
+          "smooth": -0.005
+        },
+        {
+          "seg": 93,
+          "start": 447.09999999999997,
+          "end": 451.06,
+          "raw": 0.0,
+          "t": 449.08,
+          "smooth": -0.0292
+        },
+        {
+          "seg": 94,
+          "start": 454.06,
+          "end": 460.32,
+          "raw": 0.0,
+          "t": 457.19,
+          "smooth": -0.0414
+        },
+        {
+          "seg": 95,
+          "start": 460.32,
+          "end": 469.5,
+          "raw": -0.9301,
+          "t": 464.91,
+          "smooth": -0.1286
+        },
+        {
+          "seg": 96,
+          "start": 469.7,
+          "end": 477.46,
+          "raw": -0.5774,
+          "t": 473.58,
+          "smooth": -0.3612
+        }
+      ],
+      "turns": [
+        {
+          "seg": 24,
+          "t": 132.5,
+          "kind": "peak",
+          "smooth": 0.2807,
+          "prominence": 0.371
+        },
+        {
+          "seg": 62,
+          "t": 314.69,
+          "kind": "dip",
+          "smooth": -0.0455,
+          "prominence": 0.2926
+        },
+        {
+          "seg": 88,
+          "t": 426.41,
+          "kind": "peak",
+          "smooth": 0.2471,
+          "prominence": 0.2926
+        }
+      ]
+    },
+    "moments": [
+      {
+        "seg": 4,
+        "start": 26.72,
+        "end": 32.16,
+        "time": "0:26",
+        "conflict": 0.8,
+        "flagged": true,
+        "damped": false,
+        "valences": {
+          "transcript": "NEGATIVE",
+          "vocal": "NEGATIVE",
+          "comment": "POSITIVE"
+        },
+        "text": "since literally 1949. But like they've even been not trending. Were things trending back when we"
+      },
+      {
+        "seg": 39,
+        "start": 209.8,
+        "end": 215.26000000000002,
+        "time": "3:29",
+        "conflict": 0.8,
+        "flagged": true,
+        "damped": false,
+        "valences": {
+          "transcript": "NEUTRAL",
+          "facial": "NEGATIVE",
+          "vocal": "NEUTRAL",
+          "comment": "POSITIVE"
+        },
+        "text": "for comparison purposes, if you're going to compare this to something around the same price point as"
+      },
+      {
+        "seg": 74,
+        "start": 363.88,
+        "end": 368.52,
+        "time": "6:03",
+        "conflict": 0.8,
+        "flagged": true,
+        "damped": false,
+        "valences": {
+          "transcript": "NEGATIVE",
+          "vocal": "NEUTRAL",
+          "comment": "POSITIVE"
+        },
+        "text": "it's a cheap piece of shit. If you wanted to pull it out, you can. If you wanted to add a little bit"
+      }
+    ],
+    "signs": {
+      "title": "Signs of a commercial interest or a mismatch",
+      "disclaimer": "These are signs, not proof. A creator can disclose a sponsor and still review honestly, and an undisclosed deal would leave none of these marks.",
+      "signs": [
+        {
+          "id": "S1",
+          "kind": "fact",
+          "state": "present",
+          "name": "The creator declared a paid promotion",
+          "evidence": {
+            "label": true,
+            "description": []
+          }
+        },
+        {
+          "id": "S2",
+          "kind": "fact",
+          "state": "absent",
+          "name": "Sponsor, code, affiliate or gift wording in what was said",
+          "evidence": {
+            "speech": []
+          }
+        },
+        {
+          "id": "S3",
+          "kind": "fact",
+          "state": "absent",
+          "name": "Affiliate links, discount codes or a gifted unit in the description",
+          "evidence": {
+            "description": []
+          }
+        },
+        {
+          "id": "S4",
+          "kind": "inference",
+          "state": "absent",
+          "name": "The reviewer was measurably warmer than the audience",
+          "evidence": {
+            "agreement": {
+              "gap": -0.5125134611242734,
+              "se": 0.09021959492443513,
+              "low": -0.6893406178759589,
+              "high": -0.33568630437258795,
+              "call": "audience_warmer"
+            }
+          }
+        },
+        {
+          "id": "S5",
+          "kind": "inference",
+          "state": "absent",
+          "name": "Positive words at moments the controller flagged",
+          "evidence": {
+            "positive_flagged": [],
+            "controller_flag": []
+          }
+        }
+      ],
+      "present": 1,
+      "checked": 5
+    }
+  },
+  "reading": {
+    "claims": [
+      {
+        "seg": 7,
+        "time": "0:42",
+        "start": 42.04,
+        "aspect": "availability",
+        "stance": "criticism",
+        "claim": "The Adidas Samba is hard to obtain in store.",
+        "quote": "the fact that they are actually hard to obtain in store is insane to me",
+        "seg_end": 8,
+        "topic": "T0"
+      },
+      {
+        "seg": 8,
+        "time": "0:48",
+        "start": 48.04,
+        "aspect": "price",
+        "stance": "praise",
+        "claim": "The Adidas Samba is available under retail.",
+        "quote": "These guys right now are available under retail",
+        "seg_end": 9,
+        "topic": "T0"
+      },
+      {
+        "seg": 10,
+        "time": "0:59",
+        "start": 59.08,
+        "aspect": "shipping",
+        "stance": "praise",
+        "claim": "StockX's Express Ship allows for immediate shipping.",
+        "quote": "They're also available with their new Express Ship, where you can just like, they go straight away",
+        "topic": "T0"
+      },
+      {
+        "seg": 13,
+        "time": "1:11",
+        "start": 71.3,
+        "aspect": "shipping",
+        "stance": "praise",
+        "claim": "StockX's Express Ship is convenient.",
+        "quote": "StockX just introduced its new Express Ship service, where items are pre-verified and ready to ship",
+        "topic": "T0"
+      },
+      {
+        "seg": 14,
+        "time": "1:19",
+        "start": 79.76,
+        "aspect": "shipping",
+        "stance": "praise",
+        "claim": "StockX's Express Ship eliminates waiting time.",
+        "quote": "No waiting for a seller to package, ship to a StockX hub, go through its verification process",
+        "seg_end": 15,
+        "topic": "T0"
+      },
+      {
+        "seg": 17,
+        "time": "1:35",
+        "start": 95.78,
+        "aspect": "price",
+        "stance": "praise",
+        "claim": "Many items on StockX are available for under retail.",
+        "quote": "a lot of them are under retail, such as the Samba OG",
+        "topic": "T0"
+      },
+      {
+        "seg": 18,
+        "time": "1:40",
+        "start": 100.96000000000001,
+        "aspect": "shipping",
+        "stance": "praise",
+        "claim": "StockX's Express Ship is fast.",
+        "quote": "and then it'll be delivered in about three business days",
+        "seg_end": 19,
+        "topic": "T0"
+      },
+      {
+        "seg": 31,
+        "time": "2:47",
+        "start": 167.16,
+        "aspect": "design",
+        "stance": "praise",
+        "claim": "The Adidas Samba is not tech-heavy.",
+        "quote": "the shoe is not tech heavy whatsoever",
+        "topic": "T0"
+      },
+      {
+        "seg": 40,
+        "time": "3:35",
+        "start": 215.26000000000002,
+        "aspect": "materials",
+        "stance": "praise",
+        "claim": "The materials are nicer than those in a Nike sneaker.",
+        "quote": "at least the materials here are way nicer than anything you'll get over there",
+        "topic": "T0"
+      },
+      {
+        "seg": 42,
+        "time": "3:45",
+        "start": 225.62,
+        "aspect": "design",
+        "stance": "praise",
+        "claim": "The outsole is iconic and classic.",
+        "quote": "I really like it, but it's because it's iconic. It's kind of classic and everything",
+        "topic": "T0"
+      },
+      {
+        "seg": 44,
+        "time": "3:54",
+        "start": 234.52,
+        "aspect": "performance",
+        "stance": "neutral",
+        "claim": "The shoe is supposed to perform well on hard and icy surfaces.",
+        "quote": "When you read about how it's supposed to like hard surfaces or icy surfaces",
+        "topic": "T0"
+      },
+      {
+        "seg": 46,
+        "time": "4:04",
+        "start": 244.5,
+        "aspect": "design",
+        "stance": "praise",
+        "claim": "The outsole is very cool.",
+        "quote": "I think that it's very cool. As far as the rest of the outsole",
+        "seg_end": 47,
+        "topic": "T0"
+      },
+      {
+        "seg": 51,
+        "time": "4:28",
+        "start": 268.5,
+        "aspect": "versatility",
+        "stance": "praise",
+        "claim": "The shoe can be worn with anything.",
+        "quote": "You can wear this with damn near anything and get away with it",
+        "seg_end": 52,
+        "topic": "T0"
+      },
+      {
+        "seg": 52,
+        "time": "4:32",
+        "start": 272.9,
+        "aspect": "design",
+        "stance": "praise",
+        "claim": "The shoe has many different material options.",
+        "quote": "there's so many different material options too, not just colors and materials",
+        "seg_end": 53,
+        "topic": "T0"
+      },
+      {
+        "seg": 69,
+        "time": "5:42",
+        "start": 342.36,
+        "aspect": "sustainability",
+        "stance": "praise",
+        "claim": "Adidas offers plant-based versions of the shoe.",
+        "quote": "There's actual like plant-based versions, which is really cool",
+        "seg_end": 70,
+        "topic": "T0"
+      },
+      {
+        "seg": 73,
+        "time": "5:59",
+        "start": 359.34,
+        "aspect": "comfort",
+        "stance": "criticism",
+        "claim": "The insole is the only comfort you're getting.",
+        "quote": "Now, as far as the insole is concerned, that's really the only comfort that you're getting.",
+        "topic": "T0"
+      },
+      {
+        "seg": 74,
+        "time": "6:03",
+        "start": 363.88,
+        "aspect": "value",
+        "stance": "criticism",
+        "claim": "The insole is a cheap piece of shit.",
+        "quote": "it's a cheap piece of shit.",
+        "topic": "T0"
+      },
+      {
+        "seg": 76,
+        "time": "6:12",
+        "start": 372.62,
+        "aspect": "performance",
+        "stance": "neutral",
+        "claim": "There's nothing in the shoe.",
+        "quote": "there's nothing in there.",
+        "topic": "T0"
+      },
+      {
+        "seg": 79,
+        "time": "6:25",
+        "start": 385.94,
+        "aspect": "performance",
+        "stance": "praise",
+        "claim": "The Game Day insole is a bit softer.",
+        "quote": "the shank plate is not quite as stiff.",
+        "topic": "T0"
+      },
+      {
+        "seg": 81,
+        "time": "6:33",
+        "start": 393.64,
+        "aspect": "performance",
+        "stance": "praise",
+        "claim": "The all day insole has a little bit more cushion.",
+        "quote": "with a little bit more cushion, then you can go with their all day.",
+        "topic": "T0"
+      },
+      {
+        "seg": 82,
+        "time": "6:38",
+        "start": 398.0,
+        "aspect": "fit",
+        "stance": "criticism",
+        "claim": "The all day insole will alter the fit.",
+        "quote": "It'll make the toe box a little more snug.",
+        "seg_end": 83,
+        "topic": "T0"
+      },
+      {
+        "seg": 85,
+        "time": "6:50",
+        "start": 410.44,
+        "aspect": "fit",
+        "stance": "praise",
+        "claim": "The Adidas Samba fits perfect.",
+        "quote": "They fit perfect.",
+        "topic": "T0"
+      },
+      {
+        "seg": 85,
+        "time": "6:50",
+        "start": 410.44,
+        "aspect": "design",
+        "stance": "praise",
+        "claim": "The Adidas Samba looks good.",
+        "quote": "I like the way that they look too.",
+        "seg_end": 86,
+        "topic": "T0"
+      }
+    ],
+    "topics": [
+      {
+        "id": "T0",
+        "name": "The reviewer",
+        "aspects": [
+          "design",
+          "performance",
+          "shipping",
+          "fit",
+          "price",
+          "availability",
+          "comfort",
+          "materials",
+          "sustainability",
+          "value",
+          "versatility"
+        ],
+        "reviewer": {
+          "claims": 23,
+          "stances": {
+            "praise": 17,
+            "criticism": 4,
+            "mixed": 0,
+            "neutral": 2
+          },
+          "seconds": {
+            "POSITIVE": 37.72,
+            "NEUTRAL": 91.1,
+            "NEGATIVE": 15.28
+          },
+          "segments": [
+            7,
+            8,
+            9,
+            10,
+            13,
+            14,
+            15,
+            17,
+            18,
+            19,
+            31,
+            40,
+            42,
+            44,
+            46,
+            47,
+            51,
+            52,
+            53,
+            69,
+            70,
+            73,
+            74,
+            76,
+            79,
+            81,
+            82,
+            83,
+            85,
+            86
+          ],
+          "lean": 0.15572519083969483,
+          "se": 0.10734312032972013,
+          "call": "balanced"
+        },
+        "audience": {
+          "comments": 21,
+          "counts": {
+            "POSITIVE": 12,
+            "NEUTRAL": 8,
+            "NEGATIVE": 1
+          },
+          "lean": 0.5238095238095238,
+          "se": 0.13127665478181164,
+          "call": "positive",
+          "questions": 4,
+          "examples": [
+            {
+              "i": 11,
+              "quote": "Mrs Wing threw that box like she was mad at you. What did you do to her? 😂😂",
+              "label": "NEUTRAL",
+              "likes": 3
+            },
+            {
+              "i": 21,
+              "quote": "Lmfao, I think she was trying to injure you  broski!",
+              "label": "NEUTRAL",
+              "likes": 2
+            },
+            {
+              "i": 82,
+              "quote": "I’ve been wearing this sneaker since I was 13 (23 now) I even used them for indoor football. Funny how they’re trendy now. Great shoe overall",
+              "label": "POSITIVE",
+              "likes": 0
+            }
+          ]
+        },
+        "agreement": {
+          "gap": -0.368084332969829,
+          "se": 0.16957625297435877,
+          "low": -0.7004476814328254,
+          "high": -0.03572098450683259,
+          "call": "audience_warmer"
+        }
+      },
+      {
+        "id": "T1",
+        "name": "Cushioning and comfort",
+        "aspects": [],
+        "reviewer": {
+          "claims": 0,
+          "stances": {
+            "praise": 0,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 0.0,
+            "NEUTRAL": 0.0,
+            "NEGATIVE": 0.0
+          },
+          "segments": [],
+          "lean": null,
+          "se": null,
+          "call": "unknown"
+        },
+        "audience": {
+          "comments": 6,
+          "counts": {
+            "POSITIVE": 5,
+            "NEUTRAL": 1,
+            "NEGATIVE": 0
+          },
+          "lean": 0.8333333333333334,
+          "se": 0.16666666666666666,
+          "call": "positive",
+          "questions": 1,
+          "examples": [
+            {
+              "i": 22,
+              "quote": "It's so simple and comfortable, I've bought 3 pairs about 3 yrs ago.",
+              "label": "POSITIVE",
+              "likes": 1
+            },
+            {
+              "i": 94,
+              "quote": "The black ones are more comfortable than the white ones😊",
+              "label": "POSITIVE",
+              "likes": 0
+            },
+            {
+              "i": 42,
+              "quote": "I love Adidas Samba, wear them on and off the pitch. great price and very stylish, durable shoes.",
+              "label": "POSITIVE",
+              "likes": 0
+            }
+          ]
+        },
+        "agreement": {
+          "gap": null,
+          "se": null,
+          "low": null,
+          "high": null,
+          "call": "unknown"
+        }
+      },
+      {
+        "id": "T2",
+        "name": "Where to buy",
+        "aspects": [],
+        "reviewer": {
+          "claims": 0,
+          "stances": {
+            "praise": 0,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 0.0,
+            "NEUTRAL": 0.0,
+            "NEGATIVE": 0.0
+          },
+          "segments": [],
+          "lean": null,
+          "se": null,
+          "call": "unknown"
+        },
+        "audience": {
+          "comments": 11,
+          "counts": {
+            "POSITIVE": 9,
+            "NEUTRAL": 1,
+            "NEGATIVE": 1
+          },
+          "lean": 0.7272727272727273,
+          "se": 0.19497827808661106,
+          "call": "positive",
+          "questions": 1,
+          "examples": [
+            {
+              "i": 4,
+              "quote": "Never expected to see the Samba on the WearTesters channel but here we are! Love it😅\n\nA timeless classic, but they are LITERALLY EVERYWHERE in the UK right now! \nIn London, every woman wearing baggy jeans/trousers has these on 😂",
+              "label": "POSITIVE",
+              "likes": 93
+            },
+            {
+              "i": 6,
+              "quote": "That quick delivery was no joke. 😂. Great video.",
+              "label": "POSITIVE",
+              "likes": 5
+            },
+            {
+              "i": 40,
+              "quote": "In England these are worn by everyone and have been ever since I can remember. Very solid shoes",
+              "label": "POSITIVE",
+              "likes": 4
+            }
+          ]
+        },
+        "agreement": {
+          "gap": null,
+          "se": null,
+          "low": null,
+          "high": null,
+          "call": "unknown"
+        }
+      },
+      {
+        "id": "T3",
+        "name": "Sole and outsole",
+        "aspects": [],
+        "reviewer": {
+          "claims": 0,
+          "stances": {
+            "praise": 0,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 0.0,
+            "NEUTRAL": 0.0,
+            "NEGATIVE": 0.0
+          },
+          "segments": [],
+          "lean": null,
+          "se": null,
+          "call": "unknown"
+        },
+        "audience": {
+          "comments": 21,
+          "counts": {
+            "POSITIVE": 9,
+            "NEUTRAL": 10,
+            "NEGATIVE": 2
+          },
+          "lean": 0.3333333333333333,
+          "se": 0.14364860122855577,
+          "call": "positive",
+          "questions": 3,
+          "examples": [
+            {
+              "i": 9,
+              "quote": "Hey, Chris. Some football shoes use to have that bending tongue to cover the laces in order to provide precision and comfort to shooting. Nowadays most shoes just have the laces to the side.",
+              "label": "NEUTRAL",
+              "likes": 11
+            },
+            {
+              "i": 33,
+              "quote": "In early 2000 (if im not mistaken) they were regular issuse sneakers for millitary inlisted personal in our country (back in the day we have that ). For exercise and stuff like that. Cos they were dirt cheap and pretty much indestructible. Still. I love it. Its a classic like Superstar, or Chucks",
+              "label": "POSITIVE",
+              "likes": 3
+            },
+            {
+              "i": 38,
+              "quote": "Chris You should Compare the OG vs the Long tounge version. That has more of a \"performance\" like different insoles.",
+              "label": "NEUTRAL",
+              "likes": 2
+            }
+          ]
+        },
+        "agreement": {
+          "gap": null,
+          "se": null,
+          "low": null,
+          "high": null,
+          "call": "unknown"
+        }
+      },
+      {
+        "id": "T4",
+        "name": "Trendiness and style",
+        "aspects": [],
+        "reviewer": {
+          "claims": 0,
+          "stances": {
+            "praise": 0,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 0.0,
+            "NEUTRAL": 0.0,
+            "NEGATIVE": 0.0
+          },
+          "segments": [],
+          "lean": null,
+          "se": null,
+          "call": "unknown"
+        },
+        "audience": {
+          "comments": 36,
+          "counts": {
+            "POSITIVE": 30,
+            "NEUTRAL": 5,
+            "NEGATIVE": 1
+          },
+          "lean": 0.8055555555555556,
+          "se": 0.07786276535852611,
+          "call": "positive",
+          "questions": 0,
+          "examples": [
+            {
+              "i": 4,
+              "quote": "Never expected to see the Samba on the WearTesters channel but here we are! Love it😅\n\nA timeless classic, but they are LITERALLY EVERYWHERE in the UK right now! \nIn London, every woman wearing baggy jeans/trousers has these on 😂",
+              "label": "POSITIVE",
+              "likes": 93
+            },
+            {
+              "i": 2,
+              "quote": "Wow this was a huge surprise. I feel like sneaker people have been hyping this up the last year like it’s a new thing… I’m glad you said it these have always been on feet. Good stuff! This video broke my neck though.",
+              "label": "POSITIVE",
+              "likes": 77
+            },
+            {
+              "i": 1,
+              "quote": "Samba, gazelle, Stan Smith, and  superstar, iconic classics.",
+              "label": "POSITIVE",
+              "likes": 61
+            }
+          ]
+        },
+        "agreement": {
+          "gap": null,
+          "se": null,
+          "low": null,
+          "high": null,
+          "call": "unknown"
+        }
+      },
+      {
+        "id": "T5",
+        "name": "Materials and durability",
+        "aspects": [],
+        "reviewer": {
+          "claims": 0,
+          "stances": {
+            "praise": 0,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 0.0,
+            "NEUTRAL": 0.0,
+            "NEGATIVE": 0.0
+          },
+          "segments": [],
+          "lean": null,
+          "se": null,
+          "call": "unknown"
+        },
+        "audience": {
+          "comments": 8,
+          "counts": {
+            "POSITIVE": 5,
+            "NEUTRAL": 2,
+            "NEGATIVE": 1
+          },
+          "lean": 0.5,
+          "se": 0.2672612419124244,
+          "call": "balanced",
+          "questions": 1,
+          "examples": [
+            {
+              "i": 33,
+              "quote": "In early 2000 (if im not mistaken) they were regular issuse sneakers for millitary inlisted personal in our country (back in the day we have that ). For exercise and stuff like that. Cos they were dirt cheap and pretty much indestructible. Still. I love it. Its a classic like Superstar, or Chucks",
+              "label": "POSITIVE",
+              "likes": 3
+            },
+            {
+              "i": 19,
+              "quote": "I have had the Made in Germany OG pair with the big tongue from years ago. One of the best quality shoes I have.",
+              "label": "POSITIVE",
+              "likes": 2
+            },
+            {
+              "i": 52,
+              "quote": "In the 1970s , my sambas were totally indestructible. Used the Rom through PE college and as a PE teacher used the adidas Natase or Stan Smith and still  tough quality shoes. I always chose adidas first. Best shoes/football boots and hockey astros  I’ve used. Running shoes and spikes good workhorses! Now a retired PE teacher and still wearing adidas!!!",
+              "label": "POSITIVE",
+              "likes": 0
+            }
+          ]
+        },
+        "agreement": {
+          "gap": null,
+          "se": null,
+          "low": null,
+          "high": null,
+          "call": "unknown"
+        }
+      },
+      {
+        "id": "T6",
+        "name": "Price and value",
+        "aspects": [],
+        "reviewer": {
+          "claims": 0,
+          "stances": {
+            "praise": 0,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 0.0,
+            "NEUTRAL": 0.0,
+            "NEGATIVE": 0.0
+          },
+          "segments": [],
+          "lean": null,
+          "se": null,
+          "call": "unknown"
+        },
+        "audience": {
+          "comments": 2,
+          "counts": {
+            "POSITIVE": 2,
+            "NEUTRAL": 0,
+            "NEGATIVE": 0
+          },
+          "lean": 1.0,
+          "se": 0.0,
+          "call": "positive",
+          "questions": 0,
+          "examples": [
+            {
+              "i": 27,
+              "quote": "these are just the classic timeless shoes that have caught fire this year cause of its timeless look, people are tired of shoes that look wild as hell that are also not gonna last they just need a piece that’ll last a bit and a good plus is these are pretty affordable and durable as well",
+              "label": "POSITIVE",
+              "likes": 1
+            }
+          ]
+        },
+        "agreement": {
+          "gap": null,
+          "se": null,
+          "low": null,
+          "high": null,
+          "call": "unknown"
+        }
+      }
+    ],
+    "topic_source": "model",
+    "questions": [
+      {
+        "i": 11,
+        "quote": "Mrs Wing threw that box like she was mad at you. What did you do to her? 😂😂"
+      },
+      {
+        "i": 99,
+        "quote": "Cable and storm. Or is it magneto?"
+      },
+      {
+        "i": 84,
+        "quote": "Can you Review Converse 70s high black ?"
+      }
+    ],
+    "comment_tags": {
+      "0": [
+        "The reviewer",
+        "Trendiness and style"
+      ],
+      "1": [
+        "Trendiness and style"
+      ],
+      "2": [
+        "Trendiness and style"
+      ],
+      "3": [
+        "Trendiness and style"
+      ],
+      "4": [
+        "Trendiness and style",
+        "Where to buy"
+      ],
+      "5": [
+        "Trendiness and style"
+      ],
+      "6": [
+        "Where to buy"
+      ],
+      "7": [
+        "Trendiness and style"
+      ],
+      "8": [
+        "Sole and outsole",
+        "Materials and durability"
+      ],
+      "9": [
+        "Sole and outsole"
+      ],
+      "10": [
+        "Trendiness and style"
+      ],
+      "11": [
+        "The reviewer"
+      ],
+      "12": [
+        "Sole and outsole"
+      ],
+      "13": [
+        "Trendiness and style"
+      ],
+      "14": [
+        "Trendiness and style"
+      ],
+      "15": [
+        "Trendiness and style"
+      ],
+      "16": [
+        "Trendiness and style"
+      ],
+      "17": [
+        "Trendiness and style",
+        "Price and value"
+      ],
+      "18": [
+        "Where to buy"
+      ],
+      "19": [
+        "Materials and durability"
+      ],
+      "20": [
+        "Trendiness and style"
+      ],
+      "21": [
+        "The reviewer"
+      ],
+      "22": [
+        "Cushioning and comfort"
+      ],
+      "23": [
+        "Trendiness and style"
+      ],
+      "24": [
+        "Trendiness and style"
+      ],
+      "25": [],
+      "26": [],
+      "27": [
+        "Trendiness and style",
+        "Price and value"
+      ],
+      "28": [],
+      "29": [
+        "Sole and outsole"
+      ],
+      "30": [
+        "Trendiness and style"
+      ],
+      "31": [
+        "Materials and durability"
+      ],
+      "32": [],
+      "33": [
+        "Sole and outsole",
+        "Materials and durability"
+      ],
+      "34": [],
+      "35": [
+        "Trendiness and style"
+      ],
+      "36": [
+        "Trendiness and style"
+      ],
+      "37": [
+        "Sole and outsole"
+      ],
+      "38": [
+        "Sole and outsole"
+      ],
+      "39": [
+        "Where to buy"
+      ],
+      "40": [
+        "Where to buy"
+      ],
+      "41": [
+        "Trendiness and style"
+      ],
+      "42": [
+        "Cushioning and comfort",
+        "Trendiness and style"
+      ],
+      "43": [
+        "Trendiness and style"
+      ],
+      "44": [
+        "Where to buy"
+      ],
+      "45": [
+        "Sole and outsole"
+      ],
+      "46": [
+        "Where to buy"
+      ],
+      "47": [
+        "Trendiness and style"
+      ],
+      "48": [
+        "Materials and durability"
+      ],
+      "49": [
+        "Where to buy"
+      ],
+      "50": [
+        "Trendiness and style"
+      ],
+      "51": [
+        "The reviewer"
+      ],
+      "52": [
+        "Sole and outsole",
+        "Materials and durability"
+      ],
+      "53": [
+        "Sole and outsole"
+      ],
+      "54": [
+        "Sole and outsole"
+      ],
+      "55": [
+        "Trendiness and style"
+      ],
+      "56": [
+        "Cushioning and comfort",
+        "Sole and outsole"
+      ],
+      "57": [
+        "Where to buy",
+        "Trendiness and style"
+      ],
+      "58": [
+        "Sole and outsole"
+      ],
+      "59": [
+        "The reviewer"
+      ],
+      "60": [
+        "The reviewer"
+      ],
+      "61": [
+        "Trendiness and style"
+      ],
+      "62": [
+        "Sole and outsole"
+      ],
+      "63": [
+        "Cushioning and comfort"
+      ],
+      "64": [],
+      "65": [
+        "Trendiness and style"
+      ],
+      "66": [],
+      "67": [
+        "Materials and durability"
+      ],
+      "68": [
+        "Sole and outsole"
+      ],
+      "69": [
+        "Trendiness and style"
+      ],
+      "70": [
+        "Trendiness and style"
+      ],
+      "71": [],
+      "72": [
+        "The reviewer"
+      ],
+      "73": [],
+      "74": [
+        "Materials and durability"
+      ],
+      "75": [
+        "Trendiness and style"
+      ],
+      "76": [
+        "Sole and outsole",
+        "Cushioning and comfort"
+      ],
+      "77": [
+        "The reviewer"
+      ],
+      "78": [
+        "The reviewer"
+      ],
+      "79": [
+        "Where to buy",
+        "Sole and outsole"
+      ],
+      "80": [
+        "Sole and outsole"
+      ],
+      "81": [
+        "Trendiness and style"
+      ],
+      "82": [
+        "The reviewer",
+        "Trendiness and style"
+      ],
+      "83": [
+        "The reviewer"
+      ],
+      "84": [
+        "The reviewer"
+      ],
+      "85": [
+        "Sole and outsole"
+      ],
+      "86": [
+        "The reviewer"
+      ],
+      "87": [
+        "The reviewer"
+      ],
+      "88": [
+        "The reviewer"
+      ],
+      "89": [
+        "The reviewer"
+      ],
+      "90": [
+        "The reviewer",
+        "Sole and outsole"
+      ],
+      "91": [
+        "Where to buy"
+      ],
+      "92": [
+        "Sole and outsole"
+      ],
+      "93": [
+        "Trendiness and style"
+      ],
+      "94": [
+        "Cushioning and comfort"
+      ],
+      "95": [
+        "The reviewer"
+      ],
+      "96": [
+        "The reviewer"
+      ],
+      "97": [
+        "The reviewer"
+      ],
+      "98": [
+        "Trendiness and style"
+      ],
+      "99": [
+        "The reviewer"
+      ]
+    }
+  },
+  "written": {
+    "verdict": {
+      "text": "The reviewer concluded that the Adidas Samba is a good product with convenient availability and comfortable materials. The audience is leaning positive, with 66% of comments being positive.",
+      "evidence": [
+        "S94",
+        "T0"
+      ],
+      "source": "model"
+    },
+    "brand_health_words": {
+      "text": "The audience is generally positive about the product, with 66% of comments being positive. The reviewer's tone is balanced, but the audience is measurably warmer.",
+      "evidence": [
+        "T0",
+        "S94"
+      ],
+      "source": "model"
+    },
+    "audience_words": {
+      "text": "100 comments were read; the comments lean positive.",
+      "evidence": [],
+      "source": "template"
+    },
+    "agreement_words": {
+      "text": "The audience is measurably warmer than the reviewer.",
+      "evidence": [],
+      "source": "template"
+    },
+    "takeaways": [
+      {
+        "text": "The brand should consider highlighting the convenience of StockX's Express Ship service.",
+        "evidence": [
+          "S10",
+          "T0"
+        ]
+      },
+      {
+        "text": "The brand should emphasize the comfort and simplicity of the shoe's design.",
+        "evidence": [
+          "S42",
+          "T0"
+        ]
+      },
+      {
+        "text": "The brand should focus on the shoe's classic and iconic design.",
+        "evidence": [
+          "S46",
+          "T0"
+        ]
+      }
+    ],
+    "moment_notes": [
+      {
+        "seg": 39,
+        "text": "The words read neutral as the reviewer compares the shoe to others, while the face reads negative and the comments are positive."
+      },
+      {
+        "seg": 74,
+        "text": "The words read negative as the reviewer criticizes the shoe's quality, while the voice is neutral and the comments are positive."
+      }
+    ],
+    "turn_labels": [
+      {
+        "seg": 24,
+        "label": "The price"
+      },
+      {
+        "seg": 62,
+        "label": "Trying them on"
+      },
+      {
+        "seg": 88,
+        "label": "Closing words"
+      }
+    ]
+  },
+  "verifier": {
+    "proposed": 145,
+    "kept": 140,
+    "by_field": {
+      "claim": {
+        "kept": 23,
+        "dropped": 1
+      },
+      "topic": {
+        "kept": 7,
+        "dropped": 1
+      },
+      "comment_tags": {
+        "kept": 100,
+        "dropped": 0
+      },
+      "verdict": {
+        "kept": 1,
+        "dropped": 0
+      },
+      "brand_health_words": {
+        "kept": 1,
+        "dropped": 0
+      },
+      "audience_words": {
+        "kept": 0,
+        "dropped": 1
+      },
+      "agreement_words": {
+        "kept": 0,
+        "dropped": 1
+      },
+      "takeaway": {
+        "kept": 3,
+        "dropped": 0
+      },
+      "moment_note": {
+        "kept": 2,
+        "dropped": 1
+      },
+      "turn_label": {
+        "kept": 3,
+        "dropped": 0
+      }
+    },
+    "dropped": [
+      {
+        "field": "claim",
+        "reasons": [
+          "quote not found in its segment"
+        ],
+        "text": "{'seg': 48, 'aspect': 'comfort', 'stance': 'praise', 'claim': 'The shoe provides a minimalist barefoot feel.', 'quote': \"if you're looking for a minimalist barefoot type of feel, this is kind of like something that you can start off with\"}"
+      },
+      {
+        "field": "topic",
+        "reasons": [
+          "name not usable or repeated"
+        ],
+        "text": "{'name': 'Comparisons with other products', 'aspects': []}"
+      },
+      {
+        "field": "audience_words",
+        "reasons": [
+          "states a proportion that cannot be checked: 'most comments'"
+        ],
+        "text": "The audience is discussing the convenience of availability and the comfort of the shoe's design. The topics with the most comments are 'The reviewer' and 'Trendiness and style'."
+      },
+      {
+        "field": "agreement_words",
+        "reasons": [
+          "contradicts the call: the audience is the warmer side"
+        ],
+        "text": "The reviewer and the audience agree on the convenience of availability and the comfort of the shoe's design. However, the reviewer praises the shoe's classic design, while the audience is more neutral."
+      },
+      {
+        "field": "moment_note",
+        "reasons": [
+          "says the face read negative; the face was not read at this moment"
+        ],
+        "text": "The words read negative as the reviewer mentions the shoe's lack of trendiness, while the face reads negative and the comments are positive."
+      }
+    ],
+    "notes": [
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 8,
+        "to": [
+          7,
+          8
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 9,
+        "to": [
+          8,
+          9
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 14,
+        "to": [
+          14,
+          15
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "segment corrected to where the quote is",
+        "from": 16,
+        "to": 17
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 18,
+        "to": [
+          18,
+          19
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 46,
+        "to": [
+          46,
+          47
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 52,
+        "to": [
+          51,
+          52
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 53,
+        "to": [
+          52,
+          53
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 69,
+        "to": [
+          69,
+          70
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "segment corrected to where the quote is",
+        "from": 75,
+        "to": 76
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 82,
+        "to": [
+          82,
+          83
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 86,
+        "to": [
+          85,
+          86
+        ]
+      }
+    ]
+  },
+  "video_meta": {
+    "fetched": true,
+    "at": "2026-09-26T19:14:10+00:00",
+    "has_paid_product_placement": true,
+    "description_hits": [],
+    "title": "adidas Samba OG Review",
+    "channel": "WearTesters",
+    "published_at": "2023-10-27T14:00:52Z"
+  },
+  "calls": [
+    {
+      "step": "claims",
+      "ok": true,
+      "seconds": 33.48,
+      "prompt_chars": 6539,
+      "prompt_tokens": 1854,
+      "output_tokens": 439
+    },
+    {
+      "step": "claims",
+      "ok": true,
+      "seconds": 27.78,
+      "prompt_chars": 6552,
+      "prompt_tokens": 1895,
+      "output_tokens": 456
+    },
+    {
+      "step": "claims",
+      "ok": true,
+      "seconds": 23.55,
+      "prompt_chars": 5326,
+      "prompt_tokens": 1528,
+      "output_tokens": 403
+    },
+    {
+      "step": "topics",
+      "ok": true,
+      "seconds": 18.18,
+      "prompt_chars": 5339,
+      "prompt_tokens": 1379,
+      "output_tokens": 254
+    },
+    {
+      "step": "comments",
+      "ok": true,
+      "seconds": 27.26,
+      "prompt_chars": 4566,
+      "prompt_tokens": 1266,
+      "output_tokens": 467
+    },
+    {
+      "step": "comments",
+      "ok": true,
+      "seconds": 23.93,
+      "prompt_chars": 3816,
+      "prompt_tokens": 1060,
+      "output_tokens": 438
+    },
+    {
+      "step": "comments",
+      "ok": true,
+      "seconds": 24.86,
+      "prompt_chars": 3982,
+      "prompt_tokens": 1121,
+      "output_tokens": 438
+    },
+    {
+      "step": "comments",
+      "ok": true,
+      "seconds": 23.74,
+      "prompt_chars": 3343,
+      "prompt_tokens": 966,
+      "output_tokens": 443
+    },
+    {
+      "step": "prose",
+      "ok": true,
+      "seconds": 41.39,
+      "prompt_chars": 10364,
+      "prompt_tokens": 3089,
+      "output_tokens": 575
+    }
+  ],
+  "runtime_s": 244.33,
+  "report_ref": {
+    "file": "Adidas (Samba).json",
+    "sha256": "1daa61bb5198aceeb13ec2cf9b34cca13a5691236f44edea2773525dd01880e9"
+  }
+}

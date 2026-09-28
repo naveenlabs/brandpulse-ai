@@ -1,0 +1,6251 @@
+{
+  "video_url": "https://youtu.be/j-1cRJ-k-ks?si=zrNmgt-ew4b5G7On",
+  "brand_name": "Apple",
+  "authenticity_score": 52.06,
+  "brand_health_score": 78.63,
+  "segment_count": 166,
+  "flagged_segments": [
+    {
+      "segment_id": 0,
+      "start_s": 0.16,
+      "end_s": 4.44,
+      "conflict_score": 0.8,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": true,
+      "text": "Apple's first foldable, the iPhone Duo, is official. I've had some early hands-on time,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.4893
+        },
+        "facial_emotion": {
+          "dominant": "angry",
+          "confidence": 0.7322,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7274,
+          "valence": 0.693,
+          "dominance": 0.7233,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 211.08,
+        "energy_mean": 0.011546
+      }
+    },
+    {
+      "segment_id": 85,
+      "start_s": 376.3,
+      "end_s": 380.74,
+      "conflict_score": 0.8,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": true,
+      "text": "And as the name suggests, it is really only supposed to be used for videos",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5721
+        },
+        "facial_emotion": {
+          "dominant": "fear",
+          "confidence": 0.9274,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6707,
+          "valence": 0.5665,
+          "dominance": 0.6765,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 153.51,
+        "energy_mean": 0.005786
+      }
+    },
+    {
+      "segment_id": 112,
+      "start_s": 483.1,
+      "end_s": 487.14000000000004,
+      "conflict_score": 0.8,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": true,
+      "text": "on the outer display. And that is because we do not have face ID.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.5211
+        },
+        "facial_emotion": {
+          "dominant": "fear",
+          "confidence": 0.5179,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5958,
+          "valence": 0.4896,
+          "dominance": 0.624,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 164.26,
+        "energy_mean": 0.007304
+      }
+    }
+  ],
+  "comment_sentiment": {
+    "label": "POSITIVE",
+    "confidence": 0.9634,
+    "comment_count": 100,
+    "distribution": {
+      "POSITIVE": 46,
+      "NEUTRAL": 29,
+      "NEGATIVE": 25
+    }
+  },
+  "bias_caveat": "IMPORTANT: Facial emotion recognition (DeepFace) has documented accuracy disparities across skin tone and gender (Buolamwini & Gebru, 2018; Fan et al., 2023). Authenticity scores informed by facial data should be interpreted with this limitation in mind.",
+  "vocal_caveat": "IMPORTANT: The vocal emotion channel is the second weakest of the four, after facial emotion, and is explicitly down-weighted. Benchmarked on 150 hand-rated clips from 6 speakers (vocal_bench/), the adopted model scores 48.9% three-class accuracy on held-out speakers - better than the model it replaced, which at 34.0% was significantly worse than always guessing NEUTRAL (p = 0.0070), but still not reliably better than that constant. No model tested beat it. Conflicts attributed to the vocal channel alone are damped accordingly, and per-segment claims should not rest on this channel. Read the within-video figure, not the headline: this report compares segments inside one video, and the channel's rank correlation with human judgement measured within a video is +0.159 across 147 clips and +0.056 on unseen speakers (vocal_bench/SPEAKER_NORM_RESULT.md). Most of its apparent accuracy is a between-video effect that says more about the speaker's habitual energy than about any individual moment.",
+  "vocal_licence_note": "The adopted vocal model (audeering/wav2vec2-large-robust-12-ft-emotion-msp-dim) is licensed CC-BY-NC-SA-4.0 and may not be used commercially. Every configuration measured in vocal_bench/ that showed usable signal was non-commercially licensed; the permissively-licensed alternatives measured at the bottom of every table. A commercial deployment would need to ship without this channel or replace it.",
+  "all_comments": [
+    {
+      "text": "Search  “ESR iPhone 18 Pro Max case” on https://www.amazon.com/ or check it out here:\n\nShop ESR Atelier Magnetic Case (Flex Stand)：https://dada.link/ty-56h\nShop ESR Classic Hybrid Magnetic Case (Flex Stand): https://dada.link/m422Ex\nShop ESR UltraFit Armorite Pro Screen Protector:https://dada.link/ai20El",
+      "label": "NEUTRAL",
+      "confidence": 0.9989,
+      "like_count": 23
+    },
+    {
+      "text": "That animation whenever you open and close is like a masterpiece",
+      "label": "POSITIVE",
+      "confidence": 0.9991,
+      "like_count": 293
+    },
+    {
+      "text": "The design team deserve an award for that opening / closing animation",
+      "label": "POSITIVE",
+      "confidence": 0.9987,
+      "like_count": 347
+    },
+    {
+      "text": "That opening and closing animation is soo Apple",
+      "label": "POSITIVE",
+      "confidence": 0.9991,
+      "like_count": 114
+    },
+    {
+      "text": "Commercial break at 2:34 regular programming resumes at 3:27",
+      "label": "NEUTRAL",
+      "confidence": 0.9979,
+      "like_count": 9
+    },
+    {
+      "text": "I am a Samsung user since 15 years and now Fold user since 2 years. I must admit i am for the first time really impressed by what Apple did here",
+      "label": "POSITIVE",
+      "confidence": 0.9993,
+      "like_count": 304
+    },
+    {
+      "text": "I’m actually very happy to go back to Touch ID. I use my phone with my glasses off in the dark relatively often, and having to move my face around, stare down the barrel of the camera while it fusses and then asks for my passcode is a pain sometimes. Just put my finger on it and it opens is actually great for me. Pair that up with “it’s an iPad mini with Pencil support that folds into the stupidly small pockets women’s clothes have” and I’m all for it.",
+      "label": "POSITIVE",
+      "confidence": 0.9991,
+      "like_count": 25
+    },
+    {
+      "text": "AppleCare an absolute must",
+      "label": "POSITIVE",
+      "confidence": 0.9984,
+      "like_count": 35
+    },
+    {
+      "text": "I have never been impressed to a folding phone until apple made one",
+      "label": "POSITIVE",
+      "confidence": 0.9987,
+      "like_count": 36
+    },
+    {
+      "text": "While matte finishes successfully reduce crease visibility, they compromise screen contrast and color vibrancy, leading to a duller display experience. I hope Samsung avoids following Apple’s anti-reflective route on the iPhone Duo and instead focuses on retaining their vibrant display tech while perfecting hinge design to minimize the crease.",
+      "label": "NEGATIVE",
+      "confidence": 0.969,
+      "like_count": 75
+    },
+    {
+      "text": "I've watched a lot of Duo review vids on YT and thanks for being the best one I've seen so far. Some good info I didn't get elsewhere. Subscribed and liked.",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 5
+    },
+    {
+      "text": "iPhone DUO : D (folded), U (partially open / half-open) and O (unfolded)",
+      "label": "NEUTRAL",
+      "confidence": 0.9991,
+      "like_count": 0
+    },
+    {
+      "text": "Next year is 20th Anniversary.  Everything will be better, including the Duo which needs the third camera, left hand compatibility and slightly bigger, lighter and in black.",
+      "label": "POSITIVE",
+      "confidence": 0.999,
+      "like_count": 17
+    },
+    {
+      "text": "Watching this on my fold 7 and im not looking to switch anytime soon. The crease is such an overstated problem. I never notice it on my phone",
+      "label": "NEGATIVE",
+      "confidence": 0.9982,
+      "like_count": 0
+    },
+    {
+      "text": "3:14 in my experience the problem with screen protector was when scratches starts to show its hard to remove the protector another extra bucks to remove.",
+      "label": "NEGATIVE",
+      "confidence": 0.9983,
+      "like_count": 0
+    },
+    {
+      "text": "I think its been like 6 years since the foldable phone became a thing, and a good few years since its been refined. As I suspected Apple hasn't done much different on the hardware side, but it was always gonna be about software at the end of the day.",
+      "label": "NEGATIVE",
+      "confidence": 0.8936,
+      "like_count": 8
+    },
+    {
+      "text": "Amazing hands on video keep it up as saf brother",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 9
+    },
+    {
+      "text": "Great video as always. \n\nHere a few comments and questions that I have that I don’t see anyone talking about that I’d love your thoughts on:\n\n1. On paper, there are a few solid features that the iPhone Duo has that the Galaxy Z Fold 8 doesn’t. Namely: a vapor chamber, IP68 rated, flex mode, under-display interior camera. I think those are the main key differences.\n\n2. The Z Fold 8 is quite a bit thinner and lighter. \n\n3. The main thing I’m concerned about with the Duo is the following: Samsung is extremely customizable. And for a folding phone with several possible form factors like the Duo and Z Fold 8, having the ability to customize how things work and where things go, to me, feels like an absolute must. Here are two small examples of things that I’m assuming the Duo won’t be able to do, but for me, seem like things that will make the Duo difficult for many people to use. When holding the phone with your right hand, one handed, for most people, reaching the left side of the outer display will be very difficult. On the Z Fold 8, there are two ways of overcoming that. 1. The back gesture can be on the right side. 2. One handed mode. Another thing. When open, if you want to use it with one hand, Samsung’s one handed mode is excellent. I’m sure the duo won’t have that. Then take the fact that you can have the inner display remain different than the outer display, giving you effectively two different devices, I’m sure the duo won’t have that. \n\nThese are just a few of my thoughts. I’d love to hear yours!",
+      "label": "NEUTRAL",
+      "confidence": 0.9248,
+      "like_count": 0
+    },
+    {
+      "text": "I honestly wanted them to make it look so that the main screen is closer to the dimensions of a regular iPhone, and if you wanted a larger screen, just unfold it. Sticking with Samsung on this one.",
+      "label": "NEGATIVE",
+      "confidence": 0.9941,
+      "like_count": 0
+    },
+    {
+      "text": "I also don’t get why the camera on the screen when the phone isn’t folded out can’t do Face ID. The camera is always there so I don’t get it. Maybe they can add that later or before it releases?",
+      "label": "NEGATIVE",
+      "confidence": 0.9782,
+      "like_count": 0
+    },
+    {
+      "text": "Appreciate the preview. Can’t wait to hold this thing in my hand to see if I prefer it over the 18 pro max",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 0
+    },
+    {
+      "text": "Can’t wait to see that comparison vid!",
+      "label": "POSITIVE",
+      "confidence": 0.9993,
+      "like_count": 0
+    },
+    {
+      "text": "Saf is the only person I will watch when a new iPhone comes out. Never disappoints ❤",
+      "label": "POSITIVE",
+      "confidence": 0.999,
+      "like_count": 0
+    },
+    {
+      "text": "I may get this phone once Otterbox makes a durable case for it, especially being drop proof and has those ridges instead of a flat case",
+      "label": "POSITIVE",
+      "confidence": 0.9989,
+      "like_count": 0
+    },
+    {
+      "text": "My biggest issue with this phone is that it's to small. I'm a big guy so phones like my current phone, the Z Fold 6, works well for me.  I like how seamless the screen is from the folded to unfolded screen.",
+      "label": "POSITIVE",
+      "confidence": 0.9955,
+      "like_count": 1
+    },
+    {
+      "text": "Danke!",
+      "label": "POSITIVE",
+      "confidence": 0.7278,
+      "like_count": 1
+    },
+    {
+      "text": "I have the Z Fold 8 and I like it, but I like this form factor as well.",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 0
+    },
+    {
+      "text": "Could you please double check the manual controls because I am not seeing Pro Controls noted in the tech specs section on Apple's compare page.",
+      "label": "NEUTRAL",
+      "confidence": 0.9986,
+      "like_count": 0
+    },
+    {
+      "text": "i wonder if on setting up the duo will you be able to change the position of the dock? I’m left handed so using the duo would be a bit awkward for me",
+      "label": "NEUTRAL",
+      "confidence": 0.9988,
+      "like_count": 0
+    },
+    {
+      "text": "Gunna hold of till the next gen it will be much better have any issues solved and will have more tech packed into it",
+      "label": "POSITIVE",
+      "confidence": 0.9985,
+      "like_count": 13
+    },
+    {
+      "text": "Looking great, the iPhone Duo!",
+      "label": "POSITIVE",
+      "confidence": 0.9991,
+      "like_count": 0
+    },
+    {
+      "text": "will the apps that now unlock with face ID automatically unlock with touch ID?",
+      "label": "NEUTRAL",
+      "confidence": 0.9992,
+      "like_count": 0
+    },
+    {
+      "text": "Thanks Samsung",
+      "label": "POSITIVE",
+      "confidence": 0.9993,
+      "like_count": 21
+    },
+    {
+      "text": "iphone duo is crazzzyy",
+      "label": "POSITIVE",
+      "confidence": 0.7506,
+      "like_count": 0
+    },
+    {
+      "text": "what about apps that use the dynamic island how do they work if there's no dynamic island on the duo?",
+      "label": "NEUTRAL",
+      "confidence": 0.9972,
+      "like_count": 0
+    },
+    {
+      "text": "@superSaf .. since u seen em hands on . Which one looks the best ,the black one or the white one which one looks the best in real life?",
+      "label": "NEUTRAL",
+      "confidence": 0.9946,
+      "like_count": 0
+    },
+    {
+      "text": "Thanks!",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 0
+    },
+    {
+      "text": "This will be my next iPhone fur sur. I will be upgrading from the iPhone 12 Pro Max",
+      "label": "POSITIVE",
+      "confidence": 0.9752,
+      "like_count": 0
+    },
+    {
+      "text": "Does it have a dynamic island or not?",
+      "label": "NEUTRAL",
+      "confidence": 0.9992,
+      "like_count": 0
+    },
+    {
+      "text": "Who makes the lcd display for Apple ?",
+      "label": "NEUTRAL",
+      "confidence": 0.9992,
+      "like_count": 0
+    },
+    {
+      "text": "Left hand compatibility is a software fix and may come iOS 27.1 when they enable the pencil functions",
+      "label": "NEUTRAL",
+      "confidence": 0.9885,
+      "like_count": 0
+    },
+    {
+      "text": "When you say it’s a similar blue to the 17 pro max, do you mean it’s darker or lighter ?",
+      "label": "NEUTRAL",
+      "confidence": 0.9991,
+      "like_count": 0
+    },
+    {
+      "text": "great clip. Apple Duo reminds of the Microsoft Surface Duo.  A blast from the past",
+      "label": "POSITIVE",
+      "confidence": 0.999,
+      "like_count": 2
+    },
+    {
+      "text": "My biggest question is if it doesn't have facial recognition to log onto the phone does that mean it doesn't have it for apps as well? that would be a deal breaker...",
+      "label": "NEGATIVE",
+      "confidence": 0.9898,
+      "like_count": 0
+    },
+    {
+      "text": "Where's the camera button when u take a selfie with the main camera?",
+      "label": "NEUTRAL",
+      "confidence": 0.9989,
+      "like_count": 0
+    },
+    {
+      "text": "That reflaction when netflix on and bottom shodows just wawwww",
+      "label": "POSITIVE",
+      "confidence": 0.997,
+      "like_count": 0
+    },
+    {
+      "text": "Super exciting",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 0
+    },
+    {
+      "text": "If touchID on the duo is any indication, people would riot if Apple brought back the headphone jack. Man do people love to just hate anything Apple does cause they’re Apple.",
+      "label": "NEGATIVE",
+      "confidence": 0.9977,
+      "like_count": 1
+    },
+    {
+      "text": "Thanks for the review!\n\nBeen wanting to switch back to Samsung and get that Z fold 8 ultra but the Face ID was stopping me. Now this Duo comes out and it looks better than the Samsung.. it’s beautiful, but no Face ID or 200 mp camera. 😭 \n2k is a lot to make a mistake on choosing the wrong phone.",
+      "label": "NEGATIVE",
+      "confidence": 0.6438,
+      "like_count": 0
+    },
+    {
+      "text": "As a current iPhone 13 mini user, I am ecstatic. The smallest iPhone display since the Mini! Not paying $2k for a phone though. I would love to see Apple release just that 5.4 inch outer display for half the price. maybe next year for the 20th anniversary. The iPhone Air Mini perhaps?",
+      "label": "POSITIVE",
+      "confidence": 0.9993,
+      "like_count": 0
+    },
+    {
+      "text": "I wonder if this has vapor chamber cooling 🤔🤨?",
+      "label": "NEUTRAL",
+      "confidence": 0.999,
+      "like_count": 0
+    },
+    {
+      "text": "Can't wait to see the iPhone duo inner display compared to the fold 8 screen. Every reviewer complained about the lack of telephoto lens on the fold 8. Will they keep the same energy?",
+      "label": "POSITIVE",
+      "confidence": 0.9954,
+      "like_count": 11
+    },
+    {
+      "text": "Interested to know, did no reviewer take their Z Fold8 and compare? Do reviewers not want to take it out or do Apple not want any other phone to be shown?",
+      "label": "NEUTRAL",
+      "confidence": 0.8251,
+      "like_count": 0
+    },
+    {
+      "text": "Was waiting for this vid from you 🙌🏾",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 8
+    },
+    {
+      "text": "Save your money and wait for version 2.0 they will probably have come up with a better workaround to decrease the screen decrease and everything else will be better for $2000. It is worth the weight.",
+      "label": "POSITIVE",
+      "confidence": 0.9963,
+      "like_count": 0
+    },
+    {
+      "text": "I have the 14 basic and I feel like I need to do an upgrade it’s gonna be four years of November",
+      "label": "POSITIVE",
+      "confidence": 0.9977,
+      "like_count": 0
+    },
+    {
+      "text": "They killed it with that design and the most impressive part is the way the software works with the design. Too much for me to pay but otherwise a win for Apple",
+      "label": "POSITIVE",
+      "confidence": 0.9989,
+      "like_count": 0
+    },
+    {
+      "text": "My question is how will a case work for this thing?",
+      "label": "NEUTRAL",
+      "confidence": 0.9948,
+      "like_count": 0
+    },
+    {
+      "text": "I'm really impressed with that duo. Only thing is the camera. It's going to make or break my decision. Gotta test the camera in hand. Nice review though.",
+      "label": "POSITIVE",
+      "confidence": 0.999,
+      "like_count": 3
+    },
+    {
+      "text": "4:19 left to the right to the left to the right",
+      "label": "NEUTRAL",
+      "confidence": 0.9979,
+      "like_count": 3
+    },
+    {
+      "text": "Microsoft Duo? Is that you?",
+      "label": "NEUTRAL",
+      "confidence": 0.999,
+      "like_count": 24
+    },
+    {
+      "text": "I’m sold. Looks like Apple has refined and improved on the mistakes other manufacturers have made.",
+      "label": "POSITIVE",
+      "confidence": 0.9981,
+      "like_count": 1
+    },
+    {
+      "text": "I would like to see what it looks like to type on the outer screen",
+      "label": "NEUTRAL",
+      "confidence": 0.9991,
+      "like_count": 1
+    },
+    {
+      "text": "In Canada Apple is charging a surcharge over and above the exchange rate.",
+      "label": "NEGATIVE",
+      "confidence": 0.9977,
+      "like_count": 0
+    },
+    {
+      "text": "I am so torn between the two colors. In your video the night sky variant actually looks more bluish compared to other videos. What I want to know is that is it more bluish or is it more pure black? I was thinking of thinking of star white but that bluish look is so luxurious",
+      "label": "NEUTRAL",
+      "confidence": 0.9816,
+      "like_count": 0
+    },
+    {
+      "text": "The SIM card thing is a dealbreaker especially for us outside the OECD where this is not a common thing",
+      "label": "NEGATIVE",
+      "confidence": 0.9982,
+      "like_count": 0
+    },
+    {
+      "text": "Oh that animation is nice, I thought the phone might know the absolute position of the hinge but it looks like the animation ends early at the start of this video so maybe not? If it does it could be a new sensor apps can make use of.",
+      "label": "POSITIVE",
+      "confidence": 0.9754,
+      "like_count": 0
+    },
+    {
+      "text": "Apple used a matte display to make the crease less noticeable and improve readability.",
+      "label": "NEUTRAL",
+      "confidence": 0.9305,
+      "like_count": 4
+    },
+    {
+      "text": "IPHONE DUO CAMERA REVIEW PLZ",
+      "label": "NEUTRAL",
+      "confidence": 0.9956,
+      "like_count": 0
+    },
+    {
+      "text": "This phone will revolutionise the world. So productive!",
+      "label": "POSITIVE",
+      "confidence": 0.9989,
+      "like_count": 0
+    },
+    {
+      "text": "wow. storage price have really gone up if 256gig-->3tb costs over 1100 dollars.",
+      "label": "NEGATIVE",
+      "confidence": 0.9976,
+      "like_count": 5
+    },
+    {
+      "text": "Does the duo finally have a fingernail proof large display? None of the folders have that.",
+      "label": "NEUTRAL",
+      "confidence": 0.9988,
+      "like_count": 0
+    },
+    {
+      "text": "Whilst it does cost a whopping amount of money it’s just hit me how useful it could actually be to be honest as someone like me who’s a trade person who regularly needs to look at diagrams and schematics. And for people with iPads you no longer need to buy an iPhone and an iPad just buy the duo you theoretically have both hmm might start saving my coin for one",
+      "label": "POSITIVE",
+      "confidence": 0.9989,
+      "like_count": 0
+    },
+    {
+      "text": "The only thing  I don’t like is the  camera widh it had a third like the pros",
+      "label": "NEGATIVE",
+      "confidence": 0.998,
+      "like_count": 0
+    },
+    {
+      "text": "Very heavy time you put a case on it and it's thick not far from fold 6 12.2",
+      "label": "NEGATIVE",
+      "confidence": 0.9981,
+      "like_count": 0
+    },
+    {
+      "text": "its like iphone building calculator after many years",
+      "label": "NEGATIVE",
+      "confidence": 0.9974,
+      "like_count": 0
+    },
+    {
+      "text": "Bruh things that impressed me with this ifold is\n1. Underdisplay camera\n2. Unnoticeable crease\n3. Nano textured inner display\n4. The stylus support!\n5. THE SOFTWARE! ESPECIALLY THE ANIMATIONS.\n\nSamsung is too obsessed with slimnest lately that it comes with a lot of compromises. I would rather take a 0.9mm thicker device and 50 grams weight for a stylus support.",
+      "label": "POSITIVE",
+      "confidence": 0.9918,
+      "like_count": 30
+    },
+    {
+      "text": "Its prototype wait next year or two years... its gone be better maybe... if it sticks the market..",
+      "label": "POSITIVE",
+      "confidence": 0.4783,
+      "like_count": 0
+    },
+    {
+      "text": "Wonder if the Apple website crashes when the pre-orders start.",
+      "label": "NEUTRAL",
+      "confidence": 0.5647,
+      "like_count": 0
+    },
+    {
+      "text": "Bester water and dust resistant and cameras than fold 8",
+      "label": "NEUTRAL",
+      "confidence": 0.9728,
+      "like_count": 0
+    },
+    {
+      "text": "I am so mad no one showed youtube app in hand on video.",
+      "label": "NEGATIVE",
+      "confidence": 0.9981,
+      "like_count": 0
+    },
+    {
+      "text": "nice",
+      "label": "POSITIVE",
+      "confidence": 0.9985,
+      "like_count": 0
+    },
+    {
+      "text": "Im so damn torn, for me the price isn't the issue its more of do I want to give up Face ID and the ability for zooming past 2x.",
+      "label": "NEGATIVE",
+      "confidence": 0.9979,
+      "like_count": 0
+    },
+    {
+      "text": "Can we see the use of the keyboard on the external please. Want to see how much real estate you get left with the phone being so stocky",
+      "label": "NEUTRAL",
+      "confidence": 0.8946,
+      "like_count": 0
+    },
+    {
+      "text": "Not impressed when compared to the Oppo Find N6 that is WAY MORE impressive overall. Android also has a good desktop mode that works well with Oppo and you can converter it from compact, to tablet and to full desktop. Sorry but Apple keeps falling behind and I am on my last iPhone if they don't step up their game...",
+      "label": "NEGATIVE",
+      "confidence": 0.5589,
+      "like_count": 1
+    },
+    {
+      "text": "Gorgeous ! Getting one! 🔥🔥🔥🔥",
+      "label": "POSITIVE",
+      "confidence": 0.999,
+      "like_count": 1
+    },
+    {
+      "text": "The matt screen was a deal breaker for me, not getting this iPhone!!!!!",
+      "label": "NEGATIVE",
+      "confidence": 0.9976,
+      "like_count": 2
+    },
+    {
+      "text": "I’ll wait for 2 gen I never buy 1 gen anything 🤔",
+      "label": "NEGATIVE",
+      "confidence": 0.9974,
+      "like_count": 4
+    },
+    {
+      "text": "pricings this year are getting way out of hand... seriously considering jumping ship to android now. looked around at this year's phones and october's find x10 is actually looking pretty solid",
+      "label": "NEGATIVE",
+      "confidence": 0.9948,
+      "like_count": 0
+    },
+    {
+      "text": "I know that crease going to be heavy after a few months on that matte finish",
+      "label": "NEGATIVE",
+      "confidence": 0.9958,
+      "like_count": 7
+    },
+    {
+      "text": "I havent seen anyone talking about two things. First is no LiDAR sensor. Second is when you bend it halfway to set it up to take a photo, youre putting the screen face down on whatever.",
+      "label": "NEGATIVE",
+      "confidence": 0.8346,
+      "like_count": 0
+    },
+    {
+      "text": "dropping 2k on a 1st gen foldable is straight up crazy... no telephoto lens and heavy af. plus i was already keeping an eye on other brands, might as well just wait for next month's oppo",
+      "label": "NEGATIVE",
+      "confidence": 0.9978,
+      "like_count": 0
+    },
+    {
+      "text": "Actually, there is dynamic island, it comes out of that punch hole so",
+      "label": "NEUTRAL",
+      "confidence": 0.9985,
+      "like_count": 4
+    },
+    {
+      "text": "Microsoft Neo, to Apple Neo, Microsoft Duo, to Apple Duo. The pattern is mesmerizing! First foldable since the iPhone 6, looks slick :)",
+      "label": "POSITIVE",
+      "confidence": 0.9993,
+      "like_count": 5
+    },
+    {
+      "text": "Inner cam is weak, but realistically who’s gonna use that camera anyways when you have the others on the back and the front which are better. I’ll be getting the blue Duo since I have a silver 17 pro max.",
+      "label": "NEGATIVE",
+      "confidence": 0.9957,
+      "like_count": 0
+    },
+    {
+      "text": "Jerry is waving. 😅",
+      "label": "POSITIVE",
+      "confidence": 0.6302,
+      "like_count": 0
+    },
+    {
+      "text": "Coping idc bout the 18 at all",
+      "label": "POSITIVE",
+      "confidence": 0.9987,
+      "like_count": 0
+    },
+    {
+      "text": "Apple did a fantastic job, and let's not pretend it's the opposite...kudos apple",
+      "label": "POSITIVE",
+      "confidence": 0.9988,
+      "like_count": 3
+    },
+    {
+      "text": "on the side it looks like the original iPod😆",
+      "label": "NEUTRAL",
+      "confidence": 0.9956,
+      "like_count": 1
+    },
+    {
+      "text": "My favorite part is the keyboard when you flip it 90* it looks like a baby laptop",
+      "label": "POSITIVE",
+      "confidence": 0.9989,
+      "like_count": 0
+    }
+  ],
+  "all_segments": [
+    {
+      "segment_id": 0,
+      "start_s": 0.16,
+      "end_s": 4.44,
+      "conflict_score": 0.8,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": true,
+      "text": "Apple's first foldable, the iPhone Duo, is official. I've had some early hands-on time,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.4893
+        },
+        "facial_emotion": {
+          "dominant": "angry",
+          "confidence": 0.7322,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7274,
+          "valence": 0.693,
+          "dominance": 0.7233,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 211.08,
+        "energy_mean": 0.011546
+      }
+    },
+    {
+      "segment_id": 1,
+      "start_s": 4.44,
+      "end_s": 8.08,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "and also got to test some of the cameras, and here's everything you need to know.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6864
+        },
+        "facial_emotion": {
+          "dominant": "angry",
+          "confidence": 0.6744,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7023,
+          "valence": 0.5207,
+          "dominance": 0.7207,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 191.86,
+        "energy_mean": 0.00643
+      }
+    },
+    {
+      "segment_id": 2,
+      "start_s": 8.08,
+      "end_s": 11.84,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "So first up, it's a passport size when it is closed.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.793
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6054,
+          "valence": 0.6187,
+          "dominance": 0.619,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 185.38,
+        "energy_mean": 0.007937
+      }
+    },
+    {
+      "segment_id": 3,
+      "start_s": 11.84,
+      "end_s": 14.84,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "It's something we were expecting. And it comes in two colors, a night sky,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5413
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7718,
+          "valence": 0.6238,
+          "dominance": 0.7564,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 206.65,
+        "energy_mean": 0.009765
+      }
+    },
+    {
+      "segment_id": 4,
+      "start_s": 14.84,
+      "end_s": 19.84,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "which is similar to the blue from the iPhone 17 Pro series,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.651
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5341,
+          "valence": 0.571,
+          "dominance": 0.5772,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 163.45,
+        "energy_mean": 0.009051
+      }
+    },
+    {
+      "segment_id": 5,
+      "start_s": 20.32,
+      "end_s": 24.0,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "and a star wide. The left side is flat when it's closed,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6728
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5891,
+          "valence": 0.553,
+          "dominance": 0.6289,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 212.9,
+        "energy_mean": 0.011007
+      }
+    },
+    {
+      "segment_id": 6,
+      "start_s": 24.0,
+      "end_s": 29.0,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "and the right side has some curves, and when you open it, then you've got curves on all four corners.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5324
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6034,
+          "valence": 0.4171,
+          "dominance": 0.6421,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 191.78,
+        "energy_mean": 0.006625
+      }
+    },
+    {
+      "segment_id": 7,
+      "start_s": 29.0,
+      "end_s": 34.44,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "Now, it does feel very premium. We've got grade five titanium for the frame,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8216
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6531,
+          "valence": 0.6789,
+          "dominance": 0.668,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 195.27,
+        "energy_mean": 0.007841
+      }
+    },
+    {
+      "segment_id": 8,
+      "start_s": 34.44,
+      "end_s": 38.36,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "as well as some components in the hinge, with ceramic shield two on the front,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.814
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6554,
+          "valence": 0.5548,
+          "dominance": 0.6647,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 196.25,
+        "energy_mean": 0.009274
+      }
+    },
+    {
+      "segment_id": 9,
+      "start_s": 38.36,
+      "end_s": 44.0,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "and ceramic shield on the back. Now, the frame is glossy like we had on the iPhone Air,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7196
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6529,
+          "valence": 0.6422,
+          "dominance": 0.6782,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 182.81,
+        "energy_mean": 0.007224
+      }
+    },
+    {
+      "segment_id": 10,
+      "start_s": 44.0,
+      "end_s": 48.84,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "so very fingerprinty, but it is IP68 water and dust resistant.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.5717
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7141,
+          "valence": 0.4572,
+          "dominance": 0.7358,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 187.6,
+        "energy_mean": 0.00548
+      }
+    },
+    {
+      "segment_id": 11,
+      "start_s": 48.84,
+      "end_s": 54.28,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "So this is the same water and dust resistant rating that we've got on your regular iPhones.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5024
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5644,
+          "valence": 0.5627,
+          "dominance": 0.6176,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 180.16,
+        "energy_mean": 0.00496
+      }
+    },
+    {
+      "segment_id": 12,
+      "start_s": 54.28,
+      "end_s": 57.72,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Now, size-wise, so when it's open,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6838
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6851,
+          "valence": 0.5345,
+          "dominance": 0.7092,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 194.75,
+        "energy_mean": 0.008269
+      }
+    },
+    {
+      "segment_id": 13,
+      "start_s": 57.72,
+      "end_s": 62.28,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "it's 5.2 millimeters, making it the thinnest iPhone ever.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.747
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6759,
+          "valence": 0.6379,
+          "dominance": 0.6957,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 168.16,
+        "energy_mean": 0.006924
+      }
+    },
+    {
+      "segment_id": 14,
+      "start_s": 62.28,
+      "end_s": 65.4,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "And when it's closed, it's around 11.3 millimeters,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7622
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6008,
+          "valence": 0.5766,
+          "dominance": 0.6275,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 176.1,
+        "energy_mean": 0.012529
+      }
+    },
+    {
+      "segment_id": 15,
+      "start_s": 65.4,
+      "end_s": 71.64,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "weighs around 254 grams. So when we do compare it to others out there,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7389
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6136,
+          "valence": 0.63,
+          "dominance": 0.6633,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 172.72,
+        "energy_mean": 0.01075
+      }
+    },
+    {
+      "segment_id": 16,
+      "start_s": 71.64,
+      "end_s": 75.68,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "like the Z Fold 8, then those are definitely a lot more compact.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6334
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6378,
+          "valence": 0.5739,
+          "dominance": 0.6636,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 182.5,
+        "energy_mean": 0.007726
+      }
+    },
+    {
+      "segment_id": 17,
+      "start_s": 75.68,
+      "end_s": 80.24,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Just to give you some context, the Samsung Galaxy Z Fold 8 weighs around 201 grams,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.826
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7512,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6522,
+          "valence": 0.6424,
+          "dominance": 0.6716,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 162.24,
+        "energy_mean": 0.004329
+      }
+    },
+    {
+      "segment_id": 18,
+      "start_s": 80.24,
+      "end_s": 83.24,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "and it's around 4.5 millimeters when it's unfolded.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7535
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7679,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6268,
+          "valence": 0.576,
+          "dominance": 0.6711,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 186.38,
+        "energy_mean": 0.007204
+      }
+    },
+    {
+      "segment_id": 19,
+      "start_s": 83.24,
+      "end_s": 89.83999999999999,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "Now, of course, there are going to be lots of comparisons drawn in particular with the Samsung Galaxy Z Fold 8,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5571
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.576,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6035,
+          "valence": 0.5004,
+          "dominance": 0.6409,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 157.57,
+        "energy_mean": 0.005328
+      }
+    },
+    {
+      "segment_id": 20,
+      "start_s": 89.83999999999999,
+      "end_s": 93.08,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "and I am going to be working on a SuperSaf style comparison",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7753
+        },
+        "facial_emotion": {
+          "dominant": "surprise",
+          "confidence": 0.8587,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7122,
+          "valence": 0.5353,
+          "dominance": 0.7286,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 178.01,
+        "energy_mean": 0.005568
+      }
+    },
+    {
+      "segment_id": 21,
+      "start_s": 93.08,
+      "end_s": 96.36,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "between the two when the iPhone Duo is officially out.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7623
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8326,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5937,
+          "valence": 0.5484,
+          "dominance": 0.6208,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 175.15,
+        "energy_mean": 0.00504
+      }
+    },
+    {
+      "segment_id": 22,
+      "start_s": 96.36,
+      "end_s": 99.47999999999999,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "So if you want to see that first, be sure to subscribe and hit that bell icon.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5337
+        },
+        "facial_emotion": {
+          "dominant": "angry",
+          "confidence": 0.6217,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6397,
+          "valence": 0.5171,
+          "dominance": 0.6692,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 232.89,
+        "energy_mean": 0.007051
+      }
+    },
+    {
+      "segment_id": 23,
+      "start_s": 99.47999999999999,
+      "end_s": 104.72,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Now, to put the weight in context, the iPhone 18 Pro Max is around 249 grams,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.8464
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6623,
+          "valence": 0.6595,
+          "dominance": 0.6832,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 164.21,
+        "energy_mean": 0.006472
+      }
+    },
+    {
+      "segment_id": 24,
+      "start_s": 104.72,
+      "end_s": 108.8,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "so pretty similar to the iPhone 18 Pro Max. Now, let's talk about the displays.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.5306
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6331,
+          "valence": 0.6491,
+          "dominance": 0.6689,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 193.77,
+        "energy_mean": 0.006308
+      }
+    },
+    {
+      "segment_id": 25,
+      "start_s": 108.8,
+      "end_s": 112.75999999999999,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "So Apple are calling the displays the outer display",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6879
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5638,
+          "valence": 0.5576,
+          "dominance": 0.6015,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 169.14,
+        "energy_mean": 0.004621
+      }
+    },
+    {
+      "segment_id": 26,
+      "start_s": 112.75999999999999,
+      "end_s": 117.52,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "and inner display, not the cover and main display, like a lot of Android manufacturers do.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6229
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5258,
+          "valence": 0.445,
+          "dominance": 0.6012,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 157.43,
+        "energy_mean": 0.0045
+      }
+    },
+    {
+      "segment_id": 27,
+      "start_s": 117.52,
+      "end_s": 120.8,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "The outer display is around 5.4 inches.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7516
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6571,
+          "valence": 0.6465,
+          "dominance": 0.6932,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 182.64,
+        "energy_mean": 0.008317
+      }
+    },
+    {
+      "segment_id": 28,
+      "start_s": 120.8,
+      "end_s": 124.28,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "The inner display is 7.6 inches.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7998
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5575,
+          "valence": 0.5118,
+          "dominance": 0.6118,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 180.03,
+        "energy_mean": 0.004647
+      }
+    },
+    {
+      "segment_id": 29,
+      "start_s": 124.28,
+      "end_s": 129.14,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "Now, both displays are very bright, around 3,000 nits of HDR peak brightness,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7253
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6607,
+          "valence": 0.7472,
+          "dominance": 0.6864,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 155.28,
+        "energy_mean": 0.009069
+      }
+    },
+    {
+      "segment_id": 30,
+      "start_s": 129.14,
+      "end_s": 133.94,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "but the inner display has a nano-texture coating,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7478
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5848,
+          "valence": 0.5278,
+          "dominance": 0.6429,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 187.81,
+        "energy_mean": 0.008755
+      }
+    },
+    {
+      "segment_id": 31,
+      "start_s": 133.94,
+      "end_s": 137.42,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "and this really minimizes the crease.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.8741
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5194,
+          "valence": 0.5664,
+          "dominance": 0.6191,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 168.04,
+        "energy_mean": 0.006718
+      }
+    },
+    {
+      "segment_id": 32,
+      "start_s": 137.42,
+      "end_s": 141.74,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "Now, of course, Apple has done lots of engineering to minimize that crease,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.479
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5737,
+          "valence": 0.5832,
+          "dominance": 0.6311,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 184.67,
+        "energy_mean": 0.007807
+      }
+    },
+    {
+      "segment_id": 33,
+      "start_s": 141.74,
+      "end_s": 146.02,
+      "conflict_score": 0.2934,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.6000 -> 0.2934 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "but in particular, with that nano-texture, it completely minimizes it,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.4573
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5375,
+          "valence": 0.5361,
+          "dominance": 0.5962,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 145.96,
+        "energy_mean": 0.012731
+      }
+    },
+    {
+      "segment_id": 34,
+      "start_s": 146.02,
+      "end_s": 150.22,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "and it looks very impressive in person. Is the crease completely gone?",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.4969
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6085,
+          "valence": 0.5327,
+          "dominance": 0.6484,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 160.28,
+        "energy_mean": 0.008012
+      }
+    },
+    {
+      "segment_id": 35,
+      "start_s": 150.22,
+      "end_s": 154.34,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "Probably not. You can still see it at certain angles, but it is absolutely minimal.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.4801
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.566,
+          "valence": 0.5415,
+          "dominance": 0.5956,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 159.94,
+        "energy_mean": 0.007304
+      }
+    },
+    {
+      "segment_id": 36,
+      "start_s": 154.34,
+      "end_s": 158.9,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "If you're thinking of upgrading to one of the new iPhones, don't downgrade your experience",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.59
+        },
+        "facial_emotion": {
+          "dominant": "angry",
+          "confidence": 0.384,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.784,
+          "valence": 0.5405,
+          "dominance": 0.7884,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 213.91,
+        "energy_mean": 0.023093
+      }
+    },
+    {
+      "segment_id": 37,
+      "start_s": 158.9,
+      "end_s": 164.78,
+      "conflict_score": 0.2736,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "facial_channel_downweighted[structural]: 0.8000 -> 0.2736 (x0.342, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "with a cheap case or screen protector. ESR soft vegan leather cases look sleek,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6269
+        },
+        "facial_emotion": {
+          "dominant": "fear",
+          "confidence": 0.9298,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.78,
+          "valence": 0.5005,
+          "dominance": 0.7884,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 227.6,
+        "energy_mean": 0.011303
+      }
+    },
+    {
+      "segment_id": 38,
+      "start_s": 164.78,
+      "end_s": 168.94,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "feel premium, and can resist daily stains with effortless cleanup.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.5863
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.706,
+          "valence": 0.5201,
+          "dominance": 0.7296,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 210.59,
+        "energy_mean": 0.009849
+      }
+    },
+    {
+      "segment_id": 39,
+      "start_s": 168.94,
+      "end_s": 173.1,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "I love the dual-function flex and 180-degree rotating stand,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7409
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7685,
+          "valence": 0.615,
+          "dominance": 0.7632,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 218.31,
+        "energy_mean": 0.012145
+      }
+    },
+    {
+      "segment_id": 40,
+      "start_s": 173.1,
+      "end_s": 176.26,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "which can be used when your iPhone is folded or unfolded,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7526
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7142,
+          "valence": 0.5921,
+          "dominance": 0.7155,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 224.66,
+        "energy_mean": 0.034206
+      }
+    },
+    {
+      "segment_id": 41,
+      "start_s": 176.26,
+      "end_s": 182.14000000000001,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "and in portrait or landscape. ESR screen protectors use accessory glass by Corning,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.8331
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7575,
+          "valence": 0.5533,
+          "dominance": 0.7709,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 230.6,
+        "energy_mean": 0.009694
+      }
+    },
+    {
+      "segment_id": 42,
+      "start_s": 182.14,
+      "end_s": 187.38,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "the same glass supplier of iPhone screens, giving you 10 times the impact absorption",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.641
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.8009,
+          "valence": 0.5515,
+          "dominance": 0.7974,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 227.06,
+        "energy_mean": 0.015459
+      }
+    },
+    {
+      "segment_id": 43,
+      "start_s": 187.38,
+      "end_s": 192.66,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "and two times better scratch performance compared to generic tempered glass screen protectors.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.5637
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7221,
+          "valence": 0.6547,
+          "dominance": 0.7645,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 219.05,
+        "energy_mean": 0.010369
+      }
+    },
+    {
+      "segment_id": 44,
+      "start_s": 192.66,
+      "end_s": 195.94,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "And the UltraFit tray ensures perfect alignment",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6237
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7036,
+          "valence": 0.5246,
+          "dominance": 0.7122,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 239.46,
+        "energy_mean": 0.015209
+      }
+    },
+    {
+      "segment_id": 45,
+      "start_s": 195.94,
+      "end_s": 199.5,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "with dust and bubble-free installation in one simple port.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7029
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6697,
+          "valence": 0.5744,
+          "dominance": 0.6938,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 213.21,
+        "energy_mean": 0.011507
+      }
+    },
+    {
+      "segment_id": 46,
+      "start_s": 199.5,
+      "end_s": 204.29999999999998,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Check out the link in the description to see all of the new ESR iPhone cases and screen protectors,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7672
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7093,
+          "valence": 0.5736,
+          "dominance": 0.7136,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 215.54,
+        "energy_mean": 0.015002
+      }
+    },
+    {
+      "segment_id": 47,
+      "start_s": 204.29999999999998,
+      "end_s": 209.54000000000002,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "and make sure you're protected as soon as you get your new iPhone. Now, being an Apple device, I think one of the key things",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5466
+        },
+        "facial_emotion": {
+          "dominant": "happy",
+          "confidence": 0.9812,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7017,
+          "valence": 0.7267,
+          "dominance": 0.7249,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 180.92,
+        "energy_mean": 0.005701
+      }
+    },
+    {
+      "segment_id": 48,
+      "start_s": 209.54000000000002,
+      "end_s": 214.34,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "is just how everything works, and Apple has really focused on the software",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6052
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5616,
+          "valence": 0.5792,
+          "dominance": 0.6303,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 170.36,
+        "energy_mean": 0.00613
+      }
+    },
+    {
+      "segment_id": 49,
+      "start_s": 214.34,
+      "end_s": 218.42000000000002,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "to make everything as fluid as possible. When we are on the cover screen,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6637
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6019,
+          "valence": 0.6753,
+          "dominance": 0.6583,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 170.96,
+        "energy_mean": 0.014932
+      }
+    },
+    {
+      "segment_id": 50,
+      "start_s": 218.42000000000002,
+      "end_s": 224.06,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "instead of having some of the controls towards the bottom, they are now on the side, the essential controls.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6654
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6044,
+          "valence": 0.5553,
+          "dominance": 0.6564,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 157.11,
+        "energy_mean": 0.004787
+      }
+    },
+    {
+      "segment_id": 51,
+      "start_s": 224.06,
+      "end_s": 229.58,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "And then when you open the device, you get this really smooth, fluid animation.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7421
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6612,
+          "valence": 0.67,
+          "dominance": 0.7078,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 175.02,
+        "energy_mean": 0.010665
+      }
+    },
+    {
+      "segment_id": 52,
+      "start_s": 229.58,
+      "end_s": 233.78,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "The outer display is then mirrored to the right-hand side of the inner display,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7813
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6222,
+          "valence": 0.5398,
+          "dominance": 0.6377,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 174.15,
+        "energy_mean": 0.009409
+      }
+    },
+    {
+      "segment_id": 53,
+      "start_s": 233.78,
+      "end_s": 236.9,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "keeping everything consistent, so things are not moving around,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7766
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6369,
+          "valence": 0.4913,
+          "dominance": 0.6534,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 167.47,
+        "energy_mean": 0.011659
+      }
+    },
+    {
+      "segment_id": 54,
+      "start_s": 236.9,
+      "end_s": 241.94,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "and they're exactly in the same place as they were on the outer display before you unfolded it.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.736
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5781,
+          "valence": 0.598,
+          "dominance": 0.6274,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 157.9,
+        "energy_mean": 0.007457
+      }
+    },
+    {
+      "segment_id": 55,
+      "start_s": 241.94,
+      "end_s": 247.3,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Now, when you have it open, obviously you have a big canvas. It's almost like having an iPad mini.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.493
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6665,
+          "valence": 0.5923,
+          "dominance": 0.6793,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 185.77,
+        "energy_mean": 0.004657
+      }
+    },
+    {
+      "segment_id": 56,
+      "start_s": 247.3,
+      "end_s": 251.18,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "You can view this in portrait, which is great for things like websites and books.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.78
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6318,
+          "valence": 0.7418,
+          "dominance": 0.6464,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 173.04,
+        "energy_mean": 0.006079
+      }
+    },
+    {
+      "segment_id": 57,
+      "start_s": 251.18,
+      "end_s": 254.94,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "And when you've got it in landscape, then of course you can multitask. And this works pretty well.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8199
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7186,
+          "valence": 0.7073,
+          "dominance": 0.7176,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 210.55,
+        "energy_mean": 0.014857
+      }
+    },
+    {
+      "segment_id": 58,
+      "start_s": 254.94,
+      "end_s": 258.18,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "You can just be in any app and just drag from the bottom,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6478
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6745,
+          "valence": 0.2666,
+          "dominance": 0.7079,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 167.12,
+        "energy_mean": 0.006185
+      }
+    },
+    {
+      "segment_id": 59,
+      "start_s": 258.18,
+      "end_s": 262.82,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "and then snap it either to the left or the right. You can even switch through apps on one side of the screen,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7044
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6975,
+          "valence": 0.553,
+          "dominance": 0.6984,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 188.87,
+        "energy_mean": 0.007479
+      }
+    },
+    {
+      "segment_id": 60,
+      "start_s": 262.82,
+      "end_s": 267.98,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "which is pretty cool. And then you also have different modes. So the hinge is pretty strong,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7889
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6359,
+          "valence": 0.7735,
+          "dominance": 0.6714,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 191.29,
+        "energy_mean": 0.007407
+      }
+    },
+    {
+      "segment_id": 61,
+      "start_s": 267.98,
+      "end_s": 272.66,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "and you can have, Samsung call it flex mode. Apple have their own names for it.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6826
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6331,
+          "valence": 0.6415,
+          "dominance": 0.6332,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 179.46,
+        "energy_mean": 0.005905
+      }
+    },
+    {
+      "segment_id": 62,
+      "start_s": 272.66,
+      "end_s": 276.38000000000005,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "We've got seated, which is where you can have it halfway",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5944
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5481,
+          "valence": 0.5705,
+          "dominance": 0.5888,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 170.19,
+        "energy_mean": 0.008064
+      }
+    },
+    {
+      "segment_id": 63,
+      "start_s": 276.38000000000005,
+      "end_s": 280.34000000000003,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "and have, say, a video playing on the top half and have the controls at the bottom half.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.704
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6031,
+          "valence": 0.6535,
+          "dominance": 0.6323,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 177.42,
+        "energy_mean": 0.01061
+      }
+    },
+    {
+      "segment_id": 64,
+      "start_s": 280.34000000000003,
+      "end_s": 286.14000000000004,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "But then when you flip it, then you can have it standing. And this is where you can potentially watch some movies",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.564
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6208,
+          "valence": 0.7007,
+          "dominance": 0.6492,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 176.81,
+        "energy_mean": 0.00667
+      }
+    },
+    {
+      "segment_id": 65,
+      "start_s": 286.14000000000004,
+      "end_s": 289.54,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "or anything like that. And you can also have it in standby mode.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5911
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5934,
+          "valence": 0.6624,
+          "dominance": 0.6247,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 177.79,
+        "energy_mean": 0.00871
+      }
+    },
+    {
+      "segment_id": 66,
+      "start_s": 289.54,
+      "end_s": 294.9,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "So you can display the clock and some of your widgets and things. Apple has worked with some third-party developers as well.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6578
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6624,
+          "valence": 0.6584,
+          "dominance": 0.6777,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 160.2,
+        "energy_mean": 0.006373
+      }
+    },
+    {
+      "segment_id": 67,
+      "start_s": 294.9,
+      "end_s": 299.97999999999996,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "So the Netflix apps, for example, works great on all of the different modes and displays.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8123
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6314,
+          "valence": 0.6308,
+          "dominance": 0.6556,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 152.38,
+        "energy_mean": 0.006127
+      }
+    },
+    {
+      "segment_id": 68,
+      "start_s": 299.97999999999996,
+      "end_s": 304.02,
+      "conflict_score": 0.2052,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "facial_channel_downweighted[structural]: 0.6000 -> 0.2052 (x0.342, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "It's quite intuitive how it switches between all of them. Now, one thing which is pretty cool",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8335
+        },
+        "facial_emotion": {
+          "dominant": "fear",
+          "confidence": 0.8058,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6794,
+          "valence": 0.7204,
+          "dominance": 0.6967,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 197.44,
+        "energy_mean": 0.006777
+      }
+    },
+    {
+      "segment_id": 69,
+      "start_s": 304.02,
+      "end_s": 307.74,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "is that both the outer and inner display",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6457
+        },
+        "facial_emotion": {
+          "dominant": "fear",
+          "confidence": 0.5432,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6259,
+          "valence": 0.4419,
+          "dominance": 0.6448,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 179.07,
+        "energy_mean": 0.00896
+      }
+    },
+    {
+      "segment_id": 70,
+      "start_s": 307.74,
+      "end_s": 311.85999999999996,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "will have support for the Apple Pencil",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5328
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5275,
+          "valence": 0.5797,
+          "dominance": 0.5967,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 170.51,
+        "energy_mean": 0.004609
+      }
+    },
+    {
+      "segment_id": 71,
+      "start_s": 311.85999999999996,
+      "end_s": 314.97999999999996,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "coming later this year. I'm not sure when, and I'm not sure why it's delayed,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6562
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6121,
+          "valence": 0.3316,
+          "dominance": 0.6411,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 169.94,
+        "energy_mean": 0.003968
+      }
+    },
+    {
+      "segment_id": 72,
+      "start_s": 314.98,
+      "end_s": 320.22,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "but will they have a separate Apple Pencil, like a different one that can maybe go into a case",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.8296
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.902,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6375,
+          "valence": 0.5463,
+          "dominance": 0.6338,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 181.28,
+        "energy_mean": 0.005638
+      }
+    },
+    {
+      "segment_id": 73,
+      "start_s": 320.22,
+      "end_s": 326.78000000000003,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "or something? I don't know, but hey, Samsung, if Apple can do it, then what's your excuse?",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5581
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.6765,
+          "frame_count": 6,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5788,
+          "valence": 0.4011,
+          "dominance": 0.5935,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 192.34,
+        "energy_mean": 0.004448
+      }
+    },
+    {
+      "segment_id": 74,
+      "start_s": 326.78000000000003,
+      "end_s": 330.46000000000004,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "I get it. Your phone's thinner, but still, come on. Now let's talk about the cameras.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.4752
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8387,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6904,
+          "valence": 0.5305,
+          "dominance": 0.6858,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 208.83,
+        "energy_mean": 0.007395
+      }
+    },
+    {
+      "segment_id": 75,
+      "start_s": 330.46000000000004,
+      "end_s": 335.46000000000004,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "And this is maybe why Apple didn't call this the Ultra",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.5414
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6378,
+          "valence": 0.4242,
+          "dominance": 0.656,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 188.79,
+        "energy_mean": 0.004257
+      }
+    },
+    {
+      "segment_id": 76,
+      "start_s": 335.46000000000004,
+      "end_s": 339.22,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "and called it the Duo, because it has two rear-facing cameras,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6584
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6855,
+          "valence": 0.5725,
+          "dominance": 0.6855,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 176.11,
+        "energy_mean": 0.007544
+      }
+    },
+    {
+      "segment_id": 77,
+      "start_s": 339.22,
+      "end_s": 345.38,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "not three like the Pro devices. So the primary camera is different to the iPhone 18 Pro",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.727
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5805,
+          "valence": 0.5426,
+          "dominance": 0.6135,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 195.2,
+        "energy_mean": 0.005438
+      }
+    },
+    {
+      "segment_id": 78,
+      "start_s": 345.38,
+      "end_s": 349.5,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "and Pro Max. It is 48 megapixels with an F1.6 aperture.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6919
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7093,
+          "valence": 0.7447,
+          "dominance": 0.7251,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 162.49,
+        "energy_mean": 0.004744
+      }
+    },
+    {
+      "segment_id": 79,
+      "start_s": 349.5,
+      "end_s": 356.14,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Then we have a 48 megapixel ultra wide camera, which is actually the same as the iPhone 18 Pro and Pro Max.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5389
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6554,
+          "valence": 0.6735,
+          "dominance": 0.6667,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 177.67,
+        "energy_mean": 0.006036
+      }
+    },
+    {
+      "segment_id": 80,
+      "start_s": 356.14,
+      "end_s": 361.3,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "And then we have two selfie cameras. So there is a 12 megapixel center stage selfie camera",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6554
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6822,
+          "valence": 0.661,
+          "dominance": 0.6937,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 175.69,
+        "energy_mean": 0.007549
+      }
+    },
+    {
+      "segment_id": 81,
+      "start_s": 361.3,
+      "end_s": 364.38,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "on the outside screen. But on the inside screen,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.73
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6621,
+          "valence": 0.5728,
+          "dominance": 0.666,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 196.88,
+        "energy_mean": 0.01298
+      }
+    },
+    {
+      "segment_id": 82,
+      "start_s": 364.38,
+      "end_s": 367.90000000000003,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "we have an under display FaceTime camera.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6593
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5616,
+          "valence": 0.4553,
+          "dominance": 0.6042,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 148.76,
+        "energy_mean": 0.00734
+      }
+    },
+    {
+      "segment_id": 83,
+      "start_s": 367.90000000000003,
+      "end_s": 371.82,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Now the key thing here is Apple are calling this FaceTime camera.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7094
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6887,
+          "valence": 0.6149,
+          "dominance": 0.6866,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 173.43,
+        "energy_mean": 0.007086
+      }
+    },
+    {
+      "segment_id": 84,
+      "start_s": 371.82,
+      "end_s": 376.3,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "They didn't actually specify the megapixels. As far as I can see, it's around four megapixels.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7445
+        },
+        "facial_emotion": {
+          "dominant": "fear",
+          "confidence": 0.9381,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6325,
+          "valence": 0.4145,
+          "dominance": 0.6499,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 155.68,
+        "energy_mean": 0.005342
+      }
+    },
+    {
+      "segment_id": 85,
+      "start_s": 376.3,
+      "end_s": 380.74,
+      "conflict_score": 0.8,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": true,
+      "text": "And as the name suggests, it is really only supposed to be used for videos",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5721
+        },
+        "facial_emotion": {
+          "dominant": "fear",
+          "confidence": 0.9274,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6707,
+          "valence": 0.5665,
+          "dominance": 0.6765,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 153.51,
+        "energy_mean": 0.005786
+      }
+    },
+    {
+      "segment_id": 86,
+      "start_s": 380.74,
+      "end_s": 384.02,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "rather than photos. So as you can see a side-by-side from the outer",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6466
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9014,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5551,
+          "valence": 0.5861,
+          "dominance": 0.5792,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 153.65,
+        "energy_mean": 0.007314
+      }
+    },
+    {
+      "segment_id": 87,
+      "start_s": 384.02,
+      "end_s": 388.06,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "and the inner cameras. And also you can use the rear-facing cameras",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6587
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6738,
+          "valence": 0.62,
+          "dominance": 0.6788,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 178.69,
+        "energy_mean": 0.007137
+      }
+    },
+    {
+      "segment_id": 88,
+      "start_s": 388.06,
+      "end_s": 392.34,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "as selfie cameras. So we've got a few different modes. One of them is called Smart Take.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6921
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7026,
+          "valence": 0.7746,
+          "dominance": 0.729,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 174.94,
+        "energy_mean": 0.007518
+      }
+    },
+    {
+      "segment_id": 89,
+      "start_s": 392.34,
+      "end_s": 397.26,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "So you can prop up the iPhone Duo. And then if you go in front of it,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.4959
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5981,
+          "valence": 0.6785,
+          "dominance": 0.6142,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 179.1,
+        "energy_mean": 0.010205
+      }
+    },
+    {
+      "segment_id": 90,
+      "start_s": 397.26,
+      "end_s": 402.14000000000004,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "it's going to try to detect when you make a pose, or you change position and it's going to try to",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6914
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6423,
+          "valence": 0.3526,
+          "dominance": 0.6574,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 171.78,
+        "energy_mean": 0.007274
+      }
+    },
+    {
+      "segment_id": 91,
+      "start_s": 402.14000000000004,
+      "end_s": 405.18,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "intelligently take those moments. And then we've got dual preview.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.4721
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6747,
+          "valence": 0.4942,
+          "dominance": 0.6714,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 173.1,
+        "energy_mean": 0.013098
+      }
+    },
+    {
+      "segment_id": 92,
+      "start_s": 405.18,
+      "end_s": 408.82000000000005,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "So then you can use the outer screen to preview",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5518
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5942,
+          "valence": 0.6282,
+          "dominance": 0.623,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 176.39,
+        "energy_mean": 0.012354
+      }
+    },
+    {
+      "segment_id": 93,
+      "start_s": 408.82000000000005,
+      "end_s": 412.54,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "what you've got from the rear-facing cameras. Now this can be used from both the primary",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.4882
+        },
+        "facial_emotion": {
+          "dominant": "fear",
+          "confidence": 0.7369,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6242,
+          "valence": 0.514,
+          "dominance": 0.6546,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 186.45,
+        "energy_mean": 0.010502
+      }
+    },
+    {
+      "segment_id": 94,
+      "start_s": 412.54,
+      "end_s": 417.98,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "as well as the ultra-wide camera. If you've got a lot of people in your shots, there's one feature called Kid Q,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6218
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6857,
+          "valence": 0.5783,
+          "dominance": 0.6853,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 190.55,
+        "energy_mean": 0.005841
+      }
+    },
+    {
+      "segment_id": 95,
+      "start_s": 417.98,
+      "end_s": 421.66,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "where you can have like an animation playing to get the attention of the child.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.599
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6,
+          "valence": 0.6905,
+          "dominance": 0.6342,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 163.27,
+        "energy_mean": 0.005834
+      }
+    },
+    {
+      "segment_id": 96,
+      "start_s": 421.66,
+      "end_s": 425.34000000000003,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "And this is going to use the outer display camera,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7969
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5795,
+          "valence": 0.4978,
+          "dominance": 0.6183,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 144.83,
+        "energy_mean": 0.007752
+      }
+    },
+    {
+      "segment_id": 97,
+      "start_s": 425.34000000000003,
+      "end_s": 428.68,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "selfie camera to take that picture. And you've also got dual FaceTime.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5631
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6882,
+          "valence": 0.7155,
+          "dominance": 0.7136,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 181.39,
+        "energy_mean": 0.006292
+      }
+    },
+    {
+      "segment_id": 98,
+      "start_s": 428.68,
+      "end_s": 432.36,
+      "conflict_score": 0.2934,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.6000 -> 0.2934 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "So you can have somebody that's behind you and yourself",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.5186
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5099,
+          "valence": 0.6077,
+          "dominance": 0.5679,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 170.13,
+        "energy_mean": 0.006875
+      }
+    },
+    {
+      "segment_id": 99,
+      "start_s": 432.36,
+      "end_s": 436.32,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "on a FaceTime call together when you are calling somebody. Now when it comes to the features,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.83
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6259,
+          "valence": 0.715,
+          "dominance": 0.6456,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 167.16,
+        "energy_mean": 0.00863
+      }
+    },
+    {
+      "segment_id": 100,
+      "start_s": 436.32,
+      "end_s": 441.12,
+      "conflict_score": 0.2052,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "facial_channel_downweighted[structural]: 0.6000 -> 0.2052 (x0.342, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "we do have all of the new features. So we have manual controls, finally.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6645
+        },
+        "facial_emotion": {
+          "dominant": "sad",
+          "confidence": 0.7673,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6604,
+          "valence": 0.6743,
+          "dominance": 0.6971,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 184.25,
+        "energy_mean": 0.006037
+      }
+    },
+    {
+      "segment_id": 101,
+      "start_s": 441.12,
+      "end_s": 445.08,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "Finally, Apple is giving manual controls within the camera app.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6225
+        },
+        "facial_emotion": {
+          "dominant": "happy",
+          "confidence": 0.8971,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.657,
+          "valence": 0.6247,
+          "dominance": 0.6885,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 177.32,
+        "energy_mean": 0.009217
+      }
+    },
+    {
+      "segment_id": 102,
+      "start_s": 445.08,
+      "end_s": 449.94,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "This is going to put a lot of third-party apps out of business, but you can now control things",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.4839
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8135,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5587,
+          "valence": 0.4097,
+          "dominance": 0.6119,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 170.67,
+        "energy_mean": 0.006565
+      }
+    },
+    {
+      "segment_id": 103,
+      "start_s": 449.94,
+      "end_s": 453.4,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "like your exposure and your white balance and things",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6669
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5763,
+          "valence": 0.3241,
+          "dominance": 0.6369,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 163.43,
+        "energy_mean": 0.010038
+      }
+    },
+    {
+      "segment_id": 104,
+      "start_s": 453.4,
+      "end_s": 457.4,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "right from within your app. And then you can also customize these and pin them.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.53
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6212,
+          "valence": 0.6553,
+          "dominance": 0.6687,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 149.97,
+        "energy_mean": 0.007773
+      }
+    },
+    {
+      "segment_id": 105,
+      "start_s": 457.4,
+      "end_s": 461.23999999999995,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "We've got the third generation of photographic styles. I'm a big fan of photographic styles.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.912
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7393,
+          "valence": 0.7932,
+          "dominance": 0.739,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 188.57,
+        "energy_mean": 0.011706
+      }
+    },
+    {
+      "segment_id": 106,
+      "start_s": 461.23999999999995,
+      "end_s": 464.9,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "It really allows you to customize your pictures after you've taken them.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7023
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6107,
+          "valence": 0.5347,
+          "dominance": 0.6632,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 153.35,
+        "energy_mean": 0.008663
+      }
+    },
+    {
+      "segment_id": 107,
+      "start_s": 464.9,
+      "end_s": 469.28,
+      "conflict_score": 0.1956,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody",
+        "vocal_channel_downweighted[structural]: 0.4000 -> 0.1956 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "Now, in addition to tone and color, you can also customize texture and grain.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.5186
+        },
+        "facial_emotion": {
+          "dominant": "happy",
+          "confidence": 0.5135,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6048,
+          "valence": 0.5593,
+          "dominance": 0.6519,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 184.5,
+        "energy_mean": 0.007512
+      }
+    },
+    {
+      "segment_id": 108,
+      "start_s": 469.28,
+      "end_s": 473.35999999999996,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "And cinematic mode also gets an update. So you can just take a regular video",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5358
+        },
+        "facial_emotion": {
+          "dominant": "surprise",
+          "confidence": 0.984,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6685,
+          "valence": 0.7109,
+          "dominance": 0.6738,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 176.08,
+        "energy_mean": 0.00885
+      }
+    },
+    {
+      "segment_id": 109,
+      "start_s": 473.35999999999996,
+      "end_s": 476.53999999999996,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "and then you can turn it into a cinematic video after the fact.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6064
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8036,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7039,
+          "valence": 0.6268,
+          "dominance": 0.7191,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 182.44,
+        "energy_mean": 0.009424
+      }
+    },
+    {
+      "segment_id": 110,
+      "start_s": 476.53999999999996,
+      "end_s": 479.71999999999997,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "Now you may have noticed that there is no dynamic island.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.516
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5905,
+          "valence": 0.3764,
+          "dominance": 0.6368,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 164.37,
+        "energy_mean": 0.011396
+      }
+    },
+    {
+      "segment_id": 111,
+      "start_s": 479.72,
+      "end_s": 483.1,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "There is just a punch out for the selfie camera",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.8575
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5271,
+          "valence": 0.5713,
+          "dominance": 0.5712,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 162.93,
+        "energy_mean": 0.006281
+      }
+    },
+    {
+      "segment_id": 112,
+      "start_s": 483.1,
+      "end_s": 487.14000000000004,
+      "conflict_score": 0.8,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": true,
+      "text": "on the outer display. And that is because we do not have face ID.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.5211
+        },
+        "facial_emotion": {
+          "dominant": "fear",
+          "confidence": 0.5179,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5958,
+          "valence": 0.4896,
+          "dominance": 0.624,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 164.26,
+        "energy_mean": 0.007304
+      }
+    },
+    {
+      "segment_id": 113,
+      "start_s": 487.14000000000004,
+      "end_s": 490.36,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "This is something we were kind of expecting, trying to get all of that tech in there.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.4671
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.6865,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6268,
+          "valence": 0.4822,
+          "dominance": 0.6346,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 168.35,
+        "energy_mean": 0.011505
+      }
+    },
+    {
+      "segment_id": 114,
+      "start_s": 490.36,
+      "end_s": 494.78000000000003,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "And instead there is touch ID on the side. Not sure how you guys feel about that",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.7384
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5292,
+          "valence": 0.4392,
+          "dominance": 0.5901,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 172.9,
+        "energy_mean": 0.006722
+      }
+    },
+    {
+      "segment_id": 115,
+      "start_s": 494.78000000000003,
+      "end_s": 499.72,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "because touch ID has been gone for so long on iPhones. And now it's back here on the iPhone duo.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5495
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5637,
+          "valence": 0.6549,
+          "dominance": 0.601,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 146.97,
+        "energy_mean": 0.004184
+      }
+    },
+    {
+      "segment_id": 116,
+      "start_s": 499.72,
+      "end_s": 503.0,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "I personally don't mind it. And the volume buttons are placed at the top.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5277
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6657,
+          "valence": 0.5786,
+          "dominance": 0.6692,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 204.32,
+        "energy_mean": 0.006431
+      }
+    },
+    {
+      "segment_id": 117,
+      "start_s": 503.0,
+      "end_s": 506.84000000000003,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "Now, this is actually pretty clever because when you are trying to take a selfie",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6905
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5992,
+          "valence": 0.5205,
+          "dominance": 0.6609,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 171.13,
+        "energy_mean": 0.007412
+      }
+    },
+    {
+      "segment_id": 118,
+      "start_s": 506.84000000000003,
+      "end_s": 509.91999999999996,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "from the rear facing cameras, they're pretty accessible.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7523
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6355,
+          "valence": 0.5194,
+          "dominance": 0.6522,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 204.26,
+        "energy_mean": 0.007248
+      }
+    },
+    {
+      "segment_id": 119,
+      "start_s": 509.91999999999996,
+      "end_s": 513.4399999999999,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "The only thing I would say is if you are taking a selfie from the ultra wide camera,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6665
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5726,
+          "valence": 0.4708,
+          "dominance": 0.6244,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 149.94,
+        "energy_mean": 0.01066
+      }
+    },
+    {
+      "segment_id": 120,
+      "start_s": 513.4399999999999,
+      "end_s": 517.52,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "your finger can cover the camera a little bit if you are trying to press one of those volume buttons.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5638
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6415,
+          "valence": 0.5708,
+          "dominance": 0.6519,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 167.63,
+        "energy_mean": 0.006056
+      }
+    },
+    {
+      "segment_id": 121,
+      "start_s": 517.52,
+      "end_s": 521.48,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "The speakers, we've got speakers on the bottom of the top, but they're on the opposite side.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6596
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6318,
+          "valence": 0.5584,
+          "dominance": 0.6488,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 192.79,
+        "energy_mean": 0.007676
+      }
+    },
+    {
+      "segment_id": 122,
+      "start_s": 521.48,
+      "end_s": 524.8199999999999,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "So when the iPhone duo is folded out,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.688
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5024,
+          "valence": 0.5704,
+          "dominance": 0.5528,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 195.58,
+        "energy_mean": 0.007022
+      }
+    },
+    {
+      "segment_id": 123,
+      "start_s": 524.8199999999999,
+      "end_s": 529.64,
+      "conflict_score": 0.2934,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.6000 -> 0.2934 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "then you're still going to get relatively good sound. It's not just going to be off to one side.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.604
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5196,
+          "valence": 0.4938,
+          "dominance": 0.5705,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 204.92,
+        "energy_mean": 0.006004
+      }
+    },
+    {
+      "segment_id": 124,
+      "start_s": 529.64,
+      "end_s": 533.78,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Now for the software, of course, we've got iOS 27 with Apple intelligence.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.532
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6753,
+          "valence": 0.6533,
+          "dominance": 0.7113,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 186.45,
+        "energy_mean": 0.005358
+      }
+    },
+    {
+      "segment_id": 125,
+      "start_s": 533.78,
+      "end_s": 539.34,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "And we've got all of the new Apple intelligence features, such as Siri AI, which understands personal context.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6064
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5744,
+          "valence": 0.6498,
+          "dominance": 0.6222,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 167.18,
+        "energy_mean": 0.003381
+      }
+    },
+    {
+      "segment_id": 126,
+      "start_s": 539.34,
+      "end_s": 544.3000000000001,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "And of course, all the photo editing features are still here. So we've got cleanup, we've got extend,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5482
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.637,
+          "valence": 0.6606,
+          "dominance": 0.6425,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 188.35,
+        "energy_mean": 0.015732
+      }
+    },
+    {
+      "segment_id": 127,
+      "start_s": 544.3000000000001,
+      "end_s": 547.98,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "as well as spatial reframe, which are also going to be available",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7035
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5308,
+          "valence": 0.6134,
+          "dominance": 0.5814,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 149.43,
+        "energy_mean": 0.011454
+      }
+    },
+    {
+      "segment_id": 128,
+      "start_s": 547.98,
+      "end_s": 553.82,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "on the iPhone 18 Pro and 18 Pro Max. Now for performance, we do have the A20 Pro chip.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5725
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6857,
+          "valence": 0.716,
+          "dominance": 0.6903,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 193.72,
+        "energy_mean": 0.005641
+      }
+    },
+    {
+      "segment_id": 129,
+      "start_s": 553.82,
+      "end_s": 557.1800000000001,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "Now, as far as I can see, this is pretty much exactly the same",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.676
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6042,
+          "valence": 0.4582,
+          "dominance": 0.647,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 180.15,
+        "energy_mean": 0.007334
+      }
+    },
+    {
+      "segment_id": 130,
+      "start_s": 557.1800000000001,
+      "end_s": 560.86,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "as what we've got on the iPhone 18 Pro and 18 Pro Max.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.739
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5526,
+          "valence": 0.6698,
+          "dominance": 0.5993,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 193.51,
+        "energy_mean": 0.004688
+      }
+    },
+    {
+      "segment_id": 131,
+      "start_s": 560.86,
+      "end_s": 566.12,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "So that means overall, it's going to be up to 20% faster than the A19 Pro, and it's going to have up to 50%",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5728
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.75,
+          "valence": 0.5654,
+          "dominance": 0.7319,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 193.64,
+        "energy_mean": 0.005675
+      }
+    },
+    {
+      "segment_id": 132,
+      "start_s": 566.12,
+      "end_s": 571.8,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "more memory bandwidth than the A19 Pro, with up to 35% higher sustained performance",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6351
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6311,
+          "valence": 0.687,
+          "dominance": 0.6659,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 179.26,
+        "energy_mean": 0.005741
+      }
+    },
+    {
+      "segment_id": 133,
+      "start_s": 571.8,
+      "end_s": 576.96,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "than the iPhone 17 Pro. Now, I would expect the iPhone 18 Pro and Pro Max",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5873
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5841,
+          "valence": 0.6734,
+          "dominance": 0.6361,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 175.07,
+        "energy_mean": 0.005854
+      }
+    },
+    {
+      "segment_id": 134,
+      "start_s": 576.96,
+      "end_s": 582.16,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "to give better performance overall, because they have a bigger vapor chamber and better cooling,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6326
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.677,
+          "valence": 0.7766,
+          "dominance": 0.7015,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 153.55,
+        "energy_mean": 0.006557
+      }
+    },
+    {
+      "segment_id": 135,
+      "start_s": 582.16,
+      "end_s": 586.16,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "but nevertheless, pretty good performance here on the iPhone duo.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.9054
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6288,
+          "valence": 0.7474,
+          "dominance": 0.6736,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 163.94,
+        "energy_mean": 0.005915
+      }
+    },
+    {
+      "segment_id": 136,
+      "start_s": 586.16,
+      "end_s": 591.5,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "There's also the C2 modem, which is supposed to be 50% faster for uploads,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5753
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6426,
+          "valence": 0.5858,
+          "dominance": 0.6628,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 174.27,
+        "energy_mean": 0.005916
+      }
+    },
+    {
+      "segment_id": 137,
+      "start_s": 591.5,
+      "end_s": 598.34,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "and a lot more efficient. And that brings me onto the battery. So the iPhone duo does not have a physical SIM card slot.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.5802
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.624,
+          "valence": 0.471,
+          "dominance": 0.6727,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 186.44,
+        "energy_mean": 0.00604
+      }
+    },
+    {
+      "segment_id": 138,
+      "start_s": 598.34,
+      "end_s": 602.18,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "It is eSIM only worldwide, like we had on the iPhone Air.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.8131
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5725,
+          "valence": 0.6186,
+          "dominance": 0.6001,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 171.59,
+        "energy_mean": 0.006492
+      }
+    },
+    {
+      "segment_id": 139,
+      "start_s": 602.18,
+      "end_s": 605.7,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "And Apple say that is so that they can fit in a larger battery.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6669
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5924,
+          "valence": 0.6858,
+          "dominance": 0.6297,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 153.12,
+        "energy_mean": 0.004445
+      }
+    },
+    {
+      "segment_id": 140,
+      "start_s": 605.7,
+      "end_s": 609.56,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "So we have split battery, as we have with most foldables.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.8056
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5737,
+          "valence": 0.6121,
+          "dominance": 0.6218,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 200.51,
+        "energy_mean": 0.003293
+      }
+    },
+    {
+      "segment_id": 141,
+      "start_s": 609.56,
+      "end_s": 613.82,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "And Apple are saying that you can get an average of 24 hours of use.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6185
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5075,
+          "valence": 0.598,
+          "dominance": 0.5827,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 169.45,
+        "energy_mean": 0.006665
+      }
+    },
+    {
+      "segment_id": 142,
+      "start_s": 613.82,
+      "end_s": 617.06,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "So that's with a combination of the cover and the main display.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7817
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5764,
+          "valence": 0.6186,
+          "dominance": 0.6274,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 173.37,
+        "energy_mean": 0.003011
+      }
+    },
+    {
+      "segment_id": 143,
+      "start_s": 617.06,
+      "end_s": 620.76,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "So if you're using both, of course, the main display is going to take up more battery,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7553
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.6842,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6247,
+          "valence": 0.506,
+          "dominance": 0.6507,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 169.4,
+        "energy_mean": 0.012542
+      }
+    },
+    {
+      "segment_id": 144,
+      "start_s": 620.76,
+      "end_s": 626.16,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "being the bigger display. If you're just using the cover display, then I'm not sure why you'd be buying the iPhone duo,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.4911
+        },
+        "facial_emotion": {
+          "dominant": "fear",
+          "confidence": 0.7947,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5987,
+          "valence": 0.6186,
+          "dominance": 0.6275,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 138.62,
+        "energy_mean": 0.006967
+      }
+    },
+    {
+      "segment_id": 145,
+      "start_s": 626.16,
+      "end_s": 630.96,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "but it's potentially going to last even longer than the iPhone 18 Pro and 18 Pro Max.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6359
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6696,
+          "valence": 0.6252,
+          "dominance": 0.6798,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 195.46,
+        "energy_mean": 0.006338
+      }
+    },
+    {
+      "segment_id": 146,
+      "start_s": 630.96,
+      "end_s": 634.84,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "Fast charging is supported, so you can get up to 50% in around 20 minutes",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.5431
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7299,
+          "valence": 0.65,
+          "dominance": 0.7321,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 169.27,
+        "energy_mean": 0.006893
+      }
+    },
+    {
+      "segment_id": 147,
+      "start_s": 634.84,
+      "end_s": 638.22,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "with a 60 watt cable. And we've got MagSafe wireless charging,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6591
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6704,
+          "valence": 0.6665,
+          "dominance": 0.6986,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 169.44,
+        "energy_mean": 0.006117
+      }
+    },
+    {
+      "segment_id": 148,
+      "start_s": 638.22,
+      "end_s": 642.02,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "so up to 25 watts with Qi2 wireless charging supported",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7717
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5736,
+          "valence": 0.522,
+          "dominance": 0.6226,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 170.49,
+        "energy_mean": 0.006603
+      }
+    },
+    {
+      "segment_id": 149,
+      "start_s": 642.02,
+      "end_s": 645.98,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "as well at 25 watts. Now finally pricing. So this had a lot of speculation,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.742
+        },
+        "facial_emotion": {
+          "dominant": "surprise",
+          "confidence": 0.6967,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6481,
+          "valence": 0.5764,
+          "dominance": 0.6877,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 177.11,
+        "energy_mean": 0.006227
+      }
+    },
+    {
+      "segment_id": 150,
+      "start_s": 645.98,
+      "end_s": 650.88,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "but the iPhone duo is going to be starting at around $2,000",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.8388
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7037,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5703,
+          "valence": 0.5488,
+          "dominance": 0.6194,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 176.13,
+        "energy_mean": 0.005146
+      }
+    },
+    {
+      "segment_id": 151,
+      "start_s": 650.88,
+      "end_s": 654.9200000000001,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "or 2,000 pounds in the UK. You've got a 512 one terabyte,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.8028
+        },
+        "facial_emotion": {
+          "dominant": "surprise",
+          "confidence": 0.9893,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6724,
+          "valence": 0.3263,
+          "dominance": 0.7027,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 157.9,
+        "energy_mean": 0.005107
+      }
+    },
+    {
+      "segment_id": 152,
+      "start_s": 654.9200000000001,
+      "end_s": 662.1,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "as well as up to a two terabyte version, which is going to set you back around $3,200 or 3,200 pounds.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.765
+        },
+        "facial_emotion": {
+          "dominant": "surprise",
+          "confidence": 0.7906,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6933,
+          "valence": 0.4591,
+          "dominance": 0.7092,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 185.39,
+        "energy_mean": 0.004545
+      }
+    },
+    {
+      "segment_id": 153,
+      "start_s": 662.1,
+      "end_s": 665.54,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Now, realistically speaking, I think this is roughly what I was expecting,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5641
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7361,
+          "valence": 0.5105,
+          "dominance": 0.7445,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 194.9,
+        "energy_mean": 0.009955
+      }
+    },
+    {
+      "segment_id": 154,
+      "start_s": 665.54,
+      "end_s": 668.9200000000001,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "because if we compare it to the Z Fold 8 in the US,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7584
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5879,
+          "valence": 0.5293,
+          "dominance": 0.629,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 148.74,
+        "energy_mean": 0.004948
+      }
+    },
+    {
+      "segment_id": 155,
+      "start_s": 668.92,
+      "end_s": 673.92,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "that's around $1,900 and the Z Fold 8 Ultra is around $2,100.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.8815
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5584,
+          "valence": 0.5428,
+          "dominance": 0.6034,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 166.75,
+        "energy_mean": 0.006134
+      }
+    },
+    {
+      "segment_id": 156,
+      "start_s": 674.76,
+      "end_s": 678.78,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "In the UK, you are going to be paying more compared to those devices.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.685
+        },
+        "facial_emotion": {
+          "dominant": "surprise",
+          "confidence": 0.8956,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5721,
+          "valence": 0.4981,
+          "dominance": 0.6392,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 164.77,
+        "energy_mean": 0.008402
+      }
+    },
+    {
+      "segment_id": 157,
+      "start_s": 678.78,
+      "end_s": 685.8399999999999,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "Pre-orders start on the 16th of October and it will be available in stores from October 23.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7124
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7855,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5392,
+          "valence": 0.6075,
+          "dominance": 0.6081,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 174.9,
+        "energy_mean": 0.012009
+      }
+    },
+    {
+      "segment_id": 158,
+      "start_s": 685.8399999999999,
+      "end_s": 689.8,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "So we've got over a month left until it's going to be fully in hand.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.5644
+        },
+        "facial_emotion": {
+          "dominant": "angry",
+          "confidence": 0.8023,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5251,
+          "valence": 0.4604,
+          "dominance": 0.6045,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 161.89,
+        "energy_mean": 0.007667
+      }
+    },
+    {
+      "segment_id": 159,
+      "start_s": 689.8,
+      "end_s": 693.78,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Now, Apple also announced today the iPhone 18 Pro and 18 Pro Max,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6166
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6679,
+          "valence": 0.7415,
+          "dominance": 0.6755,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 193.56,
+        "energy_mean": 0.007997
+      }
+    },
+    {
+      "segment_id": 160,
+      "start_s": 693.78,
+      "end_s": 697.0999999999999,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "which I will be covering in a separate video. I was going to combine them all together.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7189
+        },
+        "facial_emotion": {
+          "dominant": "angry",
+          "confidence": 0.3558,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6675,
+          "valence": 0.6823,
+          "dominance": 0.6724,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 170.42,
+        "energy_mean": 0.010588
+      }
+    },
+    {
+      "segment_id": 161,
+      "start_s": 697.0999999999999,
+      "end_s": 700.76,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "It'd just be too long. So if you want to see that, it's going to be coming very soon.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5529
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5938,
+          "valence": 0.4653,
+          "dominance": 0.6086,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 167.01,
+        "energy_mean": 0.004457
+      }
+    },
+    {
+      "segment_id": 162,
+      "start_s": 700.76,
+      "end_s": 704.74,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Be sure to subscribe and hit that bell icon. What do you guys think of the iPhone Duo?",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5505
+        },
+        "facial_emotion": {
+          "dominant": "happy",
+          "confidence": 0.9121,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6923,
+          "valence": 0.593,
+          "dominance": 0.6981,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 173.45,
+        "energy_mean": 0.005452
+      }
+    },
+    {
+      "segment_id": 163,
+      "start_s": 704.74,
+      "end_s": 708.62,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "This is the first foldable from Apple and I'm very excited to test it out",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8977
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7496,
+          "valence": 0.9719,
+          "dominance": 0.7846,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 172.78,
+        "energy_mean": 0.010349
+      }
+    },
+    {
+      "segment_id": 164,
+      "start_s": 708.62,
+      "end_s": 712.2800000000001,
+      "conflict_score": 0.2934,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.6000 -> 0.2934 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "and also put it up against the competition. Hope you enjoyed this video and found it useful.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.808
+        },
+        "facial_emotion": {
+          "dominant": "surprise",
+          "confidence": 0.4556,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6244,
+          "valence": 0.5214,
+          "dominance": 0.6523,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 202.87,
+        "energy_mean": 0.007685
+      }
+    },
+    {
+      "segment_id": 165,
+      "start_s": 712.2800000000001,
+      "end_s": 717.72,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "If you did, then do smash that like button for me. Thanks for watching. This is Sap on SuperSaf TV. I'll see you next time.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8137
+        },
+        "facial_emotion": {
+          "dominant": "happy",
+          "confidence": 0.6256,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7329,
+          "valence": 0.808,
+          "dominance": 0.739,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 156.77,
+        "energy_mean": 0.004205
+      }
+    }
+  ]
+}

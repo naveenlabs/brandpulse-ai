@@ -1,0 +1,3090 @@
+{
+  "schema": "brandpulse.analysis/1",
+  "status": "complete",
+  "steps": {
+    "claims": true,
+    "topics": true,
+    "comments": true,
+    "prose": true
+  },
+  "created_at": "2026-09-26T09:47:58+00:00",
+  "model": "llama3.1:8b",
+  "num_ctx": 6144,
+  "prompt_versions": {
+    "claims": "11039eb1443c",
+    "topics": "849d75dbc679",
+    "comments": "dda83531df32",
+    "prose": "633ad9a4e222"
+  },
+  "subject": {
+    "brand": "iPhone 17 Pro Max",
+    "product": "",
+    "title": "Apple made an iPhone for me - iPhone 17 Pro"
+  },
+  "facts": {
+    "scores": {
+      "authenticity": 45.95,
+      "brand_health": 76.64
+    },
+    "segments": 165,
+    "flagged": 8,
+    "threshold": 0.75,
+    "duration_s": 832.9599999999999,
+    "comments": {
+      "n": 100,
+      "distribution": {
+        "POSITIVE": 38,
+        "NEUTRAL": 36,
+        "NEGATIVE": 26
+      },
+      "label": "POSITIVE"
+    },
+    "reviewer": {
+      "lean": 0.04867235197209023,
+      "se": 0.0585411551391767,
+      "n": 165,
+      "call": "balanced",
+      "counts": {
+        "POSITIVE": 42,
+        "NEUTRAL": 87,
+        "NEGATIVE": 36
+      },
+      "seconds": {
+        "POSITIVE": 224.34,
+        "NEUTRAL": 417.02,
+        "NEGATIVE": 184.16
+      },
+      "unread": 0
+    },
+    "audience": {
+      "lean": 0.12,
+      "se": 0.07949334512518591,
+      "n": 100,
+      "call": "balanced",
+      "counts": {
+        "POSITIVE": 38,
+        "NEUTRAL": 36,
+        "NEGATIVE": 26
+      }
+    },
+    "agreement": {
+      "gap": -0.07132764802790977,
+      "se": 0.09872314198920673,
+      "low": -0.2648214507673889,
+      "high": 0.12216615471156937,
+      "call": "no_clear_difference"
+    },
+    "confidence": {
+      "level": "well_covered",
+      "checks": [
+        {
+          "id": "comments",
+          "label": "Enough comments to read the audience",
+          "value": 100,
+          "target": 30,
+          "unit": "comments",
+          "passed": true,
+          "core": true
+        },
+        {
+          "id": "transcript",
+          "label": "The reviewer's words were read",
+          "value": 1.0,
+          "target": 0.5,
+          "unit": "share",
+          "core": true,
+          "passed": true
+        },
+        {
+          "id": "weak_conflict",
+          "label": "The conflict rests mostly on the stronger channels",
+          "value": 0.1446,
+          "target": 0.5,
+          "unit": "share",
+          "passed": true,
+          "core": false,
+          "no_conflict": false
+        }
+      ],
+      "coverage": {
+        "transcript": {
+          "read": 165,
+          "total": 165,
+          "share": 1.0
+        },
+        "facial": {
+          "read": 146,
+          "total": 165,
+          "share": 0.8848484848484849
+        },
+        "vocal": {
+          "read": 165,
+          "total": 165,
+          "share": 1.0
+        },
+        "comment": {
+          "read": 165,
+          "total": 165,
+          "share": 1.0
+        }
+      },
+      "weak_conflict": {
+        "weak": 12.5986,
+        "total": 87.0986,
+        "share": 0.14464756035114232
+      },
+      "accuracy": {
+        "comment": 78.7,
+        "transcript": 67.8,
+        "vocal": 48.9,
+        "facial": 34.2
+      },
+      "means_not": "How much evidence this reading rests on. Not whether the verdict is right, and not whether anyone in the video was honest.",
+      "ceiling": {
+        "text": "No score in this system has been shown to track human judgement of authenticity. On 119 hand-rated segments the four-channel design scored rho = +0.0575 (95% CI -0.1282 to +0.2364); people agreed with each other at rho = +0.8038.",
+        "n": 119,
+        "rho": 0.0575,
+        "ci": [
+          -0.1282,
+          0.2364
+        ],
+        "human_rho": 0.8038,
+        "source": "baseline_bench/BASELINE_ANALYSIS.md"
+      }
+    },
+    "tone": {
+      "window_s": 60.0,
+      "points": [
+        {
+          "seg": 0,
+          "start": 0.12,
+          "end": 4.68,
+          "raw": -0.6346,
+          "t": 2.4,
+          "smooth": -0.1857
+        },
+        {
+          "seg": 1,
+          "start": 4.68,
+          "end": 8.76,
+          "raw": 0.0,
+          "t": 6.72,
+          "smooth": -0.1631
+        },
+        {
+          "seg": 2,
+          "start": 8.76,
+          "end": 14.68,
+          "raw": 0.0,
+          "t": 11.72,
+          "smooth": -0.1253
+        },
+        {
+          "seg": 3,
+          "start": 14.68,
+          "end": 17.8,
+          "raw": 0.5294,
+          "t": 16.24,
+          "smooth": -0.095
+        },
+        {
+          "seg": 4,
+          "start": 17.8,
+          "end": 20.96,
+          "raw": -0.4818,
+          "t": 19.38,
+          "smooth": -0.132
+        },
+        {
+          "seg": 5,
+          "start": 20.96,
+          "end": 26.68,
+          "raw": -0.525,
+          "t": 23.82,
+          "smooth": -0.1208
+        },
+        {
+          "seg": 6,
+          "start": 26.68,
+          "end": 31.18,
+          "raw": 0.0,
+          "t": 28.93,
+          "smooth": -0.0972
+        },
+        {
+          "seg": 7,
+          "start": 32.42,
+          "end": 36.34,
+          "raw": 0.0,
+          "t": 34.38,
+          "smooth": 0.0149
+        },
+        {
+          "seg": 8,
+          "start": 36.34,
+          "end": 40.5,
+          "raw": 0.0,
+          "t": 38.42,
+          "smooth": 0.052
+        },
+        {
+          "seg": 9,
+          "start": 40.5,
+          "end": 45.04,
+          "raw": 0.5823,
+          "t": 42.77,
+          "smooth": 0.0325
+        },
+        {
+          "seg": 10,
+          "start": 45.04,
+          "end": 48.42,
+          "raw": -0.951,
+          "t": 46.73,
+          "smooth": 0.0141
+        },
+        {
+          "seg": 11,
+          "start": 48.42,
+          "end": 54.56,
+          "raw": 0.0,
+          "t": 51.49,
+          "smooth": 0.0099
+        },
+        {
+          "seg": 12,
+          "start": 54.56,
+          "end": 57.92,
+          "raw": 0.0,
+          "t": 56.24,
+          "smooth": 0.0089
+        },
+        {
+          "seg": 13,
+          "start": 57.92,
+          "end": 62.36,
+          "raw": 0.7347,
+          "t": 60.14,
+          "smooth": 0.0128
+        },
+        {
+          "seg": 14,
+          "start": 62.36,
+          "end": 67.92,
+          "raw": 0.6194,
+          "t": 65.14,
+          "smooth": 0.0126
+        },
+        {
+          "seg": 15,
+          "start": 67.92,
+          "end": 71.16,
+          "raw": -0.4174,
+          "t": 69.54,
+          "smooth": 0.0126
+        },
+        {
+          "seg": 16,
+          "start": 71.16,
+          "end": 76.16,
+          "raw": 0.0,
+          "t": 73.66,
+          "smooth": -0.0183
+        },
+        {
+          "seg": 17,
+          "start": 76.6,
+          "end": 79.94,
+          "raw": 0.0,
+          "t": 78.27,
+          "smooth": 0.0198
+        },
+        {
+          "seg": 18,
+          "start": 79.94,
+          "end": 84.16,
+          "raw": -0.956,
+          "t": 82.05,
+          "smooth": 0.0221
+        },
+        {
+          "seg": 19,
+          "start": 84.16,
+          "end": 89.12,
+          "raw": 0.0,
+          "t": 86.64,
+          "smooth": 0.0518
+        },
+        {
+          "seg": 20,
+          "start": 89.12,
+          "end": 94.38,
+          "raw": 0.0,
+          "t": 91.75,
+          "smooth": 0.0333
+        },
+        {
+          "seg": 21,
+          "start": 94.38,
+          "end": 97.74,
+          "raw": 0.0,
+          "t": 96.06,
+          "smooth": -0.0127
+        },
+        {
+          "seg": 22,
+          "start": 97.74,
+          "end": 100.84,
+          "raw": 0.0,
+          "t": 99.29,
+          "smooth": 0.0022
+        },
+        {
+          "seg": 23,
+          "start": 100.84,
+          "end": 106.78,
+          "raw": 0.0,
+          "t": 103.81,
+          "smooth": 0.0759
+        },
+        {
+          "seg": 24,
+          "start": 106.78,
+          "end": 110.4,
+          "raw": 0.0,
+          "t": 108.59,
+          "smooth": 0.0574
+        },
+        {
+          "seg": 25,
+          "start": 110.4,
+          "end": 114.08,
+          "raw": 0.0,
+          "t": 112.24,
+          "smooth": 0.1471
+        },
+        {
+          "seg": 26,
+          "start": 114.08,
+          "end": 119.12,
+          "raw": 0.6899,
+          "t": 116.6,
+          "smooth": 0.1902
+        },
+        {
+          "seg": 27,
+          "start": 119.12,
+          "end": 123.48,
+          "raw": 0.0,
+          "t": 121.3,
+          "smooth": 0.1902
+        },
+        {
+          "seg": 28,
+          "start": 123.48,
+          "end": 127.32,
+          "raw": 0.0,
+          "t": 125.4,
+          "smooth": 0.1902
+        },
+        {
+          "seg": 29,
+          "start": 127.32,
+          "end": 131.9,
+          "raw": 0.7447,
+          "t": 129.61,
+          "smooth": 0.1997
+        },
+        {
+          "seg": 30,
+          "start": 131.9,
+          "end": 135.02,
+          "raw": 0.8731,
+          "t": 133.46,
+          "smooth": 0.237
+        },
+        {
+          "seg": 31,
+          "start": 135.02,
+          "end": 138.56,
+          "raw": -0.6099,
+          "t": 136.79,
+          "smooth": 0.2087
+        },
+        {
+          "seg": 32,
+          "start": 138.56,
+          "end": 143.10000000000002,
+          "raw": 0.8718,
+          "t": 140.83,
+          "smooth": 0.1931
+        },
+        {
+          "seg": 33,
+          "start": 143.10000000000002,
+          "end": 146.48000000000002,
+          "raw": 0.0,
+          "t": 144.79,
+          "smooth": 0.2129
+        },
+        {
+          "seg": 34,
+          "start": 146.48000000000002,
+          "end": 150.26000000000002,
+          "raw": 0.0,
+          "t": 148.37,
+          "smooth": 0.1458
+        },
+        {
+          "seg": 35,
+          "start": 150.26000000000002,
+          "end": 155.20000000000002,
+          "raw": 0.0,
+          "t": 152.73,
+          "smooth": 0.1372
+        },
+        {
+          "seg": 36,
+          "start": 155.20000000000002,
+          "end": 158.88,
+          "raw": 0.0,
+          "t": 157.04,
+          "smooth": 0.1496
+        },
+        {
+          "seg": 37,
+          "start": 158.88,
+          "end": 162.86,
+          "raw": 0.7829,
+          "t": 160.87,
+          "smooth": 0.1552
+        },
+        {
+          "seg": 38,
+          "start": 162.86,
+          "end": 168.62,
+          "raw": -0.5105,
+          "t": 165.74,
+          "smooth": 0.1499
+        },
+        {
+          "seg": 39,
+          "start": 168.62,
+          "end": 171.98000000000002,
+          "raw": 0.0,
+          "t": 170.3,
+          "smooth": 0.1583
+        },
+        {
+          "seg": 40,
+          "start": 171.98000000000002,
+          "end": 175.12,
+          "raw": 0.596,
+          "t": 173.55,
+          "smooth": 0.1176
+        },
+        {
+          "seg": 41,
+          "start": 175.12,
+          "end": 178.18,
+          "raw": -0.5723,
+          "t": 176.65,
+          "smooth": 0.1176
+        },
+        {
+          "seg": 42,
+          "start": 178.18,
+          "end": 181.8,
+          "raw": 0.0,
+          "t": 179.99,
+          "smooth": 0.1176
+        },
+        {
+          "seg": 43,
+          "start": 181.8,
+          "end": 186.08,
+          "raw": 0.0,
+          "t": 183.94,
+          "smooth": 0.1176
+        },
+        {
+          "seg": 44,
+          "start": 186.08,
+          "end": 191.68,
+          "raw": 0.7776,
+          "t": 188.88,
+          "smooth": 0.1176
+        },
+        {
+          "seg": 45,
+          "start": 191.68,
+          "end": 196.32000000000002,
+          "raw": 0.5191,
+          "t": 194.0,
+          "smooth": 0.1262
+        },
+        {
+          "seg": 46,
+          "start": 196.32000000000002,
+          "end": 200.4,
+          "raw": 0.0,
+          "t": 198.36,
+          "smooth": 0.1716
+        },
+        {
+          "seg": 47,
+          "start": 200.4,
+          "end": 204.10000000000002,
+          "raw": 0.0,
+          "t": 202.25,
+          "smooth": 0.1712
+        },
+        {
+          "seg": 48,
+          "start": 204.10000000000002,
+          "end": 208.56,
+          "raw": 0.0,
+          "t": 206.33,
+          "smooth": 0.1542
+        },
+        {
+          "seg": 49,
+          "start": 208.56,
+          "end": 213.02,
+          "raw": 0.0,
+          "t": 210.79,
+          "smooth": 0.217
+        },
+        {
+          "seg": 50,
+          "start": 213.02,
+          "end": 216.04000000000002,
+          "raw": 0.0,
+          "t": 214.53,
+          "smooth": 0.1809
+        },
+        {
+          "seg": 51,
+          "start": 216.04000000000002,
+          "end": 219.72,
+          "raw": 0.0,
+          "t": 217.88,
+          "smooth": 0.1278
+        },
+        {
+          "seg": 52,
+          "start": 219.72,
+          "end": 224.70000000000002,
+          "raw": 0.7123,
+          "t": 222.21,
+          "smooth": 0.0739
+        },
+        {
+          "seg": 53,
+          "start": 224.70000000000002,
+          "end": 228.46,
+          "raw": 0.0,
+          "t": 226.58,
+          "smooth": 0.0384
+        },
+        {
+          "seg": 54,
+          "start": 228.46,
+          "end": 233.52,
+          "raw": 0.0,
+          "t": 230.99,
+          "smooth": 0.0384
+        },
+        {
+          "seg": 55,
+          "start": 233.52,
+          "end": 236.68,
+          "raw": 0.0,
+          "t": 235.1,
+          "smooth": 0.0017
+        },
+        {
+          "seg": 56,
+          "start": 236.68,
+          "end": 241.24,
+          "raw": 0.6589,
+          "t": 238.96,
+          "smooth": -0.0286
+        },
+        {
+          "seg": 57,
+          "start": 241.24,
+          "end": 246.92,
+          "raw": -0.748,
+          "t": 244.08,
+          "smooth": -0.0286
+        },
+        {
+          "seg": 58,
+          "start": 246.92,
+          "end": 250.51999999999998,
+          "raw": 0.0,
+          "t": 248.72,
+          "smooth": -0.0286
+        },
+        {
+          "seg": 59,
+          "start": 250.51999999999998,
+          "end": 255.48,
+          "raw": 0.0,
+          "t": 253.0,
+          "smooth": -0.0675
+        },
+        {
+          "seg": 60,
+          "start": 255.48,
+          "end": 261.36,
+          "raw": 0.0,
+          "t": 258.42,
+          "smooth": -0.0877
+        },
+        {
+          "seg": 61,
+          "start": 261.36,
+          "end": 268.18,
+          "raw": -0.589,
+          "t": 264.77,
+          "smooth": -0.0877
+        },
+        {
+          "seg": 62,
+          "start": 268.18,
+          "end": 273.44,
+          "raw": 0.0,
+          "t": 270.81,
+          "smooth": -0.1346
+        },
+        {
+          "seg": 63,
+          "start": 273.44,
+          "end": 278.84000000000003,
+          "raw": 0.0,
+          "t": 276.14,
+          "smooth": -0.1095
+        },
+        {
+          "seg": 64,
+          "start": 278.84000000000003,
+          "end": 283.46000000000004,
+          "raw": 0.0,
+          "t": 281.15,
+          "smooth": -0.114
+        },
+        {
+          "seg": 65,
+          "start": 283.46000000000004,
+          "end": 287.56,
+          "raw": 0.0,
+          "t": 285.51,
+          "smooth": -0.1482
+        },
+        {
+          "seg": 66,
+          "start": 287.56,
+          "end": 294.38,
+          "raw": 0.0,
+          "t": 290.97,
+          "smooth": -0.0871
+        },
+        {
+          "seg": 67,
+          "start": 294.38,
+          "end": 297.5,
+          "raw": 0.0,
+          "t": 295.94,
+          "smooth": 0.0021
+        },
+        {
+          "seg": 68,
+          "start": 298.18,
+          "end": 304.0,
+          "raw": 0.0,
+          "t": 301.09,
+          "smooth": -0.035
+        },
+        {
+          "seg": 69,
+          "start": 304.0,
+          "end": 307.1,
+          "raw": -0.8861,
+          "t": 305.55,
+          "smooth": -0.0702
+        },
+        {
+          "seg": 70,
+          "start": 307.1,
+          "end": 311.58,
+          "raw": 0.0,
+          "t": 309.34,
+          "smooth": -0.1076
+        },
+        {
+          "seg": 71,
+          "start": 311.58,
+          "end": 315.64,
+          "raw": -0.5156,
+          "t": 313.61,
+          "smooth": -0.1629
+        },
+        {
+          "seg": 72,
+          "start": 315.64,
+          "end": 319.98,
+          "raw": 0.7304,
+          "t": 317.81,
+          "smooth": -0.152
+        },
+        {
+          "seg": 73,
+          "start": 319.98,
+          "end": 326.3,
+          "raw": 0.5229,
+          "t": 323.14,
+          "smooth": -0.1815
+        },
+        {
+          "seg": 74,
+          "start": 326.3,
+          "end": 329.58,
+          "raw": -0.9516,
+          "t": 327.94,
+          "smooth": -0.2414
+        },
+        {
+          "seg": 75,
+          "start": 329.58,
+          "end": 333.72,
+          "raw": -0.3884,
+          "t": 331.65,
+          "smooth": -0.2842
+        },
+        {
+          "seg": 76,
+          "start": 333.72,
+          "end": 340.06,
+          "raw": -0.5847,
+          "t": 336.89,
+          "smooth": -0.2212
+        },
+        {
+          "seg": 77,
+          "start": 340.06,
+          "end": 344.48,
+          "raw": -0.8058,
+          "t": 342.27,
+          "smooth": -0.1683
+        },
+        {
+          "seg": 78,
+          "start": 344.48,
+          "end": 348.72,
+          "raw": 0.4047,
+          "t": 346.6,
+          "smooth": -0.1167
+        },
+        {
+          "seg": 79,
+          "start": 348.72,
+          "end": 355.0,
+          "raw": -0.4788,
+          "t": 351.86,
+          "smooth": -0.1742
+        },
+        {
+          "seg": 80,
+          "start": 355.0,
+          "end": 360.72,
+          "raw": -0.9434,
+          "t": 357.86,
+          "smooth": -0.1882
+        },
+        {
+          "seg": 81,
+          "start": 360.72,
+          "end": 364.40000000000003,
+          "raw": 0.0,
+          "t": 362.56,
+          "smooth": -0.1743
+        },
+        {
+          "seg": 82,
+          "start": 364.40000000000003,
+          "end": 376.48,
+          "raw": 0.4893,
+          "t": 370.44,
+          "smooth": -0.1142
+        },
+        {
+          "seg": 83,
+          "start": 376.48,
+          "end": 381.28,
+          "raw": 0.0,
+          "t": 378.88,
+          "smooth": -0.0545
+        },
+        {
+          "seg": 84,
+          "start": 381.28,
+          "end": 389.28,
+          "raw": 0.0,
+          "t": 385.28,
+          "smooth": 0.0442
+        },
+        {
+          "seg": 85,
+          "start": 389.28,
+          "end": 394.0,
+          "raw": -0.5979,
+          "t": 391.64,
+          "smooth": 0.0857
+        },
+        {
+          "seg": 86,
+          "start": 394.0,
+          "end": 399.03999999999996,
+          "raw": 0.0,
+          "t": 396.52,
+          "smooth": -0.0094
+        },
+        {
+          "seg": 87,
+          "start": 399.03999999999996,
+          "end": 406.4,
+          "raw": 0.0,
+          "t": 402.72,
+          "smooth": -0.1129
+        },
+        {
+          "seg": 88,
+          "start": 406.4,
+          "end": 412.32,
+          "raw": 0.7933,
+          "t": 409.36,
+          "smooth": -0.1436
+        },
+        {
+          "seg": 89,
+          "start": 412.32,
+          "end": 418.88,
+          "raw": 0.0,
+          "t": 415.6,
+          "smooth": -0.1881
+        },
+        {
+          "seg": 90,
+          "start": 418.88,
+          "end": 429.84000000000003,
+          "raw": -0.9572,
+          "t": 424.36,
+          "smooth": -0.146
+        },
+        {
+          "seg": 91,
+          "start": 429.84000000000003,
+          "end": 435.12,
+          "raw": 0.0,
+          "t": 432.48,
+          "smooth": -0.146
+        },
+        {
+          "seg": 92,
+          "start": 435.12,
+          "end": 442.0,
+          "raw": 0.0,
+          "t": 438.56,
+          "smooth": -0.1745
+        },
+        {
+          "seg": 93,
+          "start": 442.0,
+          "end": 446.0,
+          "raw": -0.741,
+          "t": 444.0,
+          "smooth": -0.2242
+        },
+        {
+          "seg": 94,
+          "start": 446.0,
+          "end": 449.44,
+          "raw": 0.0,
+          "t": 447.72,
+          "smooth": -0.1912
+        },
+        {
+          "seg": 95,
+          "start": 449.44,
+          "end": 455.52,
+          "raw": 0.0,
+          "t": 452.48,
+          "smooth": -0.1286
+        },
+        {
+          "seg": 96,
+          "start": 455.52,
+          "end": 458.8,
+          "raw": 0.0,
+          "t": 457.16,
+          "smooth": -0.0912
+        },
+        {
+          "seg": 97,
+          "start": 458.8,
+          "end": 465.36,
+          "raw": 0.0,
+          "t": 462.08,
+          "smooth": -0.0664
+        },
+        {
+          "seg": 98,
+          "start": 465.36,
+          "end": 469.52,
+          "raw": 0.0,
+          "t": 467.44,
+          "smooth": -0.0664
+        },
+        {
+          "seg": 99,
+          "start": 469.52,
+          "end": 474.4,
+          "raw": 0.0,
+          "t": 471.96,
+          "smooth": -0.0664
+        },
+        {
+          "seg": 100,
+          "start": 474.4,
+          "end": 478.24,
+          "raw": 0.5972,
+          "t": 476.32,
+          "smooth": -0.017
+        },
+        {
+          "seg": 101,
+          "start": 478.24,
+          "end": 483.59999999999997,
+          "raw": 0.0,
+          "t": 480.92,
+          "smooth": 0.0316
+        },
+        {
+          "seg": 102,
+          "start": 483.59999999999997,
+          "end": 488.88,
+          "raw": -0.6273,
+          "t": 486.24,
+          "smooth": 0.0575
+        },
+        {
+          "seg": 103,
+          "start": 488.88,
+          "end": 493.28,
+          "raw": 0.0,
+          "t": 491.08,
+          "smooth": 0.0645
+        },
+        {
+          "seg": 104,
+          "start": 493.28,
+          "end": 496.55999999999995,
+          "raw": 0.0,
+          "t": 494.92,
+          "smooth": 0.1169
+        },
+        {
+          "seg": 105,
+          "start": 496.55999999999995,
+          "end": 501.44,
+          "raw": 0.0,
+          "t": 499.0,
+          "smooth": 0.136
+        },
+        {
+          "seg": 106,
+          "start": 501.44,
+          "end": 507.67999999999995,
+          "raw": 0.0,
+          "t": 504.56,
+          "smooth": 0.0478
+        },
+        {
+          "seg": 107,
+          "start": 507.67999999999995,
+          "end": 512.64,
+          "raw": 0.9005,
+          "t": 510.16,
+          "smooth": -0.0235
+        },
+        {
+          "seg": 108,
+          "start": 512.64,
+          "end": 516.48,
+          "raw": 0.0,
+          "t": 514.56,
+          "smooth": 0.0498
+        },
+        {
+          "seg": 109,
+          "start": 516.48,
+          "end": 520.56,
+          "raw": 0.0,
+          "t": 518.52,
+          "smooth": 0.1003
+        },
+        {
+          "seg": 110,
+          "start": 520.56,
+          "end": 527.76,
+          "raw": 0.8179,
+          "t": 524.16,
+          "smooth": 0.0486
+        },
+        {
+          "seg": 111,
+          "start": 527.76,
+          "end": 533.04,
+          "raw": -0.9485,
+          "t": 530.4,
+          "smooth": 0.1064
+        },
+        {
+          "seg": 112,
+          "start": 533.04,
+          "end": 538.4799999999999,
+          "raw": -0.899,
+          "t": 535.76,
+          "smooth": 0.0821
+        },
+        {
+          "seg": 113,
+          "start": 538.4799999999999,
+          "end": 545.1999999999999,
+          "raw": 0.8616,
+          "t": 541.84,
+          "smooth": -0.038
+        },
+        {
+          "seg": 114,
+          "start": 545.1999999999999,
+          "end": 550.0799999999999,
+          "raw": 0.0,
+          "t": 547.64,
+          "smooth": -0.1381
+        },
+        {
+          "seg": 115,
+          "start": 550.08,
+          "end": 553.9200000000001,
+          "raw": -0.9231,
+          "t": 552.0,
+          "smooth": -0.0964
+        },
+        {
+          "seg": 116,
+          "start": 553.9200000000001,
+          "end": 558.88,
+          "raw": 0.882,
+          "t": 556.4,
+          "smooth": -0.1542
+        },
+        {
+          "seg": 117,
+          "start": 558.88,
+          "end": 563.6,
+          "raw": -0.4553,
+          "t": 561.24,
+          "smooth": -0.1177
+        },
+        {
+          "seg": 118,
+          "start": 563.6,
+          "end": 568.24,
+          "raw": 0.0,
+          "t": 565.92,
+          "smooth": -0.0461
+        },
+        {
+          "seg": 119,
+          "start": 568.24,
+          "end": 573.2800000000001,
+          "raw": -0.9611,
+          "t": 570.76,
+          "smooth": -0.081
+        },
+        {
+          "seg": 120,
+          "start": 573.2800000000001,
+          "end": 577.6,
+          "raw": -0.9108,
+          "t": 575.44,
+          "smooth": -0.1714
+        },
+        {
+          "seg": 121,
+          "start": 577.6,
+          "end": 582.16,
+          "raw": 0.843,
+          "t": 579.88,
+          "smooth": -0.1097
+        },
+        {
+          "seg": 122,
+          "start": 582.16,
+          "end": 589.28,
+          "raw": 0.0,
+          "t": 585.72,
+          "smooth": -0.011
+        },
+        {
+          "seg": 123,
+          "start": 589.28,
+          "end": 596.24,
+          "raw": 0.0,
+          "t": 592.76,
+          "smooth": 0.0483
+        },
+        {
+          "seg": 124,
+          "start": 596.24,
+          "end": 604.8000000000001,
+          "raw": -0.5385,
+          "t": 600.52,
+          "smooth": 0.1132
+        },
+        {
+          "seg": 125,
+          "start": 604.8,
+          "end": 608.4,
+          "raw": 0.9077,
+          "t": 606.6,
+          "smooth": 0.296
+        },
+        {
+          "seg": 126,
+          "start": 608.4,
+          "end": 614.8,
+          "raw": 0.684,
+          "t": 611.6,
+          "smooth": 0.3131
+        },
+        {
+          "seg": 127,
+          "start": 614.8,
+          "end": 622.8,
+          "raw": 0.6509,
+          "t": 618.8,
+          "smooth": 0.3053
+        },
+        {
+          "seg": 128,
+          "start": 622.8,
+          "end": 629.04,
+          "raw": 0.0,
+          "t": 625.92,
+          "smooth": 0.3389
+        },
+        {
+          "seg": 129,
+          "start": 629.04,
+          "end": 634.56,
+          "raw": 0.8741,
+          "t": 631.8,
+          "smooth": 0.396
+        },
+        {
+          "seg": 130,
+          "start": 634.56,
+          "end": 640.64,
+          "raw": 0.8631,
+          "t": 637.6,
+          "smooth": 0.3806
+        },
+        {
+          "seg": 131,
+          "start": 640.64,
+          "end": 647.04,
+          "raw": 0.0,
+          "t": 643.84,
+          "smooth": 0.3596
+        },
+        {
+          "seg": 132,
+          "start": 647.04,
+          "end": 651.8399999999999,
+          "raw": 0.0,
+          "t": 649.44,
+          "smooth": 0.2313
+        },
+        {
+          "seg": 133,
+          "start": 651.8399999999999,
+          "end": 656.8,
+          "raw": 0.4941,
+          "t": 654.32,
+          "smooth": 0.1222
+        },
+        {
+          "seg": 134,
+          "start": 656.8,
+          "end": 661.8399999999999,
+          "raw": 0.0,
+          "t": 659.32,
+          "smooth": 0.0501
+        },
+        {
+          "seg": 135,
+          "start": 661.8399999999999,
+          "end": 667.8399999999999,
+          "raw": 0.0,
+          "t": 664.84,
+          "smooth": -0.1116
+        },
+        {
+          "seg": 136,
+          "start": 667.8399999999999,
+          "end": 672.4799999999999,
+          "raw": 0.8784,
+          "t": 670.16,
+          "smooth": -0.2243
+        },
+        {
+          "seg": 137,
+          "start": 672.4799999999999,
+          "end": 678.0,
+          "raw": -0.6531,
+          "t": 675.24,
+          "smooth": -0.1856
+        },
+        {
+          "seg": 138,
+          "start": 678.0,
+          "end": 683.68,
+          "raw": -0.9053,
+          "t": 680.84,
+          "smooth": -0.1747
+        },
+        {
+          "seg": 139,
+          "start": 683.68,
+          "end": 691.5999999999999,
+          "raw": -0.8155,
+          "t": 687.64,
+          "smooth": -0.2183
+        },
+        {
+          "seg": 140,
+          "start": 691.5999999999999,
+          "end": 696.4,
+          "raw": -0.9321,
+          "t": 694.0,
+          "smooth": -0.2183
+        },
+        {
+          "seg": 141,
+          "start": 696.4,
+          "end": 696.9599999999999,
+          "raw": 0.0,
+          "t": 696.68,
+          "smooth": -0.2183
+        },
+        {
+          "seg": 142,
+          "start": 700.8,
+          "end": 706.2399999999999,
+          "raw": 0.6148,
+          "t": 703.52,
+          "smooth": -0.2285
+        },
+        {
+          "seg": 143,
+          "start": 706.2399999999999,
+          "end": 711.3599999999999,
+          "raw": 0.0,
+          "t": 708.8,
+          "smooth": -0.1245
+        },
+        {
+          "seg": 144,
+          "start": 711.36,
+          "end": 720.16,
+          "raw": 0.0,
+          "t": 715.76,
+          "smooth": -0.0157
+        },
+        {
+          "seg": 145,
+          "start": 720.16,
+          "end": 724.88,
+          "raw": 0.0,
+          "t": 722.52,
+          "smooth": 0.1614
+        },
+        {
+          "seg": 146,
+          "start": 724.88,
+          "end": 730.32,
+          "raw": 0.0,
+          "t": 727.6,
+          "smooth": 0.2706
+        },
+        {
+          "seg": 147,
+          "start": 730.32,
+          "end": 736.0,
+          "raw": 0.8824,
+          "t": 733.16,
+          "smooth": 0.2929
+        },
+        {
+          "seg": 148,
+          "start": 736.0,
+          "end": 741.28,
+          "raw": 0.0,
+          "t": 738.64,
+          "smooth": 0.2556
+        },
+        {
+          "seg": 149,
+          "start": 741.28,
+          "end": 746.08,
+          "raw": 0.0,
+          "t": 743.68,
+          "smooth": 0.1941
+        },
+        {
+          "seg": 150,
+          "start": 746.08,
+          "end": 752.72,
+          "raw": 0.6716,
+          "t": 749.4,
+          "smooth": 0.2824
+        },
+        {
+          "seg": 151,
+          "start": 752.72,
+          "end": 758.4,
+          "raw": 0.5239,
+          "t": 755.56,
+          "smooth": 0.3321
+        },
+        {
+          "seg": 152,
+          "start": 758.4,
+          "end": 762.8,
+          "raw": 0.7354,
+          "t": 760.6,
+          "smooth": 0.3643
+        },
+        {
+          "seg": 153,
+          "start": 762.8,
+          "end": 768.24,
+          "raw": 0.0,
+          "t": 765.52,
+          "smooth": 0.3489
+        },
+        {
+          "seg": 154,
+          "start": 768.24,
+          "end": 773.28,
+          "raw": -0.8741,
+          "t": 770.76,
+          "smooth": 0.2916
+        },
+        {
+          "seg": 155,
+          "start": 773.28,
+          "end": 779.5999999999999,
+          "raw": 0.9261,
+          "t": 776.44,
+          "smooth": 0.2541
+        },
+        {
+          "seg": 156,
+          "start": 779.5999999999999,
+          "end": 786.24,
+          "raw": 0.4689,
+          "t": 782.92,
+          "smooth": 0.2503
+        },
+        {
+          "seg": 157,
+          "start": 786.24,
+          "end": 791.84,
+          "raw": 0.4275,
+          "t": 789.04,
+          "smooth": 0.2345
+        },
+        {
+          "seg": 158,
+          "start": 791.84,
+          "end": 796.48,
+          "raw": 0.7845,
+          "t": 794.16,
+          "smooth": 0.1876
+        },
+        {
+          "seg": 159,
+          "start": 796.48,
+          "end": 803.04,
+          "raw": -0.8807,
+          "t": 799.76,
+          "smooth": 0.2101
+        },
+        {
+          "seg": 160,
+          "start": 803.04,
+          "end": 807.44,
+          "raw": 0.0,
+          "t": 805.24,
+          "smooth": 0.2409
+        },
+        {
+          "seg": 161,
+          "start": 808.5600000000001,
+          "end": 815.6800000000001,
+          "raw": 0.8744,
+          "t": 812.12,
+          "smooth": 0.1692
+        },
+        {
+          "seg": 162,
+          "start": 815.68,
+          "end": 819.92,
+          "raw": 0.0,
+          "t": 817.8,
+          "smooth": 0.1321
+        },
+        {
+          "seg": 163,
+          "start": 819.92,
+          "end": 826.3199999999999,
+          "raw": 0.0,
+          "t": 823.12,
+          "smooth": 0.0797
+        },
+        {
+          "seg": 164,
+          "start": 826.3199999999999,
+          "end": 832.9599999999999,
+          "raw": 0.0,
+          "t": 829.64,
+          "smooth": 0.1004
+        }
+      ],
+      "turns": [
+        {
+          "seg": 75,
+          "t": 331.65,
+          "kind": "dip",
+          "smooth": -0.2842,
+          "prominence": 0.5212
+        },
+        {
+          "seg": 129,
+          "t": 631.8,
+          "kind": "peak",
+          "smooth": 0.396,
+          "prominence": 0.6245
+        },
+        {
+          "seg": 142,
+          "t": 703.52,
+          "kind": "dip",
+          "smooth": -0.2285,
+          "prominence": 0.5928
+        }
+      ]
+    },
+    "moments": [
+      {
+        "seg": 5,
+        "start": 20.96,
+        "end": 26.68,
+        "time": "0:20",
+        "conflict": 0.8,
+        "flagged": true,
+        "damped": false,
+        "valences": {
+          "transcript": "NEGATIVE",
+          "facial": "POSITIVE",
+          "vocal": "POSITIVE",
+          "comment": "POSITIVE"
+        },
+        "text": "We don't care about that, and we don't care about the fact that Apple includes almost no accessories with their phones anymore."
+      },
+      {
+        "seg": 59,
+        "start": 250.51999999999998,
+        "end": 255.48,
+        "time": "4:10",
+        "conflict": 0.8,
+        "flagged": true,
+        "damped": false,
+        "valences": {
+          "transcript": "NEUTRAL",
+          "facial": "NEGATIVE",
+          "vocal": "POSITIVE",
+          "comment": "POSITIVE"
+        },
+        "text": "just because they do have a couple of ambient light sensors, and getting both of them exposed to direct daylight"
+      },
+      {
+        "seg": 61,
+        "start": 261.36,
+        "end": 268.18,
+        "time": "4:21",
+        "conflict": 0.8,
+        "flagged": true,
+        "damped": false,
+        "valences": {
+          "transcript": "NEGATIVE",
+          "facial": "NEGATIVE",
+          "vocal": "POSITIVE",
+          "comment": "POSITIVE"
+        },
+        "text": "you get an up to, I hate trains, up to 120 Hertz maximum refresh rate ProMotion display,"
+      }
+    ],
+    "signs": {
+      "title": "Signs of a commercial interest or a mismatch",
+      "disclaimer": "These are signs, not proof. A creator can disclose a sponsor and still review honestly, and an undisclosed deal would leave none of these marks.",
+      "signs": [
+        {
+          "id": "S1",
+          "kind": "fact",
+          "state": "absent",
+          "name": "The creator declared a paid promotion",
+          "evidence": {
+            "label": false,
+            "description": []
+          }
+        },
+        {
+          "id": "S2",
+          "kind": "fact",
+          "state": "present",
+          "name": "Sponsor, code, affiliate or gift wording in what was said",
+          "evidence": {
+            "speech": [
+              {
+                "seg": 67,
+                "time": "4:54",
+                "category": "sponsorship",
+                "pattern": "todays_sponsor",
+                "match": "our sponsor"
+              }
+            ]
+          }
+        },
+        {
+          "id": "S3",
+          "kind": "fact",
+          "state": "present",
+          "name": "Affiliate links, discount codes or a gifted unit in the description",
+          "evidence": {
+            "description": [
+              {
+                "category": "affiliate",
+                "pattern": "affiliate",
+                "match": "Affiliate",
+                "context": "y provide some compensation to Linus Media Group. Affiliate links powered in part by affilimate.com/…"
+              }
+            ]
+          }
+        },
+        {
+          "id": "S4",
+          "kind": "inference",
+          "state": "absent",
+          "name": "The reviewer was measurably warmer than the audience",
+          "evidence": {
+            "agreement": {
+              "gap": -0.07132764802790977,
+              "se": 0.09872314198920673,
+              "low": -0.2648214507673889,
+              "high": 0.12216615471156937,
+              "call": "no_clear_difference"
+            }
+          }
+        },
+        {
+          "id": "S5",
+          "kind": "inference",
+          "state": "present",
+          "name": "Positive words at moments the controller flagged",
+          "evidence": {
+            "positive_flagged": [
+              78
+            ],
+            "controller_flag": []
+          }
+        }
+      ],
+      "present": 3,
+      "checked": 5
+    }
+  },
+  "reading": {
+    "claims": [
+      {
+        "seg": 13,
+        "time": "0:57",
+        "start": 57.92,
+        "aspect": "performance",
+        "stance": "praise",
+        "claim": "The redesigned vapor chamber gives better cooling.",
+        "quote": "gives them better cooling than any iPhone before,",
+        "topic": "T0"
+      },
+      {
+        "seg": 14,
+        "time": "1:02",
+        "start": 62.36,
+        "aspect": "performance",
+        "stance": "praise",
+        "claim": "The iPhone 17 Pro Max has more battery life than any iPhone before.",
+        "quote": "more battery life than any iPhone before.",
+        "topic": "T0"
+      },
+      {
+        "seg": 16,
+        "time": "1:11",
+        "start": 71.16,
+        "aspect": "performance",
+        "stance": "praise",
+        "claim": "The iPhone 17 Pro Max can stream 26 hours of video on a single charge.",
+        "quote": "26 hours of continuous video playback streamed",
+        "topic": "T0"
+      },
+      {
+        "seg": 19,
+        "time": "1:24",
+        "start": 84.16,
+        "aspect": "value",
+        "stance": "praise",
+        "claim": "The iPhone 17 Pro is for professionals.",
+        "quote": "the first iPhone Pros that are for professionals,",
+        "topic": "T6"
+      },
+      {
+        "seg": 23,
+        "time": "1:40",
+        "start": 100.84,
+        "aspect": "materials",
+        "stance": "praise",
+        "claim": "The cameras have 48 megapixels.",
+        "quote": "All three, the main shooter, the ultra wide, and the telephoto are 48 megapixels.",
+        "topic": "T5"
+      },
+      {
+        "seg": 25,
+        "time": "1:50",
+        "start": 110.4,
+        "aspect": "materials",
+        "stance": "praise",
+        "claim": "The cameras support Apple Log 2.",
+        "quote": "they have support for Apple Log 2,",
+        "topic": "T5"
+      },
+      {
+        "seg": 35,
+        "time": "2:30",
+        "start": 150.26000000000002,
+        "aspect": "price",
+        "stance": "criticism",
+        "claim": "The iPhone 17 Pro costs $1100.",
+        "quote": "Oh, right, the price. 1100 bucks,",
+        "topic": "T6"
+      },
+      {
+        "seg": 53,
+        "time": "3:44",
+        "start": 224.70000000000002,
+        "aspect": "brightness",
+        "stance": "praise",
+        "claim": "The display has a maximum brightness of 3,000 nits outdoors.",
+        "quote": "with them claiming 3,000 nits maximum brightness outdoors,",
+        "topic": "T3"
+      },
+      {
+        "seg": 54,
+        "time": "3:48",
+        "start": 228.46,
+        "aspect": "hdr",
+        "stance": "praise",
+        "claim": "The display has a maximum brightness of 1,600 nits in HDR content.",
+        "quote": "up to 1,600 nits max in HDR content,",
+        "topic": "T7"
+      },
+      {
+        "seg": 57,
+        "time": "4:01",
+        "start": 241.24,
+        "aspect": "brightness",
+        "stance": "criticism",
+        "claim": "The display did not reach Apple's claimed 3,000 nits brightness.",
+        "quote": "We weren't quite able to reach Apple's claimed 3,000 nits,",
+        "topic": "T3"
+      },
+      {
+        "seg": 61,
+        "time": "4:21",
+        "start": 261.36,
+        "aspect": "refresh rate",
+        "stance": "neutral",
+        "claim": "The display has a maximum refresh rate of 120 Hertz.",
+        "quote": "up to, I hate trains, up to 120 Hertz maximum refresh rate ProMotion display,",
+        "topic": "T3"
+      },
+      {
+        "seg": 82,
+        "time": "6:04",
+        "start": 364.40000000000003,
+        "aspect": "performance",
+        "stance": "praise",
+        "claim": "The A19 Pro SoC outperforms other phones.",
+        "quote": "the A19 Pro SoC outperforms literally any other phone that isn't also called iPhone 17 Pro or iPhone 17 Pro Max.",
+        "topic": "T0"
+      },
+      {
+        "seg": 83,
+        "time": "6:16",
+        "start": 376.48,
+        "aspect": "performance",
+        "stance": "neutral",
+        "claim": "The iPhone 17 Pro and Pro Max have similar performance.",
+        "quote": "Both of these managed to perform within, I think it's about a percent of each other,",
+        "topic": "T0"
+      },
+      {
+        "seg": 85,
+        "time": "6:29",
+        "start": 389.28,
+        "aspect": "thermal performance",
+        "stance": "praise",
+        "claim": "The iPhone 17 Pro and Pro Max have improved thermal performance.",
+        "quote": "what we did see was a bit of a slower decay curve compared to what we're used to seeing.",
+        "topic": "T0"
+      },
+      {
+        "seg": 97,
+        "time": "7:38",
+        "start": 458.8,
+        "aspect": "performance",
+        "stance": "praise",
+        "claim": "The A19 Pro has the utmost in mobile performance.",
+        "quote": "The point is, if you want the utmost in mobile performance, A19 Pro is it.",
+        "topic": "T0"
+      },
+      {
+        "seg": 100,
+        "time": "7:54",
+        "start": 474.4,
+        "aspect": "charging",
+        "stance": "neutral",
+        "claim": "The reviewer validated most of Apple's claims about charging speed.",
+        "quote": "In general, we were able to validate most of Apple's claims with respect to charging speed.",
+        "topic": "T4"
+      },
+      {
+        "seg": 101,
+        "time": "7:58",
+        "start": 478.24,
+        "aspect": "charging",
+        "stance": "neutral",
+        "claim": "The iPhone 17 Pro Max charges at 40 watts max.",
+        "quote": "We got about 40 watts max on the Pro Max and about 30 watts max on the regular Pro.",
+        "topic": "T4"
+      },
+      {
+        "seg": 105,
+        "time": "8:16",
+        "start": 496.55999999999995,
+        "aspect": "charging",
+        "stance": "praise",
+        "claim": "The iPhone 17 Pro Max reduces charging power for battery health.",
+        "quote": "The point is, Apple kind of reduces the charging power aggressively toward the end,",
+        "topic": "T4"
+      },
+      {
+        "seg": 110,
+        "time": "8:40",
+        "start": 520.56,
+        "aspect": "camera",
+        "stance": "praise",
+        "claim": "The iPhone 17 Pro Max has good telephoto camera performance.",
+        "quote": "Hello, Mr. Bellavons. That's actually far from the best performance I've seen on this in terms of not being all",
+        "topic": "T1"
+      },
+      {
+        "seg": 124,
+        "time": "9:56",
+        "start": 596.24,
+        "aspect": "design",
+        "stance": "praise",
+        "claim": "The iPhone 17 Pro Max has a cool liquid glass design.",
+        "quote": "Also, I know some people didn't really like liquid glass to call it like liquid ass or whatever. I love it. I love this. This is so cool.",
+        "seg_end": 125,
+        "topic": "T2"
+      },
+      {
+        "seg": 127,
+        "time": "10:14",
+        "start": 614.8,
+        "aspect": "stabilization",
+        "stance": "praise",
+        "claim": "The reviewer finds Apple's stabilization to be smooth.",
+        "quote": "judder. Like none of them handle stabilization like Apple does.",
+        "topic": "T7"
+      },
+      {
+        "seg": 130,
+        "time": "10:34",
+        "start": 634.56,
+        "aspect": "selfie camera",
+        "stance": "praise",
+        "claim": "The reviewer finds the selfie camera to be awesome.",
+        "quote": "The selfie camera. This thing is freaking awesome.",
+        "topic": "T1"
+      },
+      {
+        "seg": 132,
+        "time": "10:47",
+        "start": 647.04,
+        "aspect": "selfie camera",
+        "stance": "praise",
+        "claim": "The reviewer praises the camera's ability to automatically frame portraits.",
+        "quote": "it'll have a look and go, oh yeah, you're holding your phone in portrait",
+        "topic": "T1"
+      },
+      {
+        "seg": 142,
+        "time": "11:40",
+        "start": 700.8,
+        "aspect": "speakers",
+        "stance": "praise",
+        "claim": "The reviewer finds the iPhone Pro's speakers to be better than any phone has any right to be.",
+        "quote": "As usual, the iPhone pro is better than any phone has any right to be.",
+        "topic": "T7"
+      },
+      {
+        "seg": 147,
+        "time": "12:10",
+        "start": 730.32,
+        "aspect": "durability",
+        "stance": "praise",
+        "claim": "The reviewer finds the new ceramic shield to be incredible.",
+        "quote": "Apple's new ceramic shield two is the first front glass and is",
+        "topic": "T2"
+      },
+      {
+        "seg": 152,
+        "time": "12:38",
+        "start": 758.4,
+        "aspect": "safety",
+        "stance": "praise",
+        "claim": "The reviewer praises the iPhone's emergency features.",
+        "quote": "detecting a severe crash and contacting authorities or allowing you to contact an emergency contact via satellite",
+        "seg_end": 153,
+        "topic": "T7"
+      }
+    ],
+    "topics": [
+      {
+        "id": "T0",
+        "name": "Performance",
+        "aspects": [
+          "performance",
+          "thermal performance"
+        ],
+        "reviewer": {
+          "claims": 7,
+          "stances": {
+            "praise": 6,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 1
+          },
+          "seconds": {
+            "POSITIVE": 22.08,
+            "NEUTRAL": 16.36,
+            "NEGATIVE": 4.72
+          },
+          "segments": [
+            13,
+            14,
+            16,
+            82,
+            83,
+            85,
+            97
+          ],
+          "lean": 0.4022242817423533,
+          "se": 0.28399245934681805,
+          "call": "balanced"
+        },
+        "audience": {
+          "comments": 20,
+          "counts": {
+            "POSITIVE": 7,
+            "NEUTRAL": 6,
+            "NEGATIVE": 7
+          },
+          "lean": 0.0,
+          "se": 0.1919429739874786,
+          "call": "balanced",
+          "questions": 1,
+          "examples": [
+            {
+              "i": 2,
+              "quote": "The action button isn't limited to \"Apple's authorized things\", it's able to launch Shortcuts, which are literally user-defined scripts, with logic and flow control. You can unzip files, send REST API requests, parse JSON, interact with functions exposed by individual apps (such as Home Assistant)... I'm not sure how Apple could make it any *less* restricted.",
+              "label": "NEUTRAL",
+              "likes": 2465
+            },
+            {
+              "i": 23,
+              "quote": "IF you have the Pro model (not other models) it can run at full USB-C speed with a different cable and you can hook up an external drive and save video directly to that drive.",
+              "label": "NEUTRAL",
+              "likes": 227
+            },
+            {
+              "i": 46,
+              "quote": "He tries the iPhone for one month. After one week, he is frustrated because there is no universal back button or gesture in the UI. After two weeks, he goes back to Android.",
+              "label": "NEGATIVE",
+              "likes": 118
+            }
+          ]
+        },
+        "agreement": {
+          "gap": 0.4022242817423533,
+          "se": 0.34277371869647766,
+          "low": -0.26959986174960665,
+          "high": 1.0740484252343132,
+          "call": "no_clear_difference"
+        }
+      },
+      {
+        "id": "T1",
+        "name": "Camera",
+        "aspects": [
+          "camera",
+          "selfie camera"
+        ],
+        "reviewer": {
+          "claims": 3,
+          "stances": {
+            "praise": 3,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 13.28,
+            "NEUTRAL": 4.8,
+            "NEGATIVE": 0.0
+          },
+          "segments": [
+            110,
+            130,
+            132
+          ],
+          "lean": 0.7345132743362863,
+          "se": 0.2928518356568539,
+          "call": "positive"
+        },
+        "audience": {
+          "comments": 13,
+          "counts": {
+            "POSITIVE": 3,
+            "NEUTRAL": 6,
+            "NEGATIVE": 4
+          },
+          "lean": -0.07692307692307693,
+          "se": 0.21066252211737155,
+          "call": "balanced",
+          "questions": 0,
+          "examples": [
+            {
+              "i": 6,
+              "quote": "11:10 turns phone sideways even though it has a square camera sensor, wonders why it went to wide view...",
+              "label": "NEGATIVE",
+              "likes": 912
+            },
+            {
+              "i": 8,
+              "quote": "If you're holding the phone in landscape mode, I think it makes sense that the selfie camera defaults to landscape mode.",
+              "label": "NEUTRAL",
+              "likes": 589
+            },
+            {
+              "i": 29,
+              "quote": "I think your top-down camera has a dead pixel. At 03:24 you can see it just below the on-screen shutter button.",
+              "label": "NEGATIVE",
+              "likes": 203
+            }
+          ]
+        },
+        "agreement": {
+          "gap": 0.8114363512593632,
+          "se": 0.3607504620543694,
+          "low": 0.10437843822661574,
+          "high": 1.5184942642921107,
+          "call": "reviewer_warmer"
+        }
+      },
+      {
+        "id": "T2",
+        "name": "Design",
+        "aspects": [
+          "design",
+          "durability"
+        ],
+        "reviewer": {
+          "claims": 2,
+          "stances": {
+            "praise": 2,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 9.28,
+            "NEUTRAL": 0.0,
+            "NEGATIVE": 8.56
+          },
+          "segments": [
+            124,
+            125,
+            147
+          ],
+          "lean": 0.04035874439461392,
+          "se": 0.7550218470714966,
+          "call": "balanced"
+        },
+        "audience": {
+          "comments": 21,
+          "counts": {
+            "POSITIVE": 8,
+            "NEUTRAL": 11,
+            "NEGATIVE": 2
+          },
+          "lean": 0.2857142857142857,
+          "se": 0.1404560114643107,
+          "call": "positive",
+          "questions": 1,
+          "examples": [
+            {
+              "i": 2,
+              "quote": "The action button isn't limited to \"Apple's authorized things\", it's able to launch Shortcuts, which are literally user-defined scripts, with logic and flow control. You can unzip files, send REST API requests, parse JSON, interact with functions exposed by individual apps (such as Home Assistant)... I'm not sure how Apple could make it any *less* restricted.",
+              "label": "NEUTRAL",
+              "likes": 2465
+            },
+            {
+              "i": 62,
+              "quote": "orange looks nice ngl",
+              "label": "POSITIVE",
+              "likes": 294
+            },
+            {
+              "i": 7,
+              "quote": "The reason at 0:15 is actually the only real one for Linus, trust me.",
+              "label": "NEUTRAL",
+              "likes": 75
+            }
+          ]
+        },
+        "agreement": {
+          "gap": -0.24535554131967177,
+          "se": 0.7679751823540373,
+          "low": -1.7505592397541652,
+          "high": 1.2598481571148217,
+          "call": "no_clear_difference"
+        }
+      },
+      {
+        "id": "T3",
+        "name": "Display",
+        "aspects": [
+          "brightness",
+          "refresh rate"
+        ],
+        "reviewer": {
+          "claims": 3,
+          "stances": {
+            "praise": 1,
+            "criticism": 1,
+            "mixed": 0,
+            "neutral": 1
+          },
+          "seconds": {
+            "POSITIVE": 0.0,
+            "NEUTRAL": 3.76,
+            "NEGATIVE": 12.5
+          },
+          "segments": [
+            53,
+            57,
+            61
+          ],
+          "lean": -0.7687576875768758,
+          "se": 0.2670233485805588,
+          "call": "negative"
+        },
+        "audience": {
+          "comments": 4,
+          "counts": {
+            "POSITIVE": 0,
+            "NEUTRAL": 3,
+            "NEGATIVE": 1
+          },
+          "lean": -0.25,
+          "se": 0.24999999999999997,
+          "call": "balanced",
+          "questions": 0,
+          "examples": [
+            {
+              "i": 14,
+              "quote": "12:12 *it is the second screen, after the S24 Ultra's",
+              "label": "NEUTRAL",
+              "likes": 106
+            },
+            {
+              "i": 40,
+              "quote": "12:25 the s24 ultra also had scratches at level7 with deeper grooves at a level 8 however the s25 ultra seems to have worse glass bcuz its has the regular 6 and 7 scratches",
+              "label": "NEGATIVE",
+              "likes": 7
+            },
+            {
+              "i": 33,
+              "quote": "3:48 The to-go video I use to test my screen",
+              "label": "NEUTRAL",
+              "likes": 4
+            }
+          ]
+        },
+        "agreement": {
+          "gap": -0.5187576875768758,
+          "se": 0.3657888307304839,
+          "low": -1.2356906217556425,
+          "high": 0.1981752466018908,
+          "call": "no_clear_difference"
+        }
+      },
+      {
+        "id": "T4",
+        "name": "Battery",
+        "aspects": [
+          "charging"
+        ],
+        "reviewer": {
+          "claims": 3,
+          "stances": {
+            "praise": 1,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 2
+          },
+          "seconds": {
+            "POSITIVE": 3.84,
+            "NEUTRAL": 10.24,
+            "NEGATIVE": 0.0
+          },
+          "segments": [
+            100,
+            101,
+            105
+          ],
+          "lean": 0.2727272727272742,
+          "se": 0.29762959653426135,
+          "call": "balanced"
+        },
+        "audience": {
+          "comments": 2,
+          "counts": {
+            "POSITIVE": 1,
+            "NEUTRAL": 1,
+            "NEGATIVE": 0
+          },
+          "lean": 0.5,
+          "se": 0.5000000000000001,
+          "call": "balanced",
+          "questions": 0,
+          "examples": [
+            {
+              "i": 9,
+              "quote": "Just a quick note, the iPhone 17 series was not the first phone on jerryrigeverything to have light scratches at 7, with deeper at 8, \nthat title goes to the s24 ultra, it was a whole massive deal when it happened",
+              "label": "POSITIVE",
+              "likes": 116
+            },
+            {
+              "i": 15,
+              "quote": "Bro checked his pros and briefly became Eminem at the start.\n\nAlso, only the eSIM version offers more battery life, while the 1 nano-SIM + 1 eSIM configuration still has less battery in comparison.",
+              "label": "NEUTRAL",
+              "likes": 72
+            }
+          ]
+        },
+        "agreement": {
+          "gap": -0.2272727272727258,
+          "se": 0.5818791770919005,
+          "low": -1.3677349577266549,
+          "high": 0.9131895031812034,
+          "call": "no_clear_difference"
+        }
+      },
+      {
+        "id": "T5",
+        "name": "Materials",
+        "aspects": [
+          "materials"
+        ],
+        "reviewer": {
+          "claims": 2,
+          "stances": {
+            "praise": 2,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 0.0,
+            "NEUTRAL": 9.62,
+            "NEGATIVE": 0.0
+          },
+          "segments": [
+            23,
+            25
+          ],
+          "lean": 0.0,
+          "se": 0.0,
+          "call": "balanced"
+        },
+        "audience": {
+          "comments": 6,
+          "counts": {
+            "POSITIVE": 2,
+            "NEUTRAL": 1,
+            "NEGATIVE": 3
+          },
+          "lean": -0.16666666666666666,
+          "se": 0.4013864859597432,
+          "call": "balanced",
+          "questions": 1,
+          "examples": [
+            {
+              "i": 4,
+              "quote": "Oh my god Dbrand bought the domain already",
+              "label": "POSITIVE",
+              "likes": 1898
+            },
+            {
+              "i": 38,
+              "quote": "Why does Apple insist on including the wrong/slower USB-C cable with the newer iPhones? It's so annoying....They claim all these higher speeds with USB-C but what they forget to tell you is, The included cable won't get you these speeds....",
+              "label": "NEGATIVE",
+              "likes": 50
+            },
+            {
+              "i": 52,
+              "quote": "Why no ghosts case for the regular 17. Comeeee on dbrand.",
+              "label": "NEGATIVE",
+              "likes": 4
+            }
+          ]
+        },
+        "agreement": {
+          "gap": 0.16666666666666666,
+          "se": 0.4013864859597432,
+          "low": -0.6200363896955221,
+          "high": 0.9533697230288554,
+          "call": "no_clear_difference"
+        }
+      },
+      {
+        "id": "T6",
+        "name": "Price",
+        "aspects": [
+          "price",
+          "value"
+        ],
+        "reviewer": {
+          "claims": 2,
+          "stances": {
+            "praise": 1,
+            "criticism": 1,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 0.0,
+            "NEUTRAL": 9.9,
+            "NEGATIVE": 0.0
+          },
+          "segments": [
+            19,
+            35
+          ],
+          "lean": 0.0,
+          "se": 0.0,
+          "call": "balanced"
+        },
+        "audience": {
+          "comments": 11,
+          "counts": {
+            "POSITIVE": 1,
+            "NEUTRAL": 6,
+            "NEGATIVE": 4
+          },
+          "lean": -0.2727272727272727,
+          "se": 0.19497827808661108,
+          "call": "balanced",
+          "questions": 1,
+          "examples": [
+            {
+              "i": 3,
+              "quote": "Linus: iPhone is the best\nLinus few days later: this phone sucks, going back to Note 9",
+              "label": "NEGATIVE",
+              "likes": 4416
+            },
+            {
+              "i": 15,
+              "quote": "Bro checked his pros and briefly became Eminem at the start.\n\nAlso, only the eSIM version offers more battery life, while the 1 nano-SIM + 1 eSIM configuration still has less battery in comparison.",
+              "label": "NEUTRAL",
+              "likes": 72
+            },
+            {
+              "i": 58,
+              "quote": "2:40 Kinda crazy the iphone and macbook air start at the same storage amount. How..",
+              "label": "NEUTRAL",
+              "likes": 13
+            }
+          ]
+        },
+        "agreement": {
+          "gap": 0.2727272727272727,
+          "se": 0.19497827808661108,
+          "low": -0.10942313009012028,
+          "high": 0.6548776755446657,
+          "call": "no_clear_difference"
+        }
+      },
+      {
+        "id": "T7",
+        "name": "Other",
+        "aspects": [
+          "hdr",
+          "safety",
+          "speakers",
+          "stabilization"
+        ],
+        "reviewer": {
+          "claims": 4,
+          "stances": {
+            "praise": 4,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 17.84,
+            "NEUTRAL": 10.5,
+            "NEGATIVE": 0.0
+          },
+          "segments": [
+            54,
+            127,
+            142,
+            152,
+            153
+          ],
+          "lean": 0.6294989414255446,
+          "se": 0.24119278206675288,
+          "call": "positive"
+        },
+        "audience": {
+          "comments": 13,
+          "counts": {
+            "POSITIVE": 5,
+            "NEUTRAL": 4,
+            "NEGATIVE": 4
+          },
+          "lean": 0.07692307692307693,
+          "se": 0.23916356546381573,
+          "call": "balanced",
+          "questions": 4,
+          "examples": [
+            {
+              "i": 18,
+              "quote": "4:57 why did i need an ad before an ad",
+              "label": "NEGATIVE",
+              "likes": 19
+            },
+            {
+              "i": 81,
+              "quote": "4:24 I hate trains? What’s this joke about",
+              "label": "NEGATIVE",
+              "likes": 9
+            },
+            {
+              "i": 70,
+              "quote": "Flips the phone to horizontal\nDon’t know why it went wide \n🫩",
+              "label": "NEGATIVE",
+              "likes": 8
+            }
+          ]
+        },
+        "agreement": {
+          "gap": 0.5525758645024677,
+          "se": 0.3396662614485946,
+          "low": -0.11315777470014354,
+          "high": 1.2183095037050788,
+          "call": "no_clear_difference"
+        }
+      }
+    ],
+    "topic_source": "model",
+    "questions": [
+      {
+        "i": 38,
+        "quote": "Why does Apple insist on including the wrong/slower USB-C cable with the newer iPhones? It's so annoying....They claim all these higher speeds with USB-C but what they forget to tell you is, The included cable won't get you these speeds...."
+      },
+      {
+        "i": 81,
+        "quote": "4:24 I hate trains? What’s this joke about"
+      },
+      {
+        "i": 50,
+        "quote": "Shouldn’t the phone for Linus be an iPhone mini?"
+      }
+    ],
+    "comment_tags": {
+      "0": [],
+      "1": [],
+      "2": [
+        "Performance",
+        "Design"
+      ],
+      "3": [
+        "Price"
+      ],
+      "4": [
+        "Materials"
+      ],
+      "5": [],
+      "6": [
+        "Camera"
+      ],
+      "7": [
+        "Design"
+      ],
+      "8": [
+        "Camera"
+      ],
+      "9": [
+        "Battery"
+      ],
+      "10": [],
+      "11": [],
+      "12": [
+        "Design",
+        "Materials"
+      ],
+      "13": [
+        "Performance",
+        "Design"
+      ],
+      "14": [
+        "Display"
+      ],
+      "15": [
+        "Price",
+        "Battery"
+      ],
+      "16": [
+        "Camera"
+      ],
+      "17": [],
+      "18": [
+        "Other"
+      ],
+      "19": [],
+      "20": [],
+      "21": [],
+      "22": [
+        "Performance"
+      ],
+      "23": [
+        "Performance"
+      ],
+      "24": [
+        "Price"
+      ],
+      "25": [],
+      "26": [
+        "Design"
+      ],
+      "27": [
+        "Design"
+      ],
+      "28": [
+        "Design"
+      ],
+      "29": [
+        "Camera"
+      ],
+      "30": [],
+      "31": [
+        "Design"
+      ],
+      "32": [],
+      "33": [
+        "Display"
+      ],
+      "34": [
+        "Design"
+      ],
+      "35": [
+        "Materials"
+      ],
+      "36": [
+        "Camera"
+      ],
+      "37": [],
+      "38": [
+        "Materials"
+      ],
+      "39": [],
+      "40": [
+        "Display"
+      ],
+      "41": [],
+      "42": [],
+      "43": [
+        "Price"
+      ],
+      "44": [
+        "Price"
+      ],
+      "45": [],
+      "46": [
+        "Performance"
+      ],
+      "47": [
+        "Display"
+      ],
+      "48": [],
+      "49": [
+        "Performance"
+      ],
+      "50": [
+        "Design",
+        "Price"
+      ],
+      "51": [
+        "Performance"
+      ],
+      "52": [
+        "Materials"
+      ],
+      "53": [
+        "Performance"
+      ],
+      "54": [
+        "Design",
+        "Performance"
+      ],
+      "55": [
+        "Other"
+      ],
+      "56": [
+        "Performance"
+      ],
+      "57": [
+        "Camera"
+      ],
+      "58": [
+        "Price"
+      ],
+      "59": [
+        "Other"
+      ],
+      "60": [
+        "Design",
+        "Performance"
+      ],
+      "61": [
+        "Other"
+      ],
+      "62": [
+        "Design"
+      ],
+      "63": [
+        "Other"
+      ],
+      "64": [
+        "Performance",
+        "Price"
+      ],
+      "65": [
+        "Performance"
+      ],
+      "66": [
+        "Camera"
+      ],
+      "67": [
+        "Price"
+      ],
+      "68": [
+        "Other"
+      ],
+      "69": [
+        "Performance"
+      ],
+      "70": [
+        "Other"
+      ],
+      "71": [
+        "Performance"
+      ],
+      "72": [
+        "Camera"
+      ],
+      "73": [
+        "Performance"
+      ],
+      "74": [
+        "Other"
+      ],
+      "75": [
+        "Design"
+      ],
+      "76": [],
+      "77": [
+        "Price",
+        "Camera"
+      ],
+      "78": [
+        "Design"
+      ],
+      "79": [
+        "Design"
+      ],
+      "80": [
+        "Design"
+      ],
+      "81": [
+        "Other"
+      ],
+      "82": [
+        "Other"
+      ],
+      "83": [],
+      "84": [
+        "Camera"
+      ],
+      "85": [
+        "Camera"
+      ],
+      "86": [
+        "Materials"
+      ],
+      "87": [
+        "Other"
+      ],
+      "88": [
+        "Performance"
+      ],
+      "89": [
+        "Camera"
+      ],
+      "90": [
+        "Other"
+      ],
+      "91": [
+        "Performance"
+      ],
+      "92": [
+        "Price",
+        "Design"
+      ],
+      "93": [
+        "Other"
+      ],
+      "94": [
+        "Design"
+      ],
+      "95": [
+        "Design"
+      ],
+      "96": [
+        "Design"
+      ],
+      "97": [
+        "Performance"
+      ],
+      "98": [
+        "Camera"
+      ],
+      "99": [
+        "Performance"
+      ]
+    }
+  },
+  "written": {
+    "verdict": {
+      "text": "The reviewer concluded that the iPhone 17 Pro Max is a great device with impressive performance, camera, and design, but criticized the price. The audience is generally positive about the device, with 38% of comments being positive and 26% being negative.",
+      "evidence": [
+        "S82",
+        "S85",
+        "T0",
+        "T6"
+      ],
+      "source": "model"
+    },
+    "brand_health_words": {
+      "text": "Of 100 comments, 38 read positive, 36 neutral and 26 negative.",
+      "evidence": [],
+      "source": "template"
+    },
+    "audience_words": {
+      "text": "100 comments were read; the comments are balanced.",
+      "evidence": [],
+      "source": "template"
+    },
+    "agreement_words": {
+      "text": "There is no clear difference between the reviewer and the audience's opinions on the device's performance, camera, and design.",
+      "evidence": [
+        "T0",
+        "T1",
+        "T2"
+      ],
+      "source": "model"
+    },
+    "takeaways": [
+      {
+        "text": "The brand should highlight the improved thermal performance of the iPhone 17 Pro and Pro Max.",
+        "evidence": [
+          "S85",
+          "T0"
+        ]
+      },
+      {
+        "text": "The brand should consider reducing the price of the iPhone 17 Pro Max to make it more competitive.",
+        "evidence": [
+          "S35",
+          "T6"
+        ]
+      },
+      {
+        "text": "The brand should emphasize the features of the iPhone 17 Pro Max's cameras, such as the 48-megapixel main shooter and support for Apple Log 2.",
+        "evidence": [
+          "S23",
+          "S25",
+          "T5"
+        ]
+      }
+    ],
+    "moment_notes": [
+      {
+        "seg": 5,
+        "text": "The words read negative as the reviewer criticizes Apple's accessories, while the face reads positive and the voice reads positive."
+      },
+      {
+        "seg": 59,
+        "text": "The words read neutral as the reviewer discusses the ambient light sensors, while the face reads negative and the voice reads positive."
+      },
+      {
+        "seg": 61,
+        "text": "The words read negative as the reviewer criticizes the display's maximum refresh rate, while the face reads negative and the voice reads positive."
+      }
+    ],
+    "turn_labels": [
+      {
+        "seg": 75,
+        "label": "The price"
+      },
+      {
+        "seg": 129,
+        "label": "The display"
+      },
+      {
+        "seg": 142,
+        "label": "The iPhone pro"
+      }
+    ]
+  },
+  "verifier": {
+    "proposed": 152,
+    "kept": 145,
+    "by_field": {
+      "claim": {
+        "kept": 26,
+        "dropped": 5
+      },
+      "topic": {
+        "kept": 8,
+        "dropped": 0
+      },
+      "comment_tags": {
+        "kept": 100,
+        "dropped": 0
+      },
+      "verdict": {
+        "kept": 1,
+        "dropped": 0
+      },
+      "brand_health_words": {
+        "kept": 0,
+        "dropped": 1
+      },
+      "audience_words": {
+        "kept": 0,
+        "dropped": 1
+      },
+      "agreement_words": {
+        "kept": 1,
+        "dropped": 0
+      },
+      "takeaway": {
+        "kept": 3,
+        "dropped": 0
+      },
+      "moment_note": {
+        "kept": 3,
+        "dropped": 0
+      },
+      "turn_label": {
+        "kept": 3,
+        "dropped": 0
+      }
+    },
+    "dropped": [
+      {
+        "field": "claim",
+        "reasons": [
+          "figure not in the facts: 1"
+        ],
+        "text": "{'seg': 38, 'aspect': 'price', 'stance': 'criticism', 'claim': 'The iPhone 17 Pro costs $1500 for 1TB of storage.', 'quote': \"But if you want the one terabyte for the 17 Pro, you're gonna be spending $1,500.\"}"
+      },
+      {
+        "field": "claim",
+        "reasons": [
+          "figure not in the facts: 1"
+        ],
+        "text": "{'seg': 55, 'aspect': 'min brightness', 'stance': 'praise', 'claim': 'The display has a minimum brightness of 1 nit.', 'quote': 'a minimum level of just one nit,'}"
+      },
+      {
+        "field": "claim",
+        "reasons": [
+          "figure not in the facts: 50%",
+          "figure not in the facts: 20"
+        ],
+        "text": "{'seg': 103, 'aspect': 'charging', 'stance': 'praise', 'claim': 'The iPhone 17 Pro Max reaches 50% in 20 minutes.', 'quote': \"And both of them charged to full in about two hours, which doesn't sound that impressive in this day and age,\"}"
+      },
+      {
+        "field": "claim",
+        "reasons": [
+          "figure not in the facts: 7",
+          "figure not in the facts: 6"
+        ],
+        "text": "{'seg': 151, 'aspect': 'connectivity', 'stance': 'neutral', 'claim': 'The iPhone 17 Pro models have Wi-Fi 7 and Bluetooth 6.', 'quote': \"They've all got Wi-Fi seven, Bluetooth six.\"}"
+      },
+      {
+        "field": "claim",
+        "reasons": [
+          "figure not in the facts: 16"
+        ],
+        "text": "{'seg': 155, 'aspect': 'iOS', 'stance': 'praise', 'claim': 'The reviewer finds iOS 16 to be awesome.', 'quote': 'iOS 26. Looks freaking awesome.'}"
+      },
+      {
+        "field": "brand_health_words",
+        "reasons": [
+          "says the comments were positive about Performance, which the run does not show",
+          "says the comments were positive about Camera, which the run does not show"
+        ],
+        "text": "The audience is generally positive about the product, with 38% of comments being positive and 26% being negative. Some comments praise the device's performance, camera, and design, while others criticize the price."
+      },
+      {
+        "field": "audience_words",
+        "reasons": [
+          "states a proportion that cannot be checked: 'most comments'"
+        ],
+        "text": "The audience is discussing the device's performance, camera, and design, with the most comments coming from topics T0 and T2."
+      }
+    ],
+    "notes": [
+      {
+        "field": "claim",
+        "what": "segment corrected to where the quote is",
+        "from": 62,
+        "to": 61
+      },
+      {
+        "field": "claim",
+        "what": "segment corrected to where the quote is",
+        "from": 84,
+        "to": 85
+      },
+      {
+        "field": "claim",
+        "what": "segment corrected to where the quote is",
+        "from": 103,
+        "to": 102
+      },
+      {
+        "field": "claim",
+        "what": "segment corrected to where the quote is",
+        "from": 106,
+        "to": 105
+      },
+      {
+        "field": "claim",
+        "what": "segment corrected to where the quote is",
+        "from": 111,
+        "to": 110
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 125,
+        "to": [
+          124,
+          125
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 151,
+        "to": [
+          150,
+          151
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 153,
+        "to": [
+          152,
+          153
+        ]
+      }
+    ]
+  },
+  "video_meta": {
+    "fetched": true,
+    "at": "2026-09-26T09:43:27+00:00",
+    "has_paid_product_placement": false,
+    "description_hits": [
+      {
+        "category": "affiliate",
+        "pattern": "affiliate",
+        "match": "Affiliate",
+        "context": "y provide some compensation to Linus Media Group. Affiliate links powered in part by affilimate.com/…"
+      }
+    ],
+    "title": "Apple made an iPhone for me - iPhone 17 Pro",
+    "channel": "ShortCircuit",
+    "published_at": "2025-09-25T19:15:30Z"
+  },
+  "calls": [
+    {
+      "step": "claims",
+      "ok": true,
+      "seconds": 33.43,
+      "prompt_chars": 7043,
+      "prompt_tokens": 2138,
+      "output_tokens": 441
+    },
+    {
+      "step": "claims",
+      "ok": true,
+      "seconds": 32.94,
+      "prompt_chars": 6775,
+      "prompt_tokens": 1997,
+      "output_tokens": 546
+    },
+    {
+      "step": "claims",
+      "ok": true,
+      "seconds": 29.02,
+      "prompt_chars": 6647,
+      "prompt_tokens": 1913,
+      "output_tokens": 465
+    },
+    {
+      "step": "claims",
+      "ok": true,
+      "seconds": 28.41,
+      "prompt_chars": 6611,
+      "prompt_tokens": 1844,
+      "output_tokens": 460
+    },
+    {
+      "step": "claims",
+      "ok": true,
+      "seconds": 1.05,
+      "prompt_chars": 2141,
+      "prompt_tokens": 535,
+      "output_tokens": 6
+    },
+    {
+      "step": "topics",
+      "ok": true,
+      "seconds": 16.16,
+      "prompt_chars": 5129,
+      "prompt_tokens": 1346,
+      "output_tokens": 215
+    },
+    {
+      "step": "comments",
+      "ok": true,
+      "seconds": 21.49,
+      "prompt_chars": 3952,
+      "prompt_tokens": 1120,
+      "output_tokens": 353
+    },
+    {
+      "step": "comments",
+      "ok": true,
+      "seconds": 19.57,
+      "prompt_chars": 3236,
+      "prompt_tokens": 951,
+      "output_tokens": 341
+    },
+    {
+      "step": "comments",
+      "ok": true,
+      "seconds": 21.89,
+      "prompt_chars": 4380,
+      "prompt_tokens": 1156,
+      "output_tokens": 371
+    },
+    {
+      "step": "comments",
+      "ok": true,
+      "seconds": 21.35,
+      "prompt_chars": 4069,
+      "prompt_tokens": 1135,
+      "output_tokens": 361
+    },
+    {
+      "step": "prose",
+      "ok": true,
+      "seconds": 44.71,
+      "prompt_chars": 10855,
+      "prompt_tokens": 3231,
+      "output_tokens": 615
+    }
+  ],
+  "runtime_s": 270.27,
+  "report_ref": {
+    "file": "TZfNHV24sR4.json",
+    "sha256": "64ca08c95160bbebf90653a07fe41d42aab958072495b4ff6e9fb70df664621f"
+  }
+}

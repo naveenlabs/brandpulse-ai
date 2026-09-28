@@ -1,0 +1,27 @@
+{
+ "uid": "vOhuf18b-g8_51",
+ "system": "text_only_llm",
+ "video_id": "vOhuf18b-g8",
+ "segment_id": 51,
+ "split": "holdout",
+ "payload": {
+  "segment_id": 51,
+  "start_s": 303.32,
+  "end_s": 306.61999999999995,
+  "transcript": "How can you sell a product that looks like that? She finds it so distracting."
+ },
+ "seconds": 3.348,
+ "raw": "{\n  \"segment_id\": 51,\n  \"conflict_score\": 0.8,\n  \"channels_in_conflict\": [],\n  \"flags\": [\"SARCASM_DETECTED\"],\n  \"narrative\": \"The creator's tone suggests they are being facetious, implying the product's design is intentionally distracting, which may indicate a lack of genuine enthusiasm.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 51,
+  "start_s": 303.32,
+  "end_s": 306.61999999999995,
+  "conflict_score": 0.8,
+  "conflict_reasons": [
+   "SARCASM_DETECTED"
+  ],
+  "flagged": true
+ }
+}

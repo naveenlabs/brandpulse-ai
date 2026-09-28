@@ -1,0 +1,2559 @@
+{
+  "generated_by": "ui_evidence/verify_ui.py",
+  "measured_at": "2026-09-25T11:56:15",
+  "base": "http://127.0.0.1:5057",
+  "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)",
+  "surfaces": {
+    "landing": "/",
+    "run": "/run",
+    "library": "/library",
+    "statement": "/accessibility",
+    "brand-book": "/brand/huawei-week-b2c94d55",
+    "product-book": "/brand/sasmung-s27-ultra-half-12f4e012",
+    "member-book": "/brand/iphone-18-pro-max-month-df147f72/vTDhHX7x2N4"
+  },
+  "requests_console": {
+    "landing": {
+      "foreign_requests": [],
+      "console_errors": []
+    },
+    "run": {
+      "foreign_requests": [],
+      "console_errors": []
+    },
+    "library": {
+      "foreign_requests": [],
+      "console_errors": []
+    },
+    "statement": {
+      "foreign_requests": [],
+      "console_errors": []
+    },
+    "brand-book": {
+      "foreign_requests": [],
+      "console_errors": []
+    },
+    "product-book": {
+      "foreign_requests": [],
+      "console_errors": []
+    },
+    "member-book": {
+      "foreign_requests": [],
+      "console_errors": []
+    }
+  },
+  "contrast": {
+    "bench": {
+      "landing": {
+        "pairs": 28,
+        "failing": 0,
+        "spreads": null,
+        "min_ratio": 5.13,
+        "worst": []
+      },
+      "run": {
+        "pairs": 13,
+        "failing": 0,
+        "spreads": null,
+        "min_ratio": 5.13,
+        "worst": []
+      },
+      "library": {
+        "pairs": 13,
+        "failing": 0,
+        "spreads": null,
+        "min_ratio": 4.53,
+        "worst": []
+      },
+      "statement": {
+        "pairs": 8,
+        "failing": 0,
+        "spreads": null,
+        "min_ratio": 7.31,
+        "worst": []
+      },
+      "brand-book": {
+        "pairs": 41,
+        "failing": 0,
+        "spreads": 15,
+        "min_ratio": 4.6,
+        "worst": []
+      },
+      "product-book": {
+        "pairs": 39,
+        "failing": 0,
+        "spreads": 17,
+        "min_ratio": 4.6,
+        "worst": []
+      },
+      "member-book": {
+        "pairs": 37,
+        "failing": 0,
+        "spreads": 22,
+        "min_ratio": 4.6,
+        "worst": []
+      }
+    },
+    "field": {
+      "landing": {
+        "pairs": 28,
+        "failing": 0,
+        "spreads": null,
+        "min_ratio": 4.62,
+        "worst": []
+      },
+      "run": {
+        "pairs": 13,
+        "failing": 0,
+        "spreads": null,
+        "min_ratio": 4.8,
+        "worst": []
+      },
+      "library": {
+        "pairs": 13,
+        "failing": 0,
+        "spreads": null,
+        "min_ratio": 5.11,
+        "worst": []
+      },
+      "statement": {
+        "pairs": 8,
+        "failing": 0,
+        "spreads": null,
+        "min_ratio": 6.45,
+        "worst": []
+      },
+      "brand-book": {
+        "pairs": 41,
+        "failing": 0,
+        "spreads": 15,
+        "min_ratio": 4.98,
+        "worst": []
+      },
+      "product-book": {
+        "pairs": 39,
+        "failing": 0,
+        "spreads": 17,
+        "min_ratio": 4.98,
+        "worst": []
+      },
+      "member-book": {
+        "pairs": 37,
+        "failing": 0,
+        "spreads": 22,
+        "min_ratio": 4.98,
+        "worst": []
+      }
+    }
+  },
+  "keyboard": {
+    "landing@1440": {
+      "stops": 44,
+      "without_ring": [],
+      "off_screen": [],
+      "obscured": [],
+      "focused_while_invisible": [],
+      "tabbable": 20,
+      "invisible_tabbables": [],
+      "invisible_count": 0
+    },
+    "run@1440": {
+      "stops": 44,
+      "without_ring": [],
+      "off_screen": [],
+      "obscured": [],
+      "focused_while_invisible": [],
+      "tabbable": 17,
+      "invisible_tabbables": [],
+      "invisible_count": 0
+    },
+    "library@1440": {
+      "stops": 44,
+      "without_ring": [],
+      "off_screen": [],
+      "obscured": [],
+      "focused_while_invisible": [],
+      "tabbable": 22,
+      "invisible_tabbables": [],
+      "invisible_count": 0
+    },
+    "statement@1440": {
+      "stops": 43,
+      "without_ring": [],
+      "off_screen": [],
+      "obscured": [],
+      "focused_while_invisible": [],
+      "tabbable": 12,
+      "invisible_tabbables": [],
+      "invisible_count": 0
+    },
+    "brand-book@1440": {
+      "stops": 44,
+      "without_ring": [],
+      "off_screen": [],
+      "obscured": [],
+      "focused_while_invisible": [],
+      "tabbable": 30,
+      "invisible_tabbables": [],
+      "invisible_count": 0
+    },
+    "product-book@1440": {
+      "stops": 44,
+      "without_ring": [],
+      "off_screen": [],
+      "obscured": [],
+      "focused_while_invisible": [],
+      "tabbable": 29,
+      "invisible_tabbables": [],
+      "invisible_count": 0
+    },
+    "member-book@1440": {
+      "stops": 44,
+      "without_ring": [],
+      "off_screen": [],
+      "obscured": [],
+      "focused_while_invisible": [],
+      "tabbable": 25,
+      "invisible_tabbables": [],
+      "invisible_count": 0
+    },
+    "landing@390": {
+      "stops": 43,
+      "without_ring": [],
+      "off_screen": [],
+      "obscured": [],
+      "focused_while_invisible": [],
+      "tabbable": 12,
+      "invisible_tabbables": [],
+      "invisible_count": 0
+    },
+    "run@390": {
+      "stops": 43,
+      "without_ring": [],
+      "off_screen": [],
+      "obscured": [],
+      "focused_while_invisible": [],
+      "tabbable": 9,
+      "invisible_tabbables": [],
+      "invisible_count": 0
+    },
+    "library@390": {
+      "stops": 43,
+      "without_ring": [],
+      "off_screen": [],
+      "obscured": [],
+      "focused_while_invisible": [],
+      "tabbable": 14,
+      "invisible_tabbables": [],
+      "invisible_count": 0
+    },
+    "statement@390": {
+      "stops": 40,
+      "without_ring": [],
+      "off_screen": [],
+      "obscured": [],
+      "focused_while_invisible": [],
+      "tabbable": 4,
+      "invisible_tabbables": [],
+      "invisible_count": 0
+    },
+    "brand-book@390": {
+      "stops": 44,
+      "without_ring": [],
+      "off_screen": [],
+      "obscured": [],
+      "focused_while_invisible": [],
+      "tabbable": 27,
+      "invisible_tabbables": [],
+      "invisible_count": 0
+    },
+    "product-book@390": {
+      "stops": 44,
+      "without_ring": [],
+      "off_screen": [],
+      "obscured": [],
+      "focused_while_invisible": [],
+      "tabbable": 32,
+      "invisible_tabbables": [],
+      "invisible_count": 0
+    },
+    "member-book@390": {
+      "stops": 44,
+      "without_ring": [],
+      "off_screen": [],
+      "obscured": [],
+      "focused_while_invisible": [],
+      "tabbable": 17,
+      "invisible_tabbables": [],
+      "invisible_count": 0
+    }
+  },
+  "frame_rate": {
+    "surface": "landing film, scrolled",
+    "frames": 264,
+    "median_fps": 59.9,
+    "p5_fps": 59.9,
+    "worst_frame_ms": 16.8,
+    "note": "headless Chrome paces at 60 Hz; a regression signal, not the panel's rate"
+  },
+  "transitions": {
+    "total": 160,
+    "transitioning": 123,
+    "note": "design contract; never a failure"
+  },
+  "reduced_motion": {
+    "os/landing": {
+      "infinite_animations": 0,
+      "looping": [],
+      "gpu_draws_per_s": 0.0,
+      "paints2d_per_s": 0.0,
+      "pinned_sections": 1
+    },
+    "os/run": {
+      "infinite_animations": 0,
+      "looping": [],
+      "gpu_draws_per_s": 0.0,
+      "paints2d_per_s": 0.0,
+      "pinned_sections": 0
+    },
+    "os/library": {
+      "infinite_animations": 0,
+      "looping": [],
+      "gpu_draws_per_s": 0.0,
+      "paints2d_per_s": 0.0,
+      "pinned_sections": 0
+    },
+    "os/statement": {
+      "infinite_animations": 0,
+      "looping": [],
+      "gpu_draws_per_s": 0.0,
+      "paints2d_per_s": 0.0,
+      "pinned_sections": 0
+    },
+    "os/brand-book": {
+      "infinite_animations": 0,
+      "looping": [],
+      "gpu_draws_per_s": 0.0,
+      "paints2d_per_s": 0.0,
+      "pinned_sections": 0
+    },
+    "os/product-book": {
+      "infinite_animations": 0,
+      "looping": [],
+      "gpu_draws_per_s": 0.0,
+      "paints2d_per_s": 0.0,
+      "pinned_sections": 0
+    },
+    "os/member-book": {
+      "infinite_animations": 0,
+      "looping": [],
+      "gpu_draws_per_s": 0.0,
+      "paints2d_per_s": 0.0,
+      "pinned_sections": 0
+    },
+    "switch/landing": {
+      "infinite_animations": 0,
+      "looping": [],
+      "gpu_draws_per_s": 0.0,
+      "paints2d_per_s": 0.0,
+      "pinned_sections": 1
+    },
+    "switch/run": {
+      "infinite_animations": 0,
+      "looping": [],
+      "gpu_draws_per_s": 0.0,
+      "paints2d_per_s": 0.0,
+      "pinned_sections": 0
+    },
+    "switch/library": {
+      "infinite_animations": 0,
+      "looping": [],
+      "gpu_draws_per_s": 0.0,
+      "paints2d_per_s": 0.0,
+      "pinned_sections": 0
+    },
+    "switch/statement": {
+      "infinite_animations": 0,
+      "looping": [],
+      "gpu_draws_per_s": 0.0,
+      "paints2d_per_s": 0.0,
+      "pinned_sections": 0
+    },
+    "switch/brand-book": {
+      "infinite_animations": 0,
+      "looping": [],
+      "gpu_draws_per_s": 0.0,
+      "paints2d_per_s": 0.0,
+      "pinned_sections": 0
+    },
+    "switch/product-book": {
+      "infinite_animations": 0,
+      "looping": [],
+      "gpu_draws_per_s": 0.0,
+      "paints2d_per_s": 0.0,
+      "pinned_sections": 0
+    },
+    "switch/member-book": {
+      "infinite_animations": 0,
+      "looping": [],
+      "gpu_draws_per_s": 0.0,
+      "paints2d_per_s": 0.0,
+      "pinned_sections": 0
+    },
+    "motion-on/landing": {
+      "infinite_animations": 8,
+      "gpu_draws_per_s": 60.5
+    },
+    "motion-on/library": {
+      "infinite_animations": 0,
+      "gpu_draws_per_s": 5400.0
+    },
+    "motion-on/run": {
+      "infinite_animations": 5,
+      "gpu_draws_per_s": 0.0
+    }
+  },
+  "books": {
+    "/brand/huawei-week-b2c94d55": {
+      "chapters": 5,
+      "spreads": 15,
+      "h1": 1,
+      "caveat": true,
+      "standing": false,
+      "cannotTell": false,
+      "errors": []
+    },
+    "/brand/iphone-18-pro-max-month-df147f72": {
+      "chapters": 5,
+      "spreads": 14,
+      "h1": 1,
+      "caveat": true,
+      "standing": false,
+      "cannotTell": false,
+      "errors": []
+    },
+    "/brand/nike-half-19a4d6f6": {
+      "chapters": 6,
+      "spreads": 16,
+      "h1": 1,
+      "caveat": true,
+      "standing": false,
+      "cannotTell": false,
+      "errors": []
+    },
+    "/brand/nike-week-19a4d6f6": {
+      "chapters": 6,
+      "spreads": 16,
+      "h1": 1,
+      "caveat": true,
+      "standing": false,
+      "cannotTell": false,
+      "errors": []
+    },
+    "/brand/sasmung-s27-ultra-half-12f4e012": {
+      "chapters": 6,
+      "spreads": 17,
+      "h1": 1,
+      "caveat": true,
+      "standing": false,
+      "cannotTell": false,
+      "errors": []
+    },
+    "/brand/sasmung-s27-ultra-month-cb910946": {
+      "chapters": 6,
+      "spreads": 17,
+      "h1": 1,
+      "caveat": true,
+      "standing": false,
+      "cannotTell": false,
+      "errors": []
+    },
+    "/brand/huawei-week-b2c94d55/JRJSd7YwTdQ": {
+      "chapters": 6,
+      "spreads": 18,
+      "h1": 1,
+      "caveat": true,
+      "standing": true,
+      "cannotTell": true,
+      "errors": []
+    },
+    "/brand/huawei-week-b2c94d55/8EThb_Wm-_U": {
+      "chapters": 6,
+      "spreads": 19,
+      "h1": 1,
+      "caveat": true,
+      "standing": true,
+      "cannotTell": true,
+      "errors": []
+    },
+    "/brand/huawei-week-b2c94d55/s99083xrwPI": {
+      "chapters": 6,
+      "spreads": 22,
+      "h1": 1,
+      "caveat": true,
+      "standing": true,
+      "cannotTell": true,
+      "errors": []
+    },
+    "/brand/huawei-week-b2c94d55/FqfX1-dSbYk": {
+      "chapters": 6,
+      "spreads": 23,
+      "h1": 1,
+      "caveat": true,
+      "standing": true,
+      "cannotTell": true,
+      "errors": []
+    },
+    "/brand/huawei-week-b2c94d55/pb2wzGJ9rXA": {
+      "chapters": 6,
+      "spreads": 18,
+      "h1": 1,
+      "caveat": true,
+      "standing": true,
+      "cannotTell": true,
+      "errors": []
+    },
+    "/brand/iphone-18-pro-max-month-df147f72/ohqxP8EEumo": {
+      "chapters": 6,
+      "spreads": 22,
+      "h1": 1,
+      "caveat": true,
+      "standing": true,
+      "cannotTell": true,
+      "errors": []
+    },
+    "/brand/iphone-18-pro-max-month-df147f72/PjAyUhf52D0": {
+      "chapters": 6,
+      "spreads": 21,
+      "h1": 1,
+      "caveat": true,
+      "standing": true,
+      "cannotTell": true,
+      "errors": []
+    },
+    "/brand/iphone-18-pro-max-month-df147f72/WUlLIo9LI-w": {
+      "chapters": 6,
+      "spreads": 20,
+      "h1": 1,
+      "caveat": true,
+      "standing": true,
+      "cannotTell": true,
+      "errors": []
+    },
+    "/brand/iphone-18-pro-max-month-df147f72/vTDhHX7x2N4": {
+      "chapters": 6,
+      "spreads": 22,
+      "h1": 1,
+      "caveat": true,
+      "standing": true,
+      "cannotTell": true,
+      "errors": []
+    },
+    "/brand/nike-half-19a4d6f6/BJioCrnBwYw": {
+      "chapters": 6,
+      "spreads": 17,
+      "h1": 1,
+      "caveat": true,
+      "standing": true,
+      "cannotTell": true,
+      "errors": []
+    },
+    "/brand/nike-half-19a4d6f6/adxwkEGVV2o": {
+      "chapters": 6,
+      "spreads": 19,
+      "h1": 1,
+      "caveat": true,
+      "standing": true,
+      "cannotTell": true,
+      "errors": []
+    },
+    "/brand/nike-half-19a4d6f6/lOIDb7ahVhM": {
+      "chapters": 6,
+      "spreads": 22,
+      "h1": 1,
+      "caveat": true,
+      "standing": true,
+      "cannotTell": true,
+      "errors": []
+    },
+    "/brand/nike-half-19a4d6f6/B8-JHY94jvI": {
+      "chapters": 6,
+      "spreads": 15,
+      "h1": 1,
+      "caveat": true,
+      "standing": true,
+      "cannotTell": true,
+      "errors": []
+    },
+    "/brand/nike-half-19a4d6f6/BrWwyy2k3lU": {
+      "chapters": 6,
+      "spreads": 15,
+      "h1": 1,
+      "caveat": true,
+      "standing": true,
+      "cannotTell": true,
+      "errors": []
+    },
+    "/brand/nike-week-19a4d6f6/BJioCrnBwYw": {
+      "chapters": 6,
+      "spreads": 17,
+      "h1": 1,
+      "caveat": true,
+      "standing": true,
+      "cannotTell": true,
+      "errors": []
+    },
+    "/brand/nike-week-19a4d6f6/lOIDb7ahVhM": {
+      "chapters": 6,
+      "spreads": 22,
+      "h1": 1,
+      "caveat": true,
+      "standing": true,
+      "cannotTell": true,
+      "errors": []
+    },
+    "/brand/nike-week-19a4d6f6/B8-JHY94jvI": {
+      "chapters": 6,
+      "spreads": 15,
+      "h1": 1,
+      "caveat": true,
+      "standing": true,
+      "cannotTell": true,
+      "errors": []
+    },
+    "/brand/nike-week-19a4d6f6/BrWwyy2k3lU": {
+      "chapters": 6,
+      "spreads": 15,
+      "h1": 1,
+      "caveat": true,
+      "standing": true,
+      "cannotTell": true,
+      "errors": []
+    },
+    "/brand/sasmung-s27-ultra-half-12f4e012/L8CswTQyuMw": {
+      "chapters": 6,
+      "spreads": 23,
+      "h1": 1,
+      "caveat": true,
+      "standing": true,
+      "cannotTell": true,
+      "errors": []
+    },
+    "/brand/sasmung-s27-ultra-half-12f4e012/1n4Y4SEnALs": {
+      "chapters": 6,
+      "spreads": 23,
+      "h1": 1,
+      "caveat": true,
+      "standing": true,
+      "cannotTell": true,
+      "errors": []
+    },
+    "/brand/sasmung-s27-ultra-half-12f4e012/MQpvfM7T0Ow": {
+      "chapters": 6,
+      "spreads": 24,
+      "h1": 1,
+      "caveat": true,
+      "standing": true,
+      "cannotTell": true,
+      "errors": []
+    },
+    "/brand/sasmung-s27-ultra-half-12f4e012/RIxJH90lv0E": {
+      "chapters": 6,
+      "spreads": 22,
+      "h1": 1,
+      "caveat": true,
+      "standing": true,
+      "cannotTell": true,
+      "errors": []
+    },
+    "/brand/sasmung-s27-ultra-half-12f4e012/z0HTxwB3XlU": {
+      "chapters": 6,
+      "spreads": 23,
+      "h1": 1,
+      "caveat": true,
+      "standing": true,
+      "cannotTell": true,
+      "errors": []
+    },
+    "/brand/sasmung-s27-ultra-month-cb910946/L8CswTQyuMw": {
+      "chapters": 6,
+      "spreads": 23,
+      "h1": 1,
+      "caveat": true,
+      "standing": true,
+      "cannotTell": true,
+      "errors": []
+    },
+    "/brand/sasmung-s27-ultra-month-cb910946/MQpvfM7T0Ow": {
+      "chapters": 6,
+      "spreads": 24,
+      "h1": 1,
+      "caveat": true,
+      "standing": true,
+      "cannotTell": true,
+      "errors": []
+    },
+    "/brand/sasmung-s27-ultra-month-cb910946/RIxJH90lv0E": {
+      "chapters": 6,
+      "spreads": 22,
+      "h1": 1,
+      "caveat": true,
+      "standing": true,
+      "cannotTell": true,
+      "errors": []
+    },
+    "/brand/sasmung-s27-ultra-month-cb910946/GbtxgwYJp8o": {
+      "chapters": 6,
+      "spreads": 22,
+      "h1": 1,
+      "caveat": true,
+      "standing": true,
+      "cannotTell": true,
+      "errors": []
+    }
+  },
+  "no_script": {
+    "landing": {
+      "h1": 1,
+      "chars": 1520,
+      "links": 2,
+      "caveat": true
+    },
+    "run": {
+      "h1": 1,
+      "chars": 821,
+      "links": 2,
+      "caveat": false
+    },
+    "library": {
+      "h1": 1,
+      "chars": 1958,
+      "links": 2,
+      "caveat": true
+    },
+    "statement": {
+      "h1": 1,
+      "chars": 3328,
+      "links": 2,
+      "caveat": false
+    },
+    "brand-book": {
+      "h1": 1,
+      "chars": 2003,
+      "links": 2,
+      "caveat": true
+    },
+    "product-book": {
+      "h1": 1,
+      "chars": 2108,
+      "links": 2,
+      "caveat": true
+    },
+    "member-book": {
+      "h1": 1,
+      "chars": 2063,
+      "links": 2,
+      "caveat": true
+    }
+  },
+  "run_voice": {
+    "stages": [
+      {
+        "polite": "Stage 1 of 4: waiting for the worker.",
+        "alert": "",
+        "title": "Queued \u2014 Analyse \u2014 BrandPulse",
+        "role": "progressbar",
+        "valuenow": null,
+        "valuetext": "Queued. No stage has started yet.",
+        "regions": 2,
+        "outside": true,
+        "stage_index": -1
+      },
+      {
+        "polite": "Stage 1 of 4: fetching and classifying audience comments.",
+        "alert": "",
+        "title": "Stage 1 of 4 \u2014 Analyse \u2014 BrandPulse",
+        "role": "progressbar",
+        "valuenow": "0",
+        "valuetext": "Stage 1 of 4, fetching and classifying audience comments. 0 of 4 stages complete.",
+        "regions": 2,
+        "outside": true,
+        "stage_index": 0
+      },
+      {
+        "polite": "Stage 2 of 4: downloading the video, transcribing it, and reading the face and the voice. This is the long stage.",
+        "alert": "",
+        "title": "Stage 2 of 4 \u2014 Analyse \u2014 BrandPulse",
+        "role": "progressbar",
+        "valuenow": "1",
+        "valuetext": "Stage 2 of 4, downloading the video, transcribing it, and reading the face and the voice. This is the long stage. 1 of 4 stages complete.",
+        "regions": 2,
+        "outside": true,
+        "stage_index": 1
+      },
+      {
+        "polite": "Stage 3 of 4: scoring cross-modal conflicts, one local model call per segment.",
+        "alert": "",
+        "title": "Stage 3 of 4 \u2014 Analyse \u2014 BrandPulse",
+        "role": "progressbar",
+        "valuenow": "2",
+        "valuetext": "Stage 3 of 4, scoring cross-modal conflicts, one local model call per segment. 2 of 4 stages complete.",
+        "regions": 2,
+        "outside": true,
+        "stage_index": 2
+      },
+      {
+        "polite": "Stage 4 of 4: computing the final scores.",
+        "alert": "",
+        "title": "Stage 4 of 4 \u2014 Analyse \u2014 BrandPulse",
+        "role": "progressbar",
+        "valuenow": "3",
+        "valuetext": "Stage 4 of 4, computing the final scores. 3 of 4 stages complete.",
+        "regions": 2,
+        "outside": true,
+        "stage_index": 3
+      }
+    ],
+    "endings": {
+      "done": {
+        "polite": "The analysis finished. Authenticity 61.18 out of 100. Brand health 66.05 out of 100. 94 segments, 11 flagged as cross-channel conflicts. The bias caveat is on the report. A link to open it follows.",
+        "alert": "",
+        "title": "Finished \u2014 Analyse \u2014 BrandPulse",
+        "role": null,
+        "valuenow": null,
+        "valuetext": null,
+        "regions": 2,
+        "outside": true
+      },
+      "cancelled": {
+        "polite": "The run was stopped. Nothing was written to the outputs directory. Links to start again and to open the library follow.",
+        "alert": "",
+        "title": "Stopped \u2014 Analyse \u2014 BrandPulse",
+        "role": null,
+        "valuenow": null,
+        "valuetext": null,
+        "regions": 2,
+        "outside": true
+      },
+      "error": {
+        "polite": "This machine is already running an analysis. Showing its progress.",
+        "alert": "The run did not finish. The backend reported: Ollama unreachable at http://localhost:11434. The usual causes are a private, region-locked or removed video, comments disabled on it, an exhausted YouTube quota, or Ollama not running.",
+        "title": "Failed \u2014 Analyse \u2014 BrandPulse",
+        "role": null,
+        "valuenow": null,
+        "valuetext": null,
+        "regions": 2,
+        "outside": true
+      },
+      "lost": {
+        "polite": "This machine is already running an analysis. Showing its progress.",
+        "alert": "That run is no longer known to the server. Jobs are held in memory, so restarting Flask forgets them. If the run had already finished, its report is in the library.",
+        "title": "No longer known \u2014 Analyse \u2014 BrandPulse",
+        "role": null,
+        "valuenow": null,
+        "valuetext": null,
+        "regions": 2,
+        "outside": true
+      }
+    }
+  },
+  "reflow": {
+    "landing@320x568": {
+      "vw": 320,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@320x568": {
+      "vw": 320,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@320x568": {
+      "vw": 320,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "statement@320x568": {
+      "vw": 320,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@320x568": {
+      "vw": 320,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@320x568": {
+      "vw": 320,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@320x568": {
+      "vw": 320,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@320x568+motion": {
+      "vw": 320,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@320x568+motion": {
+      "vw": 320,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@320x568+motion": {
+      "vw": 320,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "statement@320x568+motion": {
+      "vw": 320,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@320x568+motion": {
+      "vw": 320,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@320x568+motion": {
+      "vw": 320,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@320x568+motion": {
+      "vw": 320,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@360x800": {
+      "vw": 360,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@360x800": {
+      "vw": 360,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@360x800": {
+      "vw": 360,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "statement@360x800": {
+      "vw": 360,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@360x800": {
+      "vw": 360,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@360x800": {
+      "vw": 360,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@360x800": {
+      "vw": 360,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@360x800+motion": {
+      "vw": 360,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@360x800+motion": {
+      "vw": 360,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@360x800+motion": {
+      "vw": 360,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "statement@360x800+motion": {
+      "vw": 360,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@360x800+motion": {
+      "vw": 360,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@360x800+motion": {
+      "vw": 360,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@360x800+motion": {
+      "vw": 360,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@390x844": {
+      "vw": 390,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@390x844": {
+      "vw": 390,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@390x844": {
+      "vw": 390,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "statement@390x844": {
+      "vw": 390,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@390x844": {
+      "vw": 390,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@390x844": {
+      "vw": 390,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@390x844": {
+      "vw": 390,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@390x844+motion": {
+      "vw": 390,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@390x844+motion": {
+      "vw": 390,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@390x844+motion": {
+      "vw": 390,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "statement@390x844+motion": {
+      "vw": 390,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@390x844+motion": {
+      "vw": 390,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@390x844+motion": {
+      "vw": 390,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@390x844+motion": {
+      "vw": 390,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@844x390": {
+      "vw": 844,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@844x390": {
+      "vw": 844,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@844x390": {
+      "vw": 844,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "statement@844x390": {
+      "vw": 844,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@844x390": {
+      "vw": 844,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@844x390": {
+      "vw": 844,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@844x390": {
+      "vw": 844,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@844x390+motion": {
+      "vw": 844,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@844x390+motion": {
+      "vw": 844,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@844x390+motion": {
+      "vw": 844,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "statement@844x390+motion": {
+      "vw": 844,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@844x390+motion": {
+      "vw": 844,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@844x390+motion": {
+      "vw": 844,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@844x390+motion": {
+      "vw": 844,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@768x1024": {
+      "vw": 768,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@768x1024": {
+      "vw": 768,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@768x1024": {
+      "vw": 768,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "statement@768x1024": {
+      "vw": 768,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@768x1024": {
+      "vw": 768,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@768x1024": {
+      "vw": 768,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@768x1024": {
+      "vw": 768,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@768x1024+motion": {
+      "vw": 768,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@768x1024+motion": {
+      "vw": 768,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@768x1024+motion": {
+      "vw": 768,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "statement@768x1024+motion": {
+      "vw": 768,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@768x1024+motion": {
+      "vw": 768,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@768x1024+motion": {
+      "vw": 768,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@768x1024+motion": {
+      "vw": 768,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@1024x768": {
+      "vw": 1024,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@1024x768": {
+      "vw": 1024,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@1024x768": {
+      "vw": 1024,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "statement@1024x768": {
+      "vw": 1024,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@1024x768": {
+      "vw": 1024,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@1024x768": {
+      "vw": 1024,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@1024x768": {
+      "vw": 1024,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@1024x768+motion": {
+      "vw": 1024,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@1024x768+motion": {
+      "vw": 1024,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@1024x768+motion": {
+      "vw": 1024,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "statement@1024x768+motion": {
+      "vw": 1024,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@1024x768+motion": {
+      "vw": 1024,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@1024x768+motion": {
+      "vw": 1024,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@1024x768+motion": {
+      "vw": 1024,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@1280x800": {
+      "vw": 1280,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@1280x800": {
+      "vw": 1280,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@1280x800": {
+      "vw": 1280,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "statement@1280x800": {
+      "vw": 1280,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@1280x800": {
+      "vw": 1280,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@1280x800": {
+      "vw": 1280,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@1280x800": {
+      "vw": 1280,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@1280x800+motion": {
+      "vw": 1280,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@1280x800+motion": {
+      "vw": 1280,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@1280x800+motion": {
+      "vw": 1280,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "statement@1280x800+motion": {
+      "vw": 1280,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@1280x800+motion": {
+      "vw": 1280,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@1280x800+motion": {
+      "vw": 1280,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@1280x800+motion": {
+      "vw": 1280,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@1440x900": {
+      "vw": 1440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@1440x900": {
+      "vw": 1440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@1440x900": {
+      "vw": 1440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "statement@1440x900": {
+      "vw": 1440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@1440x900": {
+      "vw": 1440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@1440x900": {
+      "vw": 1440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@1440x900": {
+      "vw": 1440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@1440x900+motion": {
+      "vw": 1440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@1440x900+motion": {
+      "vw": 1440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@1440x900+motion": {
+      "vw": 1440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "statement@1440x900+motion": {
+      "vw": 1440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@1440x900+motion": {
+      "vw": 1440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@1440x900+motion": {
+      "vw": 1440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@1440x900+motion": {
+      "vw": 1440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@1512x982": {
+      "vw": 1512,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@1512x982": {
+      "vw": 1512,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@1512x982": {
+      "vw": 1512,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "statement@1512x982": {
+      "vw": 1512,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@1512x982": {
+      "vw": 1512,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@1512x982": {
+      "vw": 1512,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@1512x982": {
+      "vw": 1512,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@1512x982+motion": {
+      "vw": 1512,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@1512x982+motion": {
+      "vw": 1512,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@1512x982+motion": {
+      "vw": 1512,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "statement@1512x982+motion": {
+      "vw": 1512,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@1512x982+motion": {
+      "vw": 1512,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@1512x982+motion": {
+      "vw": 1512,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@1512x982+motion": {
+      "vw": 1512,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@1920x1080": {
+      "vw": 1920,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@1920x1080": {
+      "vw": 1920,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@1920x1080": {
+      "vw": 1920,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "statement@1920x1080": {
+      "vw": 1920,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@1920x1080": {
+      "vw": 1920,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@1920x1080": {
+      "vw": 1920,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@1920x1080": {
+      "vw": 1920,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@1920x1080+motion": {
+      "vw": 1920,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@1920x1080+motion": {
+      "vw": 1920,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@1920x1080+motion": {
+      "vw": 1920,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "statement@1920x1080+motion": {
+      "vw": 1920,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@1920x1080+motion": {
+      "vw": 1920,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@1920x1080+motion": {
+      "vw": 1920,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@1920x1080+motion": {
+      "vw": 1920,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@2560x1440": {
+      "vw": 2560,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@2560x1440": {
+      "vw": 2560,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@2560x1440": {
+      "vw": 2560,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "statement@2560x1440": {
+      "vw": 2560,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@2560x1440": {
+      "vw": 2560,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@2560x1440": {
+      "vw": 2560,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@2560x1440": {
+      "vw": 2560,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@2560x1440+motion": {
+      "vw": 2560,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@2560x1440+motion": {
+      "vw": 2560,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@2560x1440+motion": {
+      "vw": 2560,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "statement@2560x1440+motion": {
+      "vw": 2560,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@2560x1440+motion": {
+      "vw": 2560,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@2560x1440+motion": {
+      "vw": 2560,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@2560x1440+motion": {
+      "vw": 2560,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@3440x1440": {
+      "vw": 3440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@3440x1440": {
+      "vw": 3440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@3440x1440": {
+      "vw": 3440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "statement@3440x1440": {
+      "vw": 3440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@3440x1440": {
+      "vw": 3440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@3440x1440": {
+      "vw": 3440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@3440x1440": {
+      "vw": 3440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@3440x1440+motion": {
+      "vw": 3440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@3440x1440+motion": {
+      "vw": 3440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@3440x1440+motion": {
+      "vw": 3440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "statement@3440x1440+motion": {
+      "vw": 3440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@3440x1440+motion": {
+      "vw": 3440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@3440x1440+motion": {
+      "vw": 3440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@3440x1440+motion": {
+      "vw": 3440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@640x400": {
+      "vw": 640,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@640x400": {
+      "vw": 640,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@640x400": {
+      "vw": 640,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "statement@640x400": {
+      "vw": 640,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@640x400": {
+      "vw": 640,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@640x400": {
+      "vw": 640,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@640x400": {
+      "vw": 640,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@640x400+motion": {
+      "vw": 640,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@640x400+motion": {
+      "vw": 640,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@640x400+motion": {
+      "vw": 640,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "statement@640x400+motion": {
+      "vw": 640,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@640x400+motion": {
+      "vw": 640,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@640x400+motion": {
+      "vw": 640,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@640x400+motion": {
+      "vw": 640,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    }
+  },
+  "label_in_name": {
+    "bench/landing": {
+      "checked": 0,
+      "failing": []
+    },
+    "bench/run": {
+      "checked": 0,
+      "failing": []
+    },
+    "bench/library": {
+      "checked": 0,
+      "failing": []
+    },
+    "bench/statement": {
+      "checked": 0,
+      "failing": []
+    },
+    "bench/brand-book": {
+      "checked": 2,
+      "failing": []
+    },
+    "bench/product-book": {
+      "checked": 2,
+      "failing": []
+    },
+    "bench/member-book": {
+      "checked": 2,
+      "failing": []
+    },
+    "field/landing": {
+      "checked": 0,
+      "failing": []
+    },
+    "field/run": {
+      "checked": 0,
+      "failing": []
+    },
+    "field/library": {
+      "checked": 0,
+      "failing": []
+    },
+    "field/statement": {
+      "checked": 0,
+      "failing": []
+    },
+    "field/brand-book": {
+      "checked": 2,
+      "failing": []
+    },
+    "field/product-book": {
+      "checked": 2,
+      "failing": []
+    },
+    "field/member-book": {
+      "checked": 2,
+      "failing": []
+    }
+  },
+  "skip_link": {
+    "landing": {
+      "isSkip": true,
+      "text": "Skip to the content",
+      "visible": true,
+      "top": 12,
+      "scrollY": 171,
+      "intro_focused_main": true,
+      "reached_backwards_after": 10
+    },
+    "run": {
+      "isSkip": true,
+      "text": "Skip to the content",
+      "visible": true,
+      "top": 12,
+      "scrollY": 299,
+      "intro_focused_main": false,
+      "reached_backwards_after": 0
+    },
+    "library": {
+      "isSkip": true,
+      "text": "Skip to the content",
+      "visible": true,
+      "top": 12,
+      "scrollY": 312,
+      "intro_focused_main": false,
+      "reached_backwards_after": 0
+    },
+    "statement": {
+      "isSkip": true,
+      "text": "Skip to the statement",
+      "visible": true,
+      "top": 12,
+      "scrollY": 1348,
+      "intro_focused_main": false,
+      "reached_backwards_after": 0
+    },
+    "brand-book": {
+      "isSkip": true,
+      "text": "Skip to the content",
+      "visible": true,
+      "top": 12,
+      "scrollY": 0,
+      "intro_focused_main": false,
+      "reached_backwards_after": 0
+    },
+    "product-book": {
+      "isSkip": true,
+      "text": "Skip to the content",
+      "visible": true,
+      "top": 12,
+      "scrollY": 0,
+      "intro_focused_main": false,
+      "reached_backwards_after": 0
+    },
+    "member-book": {
+      "isSkip": true,
+      "text": "Skip to the report",
+      "visible": true,
+      "top": 12,
+      "scrollY": 0,
+      "intro_focused_main": false,
+      "reached_backwards_after": 0
+    }
+  },
+  "text_spacing": {
+    "landing": {
+      "measured": 124,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run": {
+      "measured": 40,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library": {
+      "measured": 63,
+      "lost": [],
+      "lostCount": 0
+    },
+    "statement": {
+      "measured": 36,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book": {
+      "measured": 951,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book": {
+      "measured": 1170,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book": {
+      "measured": 1868,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-longest-segment": {
+      "measured": 1710,
+      "lost": [],
+      "lostCount": 0
+    }
+  },
+  "axe": {
+    "tags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21a",
+      "wcag21aa",
+      "wcag22a",
+      "wcag22aa"
+    ],
+    "by_page": {
+      "bench/landing@1440": [],
+      "bench/run@1440": [],
+      "bench/library@1440": [],
+      "bench/statement@1440": [],
+      "bench/brand-book@1440": [],
+      "bench/product-book@1440": [],
+      "bench/member-book@1440": [],
+      "bench/landing@390": [],
+      "bench/run@390": [],
+      "bench/library@390": [],
+      "bench/statement@390": [],
+      "bench/brand-book@390": [],
+      "bench/product-book@390": [],
+      "bench/member-book@390": [],
+      "field/landing@1440": [],
+      "field/run@1440": [],
+      "field/library@1440": [],
+      "field/statement@1440": [],
+      "field/brand-book@1440": [],
+      "field/product-book@1440": [],
+      "field/member-book@1440": [],
+      "field/landing@390": [],
+      "field/run@390": [],
+      "field/library@390": [],
+      "field/statement@390": [],
+      "field/brand-book@390": [],
+      "field/product-book@390": [],
+      "field/member-book@390": []
+    },
+    "rules_by_impact": {}
+  },
+  "target_size": {
+    "landing@1440": {
+      "measured": 11,
+      "failing": [],
+      "failingCount": 0
+    },
+    "run@1440": {
+      "measured": 19,
+      "failing": [],
+      "failingCount": 0
+    },
+    "library@1440": {
+      "measured": 21,
+      "failing": [],
+      "failingCount": 0
+    },
+    "statement@1440": {
+      "measured": 11,
+      "failing": [],
+      "failingCount": 0
+    },
+    "brand-book@1440": {
+      "measured": 401,
+      "failing": [],
+      "failingCount": 0
+    },
+    "product-book@1440": {
+      "measured": 464,
+      "failing": [],
+      "failingCount": 0
+    },
+    "member-book@1440": {
+      "measured": 487,
+      "failing": [],
+      "failingCount": 0
+    },
+    "landing@390": {
+      "measured": 4,
+      "failing": [],
+      "failingCount": 0
+    },
+    "run@390": {
+      "measured": 12,
+      "failing": [],
+      "failingCount": 0
+    },
+    "library@390": {
+      "measured": 14,
+      "failing": [],
+      "failingCount": 0
+    },
+    "statement@390": {
+      "measured": 4,
+      "failing": [],
+      "failingCount": 0
+    },
+    "brand-book@390": {
+      "measured": 145,
+      "failing": [],
+      "failingCount": 0
+    },
+    "product-book@390": {
+      "measured": 166,
+      "failing": [],
+      "failingCount": 0
+    },
+    "member-book@390": {
+      "measured": 105,
+      "failing": [],
+      "failingCount": 0
+    }
+  },
+  "forced_colors": {
+    "landing": {
+      "ring_lost": [],
+      "ring_lost_count": 0,
+      "background_only_marks": {
+        "count": 34,
+        "which": [
+          "i",
+          "div.signal-object__halo",
+          "div.signal-object__shadow",
+          "div.signal-object__rim",
+          "i.signal-object__point",
+          "br",
+          "div.f-atmosphere"
+        ]
+      }
+    },
+    "run": {
+      "ring_lost": [],
+      "ring_lost_count": 0,
+      "background_only_marks": {
+        "count": 9,
+        "which": [
+          "i",
+          "div.optics__halo",
+          "div.optic__grooves",
+          "b",
+          "span",
+          "span.optic__needle",
+          "div.optics__beam"
+        ]
+      }
+    },
+    "library": {
+      "ring_lost": [],
+      "ring_lost_count": 0,
+      "background_only_marks": {
+        "count": 0,
+        "which": []
+      }
+    },
+    "statement": {
+      "ring_lost": [],
+      "ring_lost_count": 0,
+      "background_only_marks": {
+        "count": 0,
+        "which": []
+      }
+    },
+    "brand-book": {
+      "ring_lost": [],
+      "ring_lost_count": 0,
+      "background_only_marks": {
+        "count": 0,
+        "which": []
+      }
+    },
+    "product-book": {
+      "ring_lost": [],
+      "ring_lost_count": 0,
+      "background_only_marks": {
+        "count": 0,
+        "which": []
+      }
+    },
+    "member-book": {
+      "ring_lost": [],
+      "ring_lost_count": 0,
+      "background_only_marks": {
+        "count": 2,
+        "which": [
+          "i"
+        ]
+      }
+    }
+  },
+  "vision": {
+    "screenshots": [
+      "ui_evidence/shots/a11y/vision-landing-none.png",
+      "ui_evidence/shots/a11y/vision-landing-protanopia.png",
+      "ui_evidence/shots/a11y/vision-landing-deuteranopia.png",
+      "ui_evidence/shots/a11y/vision-landing-tritanopia.png",
+      "ui_evidence/shots/a11y/vision-landing-achromatopsia.png",
+      "ui_evidence/shots/a11y/vision-landing-blurredVision.png",
+      "ui_evidence/shots/a11y/vision-landing-reducedContrast.png",
+      "ui_evidence/shots/a11y/vision-library-none.png",
+      "ui_evidence/shots/a11y/vision-library-protanopia.png",
+      "ui_evidence/shots/a11y/vision-library-deuteranopia.png",
+      "ui_evidence/shots/a11y/vision-library-tritanopia.png",
+      "ui_evidence/shots/a11y/vision-library-achromatopsia.png",
+      "ui_evidence/shots/a11y/vision-library-blurredVision.png",
+      "ui_evidence/shots/a11y/vision-library-reducedContrast.png",
+      "ui_evidence/shots/a11y/vision-member-book-none.png",
+      "ui_evidence/shots/a11y/vision-member-book-protanopia.png",
+      "ui_evidence/shots/a11y/vision-member-book-deuteranopia.png",
+      "ui_evidence/shots/a11y/vision-member-book-tritanopia.png",
+      "ui_evidence/shots/a11y/vision-member-book-achromatopsia.png",
+      "ui_evidence/shots/a11y/vision-member-book-blurredVision.png",
+      "ui_evidence/shots/a11y/vision-member-book-reducedContrast.png",
+      "ui_evidence/shots/a11y/vision-brand-book-none.png",
+      "ui_evidence/shots/a11y/vision-brand-book-protanopia.png",
+      "ui_evidence/shots/a11y/vision-brand-book-deuteranopia.png",
+      "ui_evidence/shots/a11y/vision-brand-book-tritanopia.png",
+      "ui_evidence/shots/a11y/vision-brand-book-achromatopsia.png",
+      "ui_evidence/shots/a11y/vision-brand-book-blurredVision.png",
+      "ui_evidence/shots/a11y/vision-brand-book-reducedContrast.png"
+    ],
+    "note": "for a human reader; stills blurred"
+  },
+  "small_text": {
+    "landing@390": {
+      "measured": 139,
+      "micro_11_5_to_12_5": 34,
+      "small": [],
+      "smallCount": 0,
+      "svgSmall": [],
+      "svgSmallCount": 0
+    },
+    "run@390": {
+      "measured": 34,
+      "micro_11_5_to_12_5": 6,
+      "small": [],
+      "smallCount": 0,
+      "svgSmall": [],
+      "svgSmallCount": 0
+    },
+    "library@390": {
+      "measured": 58,
+      "micro_11_5_to_12_5": 18,
+      "small": [],
+      "smallCount": 0,
+      "svgSmall": [],
+      "svgSmallCount": 0
+    },
+    "statement@390": {
+      "measured": 36,
+      "micro_11_5_to_12_5": 0,
+      "small": [],
+      "smallCount": 0,
+      "svgSmall": [],
+      "svgSmallCount": 0
+    },
+    "brand-book@390": {
+      "measured": 672,
+      "micro_11_5_to_12_5": 279,
+      "small": [],
+      "smallCount": 0,
+      "svgSmall": [],
+      "svgSmallCount": 0
+    },
+    "product-book@390": {
+      "measured": 868,
+      "micro_11_5_to_12_5": 363,
+      "small": [],
+      "smallCount": 0,
+      "svgSmall": [],
+      "svgSmallCount": 0
+    },
+    "member-book@390": {
+      "measured": 1093,
+      "micro_11_5_to_12_5": 166,
+      "small": [],
+      "smallCount": 0,
+      "svgSmall": [],
+      "svgSmallCount": 0
+    },
+    "landing@1440": {
+      "measured": 151,
+      "micro_11_5_to_12_5": 25,
+      "small": [],
+      "smallCount": 0,
+      "svgSmall": [],
+      "svgSmallCount": 0
+    },
+    "run@1440": {
+      "measured": 43,
+      "micro_11_5_to_12_5": 0,
+      "small": [],
+      "smallCount": 0,
+      "svgSmall": [],
+      "svgSmallCount": 0
+    },
+    "library@1440": {
+      "measured": 66,
+      "micro_11_5_to_12_5": 18,
+      "small": [],
+      "smallCount": 0,
+      "svgSmall": [],
+      "svgSmallCount": 0
+    },
+    "statement@1440": {
+      "measured": 44,
+      "micro_11_5_to_12_5": 0,
+      "small": [],
+      "smallCount": 0,
+      "svgSmall": [],
+      "svgSmallCount": 0
+    },
+    "brand-book@1440": {
+      "measured": 1028,
+      "micro_11_5_to_12_5": 375,
+      "small": [],
+      "smallCount": 0,
+      "svgSmall": [],
+      "svgSmallCount": 0
+    },
+    "product-book@1440": {
+      "measured": 1283,
+      "micro_11_5_to_12_5": 481,
+      "small": [],
+      "smallCount": 0,
+      "svgSmall": [],
+      "svgSmallCount": 0
+    },
+    "member-book@1440": {
+      "measured": 1950,
+      "micro_11_5_to_12_5": 515,
+      "small": [],
+      "smallCount": 0,
+      "svgSmall": [],
+      "svgSmallCount": 0
+    }
+  },
+  "shelf_follows_window": {
+    "1440 at load": {
+      "shelfShown": true,
+      "cards": 0,
+      "text": 2116,
+      "offersShelf": false
+    },
+    "narrowed to 800": {
+      "shelfShown": false,
+      "cards": 6,
+      "text": 2611,
+      "offersShelf": false
+    },
+    "widened to 1440": {
+      "shelfShown": false,
+      "cards": 6,
+      "text": 2627,
+      "offersShelf": true
+    },
+    "landscape phone 1024x430": {
+      "shelfShown": false,
+      "cards": 6,
+      "text": 2611,
+      "offersShelf": false
+    }
+  },
+  "print": {
+    "brand-book": {
+      "bookChars": 14026,
+      "printedChars": 13899,
+      "share": 0.991,
+      "worstOnWhite": 5.98,
+      "worstWhere": "span.om__c conflict 0.800, flagged"
+    },
+    "product-book": {
+      "bookChars": 16336,
+      "printedChars": 16210,
+      "share": 0.992,
+      "worstOnWhite": 5.98,
+      "worstWhere": "span.om__c conflict 0.800, flagged"
+    },
+    "member-book": {
+      "bookChars": 43504,
+      "printedChars": 43504,
+      "share": 1.0,
+      "worstOnWhite": 5.98,
+      "worstWhere": "span.om__c conflict 0.800, flagged"
+    }
+  },
+  "motion_switch": {
+    "control": {
+      "text": "Reduce motion",
+      "pressed": "false"
+    }
+  },
+  "one_page": {
+    "brand-book": {
+      "bookChars": 21010,
+      "linear": true,
+      "hiddenChapters": 0,
+      "chars": 21010,
+      "h1": 1
+    },
+    "product-book": {
+      "bookChars": 25612,
+      "linear": true,
+      "hiddenChapters": 0,
+      "chars": 25596,
+      "h1": 1
+    },
+    "member-book": {
+      "bookChars": 62889,
+      "linear": true,
+      "hiddenChapters": 0,
+      "chars": 61708,
+      "h1": 1
+    }
+  },
+  "journeys": {
+    "library caveat (shelf)": true,
+    "keyboard delete (shelf)": {
+      "deleteReached": true,
+      "spaceConfirms": true,
+      "stops": 15
+    },
+    "library caveat (list)": true,
+    "keyboard delete (list)": {
+      "deleteReached": true,
+      "spaceConfirms": true,
+      "stops": 4
+    },
+    "film in the accessibility tree": {
+      "beats": 4,
+      "link": true,
+      "facialDisclosure": true
+    },
+    "boot screen": {
+      "shown": true,
+      "focusInside": true,
+      "survivesModifierKeys": true
+    }
+  },
+  "failures": [],
+  "failure_count_by_check": {}
+}

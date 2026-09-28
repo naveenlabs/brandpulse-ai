@@ -1,0 +1,36 @@
+{
+ "uid": "SSC0RkJuBVw_152",
+ "system": "three_channel",
+ "video_id": "SSC0RkJuBVw",
+ "segment_id": 152,
+ "split": "selection",
+ "payload": {
+  "segment_id": 152,
+  "start_s": 613.8199999999999,
+  "end_s": 618.3,
+  "transcript": "in the quantities that the iPhone did. Well, I think this is an optimistic gamble.",
+  "transcript_sentiment": "POSITIVE (0.72)",
+  "vocal_emotion": "NEUTRAL (arousal 0.60)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.95)"
+ },
+ "seconds": 3.938,
+ "raw": "{\n  \"segment_id\": 152,\n  \"conflict_score\": 0.5,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words convey a positive sentiment, but their facial expression shows no emotion, indicating a potential conflict between verbal and non-verbal cues.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 152,
+  "start_s": 613.8199999999999,
+  "end_s": 618.3,
+  "conflict_score": 0.2445,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+  ],
+  "flagged": false
+ }
+}

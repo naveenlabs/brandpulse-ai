@@ -1,0 +1,35 @@
+{
+ "uid": "SSC0RkJuBVw_57",
+ "system": "four_channel",
+ "video_id": "SSC0RkJuBVw",
+ "segment_id": 57,
+ "split": "selection",
+ "payload": {
+  "segment_id": 57,
+  "start_s": 241.48,
+  "end_s": 244.6,
+  "transcript": "is that these are how you control the thing. And this moves me on to the things",
+  "transcript_sentiment": "POSITIVE (0.58)",
+  "vocal_emotion": "NEUTRAL (arousal 0.64)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "neutral (0.98)",
+  "video_comment_sentiment": "POSITIVE (0.95)"
+ },
+ "seconds": 3.901,
+ "raw": "{\n  \"segment_id\": 57,\n  \"conflict_score\": 0.5,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words convey a positive sentiment, but their facial expression shows neutrality, indicating a potential conflict between verbal and non-verbal cues.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 57,
+  "start_s": 241.48,
+  "end_s": 244.6,
+  "conflict_score": 0.5,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion"
+  ],
+  "flagged": false
+ }
+}

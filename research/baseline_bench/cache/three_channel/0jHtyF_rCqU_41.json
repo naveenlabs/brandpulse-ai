@@ -1,0 +1,35 @@
+{
+ "uid": "0jHtyF_rCqU_41",
+ "system": "three_channel",
+ "video_id": "0jHtyF_rCqU",
+ "segment_id": 41,
+ "split": "selection",
+ "payload": {
+  "segment_id": 41,
+  "start_s": 208.32,
+  "end_s": 212.56,
+  "transcript": "But that's what makes this magic back screen all the more interesting.",
+  "transcript_sentiment": "NEUTRAL (0.54)",
+  "vocal_emotion": "NEUTRAL (arousal 0.52)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.98)"
+ },
+ "seconds": 4.429,
+ "raw": "{\n  \"segment_id\": 41,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and tone suggest neutrality, but their facial expression is not detected, and the audience's comments are overwhelmingly positive, indicating a potential conflict between the creator's verbal and non-verbal cues.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 41,
+  "start_s": 208.32,
+  "end_s": 212.56,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion"
+  ],
+  "flagged": false
+ }
+}

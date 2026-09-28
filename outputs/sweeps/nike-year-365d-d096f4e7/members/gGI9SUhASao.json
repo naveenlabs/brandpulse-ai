@@ -1,0 +1,3965 @@
+{
+  "video_url": "https://youtu.be/gGI9SUhASao",
+  "brand_name": "Nike",
+  "authenticity_score": 64.96,
+  "brand_health_score": 55.41,
+  "segment_count": 111,
+  "flagged_segments": [
+    {
+      "segment_id": 31,
+      "start_s": 138.06,
+      "end_s": 141.62,
+      "conflict_score": 0.8,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": true,
+      "text": "And the design is very simplistic. And it's very versatile.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6601
+        },
+        "facial_emotion": {
+          "dominant": "fear",
+          "confidence": 0.9263,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5922,
+          "valence": 0.6655,
+          "dominance": 0.6265,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 174.44,
+        "energy_mean": 0.015141
+      }
+    },
+    {
+      "segment_id": 109,
+      "start_s": 456.92,
+      "end_s": 459.92,
+      "conflict_score": 0.8,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": true,
+      "text": "You will see it here. And you will see it here. You will see it here.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5731
+        },
+        "facial_emotion": {
+          "dominant": "fear",
+          "confidence": 0.9325,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6615,
+          "valence": 0.692,
+          "dominance": 0.6295,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 183.64,
+        "energy_mean": 0.011424
+      }
+    }
+  ],
+  "comment_sentiment": {
+    "label": "NEUTRAL",
+    "confidence": 0.981,
+    "comment_count": 47,
+    "distribution": {
+      "POSITIVE": 16,
+      "NEUTRAL": 23,
+      "NEGATIVE": 8
+    }
+  },
+  "bias_caveat": "IMPORTANT: Facial emotion recognition (DeepFace) has documented accuracy disparities across skin tone and gender (Buolamwini & Gebru, 2018; Fan et al., 2023). Authenticity scores informed by facial data should be interpreted with this limitation in mind.",
+  "vocal_caveat": "IMPORTANT: The vocal emotion channel is the second weakest of the four, after facial emotion, and is explicitly down-weighted. Benchmarked on 150 hand-rated clips from 6 speakers (vocal_bench/), the adopted model scores 48.9% three-class accuracy on held-out speakers - better than the model it replaced, which at 34.0% was significantly worse than always guessing NEUTRAL (p = 0.0070), but still not reliably better than that constant. No model tested beat it. Conflicts attributed to the vocal channel alone are damped accordingly, and per-segment claims should not rest on this channel. Read the within-video figure, not the headline: this report compares segments inside one video, and the channel's rank correlation with human judgement measured within a video is +0.159 across 147 clips and +0.056 on unseen speakers (vocal_bench/SPEAKER_NORM_RESULT.md). Most of its apparent accuracy is a between-video effect that says more about the speaker's habitual energy than about any individual moment.",
+  "vocal_licence_note": "The adopted vocal model (audeering/wav2vec2-large-robust-12-ft-emotion-msp-dim) is licensed CC-BY-NC-SA-4.0 and may not be used commercially. Every configuration measured in vocal_bench/ that showed usable signal was non-commercially licensed; the permissively-licensed alternatives measured at the bottom of every table. A commercial deployment would need to ship without this channel or replace it.",
+  "all_comments": [
+    {
+      "text": "AF1 Always Super cool Shoes",
+      "label": "POSITIVE",
+      "confidence": 0.9991,
+      "like_count": 12
+    },
+    {
+      "text": "Cheap Leather Quality on Court Vision while AF1 has good leather quality comparatively to court vision",
+      "label": "NEGATIVE",
+      "confidence": 0.985,
+      "like_count": 1
+    },
+    {
+      "text": "Mil Jayegi, Mil Jayegi, Dikh Jayegi, Mil Jayegi, Mil Jayegi. 😁. Love your content man",
+      "label": "POSITIVE",
+      "confidence": 0.9994,
+      "like_count": 7
+    },
+    {
+      "text": "One Achint clears the doubt of another Achint. Nice",
+      "label": "POSITIVE",
+      "confidence": 0.9928,
+      "like_count": 6
+    },
+    {
+      "text": "Next on Vegan leather shoes please maine pehle bhi bola tha ❤❤❤❤",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 5
+    },
+    {
+      "text": "The quality on both of them is pretty cheap and bad considering the price. They get created up very much because of that synthetic leather. Puma and Adidas are doing a better job in terms of quality in that price range",
+      "label": "NEGATIVE",
+      "confidence": 0.9973,
+      "like_count": 7
+    },
+    {
+      "text": "i have both and id recommend to invest some more money and get the airforces they're better overall as the sole is so so comfortable than court visions they are just flat soles whereas air forces have cushioning and absorption  to some extent that they dont feel uncomfortable and are overall more appealing",
+      "label": "POSITIVE",
+      "confidence": 0.999,
+      "like_count": 1
+    },
+    {
+      "text": "Mera pass hai court vision... almost 3 years... accha sneaker hai..❤️",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 10
+    },
+    {
+      "text": "I have used both COURT VISION LOW and AIR FORCE 1. COURT VISION LOW  is very uncomfortable to wear and gave me foot corns.  AIR FORCE 1 has better comfort.",
+      "label": "NEGATIVE",
+      "confidence": 0.985,
+      "like_count": 21
+    },
+    {
+      "text": "What i don't like about court vision is the leather quality",
+      "label": "NEGATIVE",
+      "confidence": 0.9978,
+      "like_count": 2
+    },
+    {
+      "text": "Guys konsa lenga chahiye comment plz🎉",
+      "label": "POSITIVE",
+      "confidence": 0.9979,
+      "like_count": 0
+    },
+    {
+      "text": "Truthfully I have both and their comfortable",
+      "label": "POSITIVE",
+      "confidence": 0.999,
+      "like_count": 2
+    },
+    {
+      "text": "My friend gifted me Nike Court Vision Low which costed him around 2140 rs. Loved the pair✨",
+      "label": "POSITIVE",
+      "confidence": 0.9991,
+      "like_count": 2
+    },
+    {
+      "text": "Dude i think u should make a vdo on Onitsuka Tiger shoes cause it has very less info in YT",
+      "label": "NEUTRAL",
+      "confidence": 0.9983,
+      "like_count": 0
+    },
+    {
+      "text": "Please cover budget asics sneakers as well!\n\nMainly Asics Lyte Classic and Asics Tiger Runner II, since they are some very interesting pairs which drop to around 3.5k in sales!",
+      "label": "POSITIVE",
+      "confidence": 0.7761,
+      "like_count": 5
+    },
+    {
+      "text": "Nice video sir",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 0
+    },
+    {
+      "text": "Do nike court royale vs nike court vision",
+      "label": "NEUTRAL",
+      "confidence": 0.999,
+      "like_count": 1
+    },
+    {
+      "text": "I bought the pink and white Air Force today and love it, only to find out it contains leather 😭. So I'll have to return it. And I am now looking at the Court Vision Low as an alternative, as it's one of the only ones that don't contain leather and still kinda looks like the Air Force",
+      "label": "NEGATIVE",
+      "confidence": 0.9829,
+      "like_count": 0
+    },
+    {
+      "text": "pls make a video on court royale low and puma shatter low since both are in and ard similar price range than your be a interesting video ( pls keep in mind for college)",
+      "label": "NEUTRAL",
+      "confidence": 0.9831,
+      "like_count": 14
+    },
+    {
+      "text": "please mention weight in grams and not just heavy or light. something can be light for you and can be heavy for a small build\nmention in grams would give better idea",
+      "label": "NEUTRAL",
+      "confidence": 0.9945,
+      "like_count": 2
+    },
+    {
+      "text": "how about court shot vs court vision?",
+      "label": "NEUTRAL",
+      "confidence": 0.999,
+      "like_count": 0
+    },
+    {
+      "text": "Bro I want to buy a pair of white sneakers for my school and casual wear I am confused between AF1 and court vision and comet and new balance please give me some suggestions",
+      "label": "NEUTRAL",
+      "confidence": 0.9924,
+      "like_count": 1
+    },
+    {
+      "text": "Court vision vs comment?",
+      "label": "NEUTRAL",
+      "confidence": 0.9988,
+      "like_count": 4
+    },
+    {
+      "text": "air force one is not more comfortable 😅",
+      "label": "NEGATIVE",
+      "confidence": 0.9981,
+      "like_count": 4
+    },
+    {
+      "text": "Bro is the brand ambassador of myntra 😅😅",
+      "label": "NEUTRAL",
+      "confidence": 0.9943,
+      "like_count": 1
+    },
+    {
+      "text": "Make videos on jordan 1  white- black- dk pony 👌👌👌👌👌👌👌👌👌👌👌👌👌👌👌👌\nJordannnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 1
+    },
+    {
+      "text": "Konsa company jeans pant hai",
+      "label": "NEUTRAL",
+      "confidence": 0.9984,
+      "like_count": 0
+    },
+    {
+      "text": "Sir app k pas to bohot shoes h ek pair de do please ek college student ka dream shoes h ,, sab video dekhta hu love from west bengal, india ❤❤",
+      "label": "POSITIVE",
+      "confidence": 0.9977,
+      "like_count": 0
+    },
+    {
+      "text": "Yooo",
+      "label": "POSITIVE",
+      "confidence": 0.9534,
+      "like_count": 0
+    },
+    {
+      "text": "Air force  1 original hain 7.5k main",
+      "label": "NEUTRAL",
+      "confidence": 0.9988,
+      "like_count": 0
+    },
+    {
+      "text": "Can you please suggest a shoe for everyday wear for around 8 hours under 3k ?",
+      "label": "NEUTRAL",
+      "confidence": 0.9991,
+      "like_count": 4
+    },
+    {
+      "text": "You won't believe but last year, I got Court Vision Low for ₹3600 from Flipkart.",
+      "label": "POSITIVE",
+      "confidence": 0.971,
+      "like_count": 0
+    },
+    {
+      "text": "Where the hell are we heading to ? i mean seriously do we need a shoes comparison get a job dude",
+      "label": "NEGATIVE",
+      "confidence": 0.9939,
+      "like_count": 0
+    },
+    {
+      "text": "Dada Wala Babu😢",
+      "label": "NEUTRAL",
+      "confidence": 0.9395,
+      "like_count": 0
+    },
+    {
+      "text": "Can’t understand 70% of the words you say mate 😂🥲",
+      "label": "NEGATIVE",
+      "confidence": 0.809,
+      "like_count": 1
+    },
+    {
+      "text": "Sir ajio is safe for buy these shoes.\nCan you send me the link ajio of that shoe",
+      "label": "NEUTRAL",
+      "confidence": 0.9951,
+      "like_count": 1
+    },
+    {
+      "text": "How do you check the authenticity of these shoes..? I have heard there will copy shoes in flipkart, myntra, amazon.",
+      "label": "NEUTRAL",
+      "confidence": 0.9914,
+      "like_count": 1
+    },
+    {
+      "text": "I got court vision from ajio at 3700",
+      "label": "NEUTRAL",
+      "confidence": 0.9989,
+      "like_count": 0
+    },
+    {
+      "text": "Best white sneaker under 7000 and would you recommend comet??",
+      "label": "NEUTRAL",
+      "confidence": 0.996,
+      "like_count": 0
+    },
+    {
+      "text": "Court vision me front side pe crease issue toh nai ata ?",
+      "label": "NEUTRAL",
+      "confidence": 0.9977,
+      "like_count": 0
+    },
+    {
+      "text": "Nike women court vision is for women or men ??",
+      "label": "NEUTRAL",
+      "confidence": 0.9991,
+      "like_count": 0
+    },
+    {
+      "text": "I have purchased court vision only for Rs. 2900/-",
+      "label": "NEUTRAL",
+      "confidence": 0.9444,
+      "like_count": 0
+    },
+    {
+      "text": "Main na aj lunde bazar se 🤣 nike air force khreda 800 ruppes ka made in vitenam online pricecheck kiya to 30/35 k tha 😂 800 kha 30-35 k kha.bilkul neat and clean tha😂",
+      "label": "POSITIVE",
+      "confidence": 0.8922,
+      "like_count": 1
+    },
+    {
+      "text": "Puma ca pro Kaisa hoga?",
+      "label": "NEUTRAL",
+      "confidence": 0.999,
+      "like_count": 1
+    },
+    {
+      "text": "2025 m airforce 1 lena shi rhega???",
+      "label": "NEUTRAL",
+      "confidence": 0.9992,
+      "like_count": 0
+    },
+    {
+      "text": "Ye vdo kitni bar banayega",
+      "label": "NEUTRAL",
+      "confidence": 0.997,
+      "like_count": 0
+    },
+    {
+      "text": "Ужасный акцент",
+      "label": "NEUTRAL",
+      "confidence": 0.9711,
+      "like_count": 0
+    }
+  ],
+  "all_segments": [
+    {
+      "segment_id": 0,
+      "start_s": 0.0,
+      "end_s": 8.32,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Okay, so today I am going to compare Nike Air Force 1 with Nike Coat Vision Low and this is going to be a very interesting comparison.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7855
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.6296,
+          "frame_count": 9,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6743,
+          "valence": 0.6922,
+          "dominance": 0.6782,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 200.62,
+        "energy_mean": 0.004666
+      }
+    },
+    {
+      "segment_id": 1,
+      "start_s": 8.5,
+      "end_s": 11.88,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "So, let's start with the next time. This is me, Aachen Chaab Lined.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.4812
+        },
+        "facial_emotion": {
+          "dominant": "happy",
+          "confidence": 0.7481,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7767,
+          "valence": 0.8842,
+          "dominance": 0.7943,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 221.85,
+        "energy_mean": 0.011956
+      }
+    },
+    {
+      "segment_id": 2,
+      "start_s": 11.98,
+      "end_s": 17.240000000000002,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "If you like sneaker, trust me, you are in a good place. Do consider subscribing to this channel and you can follow me on Instagram.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7941
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7721,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7683,
+          "valence": 0.6117,
+          "dominance": 0.7467,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 194.03,
+        "energy_mean": 0.008345
+      }
+    },
+    {
+      "segment_id": 3,
+      "start_s": 18.18,
+      "end_s": 24.54,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Links will be in the description. Also, I am seeing 84% of you are watching the videos but not subscribing to this channel.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.4902
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7709,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.664,
+          "valence": 0.5725,
+          "dominance": 0.6583,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 196.01,
+        "energy_mean": 0.007742
+      }
+    },
+    {
+      "segment_id": 4,
+      "start_s": 24.62,
+      "end_s": 28.0,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "So, guys, go ahead and subscribe so that I can put a lot of content on you.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6288
+        },
+        "facial_emotion": {
+          "dominant": "sad",
+          "confidence": 0.9928,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.792,
+          "valence": 0.7289,
+          "dominance": 0.7682,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 179.76,
+        "energy_mean": 0.013443
+      }
+    },
+    {
+      "segment_id": 5,
+      "start_s": 28.0,
+      "end_s": 33.7,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "So, let's go. Okay, so first of all, I will tell you a lot of line-up. So, first of all, we will talk about unboxing experience.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6348
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7609,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.837,
+          "valence": 0.5009,
+          "dominance": 0.782,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 188.21,
+        "energy_mean": 0.003221
+      }
+    },
+    {
+      "segment_id": 6,
+      "start_s": 34.12,
+      "end_s": 38.42,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "Then we will talk about design. Then we will talk about quality of materials.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6895
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7419,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6729,
+          "valence": 0.5676,
+          "dominance": 0.6618,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 203.96,
+        "energy_mean": 0.010645
+      }
+    },
+    {
+      "segment_id": 7,
+      "start_s": 38.96,
+      "end_s": 44.34,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "Then we will talk about on-feed experience. Then we will talk about price comparison.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.8401
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8164,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7897,
+          "valence": 0.6609,
+          "dominance": 0.7432,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 222.29,
+        "energy_mean": 0.015574
+      }
+    },
+    {
+      "segment_id": 8,
+      "start_s": 44.66,
+      "end_s": 47.74,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "And last, I will talk about my final conclusion.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7811
+        },
+        "facial_emotion": {
+          "dominant": "happy",
+          "confidence": 0.998,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6936,
+          "valence": 0.5141,
+          "dominance": 0.6891,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 173.67,
+        "energy_mean": 0.006713
+      }
+    },
+    {
+      "segment_id": 9,
+      "start_s": 47.92,
+      "end_s": 51.18,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "So, this is the line-up. So, first of all, let's start unboxing experience.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.57
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8797,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7239,
+          "valence": 0.4155,
+          "dominance": 0.7243,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 235.25,
+        "energy_mean": 0.024894
+      }
+    },
+    {
+      "segment_id": 10,
+      "start_s": 51.379999999999995,
+      "end_s": 55.78,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "First of all, both of all, box is very different. Nike Air Force 1, you will see a grey box.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.639
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7729,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6031,
+          "valence": 0.6946,
+          "dominance": 0.6091,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 173.19,
+        "energy_mean": 0.020604
+      }
+    },
+    {
+      "segment_id": 11,
+      "start_s": 55.78,
+      "end_s": 60.44,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "And Nike Coat Vision Low, you will see the normal Nike box.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.8543
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9046,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.616,
+          "valence": 0.5756,
+          "dominance": 0.6334,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 167.85,
+        "energy_mean": 0.013462
+      }
+    },
+    {
+      "segment_id": 12,
+      "start_s": 60.44,
+      "end_s": 64.04,
+      "conflict_score": 0.171,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "facial_channel_downweighted[structural]: 0.5000 -> 0.1710 (x0.342, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "Orange color. That will be seen. So, Air Force 1 is a special box.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.8142
+        },
+        "facial_emotion": {
+          "dominant": "happy",
+          "confidence": 0.7689,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6475,
+          "valence": 0.7007,
+          "dominance": 0.6377,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 164.21,
+        "energy_mean": 0.014596
+      }
+    },
+    {
+      "segment_id": 13,
+      "start_s": 64.28,
+      "end_s": 68.0,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "If you open Air Force 1, you will see a butter paper in which it will be written AF1.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.834
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.6532,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6383,
+          "valence": 0.6882,
+          "dominance": 0.6175,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 171.23,
+        "energy_mean": 0.012186
+      }
+    },
+    {
+      "segment_id": 14,
+      "start_s": 68.04,
+      "end_s": 72.12,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "AF1, AF1. And then you will get a pair, which is amazing.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.909
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9181,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6543,
+          "valence": 0.6313,
+          "dominance": 0.6495,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 171.68,
+        "energy_mean": 0.013277
+      }
+    },
+    {
+      "segment_id": 15,
+      "start_s": 72.12,
+      "end_s": 75.34,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "I mean, this pair is so, so good.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.9205
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4966,
+          "valence": 0.6323,
+          "dominance": 0.5469,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 172.24,
+        "energy_mean": 0.017704
+      }
+    },
+    {
+      "segment_id": 16,
+      "start_s": 75.34,
+      "end_s": 79.14,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "I absolutely love it. You can see it. Such a crazy pair.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.9178
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5034,
+          "valence": 0.7697,
+          "dominance": 0.5795,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 119.39,
+        "energy_mean": 0.008591
+      }
+    },
+    {
+      "segment_id": 17,
+      "start_s": 79.3,
+      "end_s": 86.18,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "And I love it. So, let's talk about Coat Vision. If you open Coat Vision, you will not get much more.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7561
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.878,
+          "frame_count": 6,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6358,
+          "valence": 0.8668,
+          "dominance": 0.6629,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 168.48,
+        "energy_mean": 0.010511
+      }
+    },
+    {
+      "segment_id": 18,
+      "start_s": 86.56,
+      "end_s": 91.48,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "And you can take out the pair. And this pair is also very, very good.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8942
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.997,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4882,
+          "valence": 0.7621,
+          "dominance": 0.5836,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 142.56,
+        "energy_mean": 0.005094
+      }
+    },
+    {
+      "segment_id": 19,
+      "start_s": 91.56,
+      "end_s": 95.78,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "And you can see it. It's also a very, very clean pair.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8029
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4176,
+          "valence": 0.5677,
+          "dominance": 0.5178,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 177.87,
+        "energy_mean": 0.015193
+      }
+    },
+    {
+      "segment_id": 20,
+      "start_s": 95.78,
+      "end_s": 99.4,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "So, the unboxing experience is very similar. It's not a lot of special.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.4603
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8245,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5856,
+          "valence": 0.5427,
+          "dominance": 0.5957,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 171.58,
+        "energy_mean": 0.00783
+      }
+    },
+    {
+      "segment_id": 21,
+      "start_s": 99.4,
+      "end_s": 103.4,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "It's not a special. It's just that Nike Air Force 1 is a little different.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6288
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9583,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5161,
+          "valence": 0.6075,
+          "dominance": 0.5561,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 146.32,
+        "energy_mean": 0.006646
+      }
+    },
+    {
+      "segment_id": 22,
+      "start_s": 103.4,
+      "end_s": 106.4,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "That's all. The other unboxing experience is very similar.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.747
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8682,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5269,
+          "valence": 0.4535,
+          "dominance": 0.5576,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 146.06,
+        "energy_mean": 0.008283
+      }
+    },
+    {
+      "segment_id": 23,
+      "start_s": 106.4,
+      "end_s": 110.4,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "I don't have any special. Let's go to the design. Let's talk about the first.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7244
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9072,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6687,
+          "valence": 0.5102,
+          "dominance": 0.648,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 180.3,
+        "energy_mean": 0.019627
+      }
+    },
+    {
+      "segment_id": 24,
+      "start_s": 110.4,
+      "end_s": 114.98,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "Air Force 1 design. It's a very simple design. If I tell you an overview,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.57
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.684,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6318,
+          "valence": 0.7078,
+          "dominance": 0.6397,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 162.22,
+        "energy_mean": 0.010643
+      }
+    },
+    {
+      "segment_id": 25,
+      "start_s": 114.98,
+      "end_s": 120.16000000000001,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "you will get the leather in the upper. Most of the areas, you will get leather material.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.8108
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9188,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5111,
+          "valence": 0.5244,
+          "dominance": 0.5487,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 157.79,
+        "energy_mean": 0.028233
+      }
+    },
+    {
+      "segment_id": 26,
+      "start_s": 120.32000000000001,
+      "end_s": 123.7,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "You will get the mesh material here.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5739
+        },
+        "facial_emotion": {
+          "dominant": "sad",
+          "confidence": 0.7587,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.69,
+          "valence": 0.7756,
+          "dominance": 0.6917,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 171.85,
+        "energy_mean": 0.027952
+      }
+    },
+    {
+      "segment_id": 27,
+      "start_s": 123.7,
+      "end_s": 127.86000000000001,
+      "conflict_score": 0.2052,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "facial_channel_downweighted[structural]: 0.6000 -> 0.2052 (x0.342, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "You will get the Nike Air Embroider. You will get the midsole.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7621
+        },
+        "facial_emotion": {
+          "dominant": "fear",
+          "confidence": 0.5659,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5961,
+          "valence": 0.6428,
+          "dominance": 0.6262,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 170.28,
+        "energy_mean": 0.014018
+      }
+    },
+    {
+      "segment_id": 28,
+      "start_s": 127.86000000000001,
+      "end_s": 130.86,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "It will get the very chunky and sturdy.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6768
+        },
+        "facial_emotion": {
+          "dominant": "fear",
+          "confidence": 0.903,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6432,
+          "valence": 0.5722,
+          "dominance": 0.6584,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 168.29,
+        "energy_mean": 0.020054
+      }
+    },
+    {
+      "segment_id": 29,
+      "start_s": 130.86,
+      "end_s": 134.86,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "And the outsole will get the good.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7751
+        },
+        "facial_emotion": {
+          "dominant": "sad",
+          "confidence": 0.8593,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5992,
+          "valence": 0.3933,
+          "dominance": 0.6299,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 171.31,
+        "energy_mean": 0.01317
+      }
+    },
+    {
+      "segment_id": 30,
+      "start_s": 134.86,
+      "end_s": 138.06,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "All in all, very simple but very, very good pair.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.9045
+        },
+        "facial_emotion": {
+          "dominant": "fear",
+          "confidence": 0.7769,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5608,
+          "valence": 0.5392,
+          "dominance": 0.597,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 180.08,
+        "energy_mean": 0.020543
+      }
+    },
+    {
+      "segment_id": 31,
+      "start_s": 138.06,
+      "end_s": 141.62,
+      "conflict_score": 0.8,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": true,
+      "text": "And the design is very simplistic. And it's very versatile.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6601
+        },
+        "facial_emotion": {
+          "dominant": "fear",
+          "confidence": 0.9263,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5922,
+          "valence": 0.6655,
+          "dominance": 0.6265,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 174.44,
+        "energy_mean": 0.015141
+      }
+    },
+    {
+      "segment_id": 32,
+      "start_s": 141.62,
+      "end_s": 147.62,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "But the design is very bulky. And the outsole is very bulky.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.8548
+        },
+        "facial_emotion": {
+          "dominant": "fear",
+          "confidence": 0.8075,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6027,
+          "valence": 0.6243,
+          "dominance": 0.6309,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 181.84,
+        "energy_mean": 0.020593
+      }
+    },
+    {
+      "segment_id": 33,
+      "start_s": 147.62,
+      "end_s": 151.06,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "Plus, a little height provided. Whereas in 4-twitch in low,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7262
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9832,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5729,
+          "valence": 0.5161,
+          "dominance": 0.5641,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 196.21,
+        "energy_mean": 0.020536
+      }
+    },
+    {
+      "segment_id": 34,
+      "start_s": 151.06,
+      "end_s": 155.7,
+      "conflict_score": 0.2052,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "facial_channel_downweighted[structural]: 0.6000 -> 0.2052 (x0.342, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "If you can see, If you can tell in the overview, you can see leather material.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7348
+        },
+        "facial_emotion": {
+          "dominant": "fear",
+          "confidence": 0.9563,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.594,
+          "valence": 0.5452,
+          "dominance": 0.5815,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 160.86,
+        "energy_mean": 0.019122
+      }
+    },
+    {
+      "segment_id": 35,
+      "start_s": 155.7,
+      "end_s": 160.7,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "And it's a little different leather. Air Force 1 will be seen from Air Force 1. You will see different textures.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7638
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9313,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5218,
+          "valence": 0.5654,
+          "dominance": 0.5331,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 177.38,
+        "energy_mean": 0.011595
+      }
+    },
+    {
+      "segment_id": 36,
+      "start_s": 160.7,
+      "end_s": 166.51999999999998,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "And you will see the turmbled leather texture. The other, you will get the leather material.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6681
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7487,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5776,
+          "valence": 0.5122,
+          "dominance": 0.5835,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 172.55,
+        "energy_mean": 0.02088
+      }
+    },
+    {
+      "segment_id": 37,
+      "start_s": 166.51999999999998,
+      "end_s": 172.8,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Sock liner will be the same. Air Force 1 will be seen. The tongue will be seen in the mesh material.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.8558
+        },
+        "facial_emotion": {
+          "dominant": "happy",
+          "confidence": 0.6437,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7231,
+          "valence": 0.7968,
+          "dominance": 0.7443,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 177.94,
+        "energy_mean": 0.020852
+      }
+    },
+    {
+      "segment_id": 38,
+      "start_s": 172.8,
+      "end_s": 176.8,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "And the back will be seen in Nike Embossed. And the midsole will be seen in midsole.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.8436
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9299,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5786,
+          "valence": 0.5092,
+          "dominance": 0.6057,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 175.0,
+        "energy_mean": 0.018787
+      }
+    },
+    {
+      "segment_id": 39,
+      "start_s": 176.8,
+      "end_s": 180.12,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "It will look sleek and not very chunky.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.4839
+        },
+        "facial_emotion": {
+          "dominant": "happy",
+          "confidence": 0.4163,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6225,
+          "valence": 0.587,
+          "dominance": 0.6578,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 169.46,
+        "energy_mean": 0.023616
+      }
+    },
+    {
+      "segment_id": 40,
+      "start_s": 180.12,
+      "end_s": 184.74,
+      "conflict_score": 0.2052,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "facial_channel_downweighted[structural]: 0.6000 -> 0.2052 (x0.342, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "Like Air Force 1. The traction will also be seen in Air Force 1.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6728
+        },
+        "facial_emotion": {
+          "dominant": "sad",
+          "confidence": 0.4946,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4684,
+          "valence": 0.587,
+          "dominance": 0.4998,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 161.75,
+        "energy_mean": 0.006091
+      }
+    },
+    {
+      "segment_id": 41,
+      "start_s": 184.74,
+      "end_s": 188.5,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "There will not be major differences. So this was about the design difference.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7989
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9151,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5201,
+          "valence": 0.534,
+          "dominance": 0.5582,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 174.18,
+        "energy_mean": 0.027945
+      }
+    },
+    {
+      "segment_id": 42,
+      "start_s": 188.5,
+      "end_s": 193.0,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "If you want to see, Air Force 1 is quite on the chunkier side.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.489
+        },
+        "facial_emotion": {
+          "dominant": "sad",
+          "confidence": 0.5561,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6085,
+          "valence": 0.7011,
+          "dominance": 0.6178,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 177.48,
+        "energy_mean": 0.010787
+      }
+    },
+    {
+      "segment_id": 43,
+      "start_s": 193.0,
+      "end_s": 197.42000000000002,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "And it is slightly slim side. So you will see these differences.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6892
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9559,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.534,
+          "valence": 0.5861,
+          "dominance": 0.5678,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 180.88,
+        "energy_mean": 0.021712
+      }
+    },
+    {
+      "segment_id": 44,
+      "start_s": 197.42000000000002,
+      "end_s": 200.92000000000002,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "Now let's talk about quality of materials. So quality of materials.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6731
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8306,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6429,
+          "valence": 0.3461,
+          "dominance": 0.6826,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 225.51,
+        "energy_mean": 0.018592
+      }
+    },
+    {
+      "segment_id": 45,
+      "start_s": 200.92000000000002,
+      "end_s": 204.42000000000002,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Air Force 1 is leather user. It is quite different.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7639
+        },
+        "facial_emotion": {
+          "dominant": "sad",
+          "confidence": 0.5162,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6937,
+          "valence": 0.6659,
+          "dominance": 0.6824,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 179.22,
+        "energy_mean": 0.019558
+      }
+    },
+    {
+      "segment_id": 46,
+      "start_s": 204.42000000000002,
+      "end_s": 208.42000000000002,
+      "conflict_score": 0.2052,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "facial_channel_downweighted[structural]: 0.6000 -> 0.2052 (x0.342, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "Its texture is quite different. You will see the texture. You will see silver color.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6894
+        },
+        "facial_emotion": {
+          "dominant": "sad",
+          "confidence": 0.7353,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6335,
+          "valence": 0.6334,
+          "dominance": 0.6282,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 168.77,
+        "energy_mean": 0.027585
+      }
+    },
+    {
+      "segment_id": 47,
+      "start_s": 208.42000000000002,
+      "end_s": 212.42000000000002,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "You will see the color of the color. You will see the color of the color.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5564
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5788,
+          "valence": 0.6203,
+          "dominance": 0.612,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 164.32,
+        "energy_mean": 0.033177
+      }
+    },
+    {
+      "segment_id": 48,
+      "start_s": 212.42000000000002,
+      "end_s": 216.72,
+      "conflict_score": 0.2052,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "facial_channel_downweighted[structural]: 0.6000 -> 0.2052 (x0.342, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "You will see the color of the color. Air technology will get outsole.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7152
+        },
+        "facial_emotion": {
+          "dominant": "fear",
+          "confidence": 0.3199,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6274,
+          "valence": 0.6713,
+          "dominance": 0.6552,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 195.12,
+        "energy_mean": 0.038
+      }
+    },
+    {
+      "segment_id": 49,
+      "start_s": 216.72,
+      "end_s": 220.72,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "The traction will be good. You will see the leather quality is different.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.686
+        },
+        "facial_emotion": {
+          "dominant": "sad",
+          "confidence": 0.5754,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5267,
+          "valence": 0.488,
+          "dominance": 0.5432,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 179.96,
+        "energy_mean": 0.017207
+      }
+    },
+    {
+      "segment_id": 50,
+      "start_s": 220.72,
+      "end_s": 225.72,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "You will see the tumble leather. The tongue will be in the mesh material.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7982
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8982,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6089,
+          "valence": 0.5318,
+          "dominance": 0.6188,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 169.91,
+        "energy_mean": 0.030184
+      }
+    },
+    {
+      "segment_id": 51,
+      "start_s": 225.72,
+      "end_s": 228.72,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "And the overall quality is also very good.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8739
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6116,
+          "valence": 0.4272,
+          "dominance": 0.6066,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 191.19,
+        "energy_mean": 0.022445
+      }
+    },
+    {
+      "segment_id": 52,
+      "start_s": 228.72,
+      "end_s": 232.72,
+      "conflict_score": 0.2052,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "facial_channel_downweighted[structural]: 0.6000 -> 0.2052 (x0.342, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "But you will see the air technology. The outssole will be very similar.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7496
+        },
+        "facial_emotion": {
+          "dominant": "sad",
+          "confidence": 0.5209,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5983,
+          "valence": 0.5543,
+          "dominance": 0.6148,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 187.31,
+        "energy_mean": 0.008636
+      }
+    },
+    {
+      "segment_id": 53,
+      "start_s": 232.72,
+      "end_s": 236.72,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "If I say Air Force 1 is similar. So if I say Air Force 1 is better.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6174
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7299,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6352,
+          "valence": 0.561,
+          "dominance": 0.6255,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 201.67,
+        "energy_mean": 0.044054
+      }
+    },
+    {
+      "segment_id": 54,
+      "start_s": 236.72,
+      "end_s": 239.72,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "The quality of the Air Force 1 is a little better.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7535
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7643,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5524,
+          "valence": 0.5924,
+          "dominance": 0.5765,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 197.67,
+        "energy_mean": 0.013883
+      }
+    },
+    {
+      "segment_id": 55,
+      "start_s": 239.72,
+      "end_s": 244.72,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Obviously, they are high priced. So quality is a good thing.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7479
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.863,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5166,
+          "valence": 0.4798,
+          "dominance": 0.5471,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 167.58,
+        "energy_mean": 0.019473
+      }
+    },
+    {
+      "segment_id": 56,
+      "start_s": 244.72,
+      "end_s": 247.92,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "So quality of materials, obviously, I will go for Air Force 1.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5295
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9484,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4698,
+          "valence": 0.5041,
+          "dominance": 0.4951,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 179.61,
+        "energy_mean": 0.015975
+      }
+    },
+    {
+      "segment_id": 57,
+      "start_s": 247.92,
+      "end_s": 252.52,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "Now let's talk about on-feed experience. On-feed experience, I will put three categories in the on-feed experience.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.723
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8225,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7141,
+          "valence": 0.5226,
+          "dominance": 0.6943,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 189.34,
+        "energy_mean": 0.010406
+      }
+    },
+    {
+      "segment_id": 58,
+      "start_s": 252.52,
+      "end_s": 257.12,
+      "conflict_score": 0.2052,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "facial_channel_downweighted[structural]: 0.6000 -> 0.2052 (x0.342, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "So first, let's talk about weight. So Air Force 1's weight is quite a lot.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7365
+        },
+        "facial_emotion": {
+          "dominant": "fear",
+          "confidence": 0.5737,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6133,
+          "valence": 0.5069,
+          "dominance": 0.6133,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 182.54,
+        "energy_mean": 0.010734
+      }
+    },
+    {
+      "segment_id": 59,
+      "start_s": 257.12,
+      "end_s": 261.02,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "It's a chunky design. And midsole is quite heavy.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.6972
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9661,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5692,
+          "valence": 0.5484,
+          "dominance": 0.6005,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 162.01,
+        "energy_mean": 0.022703
+      }
+    },
+    {
+      "segment_id": 60,
+      "start_s": 261.02,
+      "end_s": 267.12,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "So overall, this pair is quite heavy. Unlike coat vision low, I feel quite right.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6108
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8297,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6149,
+          "valence": 0.5846,
+          "dominance": 0.6237,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 184.45,
+        "energy_mean": 0.019462
+      }
+    },
+    {
+      "segment_id": 61,
+      "start_s": 267.12,
+      "end_s": 270.92,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "I feel quite a bit like Air Force 1. It's a little bit of weight.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.6418
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.6594,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.607,
+          "valence": 0.6595,
+          "dominance": 0.5902,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 163.83,
+        "energy_mean": 0.012114
+      }
+    },
+    {
+      "segment_id": 62,
+      "start_s": 270.92,
+      "end_s": 274.12,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "But it is better than Air Force 1. I feel quite good in weight.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8434
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9653,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4964,
+          "valence": 0.4862,
+          "dominance": 0.5285,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 166.85,
+        "energy_mean": 0.016277
+      }
+    },
+    {
+      "segment_id": 63,
+      "start_s": 274.12,
+      "end_s": 277.12,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "I feel quite a lot of weight. Let's talk about height.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.4617
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9866,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6786,
+          "valence": 0.5881,
+          "dominance": 0.6805,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 188.47,
+        "energy_mean": 0.016977
+      }
+    },
+    {
+      "segment_id": 64,
+      "start_s": 277.12,
+      "end_s": 280.12,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "It's a simple win in Air Force 1.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.9022
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9282,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5394,
+          "valence": 0.4715,
+          "dominance": 0.577,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 143.29,
+        "energy_mean": 0.006862
+      }
+    },
+    {
+      "segment_id": 65,
+      "start_s": 280.12,
+      "end_s": 287.12,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "In Air Force 1, you will get a little height. And if you want it, because I know that many people need height.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6138
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9498,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.564,
+          "valence": 0.7061,
+          "dominance": 0.593,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 141.68,
+        "energy_mean": 0.008326
+      }
+    },
+    {
+      "segment_id": 66,
+      "start_s": 287.12,
+      "end_s": 290.12,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "So if you want a shoe that you provide a little height,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7765
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7828,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5184,
+          "valence": 0.5058,
+          "dominance": 0.5496,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 154.57,
+        "energy_mean": 0.031266
+      }
+    },
+    {
+      "segment_id": 67,
+      "start_s": 290.12,
+      "end_s": 293.32,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "so Air Force 1 is one you should go for.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.5989
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9897,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4434,
+          "valence": 0.4363,
+          "dominance": 0.5,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 163.05,
+        "energy_mean": 0.010937
+      }
+    },
+    {
+      "segment_id": 68,
+      "start_s": 293.32,
+      "end_s": 296.32,
+      "conflict_score": 0.171,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "facial_channel_downweighted[structural]: 0.5000 -> 0.1710 (x0.342, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "Let's talk about the third thing. The comfort is Nike Air Force 1.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6366
+        },
+        "facial_emotion": {
+          "dominant": "happy",
+          "confidence": 0.9506,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.58,
+          "valence": 0.5164,
+          "dominance": 0.6052,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 166.22,
+        "energy_mean": 0.007619
+      }
+    },
+    {
+      "segment_id": 69,
+      "start_s": 296.32,
+      "end_s": 301.32,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "The Air technology user is slightly more comfortable than coat vision low.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.4648
+        },
+        "facial_emotion": {
+          "dominant": "fear",
+          "confidence": 0.7666,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4828,
+          "valence": 0.6186,
+          "dominance": 0.5167,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 156.22,
+        "energy_mean": 0.007878
+      }
+    },
+    {
+      "segment_id": 70,
+      "start_s": 301.32,
+      "end_s": 304.32,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Overall, if you tell me, I don't like Air Force 1.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.8337
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8182,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5822,
+          "valence": 0.6274,
+          "dominance": 0.5941,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 184.42,
+        "energy_mean": 0.015666
+      }
+    },
+    {
+      "segment_id": 71,
+      "start_s": 304.32,
+      "end_s": 307.52,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "I don't like it. I don't like it. Many people like it.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.9175
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.3821,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5122,
+          "valence": 0.5269,
+          "dominance": 0.5341,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 144.03,
+        "energy_mean": 0.014499
+      }
+    },
+    {
+      "segment_id": 72,
+      "start_s": 307.52,
+      "end_s": 311.52,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Many people live for it. But for me, it's not comfortable for me.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.6997
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8711,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.442,
+          "valence": 0.4794,
+          "dominance": 0.4837,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 148.02,
+        "energy_mean": 0.017017
+      }
+    },
+    {
+      "segment_id": 73,
+      "start_s": 311.52,
+      "end_s": 315.52,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "You can wear it normally for one day. But the comfort is not amazing.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.657
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.5023,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5457,
+          "valence": 0.3901,
+          "dominance": 0.5859,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 182.13,
+        "energy_mean": 0.010619
+      }
+    },
+    {
+      "segment_id": 74,
+      "start_s": 315.52,
+      "end_s": 318.52,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "Coat vision low is a very minor difference.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5612
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7701,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5156,
+          "valence": 0.4651,
+          "dominance": 0.5162,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 182.76,
+        "energy_mean": 0.035458
+      }
+    },
+    {
+      "segment_id": 75,
+      "start_s": 318.52,
+      "end_s": 321.52,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "You will get a little bit less. It can be a very good option.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.797
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.5097,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6639,
+          "valence": 0.7814,
+          "dominance": 0.6684,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 160.88,
+        "energy_mean": 0.022921
+      }
+    },
+    {
+      "segment_id": 76,
+      "start_s": 321.52,
+      "end_s": 324.71999999999997,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "If you wear it for one day,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6052
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.842,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4314,
+          "valence": 0.4137,
+          "dominance": 0.4639,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 153.53,
+        "energy_mean": 0.017884
+      }
+    },
+    {
+      "segment_id": 77,
+      "start_s": 324.71999999999997,
+      "end_s": 329.71999999999997,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "and you will get a little price. If we see it in comparison,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7387
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.915,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6015,
+          "valence": 0.5741,
+          "dominance": 0.622,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 167.1,
+        "energy_mean": 0.010789
+      }
+    },
+    {
+      "segment_id": 78,
+      "start_s": 329.71999999999997,
+      "end_s": 332.71999999999997,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "then Air Force 1 is better in comfort.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6092
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9957,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4567,
+          "valence": 0.4793,
+          "dominance": 0.4862,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 166.48,
+        "energy_mean": 0.01249
+      }
+    },
+    {
+      "segment_id": 79,
+      "start_s": 332.71999999999997,
+      "end_s": 336.71999999999997,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "Just because Air technology is used in it. Let's talk about the price difference.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7807
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8388,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6075,
+          "valence": 0.6715,
+          "dominance": 0.6398,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 142.1,
+        "energy_mean": 0.011736
+      }
+    },
+    {
+      "segment_id": 80,
+      "start_s": 336.71999999999997,
+      "end_s": 343.71999999999997,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "So here is the difference. Air Force 1 will get 7500 something.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.8172
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.639,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6596,
+          "valence": 0.645,
+          "dominance": 0.6643,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 173.21,
+        "energy_mean": 0.00663
+      }
+    },
+    {
+      "segment_id": 81,
+      "start_s": 343.71999999999997,
+      "end_s": 347.71999999999997,
+      "conflict_score": 0.2052,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "facial_channel_downweighted[structural]: 0.6000 -> 0.2052 (x0.342, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "And you will get a little discount. If you go to resellers,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5158
+        },
+        "facial_emotion": {
+          "dominant": "happy",
+          "confidence": 0.8117,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6327,
+          "valence": 0.5581,
+          "dominance": 0.6302,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 165.78,
+        "energy_mean": 0.012184
+      }
+    },
+    {
+      "segment_id": 82,
+      "start_s": 347.71999999999997,
+      "end_s": 351.92,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "you will get a good price. You will get a good price.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6691
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8819,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5765,
+          "valence": 0.4951,
+          "dominance": 0.5891,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 180.5,
+        "energy_mean": 0.017543
+      }
+    },
+    {
+      "segment_id": 83,
+      "start_s": 351.92,
+      "end_s": 355.92,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "And you will get a good price. If you go to resellers,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.5689
+        },
+        "facial_emotion": {
+          "dominant": "sad",
+          "confidence": 0.6028,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.621,
+          "valence": 0.5537,
+          "dominance": 0.6462,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 147.43,
+        "energy_mean": 0.024107
+      }
+    },
+    {
+      "segment_id": 84,
+      "start_s": 355.92,
+      "end_s": 358.92,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "but you can go to trusted resellers.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6587
+        },
+        "facial_emotion": {
+          "dominant": "happy",
+          "confidence": 0.5454,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6579,
+          "valence": 0.3842,
+          "dominance": 0.6597,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 159.55,
+        "energy_mean": 0.005073
+      }
+    },
+    {
+      "segment_id": 85,
+      "start_s": 358.92,
+      "end_s": 361.92,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Because it's a lot of fakes. So you have to be careful.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.8245
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7879,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5704,
+          "valence": 0.4915,
+          "dominance": 0.5971,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 149.72,
+        "energy_mean": 0.017162
+      }
+    },
+    {
+      "segment_id": 86,
+      "start_s": 361.92,
+      "end_s": 367.92,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "Now let's talk about Nike Coat Vision. It's retail is 4995.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.8944
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.909,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6408,
+          "valence": 0.6206,
+          "dominance": 0.639,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 165.83,
+        "energy_mean": 0.010263
+      }
+    },
+    {
+      "segment_id": 87,
+      "start_s": 367.92,
+      "end_s": 371.92,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "So you will get a good price. But you will get a good price.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5897
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9086,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6681,
+          "valence": 0.5357,
+          "dominance": 0.6624,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 180.74,
+        "energy_mean": 0.02073
+      }
+    },
+    {
+      "segment_id": 88,
+      "start_s": 371.92,
+      "end_s": 374.92,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "You will get a good price. Nike is not a discount.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.526
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8344,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6077,
+          "valence": 0.6542,
+          "dominance": 0.617,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 172.35,
+        "energy_mean": 0.020889
+      }
+    },
+    {
+      "segment_id": 89,
+      "start_s": 374.92,
+      "end_s": 378.92,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "You will get a good discount. You will get a good price. You will get a good price.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7462
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7701,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5482,
+          "valence": 0.4205,
+          "dominance": 0.5552,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 150.83,
+        "energy_mean": 0.018464
+      }
+    },
+    {
+      "segment_id": 90,
+      "start_s": 378.92,
+      "end_s": 382.12,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "Which I feel is a value for money.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6124
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.5576,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5421,
+          "valence": 0.5576,
+          "dominance": 0.6097,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 162.78,
+        "energy_mean": 0.009211
+      }
+    },
+    {
+      "segment_id": 91,
+      "start_s": 382.12,
+      "end_s": 386.12,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "If you get this in 4500. It's still better.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7271
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8971,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4378,
+          "valence": 0.4844,
+          "dominance": 0.4936,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 139.63,
+        "energy_mean": 0.01316
+      }
+    },
+    {
+      "segment_id": 92,
+      "start_s": 386.12,
+      "end_s": 390.12,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "You will get a good day wear sneakers.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8105
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8344,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.561,
+          "valence": 0.5705,
+          "dominance": 0.6,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 155.05,
+        "energy_mean": 0.025185
+      }
+    },
+    {
+      "segment_id": 93,
+      "start_s": 390.12,
+      "end_s": 393.12,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "And it will be as good as Air Force 1.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7473
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.6944,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4256,
+          "valence": 0.6302,
+          "dominance": 0.5022,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 140.1,
+        "energy_mean": 0.013522
+      }
+    },
+    {
+      "segment_id": 94,
+      "start_s": 393.12,
+      "end_s": 396.12,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "You will get a good replacement.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7794
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8438,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6082,
+          "valence": 0.6796,
+          "dominance": 0.6054,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 152.78,
+        "energy_mean": 0.023717
+      }
+    },
+    {
+      "segment_id": 95,
+      "start_s": 396.12,
+      "end_s": 401.12,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "And I have talked about it on recent topic. This is a very good alternative for Air Force 1.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8806
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.725,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5011,
+          "valence": 0.661,
+          "dominance": 0.5269,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 150.55,
+        "energy_mean": 0.010755
+      }
+    },
+    {
+      "segment_id": 96,
+      "start_s": 401.12,
+      "end_s": 406.32,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "If you can afford Air Force 1 and you still want to have that feeling.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.5109
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8457,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5215,
+          "valence": 0.3829,
+          "dominance": 0.5538,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 172.65,
+        "energy_mean": 0.004582
+      }
+    },
+    {
+      "segment_id": 97,
+      "start_s": 406.32,
+      "end_s": 409.52,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "I think Coat Vision low is the way to go. Price is the way to go.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7616
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.981,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4866,
+          "valence": 0.429,
+          "dominance": 0.5194,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 145.52,
+        "energy_mean": 0.011872
+      }
+    },
+    {
+      "segment_id": 98,
+      "start_s": 409.52,
+      "end_s": 415.52,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "I will say that the negative of it is the way to go. If I compare Air Force 1 with Air Force 1.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.474
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7427,
+          "frame_count": 6,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.546,
+          "valence": 0.4626,
+          "dominance": 0.5525,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 157.95,
+        "energy_mean": 0.008194
+      }
+    },
+    {
+      "segment_id": 99,
+      "start_s": 415.52,
+      "end_s": 419.52,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "So I have a good win. If I put a price in the back of it.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.5971
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8865,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6433,
+          "valence": 0.7606,
+          "dominance": 0.6515,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 169.07,
+        "energy_mean": 0.018125
+      }
+    },
+    {
+      "segment_id": 100,
+      "start_s": 419.52,
+      "end_s": 424.52,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "I think Coat Vision low wins. This comparison all boils down to the price comparison.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6848
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9295,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5442,
+          "valence": 0.5279,
+          "dominance": 0.5603,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 155.33,
+        "energy_mean": 0.010278
+      }
+    },
+    {
+      "segment_id": 101,
+      "start_s": 424.52,
+      "end_s": 429.71999999999997,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "So now let's talk about my final conclusion. My final conclusion is that price is low.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.627
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7095,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6553,
+          "valence": 0.57,
+          "dominance": 0.6381,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 175.97,
+        "energy_mean": 0.01493
+      }
+    },
+    {
+      "segment_id": 102,
+      "start_s": 429.71999999999997,
+      "end_s": 434.92,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "I think Nike Coat Vision low is best. If you have a price or budget is not enough.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.5056
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7084,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5655,
+          "valence": 0.5918,
+          "dominance": 0.6232,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 153.39,
+        "energy_mean": 0.012638
+      }
+    },
+    {
+      "segment_id": 103,
+      "start_s": 434.92,
+      "end_s": 437.92,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "I would highly suggest you to go for this.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7128
+        },
+        "facial_emotion": {
+          "dominant": "fear",
+          "confidence": 0.5609,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4562,
+          "valence": 0.4316,
+          "dominance": 0.5184,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 129.83,
+        "energy_mean": 0.014909
+      }
+    },
+    {
+      "segment_id": 104,
+      "start_s": 437.92,
+      "end_s": 441.92,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "So this was the final conclusion. I hope you like this video.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7792
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9143,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5844,
+          "valence": 0.6052,
+          "dominance": 0.6056,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 177.2,
+        "energy_mean": 0.018724
+      }
+    },
+    {
+      "segment_id": 105,
+      "start_s": 441.92,
+      "end_s": 445.92,
+      "conflict_score": 0.2052,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "facial_channel_downweighted[structural]: 0.6000 -> 0.2052 (x0.342, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "And I am doing such comparisons. So you will see the playlist on the top of it.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7757
+        },
+        "facial_emotion": {
+          "dominant": "fear",
+          "confidence": 0.5997,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5897,
+          "valence": 0.6317,
+          "dominance": 0.5912,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 169.42,
+        "energy_mean": 0.017244
+      }
+    },
+    {
+      "segment_id": 106,
+      "start_s": 445.92,
+      "end_s": 448.92,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "I have also done the Air Force 1 and Comet.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7929
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9518,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.571,
+          "valence": 0.6052,
+          "dominance": 0.5745,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 166.81,
+        "energy_mean": 0.012072
+      }
+    },
+    {
+      "segment_id": 107,
+      "start_s": 448.92,
+      "end_s": 452.92,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "If you want, I will also do the Coat Vision and Comet. Tell me in the comments.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7841
+        },
+        "facial_emotion": {
+          "dominant": "sad",
+          "confidence": 0.4034,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6902,
+          "valence": 0.6807,
+          "dominance": 0.6507,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 158.58,
+        "energy_mean": 0.026441
+      }
+    },
+    {
+      "segment_id": 108,
+      "start_s": 452.92,
+      "end_s": 456.92,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "I hope you like this video. If you have seen my previous videos.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7656
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8799,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6324,
+          "valence": 0.6132,
+          "dominance": 0.6342,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 183.39,
+        "energy_mean": 0.017186
+      }
+    },
+    {
+      "segment_id": 109,
+      "start_s": 456.92,
+      "end_s": 459.92,
+      "conflict_score": 0.8,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": true,
+      "text": "You will see it here. And you will see it here. You will see it here.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5731
+        },
+        "facial_emotion": {
+          "dominant": "fear",
+          "confidence": 0.9325,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6615,
+          "valence": 0.692,
+          "dominance": 0.6295,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 183.64,
+        "energy_mean": 0.011424
+      }
+    },
+    {
+      "segment_id": 110,
+      "start_s": 459.92,
+      "end_s": 463.92,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Bye bye.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.5775
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7536,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5009,
+          "valence": 0.6015,
+          "dominance": 0.5336,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 147.9,
+        "energy_mean": 0.017301
+      }
+    }
+  ],
+  "video_title": "IS COURT VISION LOW BETTER THAN AIR FORCE 1? | NIKE COURT VISION VS NIKE AIR FORCE 1 FULL COMPARISON",
+  "sweep_id": "nike-year-365d-d096f4e7"
+}

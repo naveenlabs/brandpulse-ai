@@ -1,0 +1,434 @@
+{
+  "video_url": "https://youtu.be/1VjPETN3m6U?si=Sz3eN73PGGBOSgHN",
+  "brand_name": "Apple",
+  "authenticity_score": 28.71,
+  "brand_health_score": 31.0,
+  "segment_count": 8,
+  "flagged_segments": [
+    {
+      "segment_id": 0,
+      "start_s": 0.0,
+      "end_s": 5.5600000000000005,
+      "conflict_score": 0.789,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": true,
+      "text": "Today we are talking about six months later with the 17 Pro Max. How has my experience been?",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.9937
+        },
+        "facial_emotion": {
+          "dominant": "sad",
+          "confidence": 0.9333,
+          "frame_count": 5
+        },
+        "vocal_emotion": "angry",
+        "pitch_mean_hz": 0.0,
+        "energy_mean": 0.0224
+      }
+    },
+    {
+      "segment_id": 2,
+      "start_s": 12.44,
+      "end_s": 16.12,
+      "conflict_score": 0.79,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": true,
+      "text": "but it might not be for everybody if you are somebody who you are looking for",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.9994
+        },
+        "facial_emotion": {
+          "dominant": "sad",
+          "confidence": 0.7723,
+          "frame_count": 1
+        },
+        "vocal_emotion": "angry",
+        "pitch_mean_hz": 216.22,
+        "energy_mean": 0.022433
+      }
+    },
+    {
+      "segment_id": 3,
+      "start_s": 16.12,
+      "end_s": 27.28,
+      "conflict_score": 0.78,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": true,
+      "text": "the 17 Pro Max and you want to know are you going to use your hard earned money? Excuse me on this. Are you going to spend that kind of money on this, man? I want to help you make that decision today.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.9463
+        },
+        "facial_emotion": {
+          "dominant": "angry",
+          "confidence": 0.9056,
+          "frame_count": 4
+        },
+        "vocal_emotion": "angry",
+        "pitch_mean_hz": 148.15,
+        "energy_mean": 0.018097
+      }
+    },
+    {
+      "segment_id": 5,
+      "start_s": 33.72,
+      "end_s": 44.92,
+      "conflict_score": 0.7895,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": true,
+      "text": "If you don't know this, the previous iPhone was a very interesting design. It was made completely out of titanium. And so this iPhone 17 is aluminum.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.9749
+        },
+        "facial_emotion": {
+          "dominant": "angry",
+          "confidence": 0.9028,
+          "frame_count": 4
+        },
+        "vocal_emotion": "angry",
+        "pitch_mean_hz": 0.0,
+        "energy_mean": 0.011345
+      }
+    },
+    {
+      "segment_id": 6,
+      "start_s": 44.92,
+      "end_s": 48.480000000000004,
+      "conflict_score": 1.0,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": true,
+      "text": "This iPhone 16 Pro Max is titanium.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.814
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9386,
+          "frame_count": 1
+        },
+        "vocal_emotion": "angry",
+        "pitch_mean_hz": 133.33,
+        "energy_mean": 0.014931
+      }
+    }
+  ],
+  "comment_sentiment": {
+    "label": "NEUTRAL",
+    "confidence": 0.6507,
+    "comment_count": 100,
+    "distribution": {
+      "POSITIVE": 36,
+      "NEUTRAL": 28,
+      "NEGATIVE": 36
+    }
+  },
+  "bias_caveat": "IMPORTANT: Facial emotion recognition (DeepFace) has documented accuracy disparities across skin tone and gender (Buolamwini & Gebru, 2018; Fan et al., 2023). Authenticity scores informed by facial data should be interpreted with this limitation in mind.",
+  "all_comments": [
+    {
+      "text": "How about that Zoom! It's nuts!",
+      "label": "POSITIVE",
+      "confidence": 0.5151
+    },
+    {
+      "text": "Just bought this today. My very first ever Pro phone. Loving it so far.",
+      "label": "POSITIVE",
+      "confidence": 0.5612
+    },
+    {
+      "text": "My 13 pro max running 18.6.2 finally is ready for replacement.  Just ordered the 17 pro max and the ultra 3 watch",
+      "label": "POSITIVE",
+      "confidence": 0.5871
+    },
+    {
+      "text": "Love my new 17 Pro Max in deep blue with black Otterbox 👍",
+      "label": "POSITIVE",
+      "confidence": 0.517
+    },
+    {
+      "text": "I’ve had the ‘regular’ Pro size since it came out, recently went to the 17 Pro Max. It’s amazing how quickly you get used to the bigger size. Plus, the battery is fucking nuts",
+      "label": "POSITIVE",
+      "confidence": 0.8523
+    },
+    {
+      "text": "Use a case when I go out, without when I’m home. Bigger screen and better battery has been well worth it as I was coming from an older smaller iPhone.",
+      "label": "POSITIVE",
+      "confidence": 0.7625
+    },
+    {
+      "text": "I have the same Deep Blue. First iPhone I've used without a case and like yours, zero marks or scratches.",
+      "label": "NEGATIVE",
+      "confidence": 0.4092
+    },
+    {
+      "text": "If you enable the double-tap feature on the camera button, it becomes the fastest way to launch your camera app. Love it!",
+      "label": "NEUTRAL",
+      "confidence": 0.4937
+    },
+    {
+      "text": "loved yr presentation \nive subscribed",
+      "label": "POSITIVE",
+      "confidence": 0.7164
+    },
+    {
+      "text": "I think the camera button is great for actually taking the photos. Especially horizontally, ur finger rests right there that way you don’t have to tap the screen and risk getting a shaky shot",
+      "label": "NEGATIVE",
+      "confidence": 0.5737
+    },
+    {
+      "text": "Got mine in sliver and love it the battery is the best last all day",
+      "label": "POSITIVE",
+      "confidence": 0.5217
+    },
+    {
+      "text": "I’ve never had a problem with max and I’m getting my first one in Monday",
+      "label": "POSITIVE",
+      "confidence": 0.5334
+    }
+  ],
+  "all_segments": [
+    {
+      "segment_id": 0,
+      "start_s": 0.0,
+      "end_s": 5.5600000000000005,
+      "conflict_score": 0.789,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": true,
+      "text": "Today we are talking about six months later with the 17 Pro Max. How has my experience been?",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.9937
+        },
+        "facial_emotion": {
+          "dominant": "sad",
+          "confidence": 0.9333,
+          "frame_count": 5
+        },
+        "vocal_emotion": "angry",
+        "pitch_mean_hz": 0.0,
+        "energy_mean": 0.0224
+      }
+    },
+    {
+      "segment_id": 1,
+      "start_s": 5.5600000000000005,
+      "end_s": 12.44,
+      "conflict_score": 0.3,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "This has been a really, really, really interesting phone. And I've got some reasons why I think it's a great phone,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.9993
+        },
+        "facial_emotion": {
+          "dominant": "sad",
+          "confidence": 0.8403,
+          "frame_count": 2
+        },
+        "vocal_emotion": "angry",
+        "pitch_mean_hz": 0.0,
+        "energy_mean": 0.014085
+      }
+    },
+    {
+      "segment_id": 2,
+      "start_s": 12.44,
+      "end_s": 16.12,
+      "conflict_score": 0.79,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": true,
+      "text": "but it might not be for everybody if you are somebody who you are looking for",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.9994
+        },
+        "facial_emotion": {
+          "dominant": "sad",
+          "confidence": 0.7723,
+          "frame_count": 1
+        },
+        "vocal_emotion": "angry",
+        "pitch_mean_hz": 216.22,
+        "energy_mean": 0.022433
+      }
+    },
+    {
+      "segment_id": 3,
+      "start_s": 16.12,
+      "end_s": 27.28,
+      "conflict_score": 0.78,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": true,
+      "text": "the 17 Pro Max and you want to know are you going to use your hard earned money? Excuse me on this. Are you going to spend that kind of money on this, man? I want to help you make that decision today.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.9463
+        },
+        "facial_emotion": {
+          "dominant": "angry",
+          "confidence": 0.9056,
+          "frame_count": 4
+        },
+        "vocal_emotion": "angry",
+        "pitch_mean_hz": 148.15,
+        "energy_mean": 0.018097
+      }
+    },
+    {
+      "segment_id": 4,
+      "start_s": 27.28,
+      "end_s": 33.72,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "POSSIBLE_CONCERNED_TONE"
+      ],
+      "flagged": false,
+      "text": "Now, one of the first questions I had with this 17 Pro Max is how is the actual material, the aluminum going to hold up.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.9627
+        },
+        "facial_emotion": {
+          "dominant": "surprise",
+          "confidence": 0.9141,
+          "frame_count": 1
+        },
+        "vocal_emotion": "angry",
+        "pitch_mean_hz": 0.0,
+        "energy_mean": 0.026509
+      }
+    },
+    {
+      "segment_id": 5,
+      "start_s": 33.72,
+      "end_s": 44.92,
+      "conflict_score": 0.7895,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": true,
+      "text": "If you don't know this, the previous iPhone was a very interesting design. It was made completely out of titanium. And so this iPhone 17 is aluminum.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.9749
+        },
+        "facial_emotion": {
+          "dominant": "angry",
+          "confidence": 0.9028,
+          "frame_count": 4
+        },
+        "vocal_emotion": "angry",
+        "pitch_mean_hz": 0.0,
+        "energy_mean": 0.011345
+      }
+    },
+    {
+      "segment_id": 6,
+      "start_s": 44.92,
+      "end_s": 48.480000000000004,
+      "conflict_score": 1.0,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": true,
+      "text": "This iPhone 16 Pro Max is titanium.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.814
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9386,
+          "frame_count": 1
+        },
+        "vocal_emotion": "angry",
+        "pitch_mean_hz": 133.33,
+        "energy_mean": 0.014931
+      }
+    },
+    {
+      "segment_id": 7,
+      "start_s": 48.480000000000004,
+      "end_s": 53.72,
+      "conflict_score": 0.6667,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "And the question was how are they going to hold up compared to each other? I'm answering that in another video.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.999
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7598,
+          "frame_count": 4
+        },
+        "vocal_emotion": "angry",
+        "pitch_mean_hz": 0.0,
+        "energy_mean": 0.01493
+      }
+    }
+  ]
+}

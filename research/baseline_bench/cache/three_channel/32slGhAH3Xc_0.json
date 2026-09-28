@@ -1,0 +1,35 @@
+{
+ "uid": "32slGhAH3Xc_0",
+ "system": "three_channel",
+ "video_id": "32slGhAH3Xc",
+ "segment_id": 0,
+ "split": "selection",
+ "payload": {
+  "segment_id": 0,
+  "start_s": 0.0,
+  "end_s": 5.78,
+  "transcript": "This is the just announced Samsung Galaxy Z Flip 5. And when you first look at it, it doesn't make any sense.",
+  "transcript_sentiment": "NEGATIVE (0.87)",
+  "vocal_emotion": "NEUTRAL (arousal 0.60)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.98)"
+ },
+ "seconds": 4.116,
+ "raw": "{\n  \"segment_id\": 0,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"video_comment_sentiment\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words convey a negative sentiment, but the audience's comments suggest a positive sentiment, indicating a conflict between the creator's tone and the audience's reaction.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 0,
+  "start_s": 0.0,
+  "end_s": 5.78,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: video_comment_sentiment"
+  ],
+  "flagged": false
+ }
+}

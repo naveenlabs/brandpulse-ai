@@ -1,0 +1,27 @@
+{
+ "uid": "Rlw_CI7pOKg_0",
+ "system": "text_only_llm_anchored",
+ "video_id": "Rlw_CI7pOKg",
+ "segment_id": 0,
+ "split": "holdout",
+ "payload": {
+  "segment_id": 0,
+  "start_s": 0.0,
+  "end_s": 5.04,
+  "transcript": "oh it's citrus is it it's 599 is it everyone's talking about the macbook neo and you know fair"
+ },
+ "seconds": 4.021,
+ "raw": "{\n  \"segment_id\": 0,\n  \"conflict_score\": 0.75,\n  \"channels_in_conflict\": [],\n  \"flags\": [\"POTENTIAL_PAID_PROMOTION\"],\n  \"narrative\": \"The creator uses superlatives ('everyone's talking about') and the price is mentioned, which could be a sign of promotional language. The tone is also somewhat defensive ('fair'), which may indicate a scripted response.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 0,
+  "start_s": 0.0,
+  "end_s": 5.04,
+  "conflict_score": 0.75,
+  "conflict_reasons": [
+   "POTENTIAL_PAID_PROMOTION"
+  ],
+  "flagged": true
+ }
+}

@@ -1,0 +1,348 @@
+{
+  "generated_by": "ui_evidence/extract_figures.py",
+  "corpus": {
+    "report_count": 9,
+    "distinct_videos": 9,
+    "segments_total": 1202,
+    "comments_total": 837,
+    "controller_calls_total": 1202,
+    "no_face_segments": 508,
+    "no_face_share_pct": 42.3,
+    "surprise_segments": 27,
+    "no_valence_segments": 535,
+    "no_valence_share_pct": 44.5,
+    "worst_no_face_report": "Apple (iPhone Duo).json",
+    "worst_no_face_share_pct": 75.3,
+    "best_no_face_share_pct": 1.6,
+    "flagged_total": 58,
+    "authenticity_min": 35.76,
+    "authenticity_max": 60.21,
+    "brand_health_min": 14.3,
+    "brand_health_max": 81.57,
+    "largest_report_segments": 209,
+    "channel_readings": {
+      "transcript": 1202,
+      "facial": 667,
+      "vocal": 1198
+    },
+    "reports": [
+      {
+        "filename": "Adidas (Samba).json",
+        "brand_name": "Adidas",
+        "written_at": 1790450043.502,
+        "written_after_controller_swap": true,
+        "segments": 97,
+        "no_face_segments": 24,
+        "no_valence_segments": 25,
+        "no_face_share": 0.2474,
+        "flagged": 5,
+        "authenticity_score": 47.63,
+        "brand_health_score": 77.37,
+        "has_vocal_caveat": true,
+        "vocal_emotion_shape": "dict"
+      },
+      {
+        "filename": "Apple (iPhone 18 Pro Max).json",
+        "brand_name": "Apple",
+        "written_at": 1790332296.626,
+        "written_after_controller_swap": true,
+        "segments": 148,
+        "no_face_segments": 86,
+        "no_valence_segments": 87,
+        "no_face_share": 0.5811,
+        "flagged": 3,
+        "authenticity_score": 47.3,
+        "brand_health_score": 76.53,
+        "has_vocal_caveat": true,
+        "vocal_emotion_shape": "dict"
+      },
+      {
+        "filename": "Apple (iPhone Duo).json",
+        "brand_name": "Apple",
+        "written_at": 1790344439.617,
+        "written_after_controller_swap": true,
+        "segments": 166,
+        "no_face_segments": 125,
+        "no_valence_segments": 132,
+        "no_face_share": 0.753,
+        "flagged": 3,
+        "authenticity_score": 52.06,
+        "brand_health_score": 78.63,
+        "has_vocal_caveat": true,
+        "vocal_emotion_shape": "dict"
+      },
+      {
+        "filename": "Creed (Aventus).json",
+        "brand_name": "Creed",
+        "written_at": 1790337781.541,
+        "written_after_controller_swap": true,
+        "segments": 108,
+        "no_face_segments": 38,
+        "no_valence_segments": 47,
+        "no_face_share": 0.3519,
+        "flagged": 5,
+        "authenticity_score": 48.6,
+        "brand_health_score": 77.51,
+        "has_vocal_caveat": true,
+        "vocal_emotion_shape": "dict"
+      },
+      {
+        "filename": "Google (Pixel 10 Pro).json",
+        "brand_name": "Google",
+        "written_at": 1790447444.979,
+        "written_after_controller_swap": true,
+        "segments": 88,
+        "no_face_segments": 46,
+        "no_valence_segments": 46,
+        "no_face_share": 0.5227,
+        "flagged": 1,
+        "authenticity_score": 60.21,
+        "brand_health_score": 81.57,
+        "has_vocal_caveat": true,
+        "vocal_emotion_shape": "dict"
+      },
+      {
+        "filename": "Louis Vuitton (Imagination).json",
+        "brand_name": "Louis Vuitton",
+        "written_at": 1790340265.065,
+        "written_after_controller_swap": true,
+        "segments": 126,
+        "no_face_segments": 2,
+        "no_valence_segments": 7,
+        "no_face_share": 0.0159,
+        "flagged": 7,
+        "authenticity_score": 53.74,
+        "brand_health_score": 80.13,
+        "has_vocal_caveat": true,
+        "vocal_emotion_shape": "dict"
+      },
+      {
+        "filename": "Nike (Mind 001).json",
+        "brand_name": "Nike",
+        "written_at": 1790336267.943,
+        "written_after_controller_swap": true,
+        "segments": 209,
+        "no_face_segments": 82,
+        "no_valence_segments": 83,
+        "no_face_share": 0.3923,
+        "flagged": 4,
+        "authenticity_score": 45.93,
+        "brand_health_score": 75.51,
+        "has_vocal_caveat": true,
+        "vocal_emotion_shape": "dict"
+      },
+      {
+        "filename": "Samsung (Galaxy S26 Ultra).json",
+        "brand_name": "Samsung",
+        "written_at": 1790334335.493,
+        "written_after_controller_swap": true,
+        "segments": 144,
+        "no_face_segments": 71,
+        "no_valence_segments": 73,
+        "no_face_share": 0.4931,
+        "flagged": 1,
+        "authenticity_score": 48.1,
+        "brand_health_score": 76.55,
+        "has_vocal_caveat": true,
+        "vocal_emotion_shape": "dict"
+      },
+      {
+        "filename": "Sony (WH-1000XM6).json",
+        "brand_name": "Sony",
+        "written_at": 1790341842.973,
+        "written_after_controller_swap": true,
+        "segments": 116,
+        "no_face_segments": 34,
+        "no_valence_segments": 35,
+        "no_face_share": 0.2931,
+        "flagged": 29,
+        "authenticity_score": 35.76,
+        "brand_health_score": 14.3,
+        "has_vocal_caveat": true,
+        "vocal_emotion_shape": "dict"
+      }
+    ],
+    "written_after_controller_swap": 9,
+    "written_before_controller_swap": 0,
+    "provenance_basis": "file modification time in outputs/",
+    "caution": "Descriptive of the 9 runs saved on disk, not a performance claim. By file date 0 predate the 05 Sep 2026 controller swap and 9 postdate it; controller_bench/ measured that swap at ~49 points of Authenticity on byte-identical channel inputs."
+  },
+  "channels": [
+    {
+      "channel": "comment",
+      "label": "Audience comments",
+      "model": "cardiffnlp XLM-RoBERTa, fine-tuned",
+      "accuracy_pct": 78.7,
+      "n": 150,
+      "correct": 118,
+      "basis": "two videos neither model was trained on",
+      "source": "comment_bench/v2/holdout/HOLDOUT_RESULT.md",
+      "must_contain": [
+        "78.67%",
+        "(118/150)"
+      ]
+    },
+    {
+      "channel": "transcript",
+      "label": "Transcript sentiment",
+      "model": "cardiffnlp XLM-RoBERTa",
+      "accuracy_pct": 67.8,
+      "n": 199,
+      "correct": null,
+      "basis": "199 segments, 4 speakers that played no part in selection",
+      "source": "transcript_bench/WINNER.md",
+      "must_contain": [
+        "0.678",
+        "199 segments"
+      ]
+    },
+    {
+      "channel": "vocal",
+      "label": "Vocal prosody",
+      "model": "audeering wav2vec2, read on arousal",
+      "accuracy_pct": 48.9,
+      "n": 47,
+      "correct": 23,
+      "basis": "held-out speakers",
+      "source": "vocal_bench/VOCAL_MODEL_ANALYSIS.md",
+      "must_contain": [
+        "48.9%",
+        "23/47"
+      ]
+    },
+    {
+      "channel": "facial",
+      "label": "Facial emotion",
+      "model": "DeepFace FER-2013 head",
+      "accuracy_pct": 34.2,
+      "n": 114,
+      "correct": 39,
+      "basis": "held-out speakers",
+      "source": "facial_bench/v2/FACIAL_MODEL_ANALYSIS_V2.md",
+      "must_contain": [
+        "34.2%",
+        "(39/114)"
+      ]
+    }
+  ],
+  "facial_references": [
+    {
+      "name": "always-NEUTRAL constant",
+      "value_pct": 67.5,
+      "n": 114,
+      "correct": 77,
+      "source": "facial_bench/v2/FACIAL_MODEL_ANALYSIS_V2.md",
+      "must_contain": [
+        "67.5%",
+        "(77/114)"
+      ]
+    },
+    {
+      "name": "human ceiling",
+      "value_pct": 87.5,
+      "n": 48,
+      "correct": 42,
+      "note": "48 hidden duplicate frames, Cohen's kappa 0.804",
+      "source": "facial_bench/v2/FACIAL_MODEL_ANALYSIS_V2.md",
+      "must_contain": [
+        "87.5%",
+        "(42/48)",
+        "0.804"
+      ]
+    }
+  ],
+  "controller_references": [
+    {
+      "model": "llama3.2",
+      "role": "replaced 05 Sep 2026",
+      "probe": "constructed polar probes",
+      "detected": 8,
+      "total": 62,
+      "source": "controller_bench/CONTROLLER_MODEL_ANALYSIS.md",
+      "must_contain": [
+        "8 of 62",
+        "12.9%"
+      ]
+    },
+    {
+      "model": "llama3.1:8b",
+      "role": "adopted 05 Sep 2026",
+      "probe": "constructed polar probes",
+      "detected": 62,
+      "total": 62,
+      "source": "controller_bench/CONTROLLER_MODEL_ANALYSIS.md",
+      "must_contain": [
+        "62 of 62"
+      ]
+    },
+    {
+      "model": "llama3.2",
+      "role": "replaced 05 Sep 2026",
+      "probe": "real cached segments",
+      "detected": 11,
+      "total": 81,
+      "source": "controller_bench/CONTROLLER_MODEL_ANALYSIS.md",
+      "must_contain": [
+        "11 of 81"
+      ]
+    },
+    {
+      "model": "llama3.1:8b",
+      "role": "adopted 05 Sep 2026",
+      "probe": "real cached segments",
+      "detected": 81,
+      "total": 81,
+      "source": "controller_bench/CONTROLLER_MODEL_ANALYSIS.md",
+      "must_contain": [
+        "81 of 81"
+      ]
+    }
+  ],
+  "page_claims": [
+    {
+      "claim": "facial channel calls 33.8% of verified-neutral held-out frames NEGATIVE",
+      "source": "facial_bench/v2/FACIAL_MODEL_ANALYSIS_V2.md",
+      "must_contain": [
+        "33.8%"
+      ]
+    },
+    {
+      "claim": "yunet: 98.1% on unseen faces, 0 false positives on 251 faceless frames",
+      "source": "facial_bench/v2/FACIAL_MODEL_ANALYSIS_V2.md",
+      "must_contain": [
+        "98.1%",
+        "0 of 251"
+      ]
+    },
+    {
+      "claim": "vocal channel within-video rank correlation +0.159 over 147 clips",
+      "source": "vocal_bench/SPEAKER_NORM_RESULT.md",
+      "must_contain": [
+        "+0.159"
+      ]
+    },
+    {
+      "claim": "a perfect implementation of the scoring rule flags 0 of 62 polar probes",
+      "source": "controller_bench/CONTROLLER_MODEL_ANALYSIS.md",
+      "must_contain": [
+        "0 of 62"
+      ]
+    },
+    {
+      "claim": "the controller swap moved mean Authenticity by 49.08 points",
+      "source": "controller_bench/CONTROLLER_MODEL_ANALYSIS.md",
+      "must_contain": [
+        "49.08"
+      ]
+    }
+  ],
+  "pipeline": {
+    "conflict_flag_threshold": 0.75,
+    "vocal_only_conflict_weight": 0.489,
+    "facial_only_conflict_weight": 0.342,
+    "ollama_model": "llama3.1:8b",
+    "ollama_base_url": "http://localhost:11434",
+    "channel_coverage_floor": 0.5
+  },
+  "test_count": 2189
+}

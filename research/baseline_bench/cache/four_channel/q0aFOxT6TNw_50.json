@@ -1,0 +1,36 @@
+{
+ "uid": "q0aFOxT6TNw_50",
+ "system": "four_channel",
+ "video_id": "q0aFOxT6TNw",
+ "segment_id": 50,
+ "split": "selection",
+ "payload": {
+  "segment_id": 50,
+  "start_s": 297.68,
+  "end_s": 303.46,
+  "transcript": "you can check out Tyler Stallman's review, which I'll link below. It's really in-depth, and he shot the whole thing also on the iPhone.",
+  "transcript_sentiment": "POSITIVE (0.63)",
+  "vocal_emotion": "NEUTRAL (arousal 0.59)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "neutral (0.54)",
+  "video_comment_sentiment": "POSITIVE (0.98)"
+ },
+ "seconds": 4.628,
+ "raw": "{\n  \"segment_id\": 50,\n  \"conflict_score\": 0.5,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"vocal_emotion\", \"facial_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and tone suggest a positive sentiment, but their facial expression and vocal tone convey a more neutral emotion, indicating a conflict between the creator's intended message and their actual emotional state.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 50,
+  "start_s": 297.68,
+  "end_s": 303.46,
+  "conflict_score": 0.5,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: vocal_emotion",
+   "channels_in_conflict: facial_emotion"
+  ],
+  "flagged": false
+ }
+}

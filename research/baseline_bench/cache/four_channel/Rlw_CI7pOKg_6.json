@@ -1,0 +1,35 @@
+{
+ "uid": "Rlw_CI7pOKg_6",
+ "system": "four_channel",
+ "video_id": "Rlw_CI7pOKg",
+ "segment_id": 6,
+ "split": "holdout",
+ "payload": {
+  "segment_id": 6,
+  "start_s": 32.160000000000004,
+  "end_s": 41.68,
+  "transcript": "are going to want to buy to be fair though this new macbook neo at 599 499 for student teacher",
+  "transcript_sentiment": "NEUTRAL (0.68)",
+  "vocal_emotion": "POSITIVE (arousal 0.70)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "surprise (0.88)",
+  "video_comment_sentiment": "POSITIVE (0.98)"
+ },
+ "seconds": 4.062,
+ "raw": "{\n  \"segment_id\": 6,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and face show a neutral and surprised tone, respectively, but their voice conveys a positive emotion, indicating a conflict between the channels.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 6,
+  "start_s": 32.160000000000004,
+  "end_s": 41.68,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion"
+  ],
+  "flagged": false
+ }
+}

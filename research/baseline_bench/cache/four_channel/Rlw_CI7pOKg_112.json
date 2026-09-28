@@ -1,0 +1,36 @@
+{
+ "uid": "Rlw_CI7pOKg_112",
+ "system": "four_channel",
+ "video_id": "Rlw_CI7pOKg",
+ "segment_id": 112,
+ "split": "holdout",
+ "payload": {
+  "segment_id": 112,
+  "start_s": 651.92,
+  "end_s": 656.0,
+  "transcript": "cool the chip and you'll get slightly better performance and crucially you can just spec the pros",
+  "transcript_sentiment": "POSITIVE (0.66)",
+  "vocal_emotion": "POSITIVE (arousal 0.66)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "neutral (0.65)",
+  "video_comment_sentiment": "POSITIVE (0.98)"
+ },
+ "seconds": 3.916,
+ "raw": "{\n  \"segment_id\": 112,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words convey a positive sentiment, but their facial expression is neutral, indicating a potential conflict between verbal and non-verbal cues.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 112,
+  "start_s": 651.92,
+  "end_s": 656.0,
+  "conflict_score": 0.2052,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "facial_channel_downweighted[structural]: 0.6000 -> 0.2052 (x0.342, measured channel accuracy)"
+  ],
+  "flagged": false
+ }
+}

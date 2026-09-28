@@ -1,0 +1,1689 @@
+<title>Vocal Tone Rating</title>
+<style>
+:root {
+  --bg:#fbfbfa; --fg:#1a1a19; --mut:#6b6b68; --line:#e3e3e0; --card:#fff;
+  --accent:#2f6f4f; --warn:#8a4b2a;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg:#1a1a19; --fg:#ececeb; --mut:#9a9a96; --line:#333331; --card:#232322;
+    --accent:#7fc0a0; --warn:#d99b6a;
+  }
+}
+:root[data-theme="dark"] {
+  --bg:#1a1a19; --fg:#ececeb; --mut:#9a9a96; --line:#333331; --card:#232322;
+  --accent:#7fc0a0; --warn:#d99b6a;
+}
+* { box-sizing:border-box; }
+body { background:var(--bg); color:var(--fg); margin:0;
+  font:15px/1.55 ui-sans-serif,-apple-system,"Segoe UI",sans-serif; }
+.wrap { max-width:680px; margin:0 auto; padding:28px 20px 120px; }
+h1 { font-size:1.5rem; margin:0 0 4px; letter-spacing:-.01em; }
+.sub { color:var(--mut); margin:0 0 24px; }
+.box { background:var(--card); border:1px solid var(--line); border-radius:10px;
+  padding:16px 18px; margin:0 0 20px; }
+.box h2 { font-size:.95rem; margin:0 0 10px; text-transform:uppercase;
+  letter-spacing:.06em; color:var(--mut); }
+table { border-collapse:collapse; width:100%; }
+td { padding:3px 8px 3px 0; vertical-align:top; }
+td.k { font-weight:700; color:var(--accent); width:1.6em; }
+td.d { color:var(--mut); }
+.rule { border-left:3px solid var(--warn); padding:2px 0 2px 12px; margin:12px 0 0;
+  color:var(--fg); }
+.card { background:var(--card); border:1px solid var(--line); border-radius:10px;
+  padding:14px 16px; margin:0 0 14px; }
+.card.rated { border-color:var(--accent); }
+.head { display:flex; gap:12px; align-items:center; margin-bottom:8px;
+  font-size:.82rem; color:var(--mut); }
+.num { font-weight:600; color:var(--fg); }
+.done { margin-left:auto; color:var(--accent); font-weight:600; }
+audio { width:100%; height:36px; }
+.ctl { margin:8px 0 10px; }
+.replay, .opt { font:inherit; cursor:pointer; border:1px solid var(--line);
+  background:transparent; color:var(--fg); border-radius:7px; padding:7px 12px; }
+.replay { font-size:.85rem; color:var(--mut); }
+.opts { display:flex; gap:7px; flex-wrap:wrap; }
+.opt { min-width:44px; font-weight:600; }
+.opt:hover { border-color:var(--accent); }
+.opt.on { background:var(--accent); border-color:var(--accent); color:#fff; }
+.skip { min-width:auto; font-weight:400; font-size:.85rem; color:var(--mut); }
+.bar { position:fixed; left:0; right:0; bottom:0; background:var(--card);
+  border-top:1px solid var(--line); padding:10px 20px;
+  display:flex; gap:14px; align-items:center; }
+.bar .track { flex:1; height:6px; background:var(--line); border-radius:3px;
+  overflow:hidden; }
+.bar .fill { height:100%; width:0; background:var(--accent); transition:width .2s; }
+#export { background:var(--accent); color:#fff; border:none; border-radius:7px;
+  padding:9px 18px; font:inherit; font-weight:600; cursor:pointer; }
+#export:disabled { opacity:.4; cursor:not-allowed; }
+#warn { background:var(--warn); color:#fff; padding:10px 14px; border-radius:8px;
+  margin-bottom:16px; }
+</style>
+
+<div class="wrap">
+<h1>Vocal tone rating</h1>
+<p class="sub">150 clips &middot; 12 minutes of audio
+&middot; your ratings save automatically</p>
+
+<div id="warn" hidden>Your browser is blocking local storage, so progress will
+NOT be saved. Fix that before continuing, or you will lose your work.</div>
+
+<div class="box">
+  <h2>What to judge</h2>
+  <p style="margin:0 0 10px">Listen to <b>how the voice sounds</b> and rate it:</p>
+  <table><tr><td class='k'>1</td><td><b>Clearly negative</b></td><td class='d'>annoyed, disappointed, critical, harsh</td></tr><tr><td class='k'>2</td><td><b>Slightly negative</b></td><td class='d'>a bit flat, unimpressed, reserved</td></tr><tr><td class='k'>3</td><td><b>Neutral</b></td><td class='d'>even, matter-of-fact, just explaining</td></tr><tr><td class='k'>4</td><td><b>Slightly positive</b></td><td class='d'>mildly warm, interested, pleased</td></tr><tr><td class='k'>5</td><td><b>Clearly positive</b></td><td class='d'>enthusiastic, excited, delighted</td></tr></table>
+  <div class="rule"><b>Judge the sound, not the words.</b> Someone can say
+  something critical in a cheerful voice, or praise something in a flat, bored
+  one. Rate the <i>voice</i>. If the words and the tone disagree, that is exactly
+  the case this whole channel exists to catch &mdash; go with the tone.</div>
+  <div class="rule" style="border-color:var(--accent)">Use <b>can't tell</b>
+  freely. Too short, too quiet, background music, laughter only &mdash; skip it.
+  A guessed rating is worse than no rating.</div>
+  <p style="margin:12px 0 0; color:var(--mut); font-size:.9rem">
+  Keys <b>1</b>&ndash;<b>5</b> rate, <b>0</b> marks can't-tell, <b>space</b>
+  replays. First impression is usually right &mdash; don't overthink, and take a
+  break around clip 75.</p>
+</div>
+
+
+<div class="card" id="card0" data-uid="q0aFOxT6TNw_106">
+  <div class="head"><span class="num">1 / 150</span>
+    <span class="dur">4.4s</span>
+    <span class="done" id="done-q0aFOxT6TNw_106"></span></div>
+  <audio controls preload="none" src="clips/q0aFOxT6TNw_106.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="q0aFOxT6TNw_106">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="q0aFOxT6TNw_106" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="q0aFOxT6TNw_106" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="q0aFOxT6TNw_106" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="q0aFOxT6TNw_106" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="q0aFOxT6TNw_106" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="q0aFOxT6TNw_106" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card1" data-uid="32slGhAH3Xc_27">
+  <div class="head"><span class="num">2 / 150</span>
+    <span class="dur">4.4s</span>
+    <span class="done" id="done-32slGhAH3Xc_27"></span></div>
+  <audio controls preload="none" src="clips/32slGhAH3Xc_27.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="32slGhAH3Xc_27">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="32slGhAH3Xc_27" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="32slGhAH3Xc_27" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="32slGhAH3Xc_27" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="32slGhAH3Xc_27" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="32slGhAH3Xc_27" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="32slGhAH3Xc_27" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card2" data-uid="5VMckmQneCk_168">
+  <div class="head"><span class="num">3 / 150</span>
+    <span class="dur">3.8s</span>
+    <span class="done" id="done-5VMckmQneCk_168"></span></div>
+  <audio controls preload="none" src="clips/5VMckmQneCk_168.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="5VMckmQneCk_168">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="5VMckmQneCk_168" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="5VMckmQneCk_168" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="5VMckmQneCk_168" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="5VMckmQneCk_168" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="5VMckmQneCk_168" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="5VMckmQneCk_168" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card3" data-uid="haWvrSliMVY_28">
+  <div class="head"><span class="num">4 / 150</span>
+    <span class="dur">7.6s</span>
+    <span class="done" id="done-haWvrSliMVY_28"></span></div>
+  <audio controls preload="none" src="clips/haWvrSliMVY_28.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="haWvrSliMVY_28">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="haWvrSliMVY_28" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="haWvrSliMVY_28" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="haWvrSliMVY_28" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="haWvrSliMVY_28" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="haWvrSliMVY_28" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="haWvrSliMVY_28" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card4" data-uid="q0aFOxT6TNw_117">
+  <div class="head"><span class="num">5 / 150</span>
+    <span class="dur">4.7s</span>
+    <span class="done" id="done-q0aFOxT6TNw_117"></span></div>
+  <audio controls preload="none" src="clips/q0aFOxT6TNw_117.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="q0aFOxT6TNw_117">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="q0aFOxT6TNw_117" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="q0aFOxT6TNw_117" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="q0aFOxT6TNw_117" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="q0aFOxT6TNw_117" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="q0aFOxT6TNw_117" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="q0aFOxT6TNw_117" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card5" data-uid="SSC0RkJuBVw_150">
+  <div class="head"><span class="num">6 / 150</span>
+    <span class="dur">3.2s</span>
+    <span class="done" id="done-SSC0RkJuBVw_150"></span></div>
+  <audio controls preload="none" src="clips/SSC0RkJuBVw_150.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="SSC0RkJuBVw_150">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="SSC0RkJuBVw_150" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="SSC0RkJuBVw_150" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="SSC0RkJuBVw_150" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="SSC0RkJuBVw_150" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="SSC0RkJuBVw_150" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="SSC0RkJuBVw_150" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card6" data-uid="Kk-RKpTAXmA_125">
+  <div class="head"><span class="num">7 / 150</span>
+    <span class="dur">4.4s</span>
+    <span class="done" id="done-Kk-RKpTAXmA_125"></span></div>
+  <audio controls preload="none" src="clips/Kk-RKpTAXmA_125.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="Kk-RKpTAXmA_125">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="Kk-RKpTAXmA_125" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="Kk-RKpTAXmA_125" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="Kk-RKpTAXmA_125" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="Kk-RKpTAXmA_125" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="Kk-RKpTAXmA_125" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="Kk-RKpTAXmA_125" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card7" data-uid="Gvvo6vUpJRc_98">
+  <div class="head"><span class="num">8 / 150</span>
+    <span class="dur">5.6s</span>
+    <span class="done" id="done-Gvvo6vUpJRc_98"></span></div>
+  <audio controls preload="none" src="clips/Gvvo6vUpJRc_98.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="Gvvo6vUpJRc_98">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="Gvvo6vUpJRc_98" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="Gvvo6vUpJRc_98" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="Gvvo6vUpJRc_98" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="Gvvo6vUpJRc_98" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="Gvvo6vUpJRc_98" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="Gvvo6vUpJRc_98" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card8" data-uid="Kk-RKpTAXmA_70">
+  <div class="head"><span class="num">9 / 150</span>
+    <span class="dur">4.0s</span>
+    <span class="done" id="done-Kk-RKpTAXmA_70"></span></div>
+  <audio controls preload="none" src="clips/Kk-RKpTAXmA_70.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="Kk-RKpTAXmA_70">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="Kk-RKpTAXmA_70" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="Kk-RKpTAXmA_70" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="Kk-RKpTAXmA_70" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="Kk-RKpTAXmA_70" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="Kk-RKpTAXmA_70" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="Kk-RKpTAXmA_70" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card9" data-uid="vOhuf18b-g8_68">
+  <div class="head"><span class="num">10 / 150</span>
+    <span class="dur">3.3s</span>
+    <span class="done" id="done-vOhuf18b-g8_68"></span></div>
+  <audio controls preload="none" src="clips/vOhuf18b-g8_68.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="vOhuf18b-g8_68">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="vOhuf18b-g8_68" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="vOhuf18b-g8_68" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="vOhuf18b-g8_68" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="vOhuf18b-g8_68" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="vOhuf18b-g8_68" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="vOhuf18b-g8_68" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card10" data-uid="Rlw_CI7pOKg_55">
+  <div class="head"><span class="num">11 / 150</span>
+    <span class="dur">4.9s</span>
+    <span class="done" id="done-Rlw_CI7pOKg_55"></span></div>
+  <audio controls preload="none" src="clips/Rlw_CI7pOKg_55.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="Rlw_CI7pOKg_55">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="Rlw_CI7pOKg_55" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="Rlw_CI7pOKg_55" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="Rlw_CI7pOKg_55" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="Rlw_CI7pOKg_55" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="Rlw_CI7pOKg_55" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="Rlw_CI7pOKg_55" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card11" data-uid="SSC0RkJuBVw_55">
+  <div class="head"><span class="num">12 / 150</span>
+    <span class="dur">5.2s</span>
+    <span class="done" id="done-SSC0RkJuBVw_55"></span></div>
+  <audio controls preload="none" src="clips/SSC0RkJuBVw_55.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="SSC0RkJuBVw_55">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="SSC0RkJuBVw_55" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="SSC0RkJuBVw_55" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="SSC0RkJuBVw_55" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="SSC0RkJuBVw_55" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="SSC0RkJuBVw_55" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="SSC0RkJuBVw_55" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card12" data-uid="vOhuf18b-g8_18">
+  <div class="head"><span class="num">13 / 150</span>
+    <span class="dur">3.8s</span>
+    <span class="done" id="done-vOhuf18b-g8_18"></span></div>
+  <audio controls preload="none" src="clips/vOhuf18b-g8_18.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="vOhuf18b-g8_18">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="vOhuf18b-g8_18" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="vOhuf18b-g8_18" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="vOhuf18b-g8_18" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="vOhuf18b-g8_18" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="vOhuf18b-g8_18" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="vOhuf18b-g8_18" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card13" data-uid="SSC0RkJuBVw_49">
+  <div class="head"><span class="num">14 / 150</span>
+    <span class="dur">3.1s</span>
+    <span class="done" id="done-SSC0RkJuBVw_49"></span></div>
+  <audio controls preload="none" src="clips/SSC0RkJuBVw_49.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="SSC0RkJuBVw_49">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="SSC0RkJuBVw_49" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="SSC0RkJuBVw_49" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="SSC0RkJuBVw_49" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="SSC0RkJuBVw_49" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="SSC0RkJuBVw_49" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="SSC0RkJuBVw_49" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card14" data-uid="32slGhAH3Xc_69">
+  <div class="head"><span class="num">15 / 150</span>
+    <span class="dur">3.9s</span>
+    <span class="done" id="done-32slGhAH3Xc_69"></span></div>
+  <audio controls preload="none" src="clips/32slGhAH3Xc_69.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="32slGhAH3Xc_69">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="32slGhAH3Xc_69" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="32slGhAH3Xc_69" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="32slGhAH3Xc_69" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="32slGhAH3Xc_69" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="32slGhAH3Xc_69" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="32slGhAH3Xc_69" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card15" data-uid="4KbrxIpQgkM_49">
+  <div class="head"><span class="num">16 / 150</span>
+    <span class="dur">3.3s</span>
+    <span class="done" id="done-4KbrxIpQgkM_49"></span></div>
+  <audio controls preload="none" src="clips/4KbrxIpQgkM_49.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="4KbrxIpQgkM_49">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="4KbrxIpQgkM_49" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="4KbrxIpQgkM_49" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="4KbrxIpQgkM_49" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="4KbrxIpQgkM_49" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="4KbrxIpQgkM_49" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="4KbrxIpQgkM_49" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card16" data-uid="haWvrSliMVY_21">
+  <div class="head"><span class="num">17 / 150</span>
+    <span class="dur">6.2s</span>
+    <span class="done" id="done-haWvrSliMVY_21"></span></div>
+  <audio controls preload="none" src="clips/haWvrSliMVY_21.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="haWvrSliMVY_21">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="haWvrSliMVY_21" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="haWvrSliMVY_21" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="haWvrSliMVY_21" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="haWvrSliMVY_21" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="haWvrSliMVY_21" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="haWvrSliMVY_21" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card17" data-uid="haWvrSliMVY_3">
+  <div class="head"><span class="num">18 / 150</span>
+    <span class="dur">7.1s</span>
+    <span class="done" id="done-haWvrSliMVY_3"></span></div>
+  <audio controls preload="none" src="clips/haWvrSliMVY_3.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="haWvrSliMVY_3">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="haWvrSliMVY_3" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="haWvrSliMVY_3" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="haWvrSliMVY_3" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="haWvrSliMVY_3" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="haWvrSliMVY_3" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="haWvrSliMVY_3" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card18" data-uid="4KbrxIpQgkM_15">
+  <div class="head"><span class="num">19 / 150</span>
+    <span class="dur">5.1s</span>
+    <span class="done" id="done-4KbrxIpQgkM_15"></span></div>
+  <audio controls preload="none" src="clips/4KbrxIpQgkM_15.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="4KbrxIpQgkM_15">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="4KbrxIpQgkM_15" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="4KbrxIpQgkM_15" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="4KbrxIpQgkM_15" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="4KbrxIpQgkM_15" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="4KbrxIpQgkM_15" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="4KbrxIpQgkM_15" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card19" data-uid="32slGhAH3Xc_41">
+  <div class="head"><span class="num">20 / 150</span>
+    <span class="dur">3.6s</span>
+    <span class="done" id="done-32slGhAH3Xc_41"></span></div>
+  <audio controls preload="none" src="clips/32slGhAH3Xc_41.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="32slGhAH3Xc_41">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="32slGhAH3Xc_41" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="32slGhAH3Xc_41" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="32slGhAH3Xc_41" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="32slGhAH3Xc_41" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="32slGhAH3Xc_41" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="32slGhAH3Xc_41" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card20" data-uid="i63u-iAnhuk_248">
+  <div class="head"><span class="num">21 / 150</span>
+    <span class="dur">4.8s</span>
+    <span class="done" id="done-i63u-iAnhuk_248"></span></div>
+  <audio controls preload="none" src="clips/i63u-iAnhuk_248.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="i63u-iAnhuk_248">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="i63u-iAnhuk_248" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="i63u-iAnhuk_248" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="i63u-iAnhuk_248" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="i63u-iAnhuk_248" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="i63u-iAnhuk_248" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="i63u-iAnhuk_248" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card21" data-uid="vOhuf18b-g8_48">
+  <div class="head"><span class="num">22 / 150</span>
+    <span class="dur">3.2s</span>
+    <span class="done" id="done-vOhuf18b-g8_48"></span></div>
+  <audio controls preload="none" src="clips/vOhuf18b-g8_48.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="vOhuf18b-g8_48">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="vOhuf18b-g8_48" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="vOhuf18b-g8_48" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="vOhuf18b-g8_48" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="vOhuf18b-g8_48" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="vOhuf18b-g8_48" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="vOhuf18b-g8_48" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card22" data-uid="SSC0RkJuBVw_72">
+  <div class="head"><span class="num">23 / 150</span>
+    <span class="dur">4.0s</span>
+    <span class="done" id="done-SSC0RkJuBVw_72"></span></div>
+  <audio controls preload="none" src="clips/SSC0RkJuBVw_72.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="SSC0RkJuBVw_72">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="SSC0RkJuBVw_72" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="SSC0RkJuBVw_72" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="SSC0RkJuBVw_72" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="SSC0RkJuBVw_72" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="SSC0RkJuBVw_72" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="SSC0RkJuBVw_72" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card23" data-uid="5VMckmQneCk_17">
+  <div class="head"><span class="num">24 / 150</span>
+    <span class="dur">4.6s</span>
+    <span class="done" id="done-5VMckmQneCk_17"></span></div>
+  <audio controls preload="none" src="clips/5VMckmQneCk_17.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="5VMckmQneCk_17">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="5VMckmQneCk_17" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="5VMckmQneCk_17" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="5VMckmQneCk_17" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="5VMckmQneCk_17" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="5VMckmQneCk_17" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="5VMckmQneCk_17" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card24" data-uid="q0aFOxT6TNw_133">
+  <div class="head"><span class="num">25 / 150</span>
+    <span class="dur">3.5s</span>
+    <span class="done" id="done-q0aFOxT6TNw_133"></span></div>
+  <audio controls preload="none" src="clips/q0aFOxT6TNw_133.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="q0aFOxT6TNw_133">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="q0aFOxT6TNw_133" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="q0aFOxT6TNw_133" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="q0aFOxT6TNw_133" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="q0aFOxT6TNw_133" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="q0aFOxT6TNw_133" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="q0aFOxT6TNw_133" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card25" data-uid="haWvrSliMVY_32">
+  <div class="head"><span class="num">26 / 150</span>
+    <span class="dur">7.8s</span>
+    <span class="done" id="done-haWvrSliMVY_32"></span></div>
+  <audio controls preload="none" src="clips/haWvrSliMVY_32.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="haWvrSliMVY_32">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="haWvrSliMVY_32" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="haWvrSliMVY_32" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="haWvrSliMVY_32" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="haWvrSliMVY_32" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="haWvrSliMVY_32" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="haWvrSliMVY_32" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card26" data-uid="Gvvo6vUpJRc_110">
+  <div class="head"><span class="num">27 / 150</span>
+    <span class="dur">4.6s</span>
+    <span class="done" id="done-Gvvo6vUpJRc_110"></span></div>
+  <audio controls preload="none" src="clips/Gvvo6vUpJRc_110.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="Gvvo6vUpJRc_110">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="Gvvo6vUpJRc_110" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="Gvvo6vUpJRc_110" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="Gvvo6vUpJRc_110" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="Gvvo6vUpJRc_110" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="Gvvo6vUpJRc_110" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="Gvvo6vUpJRc_110" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card27" data-uid="Rlw_CI7pOKg_16">
+  <div class="head"><span class="num">28 / 150</span>
+    <span class="dur">5.4s</span>
+    <span class="done" id="done-Rlw_CI7pOKg_16"></span></div>
+  <audio controls preload="none" src="clips/Rlw_CI7pOKg_16.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="Rlw_CI7pOKg_16">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="Rlw_CI7pOKg_16" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="Rlw_CI7pOKg_16" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="Rlw_CI7pOKg_16" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="Rlw_CI7pOKg_16" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="Rlw_CI7pOKg_16" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="Rlw_CI7pOKg_16" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card28" data-uid="vOhuf18b-g8_21">
+  <div class="head"><span class="num">29 / 150</span>
+    <span class="dur">3.3s</span>
+    <span class="done" id="done-vOhuf18b-g8_21"></span></div>
+  <audio controls preload="none" src="clips/vOhuf18b-g8_21.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="vOhuf18b-g8_21">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="vOhuf18b-g8_21" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="vOhuf18b-g8_21" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="vOhuf18b-g8_21" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="vOhuf18b-g8_21" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="vOhuf18b-g8_21" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="vOhuf18b-g8_21" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card29" data-uid="q0aFOxT6TNw_28">
+  <div class="head"><span class="num">30 / 150</span>
+    <span class="dur">4.5s</span>
+    <span class="done" id="done-q0aFOxT6TNw_28"></span></div>
+  <audio controls preload="none" src="clips/q0aFOxT6TNw_28.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="q0aFOxT6TNw_28">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="q0aFOxT6TNw_28" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="q0aFOxT6TNw_28" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="q0aFOxT6TNw_28" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="q0aFOxT6TNw_28" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="q0aFOxT6TNw_28" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="q0aFOxT6TNw_28" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card30" data-uid="Gvvo6vUpJRc_13">
+  <div class="head"><span class="num">31 / 150</span>
+    <span class="dur">4.2s</span>
+    <span class="done" id="done-Gvvo6vUpJRc_13"></span></div>
+  <audio controls preload="none" src="clips/Gvvo6vUpJRc_13.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="Gvvo6vUpJRc_13">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="Gvvo6vUpJRc_13" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="Gvvo6vUpJRc_13" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="Gvvo6vUpJRc_13" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="Gvvo6vUpJRc_13" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="Gvvo6vUpJRc_13" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="Gvvo6vUpJRc_13" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card31" data-uid="i63u-iAnhuk_147">
+  <div class="head"><span class="num">32 / 150</span>
+    <span class="dur">5.4s</span>
+    <span class="done" id="done-i63u-iAnhuk_147"></span></div>
+  <audio controls preload="none" src="clips/i63u-iAnhuk_147.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="i63u-iAnhuk_147">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="i63u-iAnhuk_147" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="i63u-iAnhuk_147" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="i63u-iAnhuk_147" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="i63u-iAnhuk_147" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="i63u-iAnhuk_147" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="i63u-iAnhuk_147" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card32" data-uid="0jHtyF_rCqU_26">
+  <div class="head"><span class="num">33 / 150</span>
+    <span class="dur">10.7s</span>
+    <span class="done" id="done-0jHtyF_rCqU_26"></span></div>
+  <audio controls preload="none" src="clips/0jHtyF_rCqU_26.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="0jHtyF_rCqU_26">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="0jHtyF_rCqU_26" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="0jHtyF_rCqU_26" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="0jHtyF_rCqU_26" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="0jHtyF_rCqU_26" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="0jHtyF_rCqU_26" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="0jHtyF_rCqU_26" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card33" data-uid="Rlw_CI7pOKg_83">
+  <div class="head"><span class="num">34 / 150</span>
+    <span class="dur">8.6s</span>
+    <span class="done" id="done-Rlw_CI7pOKg_83"></span></div>
+  <audio controls preload="none" src="clips/Rlw_CI7pOKg_83.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="Rlw_CI7pOKg_83">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="Rlw_CI7pOKg_83" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="Rlw_CI7pOKg_83" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="Rlw_CI7pOKg_83" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="Rlw_CI7pOKg_83" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="Rlw_CI7pOKg_83" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="Rlw_CI7pOKg_83" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card34" data-uid="0jHtyF_rCqU_6">
+  <div class="head"><span class="num">35 / 150</span>
+    <span class="dur">7.5s</span>
+    <span class="done" id="done-0jHtyF_rCqU_6"></span></div>
+  <audio controls preload="none" src="clips/0jHtyF_rCqU_6.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="0jHtyF_rCqU_6">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="0jHtyF_rCqU_6" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="0jHtyF_rCqU_6" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="0jHtyF_rCqU_6" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="0jHtyF_rCqU_6" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="0jHtyF_rCqU_6" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="0jHtyF_rCqU_6" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card35" data-uid="Rlw_CI7pOKg_95">
+  <div class="head"><span class="num">36 / 150</span>
+    <span class="dur">4.1s</span>
+    <span class="done" id="done-Rlw_CI7pOKg_95"></span></div>
+  <audio controls preload="none" src="clips/Rlw_CI7pOKg_95.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="Rlw_CI7pOKg_95">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="Rlw_CI7pOKg_95" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="Rlw_CI7pOKg_95" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="Rlw_CI7pOKg_95" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="Rlw_CI7pOKg_95" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="Rlw_CI7pOKg_95" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="Rlw_CI7pOKg_95" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card36" data-uid="0jHtyF_rCqU_108">
+  <div class="head"><span class="num">37 / 150</span>
+    <span class="dur">4.0s</span>
+    <span class="done" id="done-0jHtyF_rCqU_108"></span></div>
+  <audio controls preload="none" src="clips/0jHtyF_rCqU_108.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="0jHtyF_rCqU_108">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="0jHtyF_rCqU_108" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="0jHtyF_rCqU_108" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="0jHtyF_rCqU_108" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="0jHtyF_rCqU_108" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="0jHtyF_rCqU_108" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="0jHtyF_rCqU_108" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card37" data-uid="Rlw_CI7pOKg_1">
+  <div class="head"><span class="num">38 / 150</span>
+    <span class="dur">4.3s</span>
+    <span class="done" id="done-Rlw_CI7pOKg_1"></span></div>
+  <audio controls preload="none" src="clips/Rlw_CI7pOKg_1.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="Rlw_CI7pOKg_1">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="Rlw_CI7pOKg_1" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="Rlw_CI7pOKg_1" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="Rlw_CI7pOKg_1" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="Rlw_CI7pOKg_1" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="Rlw_CI7pOKg_1" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="Rlw_CI7pOKg_1" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card38" data-uid="Kk-RKpTAXmA_37">
+  <div class="head"><span class="num">39 / 150</span>
+    <span class="dur">4.5s</span>
+    <span class="done" id="done-Kk-RKpTAXmA_37"></span></div>
+  <audio controls preload="none" src="clips/Kk-RKpTAXmA_37.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="Kk-RKpTAXmA_37">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="Kk-RKpTAXmA_37" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="Kk-RKpTAXmA_37" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="Kk-RKpTAXmA_37" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="Kk-RKpTAXmA_37" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="Kk-RKpTAXmA_37" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="Kk-RKpTAXmA_37" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card39" data-uid="0jHtyF_rCqU_70">
+  <div class="head"><span class="num">40 / 150</span>
+    <span class="dur">4.7s</span>
+    <span class="done" id="done-0jHtyF_rCqU_70"></span></div>
+  <audio controls preload="none" src="clips/0jHtyF_rCqU_70.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="0jHtyF_rCqU_70">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="0jHtyF_rCqU_70" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="0jHtyF_rCqU_70" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="0jHtyF_rCqU_70" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="0jHtyF_rCqU_70" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="0jHtyF_rCqU_70" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="0jHtyF_rCqU_70" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card40" data-uid="32slGhAH3Xc_128">
+  <div class="head"><span class="num">41 / 150</span>
+    <span class="dur">4.0s</span>
+    <span class="done" id="done-32slGhAH3Xc_128"></span></div>
+  <audio controls preload="none" src="clips/32slGhAH3Xc_128.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="32slGhAH3Xc_128">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="32slGhAH3Xc_128" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="32slGhAH3Xc_128" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="32slGhAH3Xc_128" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="32slGhAH3Xc_128" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="32slGhAH3Xc_128" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="32slGhAH3Xc_128" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card41" data-uid="haWvrSliMVY_7">
+  <div class="head"><span class="num">42 / 150</span>
+    <span class="dur">8.5s</span>
+    <span class="done" id="done-haWvrSliMVY_7"></span></div>
+  <audio controls preload="none" src="clips/haWvrSliMVY_7.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="haWvrSliMVY_7">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="haWvrSliMVY_7" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="haWvrSliMVY_7" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="haWvrSliMVY_7" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="haWvrSliMVY_7" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="haWvrSliMVY_7" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="haWvrSliMVY_7" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card42" data-uid="5VMckmQneCk_57">
+  <div class="head"><span class="num">43 / 150</span>
+    <span class="dur">4.4s</span>
+    <span class="done" id="done-5VMckmQneCk_57"></span></div>
+  <audio controls preload="none" src="clips/5VMckmQneCk_57.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="5VMckmQneCk_57">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="5VMckmQneCk_57" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="5VMckmQneCk_57" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="5VMckmQneCk_57" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="5VMckmQneCk_57" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="5VMckmQneCk_57" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="5VMckmQneCk_57" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card43" data-uid="4KbrxIpQgkM_149">
+  <div class="head"><span class="num">44 / 150</span>
+    <span class="dur">8.5s</span>
+    <span class="done" id="done-4KbrxIpQgkM_149"></span></div>
+  <audio controls preload="none" src="clips/4KbrxIpQgkM_149.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="4KbrxIpQgkM_149">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="4KbrxIpQgkM_149" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="4KbrxIpQgkM_149" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="4KbrxIpQgkM_149" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="4KbrxIpQgkM_149" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="4KbrxIpQgkM_149" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="4KbrxIpQgkM_149" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card44" data-uid="4KbrxIpQgkM_109">
+  <div class="head"><span class="num">45 / 150</span>
+    <span class="dur">3.0s</span>
+    <span class="done" id="done-4KbrxIpQgkM_109"></span></div>
+  <audio controls preload="none" src="clips/4KbrxIpQgkM_109.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="4KbrxIpQgkM_109">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="4KbrxIpQgkM_109" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="4KbrxIpQgkM_109" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="4KbrxIpQgkM_109" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="4KbrxIpQgkM_109" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="4KbrxIpQgkM_109" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="4KbrxIpQgkM_109" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card45" data-uid="0jHtyF_rCqU_35">
+  <div class="head"><span class="num">46 / 150</span>
+    <span class="dur">3.6s</span>
+    <span class="done" id="done-0jHtyF_rCqU_35"></span></div>
+  <audio controls preload="none" src="clips/0jHtyF_rCqU_35.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="0jHtyF_rCqU_35">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="0jHtyF_rCqU_35" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="0jHtyF_rCqU_35" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="0jHtyF_rCqU_35" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="0jHtyF_rCqU_35" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="0jHtyF_rCqU_35" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="0jHtyF_rCqU_35" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card46" data-uid="Rlw_CI7pOKg_64">
+  <div class="head"><span class="num">47 / 150</span>
+    <span class="dur">13.4s</span>
+    <span class="done" id="done-Rlw_CI7pOKg_64"></span></div>
+  <audio controls preload="none" src="clips/Rlw_CI7pOKg_64.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="Rlw_CI7pOKg_64">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="Rlw_CI7pOKg_64" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="Rlw_CI7pOKg_64" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="Rlw_CI7pOKg_64" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="Rlw_CI7pOKg_64" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="Rlw_CI7pOKg_64" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="Rlw_CI7pOKg_64" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card47" data-uid="q0aFOxT6TNw_121">
+  <div class="head"><span class="num">48 / 150</span>
+    <span class="dur">3.6s</span>
+    <span class="done" id="done-q0aFOxT6TNw_121"></span></div>
+  <audio controls preload="none" src="clips/q0aFOxT6TNw_121.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="q0aFOxT6TNw_121">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="q0aFOxT6TNw_121" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="q0aFOxT6TNw_121" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="q0aFOxT6TNw_121" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="q0aFOxT6TNw_121" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="q0aFOxT6TNw_121" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="q0aFOxT6TNw_121" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card48" data-uid="32slGhAH3Xc_76">
+  <div class="head"><span class="num">49 / 150</span>
+    <span class="dur">4.0s</span>
+    <span class="done" id="done-32slGhAH3Xc_76"></span></div>
+  <audio controls preload="none" src="clips/32slGhAH3Xc_76.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="32slGhAH3Xc_76">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="32slGhAH3Xc_76" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="32slGhAH3Xc_76" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="32slGhAH3Xc_76" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="32slGhAH3Xc_76" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="32slGhAH3Xc_76" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="32slGhAH3Xc_76" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card49" data-uid="SSC0RkJuBVw_137">
+  <div class="head"><span class="num">50 / 150</span>
+    <span class="dur">5.0s</span>
+    <span class="done" id="done-SSC0RkJuBVw_137"></span></div>
+  <audio controls preload="none" src="clips/SSC0RkJuBVw_137.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="SSC0RkJuBVw_137">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="SSC0RkJuBVw_137" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="SSC0RkJuBVw_137" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="SSC0RkJuBVw_137" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="SSC0RkJuBVw_137" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="SSC0RkJuBVw_137" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="SSC0RkJuBVw_137" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card50" data-uid="vOhuf18b-g8_67">
+  <div class="head"><span class="num">51 / 150</span>
+    <span class="dur">5.7s</span>
+    <span class="done" id="done-vOhuf18b-g8_67"></span></div>
+  <audio controls preload="none" src="clips/vOhuf18b-g8_67.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="vOhuf18b-g8_67">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="vOhuf18b-g8_67" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="vOhuf18b-g8_67" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="vOhuf18b-g8_67" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="vOhuf18b-g8_67" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="vOhuf18b-g8_67" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="vOhuf18b-g8_67" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card51" data-uid="Kk-RKpTAXmA_140">
+  <div class="head"><span class="num">52 / 150</span>
+    <span class="dur">3.3s</span>
+    <span class="done" id="done-Kk-RKpTAXmA_140"></span></div>
+  <audio controls preload="none" src="clips/Kk-RKpTAXmA_140.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="Kk-RKpTAXmA_140">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="Kk-RKpTAXmA_140" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="Kk-RKpTAXmA_140" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="Kk-RKpTAXmA_140" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="Kk-RKpTAXmA_140" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="Kk-RKpTAXmA_140" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="Kk-RKpTAXmA_140" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card52" data-uid="Kk-RKpTAXmA_155">
+  <div class="head"><span class="num">53 / 150</span>
+    <span class="dur">4.1s</span>
+    <span class="done" id="done-Kk-RKpTAXmA_155"></span></div>
+  <audio controls preload="none" src="clips/Kk-RKpTAXmA_155.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="Kk-RKpTAXmA_155">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="Kk-RKpTAXmA_155" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="Kk-RKpTAXmA_155" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="Kk-RKpTAXmA_155" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="Kk-RKpTAXmA_155" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="Kk-RKpTAXmA_155" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="Kk-RKpTAXmA_155" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card53" data-uid="Rlw_CI7pOKg_48">
+  <div class="head"><span class="num">54 / 150</span>
+    <span class="dur">5.9s</span>
+    <span class="done" id="done-Rlw_CI7pOKg_48"></span></div>
+  <audio controls preload="none" src="clips/Rlw_CI7pOKg_48.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="Rlw_CI7pOKg_48">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="Rlw_CI7pOKg_48" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="Rlw_CI7pOKg_48" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="Rlw_CI7pOKg_48" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="Rlw_CI7pOKg_48" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="Rlw_CI7pOKg_48" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="Rlw_CI7pOKg_48" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card54" data-uid="5VMckmQneCk_102">
+  <div class="head"><span class="num">55 / 150</span>
+    <span class="dur">3.5s</span>
+    <span class="done" id="done-5VMckmQneCk_102"></span></div>
+  <audio controls preload="none" src="clips/5VMckmQneCk_102.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="5VMckmQneCk_102">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="5VMckmQneCk_102" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="5VMckmQneCk_102" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="5VMckmQneCk_102" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="5VMckmQneCk_102" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="5VMckmQneCk_102" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="5VMckmQneCk_102" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card55" data-uid="haWvrSliMVY_11">
+  <div class="head"><span class="num">56 / 150</span>
+    <span class="dur">6.6s</span>
+    <span class="done" id="done-haWvrSliMVY_11"></span></div>
+  <audio controls preload="none" src="clips/haWvrSliMVY_11.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="haWvrSliMVY_11">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="haWvrSliMVY_11" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="haWvrSliMVY_11" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="haWvrSliMVY_11" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="haWvrSliMVY_11" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="haWvrSliMVY_11" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="haWvrSliMVY_11" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card56" data-uid="i63u-iAnhuk_104">
+  <div class="head"><span class="num">57 / 150</span>
+    <span class="dur">3.0s</span>
+    <span class="done" id="done-i63u-iAnhuk_104"></span></div>
+  <audio controls preload="none" src="clips/i63u-iAnhuk_104.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="i63u-iAnhuk_104">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="i63u-iAnhuk_104" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="i63u-iAnhuk_104" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="i63u-iAnhuk_104" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="i63u-iAnhuk_104" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="i63u-iAnhuk_104" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="i63u-iAnhuk_104" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card57" data-uid="q0aFOxT6TNw_84">
+  <div class="head"><span class="num">58 / 150</span>
+    <span class="dur">4.9s</span>
+    <span class="done" id="done-q0aFOxT6TNw_84"></span></div>
+  <audio controls preload="none" src="clips/q0aFOxT6TNw_84.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="q0aFOxT6TNw_84">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="q0aFOxT6TNw_84" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="q0aFOxT6TNw_84" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="q0aFOxT6TNw_84" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="q0aFOxT6TNw_84" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="q0aFOxT6TNw_84" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="q0aFOxT6TNw_84" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card58" data-uid="i63u-iAnhuk_122">
+  <div class="head"><span class="num">59 / 150</span>
+    <span class="dur">3.6s</span>
+    <span class="done" id="done-i63u-iAnhuk_122"></span></div>
+  <audio controls preload="none" src="clips/i63u-iAnhuk_122.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="i63u-iAnhuk_122">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="i63u-iAnhuk_122" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="i63u-iAnhuk_122" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="i63u-iAnhuk_122" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="i63u-iAnhuk_122" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="i63u-iAnhuk_122" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="i63u-iAnhuk_122" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card59" data-uid="4KbrxIpQgkM_56">
+  <div class="head"><span class="num">60 / 150</span>
+    <span class="dur">5.1s</span>
+    <span class="done" id="done-4KbrxIpQgkM_56"></span></div>
+  <audio controls preload="none" src="clips/4KbrxIpQgkM_56.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="4KbrxIpQgkM_56">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="4KbrxIpQgkM_56" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="4KbrxIpQgkM_56" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="4KbrxIpQgkM_56" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="4KbrxIpQgkM_56" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="4KbrxIpQgkM_56" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="4KbrxIpQgkM_56" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card60" data-uid="0jHtyF_rCqU_8">
+  <div class="head"><span class="num">61 / 150</span>
+    <span class="dur">4.2s</span>
+    <span class="done" id="done-0jHtyF_rCqU_8"></span></div>
+  <audio controls preload="none" src="clips/0jHtyF_rCqU_8.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="0jHtyF_rCqU_8">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="0jHtyF_rCqU_8" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="0jHtyF_rCqU_8" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="0jHtyF_rCqU_8" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="0jHtyF_rCqU_8" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="0jHtyF_rCqU_8" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="0jHtyF_rCqU_8" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card61" data-uid="32slGhAH3Xc_45">
+  <div class="head"><span class="num">62 / 150</span>
+    <span class="dur">3.8s</span>
+    <span class="done" id="done-32slGhAH3Xc_45"></span></div>
+  <audio controls preload="none" src="clips/32slGhAH3Xc_45.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="32slGhAH3Xc_45">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="32slGhAH3Xc_45" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="32slGhAH3Xc_45" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="32slGhAH3Xc_45" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="32slGhAH3Xc_45" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="32slGhAH3Xc_45" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="32slGhAH3Xc_45" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card62" data-uid="SSC0RkJuBVw_123">
+  <div class="head"><span class="num">63 / 150</span>
+    <span class="dur">3.0s</span>
+    <span class="done" id="done-SSC0RkJuBVw_123"></span></div>
+  <audio controls preload="none" src="clips/SSC0RkJuBVw_123.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="SSC0RkJuBVw_123">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="SSC0RkJuBVw_123" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="SSC0RkJuBVw_123" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="SSC0RkJuBVw_123" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="SSC0RkJuBVw_123" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="SSC0RkJuBVw_123" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="SSC0RkJuBVw_123" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card63" data-uid="0jHtyF_rCqU_151">
+  <div class="head"><span class="num">64 / 150</span>
+    <span class="dur">5.5s</span>
+    <span class="done" id="done-0jHtyF_rCqU_151"></span></div>
+  <audio controls preload="none" src="clips/0jHtyF_rCqU_151.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="0jHtyF_rCqU_151">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="0jHtyF_rCqU_151" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="0jHtyF_rCqU_151" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="0jHtyF_rCqU_151" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="0jHtyF_rCqU_151" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="0jHtyF_rCqU_151" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="0jHtyF_rCqU_151" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card64" data-uid="Gvvo6vUpJRc_55">
+  <div class="head"><span class="num">65 / 150</span>
+    <span class="dur">4.1s</span>
+    <span class="done" id="done-Gvvo6vUpJRc_55"></span></div>
+  <audio controls preload="none" src="clips/Gvvo6vUpJRc_55.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="Gvvo6vUpJRc_55">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="Gvvo6vUpJRc_55" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="Gvvo6vUpJRc_55" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="Gvvo6vUpJRc_55" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="Gvvo6vUpJRc_55" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="Gvvo6vUpJRc_55" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="Gvvo6vUpJRc_55" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card65" data-uid="q0aFOxT6TNw_82">
+  <div class="head"><span class="num">66 / 150</span>
+    <span class="dur">6.2s</span>
+    <span class="done" id="done-q0aFOxT6TNw_82"></span></div>
+  <audio controls preload="none" src="clips/q0aFOxT6TNw_82.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="q0aFOxT6TNw_82">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="q0aFOxT6TNw_82" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="q0aFOxT6TNw_82" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="q0aFOxT6TNw_82" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="q0aFOxT6TNw_82" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="q0aFOxT6TNw_82" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="q0aFOxT6TNw_82" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card66" data-uid="Gvvo6vUpJRc_84">
+  <div class="head"><span class="num">67 / 150</span>
+    <span class="dur">7.6s</span>
+    <span class="done" id="done-Gvvo6vUpJRc_84"></span></div>
+  <audio controls preload="none" src="clips/Gvvo6vUpJRc_84.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="Gvvo6vUpJRc_84">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="Gvvo6vUpJRc_84" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="Gvvo6vUpJRc_84" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="Gvvo6vUpJRc_84" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="Gvvo6vUpJRc_84" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="Gvvo6vUpJRc_84" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="Gvvo6vUpJRc_84" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card67" data-uid="0jHtyF_rCqU_28">
+  <div class="head"><span class="num">68 / 150</span>
+    <span class="dur">5.2s</span>
+    <span class="done" id="done-0jHtyF_rCqU_28"></span></div>
+  <audio controls preload="none" src="clips/0jHtyF_rCqU_28.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="0jHtyF_rCqU_28">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="0jHtyF_rCqU_28" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="0jHtyF_rCqU_28" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="0jHtyF_rCqU_28" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="0jHtyF_rCqU_28" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="0jHtyF_rCqU_28" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="0jHtyF_rCqU_28" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card68" data-uid="4KbrxIpQgkM_40">
+  <div class="head"><span class="num">69 / 150</span>
+    <span class="dur">3.7s</span>
+    <span class="done" id="done-4KbrxIpQgkM_40"></span></div>
+  <audio controls preload="none" src="clips/4KbrxIpQgkM_40.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="4KbrxIpQgkM_40">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="4KbrxIpQgkM_40" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="4KbrxIpQgkM_40" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="4KbrxIpQgkM_40" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="4KbrxIpQgkM_40" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="4KbrxIpQgkM_40" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="4KbrxIpQgkM_40" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card69" data-uid="vOhuf18b-g8_52">
+  <div class="head"><span class="num">70 / 150</span>
+    <span class="dur">6.9s</span>
+    <span class="done" id="done-vOhuf18b-g8_52"></span></div>
+  <audio controls preload="none" src="clips/vOhuf18b-g8_52.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="vOhuf18b-g8_52">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="vOhuf18b-g8_52" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="vOhuf18b-g8_52" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="vOhuf18b-g8_52" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="vOhuf18b-g8_52" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="vOhuf18b-g8_52" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="vOhuf18b-g8_52" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card70" data-uid="4KbrxIpQgkM_76">
+  <div class="head"><span class="num">71 / 150</span>
+    <span class="dur">3.3s</span>
+    <span class="done" id="done-4KbrxIpQgkM_76"></span></div>
+  <audio controls preload="none" src="clips/4KbrxIpQgkM_76.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="4KbrxIpQgkM_76">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="4KbrxIpQgkM_76" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="4KbrxIpQgkM_76" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="4KbrxIpQgkM_76" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="4KbrxIpQgkM_76" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="4KbrxIpQgkM_76" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="4KbrxIpQgkM_76" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card71" data-uid="vOhuf18b-g8_39">
+  <div class="head"><span class="num">72 / 150</span>
+    <span class="dur">3.8s</span>
+    <span class="done" id="done-vOhuf18b-g8_39"></span></div>
+  <audio controls preload="none" src="clips/vOhuf18b-g8_39.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="vOhuf18b-g8_39">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="vOhuf18b-g8_39" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="vOhuf18b-g8_39" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="vOhuf18b-g8_39" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="vOhuf18b-g8_39" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="vOhuf18b-g8_39" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="vOhuf18b-g8_39" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card72" data-uid="q0aFOxT6TNw_60">
+  <div class="head"><span class="num">73 / 150</span>
+    <span class="dur">4.5s</span>
+    <span class="done" id="done-q0aFOxT6TNw_60"></span></div>
+  <audio controls preload="none" src="clips/q0aFOxT6TNw_60.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="q0aFOxT6TNw_60">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="q0aFOxT6TNw_60" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="q0aFOxT6TNw_60" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="q0aFOxT6TNw_60" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="q0aFOxT6TNw_60" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="q0aFOxT6TNw_60" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="q0aFOxT6TNw_60" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card73" data-uid="i63u-iAnhuk_67">
+  <div class="head"><span class="num">74 / 150</span>
+    <span class="dur">4.0s</span>
+    <span class="done" id="done-i63u-iAnhuk_67"></span></div>
+  <audio controls preload="none" src="clips/i63u-iAnhuk_67.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="i63u-iAnhuk_67">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="i63u-iAnhuk_67" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="i63u-iAnhuk_67" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="i63u-iAnhuk_67" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="i63u-iAnhuk_67" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="i63u-iAnhuk_67" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="i63u-iAnhuk_67" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card74" data-uid="Rlw_CI7pOKg_90">
+  <div class="head"><span class="num">75 / 150</span>
+    <span class="dur">5.0s</span>
+    <span class="done" id="done-Rlw_CI7pOKg_90"></span></div>
+  <audio controls preload="none" src="clips/Rlw_CI7pOKg_90.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="Rlw_CI7pOKg_90">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="Rlw_CI7pOKg_90" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="Rlw_CI7pOKg_90" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="Rlw_CI7pOKg_90" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="Rlw_CI7pOKg_90" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="Rlw_CI7pOKg_90" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="Rlw_CI7pOKg_90" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card75" data-uid="SSC0RkJuBVw_25">
+  <div class="head"><span class="num">76 / 150</span>
+    <span class="dur">3.2s</span>
+    <span class="done" id="done-SSC0RkJuBVw_25"></span></div>
+  <audio controls preload="none" src="clips/SSC0RkJuBVw_25.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="SSC0RkJuBVw_25">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="SSC0RkJuBVw_25" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="SSC0RkJuBVw_25" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="SSC0RkJuBVw_25" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="SSC0RkJuBVw_25" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="SSC0RkJuBVw_25" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="SSC0RkJuBVw_25" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card76" data-uid="i63u-iAnhuk_26">
+  <div class="head"><span class="num">77 / 150</span>
+    <span class="dur">5.0s</span>
+    <span class="done" id="done-i63u-iAnhuk_26"></span></div>
+  <audio controls preload="none" src="clips/i63u-iAnhuk_26.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="i63u-iAnhuk_26">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="i63u-iAnhuk_26" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="i63u-iAnhuk_26" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="i63u-iAnhuk_26" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="i63u-iAnhuk_26" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="i63u-iAnhuk_26" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="i63u-iAnhuk_26" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card77" data-uid="i63u-iAnhuk_224">
+  <div class="head"><span class="num">78 / 150</span>
+    <span class="dur">5.0s</span>
+    <span class="done" id="done-i63u-iAnhuk_224"></span></div>
+  <audio controls preload="none" src="clips/i63u-iAnhuk_224.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="i63u-iAnhuk_224">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="i63u-iAnhuk_224" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="i63u-iAnhuk_224" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="i63u-iAnhuk_224" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="i63u-iAnhuk_224" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="i63u-iAnhuk_224" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="i63u-iAnhuk_224" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card78" data-uid="5VMckmQneCk_49">
+  <div class="head"><span class="num">79 / 150</span>
+    <span class="dur">3.9s</span>
+    <span class="done" id="done-5VMckmQneCk_49"></span></div>
+  <audio controls preload="none" src="clips/5VMckmQneCk_49.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="5VMckmQneCk_49">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="5VMckmQneCk_49" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="5VMckmQneCk_49" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="5VMckmQneCk_49" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="5VMckmQneCk_49" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="5VMckmQneCk_49" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="5VMckmQneCk_49" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card79" data-uid="SSC0RkJuBVw_152">
+  <div class="head"><span class="num">80 / 150</span>
+    <span class="dur">4.5s</span>
+    <span class="done" id="done-SSC0RkJuBVw_152"></span></div>
+  <audio controls preload="none" src="clips/SSC0RkJuBVw_152.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="SSC0RkJuBVw_152">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="SSC0RkJuBVw_152" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="SSC0RkJuBVw_152" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="SSC0RkJuBVw_152" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="SSC0RkJuBVw_152" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="SSC0RkJuBVw_152" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="SSC0RkJuBVw_152" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card80" data-uid="i63u-iAnhuk_62">
+  <div class="head"><span class="num">81 / 150</span>
+    <span class="dur">6.4s</span>
+    <span class="done" id="done-i63u-iAnhuk_62"></span></div>
+  <audio controls preload="none" src="clips/i63u-iAnhuk_62.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="i63u-iAnhuk_62">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="i63u-iAnhuk_62" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="i63u-iAnhuk_62" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="i63u-iAnhuk_62" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="i63u-iAnhuk_62" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="i63u-iAnhuk_62" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="i63u-iAnhuk_62" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card81" data-uid="5VMckmQneCk_210">
+  <div class="head"><span class="num">82 / 150</span>
+    <span class="dur">4.1s</span>
+    <span class="done" id="done-5VMckmQneCk_210"></span></div>
+  <audio controls preload="none" src="clips/5VMckmQneCk_210.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="5VMckmQneCk_210">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="5VMckmQneCk_210" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="5VMckmQneCk_210" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="5VMckmQneCk_210" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="5VMckmQneCk_210" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="5VMckmQneCk_210" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="5VMckmQneCk_210" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card82" data-uid="5VMckmQneCk_203">
+  <div class="head"><span class="num">83 / 150</span>
+    <span class="dur">4.3s</span>
+    <span class="done" id="done-5VMckmQneCk_203"></span></div>
+  <audio controls preload="none" src="clips/5VMckmQneCk_203.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="5VMckmQneCk_203">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="5VMckmQneCk_203" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="5VMckmQneCk_203" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="5VMckmQneCk_203" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="5VMckmQneCk_203" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="5VMckmQneCk_203" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="5VMckmQneCk_203" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card83" data-uid="0jHtyF_rCqU_62">
+  <div class="head"><span class="num">84 / 150</span>
+    <span class="dur">4.6s</span>
+    <span class="done" id="done-0jHtyF_rCqU_62"></span></div>
+  <audio controls preload="none" src="clips/0jHtyF_rCqU_62.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="0jHtyF_rCqU_62">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="0jHtyF_rCqU_62" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="0jHtyF_rCqU_62" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="0jHtyF_rCqU_62" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="0jHtyF_rCqU_62" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="0jHtyF_rCqU_62" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="0jHtyF_rCqU_62" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card84" data-uid="4KbrxIpQgkM_100">
+  <div class="head"><span class="num">85 / 150</span>
+    <span class="dur">4.6s</span>
+    <span class="done" id="done-4KbrxIpQgkM_100"></span></div>
+  <audio controls preload="none" src="clips/4KbrxIpQgkM_100.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="4KbrxIpQgkM_100">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="4KbrxIpQgkM_100" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="4KbrxIpQgkM_100" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="4KbrxIpQgkM_100" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="4KbrxIpQgkM_100" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="4KbrxIpQgkM_100" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="4KbrxIpQgkM_100" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card85" data-uid="Rlw_CI7pOKg_30">
+  <div class="head"><span class="num">86 / 150</span>
+    <span class="dur">5.0s</span>
+    <span class="done" id="done-Rlw_CI7pOKg_30"></span></div>
+  <audio controls preload="none" src="clips/Rlw_CI7pOKg_30.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="Rlw_CI7pOKg_30">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="Rlw_CI7pOKg_30" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="Rlw_CI7pOKg_30" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="Rlw_CI7pOKg_30" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="Rlw_CI7pOKg_30" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="Rlw_CI7pOKg_30" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="Rlw_CI7pOKg_30" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card86" data-uid="0jHtyF_rCqU_163">
+  <div class="head"><span class="num">87 / 150</span>
+    <span class="dur">4.2s</span>
+    <span class="done" id="done-0jHtyF_rCqU_163"></span></div>
+  <audio controls preload="none" src="clips/0jHtyF_rCqU_163.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="0jHtyF_rCqU_163">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="0jHtyF_rCqU_163" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="0jHtyF_rCqU_163" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="0jHtyF_rCqU_163" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="0jHtyF_rCqU_163" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="0jHtyF_rCqU_163" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="0jHtyF_rCqU_163" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card87" data-uid="i63u-iAnhuk_14">
+  <div class="head"><span class="num">88 / 150</span>
+    <span class="dur">5.7s</span>
+    <span class="done" id="done-i63u-iAnhuk_14"></span></div>
+  <audio controls preload="none" src="clips/i63u-iAnhuk_14.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="i63u-iAnhuk_14">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="i63u-iAnhuk_14" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="i63u-iAnhuk_14" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="i63u-iAnhuk_14" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="i63u-iAnhuk_14" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="i63u-iAnhuk_14" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="i63u-iAnhuk_14" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card88" data-uid="vOhuf18b-g8_16">
+  <div class="head"><span class="num">89 / 150</span>
+    <span class="dur">5.0s</span>
+    <span class="done" id="done-vOhuf18b-g8_16"></span></div>
+  <audio controls preload="none" src="clips/vOhuf18b-g8_16.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="vOhuf18b-g8_16">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="vOhuf18b-g8_16" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="vOhuf18b-g8_16" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="vOhuf18b-g8_16" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="vOhuf18b-g8_16" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="vOhuf18b-g8_16" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="vOhuf18b-g8_16" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card89" data-uid="Gvvo6vUpJRc_117">
+  <div class="head"><span class="num">90 / 150</span>
+    <span class="dur">3.0s</span>
+    <span class="done" id="done-Gvvo6vUpJRc_117"></span></div>
+  <audio controls preload="none" src="clips/Gvvo6vUpJRc_117.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="Gvvo6vUpJRc_117">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="Gvvo6vUpJRc_117" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="Gvvo6vUpJRc_117" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="Gvvo6vUpJRc_117" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="Gvvo6vUpJRc_117" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="Gvvo6vUpJRc_117" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="Gvvo6vUpJRc_117" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card90" data-uid="haWvrSliMVY_1">
+  <div class="head"><span class="num">91 / 150</span>
+    <span class="dur">13.3s</span>
+    <span class="done" id="done-haWvrSliMVY_1"></span></div>
+  <audio controls preload="none" src="clips/haWvrSliMVY_1.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="haWvrSliMVY_1">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="haWvrSliMVY_1" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="haWvrSliMVY_1" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="haWvrSliMVY_1" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="haWvrSliMVY_1" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="haWvrSliMVY_1" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="haWvrSliMVY_1" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card91" data-uid="32slGhAH3Xc_122">
+  <div class="head"><span class="num">92 / 150</span>
+    <span class="dur">3.3s</span>
+    <span class="done" id="done-32slGhAH3Xc_122"></span></div>
+  <audio controls preload="none" src="clips/32slGhAH3Xc_122.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="32slGhAH3Xc_122">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="32slGhAH3Xc_122" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="32slGhAH3Xc_122" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="32slGhAH3Xc_122" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="32slGhAH3Xc_122" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="32slGhAH3Xc_122" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="32slGhAH3Xc_122" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card92" data-uid="Gvvo6vUpJRc_67">
+  <div class="head"><span class="num">93 / 150</span>
+    <span class="dur">6.0s</span>
+    <span class="done" id="done-Gvvo6vUpJRc_67"></span></div>
+  <audio controls preload="none" src="clips/Gvvo6vUpJRc_67.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="Gvvo6vUpJRc_67">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="Gvvo6vUpJRc_67" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="Gvvo6vUpJRc_67" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="Gvvo6vUpJRc_67" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="Gvvo6vUpJRc_67" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="Gvvo6vUpJRc_67" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="Gvvo6vUpJRc_67" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card93" data-uid="Gvvo6vUpJRc_119">
+  <div class="head"><span class="num">94 / 150</span>
+    <span class="dur">7.9s</span>
+    <span class="done" id="done-Gvvo6vUpJRc_119"></span></div>
+  <audio controls preload="none" src="clips/Gvvo6vUpJRc_119.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="Gvvo6vUpJRc_119">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="Gvvo6vUpJRc_119" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="Gvvo6vUpJRc_119" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="Gvvo6vUpJRc_119" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="Gvvo6vUpJRc_119" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="Gvvo6vUpJRc_119" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="Gvvo6vUpJRc_119" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card94" data-uid="Gvvo6vUpJRc_22">
+  <div class="head"><span class="num">95 / 150</span>
+    <span class="dur">5.1s</span>
+    <span class="done" id="done-Gvvo6vUpJRc_22"></span></div>
+  <audio controls preload="none" src="clips/Gvvo6vUpJRc_22.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="Gvvo6vUpJRc_22">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="Gvvo6vUpJRc_22" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="Gvvo6vUpJRc_22" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="Gvvo6vUpJRc_22" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="Gvvo6vUpJRc_22" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="Gvvo6vUpJRc_22" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="Gvvo6vUpJRc_22" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card95" data-uid="32slGhAH3Xc_129">
+  <div class="head"><span class="num">96 / 150</span>
+    <span class="dur">3.5s</span>
+    <span class="done" id="done-32slGhAH3Xc_129"></span></div>
+  <audio controls preload="none" src="clips/32slGhAH3Xc_129.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="32slGhAH3Xc_129">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="32slGhAH3Xc_129" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="32slGhAH3Xc_129" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="32slGhAH3Xc_129" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="32slGhAH3Xc_129" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="32slGhAH3Xc_129" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="32slGhAH3Xc_129" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card96" data-uid="haWvrSliMVY_22">
+  <div class="head"><span class="num">97 / 150</span>
+    <span class="dur">4.3s</span>
+    <span class="done" id="done-haWvrSliMVY_22"></span></div>
+  <audio controls preload="none" src="clips/haWvrSliMVY_22.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="haWvrSliMVY_22">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="haWvrSliMVY_22" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="haWvrSliMVY_22" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="haWvrSliMVY_22" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="haWvrSliMVY_22" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="haWvrSliMVY_22" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="haWvrSliMVY_22" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card97" data-uid="4KbrxIpQgkM_143">
+  <div class="head"><span class="num">98 / 150</span>
+    <span class="dur">3.5s</span>
+    <span class="done" id="done-4KbrxIpQgkM_143"></span></div>
+  <audio controls preload="none" src="clips/4KbrxIpQgkM_143.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="4KbrxIpQgkM_143">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="4KbrxIpQgkM_143" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="4KbrxIpQgkM_143" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="4KbrxIpQgkM_143" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="4KbrxIpQgkM_143" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="4KbrxIpQgkM_143" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="4KbrxIpQgkM_143" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card98" data-uid="5VMckmQneCk_84">
+  <div class="head"><span class="num">99 / 150</span>
+    <span class="dur">3.9s</span>
+    <span class="done" id="done-5VMckmQneCk_84"></span></div>
+  <audio controls preload="none" src="clips/5VMckmQneCk_84.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="5VMckmQneCk_84">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="5VMckmQneCk_84" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="5VMckmQneCk_84" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="5VMckmQneCk_84" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="5VMckmQneCk_84" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="5VMckmQneCk_84" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="5VMckmQneCk_84" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card99" data-uid="5VMckmQneCk_71">
+  <div class="head"><span class="num">100 / 150</span>
+    <span class="dur">3.8s</span>
+    <span class="done" id="done-5VMckmQneCk_71"></span></div>
+  <audio controls preload="none" src="clips/5VMckmQneCk_71.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="5VMckmQneCk_71">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="5VMckmQneCk_71" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="5VMckmQneCk_71" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="5VMckmQneCk_71" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="5VMckmQneCk_71" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="5VMckmQneCk_71" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="5VMckmQneCk_71" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card100" data-uid="Gvvo6vUpJRc_165">
+  <div class="head"><span class="num">101 / 150</span>
+    <span class="dur">4.8s</span>
+    <span class="done" id="done-Gvvo6vUpJRc_165"></span></div>
+  <audio controls preload="none" src="clips/Gvvo6vUpJRc_165.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="Gvvo6vUpJRc_165">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="Gvvo6vUpJRc_165" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="Gvvo6vUpJRc_165" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="Gvvo6vUpJRc_165" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="Gvvo6vUpJRc_165" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="Gvvo6vUpJRc_165" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="Gvvo6vUpJRc_165" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card101" data-uid="0jHtyF_rCqU_57">
+  <div class="head"><span class="num">102 / 150</span>
+    <span class="dur">5.9s</span>
+    <span class="done" id="done-0jHtyF_rCqU_57"></span></div>
+  <audio controls preload="none" src="clips/0jHtyF_rCqU_57.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="0jHtyF_rCqU_57">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="0jHtyF_rCqU_57" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="0jHtyF_rCqU_57" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="0jHtyF_rCqU_57" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="0jHtyF_rCqU_57" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="0jHtyF_rCqU_57" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="0jHtyF_rCqU_57" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card102" data-uid="Rlw_CI7pOKg_22">
+  <div class="head"><span class="num">103 / 150</span>
+    <span class="dur">7.1s</span>
+    <span class="done" id="done-Rlw_CI7pOKg_22"></span></div>
+  <audio controls preload="none" src="clips/Rlw_CI7pOKg_22.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="Rlw_CI7pOKg_22">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="Rlw_CI7pOKg_22" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="Rlw_CI7pOKg_22" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="Rlw_CI7pOKg_22" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="Rlw_CI7pOKg_22" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="Rlw_CI7pOKg_22" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="Rlw_CI7pOKg_22" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card103" data-uid="Kk-RKpTAXmA_83">
+  <div class="head"><span class="num">104 / 150</span>
+    <span class="dur">4.0s</span>
+    <span class="done" id="done-Kk-RKpTAXmA_83"></span></div>
+  <audio controls preload="none" src="clips/Kk-RKpTAXmA_83.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="Kk-RKpTAXmA_83">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="Kk-RKpTAXmA_83" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="Kk-RKpTAXmA_83" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="Kk-RKpTAXmA_83" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="Kk-RKpTAXmA_83" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="Kk-RKpTAXmA_83" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="Kk-RKpTAXmA_83" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card104" data-uid="Kk-RKpTAXmA_18">
+  <div class="head"><span class="num">105 / 150</span>
+    <span class="dur">4.5s</span>
+    <span class="done" id="done-Kk-RKpTAXmA_18"></span></div>
+  <audio controls preload="none" src="clips/Kk-RKpTAXmA_18.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="Kk-RKpTAXmA_18">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="Kk-RKpTAXmA_18" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="Kk-RKpTAXmA_18" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="Kk-RKpTAXmA_18" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="Kk-RKpTAXmA_18" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="Kk-RKpTAXmA_18" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="Kk-RKpTAXmA_18" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card105" data-uid="4KbrxIpQgkM_68">
+  <div class="head"><span class="num">106 / 150</span>
+    <span class="dur">4.9s</span>
+    <span class="done" id="done-4KbrxIpQgkM_68"></span></div>
+  <audio controls preload="none" src="clips/4KbrxIpQgkM_68.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="4KbrxIpQgkM_68">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="4KbrxIpQgkM_68" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="4KbrxIpQgkM_68" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="4KbrxIpQgkM_68" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="4KbrxIpQgkM_68" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="4KbrxIpQgkM_68" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="4KbrxIpQgkM_68" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card106" data-uid="32slGhAH3Xc_50">
+  <div class="head"><span class="num">107 / 150</span>
+    <span class="dur">5.5s</span>
+    <span class="done" id="done-32slGhAH3Xc_50"></span></div>
+  <audio controls preload="none" src="clips/32slGhAH3Xc_50.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="32slGhAH3Xc_50">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="32slGhAH3Xc_50" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="32slGhAH3Xc_50" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="32slGhAH3Xc_50" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="32slGhAH3Xc_50" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="32slGhAH3Xc_50" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="32slGhAH3Xc_50" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card107" data-uid="i63u-iAnhuk_136">
+  <div class="head"><span class="num">108 / 150</span>
+    <span class="dur">4.5s</span>
+    <span class="done" id="done-i63u-iAnhuk_136"></span></div>
+  <audio controls preload="none" src="clips/i63u-iAnhuk_136.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="i63u-iAnhuk_136">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="i63u-iAnhuk_136" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="i63u-iAnhuk_136" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="i63u-iAnhuk_136" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="i63u-iAnhuk_136" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="i63u-iAnhuk_136" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="i63u-iAnhuk_136" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card108" data-uid="q0aFOxT6TNw_57">
+  <div class="head"><span class="num">109 / 150</span>
+    <span class="dur">7.9s</span>
+    <span class="done" id="done-q0aFOxT6TNw_57"></span></div>
+  <audio controls preload="none" src="clips/q0aFOxT6TNw_57.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="q0aFOxT6TNw_57">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="q0aFOxT6TNw_57" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="q0aFOxT6TNw_57" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="q0aFOxT6TNw_57" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="q0aFOxT6TNw_57" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="q0aFOxT6TNw_57" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="q0aFOxT6TNw_57" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card109" data-uid="Rlw_CI7pOKg_68">
+  <div class="head"><span class="num">110 / 150</span>
+    <span class="dur">6.5s</span>
+    <span class="done" id="done-Rlw_CI7pOKg_68"></span></div>
+  <audio controls preload="none" src="clips/Rlw_CI7pOKg_68.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="Rlw_CI7pOKg_68">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="Rlw_CI7pOKg_68" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="Rlw_CI7pOKg_68" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="Rlw_CI7pOKg_68" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="Rlw_CI7pOKg_68" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="Rlw_CI7pOKg_68" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="Rlw_CI7pOKg_68" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card110" data-uid="4KbrxIpQgkM_125">
+  <div class="head"><span class="num">111 / 150</span>
+    <span class="dur">8.1s</span>
+    <span class="done" id="done-4KbrxIpQgkM_125"></span></div>
+  <audio controls preload="none" src="clips/4KbrxIpQgkM_125.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="4KbrxIpQgkM_125">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="4KbrxIpQgkM_125" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="4KbrxIpQgkM_125" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="4KbrxIpQgkM_125" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="4KbrxIpQgkM_125" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="4KbrxIpQgkM_125" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="4KbrxIpQgkM_125" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card111" data-uid="i63u-iAnhuk_226">
+  <div class="head"><span class="num">112 / 150</span>
+    <span class="dur">3.4s</span>
+    <span class="done" id="done-i63u-iAnhuk_226"></span></div>
+  <audio controls preload="none" src="clips/i63u-iAnhuk_226.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="i63u-iAnhuk_226">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="i63u-iAnhuk_226" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="i63u-iAnhuk_226" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="i63u-iAnhuk_226" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="i63u-iAnhuk_226" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="i63u-iAnhuk_226" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="i63u-iAnhuk_226" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card112" data-uid="SSC0RkJuBVw_70">
+  <div class="head"><span class="num">113 / 150</span>
+    <span class="dur">4.1s</span>
+    <span class="done" id="done-SSC0RkJuBVw_70"></span></div>
+  <audio controls preload="none" src="clips/SSC0RkJuBVw_70.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="SSC0RkJuBVw_70">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="SSC0RkJuBVw_70" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="SSC0RkJuBVw_70" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="SSC0RkJuBVw_70" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="SSC0RkJuBVw_70" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="SSC0RkJuBVw_70" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="SSC0RkJuBVw_70" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card113" data-uid="5VMckmQneCk_89">
+  <div class="head"><span class="num">114 / 150</span>
+    <span class="dur">4.2s</span>
+    <span class="done" id="done-5VMckmQneCk_89"></span></div>
+  <audio controls preload="none" src="clips/5VMckmQneCk_89.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="5VMckmQneCk_89">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="5VMckmQneCk_89" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="5VMckmQneCk_89" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="5VMckmQneCk_89" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="5VMckmQneCk_89" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="5VMckmQneCk_89" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="5VMckmQneCk_89" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card114" data-uid="Gvvo6vUpJRc_47">
+  <div class="head"><span class="num">115 / 150</span>
+    <span class="dur">7.1s</span>
+    <span class="done" id="done-Gvvo6vUpJRc_47"></span></div>
+  <audio controls preload="none" src="clips/Gvvo6vUpJRc_47.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="Gvvo6vUpJRc_47">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="Gvvo6vUpJRc_47" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="Gvvo6vUpJRc_47" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="Gvvo6vUpJRc_47" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="Gvvo6vUpJRc_47" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="Gvvo6vUpJRc_47" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="Gvvo6vUpJRc_47" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card115" data-uid="Rlw_CI7pOKg_127">
+  <div class="head"><span class="num">116 / 150</span>
+    <span class="dur">5.8s</span>
+    <span class="done" id="done-Rlw_CI7pOKg_127"></span></div>
+  <audio controls preload="none" src="clips/Rlw_CI7pOKg_127.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="Rlw_CI7pOKg_127">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="Rlw_CI7pOKg_127" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="Rlw_CI7pOKg_127" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="Rlw_CI7pOKg_127" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="Rlw_CI7pOKg_127" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="Rlw_CI7pOKg_127" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="Rlw_CI7pOKg_127" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card116" data-uid="haWvrSliMVY_5">
+  <div class="head"><span class="num">117 / 150</span>
+    <span class="dur">4.6s</span>
+    <span class="done" id="done-haWvrSliMVY_5"></span></div>
+  <audio controls preload="none" src="clips/haWvrSliMVY_5.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="haWvrSliMVY_5">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="haWvrSliMVY_5" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="haWvrSliMVY_5" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="haWvrSliMVY_5" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="haWvrSliMVY_5" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="haWvrSliMVY_5" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="haWvrSliMVY_5" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card117" data-uid="Kk-RKpTAXmA_113">
+  <div class="head"><span class="num">118 / 150</span>
+    <span class="dur">3.7s</span>
+    <span class="done" id="done-Kk-RKpTAXmA_113"></span></div>
+  <audio controls preload="none" src="clips/Kk-RKpTAXmA_113.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="Kk-RKpTAXmA_113">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="Kk-RKpTAXmA_113" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="Kk-RKpTAXmA_113" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="Kk-RKpTAXmA_113" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="Kk-RKpTAXmA_113" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="Kk-RKpTAXmA_113" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="Kk-RKpTAXmA_113" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card118" data-uid="Gvvo6vUpJRc_35">
+  <div class="head"><span class="num">119 / 150</span>
+    <span class="dur">5.2s</span>
+    <span class="done" id="done-Gvvo6vUpJRc_35"></span></div>
+  <audio controls preload="none" src="clips/Gvvo6vUpJRc_35.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="Gvvo6vUpJRc_35">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="Gvvo6vUpJRc_35" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="Gvvo6vUpJRc_35" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="Gvvo6vUpJRc_35" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="Gvvo6vUpJRc_35" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="Gvvo6vUpJRc_35" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="Gvvo6vUpJRc_35" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card119" data-uid="Kk-RKpTAXmA_82">
+  <div class="head"><span class="num">120 / 150</span>
+    <span class="dur">3.9s</span>
+    <span class="done" id="done-Kk-RKpTAXmA_82"></span></div>
+  <audio controls preload="none" src="clips/Kk-RKpTAXmA_82.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="Kk-RKpTAXmA_82">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="Kk-RKpTAXmA_82" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="Kk-RKpTAXmA_82" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="Kk-RKpTAXmA_82" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="Kk-RKpTAXmA_82" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="Kk-RKpTAXmA_82" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="Kk-RKpTAXmA_82" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card120" data-uid="5VMckmQneCk_78">
+  <div class="head"><span class="num">121 / 150</span>
+    <span class="dur">3.2s</span>
+    <span class="done" id="done-5VMckmQneCk_78"></span></div>
+  <audio controls preload="none" src="clips/5VMckmQneCk_78.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="5VMckmQneCk_78">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="5VMckmQneCk_78" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="5VMckmQneCk_78" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="5VMckmQneCk_78" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="5VMckmQneCk_78" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="5VMckmQneCk_78" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="5VMckmQneCk_78" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card121" data-uid="q0aFOxT6TNw_17">
+  <div class="head"><span class="num">122 / 150</span>
+    <span class="dur">4.1s</span>
+    <span class="done" id="done-q0aFOxT6TNw_17"></span></div>
+  <audio controls preload="none" src="clips/q0aFOxT6TNw_17.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="q0aFOxT6TNw_17">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="q0aFOxT6TNw_17" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="q0aFOxT6TNw_17" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="q0aFOxT6TNw_17" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="q0aFOxT6TNw_17" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="q0aFOxT6TNw_17" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="q0aFOxT6TNw_17" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card122" data-uid="haWvrSliMVY_9">
+  <div class="head"><span class="num">123 / 150</span>
+    <span class="dur">7.2s</span>
+    <span class="done" id="done-haWvrSliMVY_9"></span></div>
+  <audio controls preload="none" src="clips/haWvrSliMVY_9.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="haWvrSliMVY_9">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="haWvrSliMVY_9" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="haWvrSliMVY_9" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="haWvrSliMVY_9" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="haWvrSliMVY_9" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="haWvrSliMVY_9" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="haWvrSliMVY_9" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card123" data-uid="4KbrxIpQgkM_117">
+  <div class="head"><span class="num">124 / 150</span>
+    <span class="dur">5.4s</span>
+    <span class="done" id="done-4KbrxIpQgkM_117"></span></div>
+  <audio controls preload="none" src="clips/4KbrxIpQgkM_117.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="4KbrxIpQgkM_117">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="4KbrxIpQgkM_117" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="4KbrxIpQgkM_117" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="4KbrxIpQgkM_117" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="4KbrxIpQgkM_117" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="4KbrxIpQgkM_117" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="4KbrxIpQgkM_117" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card124" data-uid="32slGhAH3Xc_95">
+  <div class="head"><span class="num">125 / 150</span>
+    <span class="dur">4.3s</span>
+    <span class="done" id="done-32slGhAH3Xc_95"></span></div>
+  <audio controls preload="none" src="clips/32slGhAH3Xc_95.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="32slGhAH3Xc_95">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="32slGhAH3Xc_95" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="32slGhAH3Xc_95" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="32slGhAH3Xc_95" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="32slGhAH3Xc_95" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="32slGhAH3Xc_95" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="32slGhAH3Xc_95" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card125" data-uid="vOhuf18b-g8_50">
+  <div class="head"><span class="num">126 / 150</span>
+    <span class="dur">3.3s</span>
+    <span class="done" id="done-vOhuf18b-g8_50"></span></div>
+  <audio controls preload="none" src="clips/vOhuf18b-g8_50.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="vOhuf18b-g8_50">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="vOhuf18b-g8_50" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="vOhuf18b-g8_50" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="vOhuf18b-g8_50" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="vOhuf18b-g8_50" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="vOhuf18b-g8_50" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="vOhuf18b-g8_50" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card126" data-uid="32slGhAH3Xc_39">
+  <div class="head"><span class="num">127 / 150</span>
+    <span class="dur">4.5s</span>
+    <span class="done" id="done-32slGhAH3Xc_39"></span></div>
+  <audio controls preload="none" src="clips/32slGhAH3Xc_39.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="32slGhAH3Xc_39">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="32slGhAH3Xc_39" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="32slGhAH3Xc_39" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="32slGhAH3Xc_39" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="32slGhAH3Xc_39" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="32slGhAH3Xc_39" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="32slGhAH3Xc_39" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card127" data-uid="SSC0RkJuBVw_134">
+  <div class="head"><span class="num">128 / 150</span>
+    <span class="dur">4.7s</span>
+    <span class="done" id="done-SSC0RkJuBVw_134"></span></div>
+  <audio controls preload="none" src="clips/SSC0RkJuBVw_134.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="SSC0RkJuBVw_134">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="SSC0RkJuBVw_134" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="SSC0RkJuBVw_134" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="SSC0RkJuBVw_134" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="SSC0RkJuBVw_134" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="SSC0RkJuBVw_134" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="SSC0RkJuBVw_134" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card128" data-uid="Kk-RKpTAXmA_149">
+  <div class="head"><span class="num">129 / 150</span>
+    <span class="dur">3.2s</span>
+    <span class="done" id="done-Kk-RKpTAXmA_149"></span></div>
+  <audio controls preload="none" src="clips/Kk-RKpTAXmA_149.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="Kk-RKpTAXmA_149">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="Kk-RKpTAXmA_149" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="Kk-RKpTAXmA_149" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="Kk-RKpTAXmA_149" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="Kk-RKpTAXmA_149" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="Kk-RKpTAXmA_149" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="Kk-RKpTAXmA_149" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card129" data-uid="SSC0RkJuBVw_47">
+  <div class="head"><span class="num">130 / 150</span>
+    <span class="dur">4.1s</span>
+    <span class="done" id="done-SSC0RkJuBVw_47"></span></div>
+  <audio controls preload="none" src="clips/SSC0RkJuBVw_47.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="SSC0RkJuBVw_47">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="SSC0RkJuBVw_47" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="SSC0RkJuBVw_47" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="SSC0RkJuBVw_47" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="SSC0RkJuBVw_47" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="SSC0RkJuBVw_47" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="SSC0RkJuBVw_47" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card130" data-uid="Rlw_CI7pOKg_29">
+  <div class="head"><span class="num">131 / 150</span>
+    <span class="dur">6.4s</span>
+    <span class="done" id="done-Rlw_CI7pOKg_29"></span></div>
+  <audio controls preload="none" src="clips/Rlw_CI7pOKg_29.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="Rlw_CI7pOKg_29">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="Rlw_CI7pOKg_29" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="Rlw_CI7pOKg_29" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="Rlw_CI7pOKg_29" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="Rlw_CI7pOKg_29" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="Rlw_CI7pOKg_29" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="Rlw_CI7pOKg_29" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card131" data-uid="q0aFOxT6TNw_7">
+  <div class="head"><span class="num">132 / 150</span>
+    <span class="dur">6.3s</span>
+    <span class="done" id="done-q0aFOxT6TNw_7"></span></div>
+  <audio controls preload="none" src="clips/q0aFOxT6TNw_7.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="q0aFOxT6TNw_7">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="q0aFOxT6TNw_7" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="q0aFOxT6TNw_7" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="q0aFOxT6TNw_7" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="q0aFOxT6TNw_7" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="q0aFOxT6TNw_7" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="q0aFOxT6TNw_7" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card132" data-uid="Kk-RKpTAXmA_32">
+  <div class="head"><span class="num">133 / 150</span>
+    <span class="dur">4.1s</span>
+    <span class="done" id="done-Kk-RKpTAXmA_32"></span></div>
+  <audio controls preload="none" src="clips/Kk-RKpTAXmA_32.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="Kk-RKpTAXmA_32">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="Kk-RKpTAXmA_32" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="Kk-RKpTAXmA_32" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="Kk-RKpTAXmA_32" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="Kk-RKpTAXmA_32" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="Kk-RKpTAXmA_32" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="Kk-RKpTAXmA_32" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card133" data-uid="4KbrxIpQgkM_74">
+  <div class="head"><span class="num">134 / 150</span>
+    <span class="dur">6.2s</span>
+    <span class="done" id="done-4KbrxIpQgkM_74"></span></div>
+  <audio controls preload="none" src="clips/4KbrxIpQgkM_74.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="4KbrxIpQgkM_74">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="4KbrxIpQgkM_74" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="4KbrxIpQgkM_74" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="4KbrxIpQgkM_74" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="4KbrxIpQgkM_74" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="4KbrxIpQgkM_74" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="4KbrxIpQgkM_74" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card134" data-uid="q0aFOxT6TNw_90">
+  <div class="head"><span class="num">135 / 150</span>
+    <span class="dur">7.2s</span>
+    <span class="done" id="done-q0aFOxT6TNw_90"></span></div>
+  <audio controls preload="none" src="clips/q0aFOxT6TNw_90.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="q0aFOxT6TNw_90">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="q0aFOxT6TNw_90" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="q0aFOxT6TNw_90" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="q0aFOxT6TNw_90" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="q0aFOxT6TNw_90" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="q0aFOxT6TNw_90" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="q0aFOxT6TNw_90" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card135" data-uid="vOhuf18b-g8_10">
+  <div class="head"><span class="num">136 / 150</span>
+    <span class="dur">9.6s</span>
+    <span class="done" id="done-vOhuf18b-g8_10"></span></div>
+  <audio controls preload="none" src="clips/vOhuf18b-g8_10.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="vOhuf18b-g8_10">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="vOhuf18b-g8_10" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="vOhuf18b-g8_10" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="vOhuf18b-g8_10" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="vOhuf18b-g8_10" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="vOhuf18b-g8_10" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="vOhuf18b-g8_10" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card136" data-uid="SSC0RkJuBVw_176">
+  <div class="head"><span class="num">137 / 150</span>
+    <span class="dur">3.2s</span>
+    <span class="done" id="done-SSC0RkJuBVw_176"></span></div>
+  <audio controls preload="none" src="clips/SSC0RkJuBVw_176.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="SSC0RkJuBVw_176">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="SSC0RkJuBVw_176" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="SSC0RkJuBVw_176" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="SSC0RkJuBVw_176" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="SSC0RkJuBVw_176" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="SSC0RkJuBVw_176" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="SSC0RkJuBVw_176" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card137" data-uid="0jHtyF_rCqU_139">
+  <div class="head"><span class="num">138 / 150</span>
+    <span class="dur">3.6s</span>
+    <span class="done" id="done-0jHtyF_rCqU_139"></span></div>
+  <audio controls preload="none" src="clips/0jHtyF_rCqU_139.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="0jHtyF_rCqU_139">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="0jHtyF_rCqU_139" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="0jHtyF_rCqU_139" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="0jHtyF_rCqU_139" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="0jHtyF_rCqU_139" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="0jHtyF_rCqU_139" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="0jHtyF_rCqU_139" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card138" data-uid="5VMckmQneCk_58">
+  <div class="head"><span class="num">139 / 150</span>
+    <span class="dur">3.9s</span>
+    <span class="done" id="done-5VMckmQneCk_58"></span></div>
+  <audio controls preload="none" src="clips/5VMckmQneCk_58.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="5VMckmQneCk_58">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="5VMckmQneCk_58" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="5VMckmQneCk_58" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="5VMckmQneCk_58" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="5VMckmQneCk_58" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="5VMckmQneCk_58" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="5VMckmQneCk_58" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card139" data-uid="5VMckmQneCk_6">
+  <div class="head"><span class="num">140 / 150</span>
+    <span class="dur">3.1s</span>
+    <span class="done" id="done-5VMckmQneCk_6"></span></div>
+  <audio controls preload="none" src="clips/5VMckmQneCk_6.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="5VMckmQneCk_6">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="5VMckmQneCk_6" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="5VMckmQneCk_6" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="5VMckmQneCk_6" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="5VMckmQneCk_6" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="5VMckmQneCk_6" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="5VMckmQneCk_6" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card140" data-uid="32slGhAH3Xc_134">
+  <div class="head"><span class="num">141 / 150</span>
+    <span class="dur">5.1s</span>
+    <span class="done" id="done-32slGhAH3Xc_134"></span></div>
+  <audio controls preload="none" src="clips/32slGhAH3Xc_134.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="32slGhAH3Xc_134">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="32slGhAH3Xc_134" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="32slGhAH3Xc_134" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="32slGhAH3Xc_134" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="32slGhAH3Xc_134" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="32slGhAH3Xc_134" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="32slGhAH3Xc_134" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card141" data-uid="vOhuf18b-g8_44">
+  <div class="head"><span class="num">142 / 150</span>
+    <span class="dur">4.1s</span>
+    <span class="done" id="done-vOhuf18b-g8_44"></span></div>
+  <audio controls preload="none" src="clips/vOhuf18b-g8_44.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="vOhuf18b-g8_44">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="vOhuf18b-g8_44" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="vOhuf18b-g8_44" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="vOhuf18b-g8_44" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="vOhuf18b-g8_44" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="vOhuf18b-g8_44" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="vOhuf18b-g8_44" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card142" data-uid="vOhuf18b-g8_41">
+  <div class="head"><span class="num">143 / 150</span>
+    <span class="dur">5.5s</span>
+    <span class="done" id="done-vOhuf18b-g8_41"></span></div>
+  <audio controls preload="none" src="clips/vOhuf18b-g8_41.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="vOhuf18b-g8_41">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="vOhuf18b-g8_41" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="vOhuf18b-g8_41" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="vOhuf18b-g8_41" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="vOhuf18b-g8_41" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="vOhuf18b-g8_41" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="vOhuf18b-g8_41" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card143" data-uid="Kk-RKpTAXmA_16">
+  <div class="head"><span class="num">144 / 150</span>
+    <span class="dur">3.7s</span>
+    <span class="done" id="done-Kk-RKpTAXmA_16"></span></div>
+  <audio controls preload="none" src="clips/Kk-RKpTAXmA_16.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="Kk-RKpTAXmA_16">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="Kk-RKpTAXmA_16" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="Kk-RKpTAXmA_16" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="Kk-RKpTAXmA_16" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="Kk-RKpTAXmA_16" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="Kk-RKpTAXmA_16" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="Kk-RKpTAXmA_16" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card144" data-uid="32slGhAH3Xc_99">
+  <div class="head"><span class="num">145 / 150</span>
+    <span class="dur">4.3s</span>
+    <span class="done" id="done-32slGhAH3Xc_99"></span></div>
+  <audio controls preload="none" src="clips/32slGhAH3Xc_99.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="32slGhAH3Xc_99">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="32slGhAH3Xc_99" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="32slGhAH3Xc_99" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="32slGhAH3Xc_99" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="32slGhAH3Xc_99" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="32slGhAH3Xc_99" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="32slGhAH3Xc_99" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card145" data-uid="0jHtyF_rCqU_22">
+  <div class="head"><span class="num">146 / 150</span>
+    <span class="dur">3.3s</span>
+    <span class="done" id="done-0jHtyF_rCqU_22"></span></div>
+  <audio controls preload="none" src="clips/0jHtyF_rCqU_22.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="0jHtyF_rCqU_22">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="0jHtyF_rCqU_22" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="0jHtyF_rCqU_22" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="0jHtyF_rCqU_22" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="0jHtyF_rCqU_22" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="0jHtyF_rCqU_22" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="0jHtyF_rCqU_22" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card146" data-uid="haWvrSliMVY_6">
+  <div class="head"><span class="num">147 / 150</span>
+    <span class="dur">6.4s</span>
+    <span class="done" id="done-haWvrSliMVY_6"></span></div>
+  <audio controls preload="none" src="clips/haWvrSliMVY_6.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="haWvrSliMVY_6">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="haWvrSliMVY_6" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="haWvrSliMVY_6" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="haWvrSliMVY_6" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="haWvrSliMVY_6" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="haWvrSliMVY_6" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="haWvrSliMVY_6" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card147" data-uid="Kk-RKpTAXmA_20">
+  <div class="head"><span class="num">148 / 150</span>
+    <span class="dur">5.2s</span>
+    <span class="done" id="done-Kk-RKpTAXmA_20"></span></div>
+  <audio controls preload="none" src="clips/Kk-RKpTAXmA_20.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="Kk-RKpTAXmA_20">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="Kk-RKpTAXmA_20" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="Kk-RKpTAXmA_20" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="Kk-RKpTAXmA_20" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="Kk-RKpTAXmA_20" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="Kk-RKpTAXmA_20" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="Kk-RKpTAXmA_20" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card148" data-uid="haWvrSliMVY_14">
+  <div class="head"><span class="num">149 / 150</span>
+    <span class="dur">8.3s</span>
+    <span class="done" id="done-haWvrSliMVY_14"></span></div>
+  <audio controls preload="none" src="clips/haWvrSliMVY_14.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="haWvrSliMVY_14">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="haWvrSliMVY_14" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="haWvrSliMVY_14" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="haWvrSliMVY_14" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="haWvrSliMVY_14" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="haWvrSliMVY_14" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="haWvrSliMVY_14" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+<div class="card" id="card149" data-uid="i63u-iAnhuk_81">
+  <div class="head"><span class="num">150 / 150</span>
+    <span class="dur">5.0s</span>
+    <span class="done" id="done-i63u-iAnhuk_81"></span></div>
+  <audio controls preload="none" src="clips/i63u-iAnhuk_81.wav"></audio>
+  <div class="ctl"><button class="replay" data-uid="i63u-iAnhuk_81">&#8630; replay</button></div>
+  <div class="opts"><button class="opt" data-uid="i63u-iAnhuk_81" data-v="1" title="annoyed, disappointed, critical, harsh">1</button><button class="opt" data-uid="i63u-iAnhuk_81" data-v="2" title="a bit flat, unimpressed, reserved">2</button><button class="opt" data-uid="i63u-iAnhuk_81" data-v="3" title="even, matter-of-fact, just explaining">3</button><button class="opt" data-uid="i63u-iAnhuk_81" data-v="4" title="mildly warm, interested, pleased">4</button><button class="opt" data-uid="i63u-iAnhuk_81" data-v="5" title="enthusiastic, excited, delighted">5</button>
+    <button class="opt skip" data-uid="i63u-iAnhuk_81" data-v="0"
+            title="genuinely cannot judge the tone">can't tell</button></div>
+</div>
+</div>
+
+<div class="bar">
+  <span id="count">0 / 150</span>
+  <div class="track"><div class="fill" id="fill"></div></div>
+  <button id="export" disabled>Export ratings</button>
+</div>
+
+<script>
+const KEY = "vocal_ratings_v1";
+const N = 150;
+let store = {}, ok = true;
+
+try { store = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) { ok = false; }
+try { localStorage.setItem(KEY+"_p","1"); localStorage.removeItem(KEY+"_p"); }
+catch (e) { ok = false; document.getElementById("warn").hidden = false; }
+
+function save() {
+  if (!ok) return;
+  try { localStorage.setItem(KEY, JSON.stringify(store)); }
+  catch (e) { ok = false; document.getElementById("warn").hidden = false; }
+}
+
+function paint(uid) {
+  const v = store[uid];
+  document.querySelectorAll('.opt[data-uid="'+uid+'"]').forEach(b =>
+    b.classList.toggle("on", v !== undefined && String(v) === b.dataset.v));
+  const card = document.querySelector('.card[data-uid="'+uid+'"]');
+  if (card) card.classList.toggle("rated", v !== undefined);
+  const tick = document.getElementById("done-"+uid);
+  if (tick) tick.textContent = v === undefined ? "" : (v === 0 ? "skipped" : "rated");
+}
+
+function refresh() {
+  const n = Object.keys(store).length;
+  document.getElementById("count").textContent = n + " / " + N;
+  document.getElementById("fill").style.width = (n / N * 100) + "%";
+  document.getElementById("export").disabled = n === 0;
+}
+
+document.querySelectorAll(".opt").forEach(b => {
+  b.addEventListener("click", () => {
+    store[b.dataset.uid] = parseInt(b.dataset.v, 10);
+    save(); paint(b.dataset.uid); refresh();
+    const card = b.closest(".card");
+    const next = card.nextElementSibling;
+    if (next && next.classList.contains("card")) {
+      next.scrollIntoView({behavior:"smooth", block:"center"});
+      const a = next.querySelector("audio");
+      if (a) { a.play().catch(() => {}); }
+    }
+  });
+});
+
+document.querySelectorAll(".replay").forEach(b => {
+  b.addEventListener("click", () => {
+    const a = b.closest(".card").querySelector("audio");
+    a.currentTime = 0; a.play().catch(() => {});
+  });
+});
+
+// Keyboard: act on whichever card is nearest the middle of the viewport.
+function focused() {
+  const mid = window.innerHeight / 2;
+  let best = null, dist = Infinity;
+  document.querySelectorAll(".card").forEach(c => {
+    const r = c.getBoundingClientRect();
+    const d = Math.abs((r.top + r.bottom) / 2 - mid);
+    if (d < dist) { dist = d; best = c; }
+  });
+  return best;
+}
+
+document.addEventListener("keydown", e => {
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  const card = focused();
+  if (!card) return;
+  if (e.key >= "0" && e.key <= "5") {
+    e.preventDefault();
+    const btn = card.querySelector('.opt[data-v="'+e.key+'"]');
+    if (btn) btn.click();
+  } else if (e.key === " ") {
+    e.preventDefault();
+    const a = card.querySelector("audio");
+    a.currentTime = 0; a.play().catch(() => {});
+  }
+});
+
+document.getElementById("export").addEventListener("click", () => {
+  const out = { generated: new Date().toISOString(), scale: "1=clearly negative .. 5=clearly positive, 0=cant tell", ratings: store };
+  const blob = new Blob([JSON.stringify(out, null, 1)], {type:"application/json"});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url; a.download = "vocal_ground_truth.json";
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+});
+
+Object.keys(store).forEach(paint);
+refresh();
+</script>

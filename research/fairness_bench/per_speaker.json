@@ -1,0 +1,325 @@
+{
+  "generated_by": "fairness_bench/per_speaker.py",
+  "protocol": "fairness_bench/PROTOCOL.md",
+  "source": "facial_bench/v2 \u2014 no new frames, labels or models",
+  "seed": 20260903,
+  "mapping": "primary (happy/surprised POSITIVE, neutral NEUTRAL, angry/sad NEGATIVE)",
+  "abstention": "scored wrong (PROTOCOL.md \u00a73)",
+  "n_gold_frames": 320,
+  "speakers": {
+    "deepface_fer": {
+      "per_speaker": {
+        "Mrwhosetheboss": {
+          "split": "dev",
+          "n": 81,
+          "correct": 42,
+          "n_neutral": 32,
+          "negative_on_neutral": 10,
+          "abstained": 0,
+          "accuracy_pct": 51.9,
+          "wilson_lo": 41.1,
+          "wilson_hi": 62.4,
+          "negative_on_neutral_rate_pct": 31.2
+        },
+        "Dave2D": {
+          "split": "holdout",
+          "n": 27,
+          "correct": 10,
+          "n_neutral": 21,
+          "negative_on_neutral": 10,
+          "abstained": 0,
+          "accuracy_pct": 37.0,
+          "wilson_lo": 21.5,
+          "wilson_hi": 55.8,
+          "negative_on_neutral_rate_pct": 47.6
+        },
+        "Marques Brownlee": {
+          "split": "dev",
+          "n": 82,
+          "correct": 34,
+          "n_neutral": 56,
+          "negative_on_neutral": 15,
+          "abstained": 0,
+          "accuracy_pct": 41.5,
+          "wilson_lo": 31.4,
+          "wilson_hi": 52.3,
+          "negative_on_neutral_rate_pct": 26.8
+        },
+        "The Tech Chap": {
+          "split": "holdout",
+          "n": 22,
+          "correct": 10,
+          "n_neutral": 10,
+          "negative_on_neutral": 1,
+          "abstained": 0,
+          "accuracy_pct": 45.5,
+          "wilson_lo": 26.9,
+          "wilson_hi": 65.3,
+          "negative_on_neutral_rate_pct": 10.0
+        },
+        "ShortCircuit": {
+          "split": "holdout",
+          "n": 29,
+          "correct": 8,
+          "n_neutral": 22,
+          "negative_on_neutral": 3,
+          "abstained": 0,
+          "accuracy_pct": 27.6,
+          "wilson_lo": 14.7,
+          "wilson_hi": 45.7,
+          "negative_on_neutral_rate_pct": 13.6
+        },
+        "Jeremy Fragrance": {
+          "split": "holdout",
+          "n": 36,
+          "correct": 11,
+          "n_neutral": 24,
+          "negative_on_neutral": 12,
+          "abstained": 0,
+          "accuracy_pct": 30.6,
+          "wilson_lo": 18.0,
+          "wilson_hi": 46.9,
+          "negative_on_neutral_rate_pct": 50.0
+        },
+        "Jon Adams": {
+          "split": "dev",
+          "n": 24,
+          "correct": 14,
+          "n_neutral": 20,
+          "negative_on_neutral": 6,
+          "abstained": 0,
+          "accuracy_pct": 58.3,
+          "wilson_lo": 38.8,
+          "wilson_hi": 75.5,
+          "negative_on_neutral_rate_pct": 30.0
+        },
+        "Seth Fowler": {
+          "split": "dev",
+          "n": 19,
+          "correct": 8,
+          "n_neutral": 11,
+          "negative_on_neutral": 2,
+          "abstained": 0,
+          "accuracy_pct": 42.1,
+          "wilson_lo": 23.1,
+          "wilson_hi": 63.7,
+          "negative_on_neutral_rate_pct": 18.2
+        }
+      },
+      "pooled_pct": 42.8,
+      "pooled_n": 320,
+      "spread": {
+        "worst": "ShortCircuit",
+        "worst_pct": 27.6,
+        "worst_ci": [
+          14.7,
+          45.7
+        ],
+        "best": "Jon Adams",
+        "best_pct": 58.3,
+        "best_ci": [
+          38.8,
+          75.5
+        ],
+        "range_points": 30.7,
+        "intervals_disjoint": false
+      },
+      "by_split": {
+        "dev": 47.6,
+        "holdout": 34.2
+      }
+    },
+    "always-NEUTRAL constant": {
+      "per_speaker": {
+        "Mrwhosetheboss": {
+          "split": "dev",
+          "n": 81,
+          "correct": 32,
+          "n_neutral": 32,
+          "negative_on_neutral": 0,
+          "abstained": 0,
+          "accuracy_pct": 39.5,
+          "wilson_lo": 29.6,
+          "wilson_hi": 50.4,
+          "negative_on_neutral_rate_pct": 0.0
+        },
+        "Dave2D": {
+          "split": "holdout",
+          "n": 27,
+          "correct": 21,
+          "n_neutral": 21,
+          "negative_on_neutral": 0,
+          "abstained": 0,
+          "accuracy_pct": 77.8,
+          "wilson_lo": 59.2,
+          "wilson_hi": 89.4,
+          "negative_on_neutral_rate_pct": 0.0
+        },
+        "Marques Brownlee": {
+          "split": "dev",
+          "n": 82,
+          "correct": 56,
+          "n_neutral": 56,
+          "negative_on_neutral": 0,
+          "abstained": 0,
+          "accuracy_pct": 68.3,
+          "wilson_lo": 57.6,
+          "wilson_hi": 77.4,
+          "negative_on_neutral_rate_pct": 0.0
+        },
+        "The Tech Chap": {
+          "split": "holdout",
+          "n": 22,
+          "correct": 10,
+          "n_neutral": 10,
+          "negative_on_neutral": 0,
+          "abstained": 0,
+          "accuracy_pct": 45.5,
+          "wilson_lo": 26.9,
+          "wilson_hi": 65.3,
+          "negative_on_neutral_rate_pct": 0.0
+        },
+        "ShortCircuit": {
+          "split": "holdout",
+          "n": 29,
+          "correct": 22,
+          "n_neutral": 22,
+          "negative_on_neutral": 0,
+          "abstained": 0,
+          "accuracy_pct": 75.9,
+          "wilson_lo": 57.9,
+          "wilson_hi": 87.8,
+          "negative_on_neutral_rate_pct": 0.0
+        },
+        "Jeremy Fragrance": {
+          "split": "holdout",
+          "n": 36,
+          "correct": 24,
+          "n_neutral": 24,
+          "negative_on_neutral": 0,
+          "abstained": 0,
+          "accuracy_pct": 66.7,
+          "wilson_lo": 50.3,
+          "wilson_hi": 79.8,
+          "negative_on_neutral_rate_pct": 0.0
+        },
+        "Jon Adams": {
+          "split": "dev",
+          "n": 24,
+          "correct": 20,
+          "n_neutral": 20,
+          "negative_on_neutral": 0,
+          "abstained": 0,
+          "accuracy_pct": 83.3,
+          "wilson_lo": 64.1,
+          "wilson_hi": 93.3,
+          "negative_on_neutral_rate_pct": 0.0
+        },
+        "Seth Fowler": {
+          "split": "dev",
+          "n": 19,
+          "correct": 11,
+          "n_neutral": 11,
+          "negative_on_neutral": 0,
+          "abstained": 0,
+          "accuracy_pct": 57.9,
+          "wilson_lo": 36.3,
+          "wilson_hi": 76.9,
+          "negative_on_neutral_rate_pct": 0.0
+        }
+      },
+      "pooled_pct": 61.3,
+      "pooled_n": 320,
+      "spread": {
+        "worst": "Mrwhosetheboss",
+        "worst_pct": 39.5,
+        "worst_ci": [
+          29.6,
+          50.4
+        ],
+        "best": "Jon Adams",
+        "best_pct": 83.3,
+        "best_ci": [
+          64.1,
+          93.3
+        ],
+        "range_points": 43.8,
+        "intervals_disjoint": true
+      },
+      "by_split": {
+        "dev": 57.8,
+        "holdout": 67.5
+      }
+    }
+  },
+  "lift_post_hoc": {
+    "note": "PROTOCOL.md amendment A1 \u2014 added after the primary output, descriptive, not a test",
+    "per_speaker": {
+      "Mrwhosetheboss": {
+        "split": "dev",
+        "n": 81,
+        "deployed_pct": 51.9,
+        "constant_pct": 39.5,
+        "lift_points": 12.4
+      },
+      "Dave2D": {
+        "split": "holdout",
+        "n": 27,
+        "deployed_pct": 37.0,
+        "constant_pct": 77.8,
+        "lift_points": -40.8
+      },
+      "Marques Brownlee": {
+        "split": "dev",
+        "n": 82,
+        "deployed_pct": 41.5,
+        "constant_pct": 68.3,
+        "lift_points": -26.8
+      },
+      "The Tech Chap": {
+        "split": "holdout",
+        "n": 22,
+        "deployed_pct": 45.5,
+        "constant_pct": 45.5,
+        "lift_points": 0.0
+      },
+      "ShortCircuit": {
+        "split": "holdout",
+        "n": 29,
+        "deployed_pct": 27.6,
+        "constant_pct": 75.9,
+        "lift_points": -48.3
+      },
+      "Jeremy Fragrance": {
+        "split": "holdout",
+        "n": 36,
+        "deployed_pct": 30.6,
+        "constant_pct": 66.7,
+        "lift_points": -36.1
+      },
+      "Jon Adams": {
+        "split": "dev",
+        "n": 24,
+        "deployed_pct": 58.3,
+        "constant_pct": 83.3,
+        "lift_points": -25.0
+      },
+      "Seth Fowler": {
+        "split": "dev",
+        "n": 19,
+        "deployed_pct": 42.1,
+        "constant_pct": 57.9,
+        "lift_points": -15.8
+      }
+    },
+    "worst_points": -48.3,
+    "best_points": 12.4,
+    "range_points": 60.7,
+    "n_speakers_below_constant": 6,
+    "spearman_lift_vs_neutral_base_rate": -0.714,
+    "mean_lift_by_split": {
+      "dev": -13.8,
+      "holdout": -31.3
+    }
+  }
+}

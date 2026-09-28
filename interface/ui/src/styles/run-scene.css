@@ -1,0 +1,691 @@
+/* ===========================================================================
+   run-scene.css — the Analyse studio: the optical plates and the layout
+   around them. Scoped to the Analyse entry point; run.css owns the controls.
+
+   24 Sep 2026, the cohesion pass. This file was a minified layer of overrides
+   on top of run.css, and most of what it overrode was the shared system:
+   square buttons and square fields where every other page has pills and soft
+   fields, 7-11px type for hints and statuses a reader needs, tracked capitals
+   for every label, a teal wash of its own behind the plates, and blurred drop
+   shadows under glass. Those are gone. The controls are the building's, the
+   type is on the building's roles, and the plates are lit by the same key and
+   stand in the same pool of shade as the film's object and the shelf.
+
+   What is kept exactly is the scene: every plate's position, depth, rotation,
+   state and animation, which is the Analyse page's own signature.
+   ======================================================================== */
+
+body:has([data-run]) { overflow-x: clip; }
+
+/* The studio's one light, pooled behind the plates. */
+[data-run] {
+  background: radial-gradient(ellipse at 80% 32%, rgb(var(--key-rgb) / var(--pool-a)), transparent 50%);
+}
+
+/* On the page grid: the studio's left edge is the masthead's left edge. */
+.rn {
+  position: relative;
+  isolation: isolate;
+  max-width: none;
+  margin: 0;
+  padding: var(--s-6) var(--gutter) 0;
+  overflow: hidden;
+}
+
+.rn__edition {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: var(--s-5);
+  border-bottom: 1px solid var(--edge);
+  font-size: var(--t-note);
+  font-weight: 500;
+  letter-spacing: var(--tr-label);
+  color: var(--ink-3);
+}
+
+.rn__edition i {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 8px 1px 0;
+  border-radius: 50%;
+  background: var(--ink-2);
+}
+
+/* The shared ending (chassis.css .end), with the studio's own two lines. */
+.rn__colophon { position: relative; margin-top: var(--s-7); padding-inline: 0; }
+
+.rn__eyebrow {
+  margin-bottom: var(--s-5);
+  font-size: var(--t-label);
+  font-weight: 600;
+  font-variation-settings: "wdth" var(--ctl-wdth);
+  letter-spacing: var(--tr-label);
+  color: var(--ink-2);
+}
+
+/* --- the form ------------------------------------------------------------ */
+
+.rn__form {
+  position: relative;
+  grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+  gap: 26px 8%;
+  padding-top: var(--s-8);
+}
+
+.rn__brief { grid-column: 1; max-width: 560px; }
+
+/* The page-title role: the display role one step down (tokens.css). It was
+   Sora at weight 400 with -0.065em of tracking, the one heading in the
+   building in a third sans. */
+.rn h1.t-l {
+  font-family: var(--f-inst);
+  font-size: var(--t-page);
+  line-height: var(--lh-display);
+  font-weight: var(--wt-display);
+  font-variation-settings: "wdth" 96;
+  letter-spacing: var(--tr-display);
+  max-width: 850px;
+}
+
+.rn__brief .t-lede {
+  margin-top: var(--s-5);
+  max-width: 40ch;
+  font-size: var(--t-lede);
+  line-height: 1.55;
+  color: var(--ink-2);
+}
+
+.rn__modes { grid-column: 1; width: 100%; margin-top: 9px; }
+.rn__panel { grid-column: 1; padding: 0; background: none; border: 0; gap: 22px; }
+.fld { gap: 8px; min-width: 0; }
+.fld input { width: 100%; min-width: 0; }
+.fld__hint { font-size: var(--t-note); line-height: 1.5; }
+.rn__go { grid-template-columns: auto 1fr; align-items: center; gap: 18px; }
+.rn__go .t-micro { font-size: var(--t-note); line-height: 1.55; color: var(--ink-2); }
+
+.rn__what { grid-column: 1 / -1; margin-top: var(--s-6); gap: 16px; }
+.rn__what h2 { display: flex; justify-content: space-between; gap: var(--s-4); font-size: var(--t-label); }
+.rn__what h2 span { font-size: var(--t-note); font-weight: 500; color: var(--ink-3); }
+.rn__chans { grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--edge-hi); }
+.rn__chans li { padding: 20px 22px; border-right: 1px solid var(--edge); border-bottom: 0; grid-template-columns: 12px 1fr auto; }
+.rn__chans li:first-child { padding-left: 0; }
+.rn__chans li:last-child { border-right: 0; }
+.rn__chans .t-label { font-size: var(--t-label); }
+.rn__chans .t-read { font-size: 24px; font-weight: 450; letter-spacing: -.03em; }
+.rn__chans .t-micro { font-size: var(--t-note); }
+.rn__what > .t-micro { max-width: 90ch; font-size: var(--t-note); line-height: 1.55; color: var(--ink-2); }
+
+/* --- the optical array ----------------------------------------------------
+   Glass plates, one per channel, each carrying its channel's instrument. The
+   channel hue is on each plate's edge and instrument because that is what it
+   MEANS; the light on the glass is the building's key. */
+
+.optics {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: 86px;
+  width: 57%;
+  height: 660px;
+  perspective: 1100px;
+  pointer-events: none;
+}
+
+.optics__halo {
+  position: absolute;
+  inset: 5% -10%;
+  background: radial-gradient(ellipse, rgb(var(--key-rgb) / calc(var(--pool-a) * 1.4)), transparent 62%);
+}
+
+/* The pool the assembly stands over: what an object throws on the surface
+   under it, never a blurred shadow hung off a card. */
+.optics::after {
+  content: "";
+  position: absolute;
+  left: 22%;
+  right: 18%;
+  bottom: 9%;
+  height: 16%;
+  pointer-events: none;
+  background: radial-gradient(ellipse at 50% 50%, rgb(var(--shade-rgb) / calc(var(--shade-a) * 0.55)), transparent 70%);
+}
+
+.optics__coordinates {
+  position: absolute;
+  top: 32px;
+  left: 10%;
+  right: 10%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  letter-spacing: var(--tr-label);
+  color: var(--ink-3);
+}
+
+.optics__assembly {
+  position: absolute;
+  left: 47%;
+  top: 47%;
+  width: 310px;
+  height: 370px;
+  transform-style: preserve-3d;
+  transform: translate(-50%, -50%) rotateX(12deg) rotateY(-32deg) rotateZ(12deg);
+}
+
+/* The glass recipe (tokens.css --glass-*): a sheet of the environment, a lit
+   top-left edge, the channel's hue on its rim. */
+.optics__plate {
+  position: absolute;
+  inset: 0;
+  transform: translateZ(calc((var(--i) - 1.5) * 85px));
+  border: 1px solid color-mix(in srgb, var(--optic) 38%, transparent);
+  border-radius: 8px;
+  background: linear-gradient(135deg,
+    color-mix(in srgb, var(--optic) 8%, transparent),
+    color-mix(in srgb, var(--body) 38%, transparent) 42%,
+    color-mix(in srgb, var(--optic) 3%, transparent));
+  box-shadow: inset 1px 1px 0 var(--glass-hi);
+  transition: filter 1s, border-color 1s, background 1s;
+}
+
+.optics__serial,
+.optics__etch {
+  position: absolute;
+  left: 19px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: var(--tr-label);
+  color: var(--optic);
+}
+
+.optics__serial { top: 16px; }
+.optics__etch { bottom: 15px; opacity: .7; font-size: 10px; font-weight: 500; }
+
+.optics__beam {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 1px;
+  width: 540px;
+  transform: translate(-50%, -50%) rotateY(90deg);
+  background: linear-gradient(90deg, transparent, var(--ink-2), transparent);
+}
+
+.optics__caption {
+  position: absolute;
+  bottom: 18px;
+  left: 16%;
+  right: 10%;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.optics__cross { font-size: 35px; font-weight: 200; color: var(--ink-3); }
+.optics__caption p { font-size: var(--t-note); line-height: 1.55; color: var(--ink-2); }
+.optics__caption em { font-family: var(--f-voice); font-size: 22px; color: var(--ink); }
+
+.optics__caption > span:last-child {
+  margin-left: auto;
+  font-size: 11px;
+  letter-spacing: var(--tr-label);
+  writing-mode: vertical-rl;
+  color: var(--ink-3);
+}
+
+/* --- the four instruments --------------------------------------------------
+   Four physical behaviours. Their motion follows the real channel state
+   written by paintRunning(); it is never a fabricated reading. */
+
+.optic {
+  position: absolute;
+  left: 31px;
+  top: 60px;
+  width: 246px;
+  height: 246px;
+  border-radius: 50%;
+  color: var(--optic);
+  transform-style: preserve-3d;
+  transition: opacity .8s, filter .8s, transform 1.1s var(--ease-move);
+}
+
+.optic::before,
+.optic::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.optic::before {
+  inset: 0;
+  border: 1px solid color-mix(in srgb, var(--optic) 52%, transparent);
+  box-shadow: inset 0 0 28px color-mix(in srgb, var(--optic) 7%, transparent);
+}
+
+.optic::after { inset: 15px; border: 1px solid color-mix(in srgb, var(--optic) 28%, transparent); }
+
+/* Transcript: a grooved index disc, like language being threaded and read. */
+.optic--transcript {
+  background: repeating-radial-gradient(circle, color-mix(in srgb, var(--optic) 18%, transparent) 0 1px, transparent 1px 10px);
+}
+
+.optic__grooves {
+  position: absolute;
+  inset: 29px;
+  border-radius: 50%;
+  background: repeating-conic-gradient(from 18deg, color-mix(in srgb, var(--optic) 65%, transparent) 0 .6deg, transparent .6deg 7deg);
+  mask: radial-gradient(circle, transparent 0 45%, #000 46% 72%, transparent 73%);
+}
+
+.optic__words {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 178px;
+  padding: 5px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  transform: translate(-50%, -50%) rotate(-23deg);
+  border-block: 1px solid color-mix(in srgb, var(--optic) 45%, transparent);
+  font-size: 8px;
+  letter-spacing: .06em;
+  color: var(--optic);
+  opacity: .72;
+}
+
+.optic__hub {
+  position: absolute;
+  inset: 92px;
+  border: 1px solid var(--optic);
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--body) 90%, transparent);
+}
+
+.optic__hub i,
+.optic__hub b {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 22px;
+  height: 1px;
+  background: var(--optic);
+  transform: translate(-50%, -50%);
+}
+
+.optic__hub b { transform: translate(-50%, -50%) rotate(90deg); }
+
+/* Face: eight iris leaves make the channel read instantly as a camera. */
+.optic--facial { background: radial-gradient(circle, color-mix(in srgb, var(--optic) 8%, transparent), transparent 67%); }
+
+.optic__aperture {
+  position: absolute;
+  inset: 23px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid color-mix(in srgb, var(--optic) 42%, transparent);
+  background: color-mix(in srgb, var(--screen) 68%, transparent);
+}
+
+.optic__aperture > i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 104px;
+  height: 72px;
+  transform-origin: 0 0;
+  transform: rotate(calc(var(--n) * 45deg)) skewX(-24deg) translate(4px, -36px);
+  border: 1px solid color-mix(in srgb, var(--optic) 36%, transparent);
+  background: linear-gradient(110deg, color-mix(in srgb, var(--optic) 15%, transparent), transparent 70%);
+  transition: transform .9s var(--ease-move);
+}
+
+.optic__focus {
+  position: absolute;
+  inset: 72px;
+  z-index: 2;
+  border: 1px solid var(--optic);
+  border-radius: 50%;
+}
+
+.optic__focus span,
+.optic__focus b { position: absolute; left: 50%; top: 50%; background: var(--optic); opacity: .7; }
+.optic__focus span { width: 28px; height: 1px; transform: translate(-50%, -50%); }
+.optic__focus b { height: 28px; width: 1px; transform: translate(-50%, -50%); }
+
+/* Voice: five suspended rings behave like a glass speaker diaphragm. */
+.optic--vocal { background: radial-gradient(circle at 45% 40%, color-mix(in srgb, var(--optic) 13%, transparent), transparent 62%); }
+.optic__diaphragm { position: absolute; inset: 17px; border-radius: 50%; transform-style: preserve-3d; }
+
+.optic__diaphragm i {
+  position: absolute;
+  inset: calc(12px + var(--n) * 16px);
+  border: 1px solid color-mix(in srgb, var(--optic) calc(65% - var(--n) * 8%), transparent);
+  border-radius: 50%;
+  transform: rotateX(66deg) rotateZ(calc(var(--n) * 13deg));
+}
+
+.optic__needle {
+  position: absolute;
+  left: 50%;
+  top: 19px;
+  bottom: 19px;
+  width: 1px;
+  background: linear-gradient(transparent, var(--optic), transparent);
+  transform-origin: 50% 50%;
+  transform: rotate(24deg);
+}
+
+/* Audience: many individual marks gather around one collective centre. */
+.optic--audience { background: radial-gradient(circle, color-mix(in srgb, var(--optic) 10%, transparent), transparent 64%); }
+.optic__crowd { position: absolute; inset: 14px; border-radius: 50%; }
+
+.optic__crowd > i {
+  position: absolute;
+  left: calc(50% - 2px);
+  top: calc(50% - 5px);
+  width: 5px;
+  height: 11px;
+  border: 1px solid color-mix(in srgb, var(--optic) 72%, transparent);
+  border-radius: 4px;
+  transform: rotate(calc(var(--n) * 12.857deg)) translateY(-94px);
+  background: color-mix(in srgb, var(--optic) 8%, transparent);
+  transition: background .5s;
+}
+
+.optic__core {
+  position: absolute;
+  inset: 76px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--optic);
+  border-radius: 50%;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: .04em;
+  color: var(--optic);
+}
+
+/* --- plate states ---------------------------------------------------------- */
+
+.optics__plate[data-state="waiting"] { filter: saturate(.3); }
+.optics__plate[data-state="recording"] {
+  border-color: var(--optic);
+  background: linear-gradient(130deg, color-mix(in srgb, var(--optic) 20%, transparent), transparent);
+}
+
+.optics__plate[data-state="waiting"] .optic { opacity: .34; filter: saturate(.35); }
+.optics__plate[data-state="recording"] .optic { opacity: 1; filter: saturate(1.15); transform: translateZ(10px); }
+.optics__plate[data-state="recorded"] .optic { opacity: .82; filter: saturate(.8); }
+.optics[data-stage="2"] .optic { opacity: 1; filter: none; }
+.optics[data-stage="2"] .optics__beam { height: 2px; background: linear-gradient(90deg, transparent, var(--ink), transparent); }
+
+.rn.is-discovering .optics__plate { border-color: var(--optic); }
+.rn.is-discovering .rn__panel { opacity: .65; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .optics__assembly { animation: optical-float 14s ease-in-out infinite alternate; }
+  .rn__form, .wait, .fin, .cast { animation: studio-enter .7s ease-out both; }
+
+  .optic--transcript { animation: transcript-idle 24s linear infinite; }
+  .optic--facial { animation: face-breathe 8s ease-in-out infinite alternate; }
+  .optic--vocal { animation: voice-idle 6s ease-in-out infinite alternate; }
+  .optic--audience { animation: audience-idle 28s linear infinite; }
+  .optics__plate[data-state="waiting"] .optic { animation-play-state: paused; }
+  .optics__plate[data-state="recording"] .optic--transcript { animation: transcript-work 3.2s linear infinite; }
+  .optics__plate[data-state="recording"] .optic__aperture > i { transform: rotate(calc(var(--n) * 45deg + 17deg)) skewX(-34deg) translate(22px, -25px); }
+  .optics__plate[data-state="recording"] .optic--facial { animation: face-scan 2.6s ease-in-out infinite; }
+  .optics__plate[data-state="recording"] .optic__diaphragm i { animation: voice-ring 1.8s ease-in-out infinite alternate; animation-delay: calc(var(--n) * -.16s); }
+  .optics__plate[data-state="recording"] .optic__needle { animation: voice-needle 1.4s ease-in-out infinite alternate; }
+  .optics__plate[data-state="recording"] .optic__crowd > i { animation: comment-light 2.8s ease-in-out infinite; animation-delay: calc(var(--n) * -.09s); }
+  .optics__plate[data-state="recording"] .optic--audience { animation: audience-work 11s linear infinite; }
+  .optics__plate[data-state="recorded"] .optic { animation-play-state: paused; }
+  .optics[data-stage="2"] .optics__plate { animation: compare-pulse 2.8s ease-in-out infinite; animation-delay: calc(var(--i) * .12s); }
+
+  @keyframes optical-float { to { transform: translate(-50%, -52%) rotateX(8deg) rotateY(-24deg) rotateZ(9deg); } }
+  @keyframes studio-enter { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+  @keyframes transcript-idle { to { rotate: 360deg; } }
+  @keyframes transcript-work { to { rotate: 360deg; } }
+  @keyframes face-breathe { to { rotate: 4deg; } }
+  @keyframes face-scan { 50% { rotate: -8deg; scale: 1.035; } }
+  @keyframes voice-idle { to { rotate: -5deg; } }
+  @keyframes voice-ring { to { transform: rotateX(76deg) rotateZ(calc(var(--n) * 13deg + 12deg)); scale: 1.04; } }
+  @keyframes voice-needle { to { transform: rotate(-28deg); } }
+  @keyframes audience-idle { to { rotate: -360deg; } }
+  @keyframes audience-work { to { rotate: 360deg; } }
+  @keyframes comment-light { 45%, 65% { background: var(--optic); } }
+  @keyframes compare-pulse { 50% { filter: brightness(1.3); } }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rn *, .optics * { animation: none !important; transition: none !important; }
+}
+
+/* --- the casting table ------------------------------------------------------ */
+
+.rn:has(.cast) .optics { opacity: .22; top: -170px; right: -220px; }
+.cast { position: relative; padding-top: var(--s-8); }
+.cast__head { max-width: 760px; }
+.cast__head .t-lede { font-size: var(--t-body); line-height: 1.6; }
+.cast__head h1 { margin-bottom: 12px; }
+
+.cast__bar {
+  padding: var(--s-4) 0;
+  border-inline: 0;
+  border-radius: 0;
+  background: color-mix(in srgb, var(--body) 95%, transparent);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.cast__list { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 25px; border: 0; }
+
+.cand {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 0 0 19px;
+  overflow: hidden;
+  border: 1px solid var(--edge);
+  border-radius: var(--r-panel);
+  background: color-mix(in srgb, var(--panel) 25%, transparent);
+  transition: border-color var(--t-fast) var(--ease-out), background var(--t-fast) var(--ease-out);
+}
+
+.cand:hover { border-color: var(--ink-3); background: color-mix(in srgb, var(--panel) 45%, transparent); }
+/* Chosen is ink, as every selected thing in the building is. */
+.cand:has(input:checked) { border-color: var(--ink); }
+
+.cand__visual {
+  width: 100%;
+  height: 150px;
+  padding: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: repeating-linear-gradient(90deg, transparent 0 30px, var(--edge) 30px 31px);
+}
+
+.cand__visual span { font-size: 11px; font-weight: 500; letter-spacing: var(--tr-label); color: var(--ink-2); }
+.cand__visual svg { width: 66px; fill: none; stroke: var(--ink-2); stroke-width: .6; }
+.cand__pick { position: absolute; right: 11px; top: 7px; }
+.cand__body, .cand__verdict { margin-inline: 20px; }
+.cand__title { font-size: 18px; line-height: 1.35; }
+.cand__meta { font-size: var(--t-note); }
+.cand__verdict { margin-top: auto; font-size: var(--t-label); }
+
+/* --- the wait -------------------------------------------------------------- */
+
+.wait {
+  position: relative;
+  max-width: none;
+  width: 100%;
+  padding-top: var(--s-8);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 26px 8%;
+}
+
+.wait__top { grid-column: 1 / -1; border: 0; align-items: flex-start; }
+.wait h1.t-l { font-size: clamp(2.5rem, 4.7vw, 4.25rem); }
+.wait__time { text-align: right; }
+.wait__time .rn__eyebrow { color: var(--ink-3); }
+.wait__clock { font-size: 36px; font-weight: 400; letter-spacing: -.03em; }
+.wait__which, .wait__stage, .rec, .port, .wait__acts { grid-column: 1; }
+.wait__which { padding: 15px 0; border-block: 1px solid var(--edge); }
+.wait__stage { margin-top: 12px; }
+.wait__stage [data-stage-no] { font-size: var(--t-label); font-weight: 600; letter-spacing: var(--tr-label); color: var(--ink-2); }
+.wait__stage h2 { font-size: 24px; line-height: 1.25; font-weight: 500; }
+.wait__stage .t-small { font-size: var(--t-small); line-height: 1.6; }
+
+.rec { background: transparent; border-inline: 0; border-radius: 0; }
+.rec__lane { padding: 14px 0; grid-template-columns: 7rem minmax(0, 1fr) 6rem; }
+.rec__track { height: 4px; }
+.rec__note { padding: 13px 0; font-size: var(--t-note); }
+
+.port { border: 0; padding: 0; background: none; }
+.port__lamp { width: 8px; height: 8px; }
+.port .t-label { font-size: var(--t-label); }
+.port .t-micro, .wait__acts .t-micro { font-size: var(--t-note); max-width: 56ch; }
+
+.wait__dots { counter-reset: video; }
+.wait__dots li {
+  width: 52px;
+  height: 28px;
+  border: 1px solid var(--edge-hi);
+  border-radius: var(--r-pill);
+  background: transparent;
+  counter-increment: video;
+}
+.wait__dots li::before {
+  content: counter(video, decimal-leading-zero);
+  display: block;
+  text-align: center;
+  line-height: 26px;
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-3);
+}
+.wait__dots li[data-state="now"] { border-color: var(--ink); background: color-mix(in srgb, var(--ink) 10%, transparent); }
+.wait__dots li[data-state="now"]::before { color: var(--ink); }
+.wait__dots li[data-state="done"] { background: var(--panel); }
+
+/* During a run the compact idle stack opens into four readable stations. The
+   active channel advances toward the viewer; the controller stages bring all
+   four readings back onto one axis before comparison. */
+.rn:has(.wait) .optics { top: 210px; width: 50%; right: 0; overflow: visible; }
+.rn:has(.wait) .optics__assembly { left: 57%; top: 52%; }
+.rn:has(.wait) .optics__plate {
+  transition: transform 1.15s var(--ease-move), opacity .8s, filter .8s, border-color .8s, background .8s;
+}
+.rn:has(.wait) .optics__plate[data-optic="transcript"] { transform: translate3d(-138px, -112px, 18px) rotateZ(-8deg) scale(.54); }
+.rn:has(.wait) .optics__plate[data-optic="facial"] { transform: translate3d(112px, -94px, 64px) rotateZ(7deg) scale(.54); }
+.rn:has(.wait) .optics__plate[data-optic="vocal"] { transform: translate3d(-116px, 128px, 108px) rotateZ(6deg) scale(.54); }
+.rn:has(.wait) .optics__plate[data-optic="audience"] { transform: translate3d(134px, 116px, 152px) rotateZ(-7deg) scale(.54); }
+.rn:has(.wait) .optics__plate[data-state="waiting"] { opacity: .48; }
+.rn:has(.wait) .optics__plate[data-state="recording"] { z-index: 5; opacity: 1; filter: brightness(1.18); }
+.rn:has(.wait) .optics__plate[data-optic="transcript"][data-state="recording"] { transform: translate3d(-142px, -116px, 230px) rotateZ(-5deg) scale(.67); }
+.rn:has(.wait) .optics__plate[data-optic="facial"][data-state="recording"] { transform: translate3d(110px, -98px, 230px) rotateZ(4deg) scale(.67); }
+.rn:has(.wait) .optics__plate[data-optic="vocal"][data-state="recording"] { transform: translate3d(-120px, 124px, 230px) rotateZ(3deg) scale(.67); }
+.rn:has(.wait) .optics__plate[data-optic="audience"][data-state="recording"] { transform: translate3d(130px, 112px, 230px) rotateZ(-4deg) scale(.67); }
+.rn:has(.wait) .optics[data-stage="2"] .optics__plate,
+.rn:has(.wait) .optics[data-stage="3"] .optics__plate,
+.rn:has(.wait) .optics[data-stage="4"] .optics__plate {
+  opacity: .92;
+  filter: none;
+  transform: translate3d(0, 0, calc((var(--i) - 1.5) * 58px)) rotateZ(0) scale(.82);
+}
+.rn:has(.wait) .optics[data-stage="2"] .optics__plate { border-color: color-mix(in srgb, var(--optic) 72%, transparent); }
+
+/* --- the endings ------------------------------------------------------------ */
+
+.rn:has(.fin) .optics { top: 80px; }
+/* Rows sit at the top of the plate rather than stretching into its height:
+   stretched, a short ending's buttons grew into tall capsules. */
+.fin { position: relative; padding: 90px 0 100px; max-width: 55%; min-height: 640px; align-content: start; }
+.fin__acts { align-items: center; }
+.fin h1.t-l { font-size: clamp(2.75rem, 5vw, 4.5rem); }
+.fin__scores { gap: 30px; }
+.fin__scores .t-readout { font-size: 48px; font-weight: 450; }
+.fin .t-small { font-size: var(--t-small); line-height: 1.6; }
+
+.rn:has(.state) .optics { opacity: .2; }
+.rn .state { position: relative; min-height: 500px; max-width: 680px; padding: var(--s-9) 0 var(--s-6); }
+
+/* --- narrower ---------------------------------------------------------------- */
+
+@media (max-width: 1100px) {
+  .rn__form { column-gap: 5%; }
+  .rn__chans li { padding-inline: 12px; }
+  .rn__chans .t-read { font-size: 20px; }
+  .optics__assembly { scale: .85; }
+  .optics__coordinates span:last-child { display: none; }
+  .rn__go { grid-template-columns: 1fr; }
+  .cast__list { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 760px) {
+  .rn__edition { font-size: 12px; }
+  .rn__form { display: flex; flex-direction: column; padding-top: 38px; gap: 22px; }
+  .rn__brief { max-width: 100%; padding-bottom: 290px; }
+  .rn__brief .t-lede { max-width: 40ch; font-size: var(--t-body); }
+  .optics { width: 100%; height: 300px; top: 270px; right: 0; }
+  .optics__assembly { scale: .57; top: 55%; left: 59%; transform-origin: 0 0; }
+  .optics__coordinates, .optics__caption { display: none; }
+  .optic { left: 31px; top: 60px; }
+  .rn__modes, .rn__panel { width: 100%; }
+  .rn__what { margin-top: 18px; }
+  .rn__chans { grid-template-columns: repeat(2, 1fr); }
+  .rn__chans li { padding: 15px 10px !important; grid-template-columns: 10px 1fr auto; gap: 8px; }
+  .rn__chans li:nth-child(2) { border-right: 0; }
+  .rn__chans .t-read { font-size: 21px; }
+  .rn__chans .t-label { font-size: 12px; }
+  .rn__what h2 { flex-direction: column; gap: 6px; }
+  .fld__pair { grid-template-columns: 1fr 1fr; }
+  .rn__go { grid-template-columns: 1fr; }
+  .rn__colophon { margin-top: 30px; }
+  .rn__colophon span:last-child { display: none; }
+  .wait { display: flex; flex-direction: column; padding-top: 38px; }
+  .wait__top { gap: 15px; flex-wrap: nowrap; }
+  .wait h1.t-l { font-size: 38px; }
+  .wait__clock { font-size: 26px; }
+  .wait__top + * { margin-top: 285px; }
+  .rn:has(.wait) .optics { top: 225px; width: 100%; overflow: visible; }
+  .rn:has(.wait) .optics__assembly { left: 59%; top: 50%; }
+  .rn:has(.wait) .optics__plate[data-optic="transcript"] { transform: translate3d(-112px, -92px, 18px) rotateZ(-8deg) scale(.52); }
+  .rn:has(.wait) .optics__plate[data-optic="facial"] { transform: translate3d(92px, -78px, 64px) rotateZ(7deg) scale(.52); }
+  .rn:has(.wait) .optics__plate[data-optic="vocal"] { transform: translate3d(-94px, 106px, 108px) rotateZ(6deg) scale(.52); }
+  .rn:has(.wait) .optics__plate[data-optic="audience"] { transform: translate3d(106px, 96px, 152px) rotateZ(-7deg) scale(.52); }
+  .rn:has(.wait) .optics__plate[data-state="recording"] { scale: 1.08; }
+  .rn:has(.wait) .optics[data-stage="2"] .optics__plate,
+  .rn:has(.wait) .optics[data-stage="3"] .optics__plate,
+  .rn:has(.wait) .optics[data-stage="4"] .optics__plate { transform: translate3d(0, 0, calc((var(--i) - 1.5) * 48px)) scale(.8); }
+  .wait__stage { max-width: none; }
+  .rec__lane { grid-template-columns: 6.5rem minmax(0, 1fr) 6rem; }
+  .rec__state { grid-column: auto; justify-self: end; }
+  .fin { max-width: 100%; padding: 45px 0 20px; }
+  .rn:has(.fin) .optics { opacity: .2; top: 160px; }
+  .fin__scores { gap: 22px; }
+  .fin__scores .t-readout { font-size: 40px; }
+  .cast__list { grid-template-columns: 1fr; }
+  .cast__bar { top: 65px; }
+  .rn:has(.cast) .optics { display: none; }
+}
+
+/* --- the smallest phones (INCLUSIVE_DESIGN.md R4) ---------------------------
+   Last in the file on purpose. run.css's own phone rules sit before this
+   stylesheet in the cascade, so the 760px block above was quietly undoing
+   them: the Brand and Product fields stayed side by side at 136px each on a
+   320px screen, and the four-lens panel ran 11px off the right edge
+   (verify_ui.py check 11, 25 Sep 2026). */
+@media (max-width: 520px) {
+  .fld__pair { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 400px) {
+  .rn__chans { grid-template-columns: minmax(0, 1fr); }
+  .rn__chans li { border-right: 0; }
+  .rn__what, .rn__panel, .rn__modes { min-width: 0; max-width: 100%; }
+}

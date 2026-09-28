@@ -1,0 +1,36 @@
+{
+ "uid": "SSC0RkJuBVw_147",
+ "system": "four_channel",
+ "video_id": "SSC0RkJuBVw",
+ "segment_id": 147,
+ "split": "selection",
+ "payload": {
+  "segment_id": 147,
+  "start_s": 593.84,
+  "end_s": 598.4,
+  "transcript": "and gathered around it will start to fade. And that brings me onto the why.",
+  "transcript_sentiment": "NEGATIVE (0.50)",
+  "vocal_emotion": "NEUTRAL (arousal 0.54)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "happy (0.98)",
+  "video_comment_sentiment": "POSITIVE (0.95)"
+ },
+ "seconds": 4.687,
+ "raw": "{\n  \"segment_id\": 147,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"video_comment_sentiment\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words convey a negative sentiment, but their facial expression shows happiness, and the audience's comments are overwhelmingly positive. This discrepancy suggests a potential disconnect between the creator's tone and their emotional state.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 147,
+  "start_s": 593.84,
+  "end_s": 598.4,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: video_comment_sentiment"
+  ],
+  "flagged": false
+ }
+}

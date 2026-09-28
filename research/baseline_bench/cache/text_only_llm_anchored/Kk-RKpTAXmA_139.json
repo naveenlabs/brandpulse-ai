@@ -1,0 +1,27 @@
+{
+ "uid": "Kk-RKpTAXmA_139",
+ "system": "text_only_llm_anchored",
+ "video_id": "Kk-RKpTAXmA",
+ "segment_id": 139,
+ "split": "holdout",
+ "payload": {
+  "segment_id": 139,
+  "start_s": 599.26,
+  "end_s": 603.24,
+  "transcript": "Reese. Wah! Wah! Wah!"
+ },
+ "seconds": 3.363,
+ "raw": "{\n  \"segment_id\": 139,\n  \"conflict_score\": 1.0,\n  \"channels_in_conflict\": [],\n  \"flags\": [\"SARCASM_DETECTED\"],\n  \"narrative\": \"The creator's use of 'Wah! Wah! Wah!' is a clear indication of sarcasm, indicating that the segment is not genuine.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 139,
+  "start_s": 599.26,
+  "end_s": 603.24,
+  "conflict_score": 1.0,
+  "conflict_reasons": [
+   "SARCASM_DETECTED"
+  ],
+  "flagged": true
+ }
+}

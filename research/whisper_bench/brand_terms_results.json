@@ -1,0 +1,931 @@
+{
+ "ref_counts": {
+  "xiaomi": 1,
+  "angry birds": 1,
+  "samsung": 1,
+  "android": 1,
+  "apple": 1,
+  "dior": 5,
+  "sauvage": 6,
+  "chanel": 1,
+  "eau de toilette": 2,
+  "pixel": 1,
+  "night sight": 1,
+  "iphone": 3,
+  "fold": 3,
+  "macbook": 1,
+  "qwen": 1,
+  "draw things": 1
+ },
+ "total": 30,
+ "models": {
+  "base.en": {
+   "found": 20,
+   "total": 30,
+   "recall": 0.6666666666666666,
+   "per_term": {
+    "xiaomi": [
+     1,
+     1
+    ],
+    "angry birds": [
+     1,
+     1
+    ],
+    "samsung": [
+     1,
+     1
+    ],
+    "android": [
+     1,
+     1
+    ],
+    "apple": [
+     1,
+     1
+    ],
+    "dior": [
+     5,
+     5
+    ],
+    "sauvage": [
+     0,
+     6
+    ],
+    "chanel": [
+     1,
+     1
+    ],
+    "eau de toilette": [
+     0,
+     2
+    ],
+    "pixel": [
+     1,
+     1
+    ],
+    "night sight": [
+     1,
+     1
+    ],
+    "iphone": [
+     3,
+     3
+    ],
+    "fold": [
+     3,
+     3
+    ],
+    "macbook": [
+     0,
+     1
+    ],
+    "qwen": [
+     0,
+     1
+    ],
+    "draw things": [
+     1,
+     1
+    ]
+   },
+   "missed": [
+    "sauvage",
+    "eau de toilette",
+    "macbook",
+    "qwen"
+   ]
+  },
+  "base": {
+   "found": 21,
+   "total": 30,
+   "recall": 0.7,
+   "per_term": {
+    "xiaomi": [
+     1,
+     1
+    ],
+    "angry birds": [
+     1,
+     1
+    ],
+    "samsung": [
+     1,
+     1
+    ],
+    "android": [
+     1,
+     1
+    ],
+    "apple": [
+     1,
+     1
+    ],
+    "dior": [
+     5,
+     5
+    ],
+    "sauvage": [
+     0,
+     6
+    ],
+    "chanel": [
+     1,
+     1
+    ],
+    "eau de toilette": [
+     0,
+     2
+    ],
+    "pixel": [
+     1,
+     1
+    ],
+    "night sight": [
+     1,
+     1
+    ],
+    "iphone": [
+     3,
+     3
+    ],
+    "fold": [
+     3,
+     3
+    ],
+    "macbook": [
+     1,
+     1
+    ],
+    "qwen": [
+     0,
+     1
+    ],
+    "draw things": [
+     1,
+     1
+    ]
+   },
+   "missed": [
+    "sauvage",
+    "eau de toilette",
+    "qwen"
+   ]
+  },
+  "large-v1": {
+   "found": 27,
+   "total": 30,
+   "recall": 0.9,
+   "per_term": {
+    "xiaomi": [
+     1,
+     1
+    ],
+    "angry birds": [
+     1,
+     1
+    ],
+    "samsung": [
+     1,
+     1
+    ],
+    "android": [
+     1,
+     1
+    ],
+    "apple": [
+     1,
+     1
+    ],
+    "dior": [
+     5,
+     5
+    ],
+    "sauvage": [
+     6,
+     6
+    ],
+    "chanel": [
+     1,
+     1
+    ],
+    "eau de toilette": [
+     0,
+     2
+    ],
+    "pixel": [
+     1,
+     1
+    ],
+    "night sight": [
+     1,
+     1
+    ],
+    "iphone": [
+     3,
+     3
+    ],
+    "fold": [
+     3,
+     3
+    ],
+    "macbook": [
+     1,
+     1
+    ],
+    "qwen": [
+     0,
+     1
+    ],
+    "draw things": [
+     1,
+     1
+    ]
+   },
+   "missed": [
+    "eau de toilette",
+    "qwen"
+   ]
+  },
+  "large-v2": {
+   "found": 29,
+   "total": 30,
+   "recall": 0.9666666666666667,
+   "per_term": {
+    "xiaomi": [
+     1,
+     1
+    ],
+    "angry birds": [
+     1,
+     1
+    ],
+    "samsung": [
+     1,
+     1
+    ],
+    "android": [
+     1,
+     1
+    ],
+    "apple": [
+     1,
+     1
+    ],
+    "dior": [
+     5,
+     5
+    ],
+    "sauvage": [
+     6,
+     6
+    ],
+    "chanel": [
+     1,
+     1
+    ],
+    "eau de toilette": [
+     2,
+     2
+    ],
+    "pixel": [
+     1,
+     1
+    ],
+    "night sight": [
+     1,
+     1
+    ],
+    "iphone": [
+     3,
+     3
+    ],
+    "fold": [
+     3,
+     3
+    ],
+    "macbook": [
+     1,
+     1
+    ],
+    "qwen": [
+     0,
+     1
+    ],
+    "draw things": [
+     1,
+     1
+    ]
+   },
+   "missed": [
+    "qwen"
+   ]
+  },
+  "large-v3-turbo": {
+   "found": 28,
+   "total": 30,
+   "recall": 0.9333333333333333,
+   "per_term": {
+    "xiaomi": [
+     1,
+     1
+    ],
+    "angry birds": [
+     1,
+     1
+    ],
+    "samsung": [
+     1,
+     1
+    ],
+    "android": [
+     1,
+     1
+    ],
+    "apple": [
+     1,
+     1
+    ],
+    "dior": [
+     5,
+     5
+    ],
+    "sauvage": [
+     6,
+     6
+    ],
+    "chanel": [
+     1,
+     1
+    ],
+    "eau de toilette": [
+     2,
+     2
+    ],
+    "pixel": [
+     1,
+     1
+    ],
+    "night sight": [
+     1,
+     1
+    ],
+    "iphone": [
+     3,
+     3
+    ],
+    "fold": [
+     3,
+     3
+    ],
+    "macbook": [
+     1,
+     1
+    ],
+    "qwen": [
+     0,
+     1
+    ],
+    "draw things": [
+     0,
+     1
+    ]
+   },
+   "missed": [
+    "qwen",
+    "draw things"
+   ]
+  },
+  "large-v3": {
+   "found": 29,
+   "total": 30,
+   "recall": 0.9666666666666667,
+   "per_term": {
+    "xiaomi": [
+     1,
+     1
+    ],
+    "angry birds": [
+     1,
+     1
+    ],
+    "samsung": [
+     1,
+     1
+    ],
+    "android": [
+     1,
+     1
+    ],
+    "apple": [
+     1,
+     1
+    ],
+    "dior": [
+     5,
+     5
+    ],
+    "sauvage": [
+     6,
+     6
+    ],
+    "chanel": [
+     1,
+     1
+    ],
+    "eau de toilette": [
+     2,
+     2
+    ],
+    "pixel": [
+     1,
+     1
+    ],
+    "night sight": [
+     1,
+     1
+    ],
+    "iphone": [
+     3,
+     3
+    ],
+    "fold": [
+     3,
+     3
+    ],
+    "macbook": [
+     1,
+     1
+    ],
+    "qwen": [
+     0,
+     1
+    ],
+    "draw things": [
+     1,
+     1
+    ]
+   },
+   "missed": [
+    "qwen"
+   ]
+  },
+  "medium.en": {
+   "found": 22,
+   "total": 30,
+   "recall": 0.7333333333333333,
+   "per_term": {
+    "xiaomi": [
+     1,
+     1
+    ],
+    "angry birds": [
+     1,
+     1
+    ],
+    "samsung": [
+     1,
+     1
+    ],
+    "android": [
+     1,
+     1
+    ],
+    "apple": [
+     1,
+     1
+    ],
+    "dior": [
+     5,
+     5
+    ],
+    "sauvage": [
+     0,
+     6
+    ],
+    "chanel": [
+     1,
+     1
+    ],
+    "eau de toilette": [
+     0,
+     2
+    ],
+    "pixel": [
+     1,
+     1
+    ],
+    "night sight": [
+     1,
+     1
+    ],
+    "iphone": [
+     3,
+     3
+    ],
+    "fold": [
+     3,
+     3
+    ],
+    "macbook": [
+     1,
+     1
+    ],
+    "qwen": [
+     1,
+     1
+    ],
+    "draw things": [
+     1,
+     1
+    ]
+   },
+   "missed": [
+    "sauvage",
+    "eau de toilette"
+   ]
+  },
+  "medium": {
+   "found": 23,
+   "total": 30,
+   "recall": 0.7666666666666667,
+   "per_term": {
+    "xiaomi": [
+     1,
+     1
+    ],
+    "angry birds": [
+     1,
+     1
+    ],
+    "samsung": [
+     1,
+     1
+    ],
+    "android": [
+     1,
+     1
+    ],
+    "apple": [
+     1,
+     1
+    ],
+    "dior": [
+     5,
+     5
+    ],
+    "sauvage": [
+     0,
+     6
+    ],
+    "chanel": [
+     1,
+     1
+    ],
+    "eau de toilette": [
+     2,
+     2
+    ],
+    "pixel": [
+     1,
+     1
+    ],
+    "night sight": [
+     1,
+     1
+    ],
+    "iphone": [
+     3,
+     3
+    ],
+    "fold": [
+     3,
+     3
+    ],
+    "macbook": [
+     1,
+     1
+    ],
+    "qwen": [
+     0,
+     1
+    ],
+    "draw things": [
+     1,
+     1
+    ]
+   },
+   "missed": [
+    "sauvage",
+    "qwen"
+   ]
+  },
+  "small.en": {
+   "found": 21,
+   "total": 30,
+   "recall": 0.7,
+   "per_term": {
+    "xiaomi": [
+     1,
+     1
+    ],
+    "angry birds": [
+     1,
+     1
+    ],
+    "samsung": [
+     1,
+     1
+    ],
+    "android": [
+     1,
+     1
+    ],
+    "apple": [
+     1,
+     1
+    ],
+    "dior": [
+     5,
+     5
+    ],
+    "sauvage": [
+     0,
+     6
+    ],
+    "chanel": [
+     1,
+     1
+    ],
+    "eau de toilette": [
+     0,
+     2
+    ],
+    "pixel": [
+     1,
+     1
+    ],
+    "night sight": [
+     1,
+     1
+    ],
+    "iphone": [
+     3,
+     3
+    ],
+    "fold": [
+     3,
+     3
+    ],
+    "macbook": [
+     1,
+     1
+    ],
+    "qwen": [
+     0,
+     1
+    ],
+    "draw things": [
+     1,
+     1
+    ]
+   },
+   "missed": [
+    "sauvage",
+    "eau de toilette",
+    "qwen"
+   ]
+  },
+  "small": {
+   "found": 21,
+   "total": 30,
+   "recall": 0.7,
+   "per_term": {
+    "xiaomi": [
+     1,
+     1
+    ],
+    "angry birds": [
+     1,
+     1
+    ],
+    "samsung": [
+     1,
+     1
+    ],
+    "android": [
+     1,
+     1
+    ],
+    "apple": [
+     1,
+     1
+    ],
+    "dior": [
+     5,
+     5
+    ],
+    "sauvage": [
+     0,
+     6
+    ],
+    "chanel": [
+     1,
+     1
+    ],
+    "eau de toilette": [
+     0,
+     2
+    ],
+    "pixel": [
+     1,
+     1
+    ],
+    "night sight": [
+     1,
+     1
+    ],
+    "iphone": [
+     3,
+     3
+    ],
+    "fold": [
+     3,
+     3
+    ],
+    "macbook": [
+     1,
+     1
+    ],
+    "qwen": [
+     0,
+     1
+    ],
+    "draw things": [
+     1,
+     1
+    ]
+   },
+   "missed": [
+    "sauvage",
+    "eau de toilette",
+    "qwen"
+   ]
+  },
+  "tiny.en": {
+   "found": 20,
+   "total": 30,
+   "recall": 0.6666666666666666,
+   "per_term": {
+    "xiaomi": [
+     1,
+     1
+    ],
+    "angry birds": [
+     1,
+     1
+    ],
+    "samsung": [
+     1,
+     1
+    ],
+    "android": [
+     1,
+     1
+    ],
+    "apple": [
+     1,
+     1
+    ],
+    "dior": [
+     5,
+     5
+    ],
+    "sauvage": [
+     0,
+     6
+    ],
+    "chanel": [
+     1,
+     1
+    ],
+    "eau de toilette": [
+     0,
+     2
+    ],
+    "pixel": [
+     1,
+     1
+    ],
+    "night sight": [
+     1,
+     1
+    ],
+    "iphone": [
+     3,
+     3
+    ],
+    "fold": [
+     3,
+     3
+    ],
+    "macbook": [
+     0,
+     1
+    ],
+    "qwen": [
+     0,
+     1
+    ],
+    "draw things": [
+     1,
+     1
+    ]
+   },
+   "missed": [
+    "sauvage",
+    "eau de toilette",
+    "macbook",
+    "qwen"
+   ]
+  },
+  "tiny": {
+   "found": 17,
+   "total": 30,
+   "recall": 0.5666666666666667,
+   "per_term": {
+    "xiaomi": [
+     1,
+     1
+    ],
+    "angry birds": [
+     1,
+     1
+    ],
+    "samsung": [
+     1,
+     1
+    ],
+    "android": [
+     1,
+     1
+    ],
+    "apple": [
+     1,
+     1
+    ],
+    "dior": [
+     5,
+     5
+    ],
+    "sauvage": [
+     0,
+     6
+    ],
+    "chanel": [
+     1,
+     1
+    ],
+    "eau de toilette": [
+     0,
+     2
+    ],
+    "pixel": [
+     1,
+     1
+    ],
+    "night sight": [
+     1,
+     1
+    ],
+    "iphone": [
+     3,
+     3
+    ],
+    "fold": [
+     0,
+     3
+    ],
+    "macbook": [
+     0,
+     1
+    ],
+    "qwen": [
+     0,
+     1
+    ],
+    "draw things": [
+     1,
+     1
+    ]
+   },
+   "missed": [
+    "sauvage",
+    "eau de toilette",
+    "fold",
+    "macbook",
+    "qwen"
+   ]
+  }
+ }
+}

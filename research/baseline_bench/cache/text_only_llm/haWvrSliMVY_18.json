@@ -1,0 +1,28 @@
+{
+ "uid": "haWvrSliMVY_18",
+ "system": "text_only_llm",
+ "video_id": "haWvrSliMVY",
+ "segment_id": 18,
+ "split": "holdout",
+ "payload": {
+  "segment_id": 18,
+  "start_s": 134.18,
+  "end_s": 139.04,
+  "transcript": "one in-house perfumer. They don't switch to different perfumers. They always have one guy"
+ },
+ "seconds": 3.801,
+ "raw": "{\n  \"segment_id\": 18,\n  \"conflict_score\": 0.8,\n  \"channels_in_conflict\": [],\n  \"flags\": [\"POTENTIAL_SCRIPTED_COPY\", \"OVERLY_POSITIVE_TONE\"],\n  \"narrative\": \"The creator's statement about always having one perfumer seems overly promotional and may be scripted marketing copy, given the emphasis on a single 'guy'.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 18,
+  "start_s": 134.18,
+  "end_s": 139.04,
+  "conflict_score": 0.8,
+  "conflict_reasons": [
+   "POTENTIAL_SCRIPTED_COPY",
+   "OVERLY_POSITIVE_TONE"
+  ],
+  "flagged": true
+ }
+}

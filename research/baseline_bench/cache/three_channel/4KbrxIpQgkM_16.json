@@ -1,0 +1,36 @@
+{
+ "uid": "4KbrxIpQgkM_16",
+ "system": "three_channel",
+ "video_id": "4KbrxIpQgkM",
+ "segment_id": 16,
+ "split": "selection",
+ "payload": {
+  "segment_id": 16,
+  "start_s": 97.5,
+  "end_s": 100.56,
+  "transcript": "And then two months later, we're all used to it and we forget about the looks",
+  "transcript_sentiment": "NEGATIVE (0.67)",
+  "vocal_emotion": "NEUTRAL (arousal 0.48)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.99)"
+ },
+ "seconds": 4.551,
+ "raw": "{\n  \"segment_id\": 16,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"video_comment_sentiment\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words convey a negative sentiment, but their facial expression is neutral and the audience's comments are overwhelmingly positive, indicating a conflict between the creator's verbal and non-verbal cues.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 16,
+  "start_s": 97.5,
+  "end_s": 100.56,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: video_comment_sentiment"
+  ],
+  "flagged": false
+ }
+}

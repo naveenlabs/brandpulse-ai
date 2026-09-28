@@ -1,0 +1,326 @@
+{
+ "video_id": "1VjPETN3m6U",
+ "n_frames": 572,
+ "face_confidence_threshold": 0.5,
+ "before": {
+  "backend": "opencv",
+  "seconds_per_frame": 0.6942,
+  "frames_with_face": 363,
+  "right": 6,
+  "wrong": 58,
+  "unknown": 13,
+  "n_segments": 77,
+  "accuracy_lower": 0.07792207792207792,
+  "accuracy_upper": 0.24675324675324675,
+  "accuracy_lower_ci95": [
+   0.036200461908799254,
+   0.15975805449859498
+  ],
+  "false_face": 15,
+  "missed_face": 0,
+  "wrong_label": 43,
+  "outcomes": [
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "RIGHT",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "RIGHT",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "RIGHT",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "RIGHT",
+   "RIGHT",
+   "WRONG",
+   "RIGHT",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG"
+  ]
+ },
+ "after": {
+  "backend": "yunet",
+  "seconds_per_frame": 0.0989,
+  "frames_with_face": 386,
+  "right": 11,
+  "wrong": 53,
+  "unknown": 13,
+  "n_segments": 77,
+  "accuracy_lower": 0.14285714285714285,
+  "accuracy_upper": 0.3116883116883117,
+  "accuracy_lower_ci95": [
+   0.08168247823927466,
+   0.2379747279515974
+  ],
+  "false_face": 9,
+  "missed_face": 0,
+  "wrong_label": 44,
+  "outcomes": [
+   "WRONG",
+   "RIGHT",
+   "WRONG",
+   "WRONG",
+   "RIGHT",
+   "RIGHT",
+   "RIGHT",
+   "RIGHT",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "RIGHT",
+   "RIGHT",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "RIGHT",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "RIGHT",
+   "RIGHT",
+   "WRONG",
+   "RIGHT",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG",
+   "WRONG"
+  ]
+ },
+ "mcnemar_after_vs_before": {
+  "b": 1,
+  "c": 6,
+  "n_discordant": 7,
+  "p_value": 0.125,
+  "min_attainable_p": 0.015625
+ },
+ "segments_changed": [
+  {
+   "segment_id": 1,
+   "before": "NEGATIVE",
+   "after": null,
+   "gold": null
+  },
+  {
+   "segment_id": 2,
+   "before": "NEGATIVE",
+   "after": null,
+   "gold": null
+  },
+  {
+   "segment_id": 4,
+   "before": "POSITIVE",
+   "after": "NEGATIVE",
+   "gold": null
+  },
+  {
+   "segment_id": 6,
+   "before": "NEUTRAL",
+   "after": null,
+   "gold": null
+  },
+  {
+   "segment_id": 7,
+   "before": "NEUTRAL",
+   "after": "NEGATIVE",
+   "gold": null
+  },
+  {
+   "segment_id": 8,
+   "before": "NEGATIVE",
+   "after": "NEUTRAL",
+   "gold": null
+  },
+  {
+   "segment_id": 9,
+   "before": "NEGATIVE",
+   "after": null,
+   "gold": null
+  },
+  {
+   "segment_id": 10,
+   "before": "NEGATIVE",
+   "after": null,
+   "gold": null
+  },
+  {
+   "segment_id": 11,
+   "before": "NEUTRAL",
+   "after": null,
+   "gold": null
+  },
+  {
+   "segment_id": 12,
+   "before": "NEUTRAL",
+   "after": "NEGATIVE",
+   "gold": null
+  },
+  {
+   "segment_id": 13,
+   "before": "NEGATIVE",
+   "after": "NEUTRAL",
+   "gold": null
+  },
+  {
+   "segment_id": 17,
+   "before": "NEGATIVE",
+   "after": null,
+   "gold": null
+  },
+  {
+   "segment_id": 21,
+   "before": "NEUTRAL",
+   "after": "NEGATIVE",
+   "gold": "POSITIVE"
+  },
+  {
+   "segment_id": 23,
+   "before": "NEUTRAL",
+   "after": "NEGATIVE",
+   "gold": null
+  },
+  {
+   "segment_id": 24,
+   "before": "NEUTRAL",
+   "after": "NEGATIVE",
+   "gold": null
+  },
+  {
+   "segment_id": 25,
+   "before": "NEUTRAL",
+   "after": "NEGATIVE",
+   "gold": null
+  },
+  {
+   "segment_id": 30,
+   "before": "POSITIVE",
+   "after": "NEGATIVE",
+   "gold": null
+  },
+  {
+   "segment_id": 41,
+   "before": "NEGATIVE",
+   "after": "NEUTRAL",
+   "gold": null
+  },
+  {
+   "segment_id": 45,
+   "before": "NEUTRAL",
+   "after": "NEGATIVE",
+   "gold": null
+  },
+  {
+   "segment_id": 48,
+   "before": "NEUTRAL",
+   "after": "NEGATIVE",
+   "gold": null
+  },
+  {
+   "segment_id": 53,
+   "before": "POSITIVE",
+   "after": "NEGATIVE",
+   "gold": "POSITIVE"
+  },
+  {
+   "segment_id": 60,
+   "before": "NEUTRAL",
+   "after": "NEGATIVE",
+   "gold": null
+  },
+  {
+   "segment_id": 67,
+   "before": "NEUTRAL",
+   "after": "NEGATIVE",
+   "gold": null
+  },
+  {
+   "segment_id": 70,
+   "before": "NEUTRAL",
+   "after": "NEGATIVE",
+   "gold": null
+  }
+ ]
+}

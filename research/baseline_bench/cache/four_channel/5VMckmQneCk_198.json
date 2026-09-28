@@ -1,0 +1,35 @@
+{
+ "uid": "5VMckmQneCk_198",
+ "system": "four_channel",
+ "video_id": "5VMckmQneCk",
+ "segment_id": 198,
+ "split": "selection",
+ "payload": {
+  "segment_id": 198,
+  "start_s": 850.3199999999999,
+  "end_s": 855.9799999999999,
+  "transcript": "And are they going to bring these improvements to their previous phones? I mean, I'd say there's at least a 50% chance that they don't.",
+  "transcript_sentiment": "NEUTRAL (0.55)",
+  "vocal_emotion": "NEUTRAL (arousal 0.64)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "happy (0.87)",
+  "video_comment_sentiment": "POSITIVE (0.95)"
+ },
+ "seconds": 4.487,
+ "raw": "{\n  \"segment_id\": 198,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and facial expressions convey a neutral sentiment, but their tone and the audience's comments suggest a positive sentiment, indicating a conflict between the creator's verbal and non-verbal cues.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 198,
+  "start_s": 850.3199999999999,
+  "end_s": 855.9799999999999,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion"
+  ],
+  "flagged": false
+ }
+}

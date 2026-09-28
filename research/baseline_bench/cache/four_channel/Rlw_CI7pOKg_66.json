@@ -1,0 +1,35 @@
+{
+ "uid": "Rlw_CI7pOKg_66",
+ "system": "four_channel",
+ "video_id": "Rlw_CI7pOKg",
+ "segment_id": 66,
+ "split": "holdout",
+ "payload": {
+  "segment_id": 66,
+  "start_s": 382.15999999999997,
+  "end_s": 388.47999999999996,
+  "transcript": "probably go for a macbook pro with the newly updated m5 pro m5 max chips so this extra performance is",
+  "transcript_sentiment": "NEUTRAL (0.51)",
+  "vocal_emotion": "POSITIVE (arousal 0.71)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "neutral (0.68)",
+  "video_comment_sentiment": "POSITIVE (0.98)"
+ },
+ "seconds": 4.378,
+ "raw": "{\n  \"segment_id\": 66,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and facial expressions convey a neutral sentiment, but their tone and the audience's comments suggest a positive sentiment, indicating a conflict between the creator's verbal and non-verbal cues.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 66,
+  "start_s": 382.15999999999997,
+  "end_s": 388.47999999999996,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion"
+  ],
+  "flagged": false
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "uid": "32slGhAH3Xc_0",
+ "system": "text_only_llm",
+ "video_id": "32slGhAH3Xc",
+ "segment_id": 0,
+ "split": "selection",
+ "payload": {
+  "segment_id": 0,
+  "start_s": 0.0,
+  "end_s": 5.78,
+  "transcript": "This is the just announced Samsung Galaxy Z Flip 5. And when you first look at it, it doesn't make any sense."
+ },
+ "seconds": 3.852,
+ "raw": "{\n  \"segment_id\": 0,\n  \"conflict_score\": 0.8,\n  \"channels_in_conflict\": [],\n  \"flags\": [\"POTENTIAL_PAID_PROMOTION\", \"SARCASM_DETECTED\"],\n  \"narrative\": \"The creator's tone and language suggest a scripted review, with a hint of sarcasm, implying they may not be entirely genuine in their assessment of the product.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 0,
+  "start_s": 0.0,
+  "end_s": 5.78,
+  "conflict_score": 0.8,
+  "conflict_reasons": [
+   "POTENTIAL_PAID_PROMOTION",
+   "SARCASM_DETECTED"
+  ],
+  "flagged": true
+ }
+}

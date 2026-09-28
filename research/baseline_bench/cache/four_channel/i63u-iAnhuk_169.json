@@ -1,0 +1,36 @@
+{
+ "uid": "i63u-iAnhuk_169",
+ "system": "four_channel",
+ "video_id": "i63u-iAnhuk",
+ "segment_id": 169,
+ "split": "selection",
+ "payload": {
+  "segment_id": 169,
+  "start_s": 763.58,
+  "end_s": 767.42,
+  "transcript": "It actually is coming to all phones with Google Photos, so it's not just like a specific pixel thing,",
+  "transcript_sentiment": "NEUTRAL (0.78)",
+  "vocal_emotion": "NEUTRAL (arousal 0.50)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "sad (0.73)",
+  "video_comment_sentiment": "POSITIVE (0.97)"
+ },
+ "seconds": 4.637,
+ "raw": "{\n  \"segment_id\": 169,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"video_comment_sentiment\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and tone suggest neutrality, but their facial expression is sad, and the audience's comments are overwhelmingly positive, indicating a conflict between the creator's verbal and non-verbal cues.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 169,
+  "start_s": 763.58,
+  "end_s": 767.42,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: video_comment_sentiment"
+  ],
+  "flagged": false
+ }
+}

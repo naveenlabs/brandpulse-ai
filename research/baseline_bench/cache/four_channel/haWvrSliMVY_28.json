@@ -1,0 +1,36 @@
+{
+ "uid": "haWvrSliMVY_28",
+ "system": "four_channel",
+ "video_id": "haWvrSliMVY",
+ "segment_id": 28,
+ "split": "holdout",
+ "payload": {
+  "segment_id": 28,
+  "start_s": 200.5,
+  "end_s": 208.12,
+  "transcript": "compliments. Just dressed up one hour ago with my nice navy blue suit. Then I switch to my white Speedo.",
+  "transcript_sentiment": "NEUTRAL (0.56)",
+  "vocal_emotion": "POSITIVE (arousal 0.73)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "sad (0.57)",
+  "video_comment_sentiment": "POSITIVE (0.99)"
+ },
+ "seconds": 4.305,
+ "raw": "{\n  \"segment_id\": 28,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"vocal_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and tone suggest positivity, but their facial expression and vocal tone convey sadness, indicating a conflict between their verbal and non-verbal cues.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 28,
+  "start_s": 200.5,
+  "end_s": 208.12,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: vocal_emotion"
+  ],
+  "flagged": false
+ }
+}

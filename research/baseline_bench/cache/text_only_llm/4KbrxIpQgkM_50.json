@@ -1,0 +1,27 @@
+{
+ "uid": "4KbrxIpQgkM_50",
+ "system": "text_only_llm",
+ "video_id": "4KbrxIpQgkM",
+ "segment_id": 50,
+ "split": "selection",
+ "payload": {
+  "segment_id": 50,
+  "start_s": 262.78,
+  "end_s": 265.94,
+  "transcript": "Well, technically no. The Snapdragon 8 Elite still smokes this."
+ },
+ "seconds": 3.477,
+ "raw": "{\n  \"segment_id\": 50,\n  \"conflict_score\": 0.8,\n  \"channels_in_conflict\": [],\n  \"flags\": [\"SARCASM_DETECTED\"],\n  \"narrative\": \"The creator's use of sarcasm, specifically the phrase 'technically no', suggests they are being insincere and the statement is likely scripted marketing copy.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 50,
+  "start_s": 262.78,
+  "end_s": 265.94,
+  "conflict_score": 0.8,
+  "conflict_reasons": [
+   "SARCASM_DETECTED"
+  ],
+  "flagged": true
+ }
+}

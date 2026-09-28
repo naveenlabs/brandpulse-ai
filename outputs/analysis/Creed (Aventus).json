@@ -1,0 +1,2683 @@
+{
+  "schema": "brandpulse.analysis/1",
+  "status": "complete",
+  "steps": {
+    "claims": true,
+    "topics": true,
+    "comments": true,
+    "prose": true
+  },
+  "created_at": "2026-09-25T12:07:43+00:00",
+  "model": "llama3.1:8b",
+  "num_ctx": 6144,
+  "prompt_versions": {
+    "claims": "11039eb1443c",
+    "topics": "849d75dbc679",
+    "comments": "dda83531df32",
+    "prose": "633ad9a4e222"
+  },
+  "subject": {
+    "brand": "Creed",
+    "product": "Aventus",
+    "title": ""
+  },
+  "facts": {
+    "scores": {
+      "authenticity": 48.6,
+      "brand_health": 77.51
+    },
+    "segments": 108,
+    "flagged": 5,
+    "threshold": 0.75,
+    "duration_s": 567.8000000000001,
+    "comments": {
+      "n": 100,
+      "distribution": {
+        "POSITIVE": 71,
+        "NEUTRAL": 14,
+        "NEGATIVE": 15
+      },
+      "label": "POSITIVE"
+    },
+    "reviewer": {
+      "lean": 0.3238192197214848,
+      "se": 0.06756692520481498,
+      "n": 108,
+      "call": "positive",
+      "counts": {
+        "POSITIVE": 49,
+        "NEUTRAL": 47,
+        "NEGATIVE": 12
+      },
+      "seconds": {
+        "POSITIVE": 244.52,
+        "NEUTRAL": 239.14,
+        "NEGATIVE": 66.4
+      },
+      "unread": 0
+    },
+    "audience": {
+      "lean": 0.56,
+      "se": 0.07429126408395481,
+      "n": 100,
+      "call": "positive",
+      "counts": {
+        "POSITIVE": 71,
+        "NEUTRAL": 14,
+        "NEGATIVE": 15
+      }
+    },
+    "agreement": {
+      "gap": -0.23618078027851525,
+      "se": 0.10042151811651213,
+      "low": -0.43300333905971555,
+      "high": -0.03935822149731491,
+      "call": "audience_warmer"
+    },
+    "confidence": {
+      "level": "well_covered",
+      "checks": [
+        {
+          "id": "comments",
+          "label": "Enough comments to read the audience",
+          "value": 100,
+          "target": 30,
+          "unit": "comments",
+          "passed": true,
+          "core": true
+        },
+        {
+          "id": "transcript",
+          "label": "The reviewer's words were read",
+          "value": 1.0,
+          "target": 0.5,
+          "unit": "share",
+          "core": true,
+          "passed": true
+        },
+        {
+          "id": "weak_conflict",
+          "label": "The conflict rests mostly on the stronger channels",
+          "value": 0.327,
+          "target": 0.5,
+          "unit": "share",
+          "passed": true,
+          "core": false,
+          "no_conflict": false
+        }
+      ],
+      "coverage": {
+        "transcript": {
+          "read": 108,
+          "total": 108,
+          "share": 1.0
+        },
+        "facial": {
+          "read": 61,
+          "total": 108,
+          "share": 0.5648148148148148
+        },
+        "vocal": {
+          "read": 108,
+          "total": 108,
+          "share": 1.0
+        },
+        "comment": {
+          "read": 108,
+          "total": 108,
+          "share": 1.0
+        }
+      },
+      "weak_conflict": {
+        "weak": 17.6842,
+        "total": 54.0842,
+        "share": 0.3269753458496194
+      },
+      "accuracy": {
+        "comment": 78.7,
+        "transcript": 67.8,
+        "vocal": 48.9,
+        "facial": 34.2
+      },
+      "means_not": "How much evidence this reading rests on. Not whether the verdict is right, and not whether anyone in the video was honest.",
+      "ceiling": {
+        "text": "No score in this system has been shown to track human judgement of authenticity. On 119 hand-rated segments the four-channel design scored rho = +0.0575 (95% CI -0.1282 to +0.2364); people agreed with each other at rho = +0.8038.",
+        "n": 119,
+        "rho": 0.0575,
+        "ci": [
+          -0.1282,
+          0.2364
+        ],
+        "human_rho": 0.8038,
+        "source": "baseline_bench/BASELINE_ANALYSIS.md"
+      }
+    },
+    "tone": {
+      "window_s": 60.0,
+      "points": [
+        {
+          "seg": 0,
+          "start": 0.0,
+          "end": 4.36,
+          "raw": 0.0,
+          "t": 2.18,
+          "smooth": 0.231
+        },
+        {
+          "seg": 1,
+          "start": 4.36,
+          "end": 9.9,
+          "raw": 0.0,
+          "t": 7.13,
+          "smooth": 0.2579
+        },
+        {
+          "seg": 2,
+          "start": 10.26,
+          "end": 16.62,
+          "raw": 0.5937,
+          "t": 13.44,
+          "smooth": 0.2579
+        },
+        {
+          "seg": 3,
+          "start": 16.62,
+          "end": 22.06,
+          "raw": 0.6335,
+          "t": 19.34,
+          "smooth": 0.2827
+        },
+        {
+          "seg": 4,
+          "start": 22.06,
+          "end": 27.560000000000002,
+          "raw": 0.0,
+          "t": 24.81,
+          "smooth": 0.3327
+        },
+        {
+          "seg": 5,
+          "start": 27.56,
+          "end": 31.919999999999998,
+          "raw": 0.0,
+          "t": 29.74,
+          "smooth": 0.3264
+        },
+        {
+          "seg": 6,
+          "start": 31.919999999999998,
+          "end": 35.8,
+          "raw": 0.4939,
+          "t": 33.86,
+          "smooth": 0.343
+        },
+        {
+          "seg": 7,
+          "start": 47.44,
+          "end": 51.76,
+          "raw": 0.7454,
+          "t": 49.6,
+          "smooth": 0.3307
+        },
+        {
+          "seg": 8,
+          "start": 51.76,
+          "end": 56.980000000000004,
+          "raw": 0.6175,
+          "t": 54.37,
+          "smooth": 0.256
+        },
+        {
+          "seg": 9,
+          "start": 56.98,
+          "end": 62.099999999999994,
+          "raw": 0.0,
+          "t": 59.54,
+          "smooth": 0.2878
+        },
+        {
+          "seg": 10,
+          "start": 62.22,
+          "end": 67.03999999999999,
+          "raw": 0.5127,
+          "t": 64.63,
+          "smooth": 0.2695
+        },
+        {
+          "seg": 11,
+          "start": 67.03999999999999,
+          "end": 72.5,
+          "raw": 0.0,
+          "t": 69.77,
+          "smooth": 0.2379
+        },
+        {
+          "seg": 12,
+          "start": 72.5,
+          "end": 76.9,
+          "raw": 0.8094,
+          "t": 74.7,
+          "smooth": 0.2174
+        },
+        {
+          "seg": 13,
+          "start": 76.9,
+          "end": 81.17999999999999,
+          "raw": 0.0,
+          "t": 79.04,
+          "smooth": 0.1875
+        },
+        {
+          "seg": 14,
+          "start": 81.18,
+          "end": 85.54,
+          "raw": -0.6411,
+          "t": 83.36,
+          "smooth": 0.1372
+        },
+        {
+          "seg": 15,
+          "start": 85.54,
+          "end": 90.34,
+          "raw": 0.571,
+          "t": 87.94,
+          "smooth": 0.1299
+        },
+        {
+          "seg": 16,
+          "start": 90.34,
+          "end": 95.88000000000001,
+          "raw": 0.0,
+          "t": 93.11,
+          "smooth": 0.1376
+        },
+        {
+          "seg": 17,
+          "start": 95.88000000000001,
+          "end": 99.9,
+          "raw": 0.0,
+          "t": 97.89,
+          "smooth": 0.1299
+        },
+        {
+          "seg": 18,
+          "start": 99.9,
+          "end": 104.5,
+          "raw": 0.0,
+          "t": 102.2,
+          "smooth": 0.166
+        },
+        {
+          "seg": 19,
+          "start": 104.5,
+          "end": 110.12,
+          "raw": 0.0,
+          "t": 107.31,
+          "smooth": 0.1063
+        },
+        {
+          "seg": 20,
+          "start": 110.12,
+          "end": 114.26,
+          "raw": 0.0,
+          "t": 112.19,
+          "smooth": 0.0654
+        },
+        {
+          "seg": 21,
+          "start": 114.26,
+          "end": 119.84,
+          "raw": 0.4899,
+          "t": 117.05,
+          "smooth": 0.1158
+        },
+        {
+          "seg": 22,
+          "start": 119.84,
+          "end": 125.4,
+          "raw": 0.0,
+          "t": 122.62,
+          "smooth": 0.1076
+        },
+        {
+          "seg": 23,
+          "start": 125.4,
+          "end": 131.36,
+          "raw": 0.6236,
+          "t": 128.38,
+          "smooth": 0.1278
+        },
+        {
+          "seg": 24,
+          "start": 131.36,
+          "end": 137.28,
+          "raw": 0.0,
+          "t": 134.32,
+          "smooth": 0.1413
+        },
+        {
+          "seg": 25,
+          "start": 137.28,
+          "end": 143.32,
+          "raw": -0.6349,
+          "t": 140.3,
+          "smooth": 0.1413
+        },
+        {
+          "seg": 26,
+          "start": 143.32,
+          "end": 149.16,
+          "raw": 0.6573,
+          "t": 146.24,
+          "smooth": 0.1569
+        },
+        {
+          "seg": 27,
+          "start": 149.16,
+          "end": 155.26,
+          "raw": 0.0,
+          "t": 152.21,
+          "smooth": 0.1298
+        },
+        {
+          "seg": 28,
+          "start": 155.68,
+          "end": 160.26,
+          "raw": 0.4289,
+          "t": 157.97,
+          "smooth": 0.1035
+        },
+        {
+          "seg": 29,
+          "start": 160.26,
+          "end": 166.98,
+          "raw": 0.0,
+          "t": 163.62,
+          "smooth": 0.0828
+        },
+        {
+          "seg": 30,
+          "start": 166.98,
+          "end": 171.89999999999998,
+          "raw": 0.0,
+          "t": 169.44,
+          "smooth": 0.1274
+        },
+        {
+          "seg": 31,
+          "start": 171.89999999999998,
+          "end": 176.42,
+          "raw": 0.4372,
+          "t": 174.16,
+          "smooth": 0.1603
+        },
+        {
+          "seg": 32,
+          "start": 176.95999999999998,
+          "end": 182.66,
+          "raw": 0.0,
+          "t": 179.81,
+          "smooth": 0.126
+        },
+        {
+          "seg": 33,
+          "start": 183.16,
+          "end": 186.95999999999998,
+          "raw": 0.0,
+          "t": 185.06,
+          "smooth": 0.1781
+        },
+        {
+          "seg": 34,
+          "start": 186.96,
+          "end": 191.82000000000002,
+          "raw": 0.0,
+          "t": 189.39,
+          "smooth": 0.1699
+        },
+        {
+          "seg": 35,
+          "start": 191.82000000000002,
+          "end": 195.96,
+          "raw": 0.5025,
+          "t": 193.89,
+          "smooth": 0.1273
+        },
+        {
+          "seg": 36,
+          "start": 196.44,
+          "end": 201.06,
+          "raw": 0.0,
+          "t": 198.75,
+          "smooth": 0.1275
+        },
+        {
+          "seg": 37,
+          "start": 201.06,
+          "end": 207.08,
+          "raw": 0.0,
+          "t": 204.07,
+          "smooth": 0.1117
+        },
+        {
+          "seg": 38,
+          "start": 207.08,
+          "end": 212.94,
+          "raw": 0.4753,
+          "t": 210.01,
+          "smooth": 0.1176
+        },
+        {
+          "seg": 39,
+          "start": 212.94,
+          "end": 217.94,
+          "raw": 0.7237,
+          "t": 215.44,
+          "smooth": 0.1915
+        },
+        {
+          "seg": 40,
+          "start": 217.94,
+          "end": 222.9,
+          "raw": -0.6174,
+          "t": 220.42,
+          "smooth": 0.2587
+        },
+        {
+          "seg": 41,
+          "start": 223.28,
+          "end": 228.26,
+          "raw": 0.0,
+          "t": 225.77,
+          "smooth": 0.2815
+        },
+        {
+          "seg": 42,
+          "start": 228.32,
+          "end": 233.07999999999998,
+          "raw": 0.0,
+          "t": 230.7,
+          "smooth": 0.3418
+        },
+        {
+          "seg": 43,
+          "start": 233.38,
+          "end": 238.32,
+          "raw": 0.0,
+          "t": 235.85,
+          "smooth": 0.4198
+        },
+        {
+          "seg": 44,
+          "start": 238.32,
+          "end": 243.35999999999999,
+          "raw": 0.8478,
+          "t": 240.84,
+          "smooth": 0.3933
+        },
+        {
+          "seg": 45,
+          "start": 243.35999999999999,
+          "end": 248.1,
+          "raw": 0.7518,
+          "t": 245.73,
+          "smooth": 0.3421
+        },
+        {
+          "seg": 46,
+          "start": 248.1,
+          "end": 252.6,
+          "raw": 0.8394,
+          "t": 250.35,
+          "smooth": 0.3848
+        },
+        {
+          "seg": 47,
+          "start": 252.6,
+          "end": 256.36,
+          "raw": 0.472,
+          "t": 254.48,
+          "smooth": 0.4488
+        },
+        {
+          "seg": 48,
+          "start": 256.36,
+          "end": 260.44,
+          "raw": 0.8426,
+          "t": 258.4,
+          "smooth": 0.4858
+        },
+        {
+          "seg": 49,
+          "start": 260.8,
+          "end": 266.1,
+          "raw": 0.9029,
+          "t": 263.45,
+          "smooth": 0.5166
+        },
+        {
+          "seg": 50,
+          "start": 266.1,
+          "end": 271.44,
+          "raw": 0.0,
+          "t": 268.77,
+          "smooth": 0.5487
+        },
+        {
+          "seg": 51,
+          "start": 271.44,
+          "end": 276.32000000000005,
+          "raw": 0.0,
+          "t": 273.88,
+          "smooth": 0.5371
+        },
+        {
+          "seg": 52,
+          "start": 276.32000000000005,
+          "end": 281.20000000000005,
+          "raw": 0.6521,
+          "t": 278.76,
+          "smooth": 0.5294
+        },
+        {
+          "seg": 53,
+          "start": 281.20000000000005,
+          "end": 286.88,
+          "raw": 0.5519,
+          "t": 284.04,
+          "smooth": 0.5096
+        },
+        {
+          "seg": 54,
+          "start": 286.88,
+          "end": 291.76000000000005,
+          "raw": 0.5902,
+          "t": 289.32,
+          "smooth": 0.4494
+        },
+        {
+          "seg": 55,
+          "start": 291.76000000000005,
+          "end": 295.96000000000004,
+          "raw": 0.0,
+          "t": 293.86,
+          "smooth": 0.3849
+        },
+        {
+          "seg": 56,
+          "start": 295.96,
+          "end": 301.44,
+          "raw": 0.8185,
+          "t": 298.7,
+          "smooth": 0.3651
+        },
+        {
+          "seg": 57,
+          "start": 301.44,
+          "end": 306.68,
+          "raw": 0.5747,
+          "t": 304.06,
+          "smooth": 0.4211
+        },
+        {
+          "seg": 58,
+          "start": 306.68,
+          "end": 312.17999999999995,
+          "raw": 0.7959,
+          "t": 309.43,
+          "smooth": 0.3699
+        },
+        {
+          "seg": 59,
+          "start": 312.17999999999995,
+          "end": 318.41999999999996,
+          "raw": 0.0,
+          "t": 315.3,
+          "smooth": 0.2734
+        },
+        {
+          "seg": 60,
+          "start": 318.41999999999996,
+          "end": 323.29999999999995,
+          "raw": 0.0,
+          "t": 320.86,
+          "smooth": 0.2612
+        },
+        {
+          "seg": 61,
+          "start": 323.3,
+          "end": 327.64,
+          "raw": 0.0,
+          "t": 325.47,
+          "smooth": 0.3041
+        },
+        {
+          "seg": 62,
+          "start": 327.64,
+          "end": 332.94,
+          "raw": 0.7848,
+          "t": 330.29,
+          "smooth": 0.258
+        },
+        {
+          "seg": 63,
+          "start": 333.02000000000004,
+          "end": 337.92,
+          "raw": 0.0,
+          "t": 335.47,
+          "smooth": 0.2424
+        },
+        {
+          "seg": 64,
+          "start": 337.92,
+          "end": 342.86,
+          "raw": -0.6894,
+          "t": 340.39,
+          "smooth": 0.2322
+        },
+        {
+          "seg": 65,
+          "start": 342.86,
+          "end": 347.2,
+          "raw": 0.0,
+          "t": 345.03,
+          "smooth": 0.2675
+        },
+        {
+          "seg": 66,
+          "start": 347.2,
+          "end": 352.18,
+          "raw": 0.6806,
+          "t": 349.69,
+          "smooth": 0.2971
+        },
+        {
+          "seg": 67,
+          "start": 352.74,
+          "end": 356.42,
+          "raw": 0.7442,
+          "t": 354.58,
+          "smooth": 0.2787
+        },
+        {
+          "seg": 68,
+          "start": 356.82,
+          "end": 360.52,
+          "raw": 0.0,
+          "t": 358.67,
+          "smooth": 0.2254
+        },
+        {
+          "seg": 69,
+          "start": 360.52,
+          "end": 365.88,
+          "raw": 0.4717,
+          "t": 363.2,
+          "smooth": 0.164
+        },
+        {
+          "seg": 70,
+          "start": 365.88,
+          "end": 371.34,
+          "raw": 0.6329,
+          "t": 368.61,
+          "smooth": 0.1827
+        },
+        {
+          "seg": 71,
+          "start": 371.98,
+          "end": 376.96,
+          "raw": 0.896,
+          "t": 374.47,
+          "smooth": 0.2583
+        },
+        {
+          "seg": 72,
+          "start": 376.96,
+          "end": 381.85999999999996,
+          "raw": 0.0,
+          "t": 379.41,
+          "smooth": 0.2597
+        },
+        {
+          "seg": 73,
+          "start": 382.38,
+          "end": 389.0,
+          "raw": -0.5553,
+          "t": 385.69,
+          "smooth": 0.2524
+        },
+        {
+          "seg": 74,
+          "start": 389.0,
+          "end": 397.29999999999995,
+          "raw": 0.0,
+          "t": 393.15,
+          "smooth": 0.2213
+        },
+        {
+          "seg": 75,
+          "start": 397.5,
+          "end": 401.38,
+          "raw": 0.5154,
+          "t": 399.44,
+          "smooth": 0.0785
+        },
+        {
+          "seg": 76,
+          "start": 401.38,
+          "end": 406.5,
+          "raw": 0.0,
+          "t": 403.94,
+          "smooth": -0.0223
+        },
+        {
+          "seg": 77,
+          "start": 406.5,
+          "end": 411.46,
+          "raw": 0.545,
+          "t": 408.98,
+          "smooth": -0.0094
+        },
+        {
+          "seg": 78,
+          "start": 411.46,
+          "end": 416.72,
+          "raw": 0.6343,
+          "t": 414.09,
+          "smooth": 0.0177
+        },
+        {
+          "seg": 79,
+          "start": 416.72,
+          "end": 422.4,
+          "raw": 0.0,
+          "t": 419.56,
+          "smooth": 0.0912
+        },
+        {
+          "seg": 80,
+          "start": 422.4,
+          "end": 427.7,
+          "raw": -0.786,
+          "t": 425.05,
+          "smooth": 0.0512
+        },
+        {
+          "seg": 81,
+          "start": 427.7,
+          "end": 433.74,
+          "raw": -0.7226,
+          "t": 430.72,
+          "smooth": 0.0251
+        },
+        {
+          "seg": 82,
+          "start": 433.74,
+          "end": 439.94,
+          "raw": 0.6892,
+          "t": 436.84,
+          "smooth": 0.0415
+        },
+        {
+          "seg": 83,
+          "start": 440.12,
+          "end": 446.16,
+          "raw": 0.0,
+          "t": 443.14,
+          "smooth": 0.0705
+        },
+        {
+          "seg": 84,
+          "start": 446.16,
+          "end": 451.18,
+          "raw": 0.4861,
+          "t": 448.67,
+          "smooth": 0.0992
+        },
+        {
+          "seg": 85,
+          "start": 451.18,
+          "end": 456.8,
+          "raw": -0.8191,
+          "t": 453.99,
+          "smooth": 0.1272
+        },
+        {
+          "seg": 86,
+          "start": 456.8,
+          "end": 460.12,
+          "raw": 0.4638,
+          "t": 458.46,
+          "smooth": 0.241
+        },
+        {
+          "seg": 87,
+          "start": 460.12,
+          "end": 465.1,
+          "raw": 0.0,
+          "t": 462.61,
+          "smooth": 0.348
+        },
+        {
+          "seg": 88,
+          "start": 465.1,
+          "end": 471.28000000000003,
+          "raw": 0.8667,
+          "t": 468.19,
+          "smooth": 0.3806
+        },
+        {
+          "seg": 89,
+          "start": 471.28000000000003,
+          "end": 478.18,
+          "raw": 0.7908,
+          "t": 474.73,
+          "smooth": 0.3728
+        },
+        {
+          "seg": 90,
+          "start": 478.18,
+          "end": 483.42,
+          "raw": 0.0,
+          "t": 480.8,
+          "smooth": 0.2939
+        },
+        {
+          "seg": 91,
+          "start": 483.42,
+          "end": 489.2,
+          "raw": 0.7479,
+          "t": 486.31,
+          "smooth": 0.3175
+        },
+        {
+          "seg": 92,
+          "start": 489.2,
+          "end": 494.5,
+          "raw": 0.8349,
+          "t": 491.85,
+          "smooth": 0.3039
+        },
+        {
+          "seg": 93,
+          "start": 494.5,
+          "end": 499.32,
+          "raw": 0.7118,
+          "t": 496.91,
+          "smooth": 0.2802
+        },
+        {
+          "seg": 94,
+          "start": 499.32,
+          "end": 505.36,
+          "raw": 0.0,
+          "t": 502.34,
+          "smooth": 0.2031
+        },
+        {
+          "seg": 95,
+          "start": 505.36,
+          "end": 513.32,
+          "raw": -0.4561,
+          "t": 509.34,
+          "smooth": 0.1262
+        },
+        {
+          "seg": 96,
+          "start": 513.32,
+          "end": 518.96,
+          "raw": -0.4845,
+          "t": 516.14,
+          "smooth": 0.0182
+        },
+        {
+          "seg": 97,
+          "start": 518.96,
+          "end": 522.12,
+          "raw": 0.5552,
+          "t": 520.54,
+          "smooth": -0.088
+        },
+        {
+          "seg": 98,
+          "start": 522.12,
+          "end": 527.02,
+          "raw": 0.0,
+          "t": 524.57,
+          "smooth": -0.1076
+        },
+        {
+          "seg": 99,
+          "start": 527.02,
+          "end": 532.86,
+          "raw": 0.0,
+          "t": 529.94,
+          "smooth": -0.1369
+        },
+        {
+          "seg": 100,
+          "start": 532.86,
+          "end": 537.42,
+          "raw": 0.0,
+          "t": 535.14,
+          "smooth": -0.0594
+        },
+        {
+          "seg": 101,
+          "start": 537.42,
+          "end": 541.0600000000001,
+          "raw": 0.0,
+          "t": 539.24,
+          "smooth": 0.0112
+        },
+        {
+          "seg": 102,
+          "start": 541.0600000000001,
+          "end": 545.2,
+          "raw": -0.8792,
+          "t": 543.13,
+          "smooth": 0.0445
+        },
+        {
+          "seg": 103,
+          "start": 545.2,
+          "end": 549.98,
+          "raw": -0.8542,
+          "t": 547.59,
+          "smooth": 0.0914
+        },
+        {
+          "seg": 104,
+          "start": 549.98,
+          "end": 554.4,
+          "raw": 0.5641,
+          "t": 552.19,
+          "smooth": 0.0767
+        },
+        {
+          "seg": 105,
+          "start": 554.4,
+          "end": 558.04,
+          "raw": 0.0,
+          "t": 556.22,
+          "smooth": 0.0841
+        },
+        {
+          "seg": 106,
+          "start": 558.04,
+          "end": 562.1,
+          "raw": 0.8564,
+          "t": 560.07,
+          "smooth": 0.0927
+        },
+        {
+          "seg": 107,
+          "start": 562.1,
+          "end": 567.8000000000001,
+          "raw": 0.9211,
+          "t": 564.95,
+          "smooth": 0.1065
+        }
+      ],
+      "turns": [
+        {
+          "seg": 50,
+          "t": 268.77,
+          "kind": "peak",
+          "smooth": 0.5487,
+          "prominence": 0.4833
+        },
+        {
+          "seg": 76,
+          "t": 403.94,
+          "kind": "dip",
+          "smooth": -0.0223,
+          "prominence": 0.4029
+        },
+        {
+          "seg": 88,
+          "t": 468.19,
+          "kind": "peak",
+          "smooth": 0.3806,
+          "prominence": 0.4029
+        }
+      ]
+    },
+    "moments": [
+      {
+        "seg": 13,
+        "start": 76.9,
+        "end": 81.17999999999999,
+        "time": "1:16",
+        "conflict": 0.8,
+        "flagged": true,
+        "damped": false,
+        "valences": {
+          "transcript": "NEUTRAL",
+          "facial": "NEGATIVE",
+          "vocal": "NEUTRAL",
+          "comment": "POSITIVE"
+        },
+        "text": "has mass appeal in the process. So before we get into this video and looking at the scent,"
+      },
+      {
+        "seg": 41,
+        "start": 223.28,
+        "end": 228.26,
+        "time": "3:43",
+        "conflict": 0.8,
+        "flagged": true,
+        "damped": false,
+        "valences": {
+          "transcript": "NEUTRAL",
+          "facial": "NEGATIVE",
+          "vocal": "NEUTRAL",
+          "comment": "POSITIVE"
+        },
+        "text": "I would not worry so much about the batch variations. One thing I will mention though,"
+      },
+      {
+        "seg": 50,
+        "start": 266.1,
+        "end": 271.44,
+        "time": "4:26",
+        "conflict": 0.8,
+        "flagged": true,
+        "damped": false,
+        "valences": {
+          "transcript": "NEUTRAL",
+          "facial": "NEGATIVE",
+          "vocal": "NEUTRAL",
+          "comment": "POSITIVE"
+        },
+        "text": "ascend past the typical category of niche fragrances. As some of you might know, I'm a big watch guy as"
+      }
+    ],
+    "signs": {
+      "title": "Signs of a commercial interest or a mismatch",
+      "disclaimer": "These are signs, not proof. A creator can disclose a sponsor and still review honestly, and an undisclosed deal would leave none of these marks.",
+      "signs": [
+        {
+          "id": "S1",
+          "kind": "fact",
+          "state": "absent",
+          "name": "The creator declared a paid promotion",
+          "evidence": {
+            "label": false,
+            "description": []
+          }
+        },
+        {
+          "id": "S2",
+          "kind": "fact",
+          "state": "absent",
+          "name": "Sponsor, code, affiliate or gift wording in what was said",
+          "evidence": {
+            "speech": []
+          }
+        },
+        {
+          "id": "S3",
+          "kind": "fact",
+          "state": "absent",
+          "name": "Affiliate links, discount codes or a gifted unit in the description",
+          "evidence": {
+            "description": []
+          }
+        },
+        {
+          "id": "S4",
+          "kind": "inference",
+          "state": "absent",
+          "name": "The reviewer was measurably warmer than the audience",
+          "evidence": {
+            "agreement": {
+              "gap": -0.23618078027851525,
+              "se": 0.10042151811651213,
+              "low": -0.43300333905971555,
+              "high": -0.03935822149731491,
+              "call": "audience_warmer"
+            }
+          }
+        },
+        {
+          "id": "S5",
+          "kind": "inference",
+          "state": "absent",
+          "name": "Positive words at moments the controller flagged",
+          "evidence": {
+            "positive_flagged": [],
+            "controller_flag": []
+          }
+        }
+      ],
+      "present": 0,
+      "checked": 5
+    }
+  },
+  "reading": {
+    "claims": [
+      {
+        "seg": 2,
+        "time": "0:10",
+        "start": 10.26,
+        "aspect": "hype",
+        "stance": "praise",
+        "claim": "Creed Aventus is one of the most hyped fragrances in the world regardless of genre.",
+        "quote": "has transcended its niche classification and have become one of the most hyped fragrances in the world regardless",
+        "seg_end": 3,
+        "topic": "T4"
+      },
+      {
+        "seg": 7,
+        "time": "0:47",
+        "start": 47.44,
+        "aspect": "brand",
+        "stance": "neutral",
+        "claim": "The House of Creed is a French brand.",
+        "quote": "So the House of Creed is a French brand that is highly regarded for their well-crafted fragrances",
+        "topic": "T4"
+      },
+      {
+        "seg": 10,
+        "time": "1:02",
+        "start": 62.22,
+        "aspect": "design",
+        "stance": "neutral",
+        "claim": "The fragrance was inspired to build a regal scent.",
+        "quote": "it was inspired to build a regal scent that could project the demeanor and presence of Napoleon Bonaparte",
+        "seg_end": 11,
+        "topic": "T2"
+      },
+      {
+        "seg": 12,
+        "time": "1:12",
+        "start": 72.5,
+        "aspect": "performance",
+        "stance": "praise",
+        "claim": "Creed Aventus is one of the most wearable, versatile niche fragrances on the market.",
+        "quote": "comes together with one of the most wearable, versatile niche fragrances on the market that has mass appeal",
+        "seg_end": 13,
+        "topic": "T1"
+      },
+      {
+        "seg": 21,
+        "time": "1:54",
+        "start": 114.26,
+        "aspect": "scent",
+        "stance": "neutral",
+        "claim": "Aventus is commonly known for its rich pineapple note off the top.",
+        "quote": "Now Aventus is commonly known for its rich pineapple note off the top mixed with bergamot and a prominent note of blackcurrant",
+        "seg_end": 22,
+        "topic": "T0"
+      },
+      {
+        "seg": 25,
+        "time": "2:17",
+        "start": 137.28,
+        "aspect": "design",
+        "stance": "praise",
+        "claim": "The drydown of Aventus is where it is at its best.",
+        "quote": "the drydown to me is where Aventus is at its best, despite its recognizable opening of pineapple citrus",
+        "seg_end": 26,
+        "topic": "T2"
+      },
+      {
+        "seg": 27,
+        "time": "2:29",
+        "start": 149.16,
+        "aspect": "performance",
+        "stance": "praise",
+        "claim": "Aventus smells better in the air than off skin.",
+        "quote": "I've heard some say that this smells better in the air than off skin, and honestly, I personally agree",
+        "seg_end": 28,
+        "topic": "T1"
+      },
+      {
+        "seg": 42,
+        "time": "3:48",
+        "start": 228.32,
+        "aspect": "performance",
+        "stance": "neutral",
+        "claim": "The reviewer thinks performance is a universal aspect of Creed Aventus.",
+        "quote": "that I think is a little bit more universal when looking at different batches is performance.",
+        "topic": "T1"
+      },
+      {
+        "seg": 43,
+        "time": "3:53",
+        "start": 233.38,
+        "aspect": "performance",
+        "stance": "criticism",
+        "claim": "The reviewer thinks the performance of this batch is moderate or average.",
+        "quote": "I have noticed, and specifically with this batch here, that performance is probably moderate",
+        "topic": "T1"
+      },
+      {
+        "seg": 45,
+        "time": "4:03",
+        "start": 243.35999999999999,
+        "aspect": "performance",
+        "stance": "praise",
+        "claim": "The reviewer thinks Creed Aventus used to be a very good performer.",
+        "quote": "it used to be a very good performer",
+        "seg_end": 46,
+        "topic": "T1"
+      },
+      {
+        "seg": 47,
+        "time": "4:12",
+        "start": 252.6,
+        "aspect": "sillage",
+        "stance": "praise",
+        "claim": "The reviewer thinks the sillage of Creed Aventus is one of its best aspects.",
+        "quote": "I think that is something you certainly need to consider",
+        "seg_end": 48,
+        "topic": "T0"
+      },
+      {
+        "seg": 48,
+        "time": "4:16",
+        "start": 256.36,
+        "aspect": "popularity",
+        "stance": "praise",
+        "claim": "The reviewer thinks Creed Aventus is an iconic scent.",
+        "quote": "this is an iconic scent",
+        "topic": "T5"
+      },
+      {
+        "seg": 51,
+        "time": "4:31",
+        "start": 271.44,
+        "aspect": "popularity",
+        "stance": "praise",
+        "claim": "The reviewer thinks Creed Aventus is to niche fragrances what the Rolex Submariner is to watchmaking.",
+        "quote": "Creed's Aventus is to niche fragrances in the 21st century what the Rolex Submariner was in the 20th century",
+        "seg_end": 52,
+        "topic": "T5"
+      },
+      {
+        "seg": 53,
+        "time": "4:41",
+        "start": 281.20000000000005,
+        "aspect": "popularity",
+        "stance": "praise",
+        "claim": "The reviewer thinks Creed Aventus is the first fragrance many people think of when considering higher-end fragrances.",
+        "quote": "Aventus is the first fragrance many think of when considering the world of higher-end fragrances",
+        "seg_end": 54,
+        "topic": "T5"
+      },
+      {
+        "seg": 73,
+        "time": "6:22",
+        "start": 382.38,
+        "aspect": "price",
+        "stance": "criticism",
+        "claim": "The reviewer thinks Creed Aventus is expensive.",
+        "quote": "it's expensive and there are alternatives",
+        "topic": "T3"
+      },
+      {
+        "seg": 82,
+        "time": "7:13",
+        "start": 433.74,
+        "aspect": "price",
+        "stance": "praise",
+        "claim": "The reviewer thinks the fragrance is worth buying.",
+        "quote": "if you like this scent and you can buy it responsibly, I think you just get it",
+        "topic": "T3"
+      },
+      {
+        "seg": 88,
+        "time": "7:45",
+        "start": 465.1,
+        "aspect": "design",
+        "stance": "praise",
+        "claim": "The reviewer finds the composition well done.",
+        "quote": "it smells sophisticated and opulent and I think just the composition is well done",
+        "seg_end": 89,
+        "topic": "T2"
+      },
+      {
+        "seg": 88,
+        "time": "7:45",
+        "start": 465.1,
+        "aspect": "design",
+        "stance": "praise",
+        "claim": "The reviewer thinks the fragrance is mass appealing.",
+        "quote": "it's mass appealing, it has a versatile element to it that can be worn year-round",
+        "topic": "T2"
+      },
+      {
+        "seg": 91,
+        "time": "8:03",
+        "start": 483.42,
+        "aspect": "influence",
+        "stance": "praise",
+        "claim": "The reviewer thinks the fragrance has influenced other designers.",
+        "quote": "when you can influence other designers from the niche perspective, I think that is an indication",
+        "topic": "T4"
+      },
+      {
+        "seg": 94,
+        "time": "8:19",
+        "start": 499.32,
+        "aspect": "performance",
+        "stance": "criticism",
+        "claim": "The reviewer thinks the newer batches do not perform as well.",
+        "quote": "I don't think the newer batches, at least from my perspective, perform as well",
+        "seg_end": 95,
+        "topic": "T1"
+      }
+    ],
+    "topics": [
+      {
+        "id": "T0",
+        "name": "Scent",
+        "aspects": [
+          "scent",
+          "sillage"
+        ],
+        "reviewer": {
+          "claims": 2,
+          "stances": {
+            "praise": 1,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 1
+          },
+          "seconds": {
+            "POSITIVE": 11.38,
+            "NEUTRAL": 5.56,
+            "NEGATIVE": 0.0
+          },
+          "segments": [
+            21,
+            22,
+            47,
+            48
+          ],
+          "lean": 0.6717827626918537,
+          "se": 0.29927543064057266,
+          "call": "positive"
+        },
+        "audience": {
+          "comments": 48,
+          "counts": {
+            "POSITIVE": 38,
+            "NEUTRAL": 4,
+            "NEGATIVE": 6
+          },
+          "lean": 0.6666666666666666,
+          "se": 0.10023612783760687,
+          "call": "positive",
+          "questions": 6,
+          "examples": [
+            {
+              "i": 2,
+              "quote": "Bought this over a year ago. Absolutely incredible scent and performance is good. Compliment heavy hitter, but the price kills it's purchase consideration.",
+              "label": "POSITIVE",
+              "likes": 124
+            },
+            {
+              "i": 20,
+              "quote": "Another great video! For me, it’s the only fragrance I’ve ever been complimented on, multiple times, by ladies and gents 😉 My favorite thing about it is how my shirts smell after wearing it and washing. Always a pleasure to do the laundry 😅",
+              "label": "POSITIVE",
+              "likes": 40
+            },
+            {
+              "i": 0,
+              "quote": "I know many will say this is old news, but it was inevitable to cover Aventus on this channel at some point. What are your thoughts on Aventus? A timeless classic worthy of the praise, a hyped scent that falls short of its reputation, or something in the middle of the extremes?",
+              "label": "NEUTRAL",
+              "likes": 36
+            }
+          ]
+        },
+        "agreement": {
+          "gap": 0.0051160960251870335,
+          "se": 0.3156153746397303,
+          "low": -0.6134786712358007,
+          "high": 0.6237108632861748,
+          "call": "no_clear_difference"
+        }
+      },
+      {
+        "id": "T1",
+        "name": "Performance",
+        "aspects": [
+          "performance"
+        ],
+        "reviewer": {
+          "claims": 6,
+          "stances": {
+            "praise": 3,
+            "criticism": 2,
+            "mixed": 0,
+            "neutral": 1
+          },
+          "seconds": {
+            "POSITIVE": 18.22,
+            "NEUTRAL": 26.12,
+            "NEGATIVE": 7.96
+          },
+          "segments": [
+            12,
+            13,
+            27,
+            28,
+            42,
+            43,
+            45,
+            46,
+            94,
+            95
+          ],
+          "lean": 0.1961759082217965,
+          "se": 0.2465774975498187,
+          "call": "balanced"
+        },
+        "audience": {
+          "comments": 10,
+          "counts": {
+            "POSITIVE": 3,
+            "NEUTRAL": 1,
+            "NEGATIVE": 6
+          },
+          "lean": -0.3,
+          "se": 0.30000000000000004,
+          "call": "balanced",
+          "questions": 1,
+          "examples": [
+            {
+              "i": 2,
+              "quote": "Bought this over a year ago. Absolutely incredible scent and performance is good. Compliment heavy hitter, but the price kills it's purchase consideration.",
+              "label": "POSITIVE",
+              "likes": 124
+            },
+            {
+              "i": 0,
+              "quote": "I know many will say this is old news, but it was inevitable to cover Aventus on this channel at some point. What are your thoughts on Aventus? A timeless classic worthy of the praise, a hyped scent that falls short of its reputation, or something in the middle of the extremes?",
+              "label": "NEUTRAL",
+              "likes": 36
+            },
+            {
+              "i": 82,
+              "quote": "The 21p01 batch is just like my 17n01 batch. Very happy with newest formulation and I only paid 240 for a 3.4oz bottle so the price is right for new batches.",
+              "label": "POSITIVE",
+              "likes": 5
+            }
+          ]
+        },
+        "agreement": {
+          "gap": 0.49617590822179647,
+          "se": 0.3883303520173653,
+          "low": -0.26493759583600063,
+          "high": 1.2572894122795937,
+          "call": "no_clear_difference"
+        }
+      },
+      {
+        "id": "T2",
+        "name": "Design",
+        "aspects": [
+          "design"
+        ],
+        "reviewer": {
+          "claims": 4,
+          "stances": {
+            "praise": 3,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 1
+          },
+          "seconds": {
+            "POSITIVE": 23.74,
+            "NEUTRAL": 5.46,
+            "NEGATIVE": 6.04
+          },
+          "segments": [
+            10,
+            11,
+            25,
+            26,
+            88,
+            89
+          ],
+          "lean": 0.5022701475595913,
+          "se": 0.3479799975282988,
+          "call": "balanced"
+        },
+        "audience": {
+          "comments": 9,
+          "counts": {
+            "POSITIVE": 5,
+            "NEUTRAL": 2,
+            "NEGATIVE": 2
+          },
+          "lean": 0.3333333333333333,
+          "se": 0.28867513459481287,
+          "call": "balanced",
+          "questions": 2,
+          "examples": [
+            {
+              "i": 76,
+              "quote": "I am a watch guy and loved the comparison of aventus to Rokex submariner.....I have other creeds but never bought aventus like you said a bit main stream in niche market. I will buy there less known scents",
+              "label": "POSITIVE",
+              "likes": 7
+            },
+            {
+              "i": 51,
+              "quote": "Hey bro what glasses are you wearing those are nice",
+              "label": "POSITIVE",
+              "likes": 1
+            },
+            {
+              "i": 97,
+              "quote": "This is a classic mens fragrance maybe over hyped by some and very batch dependant for fruity/smokey mix and strength.\nThink its overpriced now with lots of much cheaper good clones available Milton Lloyd Victor no 9 being a favourite for £12",
+              "label": "NEGATIVE",
+              "likes": 1
+            }
+          ]
+        },
+        "agreement": {
+          "gap": 0.168936814226258,
+          "se": 0.4521320736390288,
+          "low": -0.7172257663616499,
+          "high": 1.055099394814166,
+          "call": "no_clear_difference"
+        }
+      },
+      {
+        "id": "T3",
+        "name": "Price",
+        "aspects": [
+          "price"
+        ],
+        "reviewer": {
+          "claims": 2,
+          "stances": {
+            "praise": 1,
+            "criticism": 1,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 6.2,
+            "NEUTRAL": 0.0,
+            "NEGATIVE": 6.62
+          },
+          "segments": [
+            73,
+            82
+          ],
+          "lean": -0.032761310452419354,
+          "se": 0.9989266965374403,
+          "call": "balanced"
+        },
+        "audience": {
+          "comments": 10,
+          "counts": {
+            "POSITIVE": 6,
+            "NEUTRAL": 3,
+            "NEGATIVE": 1
+          },
+          "lean": 0.5,
+          "se": 0.22360679774997896,
+          "call": "positive",
+          "questions": 3,
+          "examples": [
+            {
+              "i": 66,
+              "quote": "What about a 100ml bottle for $299 shipped, would that be a no brainer at that price point?",
+              "label": "NEUTRAL",
+              "likes": 3
+            },
+            {
+              "i": 34,
+              "quote": "The only fragrance i have that was worth the price! And i have paid close to the same amount for Amouage and others! Aventus is the only one!",
+              "label": "POSITIVE",
+              "likes": 1
+            },
+            {
+              "i": 69,
+              "quote": "Just get the $90 travel size and use for special occasions/going out, will last you 8-12 months",
+              "label": "POSITIVE",
+              "likes": 0
+            }
+          ]
+        },
+        "agreement": {
+          "gap": -0.5327613104524194,
+          "se": 1.0236476664630283,
+          "low": -2.5390738695784245,
+          "high": 1.473551248673586,
+          "call": "no_clear_difference"
+        }
+      },
+      {
+        "id": "T4",
+        "name": "Brand",
+        "aspects": [
+          "brand",
+          "hype",
+          "influence"
+        ],
+        "reviewer": {
+          "claims": 3,
+          "stances": {
+            "praise": 2,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 1
+          },
+          "seconds": {
+            "POSITIVE": 21.9,
+            "NEUTRAL": 0.0,
+            "NEGATIVE": 0.0
+          },
+          "segments": [
+            2,
+            3,
+            7,
+            91
+          ],
+          "lean": 1.0,
+          "se": 0.0,
+          "call": "positive"
+        },
+        "audience": {
+          "comments": 41,
+          "counts": {
+            "POSITIVE": 29,
+            "NEUTRAL": 7,
+            "NEGATIVE": 5
+          },
+          "lean": 0.5853658536585366,
+          "se": 0.11029677126434155,
+          "call": "positive",
+          "questions": 4,
+          "examples": [
+            {
+              "i": 1,
+              "quote": "Creed is Lamborghini/Rolex doesn’t matter if u see a lot of people with a Rolex. It’s still a Rolex.",
+              "label": "NEUTRAL",
+              "likes": 94
+            },
+            {
+              "i": 54,
+              "quote": "\"Pro #3 Replicated but never duplicated\"\n\nGot that right. Even Aventus can't duplicated itself, hence all these batch variations 😂",
+              "label": "NEGATIVE",
+              "likes": 9
+            },
+            {
+              "i": 76,
+              "quote": "I am a watch guy and loved the comparison of aventus to Rokex submariner.....I have other creeds but never bought aventus like you said a bit main stream in niche market. I will buy there less known scents",
+              "label": "POSITIVE",
+              "likes": 7
+            }
+          ]
+        },
+        "agreement": {
+          "gap": 0.41463414634146345,
+          "se": 0.11029677126434155,
+          "low": 0.19845644705230164,
+          "high": 0.6308118456306253,
+          "call": "reviewer_warmer"
+        }
+      },
+      {
+        "id": "T5",
+        "name": "Popularity",
+        "aspects": [
+          "popularity"
+        ],
+        "reviewer": {
+          "claims": 3,
+          "stances": {
+            "praise": 3,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 17.48,
+            "NEUTRAL": 4.88,
+            "NEGATIVE": 0.0
+          },
+          "segments": [
+            48,
+            51,
+            52,
+            53,
+            54
+          ],
+          "lean": 0.781753130590338,
+          "se": 0.2153984073063497,
+          "call": "positive"
+        },
+        "audience": {
+          "comments": 7,
+          "counts": {
+            "POSITIVE": 3,
+            "NEUTRAL": 1,
+            "NEGATIVE": 3
+          },
+          "lean": 0.0,
+          "se": 0.3779644730092272,
+          "call": "balanced",
+          "questions": 0,
+          "examples": [
+            {
+              "i": 4,
+              "quote": "Aventus is like that indie band that makes it big and people start to hate them for being too popular lol",
+              "label": "NEGATIVE",
+              "likes": 10
+            },
+            {
+              "i": 91,
+              "quote": "According to trustpilot Aventus is not worth it anymore. I was about to buy it for my significant other but based on the reviews of the recent batches I wont waste my money.",
+              "label": "NEGATIVE",
+              "likes": 0
+            },
+            {
+              "i": 81,
+              "quote": "Unless I will the lottery I will never spend $400 on a bottle of cologne.  My limit is about half that.  Especially when in some street battles the ladies preferred Chrome 3 to 1 over Aventus.  I do however have like three inspired by Aventus fragrances in my collection and that is good enough for me.",
+              "label": "POSITIVE",
+              "likes": 0
+            }
+          ]
+        },
+        "agreement": {
+          "gap": 0.781753130590338,
+          "se": 0.43503289154643804,
+          "low": -0.07089566893099986,
+          "high": 1.634401930111676,
+          "call": "no_clear_difference"
+        }
+      },
+      {
+        "id": "T6",
+        "name": "Where to buy",
+        "aspects": [],
+        "reviewer": {
+          "claims": 0,
+          "stances": {
+            "praise": 0,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 0.0,
+            "NEUTRAL": 0.0,
+            "NEGATIVE": 0.0
+          },
+          "segments": [],
+          "lean": null,
+          "se": null,
+          "call": "unknown"
+        },
+        "audience": {
+          "comments": 4,
+          "counts": {
+            "POSITIVE": 3,
+            "NEUTRAL": 0,
+            "NEGATIVE": 1
+          },
+          "lean": 0.5,
+          "se": 0.49999999999999994,
+          "call": "balanced",
+          "questions": 1,
+          "examples": [
+            {
+              "i": 8,
+              "quote": "Im looking to buy my first bottle of Aventus in 2025. I wear Savage elixir. I get compliments every time I wear it",
+              "label": "POSITIVE",
+              "likes": 3
+            },
+            {
+              "i": 48,
+              "quote": "Just saw it on sale at Costco. Niche and Costco are 2 words that shouldn’t go together.\nMight be good but just so common.",
+              "label": "NEGATIVE",
+              "likes": 1
+            },
+            {
+              "i": 56,
+              "quote": "I really like your jacket, where did you get it?",
+              "label": "POSITIVE",
+              "likes": 0
+            }
+          ]
+        },
+        "agreement": {
+          "gap": null,
+          "se": null,
+          "low": null,
+          "high": null,
+          "call": "unknown"
+        }
+      },
+      {
+        "id": "T7",
+        "name": "The reviewer",
+        "aspects": [],
+        "reviewer": {
+          "claims": 0,
+          "stances": {
+            "praise": 0,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 0.0,
+            "NEUTRAL": 0.0,
+            "NEGATIVE": 0.0
+          },
+          "segments": [],
+          "lean": null,
+          "se": null,
+          "call": "unknown"
+        },
+        "audience": {
+          "comments": 14,
+          "counts": {
+            "POSITIVE": 12,
+            "NEUTRAL": 1,
+            "NEGATIVE": 1
+          },
+          "lean": 0.7857142857142857,
+          "se": 0.15472667956405195,
+          "call": "positive",
+          "questions": 2,
+          "examples": [
+            {
+              "i": 23,
+              "quote": "This guys a professional yapper",
+              "label": "POSITIVE",
+              "likes": 12
+            },
+            {
+              "i": 17,
+              "quote": "I have to say I love the atmosphere of these videos. They’re very fun and interesting to watch! On a side note I love your jacket! Where did you get it?",
+              "label": "POSITIVE",
+              "likes": 9
+            },
+            {
+              "i": 37,
+              "quote": "Easily the best fragrance review channel to date. Informative, visually pleasing, well done. Notification bell worthy. A first for me. 👏\n\nKept bumping this off because of the price, but Aventus is now back on my radar after this video.",
+              "label": "POSITIVE",
+              "likes": 8
+            }
+          ]
+        },
+        "agreement": {
+          "gap": null,
+          "se": null,
+          "low": null,
+          "high": null,
+          "call": "unknown"
+        }
+      }
+    ],
+    "topic_source": "model",
+    "questions": [
+      {
+        "i": 17,
+        "quote": "I have to say I love the atmosphere of these videos. They’re very fun and interesting to watch! On a side note I love your jacket! Where did you get it?"
+      },
+      {
+        "i": 66,
+        "quote": "What about a 100ml bottle for $299 shipped, would that be a no brainer at that price point?"
+      },
+      {
+        "i": 58,
+        "quote": "Fajny film. Jak obecnie z trwałością i projekcją nowego Aventusa bo stare batche były słabe ? Ja mam batch F004179,  jest bardziej dymno-brzozowy niż owocowy, co bardzo mnie rozczarowało !"
+      }
+    ],
+    "comment_tags": {
+      "0": [
+        "Scent",
+        "Performance"
+      ],
+      "1": [
+        "Brand"
+      ],
+      "2": [
+        "Scent",
+        "Performance"
+      ],
+      "3": [
+        "The reviewer"
+      ],
+      "4": [
+        "Popularity"
+      ],
+      "5": [
+        "The reviewer"
+      ],
+      "6": [
+        "Scent"
+      ],
+      "7": [
+        "Scent",
+        "Brand"
+      ],
+      "8": [
+        "Scent",
+        "Where to buy"
+      ],
+      "9": [
+        "Scent",
+        "Price"
+      ],
+      "10": [
+        "Scent",
+        "The reviewer"
+      ],
+      "11": [
+        "The reviewer"
+      ],
+      "12": [
+        "Scent",
+        "Popularity"
+      ],
+      "13": [
+        "Scent"
+      ],
+      "14": [
+        "Scent"
+      ],
+      "15": [
+        "The reviewer"
+      ],
+      "16": [
+        "Scent"
+      ],
+      "17": [
+        "The reviewer"
+      ],
+      "18": [
+        "The reviewer"
+      ],
+      "19": [
+        "Scent"
+      ],
+      "20": [
+        "Scent"
+      ],
+      "21": [
+        "The reviewer"
+      ],
+      "22": [
+        "Scent",
+        "Brand"
+      ],
+      "23": [
+        "The reviewer"
+      ],
+      "24": [
+        "Scent"
+      ],
+      "25": [
+        "Scent",
+        "Brand"
+      ],
+      "26": [
+        "Scent",
+        "Brand"
+      ],
+      "27": [
+        "Design",
+        "Price"
+      ],
+      "28": [
+        "Design",
+        "Price"
+      ],
+      "29": [],
+      "30": [
+        "Scent"
+      ],
+      "31": [
+        "The reviewer"
+      ],
+      "32": [
+        "Scent",
+        "Brand"
+      ],
+      "33": [
+        "Scent",
+        "Performance"
+      ],
+      "34": [
+        "Scent",
+        "Price"
+      ],
+      "35": [
+        "Scent",
+        "Brand"
+      ],
+      "36": [
+        "Scent",
+        "Brand"
+      ],
+      "37": [
+        "The reviewer"
+      ],
+      "38": [
+        "The reviewer"
+      ],
+      "39": [
+        "Scent",
+        "Design"
+      ],
+      "40": [
+        "Scent",
+        "Brand"
+      ],
+      "41": [
+        "Scent",
+        "Brand"
+      ],
+      "42": [
+        "Scent",
+        "Popularity"
+      ],
+      "43": [
+        "Scent",
+        "Brand"
+      ],
+      "44": [
+        "Scent",
+        "Brand"
+      ],
+      "45": [
+        "Scent",
+        "Brand"
+      ],
+      "46": [
+        "Scent",
+        "Brand"
+      ],
+      "47": [
+        "Scent",
+        "Popularity"
+      ],
+      "48": [
+        "Where to buy"
+      ],
+      "49": [
+        "Where to buy"
+      ],
+      "50": [],
+      "51": [
+        "Design"
+      ],
+      "52": [
+        "Scent"
+      ],
+      "53": [
+        "Scent",
+        "Brand"
+      ],
+      "54": [
+        "Brand"
+      ],
+      "55": [
+        "Scent",
+        "Brand"
+      ],
+      "56": [
+        "Where to buy"
+      ],
+      "57": [
+        "Scent"
+      ],
+      "58": [
+        "Scent",
+        "Brand"
+      ],
+      "59": [
+        "Scent",
+        "Brand"
+      ],
+      "60": [
+        "Scent",
+        "Price"
+      ],
+      "61": [
+        "Scent"
+      ],
+      "62": [
+        "Design"
+      ],
+      "63": [
+        "Brand"
+      ],
+      "64": [
+        "Brand"
+      ],
+      "65": [
+        "The reviewer"
+      ],
+      "66": [
+        "Price"
+      ],
+      "67": [
+        "Brand"
+      ],
+      "68": [
+        "Performance"
+      ],
+      "69": [
+        "Price"
+      ],
+      "70": [
+        "Brand"
+      ],
+      "71": [],
+      "72": [
+        "Scent"
+      ],
+      "73": [
+        "Brand"
+      ],
+      "74": [
+        "Brand"
+      ],
+      "75": [
+        "Brand",
+        "Scent"
+      ],
+      "76": [
+        "Brand",
+        "Design"
+      ],
+      "77": [
+        "Price",
+        "Brand"
+      ],
+      "78": [
+        "The reviewer"
+      ],
+      "79": [
+        "Scent",
+        "Performance"
+      ],
+      "80": [
+        "Brand",
+        "Scent"
+      ],
+      "81": [
+        "Price",
+        "Popularity"
+      ],
+      "82": [
+        "Brand",
+        "Performance"
+      ],
+      "83": [
+        "Design",
+        "Performance"
+      ],
+      "84": [
+        "Performance",
+        "Scent"
+      ],
+      "85": [
+        "Brand",
+        "Design"
+      ],
+      "86": [
+        "Brand",
+        "Scent"
+      ],
+      "87": [
+        "Brand"
+      ],
+      "88": [
+        "Price"
+      ],
+      "89": [],
+      "90": [
+        "Popularity",
+        "Brand"
+      ],
+      "91": [
+        "Brand",
+        "Popularity"
+      ],
+      "92": [
+        "Brand"
+      ],
+      "93": [
+        "Brand"
+      ],
+      "94": [
+        "Scent",
+        "Brand"
+      ],
+      "95": [
+        "Brand",
+        "Scent"
+      ],
+      "96": [
+        "Performance",
+        "Brand"
+      ],
+      "97": [
+        "Design",
+        "Performance"
+      ],
+      "98": [
+        "Brand"
+      ],
+      "99": []
+    }
+  },
+  "written": {
+    "verdict": {
+      "text": "The reviewer's words lean positive, the comments lean positive, and the audience is measurably warmer than the reviewer.",
+      "evidence": [],
+      "source": "template"
+    },
+    "brand_health_words": {
+      "text": "Of 100 comments, 71 read positive, 14 neutral and 15 negative.",
+      "evidence": [],
+      "source": "template"
+    },
+    "audience_words": {
+      "text": "The audience is discussing the scent's performance, design, and price. They praise the scent's versatility and iconic status.",
+      "evidence": [
+        "C2",
+        "C20",
+        "C0",
+        "C76",
+        "C51",
+        "C66",
+        "C34",
+        "C1"
+      ],
+      "source": "model"
+    },
+    "agreement_words": {
+      "text": "The reviewer and audience agree on the scent's performance and design, but disagree on the price. The reviewer criticizes the price, while the audience is more neutral.",
+      "evidence": [
+        "T1",
+        "T2",
+        "T3"
+      ],
+      "source": "model"
+    },
+    "takeaways": [
+      {
+        "text": "The brand should consider the price of Creed Aventus, as it may be a barrier for some customers.",
+        "evidence": [
+          "S73",
+          "S82",
+          "T3"
+        ]
+      },
+      {
+        "text": "The brand should emphasize the versatility and iconic status of Creed Aventus.",
+        "evidence": [
+          "S48",
+          "S51",
+          "S53",
+          "T5"
+        ]
+      },
+      {
+        "text": "The brand should focus on the performance and design of Creed Aventus, as these are key strengths.",
+        "evidence": [
+          "S12",
+          "S25",
+          "S27",
+          "T1",
+          "T2"
+        ]
+      }
+    ],
+    "moment_notes": [],
+    "turn_labels": [
+      {
+        "seg": 50,
+        "label": "The versatility of Creed Aventus"
+      },
+      {
+        "seg": 76,
+        "label": "The value of Creed Aventus"
+      },
+      {
+        "seg": 88,
+        "label": "The iconic status of Creed Aventus"
+      }
+    ]
+  },
+  "verifier": {
+    "proposed": 142,
+    "kept": 136,
+    "by_field": {
+      "claim": {
+        "kept": 20,
+        "dropped": 1
+      },
+      "topic": {
+        "kept": 8,
+        "dropped": 0
+      },
+      "comment_tags": {
+        "kept": 100,
+        "dropped": 0
+      },
+      "verdict": {
+        "kept": 0,
+        "dropped": 1
+      },
+      "brand_health_words": {
+        "kept": 0,
+        "dropped": 1
+      },
+      "audience_words": {
+        "kept": 1,
+        "dropped": 0
+      },
+      "agreement_words": {
+        "kept": 1,
+        "dropped": 0
+      },
+      "takeaway": {
+        "kept": 3,
+        "dropped": 0
+      },
+      "moment_note": {
+        "kept": 0,
+        "dropped": 3
+      },
+      "turn_label": {
+        "kept": 3,
+        "dropped": 0
+      }
+    },
+    "dropped": [
+      {
+        "field": "claim",
+        "reasons": [
+          "figure not in the facts: 2022"
+        ],
+        "text": "{'seg': 95, 'aspect': 'price', 'stance': 'praise', 'claim': 'The reviewer thinks the fragrance is worth buying in 2022.', 'quote': 'if you like this scent and you can buy it responsibly, I think you just get it'}"
+      },
+      {
+        "field": "verdict",
+        "reasons": [
+          "says the comments were positive about Performance, which the run does not show"
+        ],
+        "text": "The reviewer concludes that Creed Aventus is a versatile and iconic scent, but criticizes its price. The audience is generally positive, praising the scent's performance and design."
+      },
+      {
+        "field": "brand_health_words",
+        "reasons": [
+          "says the comments were positive about Performance, which the run does not show"
+        ],
+        "text": "The audience is generally positive, with 71% of comments being positive and 14% neutral. The comments praise the scent's performance and design, but some criticize the price."
+      },
+      {
+        "field": "moment_note",
+        "reasons": [
+          "says the voice read positive; it read neutral"
+        ],
+        "text": "The words read neutral, but the face reads negative, while the voice and comments read positive."
+      },
+      {
+        "field": "moment_note",
+        "reasons": [
+          "says the voice read positive; it read neutral"
+        ],
+        "text": "The words read neutral, but the face reads negative, while the voice and comments read positive."
+      },
+      {
+        "field": "moment_note",
+        "reasons": [
+          "says the voice read positive; it read neutral"
+        ],
+        "text": "The words read neutral, but the face reads negative, while the voice and comments read positive."
+      }
+    ],
+    "notes": [
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 3,
+        "to": [
+          2,
+          3
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "segment corrected to where the quote is",
+        "from": 8,
+        "to": 7
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 10,
+        "to": [
+          10,
+          11
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 12,
+        "to": [
+          12,
+          13
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 21,
+        "to": [
+          21,
+          22
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 25,
+        "to": [
+          25,
+          26
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 27,
+        "to": [
+          27,
+          28
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 45,
+        "to": [
+          45,
+          46
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 47,
+        "to": [
+          47,
+          48
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 51,
+        "to": [
+          51,
+          52
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 53,
+        "to": [
+          53,
+          54
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 88,
+        "to": [
+          88,
+          89
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 88,
+        "to": [
+          88,
+          89
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 88,
+        "to": [
+          88,
+          89
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 94,
+        "to": [
+          94,
+          95
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "segment corrected to where the quote is",
+        "from": 95,
+        "to": 82
+      },
+      {
+        "field": "claim",
+        "what": "segment corrected to where the quote is",
+        "from": 95,
+        "to": 82
+      }
+    ]
+  },
+  "video_meta": {
+    "fetched": true,
+    "at": "2026-09-25T12:03:23+00:00",
+    "has_paid_product_placement": false,
+    "description_hits": [],
+    "title": "3 Reasons to Buy & Not to Buy Creed Aventus - Review & Considerations for 2022",
+    "channel": "Baldassarre Fragrance",
+    "published_at": "2022-02-01T17:00:25Z"
+  },
+  "calls": [
+    {
+      "step": "claims",
+      "ok": true,
+      "seconds": 34.76,
+      "prompt_chars": 6945,
+      "prompt_tokens": 1915,
+      "output_tokens": 468
+    },
+    {
+      "step": "claims",
+      "ok": true,
+      "seconds": 29.93,
+      "prompt_chars": 6570,
+      "prompt_tokens": 1855,
+      "output_tokens": 481
+    },
+    {
+      "step": "claims",
+      "ok": true,
+      "seconds": 28.62,
+      "prompt_chars": 6313,
+      "prompt_tokens": 1764,
+      "output_tokens": 463
+    },
+    {
+      "step": "topics",
+      "ok": true,
+      "seconds": 16.23,
+      "prompt_chars": 6174,
+      "prompt_tokens": 1508,
+      "output_tokens": 204
+    },
+    {
+      "step": "comments",
+      "ok": true,
+      "seconds": 24.96,
+      "prompt_chars": 4795,
+      "prompt_tokens": 1242,
+      "output_tokens": 414
+    },
+    {
+      "step": "comments",
+      "ok": true,
+      "seconds": 27.25,
+      "prompt_chars": 5924,
+      "prompt_tokens": 1558,
+      "output_tokens": 437
+    },
+    {
+      "step": "comments",
+      "ok": true,
+      "seconds": 23.3,
+      "prompt_chars": 4837,
+      "prompt_tokens": 1329,
+      "output_tokens": 382
+    },
+    {
+      "step": "comments",
+      "ok": true,
+      "seconds": 25.14,
+      "prompt_chars": 4894,
+      "prompt_tokens": 1309,
+      "output_tokens": 418
+    },
+    {
+      "step": "prose",
+      "ok": true,
+      "seconds": 49.87,
+      "prompt_chars": 11352,
+      "prompt_tokens": 3286,
+      "output_tokens": 712
+    }
+  ],
+  "runtime_s": 260.21,
+  "report_ref": {
+    "file": "Creed (Aventus).json",
+    "sha256": "7a6f50d6cfceee21a920da359833085f0fd4a270607208b80a8e3c69e6ba051b"
+  }
+}

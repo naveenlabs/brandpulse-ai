@@ -1,0 +1,37 @@
+{
+ "uid": "haWvrSliMVY_33",
+ "system": "three_channel",
+ "video_id": "haWvrSliMVY",
+ "segment_id": 33,
+ "split": "holdout",
+ "payload": {
+  "segment_id": 33,
+  "start_s": 237.52,
+  "end_s": 242.3,
+  "transcript": "makes you yourself more confident. So if you care about that fact,",
+  "transcript_sentiment": "POSITIVE (0.65)",
+  "vocal_emotion": "NEUTRAL (arousal 0.61)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.99)"
+ },
+ "seconds": 4.304,
+ "raw": "{\n  \"segment_id\": 33,\n  \"conflict_score\": 0.5,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"vocal_emotion\", \"facial_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words convey a positive sentiment, but their tone and facial expression suggest neutrality, indicating a conflict between the creator's verbal and non-verbal cues.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 33,
+  "start_s": 237.52,
+  "end_s": 242.3,
+  "conflict_score": 0.2445,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: vocal_emotion",
+   "channels_in_conflict: facial_emotion",
+   "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+  ],
+  "flagged": false
+ }
+}

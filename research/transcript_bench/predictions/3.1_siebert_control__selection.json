@@ -1,0 +1,4013 @@
+{
+ "candidate_id": "3.1_siebert_control",
+ "name": "siebert RoBERTa-large + 0.70 rule (control)",
+ "group": 3,
+ "model": "siebert/sentiment-roberta-large-english",
+ "kind": "two_class",
+ "split": "selection",
+ "n_rows": 400,
+ "elapsed_s": 14.15,
+ "seconds_per_row": 0.0354,
+ "predictions": [
+  {
+   "segment_uid": "32slGhAH3Xc:48",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9979731440544128,
+   "scores": {
+    "POSITIVE": 0.9979731440544128,
+    "NEGATIVE": 0.0020268422085791826
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:197",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9975399971008301,
+   "scores": {
+    "POSITIVE": 0.9975399971008301,
+    "NEGATIVE": 0.0024600743781775236
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:41",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9890016317367554,
+   "scores": {
+    "POSITIVE": 0.9890016317367554,
+    "NEGATIVE": 0.010998337529599667
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:32",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9945588707923889,
+   "scores": {
+    "POSITIVE": 0.9945588707923889,
+    "NEGATIVE": 0.005441081244498491
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:93",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9953376054763794,
+   "scores": {
+    "NEGATIVE": 0.9953376054763794,
+    "POSITIVE": 0.004662335384637117
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:0",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9964771866798401,
+   "scores": {
+    "POSITIVE": 0.9964771866798401,
+    "NEGATIVE": 0.003522820770740509
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:33",
+   "gold": "POSITIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9945197701454163,
+   "scores": {
+    "NEGATIVE": 0.9945197701454163,
+    "POSITIVE": 0.005480241030454636
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:48",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9947356581687927,
+   "scores": {
+    "POSITIVE": 0.9947356581687927,
+    "NEGATIVE": 0.00526429433375597
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:71",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9980509281158447,
+   "scores": {
+    "POSITIVE": 0.9980509281158447,
+    "NEGATIVE": 0.0019490709528326988
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:3",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9989534616470337,
+   "scores": {
+    "NEGATIVE": 0.9989534616470337,
+    "POSITIVE": 0.0010465432424098253
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:112",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9830722808837891,
+   "scores": {
+    "POSITIVE": 0.9830722808837891,
+    "NEGATIVE": 0.016927652060985565
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:109",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9983593821525574,
+   "scores": {
+    "NEGATIVE": 0.9983593821525574,
+    "POSITIVE": 0.0016405789647251368
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:26",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9993942975997925,
+   "scores": {
+    "NEGATIVE": 0.9993942975997925,
+    "POSITIVE": 0.0006056914571672678
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:1",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9903242588043213,
+   "scores": {
+    "NEGATIVE": 0.9903242588043213,
+    "POSITIVE": 0.009675747714936733
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:220",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9994093179702759,
+   "scores": {
+    "NEGATIVE": 0.9994093179702759,
+    "POSITIVE": 0.0005906811566092074
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:186",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9986799359321594,
+   "scores": {
+    "POSITIVE": 0.9986799359321594,
+    "NEGATIVE": 0.0013201048132032156
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:144",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9958710074424744,
+   "scores": {
+    "NEGATIVE": 0.9958710074424744,
+    "POSITIVE": 0.004129016771912575
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:154",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9988992214202881,
+   "scores": {
+    "POSITIVE": 0.9988992214202881,
+    "NEGATIVE": 0.001100743655115366
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:134",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9989044666290283,
+   "scores": {
+    "POSITIVE": 0.9989044666290283,
+    "NEGATIVE": 0.0010955051984637976
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:112",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.922935426235199,
+   "scores": {
+    "NEGATIVE": 0.922935426235199,
+    "POSITIVE": 0.07706455141305923
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:92",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9984075427055359,
+   "scores": {
+    "POSITIVE": 0.9984075427055359,
+    "NEGATIVE": 0.0015924656763672829
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:167",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9977676868438721,
+   "scores": {
+    "POSITIVE": 0.9977676868438721,
+    "NEGATIVE": 0.0022323329467326403
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:18",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9986262321472168,
+   "scores": {
+    "POSITIVE": 0.9986262321472168,
+    "NEGATIVE": 0.0013738019624724984
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:29",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.984775722026825,
+   "scores": {
+    "NEGATIVE": 0.984775722026825,
+    "POSITIVE": 0.01522434689104557
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:97",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9863280653953552,
+   "scores": {
+    "NEGATIVE": 0.9863280653953552,
+    "POSITIVE": 0.013671944849193096
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:6",
+   "gold": "NEGATIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9950756430625916,
+   "scores": {
+    "POSITIVE": 0.9950756430625916,
+    "NEGATIVE": 0.004924356006085873
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:107",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9960457682609558,
+   "scores": {
+    "NEGATIVE": 0.9960457682609558,
+    "POSITIVE": 0.003954156301915646
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:129",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9925780892372131,
+   "scores": {
+    "NEGATIVE": 0.9925780892372131,
+    "POSITIVE": 0.0074218991212546825
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:40",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9934219717979431,
+   "scores": {
+    "POSITIVE": 0.9934219717979431,
+    "NEGATIVE": 0.0065780826844275
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:23",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9911279678344727,
+   "scores": {
+    "POSITIVE": 0.9911279678344727,
+    "NEGATIVE": 0.008872001431882381
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:232",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9988155364990234,
+   "scores": {
+    "NEGATIVE": 0.9988155364990234,
+    "POSITIVE": 0.0011845286935567856
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:115",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9994996786117554,
+   "scores": {
+    "NEGATIVE": 0.9994996786117554,
+    "POSITIVE": 0.000500264810398221
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:52",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9846621751785278,
+   "scores": {
+    "POSITIVE": 0.9846621751785278,
+    "NEGATIVE": 0.015337814576923847
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:142",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9958840012550354,
+   "scores": {
+    "POSITIVE": 0.9958840012550354,
+    "NEGATIVE": 0.004116009455174208
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:130",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9974933862686157,
+   "scores": {
+    "POSITIVE": 0.9974933862686157,
+    "NEGATIVE": 0.0025065941736102104
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:4",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.989408016204834,
+   "scores": {
+    "NEGATIVE": 0.989408016204834,
+    "POSITIVE": 0.010591940023005009
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:125",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9975662231445312,
+   "scores": {
+    "POSITIVE": 0.9975662231445312,
+    "NEGATIVE": 0.0024337961804121733
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:89",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9941970109939575,
+   "scores": {
+    "NEGATIVE": 0.9941970109939575,
+    "POSITIVE": 0.005802925210446119
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:178",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9994034767150879,
+   "scores": {
+    "NEGATIVE": 0.9994034767150879,
+    "POSITIVE": 0.0005965152522549033
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:115",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9981953501701355,
+   "scores": {
+    "POSITIVE": 0.9981953501701355,
+    "NEGATIVE": 0.001804639701731503
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:181",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9989224672317505,
+   "scores": {
+    "POSITIVE": 0.9989224672317505,
+    "NEGATIVE": 0.0010775214759632945
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:32",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.998768150806427,
+   "scores": {
+    "POSITIVE": 0.998768150806427,
+    "NEGATIVE": 0.0012317746877670288
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:18",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9993614554405212,
+   "scores": {
+    "NEGATIVE": 0.9993614554405212,
+    "POSITIVE": 0.0006385097512975335
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:68",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9987300038337708,
+   "scores": {
+    "POSITIVE": 0.9987300038337708,
+    "NEGATIVE": 0.0012700454099103808
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:59",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9991814494132996,
+   "scores": {
+    "NEGATIVE": 0.9991814494132996,
+    "POSITIVE": 0.0008185768965631723
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:8",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9994999170303345,
+   "scores": {
+    "NEGATIVE": 0.9994999170303345,
+    "POSITIVE": 0.0005001060198992491
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:42",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9960241317749023,
+   "scores": {
+    "NEGATIVE": 0.9960241317749023,
+    "POSITIVE": 0.003975878469645977
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:102",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.99854576587677,
+   "scores": {
+    "POSITIVE": 0.99854576587677,
+    "NEGATIVE": 0.0014542678836733103
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:145",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9964731335639954,
+   "scores": {
+    "POSITIVE": 0.9964731335639954,
+    "NEGATIVE": 0.0035268571227788925
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:63",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.998836100101471,
+   "scores": {
+    "POSITIVE": 0.998836100101471,
+    "NEGATIVE": 0.0011639012955129147
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:145",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9981459379196167,
+   "scores": {
+    "POSITIVE": 0.9981459379196167,
+    "NEGATIVE": 0.0018541145836934447
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:105",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9985336065292358,
+   "scores": {
+    "POSITIVE": 0.9985336065292358,
+    "NEGATIVE": 0.0014664297923445702
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:187",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9988635778427124,
+   "scores": {
+    "POSITIVE": 0.9988635778427124,
+    "NEGATIVE": 0.0011364590609446168
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:70",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9994805455207825,
+   "scores": {
+    "NEGATIVE": 0.9994805455207825,
+    "POSITIVE": 0.0005195222329348326
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:26",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9916104674339294,
+   "scores": {
+    "POSITIVE": 0.9916104674339294,
+    "NEGATIVE": 0.008389528840780258
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:174",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9956797361373901,
+   "scores": {
+    "NEGATIVE": 0.9956797361373901,
+    "POSITIVE": 0.004320183303207159
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:17",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9891055226325989,
+   "scores": {
+    "NEGATIVE": 0.9891055226325989,
+    "POSITIVE": 0.010894431732594967
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:130",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9993293285369873,
+   "scores": {
+    "NEGATIVE": 0.9993293285369873,
+    "POSITIVE": 0.000670676410663873
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:3",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9988139867782593,
+   "scores": {
+    "POSITIVE": 0.9988139867782593,
+    "NEGATIVE": 0.0011860060039907694
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:127",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9897897839546204,
+   "scores": {
+    "NEGATIVE": 0.9897897839546204,
+    "POSITIVE": 0.010210249572992325
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:45",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9865413904190063,
+   "scores": {
+    "POSITIVE": 0.9865413904190063,
+    "NEGATIVE": 0.013458623550832272
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:39",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.998777449131012,
+   "scores": {
+    "POSITIVE": 0.998777449131012,
+    "NEGATIVE": 0.001222569844685495
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:95",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9906036257743835,
+   "scores": {
+    "NEGATIVE": 0.9906036257743835,
+    "POSITIVE": 0.009396295063197613
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:224",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9967995882034302,
+   "scores": {
+    "POSITIVE": 0.9967995882034302,
+    "NEGATIVE": 0.003200351493433118
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:125",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9962044358253479,
+   "scores": {
+    "NEGATIVE": 0.9962044358253479,
+    "POSITIVE": 0.0037955299485474825
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:114",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.8213261365890503,
+   "scores": {
+    "NEGATIVE": 0.8213261365890503,
+    "POSITIVE": 0.1786738932132721
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:110",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.99888676404953,
+   "scores": {
+    "POSITIVE": 0.99888676404953,
+    "NEGATIVE": 0.0011132630752399564
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:114",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9977579712867737,
+   "scores": {
+    "NEGATIVE": 0.9977579712867737,
+    "POSITIVE": 0.0022420999594032764
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:41",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9988283514976501,
+   "scores": {
+    "POSITIVE": 0.9988283514976501,
+    "NEGATIVE": 0.0011716611916199327
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:64",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9950370192527771,
+   "scores": {
+    "POSITIVE": 0.9950370192527771,
+    "NEGATIVE": 0.004962972365319729
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:0",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9987490177154541,
+   "scores": {
+    "POSITIVE": 0.9987490177154541,
+    "NEGATIVE": 0.0012510123196989298
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:81",
+   "gold": "POSITIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9932646751403809,
+   "scores": {
+    "NEGATIVE": 0.9932646751403809,
+    "POSITIVE": 0.0067352973856031895
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:108",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9955441355705261,
+   "scores": {
+    "POSITIVE": 0.9955441355705261,
+    "NEGATIVE": 0.004455920774489641
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:139",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9960783123970032,
+   "scores": {
+    "POSITIVE": 0.9960783123970032,
+    "NEGATIVE": 0.0039217243902385235
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:15",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9974732995033264,
+   "scores": {
+    "POSITIVE": 0.9974732995033264,
+    "NEGATIVE": 0.002526703057810664
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:135",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.997908353805542,
+   "scores": {
+    "NEGATIVE": 0.997908353805542,
+    "POSITIVE": 0.00209171324968338
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:166",
+   "gold": "POSITIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9907614588737488,
+   "scores": {
+    "NEGATIVE": 0.9907614588737488,
+    "POSITIVE": 0.009238523431122303
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:4",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9761077761650085,
+   "scores": {
+    "POSITIVE": 0.9761077761650085,
+    "NEGATIVE": 0.023892216384410858
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:102",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9979832172393799,
+   "scores": {
+    "NEGATIVE": 0.9979832172393799,
+    "POSITIVE": 0.002016797661781311
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:53",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9894484281539917,
+   "scores": {
+    "NEGATIVE": 0.9894484281539917,
+    "POSITIVE": 0.010551614686846733
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:53",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9980850219726562,
+   "scores": {
+    "POSITIVE": 0.9980850219726562,
+    "NEGATIVE": 0.001914997468702495
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:130",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9993728995323181,
+   "scores": {
+    "NEGATIVE": 0.9993728995323181,
+    "POSITIVE": 0.0006270786980167031
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:41",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9977752566337585,
+   "scores": {
+    "POSITIVE": 0.9977752566337585,
+    "NEGATIVE": 0.002224713796749711
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:91",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9978089928627014,
+   "scores": {
+    "POSITIVE": 0.9978089928627014,
+    "NEGATIVE": 0.0021910425275564194
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:11",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9959881901741028,
+   "scores": {
+    "NEGATIVE": 0.9959881901741028,
+    "POSITIVE": 0.004011800047010183
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:131",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9981979727745056,
+   "scores": {
+    "NEGATIVE": 0.9981979727745056,
+    "POSITIVE": 0.0018020407296717167
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:57",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9979447722434998,
+   "scores": {
+    "POSITIVE": 0.9979447722434998,
+    "NEGATIVE": 0.0020552424248307943
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:93",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9994916915893555,
+   "scores": {
+    "NEGATIVE": 0.9994916915893555,
+    "POSITIVE": 0.0005083241267129779
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:70",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9988454580307007,
+   "scores": {
+    "POSITIVE": 0.9988454580307007,
+    "NEGATIVE": 0.0011544746812433004
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:196",
+   "gold": "NEGATIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9951261281967163,
+   "scores": {
+    "POSITIVE": 0.9951261281967163,
+    "NEGATIVE": 0.004873823840171099
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:215",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.99815434217453,
+   "scores": {
+    "POSITIVE": 0.99815434217453,
+    "NEGATIVE": 0.0018456014804542065
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:213",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9988435506820679,
+   "scores": {
+    "POSITIVE": 0.9988435506820679,
+    "NEGATIVE": 0.0011564305750653148
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:13",
+   "gold": "POSITIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9965141415596008,
+   "scores": {
+    "NEGATIVE": 0.9965141415596008,
+    "POSITIVE": 0.003485841443762183
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:173",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9994940757751465,
+   "scores": {
+    "NEGATIVE": 0.9994940757751465,
+    "POSITIVE": 0.0005058688693679869
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:65",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.992928683757782,
+   "scores": {
+    "NEGATIVE": 0.992928683757782,
+    "POSITIVE": 0.007071340922266245
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:118",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9975377321243286,
+   "scores": {
+    "POSITIVE": 0.9975377321243286,
+    "NEGATIVE": 0.00246222922578454
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:60",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9986289739608765,
+   "scores": {
+    "POSITIVE": 0.9986289739608765,
+    "NEGATIVE": 0.0013710041530430317
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:24",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9980081915855408,
+   "scores": {
+    "POSITIVE": 0.9980081915855408,
+    "NEGATIVE": 0.0019917949102818966
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:117",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9975574016571045,
+   "scores": {
+    "POSITIVE": 0.9975574016571045,
+    "NEGATIVE": 0.0024426293093711138
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:171",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9994779229164124,
+   "scores": {
+    "NEGATIVE": 0.9994779229164124,
+    "POSITIVE": 0.0005221108440309763
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:74",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9984853863716125,
+   "scores": {
+    "POSITIVE": 0.9984853863716125,
+    "NEGATIVE": 0.0015146082732826471
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:71",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9980474710464478,
+   "scores": {
+    "POSITIVE": 0.9980474710464478,
+    "NEGATIVE": 0.0019525459501892328
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:92",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.999040424823761,
+   "scores": {
+    "NEGATIVE": 0.999040424823761,
+    "POSITIVE": 0.0009595325100235641
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:119",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9988411068916321,
+   "scores": {
+    "POSITIVE": 0.9988411068916321,
+    "NEGATIVE": 0.0011589195346459746
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:149",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9994837045669556,
+   "scores": {
+    "NEGATIVE": 0.9994837045669556,
+    "POSITIVE": 0.0005162518355064094
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:29",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9987937211990356,
+   "scores": {
+    "POSITIVE": 0.9987937211990356,
+    "NEGATIVE": 0.0012062955647706985
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:35",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9986169338226318,
+   "scores": {
+    "POSITIVE": 0.9986169338226318,
+    "NEGATIVE": 0.0013830475509166718
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:14",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9988865256309509,
+   "scores": {
+    "POSITIVE": 0.9988865256309509,
+    "NEGATIVE": 0.0011135006789118052
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:147",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9994916915893555,
+   "scores": {
+    "NEGATIVE": 0.9994916915893555,
+    "POSITIVE": 0.0005083382129669189
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:102",
+   "gold": "POSITIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9950609803199768,
+   "scores": {
+    "NEGATIVE": 0.9950609803199768,
+    "POSITIVE": 0.004939037375152111
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:8",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.998342752456665,
+   "scores": {
+    "POSITIVE": 0.998342752456665,
+    "NEGATIVE": 0.0016572886379435658
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:166",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9897224307060242,
+   "scores": {
+    "NEGATIVE": 0.9897224307060242,
+    "POSITIVE": 0.010277590714395046
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:76",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9979540109634399,
+   "scores": {
+    "NEGATIVE": 0.9979540109634399,
+    "POSITIVE": 0.002045910805463791
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:48",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9988170862197876,
+   "scores": {
+    "POSITIVE": 0.9988170862197876,
+    "NEGATIVE": 0.0011829179711639881
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:87",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9982792139053345,
+   "scores": {
+    "POSITIVE": 0.9982792139053345,
+    "NEGATIVE": 0.0017207993660122156
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:188",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9983574748039246,
+   "scores": {
+    "POSITIVE": 0.9983574748039246,
+    "NEGATIVE": 0.0016424998175352812
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:164",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9959391355514526,
+   "scores": {
+    "POSITIVE": 0.9959391355514526,
+    "NEGATIVE": 0.004060882143676281
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:126",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9988740086555481,
+   "scores": {
+    "POSITIVE": 0.9988740086555481,
+    "NEGATIVE": 0.0011259355815127492
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:173",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9886653423309326,
+   "scores": {
+    "NEGATIVE": 0.9886653423309326,
+    "POSITIVE": 0.011334612034261227
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:22",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9994577765464783,
+   "scores": {
+    "NEGATIVE": 0.9994577765464783,
+    "POSITIVE": 0.0005422589019872248
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:118",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.924232542514801,
+   "scores": {
+    "POSITIVE": 0.924232542514801,
+    "NEGATIVE": 0.07576750963926315
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:80",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9988207221031189,
+   "scores": {
+    "POSITIVE": 0.9988207221031189,
+    "NEGATIVE": 0.001179235870949924
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:164",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9994595646858215,
+   "scores": {
+    "NEGATIVE": 0.9994595646858215,
+    "POSITIVE": 0.0005404456751421094
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:36",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9984073042869568,
+   "scores": {
+    "POSITIVE": 0.9984073042869568,
+    "NEGATIVE": 0.0015927129425108433
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:7",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9978911280632019,
+   "scores": {
+    "POSITIVE": 0.9978911280632019,
+    "NEGATIVE": 0.002108844695612788
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:7",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9974199533462524,
+   "scores": {
+    "POSITIVE": 0.9974199533462524,
+    "NEGATIVE": 0.0025800904259085655
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:78",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9968534111976624,
+   "scores": {
+    "POSITIVE": 0.9968534111976624,
+    "NEGATIVE": 0.003146593924611807
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:50",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9817931056022644,
+   "scores": {
+    "NEGATIVE": 0.9817931056022644,
+    "POSITIVE": 0.018206944689154625
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:68",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9964377880096436,
+   "scores": {
+    "POSITIVE": 0.9964377880096436,
+    "NEGATIVE": 0.0035622722934931517
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:40",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9985890984535217,
+   "scores": {
+    "POSITIVE": 0.9985890984535217,
+    "NEGATIVE": 0.0014108911855146289
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:210",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9957160353660583,
+   "scores": {
+    "NEGATIVE": 0.9957160353660583,
+    "POSITIVE": 0.004283971153199673
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:173",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9982472658157349,
+   "scores": {
+    "POSITIVE": 0.9982472658157349,
+    "NEGATIVE": 0.0017527979798614979
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:199",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9976587295532227,
+   "scores": {
+    "POSITIVE": 0.9976587295532227,
+    "NEGATIVE": 0.0023413028102368116
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:97",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9994584918022156,
+   "scores": {
+    "NEGATIVE": 0.9994584918022156,
+    "POSITIVE": 0.0005415696068666875
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:140",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9978657364845276,
+   "scores": {
+    "POSITIVE": 0.9978657364845276,
+    "NEGATIVE": 0.002134264213964343
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:189",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9966713786125183,
+   "scores": {
+    "NEGATIVE": 0.9966713786125183,
+    "POSITIVE": 0.003328683553263545
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:131",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9863520860671997,
+   "scores": {
+    "NEGATIVE": 0.9863520860671997,
+    "POSITIVE": 0.013647910207509995
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:13",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9952032566070557,
+   "scores": {
+    "POSITIVE": 0.9952032566070557,
+    "NEGATIVE": 0.0047967806458473206
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:84",
+   "gold": "NEGATIVE",
+   "label": "NEUTRAL",
+   "confidence": 0.48459768295288086,
+   "scores": {
+    "NEGATIVE": 0.5154023170471191,
+    "POSITIVE": 0.4845976233482361
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:207",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9994896650314331,
+   "scores": {
+    "NEGATIVE": 0.9994896650314331,
+    "POSITIVE": 0.00051027542212978
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:184",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9994890689849854,
+   "scores": {
+    "NEGATIVE": 0.9994890689849854,
+    "POSITIVE": 0.0005109110497869551
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:19",
+   "gold": "POSITIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9948337078094482,
+   "scores": {
+    "NEGATIVE": 0.9948337078094482,
+    "POSITIVE": 0.005166341550648212
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:143",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.999099850654602,
+   "scores": {
+    "NEGATIVE": 0.999099850654602,
+    "POSITIVE": 0.0009001442813314497
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:187",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9988418221473694,
+   "scores": {
+    "POSITIVE": 0.9988418221473694,
+    "NEGATIVE": 0.001158149098046124
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:79",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9976100921630859,
+   "scores": {
+    "POSITIVE": 0.9976100921630859,
+    "NEGATIVE": 0.002389957895502448
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:41",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9979669451713562,
+   "scores": {
+    "NEGATIVE": 0.9979669451713562,
+    "POSITIVE": 0.002033012919127941
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:69",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9982542395591736,
+   "scores": {
+    "POSITIVE": 0.9982542395591736,
+    "NEGATIVE": 0.0017456937348470092
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:39",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9981586337089539,
+   "scores": {
+    "POSITIVE": 0.9981586337089539,
+    "NEGATIVE": 0.001841327641159296
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:76",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9983264803886414,
+   "scores": {
+    "NEGATIVE": 0.9983264803886414,
+    "POSITIVE": 0.0016734860837459564
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:85",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9987218976020813,
+   "scores": {
+    "POSITIVE": 0.9987218976020813,
+    "NEGATIVE": 0.0012781103141605854
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:163",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9974486231803894,
+   "scores": {
+    "POSITIVE": 0.9974486231803894,
+    "NEGATIVE": 0.0025513030122965574
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:123",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.998802661895752,
+   "scores": {
+    "POSITIVE": 0.998802661895752,
+    "NEGATIVE": 0.0011973605724051595
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:17",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9977840781211853,
+   "scores": {
+    "POSITIVE": 0.9977840781211853,
+    "NEGATIVE": 0.0022160049993544817
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:94",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.998457670211792,
+   "scores": {
+    "NEGATIVE": 0.998457670211792,
+    "POSITIVE": 0.0015423813601955771
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:62",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9929081201553345,
+   "scores": {
+    "POSITIVE": 0.9929081201553345,
+    "NEGATIVE": 0.0070918770506978035
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:37",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9958441853523254,
+   "scores": {
+    "POSITIVE": 0.9958441853523254,
+    "NEGATIVE": 0.004155813250690699
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:124",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9888633489608765,
+   "scores": {
+    "NEGATIVE": 0.9888633489608765,
+    "POSITIVE": 0.011136675253510475
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:156",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9965823292732239,
+   "scores": {
+    "POSITIVE": 0.9965823292732239,
+    "NEGATIVE": 0.0034177012275904417
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:95",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9994300007820129,
+   "scores": {
+    "NEGATIVE": 0.9994300007820129,
+    "POSITIVE": 0.0005699755274690688
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:89",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9969948530197144,
+   "scores": {
+    "NEGATIVE": 0.9969948530197144,
+    "POSITIVE": 0.0030051975045353174
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:172",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9984706044197083,
+   "scores": {
+    "POSITIVE": 0.9984706044197083,
+    "NEGATIVE": 0.0015294186305254698
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:34",
+   "gold": "POSITIVE",
+   "label": "NEUTRAL",
+   "confidence": 0.3344787359237671,
+   "scores": {
+    "POSITIVE": 0.6655212640762329,
+    "NEGATIVE": 0.3344787061214447
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:34",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9978742599487305,
+   "scores": {
+    "NEGATIVE": 0.9978742599487305,
+    "POSITIVE": 0.0021257619373500347
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:108",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9970393776893616,
+   "scores": {
+    "NEGATIVE": 0.9970393776893616,
+    "POSITIVE": 0.0029605983290821314
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:22",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9975977540016174,
+   "scores": {
+    "POSITIVE": 0.9975977540016174,
+    "NEGATIVE": 0.0024022026918828487
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:117",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9981738328933716,
+   "scores": {
+    "POSITIVE": 0.9981738328933716,
+    "NEGATIVE": 0.0018261969089508057
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:68",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9984201192855835,
+   "scores": {
+    "NEGATIVE": 0.9984201192855835,
+    "POSITIVE": 0.0015798603417351842
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:56",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9980217218399048,
+   "scores": {
+    "POSITIVE": 0.9980217218399048,
+    "NEGATIVE": 0.001978283515200019
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:155",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9949864149093628,
+   "scores": {
+    "POSITIVE": 0.9949864149093628,
+    "NEGATIVE": 0.005013556219637394
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:43",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9982351064682007,
+   "scores": {
+    "NEGATIVE": 0.9982351064682007,
+    "POSITIVE": 0.001764860237017274
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:10",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9868099689483643,
+   "scores": {
+    "NEGATIVE": 0.9868099689483643,
+    "POSITIVE": 0.0131900105625391
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:25",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9972905516624451,
+   "scores": {
+    "POSITIVE": 0.9972905516624451,
+    "NEGATIVE": 0.0027094162069261074
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:161",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9986257553100586,
+   "scores": {
+    "NEGATIVE": 0.9986257553100586,
+    "POSITIVE": 0.001374269719235599
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:42",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9985742568969727,
+   "scores": {
+    "POSITIVE": 0.9985742568969727,
+    "NEGATIVE": 0.0014256964204832911
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:236",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9985859394073486,
+   "scores": {
+    "POSITIVE": 0.9985859394073486,
+    "NEGATIVE": 0.0014140554703772068
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:77",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9985424280166626,
+   "scores": {
+    "POSITIVE": 0.9985424280166626,
+    "NEGATIVE": 0.0014575535897165537
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:24",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.999494194984436,
+   "scores": {
+    "NEGATIVE": 0.999494194984436,
+    "POSITIVE": 0.0005057642702013254
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:174",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.998784601688385,
+   "scores": {
+    "POSITIVE": 0.998784601688385,
+    "NEGATIVE": 0.0012153699062764645
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:72",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9978359341621399,
+   "scores": {
+    "POSITIVE": 0.9978359341621399,
+    "NEGATIVE": 0.0021641170606017113
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:111",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9943946599960327,
+   "scores": {
+    "NEGATIVE": 0.9943946599960327,
+    "POSITIVE": 0.005605373065918684
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:46",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9975261092185974,
+   "scores": {
+    "NEGATIVE": 0.9975261092185974,
+    "POSITIVE": 0.002473953878507018
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:60",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9900931715965271,
+   "scores": {
+    "NEGATIVE": 0.9900931715965271,
+    "POSITIVE": 0.009906768798828125
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:152",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9977884292602539,
+   "scores": {
+    "NEGATIVE": 0.9977884292602539,
+    "POSITIVE": 0.0022115358151495457
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:28",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9905267953872681,
+   "scores": {
+    "NEGATIVE": 0.9905267953872681,
+    "POSITIVE": 0.009473230689764023
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:186",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9990153312683105,
+   "scores": {
+    "NEGATIVE": 0.9990153312683105,
+    "POSITIVE": 0.0009845925960689783
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:103",
+   "gold": "POSITIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9969571828842163,
+   "scores": {
+    "NEGATIVE": 0.9969571828842163,
+    "POSITIVE": 0.0030428043100982904
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:38",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9984995126724243,
+   "scores": {
+    "POSITIVE": 0.9984995126724243,
+    "NEGATIVE": 0.0015004404122009873
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:134",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9937465190887451,
+   "scores": {
+    "POSITIVE": 0.9937465190887451,
+    "NEGATIVE": 0.0062534199096262455
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:37",
+   "gold": "NEGATIVE",
+   "label": "POSITIVE",
+   "confidence": 0.985969066619873,
+   "scores": {
+    "POSITIVE": 0.985969066619873,
+    "NEGATIVE": 0.01403097715228796
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:30",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9980954527854919,
+   "scores": {
+    "POSITIVE": 0.9980954527854919,
+    "NEGATIVE": 0.001904585980810225
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:64",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9851922988891602,
+   "scores": {
+    "POSITIVE": 0.9851922988891602,
+    "NEGATIVE": 0.014807643368840218
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:49",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9987229704856873,
+   "scores": {
+    "POSITIVE": 0.9987229704856873,
+    "NEGATIVE": 0.0012769749155268073
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:170",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9985629916191101,
+   "scores": {
+    "POSITIVE": 0.9985629916191101,
+    "NEGATIVE": 0.0014369941782206297
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:215",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9985731840133667,
+   "scores": {
+    "POSITIVE": 0.9985731840133667,
+    "NEGATIVE": 0.0014267979422584176
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:73",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9985076785087585,
+   "scores": {
+    "POSITIVE": 0.9985076785087585,
+    "NEGATIVE": 0.0014922431437298656
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:122",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9972466230392456,
+   "scores": {
+    "POSITIVE": 0.9972466230392456,
+    "NEGATIVE": 0.0027534556575119495
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:57",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9978218078613281,
+   "scores": {
+    "POSITIVE": 0.9978218078613281,
+    "NEGATIVE": 0.0021781849209219217
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:58",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9940337538719177,
+   "scores": {
+    "NEGATIVE": 0.9940337538719177,
+    "POSITIVE": 0.005966315511614084
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:116",
+   "gold": "POSITIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9783161282539368,
+   "scores": {
+    "NEGATIVE": 0.9783161282539368,
+    "POSITIVE": 0.02168388105928898
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:99",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9986928105354309,
+   "scores": {
+    "POSITIVE": 0.9986928105354309,
+    "NEGATIVE": 0.0013072272995486856
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:155",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9965582489967346,
+   "scores": {
+    "NEGATIVE": 0.9965582489967346,
+    "POSITIVE": 0.0034417803399264812
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:84",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9987086057662964,
+   "scores": {
+    "POSITIVE": 0.9987086057662964,
+    "NEGATIVE": 0.0012913530226796865
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:88",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9978348612785339,
+   "scores": {
+    "POSITIVE": 0.9978348612785339,
+    "NEGATIVE": 0.002165153156965971
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:137",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9978173971176147,
+   "scores": {
+    "POSITIVE": 0.9978173971176147,
+    "NEGATIVE": 0.0021826273296028376
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:27",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9951275587081909,
+   "scores": {
+    "POSITIVE": 0.9951275587081909,
+    "NEGATIVE": 0.004872450605034828
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:167",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9981626868247986,
+   "scores": {
+    "POSITIVE": 0.9981626868247986,
+    "NEGATIVE": 0.0018373618368059397
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:59",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9994890689849854,
+   "scores": {
+    "NEGATIVE": 0.9994890689849854,
+    "POSITIVE": 0.0005109217599965632
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:40",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9987123012542725,
+   "scores": {
+    "POSITIVE": 0.9987123012542725,
+    "NEGATIVE": 0.0012877335539087653
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:157",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9940637946128845,
+   "scores": {
+    "POSITIVE": 0.9940637946128845,
+    "NEGATIVE": 0.005936207715421915
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:151",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9964489936828613,
+   "scores": {
+    "POSITIVE": 0.9964489936828613,
+    "NEGATIVE": 0.0035509851295500994
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:120",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9985446929931641,
+   "scores": {
+    "NEGATIVE": 0.9985446929931641,
+    "POSITIVE": 0.0014553088694810867
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:121",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9938096404075623,
+   "scores": {
+    "POSITIVE": 0.9938096404075623,
+    "NEGATIVE": 0.006190378684550524
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:173",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9982578158378601,
+   "scores": {
+    "POSITIVE": 0.9982578158378601,
+    "NEGATIVE": 0.0017422107048332691
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:121",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9987660646438599,
+   "scores": {
+    "POSITIVE": 0.9987660646438599,
+    "NEGATIVE": 0.0012339960085228086
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:52",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9962531328201294,
+   "scores": {
+    "POSITIVE": 0.9962531328201294,
+    "NEGATIVE": 0.00374683178961277
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:28",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9967809915542603,
+   "scores": {
+    "NEGATIVE": 0.9967809915542603,
+    "POSITIVE": 0.003218941856175661
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:160",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9894447922706604,
+   "scores": {
+    "NEGATIVE": 0.9894447922706604,
+    "POSITIVE": 0.01055524405092001
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:56",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9987037181854248,
+   "scores": {
+    "POSITIVE": 0.9987037181854248,
+    "NEGATIVE": 0.0012962358305230737
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:108",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9826840758323669,
+   "scores": {
+    "NEGATIVE": 0.9826840758323669,
+    "POSITIVE": 0.017315877601504326
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:76",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9984649419784546,
+   "scores": {
+    "POSITIVE": 0.9984649419784546,
+    "NEGATIVE": 0.001535130082629621
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:115",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9986750483512878,
+   "scores": {
+    "NEGATIVE": 0.9986750483512878,
+    "POSITIVE": 0.0013249220792204142
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:26",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9985913634300232,
+   "scores": {
+    "POSITIVE": 0.9985913634300232,
+    "NEGATIVE": 0.0014086175942793489
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:66",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9993292093276978,
+   "scores": {
+    "NEGATIVE": 0.9993292093276978,
+    "POSITIVE": 0.0006708093569613993
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:123",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.998626708984375,
+   "scores": {
+    "NEGATIVE": 0.998626708984375,
+    "POSITIVE": 0.0013732642401009798
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:168",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9982807636260986,
+   "scores": {
+    "NEGATIVE": 0.9982807636260986,
+    "POSITIVE": 0.0017192061059176922
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:177",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9994187355041504,
+   "scores": {
+    "NEGATIVE": 0.9994187355041504,
+    "POSITIVE": 0.0005812669987790287
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:76",
+   "gold": "POSITIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9979615211486816,
+   "scores": {
+    "NEGATIVE": 0.9979615211486816,
+    "POSITIVE": 0.002038434846326709
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:63",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9994532465934753,
+   "scores": {
+    "NEGATIVE": 0.9994532465934753,
+    "POSITIVE": 0.000546740076970309
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:1",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9994359612464905,
+   "scores": {
+    "NEGATIVE": 0.9994359612464905,
+    "POSITIVE": 0.0005640340968966484
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:28",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9968572854995728,
+   "scores": {
+    "POSITIVE": 0.9968572854995728,
+    "NEGATIVE": 0.0031427270732820034
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:150",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9987418055534363,
+   "scores": {
+    "POSITIVE": 0.9987418055534363,
+    "NEGATIVE": 0.0012582456693053246
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:72",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9974563717842102,
+   "scores": {
+    "POSITIVE": 0.9974563717842102,
+    "NEGATIVE": 0.0025436589494347572
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:138",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9981614947319031,
+   "scores": {
+    "POSITIVE": 0.9981614947319031,
+    "NEGATIVE": 0.0018385235453024507
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:83",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9987335801124573,
+   "scores": {
+    "POSITIVE": 0.9987335801124573,
+    "NEGATIVE": 0.001266414881683886
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:137",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9985894560813904,
+   "scores": {
+    "POSITIVE": 0.9985894560813904,
+    "NEGATIVE": 0.0014105250593274832
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:127",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9949872493743896,
+   "scores": {
+    "NEGATIVE": 0.9949872493743896,
+    "POSITIVE": 0.0050127687864005566
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:98",
+   "gold": "NEGATIVE",
+   "label": "NEUTRAL",
+   "confidence": 0.41585856676101685,
+   "scores": {
+    "NEGATIVE": 0.5841414332389832,
+    "POSITIVE": 0.41585856676101685
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:152",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.998831570148468,
+   "scores": {
+    "POSITIVE": 0.998831570148468,
+    "NEGATIVE": 0.0011684278724715114
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:148",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9121822118759155,
+   "scores": {
+    "NEGATIVE": 0.9121822118759155,
+    "POSITIVE": 0.08781778812408447
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:17",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.998471200466156,
+   "scores": {
+    "POSITIVE": 0.998471200466156,
+    "NEGATIVE": 0.0015288033755496144
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:21",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9971659779548645,
+   "scores": {
+    "POSITIVE": 0.9971659779548645,
+    "NEGATIVE": 0.0028340357821434736
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:163",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9994648098945618,
+   "scores": {
+    "NEGATIVE": 0.9994648098945618,
+    "POSITIVE": 0.0005352550651878119
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:20",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.998450756072998,
+   "scores": {
+    "POSITIVE": 0.998450756072998,
+    "NEGATIVE": 0.001549210981465876
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:92",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9982951283454895,
+   "scores": {
+    "POSITIVE": 0.9982951283454895,
+    "NEGATIVE": 0.0017049050657078624
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:93",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9984779953956604,
+   "scores": {
+    "POSITIVE": 0.9984779953956604,
+    "NEGATIVE": 0.0015220229979604483
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:112",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9926775693893433,
+   "scores": {
+    "NEGATIVE": 0.9926775693893433,
+    "POSITIVE": 0.007322407327592373
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:88",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.996638298034668,
+   "scores": {
+    "POSITIVE": 0.996638298034668,
+    "NEGATIVE": 0.0033616931177675724
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:103",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9984526634216309,
+   "scores": {
+    "POSITIVE": 0.9984526634216309,
+    "NEGATIVE": 0.001547334250062704
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:160",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9906923174858093,
+   "scores": {
+    "POSITIVE": 0.9906923174858093,
+    "NEGATIVE": 0.00930763315409422
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:20",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9925901889801025,
+   "scores": {
+    "POSITIVE": 0.9925901889801025,
+    "NEGATIVE": 0.0074097756296396255
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:140",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9972535967826843,
+   "scores": {
+    "POSITIVE": 0.9972535967826843,
+    "NEGATIVE": 0.002746433485299349
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:16",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9968085885047913,
+   "scores": {
+    "POSITIVE": 0.9968085885047913,
+    "NEGATIVE": 0.003191425697878003
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:67",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9447397589683533,
+   "scores": {
+    "NEGATIVE": 0.9447397589683533,
+    "POSITIVE": 0.05526018142700195
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:110",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9923241138458252,
+   "scores": {
+    "POSITIVE": 0.9923241138458252,
+    "NEGATIVE": 0.007675841450691223
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:111",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9961076378822327,
+   "scores": {
+    "NEGATIVE": 0.9961076378822327,
+    "POSITIVE": 0.0038923665415495634
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:0",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9920639395713806,
+   "scores": {
+    "NEGATIVE": 0.9920639395713806,
+    "POSITIVE": 0.007936056703329086
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:72",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9908451437950134,
+   "scores": {
+    "POSITIVE": 0.9908451437950134,
+    "NEGATIVE": 0.009154865518212318
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:7",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9960225820541382,
+   "scores": {
+    "POSITIVE": 0.9960225820541382,
+    "NEGATIVE": 0.003977338317781687
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:39",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9846220016479492,
+   "scores": {
+    "POSITIVE": 0.9846220016479492,
+    "NEGATIVE": 0.015377984382212162
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:41",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.989357054233551,
+   "scores": {
+    "NEGATIVE": 0.989357054233551,
+    "POSITIVE": 0.010642977431416512
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:11",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9988279938697815,
+   "scores": {
+    "POSITIVE": 0.9988279938697815,
+    "NEGATIVE": 0.0011720570037141442
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:108",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9944150447845459,
+   "scores": {
+    "POSITIVE": 0.9944150447845459,
+    "NEGATIVE": 0.0055848960764706135
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:58",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9928830862045288,
+   "scores": {
+    "POSITIVE": 0.9928830862045288,
+    "NEGATIVE": 0.007116979919373989
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:78",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9988241791725159,
+   "scores": {
+    "POSITIVE": 0.9988241791725159,
+    "NEGATIVE": 0.0011758428299799562
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:2",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9994868040084839,
+   "scores": {
+    "NEGATIVE": 0.9994868040084839,
+    "POSITIVE": 0.0005131138022989035
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:117",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9781991243362427,
+   "scores": {
+    "NEGATIVE": 0.9781991243362427,
+    "POSITIVE": 0.021800879389047623
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:65",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9986974596977234,
+   "scores": {
+    "POSITIVE": 0.9986974596977234,
+    "NEGATIVE": 0.0013026164378970861
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:136",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9934553503990173,
+   "scores": {
+    "NEGATIVE": 0.9934553503990173,
+    "POSITIVE": 0.006544607225805521
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:138",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9879745244979858,
+   "scores": {
+    "NEGATIVE": 0.9879745244979858,
+    "POSITIVE": 0.012025505304336548
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:105",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9988886713981628,
+   "scores": {
+    "POSITIVE": 0.9988886713981628,
+    "NEGATIVE": 0.0011113049695268273
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:27",
+   "gold": "NEGATIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9960559606552124,
+   "scores": {
+    "POSITIVE": 0.9960559606552124,
+    "NEGATIVE": 0.003944005351513624
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:82",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9986041188240051,
+   "scores": {
+    "POSITIVE": 0.9986041188240051,
+    "NEGATIVE": 0.0013959250645712018
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:51",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9580691456794739,
+   "scores": {
+    "POSITIVE": 0.9580691456794739,
+    "NEGATIVE": 0.0419309101998806
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:23",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9985910058021545,
+   "scores": {
+    "POSITIVE": 0.9985910058021545,
+    "NEGATIVE": 0.0014090280747041106
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:61",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9927177429199219,
+   "scores": {
+    "NEGATIVE": 0.9927177429199219,
+    "POSITIVE": 0.007282284088432789
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:51",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9989251494407654,
+   "scores": {
+    "NEGATIVE": 0.9989251494407654,
+    "POSITIVE": 0.0010748489294201136
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:15",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9981338381767273,
+   "scores": {
+    "POSITIVE": 0.9981338381767273,
+    "NEGATIVE": 0.0018661371432244778
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:106",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9994569420814514,
+   "scores": {
+    "NEGATIVE": 0.9994569420814514,
+    "POSITIVE": 0.0005430642631836236
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:85",
+   "gold": "POSITIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9932869076728821,
+   "scores": {
+    "NEGATIVE": 0.9932869076728821,
+    "POSITIVE": 0.0067130932584404945
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:9",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9893504977226257,
+   "scores": {
+    "NEGATIVE": 0.9893504977226257,
+    "POSITIVE": 0.010649526491761208
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:140",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9948996901512146,
+   "scores": {
+    "NEGATIVE": 0.9948996901512146,
+    "POSITIVE": 0.00510037736967206
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:159",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9988343119621277,
+   "scores": {
+    "POSITIVE": 0.9988343119621277,
+    "NEGATIVE": 0.0011656753486022353
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:118",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9956768155097961,
+   "scores": {
+    "POSITIVE": 0.9956768155097961,
+    "NEGATIVE": 0.004323136061429977
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:153",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9985224604606628,
+   "scores": {
+    "POSITIVE": 0.9985224604606628,
+    "NEGATIVE": 0.0014776010066270828
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:153",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9987465143203735,
+   "scores": {
+    "NEGATIVE": 0.9987465143203735,
+    "POSITIVE": 0.0012534800916910172
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:69",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9989169836044312,
+   "scores": {
+    "POSITIVE": 0.9989169836044312,
+    "NEGATIVE": 0.00108302419539541
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:88",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9974525570869446,
+   "scores": {
+    "NEGATIVE": 0.9974525570869446,
+    "POSITIVE": 0.0025474668946117163
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:155",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9978905320167542,
+   "scores": {
+    "POSITIVE": 0.9978905320167542,
+    "NEGATIVE": 0.002109432825818658
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:190",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9975544810295105,
+   "scores": {
+    "NEGATIVE": 0.9975544810295105,
+    "POSITIVE": 0.0024455192033201456
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:231",
+   "gold": "POSITIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9877562522888184,
+   "scores": {
+    "NEGATIVE": 0.9877562522888184,
+    "POSITIVE": 0.012243696488440037
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:27",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9931729435920715,
+   "scores": {
+    "POSITIVE": 0.9931729435920715,
+    "NEGATIVE": 0.006826980039477348
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:115",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9952436089515686,
+   "scores": {
+    "NEGATIVE": 0.9952436089515686,
+    "POSITIVE": 0.004756371024996042
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:83",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9986995458602905,
+   "scores": {
+    "POSITIVE": 0.9986995458602905,
+    "NEGATIVE": 0.0013004749780520797
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:129",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9914899468421936,
+   "scores": {
+    "NEGATIVE": 0.9914899468421936,
+    "POSITIVE": 0.008510024286806583
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:51",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9969178438186646,
+   "scores": {
+    "POSITIVE": 0.9969178438186646,
+    "NEGATIVE": 0.0030821049585938454
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:86",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9973032474517822,
+   "scores": {
+    "POSITIVE": 0.9973032474517822,
+    "NEGATIVE": 0.002696770243346691
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:64",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9988700747489929,
+   "scores": {
+    "NEGATIVE": 0.9988700747489929,
+    "POSITIVE": 0.0011298765894025564
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:26",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9984122514724731,
+   "scores": {
+    "POSITIVE": 0.9984122514724731,
+    "NEGATIVE": 0.0015877579571679235
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:64",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9982642531394958,
+   "scores": {
+    "POSITIVE": 0.9982642531394958,
+    "NEGATIVE": 0.0017357597826048732
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:121",
+   "gold": "NEGATIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9973549842834473,
+   "scores": {
+    "POSITIVE": 0.9973549842834473,
+    "NEGATIVE": 0.002644978929311037
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:10",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9994423985481262,
+   "scores": {
+    "NEGATIVE": 0.9994423985481262,
+    "POSITIVE": 0.0005575763061642647
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:74",
+   "gold": "POSITIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9887428283691406,
+   "scores": {
+    "NEGATIVE": 0.9887428283691406,
+    "POSITIVE": 0.01125714834779501
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:20",
+   "gold": "NEGATIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9936426877975464,
+   "scores": {
+    "POSITIVE": 0.9936426877975464,
+    "NEGATIVE": 0.006357262842357159
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:196",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9994310736656189,
+   "scores": {
+    "NEGATIVE": 0.9994310736656189,
+    "POSITIVE": 0.0005688835517503321
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:87",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9987447261810303,
+   "scores": {
+    "POSITIVE": 0.9987447261810303,
+    "NEGATIVE": 0.0012552279513329268
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:205",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9829596281051636,
+   "scores": {
+    "NEGATIVE": 0.9829596281051636,
+    "POSITIVE": 0.017040308564901352
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:21",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9922615885734558,
+   "scores": {
+    "POSITIVE": 0.9922615885734558,
+    "NEGATIVE": 0.007738456130027771
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:51",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9983745813369751,
+   "scores": {
+    "POSITIVE": 0.9983745813369751,
+    "NEGATIVE": 0.0016253577778115869
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:93",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9878118634223938,
+   "scores": {
+    "NEGATIVE": 0.9878118634223938,
+    "POSITIVE": 0.012188103049993515
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:62",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9983413219451904,
+   "scores": {
+    "NEGATIVE": 0.9983413219451904,
+    "POSITIVE": 0.0016586080892011523
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:88",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.998637855052948,
+   "scores": {
+    "POSITIVE": 0.998637855052948,
+    "NEGATIVE": 0.001362185925245285
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:77",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9994539618492126,
+   "scores": {
+    "NEGATIVE": 0.9994539618492126,
+    "POSITIVE": 0.0005460162064991891
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:11",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9862319827079773,
+   "scores": {
+    "POSITIVE": 0.9862319827079773,
+    "NEGATIVE": 0.013767987489700317
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:109",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9985963702201843,
+   "scores": {
+    "NEGATIVE": 0.9985963702201843,
+    "POSITIVE": 0.0014036213979125023
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:40",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9982269406318665,
+   "scores": {
+    "POSITIVE": 0.9982269406318665,
+    "NEGATIVE": 0.0017731080297380686
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:98",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9898136258125305,
+   "scores": {
+    "POSITIVE": 0.9898136258125305,
+    "NEGATIVE": 0.010186438448727131
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:165",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9981191754341125,
+   "scores": {
+    "POSITIVE": 0.9981191754341125,
+    "NEGATIVE": 0.0018808131571859121
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:27",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9983465671539307,
+   "scores": {
+    "POSITIVE": 0.9983465671539307,
+    "NEGATIVE": 0.0016534075839444995
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:32",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9835026860237122,
+   "scores": {
+    "NEGATIVE": 0.9835026860237122,
+    "POSITIVE": 0.016497356817126274
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:54",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.999387264251709,
+   "scores": {
+    "NEGATIVE": 0.999387264251709,
+    "POSITIVE": 0.0006127548986114562
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:148",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9972477555274963,
+   "scores": {
+    "NEGATIVE": 0.9972477555274963,
+    "POSITIVE": 0.0027522461023181677
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:233",
+   "gold": "POSITIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9941461086273193,
+   "scores": {
+    "NEGATIVE": 0.9941461086273193,
+    "POSITIVE": 0.005853927694261074
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:155",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9988538026809692,
+   "scores": {
+    "POSITIVE": 0.9988538026809692,
+    "NEGATIVE": 0.0011461605317890644
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:7",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9950703382492065,
+   "scores": {
+    "POSITIVE": 0.9950703382492065,
+    "NEGATIVE": 0.004929719027131796
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:20",
+   "gold": "NEGATIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9941667318344116,
+   "scores": {
+    "POSITIVE": 0.9941667318344116,
+    "NEGATIVE": 0.0058332509361207485
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:195",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.998526930809021,
+   "scores": {
+    "NEGATIVE": 0.998526930809021,
+    "POSITIVE": 0.0014730659313499928
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:86",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9980798959732056,
+   "scores": {
+    "POSITIVE": 0.9980798959732056,
+    "NEGATIVE": 0.0019201237009838223
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:81",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.998689591884613,
+   "scores": {
+    "POSITIVE": 0.998689591884613,
+    "NEGATIVE": 0.0013103904202580452
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:108",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.998765230178833,
+   "scores": {
+    "POSITIVE": 0.998765230178833,
+    "NEGATIVE": 0.0012348419986665249
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:159",
+   "gold": "NEGATIVE",
+   "label": "POSITIVE",
+   "confidence": 0.8933931589126587,
+   "scores": {
+    "POSITIVE": 0.8933931589126587,
+    "NEGATIVE": 0.10660681873559952
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:11",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9982636570930481,
+   "scores": {
+    "POSITIVE": 0.9982636570930481,
+    "NEGATIVE": 0.001736360602080822
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:171",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9976835250854492,
+   "scores": {
+    "POSITIVE": 0.9976835250854492,
+    "NEGATIVE": 0.0023164900485426188
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:59",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9937260746955872,
+   "scores": {
+    "POSITIVE": 0.9937260746955872,
+    "NEGATIVE": 0.006273935083299875
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:67",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9994969367980957,
+   "scores": {
+    "NEGATIVE": 0.9994969367980957,
+    "POSITIVE": 0.0005030689062550664
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:136",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9877986907958984,
+   "scores": {
+    "NEGATIVE": 0.9877986907958984,
+    "POSITIVE": 0.012201298028230667
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:24",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9969647526741028,
+   "scores": {
+    "POSITIVE": 0.9969647526741028,
+    "NEGATIVE": 0.003035219619050622
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:50",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9895786643028259,
+   "scores": {
+    "POSITIVE": 0.9895786643028259,
+    "NEGATIVE": 0.010421342216432095
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:110",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9989514350891113,
+   "scores": {
+    "NEGATIVE": 0.9989514350891113,
+    "POSITIVE": 0.0010485402308404446
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:0",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9878822565078735,
+   "scores": {
+    "NEGATIVE": 0.9878822565078735,
+    "POSITIVE": 0.012117777951061726
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:97",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.996846616268158,
+   "scores": {
+    "NEGATIVE": 0.996846616268158,
+    "POSITIVE": 0.003153342055156827
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:92",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9965583682060242,
+   "scores": {
+    "POSITIVE": 0.9965583682060242,
+    "NEGATIVE": 0.003441645996645093
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:90",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9980190992355347,
+   "scores": {
+    "POSITIVE": 0.9980190992355347,
+    "NEGATIVE": 0.0019809307996183634
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:40",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9971941709518433,
+   "scores": {
+    "NEGATIVE": 0.9971941709518433,
+    "POSITIVE": 0.0028058539610356092
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:28",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9976801872253418,
+   "scores": {
+    "NEGATIVE": 0.9976801872253418,
+    "POSITIVE": 0.0023197918199002743
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:152",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9985029697418213,
+   "scores": {
+    "POSITIVE": 0.9985029697418213,
+    "NEGATIVE": 0.0014970668125897646
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:65",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9984475374221802,
+   "scores": {
+    "POSITIVE": 0.9984475374221802,
+    "NEGATIVE": 0.0015524153131991625
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:88",
+   "gold": "POSITIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9850688576698303,
+   "scores": {
+    "NEGATIVE": 0.9850688576698303,
+    "POSITIVE": 0.014931156300008297
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:89",
+   "gold": "POSITIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9995032548904419,
+   "scores": {
+    "NEGATIVE": 0.9995032548904419,
+    "POSITIVE": 0.0004967376589775085
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:141",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9933191537857056,
+   "scores": {
+    "NEGATIVE": 0.9933191537857056,
+    "POSITIVE": 0.006680805701762438
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:56",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.998380184173584,
+   "scores": {
+    "NEGATIVE": 0.998380184173584,
+    "POSITIVE": 0.0016198502853512764
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:135",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9994756579399109,
+   "scores": {
+    "NEGATIVE": 0.9994756579399109,
+    "POSITIVE": 0.0005243879277259111
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:58",
+   "gold": "NEGATIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9382386803627014,
+   "scores": {
+    "POSITIVE": 0.9382386803627014,
+    "NEGATIVE": 0.0617612786591053
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:179",
+   "gold": "NEGATIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9963585734367371,
+   "scores": {
+    "POSITIVE": 0.9963585734367371,
+    "NEGATIVE": 0.0036413611378520727
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:65",
+   "gold": "NEGATIVE",
+   "label": "POSITIVE",
+   "confidence": 0.996015727519989,
+   "scores": {
+    "POSITIVE": 0.996015727519989,
+    "NEGATIVE": 0.003984241280704737
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:99",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9966063499450684,
+   "scores": {
+    "POSITIVE": 0.9966063499450684,
+    "NEGATIVE": 0.0033936630934476852
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:36",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9882842302322388,
+   "scores": {
+    "POSITIVE": 0.9882842302322388,
+    "NEGATIVE": 0.011715706437826157
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:67",
+   "gold": "NEGATIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9853743314743042,
+   "scores": {
+    "POSITIVE": 0.9853743314743042,
+    "NEGATIVE": 0.014625721611082554
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:183",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9976698756217957,
+   "scores": {
+    "NEGATIVE": 0.9976698756217957,
+    "POSITIVE": 0.002330110175535083
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:113",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9962891340255737,
+   "scores": {
+    "NEGATIVE": 0.9962891340255737,
+    "POSITIVE": 0.0037108331453055143
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:17",
+   "gold": "POSITIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9976843595504761,
+   "scores": {
+    "NEGATIVE": 0.9976843595504761,
+    "POSITIVE": 0.0023156548850238323
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:140",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9988241791725159,
+   "scores": {
+    "POSITIVE": 0.9988241791725159,
+    "NEGATIVE": 0.0011758158216252923
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:201",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9873365759849548,
+   "scores": {
+    "POSITIVE": 0.9873365759849548,
+    "NEGATIVE": 0.012663417495787144
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:88",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9868143796920776,
+   "scores": {
+    "POSITIVE": 0.9868143796920776,
+    "NEGATIVE": 0.013185679912567139
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:29",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9972012042999268,
+   "scores": {
+    "NEGATIVE": 0.9972012042999268,
+    "POSITIVE": 0.0027988222427666187
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:27",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.996927797794342,
+   "scores": {
+    "POSITIVE": 0.996927797794342,
+    "NEGATIVE": 0.0030722429510205984
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:72",
+   "gold": "POSITIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9959850311279297,
+   "scores": {
+    "NEGATIVE": 0.9959850311279297,
+    "POSITIVE": 0.004015034530311823
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:120",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9994437098503113,
+   "scores": {
+    "NEGATIVE": 0.9994437098503113,
+    "POSITIVE": 0.0005563017912209034
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:98",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.997040331363678,
+   "scores": {
+    "POSITIVE": 0.997040331363678,
+    "NEGATIVE": 0.0029596188105642796
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:28",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.998367965221405,
+   "scores": {
+    "POSITIVE": 0.998367965221405,
+    "NEGATIVE": 0.0016320515424013138
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:41",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9969246983528137,
+   "scores": {
+    "POSITIVE": 0.9969246983528137,
+    "NEGATIVE": 0.0030752394814044237
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:170",
+   "gold": "POSITIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.959542989730835,
+   "scores": {
+    "NEGATIVE": 0.959542989730835,
+    "POSITIVE": 0.04045698419213295
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:133",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.974237322807312,
+   "scores": {
+    "NEGATIVE": 0.974237322807312,
+    "POSITIVE": 0.025762727484107018
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:79",
+   "gold": "POSITIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9994757771492004,
+   "scores": {
+    "NEGATIVE": 0.9994757771492004,
+    "POSITIVE": 0.0005242879851721227
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:62",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.996942937374115,
+   "scores": {
+    "NEGATIVE": 0.996942937374115,
+    "POSITIVE": 0.0030570360831916332
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:4",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9973546266555786,
+   "scores": {
+    "POSITIVE": 0.9973546266555786,
+    "NEGATIVE": 0.0026454105973243713
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:141",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9980321526527405,
+   "scores": {
+    "POSITIVE": 0.9980321526527405,
+    "NEGATIVE": 0.001967840129509568
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:36",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9983332753181458,
+   "scores": {
+    "POSITIVE": 0.9983332753181458,
+    "NEGATIVE": 0.0016667329473420978
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:175",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9977335929870605,
+   "scores": {
+    "NEGATIVE": 0.9977335929870605,
+    "POSITIVE": 0.0022664410062134266
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:109",
+   "gold": "NEGATIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9979191422462463,
+   "scores": {
+    "POSITIVE": 0.9979191422462463,
+    "NEGATIVE": 0.0020808784756809473
+   }
+  },
+  {
+   "segment_uid": "0jHtyF_rCqU:144",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9987109899520874,
+   "scores": {
+    "POSITIVE": 0.9987109899520874,
+    "NEGATIVE": 0.0012890385696664453
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:150",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9953346848487854,
+   "scores": {
+    "POSITIVE": 0.9953346848487854,
+    "NEGATIVE": 0.004665321670472622
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:60",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9979202151298523,
+   "scores": {
+    "NEGATIVE": 0.9979202151298523,
+    "POSITIVE": 0.002079856116324663
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:94",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9994445443153381,
+   "scores": {
+    "NEGATIVE": 0.9994445443153381,
+    "POSITIVE": 0.0005554987583309412
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:229",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9876570701599121,
+   "scores": {
+    "POSITIVE": 0.9876570701599121,
+    "NEGATIVE": 0.012342875823378563
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:53",
+   "gold": "NEGATIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9948427081108093,
+   "scores": {
+    "POSITIVE": 0.9948427081108093,
+    "NEGATIVE": 0.005157347768545151
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:194",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9986951947212219,
+   "scores": {
+    "POSITIVE": 0.9986951947212219,
+    "NEGATIVE": 0.001304779900237918
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:50",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9929205775260925,
+   "scores": {
+    "POSITIVE": 0.9929205775260925,
+    "NEGATIVE": 0.007079468108713627
+   }
+  },
+  {
+   "segment_uid": "SSC0RkJuBVw:19",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9988839030265808,
+   "scores": {
+    "POSITIVE": 0.9988839030265808,
+    "NEGATIVE": 0.0011161153670400381
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:171",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9913860559463501,
+   "scores": {
+    "NEGATIVE": 0.9913860559463501,
+    "POSITIVE": 0.0086139515042305
+   }
+  },
+  {
+   "segment_uid": "5VMckmQneCk:129",
+   "gold": "NEGATIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9985660910606384,
+   "scores": {
+    "POSITIVE": 0.9985660910606384,
+    "NEGATIVE": 0.001433913828805089
+   }
+  },
+  {
+   "segment_uid": "4KbrxIpQgkM:112",
+   "gold": "POSITIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9927773475646973,
+   "scores": {
+    "NEGATIVE": 0.9927773475646973,
+    "POSITIVE": 0.007222659885883331
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:98",
+   "gold": "POSITIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9919629096984863,
+   "scores": {
+    "NEGATIVE": 0.9919629096984863,
+    "POSITIVE": 0.008037038147449493
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:166",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9984307885169983,
+   "scores": {
+    "POSITIVE": 0.9984307885169983,
+    "NEGATIVE": 0.001569233019836247
+   }
+  },
+  {
+   "segment_uid": "32slGhAH3Xc:87",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.998323380947113,
+   "scores": {
+    "POSITIVE": 0.998323380947113,
+    "NEGATIVE": 0.0016765735344961286
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:71",
+   "gold": "NEGATIVE",
+   "label": "NEGATIVE",
+   "confidence": 0.9981688261032104,
+   "scores": {
+    "NEGATIVE": 0.9981688261032104,
+    "POSITIVE": 0.0018311457242816687
+   }
+  },
+  {
+   "segment_uid": "Gvvo6vUpJRc:107",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9947611689567566,
+   "scores": {
+    "POSITIVE": 0.9947611689567566,
+    "NEGATIVE": 0.00523885153234005
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:17",
+   "gold": "POSITIVE",
+   "label": "POSITIVE",
+   "confidence": 0.9988017082214355,
+   "scores": {
+    "POSITIVE": 0.9988017082214355,
+    "NEGATIVE": 0.0011982893338426948
+   }
+  },
+  {
+   "segment_uid": "q0aFOxT6TNw:55",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9968934059143066,
+   "scores": {
+    "NEGATIVE": 0.9968934059143066,
+    "POSITIVE": 0.003106519114226103
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:29",
+   "gold": "NEUTRAL",
+   "label": "POSITIVE",
+   "confidence": 0.9942842125892639,
+   "scores": {
+    "POSITIVE": 0.9942842125892639,
+    "NEGATIVE": 0.005715795326977968
+   }
+  },
+  {
+   "segment_uid": "i63u-iAnhuk:133",
+   "gold": "NEUTRAL",
+   "label": "NEGATIVE",
+   "confidence": 0.9994829893112183,
+   "scores": {
+    "NEGATIVE": 0.9994829893112183,
+    "POSITIVE": 0.0005169510841369629
+   }
+  }
+ ]
+}

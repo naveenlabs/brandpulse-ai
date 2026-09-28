@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en" data-theme="bench">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>BrandPulse AI — one video, read four ways, on your own machine</title>
+<meta name="description" content="Every sentiment tool reads the words. BrandPulse reads the words, the face, the voice and the audience independently, and scores the seconds where those four accounts stop agreeing. Every model runs on your own hardware.">
+<script>
+  /* Set the display before first paint so the page never flashes the wrong
+     ground. Inlined deliberately: an external file would be a second request
+     and the flash would happen while it loaded. */
+  (function () {
+    try {
+      var saved = localStorage.getItem("brandpulse-theme");
+      if (saved === "bench" || saved === "field") {
+        document.documentElement.dataset.theme = saved; return;
+      }
+    } catch (e) {}
+    document.documentElement.dataset.theme =
+      window.matchMedia("(prefers-color-scheme: light)").matches ? "field" : "bench";
+  })();
+  /* The in-page Reduce motion switch, applied before first paint for the same
+     reason as the theme: a page that starts moving and then stops is the
+     thing the reader asked not to see. */
+  try {
+    if (localStorage.getItem("brandpulse-motion") === "off") {
+      document.documentElement.dataset.motion = "off";
+    }
+  } catch (e) {}
+  /* Mark the document as scripted so the in-page fallback can hide itself.
+
+     The timer is the part that matters. Adding `.js` here is not proof that the
+     interface will render: this inline script runs even when the module bundle
+     fails to load or throws on parse, and in that case the class would hide a
+     fallback that is now the only content on the page. Each page module clears
+     this timer once it has actually rendered, so a bundle that never runs
+     un-marks the document and the fallback returns. */
+  document.documentElement.classList.add("js");
+  window.__bpFallback = setTimeout(function () {
+    document.documentElement.classList.remove("js");
+  }, 4000);
+</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23101315'/%3E%3Cg stroke-width='1.2'%3E%3Cpath d='M1 3h14' stroke='%235FD3C0'/%3E%3Cpath d='M1 6.5h14' stroke='%23A9BCC7'/%3E%3Cpath d='M1 10h14' stroke='%23A99BE0'/%3E%3Cpath d='M1 13.5h14' stroke='%23E8A33C'/%3E%3Cpath d='M10 0v16' stroke='%23FF2E88' stroke-width='1.6'/%3E%3C/g%3E%3C/svg%3E">
+<script type="module" src="/src/pages/opening.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to the content</a>
+<div class="chassis">
+  <header class="masthead" data-chrome></header>
+  <main id="main" data-opening>
+    <!-- The no-script core.
+
+         Replaced by src/pages/opening.js the moment it renders, and hidden by
+         CSS before that. It exists because the interface is client-rendered:
+         with scripting off, or with the module bundle blocked or broken, this
+         document previously delivered an empty main element and no heading at
+         all. A locked-down machine, a text-only browser or one parse error
+         produced a blank page.
+
+         This is not a stub. It states what the system does, what it measured,
+         and where it is weak, because a reader who cannot run the interface
+         still deserves the honest version. -->
+    <div data-fallback class="fallback">
+      <h1>BrandPulse AI</h1>
+      <p>
+        BrandPulse reads one YouTube video four separate ways: the words that
+        were said, the face on camera, the voice, and what the audience wrote
+        underneath. It scores the moments where those four readings contradict
+        each other. The disagreement is the signal.
+      </p>
+      <p>
+        Every model runs on this machine. The controller is a local
+        <code>llama3.1:8b</code> served by Ollama on
+        <code>localhost:11434</code>. No pipeline data is sent to a hosted API.
+      </p>
+
+      <h2>Where it is weak</h2>
+      <p>
+        Two of the four channels are barely better than guessing, and this is
+        stated here rather than buried. On held-out speakers the facial-emotion
+        channel scores 34.2% against an always-neutral constant that scores
+        67.5%; nine emotion models were benchmarked and none beat the constant,
+        so none was adopted. The vocal channel reaches 48.9%. Both figures were
+        measured on this project&rsquo;s own hand-labelled data and are
+        reproduced in <code>facial_bench/v2/</code> and <code>vocal_bench/</code>.
+      </p>
+      <p>
+        Facial emotion recognition also has documented accuracy disparities
+        across skin tone and gender (Buolamwini and Gebru, 2018; Fan et al.,
+        2023). Every report carries that caveat where its scores are shown.
+      </p>
+
+      <h2>The four channels</h2>
+      <ul>
+        <li><strong>Transcript sentiment</strong> &mdash; what was said.</li>
+        <li><strong>Facial emotion</strong> &mdash; the face on camera, pooled per segment.</li>
+        <li><strong>Vocal prosody</strong> &mdash; how it was said, read on arousal.</li>
+        <li><strong>Audience comments</strong> &mdash; one reading for the whole video.</li>
+      </ul>
+
+      <h2>Where to go</h2>
+      <ul>
+        <li><a href="/run">Analyse a video</a> &mdash; needs Ollama running; a run takes several minutes.</li>
+        <li><a href="/library">Read a saved report</a> &mdash; reports already on this machine.</li>
+      </ul>
+      <p><small>Analysis is English-only. See the library for what that excludes.</small></p>
+    </div>
+  </main>
+</div>
+</body>
+</html>

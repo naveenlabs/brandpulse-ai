@@ -1,0 +1,36 @@
+{
+ "uid": "i63u-iAnhuk_81",
+ "system": "three_channel",
+ "video_id": "i63u-iAnhuk",
+ "segment_id": 81,
+ "split": "selection",
+ "payload": {
+  "segment_id": 81,
+  "start_s": 382.62,
+  "end_s": 387.59999999999997,
+  "transcript": "where this one is 60% more powerful than last generation, and that is intentional.",
+  "transcript_sentiment": "NEUTRAL (0.39)",
+  "vocal_emotion": "NEUTRAL (arousal 0.49)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.97)"
+ },
+ "seconds": 4.924,
+ "raw": "{\n  \"segment_id\": 81,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"vocal_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and tone suggest neutrality, but their facial expression is neutral as well, which is unusual. However, the audience's comments are overwhelmingly positive, indicating a potential disconnect between the creator's tone and the audience's interpretation.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 81,
+  "start_s": 382.62,
+  "end_s": 387.59999999999997,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: vocal_emotion"
+  ],
+  "flagged": false
+ }
+}

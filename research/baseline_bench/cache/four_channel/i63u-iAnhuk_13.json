@@ -1,0 +1,36 @@
+{
+ "uid": "i63u-iAnhuk_13",
+ "system": "four_channel",
+ "video_id": "i63u-iAnhuk",
+ "segment_id": 13,
+ "split": "selection",
+ "payload": {
+  "segment_id": 13,
+  "start_s": 72.4,
+  "end_s": 75.88,
+  "transcript": "So unlike the event, let's just focus on the phones.",
+  "transcript_sentiment": "NEUTRAL (0.64)",
+  "vocal_emotion": "NEUTRAL (arousal 0.45)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "neutral (0.82)",
+  "video_comment_sentiment": "POSITIVE (0.97)"
+ },
+ "seconds": 4.299,
+ "raw": "{\n  \"segment_id\": 13,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"comment_sentiment\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and facial expressions suggest neutrality, but the audience's comments are overwhelmingly positive, indicating a conflict between the creator's tone and the audience's reaction.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 13,
+  "start_s": 72.4,
+  "end_s": 75.88,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: comment_sentiment"
+  ],
+  "flagged": false
+ }
+}

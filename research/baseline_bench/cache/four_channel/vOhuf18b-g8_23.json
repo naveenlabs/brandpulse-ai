@@ -1,0 +1,36 @@
+{
+ "uid": "vOhuf18b-g8_23",
+ "system": "four_channel",
+ "video_id": "vOhuf18b-g8",
+ "segment_id": 23,
+ "split": "holdout",
+ "payload": {
+  "segment_id": 23,
+  "start_s": 152.98000000000002,
+  "end_s": 159.60000000000002,
+  "transcript": "You gotta, you just gotta work it. I'm surprised they didn't add some kind of like ledge or some kind of notch that you can work to just crank it open.",
+  "transcript_sentiment": "NEGATIVE (0.47)",
+  "vocal_emotion": "NEUTRAL (arousal 0.58)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "neutral (0.82)",
+  "video_comment_sentiment": "POSITIVE (0.97)"
+ },
+ "seconds": 4.811,
+ "raw": "{\n  \"segment_id\": 23,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"video_comment_sentiment\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words convey a negative sentiment, but their facial expression and tone are neutral, and the audience's comments are overwhelmingly positive, indicating a conflict between the creator's verbal and non-verbal cues.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 23,
+  "start_s": 152.98000000000002,
+  "end_s": 159.60000000000002,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: video_comment_sentiment"
+  ],
+  "flagged": false
+ }
+}

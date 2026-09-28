@@ -1,0 +1,36 @@
+{
+ "uid": "5VMckmQneCk_60",
+ "system": "three_channel",
+ "video_id": "5VMckmQneCk",
+ "segment_id": 60,
+ "split": "selection",
+ "payload": {
+  "segment_id": 60,
+  "start_s": 281.06,
+  "end_s": 285.44,
+  "transcript": "So finding ones that actually benefit from this power is becoming quite a niche endeavor.",
+  "transcript_sentiment": "POSITIVE (0.52)",
+  "vocal_emotion": "NEUTRAL (arousal 0.63)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.95)"
+ },
+ "seconds": 3.9,
+ "raw": "{\n  \"segment_id\": 60,\n  \"conflict_score\": 0.5,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words convey a positive sentiment, but their facial expression is neutral, indicating a potential conflict between verbal and non-verbal cues.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 60,
+  "start_s": 281.06,
+  "end_s": 285.44,
+  "conflict_score": 0.2445,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+  ],
+  "flagged": false
+ }
+}

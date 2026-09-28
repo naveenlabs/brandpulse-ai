@@ -1,0 +1,27 @@
+{
+ "uid": "q0aFOxT6TNw_33",
+ "system": "text_only_llm",
+ "video_id": "q0aFOxT6TNw",
+ "segment_id": 33,
+ "split": "selection",
+ "payload": {
+  "segment_id": 33,
+  "start_s": 202.44,
+  "end_s": 206.22,
+  "transcript": "Or maybe who happen to have an entire YouTube channel about cars"
+ },
+ "seconds": 3.802,
+ "raw": "{\n  \"segment_id\": 33,\n  \"conflict_score\": 0.8,\n  \"channels_in_conflict\": [],\n  \"flags\": [\"POTENTIAL_PAID_PROMOTION\"],\n  \"narrative\": \"The creator's tone and language suggest a scripted or promotional tone, particularly the phrase 'an entire YouTube channel about cars', which implies a level of familiarity or endorsement that may not be genuine.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 33,
+  "start_s": 202.44,
+  "end_s": 206.22,
+  "conflict_score": 0.8,
+  "conflict_reasons": [
+   "POTENTIAL_PAID_PROMOTION"
+  ],
+  "flagged": true
+ }
+}

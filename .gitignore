@@ -1,0 +1,205 @@
+# Secrets. `.env` holds the YouTube API key; any copy or backup of it is a
+# secret too. Only the template is committed.
+.env
+.env.*
+!.env.example
+
+# Downloaded media and everything derived from it at full size (academic use
+# only, never redistributed). Includes data/_thumbnails.
+data/
+
+# Pipeline outputs. The saved reports and their written analyses ARE committed:
+# they are what the Library opens on a fresh checkout. Half-written files from
+# the atomic writes are not.
+outputs/*.csv
+*.tmp
+*.part
+
+# Derived video frames: only those of the committed reports and set members
+# (README, "Frames in the repository"). They are committed once, as built into
+# interface/static/frames, which the server reads without a build step. Their
+# source, interface/ui/public/frames (written by interface/ui_build/build_frames.py,
+# copied into interface/static/ by `npm run build`), stays local.
+# interface/static/frames also collects run-time cache (frame_cache.py) for every
+# video ever opened, which is not committed. Adding a report to the repository
+# means adding its video id to the list below, then running
+# interface/ui_build/build_frames.py and `npm run build`.
+interface/ui/public/frames/
+interface/static/frames/*
+!interface/static/frames/manifest.json
+!interface/static/frames/n6hPB3Arr_M/
+!interface/static/frames/j-1cRJ-k-ks/
+!interface/static/frames/lIJeJKYFhMI/
+!interface/static/frames/5eIt62zuJVI/
+!interface/static/frames/JpN1DQdV4G4/
+!interface/static/frames/nfHRMqqO578/
+!interface/static/frames/c7w9hkJTKR8/
+!interface/static/frames/LhiH6V30LvY/
+!interface/static/frames/M4CvP6ndrBw/
+!interface/static/frames/NM_mH3o8K9I/
+!interface/static/frames/TZfNHV24sR4/
+!interface/static/frames/kykPtluEwWY/
+!interface/static/frames/xRla0izRxqU/
+!interface/static/frames/KXUlXZePEcY/
+!interface/static/frames/U4SrEKxym2k/
+!interface/static/frames/xkQ-zJ3p1pc/
+!interface/static/frames/w_QWJPWDuNQ/
+!interface/static/frames/phQe_ebEPpc/
+!interface/static/frames/G1_0jKNOxHs/
+!interface/static/frames/TjeP1L_Xz7M/
+!interface/static/frames/gGI9SUhASao/
+!interface/static/frames/BvywC2oVodU/
+!interface/static/frames/IS8O41HdCiQ/
+# Hero-size stills (h/): build_frames.py still derives them, but no page
+# requests one, and they are two thirds of the bytes. Kept on disk.
+interface/static/frames/*/h/
+
+# Two videos no page uses any more (hero.mp4, close.mp4 and their posters).
+# Kept on disk; `npm run build` still copies them into interface/static/media.
+interface/ui/public/media/
+interface/static/media/
+
+# Model weights. Whole folders, not only the weight files: the pipeline picks
+# the fine-tuned comment model when models/comment_sentiment_ft/config.json
+# exists, so a folder committed without its weights would load nothing.
+# README, "Models", says how to install them.
+models/comment_sentiment_ft/
+models/comment_sentiment_ft.previous-*/
+models/.comment_sentiment_ft.*/
+models/.download.*/
+research/comment_bench/v2/finetuned/
+wav2vec2_checkpoints/
+*.pt
+*.pth
+
+# Front-end dependencies and scratch space
+interface/ui/node_modules/
+interface/ui/_scratch/
+
+# Retired interface, design exports and raw screenshots: kept on disk, not part
+# of the product
+_retired_ui/
+Landing Page/
+interface/ui/comps/out/
+evaluation/user_eval/shots_raw/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# macOS
+.DS_Store
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Facial bench — regenerable artefacts (crops, detections, predictions)
+research/facial_bench/crops/
+research/facial_bench/detections/
+research/facial_bench/predictions/
+research/facial_bench/*_log.txt
+
+# Kept on disk, not published (author's decision, 27 Sep 2026): the written
+# report and its drafts.
+final_report/
+evaluation/ui_evidence/report_drafts/
+
+# Real names behind the pilot pseudonyms; stays on the project owner's machine.
+evaluation/user_pilot/participants.local.txt
+
+# Not part of the published project (author's decision, 27 Sep 2026), kept on
+# disk: figures made for the written report and the script that draws the
+# inclusive-design ones; design boards and captures of earlier interfaces; an
+# old copy of a report from before outputs/ existed.
+diagrams/
+evaluation/ui_evidence/shoot_a11y_figures.py
+interface/ui/comps/
+evaluation/ui_evidence/motion/
+evaluation/ui_evidence/motion.py
+evaluation/ui_evidence/states.py
+evaluation/ui_evidence/states.json
+evaluation/ui_evidence/shots/*
+!evaluation/ui_evidence/shots/a11y/
+/Apple (Iphone 17 Pro Max).json
+
+# Kept on disk, not published (27 Sep 2026): the development log and the
+# working rules (the product rules are in README, "Engineering rules"), two
+# superseded interface plans, a check for a report that no longer exists, raw
+# run logs, a superseded and a duplicate measurement snapshot, and pages or
+# tables that a tracked script rebuilds byte for byte (README, "What is where").
+/CHANGES.md
+/PROJECT_RULES.md
+/INTERFACE_DESIGN.md
+interface/ui/DESIGN_PLAN_V3.md
+evaluation/ui_evidence/verify_broll_hallucination.py
+evaluation/ui_evidence/broll_hallucination.json
+evaluation/ui_evidence/ui_measurements.after.json
+evaluation/ui_evidence/ui_measurements.2026-09-21.json
+research/comment_bench/v2/analysis/_llama_run.log
+research/comment_bench/v2/analysis/browse_model_predictions.csv
+research/facial_bench/v2/acquire_log.txt
+research/facial_bench/v2/acquire_stdout.txt
+research/facial_bench/v2/damping_facial_log.txt
+research/facial_bench/v2/run_v2_log.txt
+research/vocal_bench/ab_cache/run.log
+research/whisper_bench/type_here.html
+evaluation/user_eval/BrandPulse_Evaluation.html
+
+# Anonymised participant responses remain local. The public repository contains
+# the instruments, aggregate scores and findings, but not individual responses.
+/evaluation/user_pilot/RESPONSES.md
+/evaluation/user_eval/RESPONSES.md
+
+# Frames the server derived for an earlier version of the Nike report: no second
+# of the saved report uses them and the build does not produce them. Kept on disk.
+interface/static/frames/JpN1DQdV4G4/p/10.jpg
+interface/static/frames/JpN1DQdV4G4/p/19.jpg
+interface/static/frames/JpN1DQdV4G4/p/27.jpg
+interface/static/frames/JpN1DQdV4G4/p/34.jpg
+interface/static/frames/JpN1DQdV4G4/p/38.jpg
+interface/static/frames/JpN1DQdV4G4/p/55.jpg
+interface/static/frames/JpN1DQdV4G4/p/71.jpg
+interface/static/frames/JpN1DQdV4G4/p/76.jpg
+interface/static/frames/JpN1DQdV4G4/p/85.jpg
+interface/static/frames/JpN1DQdV4G4/p/107.jpg
+interface/static/frames/JpN1DQdV4G4/p/123.jpg
+interface/static/frames/JpN1DQdV4G4/p/128.jpg
+interface/static/frames/JpN1DQdV4G4/p/139.jpg
+interface/static/frames/JpN1DQdV4G4/p/150.jpg
+interface/static/frames/JpN1DQdV4G4/p/204.jpg
+interface/static/frames/JpN1DQdV4G4/p/219.jpg
+interface/static/frames/JpN1DQdV4G4/p/237.jpg
+interface/static/frames/JpN1DQdV4G4/p/254.jpg
+interface/static/frames/JpN1DQdV4G4/p/267.jpg
+interface/static/frames/JpN1DQdV4G4/p/329.jpg
+interface/static/frames/JpN1DQdV4G4/p/481.jpg
+interface/static/frames/JpN1DQdV4G4/p/611.jpg
+interface/static/frames/JpN1DQdV4G4/p/650.jpg
+interface/static/frames/JpN1DQdV4G4/p/710.jpg
+interface/static/frames/JpN1DQdV4G4/p/783.jpg
+interface/static/frames/JpN1DQdV4G4/w/129.jpg
+interface/static/frames/JpN1DQdV4G4/w/130.jpg
+interface/static/frames/JpN1DQdV4G4/w/131.jpg
+interface/static/frames/JpN1DQdV4G4/w/132.jpg
+interface/static/frames/JpN1DQdV4G4/w/133.jpg
+interface/static/frames/JpN1DQdV4G4/w/134.jpg
+interface/static/frames/JpN1DQdV4G4/w/135.jpg
+interface/static/frames/JpN1DQdV4G4/w/136.jpg
+interface/static/frames/JpN1DQdV4G4/w/137.jpg
+interface/static/frames/JpN1DQdV4G4/w/138.jpg
+interface/static/frames/JpN1DQdV4G4/w/140.jpg
+interface/static/frames/JpN1DQdV4G4/w/141.jpg
+interface/static/frames/JpN1DQdV4G4/w/142.jpg
+interface/static/frames/JpN1DQdV4G4/w/143.jpg
+interface/static/frames/JpN1DQdV4G4/w/144.jpg
+interface/static/frames/JpN1DQdV4G4/w/145.jpg
+interface/static/frames/JpN1DQdV4G4/w/146.jpg
+interface/static/frames/JpN1DQdV4G4/w/147.jpg
+interface/static/frames/JpN1DQdV4G4/w/148.jpg

@@ -1,0 +1,36 @@
+{
+ "uid": "Gvvo6vUpJRc_25",
+ "system": "three_channel",
+ "video_id": "Gvvo6vUpJRc",
+ "segment_id": 25,
+ "split": "selection",
+ "payload": {
+  "segment_id": 25,
+  "start_s": 147.26,
+  "end_s": 151.18,
+  "transcript": "when you're outside in the winter and stainless steel headband frame here.",
+  "transcript_sentiment": "NEUTRAL (0.67)",
+  "vocal_emotion": "NEUTRAL (arousal 0.52)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.96)"
+ },
+ "seconds": 4.639,
+ "raw": "{\n  \"segment_id\": 25,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"vocal_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and tone suggest neutrality, but their facial expression is undetected and their vocal tone is also neutral, which is inconsistent with the positive sentiment expressed by the audience in the comments.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 25,
+  "start_s": 147.26,
+  "end_s": 151.18,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: vocal_emotion"
+  ],
+  "flagged": false
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "uid": "vOhuf18b-g8_51",
+ "system": "three_channel",
+ "video_id": "vOhuf18b-g8",
+ "segment_id": 51,
+ "split": "holdout",
+ "payload": {
+  "segment_id": 51,
+  "start_s": 303.32,
+  "end_s": 306.61999999999995,
+  "transcript": "How can you sell a product that looks like that? She finds it so distracting.",
+  "transcript_sentiment": "NEGATIVE (0.94)",
+  "vocal_emotion": "NEUTRAL (arousal 0.59)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.97)"
+ },
+ "seconds": 5.178,
+ "raw": "{\n  \"segment_id\": 51,\n  \"conflict_score\": 0.8,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"video_comment_sentiment\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words express a strong negative sentiment, but their facial expression is neutral and no emotion is detected. In contrast, the audience's comments are overwhelmingly positive, indicating a significant conflict between the creator's verbal and non-verbal cues and the audience's response.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 51,
+  "start_s": 303.32,
+  "end_s": 306.61999999999995,
+  "conflict_score": 0.8,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: video_comment_sentiment"
+  ],
+  "flagged": true
+ }
+}

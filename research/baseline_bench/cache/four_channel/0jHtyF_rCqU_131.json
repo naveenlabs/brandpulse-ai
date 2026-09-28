@@ -1,0 +1,35 @@
+{
+ "uid": "0jHtyF_rCqU_131",
+ "system": "four_channel",
+ "video_id": "0jHtyF_rCqU",
+ "segment_id": 131,
+ "split": "selection",
+ "payload": {
+  "segment_id": 131,
+  "start_s": 631.6800000000001,
+  "end_s": 638.1600000000001,
+  "transcript": "on the new iPhone's front camera. Plus also you've got portrait mode. You can take video, and you can take that video in any quality.",
+  "transcript_sentiment": "NEUTRAL (0.54)",
+  "vocal_emotion": "NEUTRAL (arousal 0.64)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "happy (1.00)",
+  "video_comment_sentiment": "POSITIVE (0.98)"
+ },
+ "seconds": 4.948,
+ "raw": "{\n  \"segment_id\": 131,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words convey a neutral tone, but their facial expression shows happiness, which is in conflict with their neutral tone. The audience's comments also express a positive sentiment, further indicating a conflict between the creator's verbal and non-verbal cues.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 131,
+  "start_s": 631.6800000000001,
+  "end_s": 638.1600000000001,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion"
+  ],
+  "flagged": false
+ }
+}

@@ -1,0 +1,3076 @@
+{
+  "schema": "brandpulse.analysis/1",
+  "status": "complete",
+  "steps": {
+    "claims": true,
+    "topics": true,
+    "comments": true,
+    "prose": true
+  },
+  "created_at": "2026-09-25T13:58:53+00:00",
+  "model": "llama3.1:8b",
+  "num_ctx": 6144,
+  "prompt_versions": {
+    "claims": "11039eb1443c",
+    "topics": "849d75dbc679",
+    "comments": "dda83531df32",
+    "prose": "633ad9a4e222"
+  },
+  "subject": {
+    "brand": "Apple",
+    "product": "iPhone Duo",
+    "title": ""
+  },
+  "facts": {
+    "scores": {
+      "authenticity": 52.06,
+      "brand_health": 78.63
+    },
+    "segments": 166,
+    "flagged": 3,
+    "threshold": 0.75,
+    "duration_s": 717.72,
+    "comments": {
+      "n": 100,
+      "distribution": {
+        "POSITIVE": 46,
+        "NEUTRAL": 29,
+        "NEGATIVE": 25
+      },
+      "label": "POSITIVE"
+    },
+    "reviewer": {
+      "lean": 0.23785323355299892,
+      "se": 0.03994702699064702,
+      "n": 166,
+      "call": "positive",
+      "counts": {
+        "POSITIVE": 44,
+        "NEUTRAL": 116,
+        "NEGATIVE": 6
+      },
+      "seconds": {
+        "POSITIVE": 195.52,
+        "NEUTRAL": 495.56,
+        "NEGATIVE": 25.16
+      },
+      "unread": 0
+    },
+    "audience": {
+      "lean": 0.21,
+      "se": 0.08201379534116578,
+      "n": 100,
+      "call": "positive",
+      "counts": {
+        "POSITIVE": 46,
+        "NEUTRAL": 29,
+        "NEGATIVE": 25
+      }
+    },
+    "agreement": {
+      "gap": 0.02785323355299893,
+      "se": 0.09122514780286249,
+      "low": -0.1509447706249548,
+      "high": 0.20665123773095265,
+      "call": "no_clear_difference"
+    },
+    "confidence": {
+      "level": "well_covered",
+      "checks": [
+        {
+          "id": "comments",
+          "label": "Enough comments to read the audience",
+          "value": 100,
+          "target": 30,
+          "unit": "comments",
+          "passed": true,
+          "core": true
+        },
+        {
+          "id": "transcript",
+          "label": "The reviewer's words were read",
+          "value": 1.0,
+          "target": 0.5,
+          "unit": "share",
+          "core": true,
+          "passed": true
+        },
+        {
+          "id": "weak_conflict",
+          "label": "The conflict rests mostly on the stronger channels",
+          "value": 0.0944,
+          "target": 0.5,
+          "unit": "share",
+          "passed": true,
+          "core": false,
+          "no_conflict": false
+        }
+      ],
+      "coverage": {
+        "transcript": {
+          "read": 166,
+          "total": 166,
+          "share": 1.0
+        },
+        "facial": {
+          "read": 34,
+          "total": 166,
+          "share": 0.20481927710843373
+        },
+        "vocal": {
+          "read": 166,
+          "total": 166,
+          "share": 1.0
+        },
+        "comment": {
+          "read": 166,
+          "total": 166,
+          "share": 1.0
+        }
+      },
+      "weak_conflict": {
+        "weak": 7.4207,
+        "total": 78.6207,
+        "share": 0.09438608407200656
+      },
+      "accuracy": {
+        "comment": 78.7,
+        "transcript": 67.8,
+        "vocal": 48.9,
+        "facial": 34.2
+      },
+      "means_not": "How much evidence this reading rests on. Not whether the verdict is right, and not whether anyone in the video was honest.",
+      "ceiling": {
+        "text": "No score in this system has been shown to track human judgement of authenticity. On 119 hand-rated segments the four-channel design scored rho = +0.0575 (95% CI -0.1282 to +0.2364); people agreed with each other at rho = +0.8038.",
+        "n": 119,
+        "rho": 0.0575,
+        "ci": [
+          -0.1282,
+          0.2364
+        ],
+        "human_rho": 0.8038,
+        "source": "baseline_bench/BASELINE_ANALYSIS.md"
+      }
+    },
+    "tone": {
+      "window_s": 60.0,
+      "points": [
+        {
+          "seg": 0,
+          "start": 0.16,
+          "end": 4.44,
+          "raw": 0.0,
+          "t": 2.3,
+          "smooth": 0.0856
+        },
+        {
+          "seg": 1,
+          "start": 4.44,
+          "end": 8.08,
+          "raw": 0.0,
+          "t": 6.26,
+          "smooth": 0.1255
+        },
+        {
+          "seg": 2,
+          "start": 8.08,
+          "end": 11.84,
+          "raw": 0.0,
+          "t": 9.96,
+          "smooth": 0.1137
+        },
+        {
+          "seg": 3,
+          "start": 11.84,
+          "end": 14.84,
+          "raw": 0.0,
+          "t": 13.34,
+          "smooth": 0.1047
+        },
+        {
+          "seg": 4,
+          "start": 14.84,
+          "end": 19.84,
+          "raw": 0.0,
+          "t": 17.34,
+          "smooth": 0.0548
+        },
+        {
+          "seg": 5,
+          "start": 20.32,
+          "end": 24.0,
+          "raw": 0.0,
+          "t": 22.16,
+          "smooth": 0.033
+        },
+        {
+          "seg": 6,
+          "start": 24.0,
+          "end": 29.0,
+          "raw": 0.0,
+          "t": 26.5,
+          "smooth": 0.0305
+        },
+        {
+          "seg": 7,
+          "start": 29.0,
+          "end": 34.44,
+          "raw": 0.8216,
+          "t": 31.72,
+          "smooth": 0.0788
+        },
+        {
+          "seg": 8,
+          "start": 34.44,
+          "end": 38.36,
+          "raw": 0.0,
+          "t": 36.4,
+          "smooth": 0.0858
+        },
+        {
+          "seg": 9,
+          "start": 38.36,
+          "end": 44.0,
+          "raw": 0.0,
+          "t": 41.18,
+          "smooth": 0.0858
+        },
+        {
+          "seg": 10,
+          "start": 44.0,
+          "end": 48.84,
+          "raw": -0.5717,
+          "t": 46.42,
+          "smooth": 0.1288
+        },
+        {
+          "seg": 11,
+          "start": 48.84,
+          "end": 54.28,
+          "raw": 0.0,
+          "t": 51.56,
+          "smooth": 0.1278
+        },
+        {
+          "seg": 12,
+          "start": 54.28,
+          "end": 57.72,
+          "raw": 0.0,
+          "t": 56.0,
+          "smooth": 0.1278
+        },
+        {
+          "seg": 13,
+          "start": 57.72,
+          "end": 62.28,
+          "raw": 0.747,
+          "t": 60.0,
+          "smooth": 0.1141
+        },
+        {
+          "seg": 14,
+          "start": 62.28,
+          "end": 65.4,
+          "raw": 0.0,
+          "t": 63.84,
+          "smooth": 0.0615
+        },
+        {
+          "seg": 15,
+          "start": 65.4,
+          "end": 71.64,
+          "raw": 0.0,
+          "t": 68.52,
+          "smooth": 0.0533
+        },
+        {
+          "seg": 16,
+          "start": 71.64,
+          "end": 75.68,
+          "raw": 0.6334,
+          "t": 73.66,
+          "smooth": 0.0533
+        },
+        {
+          "seg": 17,
+          "start": 75.68,
+          "end": 80.24,
+          "raw": 0.0,
+          "t": 77.96,
+          "smooth": 0.1197
+        },
+        {
+          "seg": 18,
+          "start": 80.24,
+          "end": 83.24,
+          "raw": 0.0,
+          "t": 81.74,
+          "smooth": 0.1355
+        },
+        {
+          "seg": 19,
+          "start": 83.24,
+          "end": 89.83999999999999,
+          "raw": 0.0,
+          "t": 86.54,
+          "smooth": 0.1355
+        },
+        {
+          "seg": 20,
+          "start": 89.83999999999999,
+          "end": 93.08,
+          "raw": 0.0,
+          "t": 91.46,
+          "smooth": 0.0889
+        },
+        {
+          "seg": 21,
+          "start": 93.08,
+          "end": 96.36,
+          "raw": 0.0,
+          "t": 94.72,
+          "smooth": 0.084
+        },
+        {
+          "seg": 22,
+          "start": 96.36,
+          "end": 99.47999999999999,
+          "raw": 0.0,
+          "t": 97.92,
+          "smooth": 0.1227
+        },
+        {
+          "seg": 23,
+          "start": 99.47999999999999,
+          "end": 104.72,
+          "raw": 0.0,
+          "t": 102.1,
+          "smooth": 0.1326
+        },
+        {
+          "seg": 24,
+          "start": 104.72,
+          "end": 108.8,
+          "raw": 0.5306,
+          "t": 106.76,
+          "smooth": 0.0537
+        },
+        {
+          "seg": 25,
+          "start": 108.8,
+          "end": 112.75999999999999,
+          "raw": 0.0,
+          "t": 110.78,
+          "smooth": 0.071
+        },
+        {
+          "seg": 26,
+          "start": 112.75999999999999,
+          "end": 117.52,
+          "raw": 0.0,
+          "t": 115.14,
+          "smooth": 0.1045
+        },
+        {
+          "seg": 27,
+          "start": 117.52,
+          "end": 120.8,
+          "raw": 0.0,
+          "t": 119.16,
+          "smooth": 0.1372
+        },
+        {
+          "seg": 28,
+          "start": 120.8,
+          "end": 124.28,
+          "raw": 0.0,
+          "t": 122.54,
+          "smooth": 0.146
+        },
+        {
+          "seg": 29,
+          "start": 124.28,
+          "end": 129.14,
+          "raw": 0.7253,
+          "t": 126.71,
+          "smooth": 0.146
+        },
+        {
+          "seg": 30,
+          "start": 129.14,
+          "end": 133.94,
+          "raw": 0.0,
+          "t": 131.54,
+          "smooth": 0.1736
+        },
+        {
+          "seg": 31,
+          "start": 133.94,
+          "end": 137.42,
+          "raw": -0.8741,
+          "t": 135.68,
+          "smooth": 0.2078
+        },
+        {
+          "seg": 32,
+          "start": 137.42,
+          "end": 141.74,
+          "raw": 0.479,
+          "t": 139.58,
+          "smooth": 0.2199
+        },
+        {
+          "seg": 33,
+          "start": 141.74,
+          "end": 146.02,
+          "raw": 0.4573,
+          "t": 143.88,
+          "smooth": 0.2634
+        },
+        {
+          "seg": 34,
+          "start": 146.02,
+          "end": 150.22,
+          "raw": 0.4969,
+          "t": 148.12,
+          "smooth": 0.2634
+        },
+        {
+          "seg": 35,
+          "start": 150.22,
+          "end": 154.34,
+          "raw": 0.0,
+          "t": 152.28,
+          "smooth": 0.2634
+        },
+        {
+          "seg": 36,
+          "start": 154.34,
+          "end": 158.9,
+          "raw": 0.0,
+          "t": 156.62,
+          "smooth": 0.2351
+        },
+        {
+          "seg": 37,
+          "start": 158.9,
+          "end": 164.78,
+          "raw": 0.6269,
+          "t": 161.84,
+          "smooth": 0.2466
+        },
+        {
+          "seg": 38,
+          "start": 164.78,
+          "end": 168.94,
+          "raw": 0.5863,
+          "t": 166.86,
+          "smooth": 0.3309
+        },
+        {
+          "seg": 39,
+          "start": 168.94,
+          "end": 173.1,
+          "raw": 0.7409,
+          "t": 171.02,
+          "smooth": 0.3103
+        },
+        {
+          "seg": 40,
+          "start": 173.1,
+          "end": 176.26,
+          "raw": 0.0,
+          "t": 174.68,
+          "smooth": 0.2822
+        },
+        {
+          "seg": 41,
+          "start": 176.26,
+          "end": 182.14000000000001,
+          "raw": 0.0,
+          "t": 179.2,
+          "smooth": 0.2456
+        },
+        {
+          "seg": 42,
+          "start": 182.14,
+          "end": 187.38,
+          "raw": 0.0,
+          "t": 184.76,
+          "smooth": 0.2856
+        },
+        {
+          "seg": 43,
+          "start": 187.38,
+          "end": 192.66,
+          "raw": 0.5637,
+          "t": 190.02,
+          "smooth": 0.2739
+        },
+        {
+          "seg": 44,
+          "start": 192.66,
+          "end": 195.94,
+          "raw": 0.6237,
+          "t": 194.3,
+          "smooth": 0.2321
+        },
+        {
+          "seg": 45,
+          "start": 195.94,
+          "end": 199.5,
+          "raw": 0.0,
+          "t": 197.72,
+          "smooth": 0.2407
+        },
+        {
+          "seg": 46,
+          "start": 199.5,
+          "end": 204.29999999999998,
+          "raw": 0.0,
+          "t": 201.9,
+          "smooth": 0.2152
+        },
+        {
+          "seg": 47,
+          "start": 204.29999999999998,
+          "end": 209.54000000000002,
+          "raw": 0.0,
+          "t": 206.92,
+          "smooth": 0.2004
+        },
+        {
+          "seg": 48,
+          "start": 209.54000000000002,
+          "end": 214.34,
+          "raw": 0.6052,
+          "t": 211.94,
+          "smooth": 0.2004
+        },
+        {
+          "seg": 49,
+          "start": 214.34,
+          "end": 218.42000000000002,
+          "raw": 0.0,
+          "t": 216.38,
+          "smooth": 0.2004
+        },
+        {
+          "seg": 50,
+          "start": 218.42000000000002,
+          "end": 224.06,
+          "raw": 0.0,
+          "t": 221.24,
+          "smooth": 0.2154
+        },
+        {
+          "seg": 51,
+          "start": 224.06,
+          "end": 229.58,
+          "raw": 0.7421,
+          "t": 226.82,
+          "smooth": 0.2185
+        },
+        {
+          "seg": 52,
+          "start": 229.58,
+          "end": 233.78,
+          "raw": 0.0,
+          "t": 231.68,
+          "smooth": 0.2185
+        },
+        {
+          "seg": 53,
+          "start": 233.78,
+          "end": 236.9,
+          "raw": 0.0,
+          "t": 235.34,
+          "smooth": 0.2516
+        },
+        {
+          "seg": 54,
+          "start": 236.9,
+          "end": 241.94,
+          "raw": 0.0,
+          "t": 239.42,
+          "smooth": 0.2864
+        },
+        {
+          "seg": 55,
+          "start": 241.94,
+          "end": 247.3,
+          "raw": 0.0,
+          "t": 244.62,
+          "smooth": 0.2379
+        },
+        {
+          "seg": 56,
+          "start": 247.3,
+          "end": 251.18,
+          "raw": 0.78,
+          "t": 249.24,
+          "smooth": 0.2379
+        },
+        {
+          "seg": 57,
+          "start": 251.18,
+          "end": 254.94,
+          "raw": 0.8199,
+          "t": 253.06,
+          "smooth": 0.2635
+        },
+        {
+          "seg": 58,
+          "start": 254.94,
+          "end": 258.18,
+          "raw": 0.0,
+          "t": 256.56,
+          "smooth": 0.2615
+        },
+        {
+          "seg": 59,
+          "start": 258.18,
+          "end": 262.82,
+          "raw": 0.0,
+          "t": 260.5,
+          "smooth": 0.2242
+        },
+        {
+          "seg": 60,
+          "start": 262.82,
+          "end": 267.98,
+          "raw": 0.7889,
+          "t": 265.4,
+          "smooth": 0.231
+        },
+        {
+          "seg": 61,
+          "start": 267.98,
+          "end": 272.66,
+          "raw": 0.0,
+          "t": 270.32,
+          "smooth": 0.2977
+        },
+        {
+          "seg": 62,
+          "start": 272.66,
+          "end": 276.38000000000005,
+          "raw": 0.0,
+          "t": 274.52,
+          "smooth": 0.3491
+        },
+        {
+          "seg": 63,
+          "start": 276.38000000000005,
+          "end": 280.34000000000003,
+          "raw": 0.0,
+          "t": 278.36,
+          "smooth": 0.3353
+        },
+        {
+          "seg": 64,
+          "start": 280.34000000000003,
+          "end": 286.14000000000004,
+          "raw": 0.564,
+          "t": 283.24,
+          "smooth": 0.2705
+        },
+        {
+          "seg": 65,
+          "start": 286.14000000000004,
+          "end": 289.54,
+          "raw": 0.0,
+          "t": 287.84,
+          "smooth": 0.2473
+        },
+        {
+          "seg": 66,
+          "start": 289.54,
+          "end": 294.9,
+          "raw": 0.0,
+          "t": 292.22,
+          "smooth": 0.2473
+        },
+        {
+          "seg": 67,
+          "start": 294.9,
+          "end": 299.97999999999996,
+          "raw": 0.8123,
+          "t": 297.44,
+          "smooth": 0.1865
+        },
+        {
+          "seg": 68,
+          "start": 299.97999999999996,
+          "end": 304.02,
+          "raw": 0.8335,
+          "t": 302.0,
+          "smooth": 0.1655
+        },
+        {
+          "seg": 69,
+          "start": 304.02,
+          "end": 307.74,
+          "raw": 0.0,
+          "t": 305.88,
+          "smooth": 0.1343
+        },
+        {
+          "seg": 70,
+          "start": 307.74,
+          "end": 311.85999999999996,
+          "raw": 0.0,
+          "t": 309.8,
+          "smooth": 0.1343
+        },
+        {
+          "seg": 71,
+          "start": 311.85999999999996,
+          "end": 314.97999999999996,
+          "raw": 0.0,
+          "t": 313.42,
+          "smooth": 0.1053
+        },
+        {
+          "seg": 72,
+          "start": 314.98,
+          "end": 320.22,
+          "raw": 0.0,
+          "t": 317.6,
+          "smooth": 0.0798
+        },
+        {
+          "seg": 73,
+          "start": 320.22,
+          "end": 326.78000000000003,
+          "raw": 0.0,
+          "t": 323.5,
+          "smooth": 0.0798
+        },
+        {
+          "seg": 74,
+          "start": 326.78000000000003,
+          "end": 330.46000000000004,
+          "raw": 0.0,
+          "t": 328.62,
+          "smooth": 0.0294
+        },
+        {
+          "seg": 75,
+          "start": 330.46000000000004,
+          "end": 335.46000000000004,
+          "raw": -0.5414,
+          "t": 332.96,
+          "smooth": -0.0304
+        },
+        {
+          "seg": 76,
+          "start": 335.46000000000004,
+          "end": 339.22,
+          "raw": 0.0,
+          "t": 337.34,
+          "smooth": -0.0451
+        },
+        {
+          "seg": 77,
+          "start": 339.22,
+          "end": 345.38,
+          "raw": 0.0,
+          "t": 342.3,
+          "smooth": -0.0451
+        },
+        {
+          "seg": 78,
+          "start": 345.38,
+          "end": 349.5,
+          "raw": 0.0,
+          "t": 347.44,
+          "smooth": -0.0451
+        },
+        {
+          "seg": 79,
+          "start": 349.5,
+          "end": 356.14,
+          "raw": 0.0,
+          "t": 352.82,
+          "smooth": -0.0451
+        },
+        {
+          "seg": 80,
+          "start": 356.14,
+          "end": 361.3,
+          "raw": 0.0,
+          "t": 358.72,
+          "smooth": -0.0451
+        },
+        {
+          "seg": 81,
+          "start": 361.3,
+          "end": 364.38,
+          "raw": 0.0,
+          "t": 362.84,
+          "smooth": -0.0236
+        },
+        {
+          "seg": 82,
+          "start": 364.38,
+          "end": 367.90000000000003,
+          "raw": 0.0,
+          "t": 366.14,
+          "smooth": 0.0
+        },
+        {
+          "seg": 83,
+          "start": 367.90000000000003,
+          "end": 371.82,
+          "raw": 0.0,
+          "t": 369.86,
+          "smooth": 0.0
+        },
+        {
+          "seg": 84,
+          "start": 371.82,
+          "end": 376.3,
+          "raw": 0.0,
+          "t": 374.06,
+          "smooth": 0.0151
+        },
+        {
+          "seg": 85,
+          "start": 376.3,
+          "end": 380.74,
+          "raw": 0.0,
+          "t": 378.52,
+          "smooth": 0.0239
+        },
+        {
+          "seg": 86,
+          "start": 380.74,
+          "end": 384.02,
+          "raw": 0.0,
+          "t": 382.38,
+          "smooth": 0.0529
+        },
+        {
+          "seg": 87,
+          "start": 384.02,
+          "end": 388.06,
+          "raw": 0.0,
+          "t": 386.04,
+          "smooth": 0.0542
+        },
+        {
+          "seg": 88,
+          "start": 388.06,
+          "end": 392.34,
+          "raw": 0.0,
+          "t": 390.2,
+          "smooth": 0.0542
+        },
+        {
+          "seg": 89,
+          "start": 392.34,
+          "end": 397.26,
+          "raw": 0.0,
+          "t": 394.8,
+          "smooth": 0.0542
+        },
+        {
+          "seg": 90,
+          "start": 397.26,
+          "end": 402.14000000000004,
+          "raw": 0.0,
+          "t": 399.7,
+          "smooth": 0.063
+        },
+        {
+          "seg": 91,
+          "start": 402.14000000000004,
+          "end": 405.18,
+          "raw": 0.4721,
+          "t": 403.66,
+          "smooth": 0.086
+        },
+        {
+          "seg": 92,
+          "start": 405.18,
+          "end": 408.82000000000005,
+          "raw": 0.0,
+          "t": 407.0,
+          "smooth": 0.0935
+        },
+        {
+          "seg": 93,
+          "start": 408.82000000000005,
+          "end": 412.54,
+          "raw": 0.4882,
+          "t": 410.68,
+          "smooth": 0.1343
+        },
+        {
+          "seg": 94,
+          "start": 412.54,
+          "end": 417.98,
+          "raw": 0.0,
+          "t": 415.26,
+          "smooth": 0.1802
+        },
+        {
+          "seg": 95,
+          "start": 417.98,
+          "end": 421.66,
+          "raw": 0.0,
+          "t": 419.82,
+          "smooth": 0.1802
+        },
+        {
+          "seg": 96,
+          "start": 421.66,
+          "end": 425.34000000000003,
+          "raw": 0.0,
+          "t": 423.5,
+          "smooth": 0.1802
+        },
+        {
+          "seg": 97,
+          "start": 425.34000000000003,
+          "end": 428.68,
+          "raw": 0.0,
+          "t": 427.01,
+          "smooth": 0.1802
+        },
+        {
+          "seg": 98,
+          "start": 428.68,
+          "end": 432.36,
+          "raw": 0.5186,
+          "t": 430.52,
+          "smooth": 0.2277
+        },
+        {
+          "seg": 99,
+          "start": 432.36,
+          "end": 436.32,
+          "raw": 0.0,
+          "t": 434.34,
+          "smooth": 0.2576
+        },
+        {
+          "seg": 100,
+          "start": 436.32,
+          "end": 441.12,
+          "raw": 0.6645,
+          "t": 438.72,
+          "smooth": 0.2905
+        },
+        {
+          "seg": 101,
+          "start": 441.12,
+          "end": 445.08,
+          "raw": 0.6225,
+          "t": 443.1,
+          "smooth": 0.2651
+        },
+        {
+          "seg": 102,
+          "start": 445.08,
+          "end": 449.94,
+          "raw": 0.0,
+          "t": 447.51,
+          "smooth": 0.2651
+        },
+        {
+          "seg": 103,
+          "start": 449.94,
+          "end": 453.4,
+          "raw": 0.0,
+          "t": 451.67,
+          "smooth": 0.2372
+        },
+        {
+          "seg": 104,
+          "start": 453.4,
+          "end": 457.4,
+          "raw": 0.0,
+          "t": 455.4,
+          "smooth": 0.1968
+        },
+        {
+          "seg": 105,
+          "start": 457.4,
+          "end": 461.23999999999995,
+          "raw": 0.912,
+          "t": 459.32,
+          "smooth": 0.1932
+        },
+        {
+          "seg": 106,
+          "start": 461.23999999999995,
+          "end": 464.9,
+          "raw": 0.7023,
+          "t": 463.07,
+          "smooth": 0.1416
+        },
+        {
+          "seg": 107,
+          "start": 464.9,
+          "end": 469.28,
+          "raw": 0.5186,
+          "t": 467.09,
+          "smooth": 0.1121
+        },
+        {
+          "seg": 108,
+          "start": 469.28,
+          "end": 473.35999999999996,
+          "raw": 0.0,
+          "t": 471.32,
+          "smooth": 0.0654
+        },
+        {
+          "seg": 109,
+          "start": 473.35999999999996,
+          "end": 476.53999999999996,
+          "raw": 0.0,
+          "t": 474.95,
+          "smooth": 0.0501
+        },
+        {
+          "seg": 110,
+          "start": 476.53999999999996,
+          "end": 479.71999999999997,
+          "raw": 0.0,
+          "t": 478.13,
+          "smooth": 0.0867
+        },
+        {
+          "seg": 111,
+          "start": 479.72,
+          "end": 483.1,
+          "raw": -0.8575,
+          "t": 481.41,
+          "smooth": 0.1092
+        },
+        {
+          "seg": 112,
+          "start": 483.1,
+          "end": 487.14000000000004,
+          "raw": -0.5211,
+          "t": 485.12,
+          "smooth": 0.1092
+        },
+        {
+          "seg": 113,
+          "start": 487.14000000000004,
+          "end": 490.36,
+          "raw": 0.4671,
+          "t": 488.75,
+          "smooth": 0.0886
+        },
+        {
+          "seg": 114,
+          "start": 490.36,
+          "end": 494.78000000000003,
+          "raw": -0.7384,
+          "t": 492.57,
+          "smooth": 0.0352
+        },
+        {
+          "seg": 115,
+          "start": 494.78000000000003,
+          "end": 499.72,
+          "raw": 0.0,
+          "t": 497.25,
+          "smooth": 0.0121
+        },
+        {
+          "seg": 116,
+          "start": 499.72,
+          "end": 503.0,
+          "raw": 0.0,
+          "t": 501.36,
+          "smooth": 0.0186
+        },
+        {
+          "seg": 117,
+          "start": 503.0,
+          "end": 506.84000000000003,
+          "raw": 0.6905,
+          "t": 504.92,
+          "smooth": 0.0301
+        },
+        {
+          "seg": 118,
+          "start": 506.84000000000003,
+          "end": 509.91999999999996,
+          "raw": 0.7523,
+          "t": 508.38,
+          "smooth": 0.0651
+        },
+        {
+          "seg": 119,
+          "start": 509.91999999999996,
+          "end": 513.4399999999999,
+          "raw": 0.0,
+          "t": 511.68,
+          "smooth": 0.1028
+        },
+        {
+          "seg": 120,
+          "start": 513.4399999999999,
+          "end": 517.52,
+          "raw": 0.0,
+          "t": 515.48,
+          "smooth": 0.1438
+        },
+        {
+          "seg": 121,
+          "start": 517.52,
+          "end": 521.48,
+          "raw": 0.0,
+          "t": 519.5,
+          "smooth": 0.1398
+        },
+        {
+          "seg": 122,
+          "start": 521.48,
+          "end": 524.8199999999999,
+          "raw": 0.0,
+          "t": 523.15,
+          "smooth": 0.1675
+        },
+        {
+          "seg": 123,
+          "start": 524.8199999999999,
+          "end": 529.64,
+          "raw": 0.604,
+          "t": 527.23,
+          "smooth": 0.1875
+        },
+        {
+          "seg": 124,
+          "start": 529.64,
+          "end": 533.78,
+          "raw": 0.0,
+          "t": 531.71,
+          "smooth": 0.1875
+        },
+        {
+          "seg": 125,
+          "start": 533.78,
+          "end": 539.34,
+          "raw": 0.6064,
+          "t": 536.56,
+          "smooth": 0.1512
+        },
+        {
+          "seg": 126,
+          "start": 539.34,
+          "end": 544.3000000000001,
+          "raw": 0.0,
+          "t": 541.82,
+          "smooth": 0.1648
+        },
+        {
+          "seg": 127,
+          "start": 544.3000000000001,
+          "end": 547.98,
+          "raw": 0.0,
+          "t": 546.14,
+          "smooth": 0.1648
+        },
+        {
+          "seg": 128,
+          "start": 547.98,
+          "end": 553.82,
+          "raw": 0.0,
+          "t": 550.9,
+          "smooth": 0.2064
+        },
+        {
+          "seg": 129,
+          "start": 553.82,
+          "end": 557.1800000000001,
+          "raw": 0.0,
+          "t": 555.5,
+          "smooth": 0.2632
+        },
+        {
+          "seg": 130,
+          "start": 557.1800000000001,
+          "end": 560.86,
+          "raw": 0.0,
+          "t": 559.02,
+          "smooth": 0.2377
+        },
+        {
+          "seg": 131,
+          "start": 560.86,
+          "end": 566.12,
+          "raw": 0.0,
+          "t": 563.49,
+          "smooth": 0.2507
+        },
+        {
+          "seg": 132,
+          "start": 566.12,
+          "end": 571.8,
+          "raw": 0.6351,
+          "t": 568.96,
+          "smooth": 0.2453
+        },
+        {
+          "seg": 133,
+          "start": 571.8,
+          "end": 576.96,
+          "raw": 0.0,
+          "t": 574.38,
+          "smooth": 0.2415
+        },
+        {
+          "seg": 134,
+          "start": 576.96,
+          "end": 582.16,
+          "raw": 0.6326,
+          "t": 579.56,
+          "smooth": 0.2415
+        },
+        {
+          "seg": 135,
+          "start": 582.16,
+          "end": 586.16,
+          "raw": 0.9054,
+          "t": 584.16,
+          "smooth": 0.2415
+        },
+        {
+          "seg": 136,
+          "start": 586.16,
+          "end": 591.5,
+          "raw": 0.0,
+          "t": 588.83,
+          "smooth": 0.2415
+        },
+        {
+          "seg": 137,
+          "start": 591.5,
+          "end": 598.34,
+          "raw": 0.5802,
+          "t": 594.92,
+          "smooth": 0.2415
+        },
+        {
+          "seg": 138,
+          "start": 598.34,
+          "end": 602.18,
+          "raw": 0.0,
+          "t": 600.26,
+          "smooth": 0.2411
+        },
+        {
+          "seg": 139,
+          "start": 602.18,
+          "end": 605.7,
+          "raw": 0.0,
+          "t": 603.94,
+          "smooth": 0.2592
+        },
+        {
+          "seg": 140,
+          "start": 605.7,
+          "end": 609.56,
+          "raw": 0.0,
+          "t": 607.63,
+          "smooth": 0.2603
+        },
+        {
+          "seg": 141,
+          "start": 609.56,
+          "end": 613.82,
+          "raw": 0.0,
+          "t": 611.69,
+          "smooth": 0.2175
+        },
+        {
+          "seg": 142,
+          "start": 613.82,
+          "end": 617.06,
+          "raw": 0.0,
+          "t": 615.44,
+          "smooth": 0.163
+        },
+        {
+          "seg": 143,
+          "start": 617.06,
+          "end": 620.76,
+          "raw": 0.0,
+          "t": 618.91,
+          "smooth": 0.1521
+        },
+        {
+          "seg": 144,
+          "start": 620.76,
+          "end": 626.16,
+          "raw": 0.0,
+          "t": 623.46,
+          "smooth": 0.1332
+        },
+        {
+          "seg": 145,
+          "start": 626.16,
+          "end": 630.96,
+          "raw": 0.6359,
+          "t": 628.56,
+          "smooth": 0.086
+        },
+        {
+          "seg": 146,
+          "start": 630.96,
+          "end": 634.84,
+          "raw": 0.5431,
+          "t": 632.9,
+          "smooth": 0.086
+        },
+        {
+          "seg": 147,
+          "start": 634.84,
+          "end": 638.22,
+          "raw": 0.0,
+          "t": 636.53,
+          "smooth": 0.086
+        },
+        {
+          "seg": 148,
+          "start": 638.22,
+          "end": 642.02,
+          "raw": 0.0,
+          "t": 640.12,
+          "smooth": 0.086
+        },
+        {
+          "seg": 149,
+          "start": 642.02,
+          "end": 645.98,
+          "raw": 0.0,
+          "t": 644.0,
+          "smooth": 0.0861
+        },
+        {
+          "seg": 150,
+          "start": 645.98,
+          "end": 650.88,
+          "raw": 0.0,
+          "t": 648.43,
+          "smooth": 0.0872
+        },
+        {
+          "seg": 151,
+          "start": 650.88,
+          "end": 654.9200000000001,
+          "raw": 0.0,
+          "t": 652.9,
+          "smooth": 0.0872
+        },
+        {
+          "seg": 152,
+          "start": 654.9200000000001,
+          "end": 662.1,
+          "raw": 0.0,
+          "t": 658.51,
+          "smooth": 0.0874
+        },
+        {
+          "seg": 153,
+          "start": 662.1,
+          "end": 665.54,
+          "raw": 0.0,
+          "t": 663.82,
+          "smooth": 0.0471
+        },
+        {
+          "seg": 154,
+          "start": 665.54,
+          "end": 668.9200000000001,
+          "raw": 0.0,
+          "t": 667.23,
+          "smooth": 0.0378
+        },
+        {
+          "seg": 155,
+          "start": 668.92,
+          "end": 673.92,
+          "raw": 0.0,
+          "t": 671.42,
+          "smooth": 0.0378
+        },
+        {
+          "seg": 156,
+          "start": 674.76,
+          "end": 678.78,
+          "raw": 0.0,
+          "t": 676.77,
+          "smooth": 0.0686
+        },
+        {
+          "seg": 157,
+          "start": 678.78,
+          "end": 685.8399999999999,
+          "raw": 0.0,
+          "t": 682.31,
+          "smooth": 0.1471
+        },
+        {
+          "seg": 158,
+          "start": 685.8399999999999,
+          "end": 689.8,
+          "raw": 0.5644,
+          "t": 687.82,
+          "smooth": 0.2218
+        },
+        {
+          "seg": 159,
+          "start": 689.8,
+          "end": 693.78,
+          "raw": 0.0,
+          "t": 691.79,
+          "smooth": 0.2378
+        },
+        {
+          "seg": 160,
+          "start": 693.78,
+          "end": 697.0999999999999,
+          "raw": 0.0,
+          "t": 695.44,
+          "smooth": 0.2547
+        },
+        {
+          "seg": 161,
+          "start": 697.0999999999999,
+          "end": 700.76,
+          "raw": 0.0,
+          "t": 698.93,
+          "smooth": 0.2732
+        },
+        {
+          "seg": 162,
+          "start": 700.76,
+          "end": 704.74,
+          "raw": 0.0,
+          "t": 702.75,
+          "smooth": 0.2969
+        },
+        {
+          "seg": 163,
+          "start": 704.74,
+          "end": 708.62,
+          "raw": 0.8977,
+          "t": 706.68,
+          "smooth": 0.3192
+        },
+        {
+          "seg": 164,
+          "start": 708.62,
+          "end": 712.2800000000001,
+          "raw": 0.808,
+          "t": 710.45,
+          "smooth": 0.3515
+        },
+        {
+          "seg": 165,
+          "start": 712.2800000000001,
+          "end": 717.72,
+          "raw": 0.8137,
+          "t": 715.0,
+          "smooth": 0.4004
+        }
+      ],
+      "turns": [
+        {
+          "seg": 62,
+          "t": 274.52,
+          "kind": "peak",
+          "smooth": 0.3491,
+          "prominence": 0.3186
+        },
+        {
+          "seg": 76,
+          "t": 337.34,
+          "kind": "dip",
+          "smooth": -0.0451,
+          "prominence": 0.3942
+        },
+        {
+          "seg": 100,
+          "t": 438.72,
+          "kind": "peak",
+          "smooth": 0.2905,
+          "prominence": 0.2784
+        }
+      ]
+    },
+    "moments": [
+      {
+        "seg": 0,
+        "start": 0.16,
+        "end": 4.44,
+        "time": "0:00",
+        "conflict": 0.8,
+        "flagged": true,
+        "damped": false,
+        "valences": {
+          "transcript": "NEUTRAL",
+          "facial": "NEGATIVE",
+          "vocal": "POSITIVE",
+          "comment": "POSITIVE"
+        },
+        "text": "Apple's first foldable, the iPhone Duo, is official. I've had some early hands-on time,"
+      },
+      {
+        "seg": 85,
+        "start": 376.3,
+        "end": 380.74,
+        "time": "6:16",
+        "conflict": 0.8,
+        "flagged": true,
+        "damped": false,
+        "valences": {
+          "transcript": "NEUTRAL",
+          "facial": "NEGATIVE",
+          "vocal": "POSITIVE",
+          "comment": "POSITIVE"
+        },
+        "text": "And as the name suggests, it is really only supposed to be used for videos"
+      },
+      {
+        "seg": 112,
+        "start": 483.1,
+        "end": 487.14000000000004,
+        "time": "8:03",
+        "conflict": 0.8,
+        "flagged": true,
+        "damped": false,
+        "valences": {
+          "transcript": "NEGATIVE",
+          "facial": "NEGATIVE",
+          "vocal": "NEUTRAL",
+          "comment": "POSITIVE"
+        },
+        "text": "on the outer display. And that is because we do not have face ID."
+      }
+    ],
+    "signs": {
+      "title": "Signs of a commercial interest or a mismatch",
+      "disclaimer": "These are signs, not proof. A creator can disclose a sponsor and still review honestly, and an undisclosed deal would leave none of these marks.",
+      "signs": [
+        {
+          "id": "S1",
+          "kind": "fact",
+          "state": "absent",
+          "name": "The creator declared a paid promotion",
+          "evidence": {
+            "label": false,
+            "description": []
+          }
+        },
+        {
+          "id": "S2",
+          "kind": "fact",
+          "state": "absent",
+          "name": "Sponsor, code, affiliate or gift wording in what was said",
+          "evidence": {
+            "speech": []
+          }
+        },
+        {
+          "id": "S3",
+          "kind": "fact",
+          "state": "absent",
+          "name": "Affiliate links, discount codes or a gifted unit in the description",
+          "evidence": {
+            "description": []
+          }
+        },
+        {
+          "id": "S4",
+          "kind": "inference",
+          "state": "absent",
+          "name": "The reviewer was measurably warmer than the audience",
+          "evidence": {
+            "agreement": {
+              "gap": 0.02785323355299893,
+              "se": 0.09122514780286249,
+              "low": -0.1509447706249548,
+              "high": 0.20665123773095265,
+              "call": "no_clear_difference"
+            }
+          }
+        },
+        {
+          "id": "S5",
+          "kind": "inference",
+          "state": "absent",
+          "name": "Positive words at moments the controller flagged",
+          "evidence": {
+            "positive_flagged": [],
+            "controller_flag": []
+          }
+        }
+      ],
+      "present": 0,
+      "checked": 5
+    }
+  },
+  "reading": {
+    "claims": [
+      {
+        "seg": 7,
+        "time": "0:29",
+        "start": 29.0,
+        "aspect": "design",
+        "stance": "praise",
+        "claim": "The frame feels very premium.",
+        "quote": "Now, it does feel very premium.",
+        "topic": "T0"
+      },
+      {
+        "seg": 10,
+        "time": "0:44",
+        "start": 44.0,
+        "aspect": "durability",
+        "stance": "praise",
+        "claim": "The product is IP68 water and dust resistant.",
+        "quote": "it is IP68 water and dust resistant.",
+        "topic": "T7"
+      },
+      {
+        "seg": 13,
+        "time": "0:57",
+        "start": 57.72,
+        "aspect": "size",
+        "stance": "praise",
+        "claim": "The product is the thinnest iPhone ever.",
+        "quote": "it's 5.2 millimeters, making it the thinnest iPhone ever.",
+        "topic": "T0"
+      },
+      {
+        "seg": 31,
+        "time": "2:13",
+        "start": 133.94,
+        "aspect": "display",
+        "stance": "praise",
+        "claim": "The inner display has a nano-texture coating.",
+        "quote": "and this really minimizes the crease.",
+        "topic": "T0"
+      },
+      {
+        "seg": 37,
+        "time": "2:38",
+        "start": 158.9,
+        "aspect": "accessories",
+        "stance": "praise",
+        "claim": "ESR soft vegan leather cases look sleek and feel premium.",
+        "quote": "ESR soft vegan leather cases look sleek,",
+        "topic": "T3"
+      },
+      {
+        "seg": 42,
+        "time": "3:02",
+        "start": 182.14,
+        "aspect": "screen protectors",
+        "stance": "praise",
+        "claim": "ESR screen protectors have 10 times the impact absorption.",
+        "quote": "giving you 10 times the impact absorption",
+        "topic": "T3"
+      },
+      {
+        "seg": 48,
+        "time": "3:29",
+        "start": 209.54000000000002,
+        "aspect": "software",
+        "stance": "praise",
+        "claim": "The software is well-designed.",
+        "quote": "is just how everything works,",
+        "topic": "T5"
+      },
+      {
+        "seg": 69,
+        "time": "5:04",
+        "start": 304.02,
+        "aspect": "design",
+        "stance": "praise",
+        "claim": "The outer and inner display will have support for the Apple Pencil.",
+        "quote": "both the outer and inner display will have support for the Apple Pencil",
+        "seg_end": 70,
+        "topic": "T0"
+      },
+      {
+        "seg": 74,
+        "time": "5:26",
+        "start": 326.78000000000003,
+        "aspect": "design",
+        "stance": "criticism",
+        "claim": "The phone is not thinner than other phones.",
+        "quote": "I get it. Your phone's thinner, but still, come on",
+        "topic": "T0"
+      },
+      {
+        "seg": 78,
+        "time": "5:45",
+        "start": 345.38,
+        "aspect": "performance",
+        "stance": "neutral",
+        "claim": "The primary camera is 48 megapixels with an F1.6 aperture.",
+        "quote": "It is 48 megapixels with an F1.6 aperture",
+        "topic": "T1"
+      },
+      {
+        "seg": 85,
+        "time": "6:16",
+        "start": 376.3,
+        "aspect": "performance",
+        "stance": "neutral",
+        "claim": "The under display FaceTime camera is only supposed to be used for videos.",
+        "quote": "And as the name suggests, it is really only supposed to be used for videos",
+        "topic": "T1"
+      },
+      {
+        "seg": 87,
+        "time": "6:24",
+        "start": 384.02,
+        "aspect": "performance",
+        "stance": "neutral",
+        "claim": "The rear-facing cameras can be used as selfie cameras.",
+        "quote": "And also you can use the rear-facing cameras as selfie cameras",
+        "seg_end": 88,
+        "topic": "T1"
+      },
+      {
+        "seg": 105,
+        "time": "7:37",
+        "start": 457.4,
+        "aspect": "design",
+        "stance": "praise",
+        "claim": "The reviewer is a big fan of photographic styles.",
+        "quote": "I'm a big fan of photographic styles.",
+        "topic": "T0"
+      },
+      {
+        "seg": 106,
+        "time": "7:41",
+        "start": 461.23999999999995,
+        "aspect": "design",
+        "stance": "praise",
+        "claim": "The reviewer finds photographic styles customizable.",
+        "quote": "It really allows you to customize your pictures after you've taken them.",
+        "topic": "T0"
+      },
+      {
+        "seg": 108,
+        "time": "7:49",
+        "start": 469.28,
+        "aspect": "design",
+        "stance": "praise",
+        "claim": "The reviewer finds cinematic mode updated.",
+        "quote": "And cinematic mode also gets an update.",
+        "topic": "T0"
+      },
+      {
+        "seg": 110,
+        "time": "7:56",
+        "start": 476.53999999999996,
+        "aspect": "design",
+        "stance": "neutral",
+        "claim": "There is no dynamic island.",
+        "quote": "Now you may have noticed that there is no dynamic island.",
+        "topic": "T0"
+      },
+      {
+        "seg": 113,
+        "time": "8:07",
+        "start": 487.14000000000004,
+        "aspect": "design",
+        "stance": "neutral",
+        "claim": "The reviewer was expecting face ID.",
+        "quote": "This is something we were kind of expecting, trying to get all of that tech in there.",
+        "topic": "T0"
+      },
+      {
+        "seg": 114,
+        "time": "8:10",
+        "start": 490.36,
+        "aspect": "design",
+        "stance": "neutral",
+        "claim": "Touch ID is back on the iPhone Duo.",
+        "quote": "And instead there is touch ID on the side.",
+        "topic": "T0"
+      },
+      {
+        "seg": 121,
+        "time": "8:37",
+        "start": 517.52,
+        "aspect": "design",
+        "stance": "neutral",
+        "claim": "The speakers are on the bottom of the top.",
+        "quote": "The speakers, we've got speakers on the bottom of the top, but they're on the opposite side.",
+        "topic": "T0"
+      },
+      {
+        "seg": 128,
+        "time": "9:07",
+        "start": 547.98,
+        "aspect": "performance",
+        "stance": "neutral",
+        "claim": "The iPhone Duo has the A20 Pro chip.",
+        "quote": "Now for performance, we do have the A20 Pro chip.",
+        "topic": "T1"
+      },
+      {
+        "seg": 136,
+        "time": "9:46",
+        "start": 586.16,
+        "aspect": "performance",
+        "stance": "praise",
+        "claim": "The C2 modem is 50% faster for uploads.",
+        "quote": "There's also the C2 modem, which is supposed to be 50% faster for uploads,",
+        "topic": "T1"
+      },
+      {
+        "seg": 139,
+        "time": "10:02",
+        "start": 602.18,
+        "aspect": "design",
+        "stance": "neutral",
+        "claim": "The iPhone Duo has a larger battery.",
+        "quote": "And Apple say that is so that they can fit in a larger battery.",
+        "topic": "T0"
+      },
+      {
+        "seg": 141,
+        "time": "10:09",
+        "start": 609.56,
+        "aspect": "battery",
+        "stance": "praise",
+        "claim": "The iPhone Duo can get an average of 24 hours of use.",
+        "quote": "And Apple are saying that you can get an average of 24 hours of use.",
+        "topic": "T4"
+      },
+      {
+        "seg": 146,
+        "time": "10:30",
+        "start": 630.96,
+        "aspect": "charging",
+        "stance": "praise",
+        "claim": "Fast charging is supported, getting up to 50% in 20 minutes.",
+        "quote": "Fast charging is supported, so you can get up to 50% in around 20 minutes",
+        "topic": "T4"
+      },
+      {
+        "seg": 150,
+        "time": "10:45",
+        "start": 645.98,
+        "aspect": "price",
+        "stance": "criticism",
+        "claim": "The iPhone Duo starts at $2,000.",
+        "quote": "but the iPhone duo is going to be starting at around $2,000",
+        "topic": "T2"
+      },
+      {
+        "seg": 153,
+        "time": "11:02",
+        "start": 662.1,
+        "aspect": "price",
+        "stance": "mixed",
+        "claim": "The reviewer thinks the price is roughly what they expected.",
+        "quote": "Now, realistically speaking, I think this is roughly what I was expecting,",
+        "topic": "T2"
+      },
+      {
+        "seg": 155,
+        "time": "11:08",
+        "start": 668.92,
+        "aspect": "price",
+        "stance": "neutral",
+        "claim": "The Z Fold 8 in the US costs around $1,900.",
+        "quote": "that's around $1,900 and the Z Fold 8 Ultra is around $2,100.",
+        "topic": "T2"
+      }
+    ],
+    "topics": [
+      {
+        "id": "T0",
+        "name": "Design",
+        "aspects": [
+          "design",
+          "display",
+          "size"
+        ],
+        "reviewer": {
+          "claims": 13,
+          "stances": {
+            "praise": 7,
+            "criticism": 1,
+            "mixed": 0,
+            "neutral": 5
+          },
+          "seconds": {
+            "POSITIVE": 20.72,
+            "NEUTRAL": 26.26,
+            "NEGATIVE": 7.9
+          },
+          "segments": [
+            7,
+            13,
+            31,
+            69,
+            70,
+            74,
+            105,
+            106,
+            108,
+            110,
+            113,
+            114,
+            121,
+            139
+          ],
+          "lean": 0.233600583090378,
+          "se": 0.19448853152332932,
+          "call": "balanced"
+        },
+        "audience": {
+          "comments": 25,
+          "counts": {
+            "POSITIVE": 11,
+            "NEUTRAL": 7,
+            "NEGATIVE": 7
+          },
+          "lean": 0.16,
+          "se": 0.17009801096230764,
+          "call": "balanced",
+          "questions": 8,
+          "examples": [
+            {
+              "i": 2,
+              "quote": "The design team deserve an award for that opening / closing animation",
+              "label": "POSITIVE",
+              "likes": 347
+            },
+            {
+              "i": 1,
+              "quote": "That animation whenever you open and close is like a masterpiece",
+              "label": "POSITIVE",
+              "likes": 293
+            },
+            {
+              "i": 3,
+              "quote": "That opening and closing animation is soo Apple",
+              "label": "POSITIVE",
+              "likes": 114
+            }
+          ]
+        },
+        "agreement": {
+          "gap": 0.07360058309037801,
+          "se": 0.25837786713926253,
+          "low": -0.43281073090485167,
+          "high": 0.5800118970856076,
+          "call": "no_clear_difference"
+        }
+      },
+      {
+        "id": "T1",
+        "name": "Performance",
+        "aspects": [
+          "performance"
+        ],
+        "reviewer": {
+          "claims": 5,
+          "stances": {
+            "praise": 1,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 4
+          },
+          "seconds": {
+            "POSITIVE": 0.0,
+            "NEUTRAL": 28.06,
+            "NEGATIVE": 0.0
+          },
+          "segments": [
+            78,
+            85,
+            87,
+            88,
+            128,
+            136
+          ],
+          "lean": 0.0,
+          "se": 0.0,
+          "call": "balanced"
+        },
+        "audience": {
+          "comments": 7,
+          "counts": {
+            "POSITIVE": 3,
+            "NEUTRAL": 1,
+            "NEGATIVE": 3
+          },
+          "lean": 0.0,
+          "se": 0.3779644730092272,
+          "call": "balanced",
+          "questions": 0,
+          "examples": [
+            {
+              "i": 9,
+              "quote": "While matte finishes successfully reduce crease visibility, they compromise screen contrast and color vibrancy, leading to a duller display experience. I hope Samsung avoids following Apple’s anti-reflective route on the iPhone Duo and instead focuses on retaining their vibrant display tech while perfecting hinge design to minimize the crease.",
+              "label": "NEGATIVE",
+              "likes": 75
+            },
+            {
+              "i": 58,
+              "quote": "I'm really impressed with that duo. Only thing is the camera. It's going to make or break my decision. Gotta test the camera in hand. Nice review though.",
+              "label": "POSITIVE",
+              "likes": 3
+            },
+            {
+              "i": 61,
+              "quote": "I’m sold. Looks like Apple has refined and improved on the mistakes other manufacturers have made.",
+              "label": "POSITIVE",
+              "likes": 1
+            }
+          ]
+        },
+        "agreement": {
+          "gap": 0.0,
+          "se": 0.3779644730092272,
+          "low": -0.7407967545337466,
+          "high": 0.7407967545337466,
+          "call": "no_clear_difference"
+        }
+      },
+      {
+        "id": "T2",
+        "name": "Price",
+        "aspects": [
+          "price"
+        ],
+        "reviewer": {
+          "claims": 3,
+          "stances": {
+            "praise": 0,
+            "criticism": 1,
+            "mixed": 1,
+            "neutral": 1
+          },
+          "seconds": {
+            "POSITIVE": 0.0,
+            "NEUTRAL": 13.34,
+            "NEGATIVE": 0.0
+          },
+          "segments": [
+            150,
+            153,
+            155
+          ],
+          "lean": 0.0,
+          "se": 0.0,
+          "call": "balanced"
+        },
+        "audience": {
+          "comments": 10,
+          "counts": {
+            "POSITIVE": 3,
+            "NEUTRAL": 1,
+            "NEGATIVE": 6
+          },
+          "lean": -0.3,
+          "se": 0.30000000000000004,
+          "call": "balanced",
+          "questions": 2,
+          "examples": [
+            {
+              "i": 70,
+              "quote": "wow. storage price have really gone up if 256gig-->3tb costs over 1100 dollars.",
+              "label": "NEGATIVE",
+              "likes": 5
+            },
+            {
+              "i": 49,
+              "quote": "As a current iPhone 13 mini user, I am ecstatic. The smallest iPhone display since the Mini! Not paying $2k for a phone though. I would love to see Apple release just that 5.4 inch outer display for half the price. maybe next year for the 20th anniversary. The iPhone Air Mini perhaps?",
+              "label": "POSITIVE",
+              "likes": 0
+            },
+            {
+              "i": 82,
+              "quote": "Im so damn torn, for me the price isn't the issue its more of do I want to give up Face ID and the ability for zooming past 2x.",
+              "label": "NEGATIVE",
+              "likes": 0
+            }
+          ]
+        },
+        "agreement": {
+          "gap": 0.3,
+          "se": 0.30000000000000004,
+          "low": -0.28798919536201634,
+          "high": 0.8879891953620163,
+          "call": "no_clear_difference"
+        }
+      },
+      {
+        "id": "T3",
+        "name": "Accessories",
+        "aspects": [
+          "accessories",
+          "screen protectors"
+        ],
+        "reviewer": {
+          "claims": 2,
+          "stances": {
+            "praise": 2,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 5.88,
+            "NEUTRAL": 5.24,
+            "NEGATIVE": 0.0
+          },
+          "segments": [
+            37,
+            42
+          ],
+          "lean": 0.5287769784172656,
+          "se": 0.4983437710263444,
+          "call": "balanced"
+        },
+        "audience": {
+          "comments": 14,
+          "counts": {
+            "POSITIVE": 5,
+            "NEUTRAL": 6,
+            "NEGATIVE": 3
+          },
+          "lean": 0.14285714285714285,
+          "se": 0.20587905489225486,
+          "call": "balanced",
+          "questions": 5,
+          "examples": [
+            {
+              "i": 7,
+              "quote": "AppleCare an absolute must",
+              "label": "POSITIVE",
+              "likes": 35
+            },
+            {
+              "i": 51,
+              "quote": "Can't wait to see the iPhone duo inner display compared to the fold 8 screen. Every reviewer complained about the lack of telephoto lens on the fold 8. Will they keep the same energy?",
+              "label": "POSITIVE",
+              "likes": 11
+            },
+            {
+              "i": 23,
+              "quote": "I may get this phone once Otterbox makes a durable case for it, especially being drop proof and has those ridges instead of a flat case",
+              "label": "POSITIVE",
+              "likes": 0
+            }
+          ]
+        },
+        "agreement": {
+          "gap": 0.3859198355601227,
+          "se": 0.5391963458371039,
+          "low": -0.6708855828762044,
+          "high": 1.44272525399645,
+          "call": "no_clear_difference"
+        }
+      },
+      {
+        "id": "T4",
+        "name": "Battery and Charging",
+        "aspects": [
+          "battery",
+          "charging"
+        ],
+        "reviewer": {
+          "claims": 2,
+          "stances": {
+            "praise": 2,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 3.88,
+            "NEUTRAL": 4.26,
+            "NEGATIVE": 0.0
+          },
+          "segments": [
+            141,
+            146
+          ],
+          "lean": 0.4766584766584702,
+          "se": 0.4989103465761936,
+          "call": "balanced"
+        },
+        "audience": {
+          "comments": 3,
+          "counts": {
+            "POSITIVE": 0,
+            "NEUTRAL": 1,
+            "NEGATIVE": 2
+          },
+          "lean": -0.6666666666666666,
+          "se": 0.3333333333333333,
+          "call": "negative",
+          "questions": 1,
+          "examples": [
+            {
+              "i": 50,
+              "quote": "I wonder if this has vapor chamber cooling 🤔🤨?",
+              "label": "NEUTRAL",
+              "likes": 0
+            },
+            {
+              "i": 14,
+              "quote": "3:14 in my experience the problem with screen protector was when scratches starts to show its hard to remove the protector another extra bucks to remove.",
+              "label": "NEGATIVE",
+              "likes": 0
+            },
+            {
+              "i": 90,
+              "quote": "I havent seen anyone talking about two things. First is no LiDAR sensor. Second is when you bend it halfway to set it up to take a photo, youre putting the screen face down on whatever.",
+              "label": "NEGATIVE",
+              "likes": 0
+            }
+          ]
+        },
+        "agreement": {
+          "gap": 1.1433251433251368,
+          "se": 0.6000188705631588,
+          "low": -0.03269023302305496,
+          "high": 2.3193405196733288,
+          "call": "no_clear_difference"
+        }
+      },
+      {
+        "id": "T5",
+        "name": "Software",
+        "aspects": [
+          "software"
+        ],
+        "reviewer": {
+          "claims": 1,
+          "stances": {
+            "praise": 1,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 4.8,
+            "NEUTRAL": 0.0,
+            "NEGATIVE": 0.0
+          },
+          "segments": [
+            48
+          ],
+          "lean": 1.0,
+          "se": null,
+          "call": "unknown"
+        },
+        "audience": {
+          "comments": 17,
+          "counts": {
+            "POSITIVE": 5,
+            "NEUTRAL": 7,
+            "NEGATIVE": 5
+          },
+          "lean": 0.0,
+          "se": 0.1917412472118426,
+          "call": "balanced",
+          "questions": 6,
+          "examples": [
+            {
+              "i": 92,
+              "quote": "Actually, there is dynamic island, it comes out of that punch hole so",
+              "label": "NEUTRAL",
+              "likes": 4
+            },
+            {
+              "i": 62,
+              "quote": "I would like to see what it looks like to type on the outer screen",
+              "label": "NEUTRAL",
+              "likes": 1
+            },
+            {
+              "i": 31,
+              "quote": "will the apps that now unlock with face ID automatically unlock with touch ID?",
+              "label": "NEUTRAL",
+              "likes": 0
+            }
+          ]
+        },
+        "agreement": {
+          "gap": 1.0,
+          "se": null,
+          "low": null,
+          "high": null,
+          "call": "unknown"
+        }
+      },
+      {
+        "id": "T6",
+        "name": "Comparison and Future",
+        "aspects": [],
+        "reviewer": {
+          "claims": 0,
+          "stances": {
+            "praise": 0,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 0.0,
+            "NEUTRAL": 0.0,
+            "NEGATIVE": 0.0
+          },
+          "segments": [],
+          "lean": null,
+          "se": null,
+          "call": "unknown"
+        },
+        "audience": {
+          "comments": 23,
+          "counts": {
+            "POSITIVE": 14,
+            "NEUTRAL": 4,
+            "NEGATIVE": 5
+          },
+          "lean": 0.391304347826087,
+          "se": 0.17489839438606788,
+          "call": "positive",
+          "questions": 2,
+          "examples": [
+            {
+              "i": 5,
+              "quote": "I am a Samsung user since 15 years and now Fold user since 2 years. I must admit i am for the first time really impressed by what Apple did here",
+              "label": "POSITIVE",
+              "likes": 304
+            },
+            {
+              "i": 8,
+              "quote": "I have never been impressed to a folding phone until apple made one",
+              "label": "POSITIVE",
+              "likes": 36
+            },
+            {
+              "i": 12,
+              "quote": "Next year is 20th Anniversary.  Everything will be better, including the Duo which needs the third camera, left hand compatibility and slightly bigger, lighter and in black.",
+              "label": "POSITIVE",
+              "likes": 17
+            }
+          ]
+        },
+        "agreement": {
+          "gap": null,
+          "se": null,
+          "low": null,
+          "high": null,
+          "call": "unknown"
+        }
+      },
+      {
+        "id": "T7",
+        "name": "Other",
+        "aspects": [
+          "durability"
+        ],
+        "reviewer": {
+          "claims": 1,
+          "stances": {
+            "praise": 1,
+            "criticism": 0,
+            "mixed": 0,
+            "neutral": 0
+          },
+          "seconds": {
+            "POSITIVE": 0.0,
+            "NEUTRAL": 0.0,
+            "NEGATIVE": 4.84
+          },
+          "segments": [
+            10
+          ],
+          "lean": -1.0,
+          "se": null,
+          "call": "unknown"
+        },
+        "audience": {
+          "comments": 5,
+          "counts": {
+            "POSITIVE": 1,
+            "NEUTRAL": 3,
+            "NEGATIVE": 1
+          },
+          "lean": 0.0,
+          "se": 0.31622776601683794,
+          "call": "balanced",
+          "questions": 1,
+          "examples": [
+            {
+              "i": 47,
+              "quote": "If touchID on the duo is any indication, people would riot if Apple brought back the headphone jack. Man do people love to just hate anything Apple does cause they’re Apple.",
+              "label": "NEGATIVE",
+              "likes": 1
+            },
+            {
+              "i": 98,
+              "quote": "on the side it looks like the original iPod😆",
+              "label": "NEUTRAL",
+              "likes": 1
+            },
+            {
+              "i": 39,
+              "quote": "Who makes the lcd display for Apple ?",
+              "label": "NEUTRAL",
+              "likes": 0
+            }
+          ]
+        },
+        "agreement": {
+          "gap": -1.0,
+          "se": null,
+          "low": null,
+          "high": null,
+          "call": "unknown"
+        }
+      }
+    ],
+    "topic_source": "model",
+    "questions": [
+      {
+        "i": 60,
+        "quote": "Microsoft Duo? Is that you?"
+      },
+      {
+        "i": 51,
+        "quote": "Can't wait to see the iPhone duo inner display compared to the fold 8 screen. Every reviewer complained about the lack of telephoto lens on the fold 8. Will they keep the same energy?"
+      },
+      {
+        "i": 31,
+        "quote": "will the apps that now unlock with face ID automatically unlock with touch ID?"
+      }
+    ],
+    "comment_tags": {
+      "0": [],
+      "1": [
+        "Design"
+      ],
+      "2": [
+        "Design"
+      ],
+      "3": [
+        "Design"
+      ],
+      "4": [
+        "Comparison and Future"
+      ],
+      "5": [
+        "Comparison and Future"
+      ],
+      "6": [
+        "Software"
+      ],
+      "7": [
+        "Accessories"
+      ],
+      "8": [
+        "Comparison and Future"
+      ],
+      "9": [
+        "Design",
+        "Performance"
+      ],
+      "10": [],
+      "11": [
+        "Comparison and Future"
+      ],
+      "12": [
+        "Comparison and Future"
+      ],
+      "13": [
+        "Design"
+      ],
+      "14": [
+        "Battery and Charging"
+      ],
+      "15": [
+        "Comparison and Future"
+      ],
+      "16": [],
+      "17": [
+        "Comparison and Future"
+      ],
+      "18": [
+        "Design"
+      ],
+      "19": [
+        "Software"
+      ],
+      "20": [
+        "Comparison and Future"
+      ],
+      "21": [
+        "Comparison and Future"
+      ],
+      "22": [],
+      "23": [
+        "Accessories"
+      ],
+      "24": [
+        "Design"
+      ],
+      "25": [],
+      "26": [
+        "Comparison and Future"
+      ],
+      "27": [
+        "Software"
+      ],
+      "28": [
+        "Accessories"
+      ],
+      "29": [
+        "Comparison and Future"
+      ],
+      "30": [],
+      "31": [
+        "Software"
+      ],
+      "32": [],
+      "33": [],
+      "34": [
+        "Software"
+      ],
+      "35": [
+        "Design"
+      ],
+      "36": [],
+      "37": [
+        "Comparison and Future"
+      ],
+      "38": [
+        "Software"
+      ],
+      "39": [
+        "Other"
+      ],
+      "40": [
+        "Software"
+      ],
+      "41": [
+        "Design"
+      ],
+      "42": [
+        "Comparison and Future"
+      ],
+      "43": [
+        "Software"
+      ],
+      "44": [
+        "Design"
+      ],
+      "45": [],
+      "46": [],
+      "47": [
+        "Other"
+      ],
+      "48": [
+        "Comparison and Future",
+        "Price"
+      ],
+      "49": [
+        "Design",
+        "Price"
+      ],
+      "50": [
+        "Design",
+        "Battery and Charging"
+      ],
+      "51": [
+        "Comparison and Future",
+        "Accessories"
+      ],
+      "52": [
+        "Comparison and Future",
+        "Accessories"
+      ],
+      "53": [],
+      "54": [
+        "Price",
+        "Software"
+      ],
+      "55": [
+        "Performance",
+        "Price"
+      ],
+      "56": [
+        "Design",
+        "Software"
+      ],
+      "57": [
+        "Accessories"
+      ],
+      "58": [
+        "Performance",
+        "Comparison and Future"
+      ],
+      "59": [],
+      "60": [],
+      "61": [
+        "Design",
+        "Performance"
+      ],
+      "62": [
+        "Software"
+      ],
+      "63": [
+        "Price"
+      ],
+      "64": [
+        "Design",
+        "Price"
+      ],
+      "65": [
+        "Accessories"
+      ],
+      "66": [
+        "Design",
+        "Software"
+      ],
+      "67": [
+        "Design"
+      ],
+      "68": [],
+      "69": [],
+      "70": [
+        "Price"
+      ],
+      "71": [
+        "Design",
+        "Accessories"
+      ],
+      "72": [
+        "Design",
+        "Accessories"
+      ],
+      "73": [
+        "Performance"
+      ],
+      "74": [
+        "Design",
+        "Accessories"
+      ],
+      "75": [
+        "Comparison and Future"
+      ],
+      "76": [
+        "Design",
+        "Software"
+      ],
+      "77": [
+        "Comparison and Future"
+      ],
+      "78": [
+        "Other"
+      ],
+      "79": [
+        "Performance",
+        "Accessories"
+      ],
+      "80": [
+        "Software"
+      ],
+      "81": [],
+      "82": [
+        "Price",
+        "Software"
+      ],
+      "83": [
+        "Accessories"
+      ],
+      "84": [
+        "Comparison and Future"
+      ],
+      "85": [
+        "Design"
+      ],
+      "86": [
+        "Design"
+      ],
+      "87": [
+        "Comparison and Future"
+      ],
+      "88": [
+        "Price"
+      ],
+      "89": [
+        "Design"
+      ],
+      "90": [
+        "Battery and Charging",
+        "Software"
+      ],
+      "91": [
+        "Price",
+        "Performance"
+      ],
+      "92": [
+        "Software"
+      ],
+      "93": [
+        "Comparison and Future"
+      ],
+      "94": [
+        "Design",
+        "Accessories"
+      ],
+      "95": [],
+      "96": [
+        "Other"
+      ],
+      "97": [
+        "Comparison and Future"
+      ],
+      "98": [
+        "Other"
+      ],
+      "99": [
+        "Accessories"
+      ]
+    }
+  },
+  "written": {
+    "verdict": {
+      "text": "The reviewer concludes that the iPhone Duo is a premium product with impressive features, but notes that the price may be a concern for some. The audience is generally positive, with 46% of comments being positive and 25% being negative.",
+      "evidence": [
+        "S162",
+        "T0",
+        "T2"
+      ],
+      "source": "model"
+    },
+    "brand_health_words": {
+      "text": "The audience is generally positive about the iPhone Duo, with 46% of comments being positive and 25% being negative. Some users are concerned about the price, but others are excited about the product's features and design.",
+      "evidence": [
+        "T0",
+        "T2",
+        "C2",
+        "C1"
+      ],
+      "source": "model"
+    },
+    "audience_words": {
+      "text": "The audience is discussing the design, performance, and price of the iPhone Duo. Some users are impressed with the product's features, while others are concerned about the price and storage options.",
+      "evidence": [
+        "T0",
+        "T1",
+        "T2",
+        "C9",
+        "C58"
+      ],
+      "source": "model"
+    },
+    "agreement_words": {
+      "text": "There is no clear difference between the reviewer and the audience's opinions on the iPhone Duo. Both the reviewer and the audience are generally positive about the product's design and features.",
+      "evidence": [
+        "T0",
+        "T1",
+        "T2"
+      ],
+      "source": "model"
+    },
+    "takeaways": [
+      {
+        "text": "The brand should highlight the premium design and features of the iPhone Duo to appeal to customers.",
+        "evidence": [
+          "S7",
+          "T0"
+        ]
+      },
+      {
+        "text": "The brand should consider offering more affordable storage options to make the iPhone Duo more accessible to a wider range of customers.",
+        "evidence": [
+          "C70",
+          "T2"
+        ]
+      },
+      {
+        "text": "The brand should emphasize the benefits of the iPhone Duo's accessories, such as the ESR soft vegan leather cases and screen protectors.",
+        "evidence": [
+          "S37",
+          "S42",
+          "T3"
+        ]
+      }
+    ],
+    "moment_notes": [
+      {
+        "seg": 0,
+        "text": "The words read neutral, but the face reads negative, while the voice and comments read positive."
+      },
+      {
+        "seg": 85,
+        "text": "The words read neutral, but the face reads negative, while the voice and comments read positive."
+      }
+    ],
+    "turn_labels": [
+      {
+        "seg": 62,
+        "label": "The price"
+      },
+      {
+        "seg": 76,
+        "label": "Trying them on"
+      },
+      {
+        "seg": 100,
+        "label": "New features"
+      }
+    ]
+  },
+  "verifier": {
+    "proposed": 153,
+    "kept": 147,
+    "by_field": {
+      "claim": {
+        "kept": 27,
+        "dropped": 5
+      },
+      "topic": {
+        "kept": 8,
+        "dropped": 0
+      },
+      "comment_tags": {
+        "kept": 100,
+        "dropped": 0
+      },
+      "verdict": {
+        "kept": 1,
+        "dropped": 0
+      },
+      "brand_health_words": {
+        "kept": 1,
+        "dropped": 0
+      },
+      "audience_words": {
+        "kept": 1,
+        "dropped": 0
+      },
+      "agreement_words": {
+        "kept": 1,
+        "dropped": 0
+      },
+      "takeaway": {
+        "kept": 3,
+        "dropped": 0
+      },
+      "moment_note": {
+        "kept": 2,
+        "dropped": 1
+      },
+      "turn_label": {
+        "kept": 3,
+        "dropped": 0
+      }
+    },
+    "dropped": [
+      {
+        "field": "claim",
+        "reasons": [
+          "figure not in the facts: five"
+        ],
+        "text": "{'seg': 8, 'aspect': 'materials', 'stance': 'praise', 'claim': 'The product has grade five titanium for the frame.', 'quote': \"We've got grade five titanium for the frame,\"}"
+      },
+      {
+        "field": "claim",
+        "reasons": [
+          "figure not in the facts: two"
+        ],
+        "text": "{'seg': 76, 'aspect': 'design', 'stance': 'neutral', 'claim': 'The phone has two rear-facing cameras.', 'quote': 'it has two rear-facing cameras, not three like the Pro devices'}"
+      },
+      {
+        "field": "claim",
+        "reasons": [
+          "figure not in the facts: two"
+        ],
+        "text": "{'seg': 80, 'aspect': 'performance', 'stance': 'neutral', 'claim': 'There are two selfie cameras.', 'quote': 'So there is a 12 megapixel center stage selfie camera'}"
+      },
+      {
+        "field": "claim",
+        "reasons": [
+          "figure not in the facts: four"
+        ],
+        "text": "{'seg': 84, 'aspect': 'performance', 'stance': 'criticism', 'claim': 'The under display FaceTime camera is only around four megapixels.', 'quote': \"As far as I can see, it's around four megapixels\"}"
+      },
+      {
+        "field": "claim",
+        "reasons": [
+          "figure not in the facts: 8"
+        ],
+        "text": "{'seg': 156, 'aspect': 'price', 'stance': 'criticism', 'claim': 'In the UK, the iPhone Duo costs more than the Z Fold 8.', 'quote': 'In the UK, you are going to be paying more compared to those devices.'}"
+      },
+      {
+        "field": "moment_note",
+        "reasons": [
+          "says the comments read negative; it read positive"
+        ],
+        "text": "The words read negative, but the face and comments read negative, while the voice reads neutral."
+      }
+    ],
+    "notes": [
+      {
+        "field": "claim",
+        "what": "segment corrected to where the quote is",
+        "from": 8,
+        "to": 7
+      },
+      {
+        "field": "claim",
+        "what": "segment corrected to where the quote is",
+        "from": 30,
+        "to": 31
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 69,
+        "to": [
+          69,
+          70
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 76,
+        "to": [
+          76,
+          77
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "quote runs across two segments",
+        "from": 87,
+        "to": [
+          87,
+          88
+        ]
+      },
+      {
+        "field": "claim",
+        "what": "segment corrected to where the quote is",
+        "from": 115,
+        "to": 114
+      }
+    ]
+  },
+  "video_meta": {
+    "fetched": true,
+    "at": "2026-09-25T13:54:30+00:00",
+    "has_paid_product_placement": false,
+    "description_hits": [],
+    "title": "iPhone Duo Hands-On - Watch BEFORE You Buy!",
+    "channel": "SuperSaf",
+    "published_at": "2026-09-10T03:55:06Z"
+  },
+  "calls": [
+    {
+      "step": "claims",
+      "ok": true,
+      "seconds": 32.47,
+      "prompt_chars": 7121,
+      "prompt_tokens": 2126,
+      "output_tokens": 404
+    },
+    {
+      "step": "claims",
+      "ok": true,
+      "seconds": 28.48,
+      "prompt_chars": 6711,
+      "prompt_tokens": 1960,
+      "output_tokens": 447
+    },
+    {
+      "step": "claims",
+      "ok": true,
+      "seconds": 27.02,
+      "prompt_chars": 6860,
+      "prompt_tokens": 1994,
+      "output_tokens": 410
+    },
+    {
+      "step": "claims",
+      "ok": true,
+      "seconds": 28.08,
+      "prompt_chars": 5355,
+      "prompt_tokens": 1575,
+      "output_tokens": 484
+    },
+    {
+      "step": "topics",
+      "ok": true,
+      "seconds": 15.83,
+      "prompt_chars": 5199,
+      "prompt_tokens": 1281,
+      "output_tokens": 212
+    },
+    {
+      "step": "comments",
+      "ok": true,
+      "seconds": 23.14,
+      "prompt_chars": 4661,
+      "prompt_tokens": 1229,
+      "output_tokens": 376
+    },
+    {
+      "step": "comments",
+      "ok": true,
+      "seconds": 20.42,
+      "prompt_chars": 3434,
+      "prompt_tokens": 948,
+      "output_tokens": 362
+    },
+    {
+      "step": "comments",
+      "ok": true,
+      "seconds": 22.47,
+      "prompt_chars": 3866,
+      "prompt_tokens": 1044,
+      "output_tokens": 403
+    },
+    {
+      "step": "comments",
+      "ok": true,
+      "seconds": 21.86,
+      "prompt_chars": 3716,
+      "prompt_tokens": 1038,
+      "output_tokens": 391
+    },
+    {
+      "step": "prose",
+      "ok": true,
+      "seconds": 42.53,
+      "prompt_chars": 10400,
+      "prompt_tokens": 3073,
+      "output_tokens": 628
+    }
+  ],
+  "runtime_s": 262.78,
+  "report_ref": {
+    "file": "Apple (iPhone Duo).json",
+    "sha256": "4b4c3ed02bd1d11c0d931e4fcf8721e5e7c07c644081dec9b50345b1975d9274"
+  }
+}

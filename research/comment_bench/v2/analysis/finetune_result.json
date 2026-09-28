@@ -1,0 +1,2666 @@
+{
+  "generated_at": "2026-08-30T13:11:06.087634+00:00",
+  "base_model": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+  "seed": 42,
+  "hyperparameters": {
+    "epochs": 5,
+    "lr": 2e-05,
+    "batch_size": 8,
+    "max_len": 128,
+    "val_frac": 0.2,
+    "optimizer": "AdamW",
+    "weight_decay": 0.01,
+    "scheduler": "OneCycleLR"
+  },
+  "train_n": 799,
+  "val_n": 201,
+  "test_n": 350,
+  "test_contamination_check": 0,
+  "best_epoch_by_validation": 4,
+  "best_val_macro_f1": 0.7085374462860651,
+  "history": [
+    {
+      "epoch": 0,
+      "val_macro_f1": 0.6246396575723437,
+      "train_loss": null
+    },
+    {
+      "epoch": 1,
+      "val_macro_f1": 0.649544122971594,
+      "val_acc": 0.6915422885572139,
+      "train_loss": 0.7359773777425289
+    },
+    {
+      "epoch": 2,
+      "val_macro_f1": 0.6899010047281324,
+      "val_acc": 0.7164179104477612,
+      "train_loss": 0.4739220220595598
+    },
+    {
+      "epoch": 3,
+      "val_macro_f1": 0.6886188894162316,
+      "val_acc": 0.7114427860696517,
+      "train_loss": 0.2664926876034588
+    },
+    {
+      "epoch": 4,
+      "val_macro_f1": 0.7085374462860651,
+      "val_acc": 0.7313432835820896,
+      "train_loss": 0.1423758075130172
+    },
+    {
+      "epoch": 5,
+      "val_macro_f1": 0.6963166144200627,
+      "val_acc": 0.7164179104477612,
+      "train_loss": 0.06745100041967816
+    }
+  ],
+  "sample_a_300": {
+    "n": 300,
+    "base": {
+      "correct": 214,
+      "accuracy": 0.7133333333333334,
+      "ci95": [
+        0.6597173468493974,
+        0.7615547896849021
+      ],
+      "macro_f1": 0.6818708545937134,
+      "per_class": {
+        "NEGATIVE": {
+          "precision": 0.6226415094339622,
+          "recall": 0.4925373134328358,
+          "f1": 0.55,
+          "support": 67
+        },
+        "NEUTRAL": {
+          "precision": 0.6822429906542056,
+          "recall": 0.7156862745098039,
+          "f1": 0.6985645933014355,
+          "support": 102
+        },
+        "POSITIVE": {
+          "precision": 0.7714285714285715,
+          "recall": 0.8244274809160306,
+          "f1": 0.7970479704797049,
+          "support": 131
+        }
+      },
+      "pred_distribution": {
+        "POSITIVE": 140,
+        "NEGATIVE": 53,
+        "NEUTRAL": 107
+      }
+    },
+    "finetuned": {
+      "correct": 223,
+      "accuracy": 0.7433333333333333,
+      "ci95": [
+        0.6910460832802706,
+        0.7894674474541646
+      ],
+      "macro_f1": 0.7226566572828695,
+      "per_class": {
+        "NEGATIVE": {
+          "precision": 0.6338028169014085,
+          "recall": 0.6716417910447762,
+          "f1": 0.6521739130434784,
+          "support": 67
+        },
+        "NEUTRAL": {
+          "precision": 0.7804878048780488,
+          "recall": 0.6274509803921569,
+          "f1": 0.6956521739130435,
+          "support": 102
+        },
+        "POSITIVE": {
+          "precision": 0.7755102040816326,
+          "recall": 0.8702290076335878,
+          "f1": 0.8201438848920864,
+          "support": 131
+        }
+      },
+      "pred_distribution": {
+        "POSITIVE": 147,
+        "NEGATIVE": 71,
+        "NEUTRAL": 82
+      }
+    },
+    "delta_pts": 3.0,
+    "mcnemar": {
+      "only_base_correct": 22,
+      "only_finetuned_correct": 31,
+      "p_value_exact": 0.27167916606550335,
+      "significant_at_0.05": false
+    }
+  },
+  "pooled_350": {
+    "n": 350,
+    "base": {
+      "correct": 239,
+      "accuracy": 0.6828571428571428,
+      "ci95": [
+        0.632342181062674,
+        0.7294016048573534
+      ],
+      "macro_f1": 0.6573758067535401,
+      "per_class": {
+        "NEGATIVE": {
+          "precision": 0.582089552238806,
+          "recall": 0.4875,
+          "f1": 0.5306122448979592,
+          "support": 80
+        },
+        "NEUTRAL": {
+          "precision": 0.6423357664233577,
+          "recall": 0.704,
+          "f1": 0.6717557251908398,
+          "support": 125
+        },
+        "POSITIVE": {
+          "precision": 0.7671232876712328,
+          "recall": 0.7724137931034483,
+          "f1": 0.7697594501718212,
+          "support": 145
+        }
+      },
+      "pred_distribution": {
+        "POSITIVE": 146,
+        "NEGATIVE": 67,
+        "NEUTRAL": 137
+      }
+    },
+    "finetuned": {
+      "correct": 248,
+      "accuracy": 0.7085714285714285,
+      "ci95": [
+        0.6589040286157849,
+        0.7537099771992463
+      ],
+      "macro_f1": 0.6928857401565504,
+      "per_class": {
+        "NEGATIVE": {
+          "precision": 0.5913978494623656,
+          "recall": 0.6875,
+          "f1": 0.6358381502890175,
+          "support": 80
+        },
+        "NEUTRAL": {
+          "precision": 0.7578947368421053,
+          "recall": 0.576,
+          "f1": 0.6545454545454545,
+          "support": 125
+        },
+        "POSITIVE": {
+          "precision": 0.7469135802469136,
+          "recall": 0.8344827586206897,
+          "f1": 0.7882736156351792,
+          "support": 145
+        }
+      },
+      "pred_distribution": {
+        "POSITIVE": 162,
+        "NEGATIVE": 93,
+        "NEUTRAL": 95
+      }
+    },
+    "delta_pts": 2.5714285714285716,
+    "mcnemar": {
+      "only_base_correct": 32,
+      "only_finetuned_correct": 41,
+      "p_value_exact": 0.3491818381705883,
+      "significant_at_0.05": false
+    }
+  },
+  "predictions": [
+    {
+      "comment_id": "UgzE1GeDJUyPzZhAsut4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgzfYMvOdLoENKn_JIV4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwhFN-hiV0e4eI2vlR4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugw-dsnM6lMf3VH049R4AaABAg",
+      "truth": "POSITIVE",
+      "base": "NEUTRAL",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyQ6cc4Oi5IdazjBG94AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgweCqYyJJac3dEh9Sd4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugxb-KJzFV8ZrzPyvlJ4AaABAg",
+      "truth": "POSITIVE",
+      "base": "NEUTRAL",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwIVkilScJwXyxVAxx4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwJRxtWpyNnE5Dhbo54AaABAg",
+      "truth": "NEUTRAL",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugw3U3bvO4IHEnlOBb94AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwEPwPvHfsRQQQ1tGx4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgzbY8oXjwWDvLeXr-p4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "UgwtG7ed2E9wSlvc-IB4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEGATIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "UgwjC106zZAT_ft1G7d4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwPp0yvVJdc6LnhEKl4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyHF1iMjglFXyoFDKx4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwJAiem6ZHG2GoCn6R4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugys6gvJsh6LZoEdOoN4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgzbJALlUSgpfHSkZdh4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyUeVbuhGG8wkOe8eZ4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgzD9ohmOVXK_xVmYdN4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugwdv4GfRlw4R0mbOHt4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugx4OYH12yUK5eymZyl4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugxt0HcrDMZquKSsF4N4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEUTRAL",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "UgzEYKeK63Auq4eAtYZ4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "Ugxc6sUtiezWVl_jGFx4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgzDBNHmjVU9H6S9XsF4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugw1Znp0Wp5jNqiAWZt4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxcOPJI1imuw2CAi594AaABAg",
+      "truth": "POSITIVE",
+      "base": "NEUTRAL",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxFwl3l10bhbFsn-rd4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxXT4ciBe6MCtQjV7B4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxAHeSHYQ2o88Do29t4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyHt4fpHpSU-aqLc1F4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyO1KNGOPYwoammlX14AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugws70Haei6UmPpCINx4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwO6sAXJT974IXOs7l4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEUTRAL",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugwg49RORkjoQ-RUX_54AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyIvrdjKAleEXci0u94AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugxh_z53o0lhDDTBChZ4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugz7dP3HvpuNEukC1pV4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgzP639a765IEopW6_V4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgzKP7KNIaOYQtaB0C14AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgycNxQXca2nN3DrnBJ4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "UgxaxaLWuFZj7-lD1EN4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyjBsEFYGjRv-YNb7J4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxtA12gQ_OmQb_3xwp4AaABAg",
+      "truth": "POSITIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugyo6V1sFeMPOrfTafN4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugxbg59ABT-_-j_B1o94AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxnLtjW5QhaoM5nv7d4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "UgzgnqXIcED4Zx0j0-t4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugwww0rNRWwY3DJSbJZ4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwvjYVTT-tP1Iherop4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "POSITIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugw81LSbuqnCjq6m_8V4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugy6g7l2US7tckcQiOV4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxZ9SLS2Mc1LunCqTx4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxXraqCJm7VTnkjGHx4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugz7W2TGPwR3Ne2l01B4AaABAg",
+      "truth": "POSITIVE",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyKwC_AMbvm9qdAIYV4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwJNAQ7kk4cp155jlt4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwXULPcE7zmGciBUIF4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEGATIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "Ugzu4seAKJZPlE7qH-Z4AaABAg",
+      "truth": "POSITIVE",
+      "base": "NEUTRAL",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugxz6y0pqA5prFAhAmB4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEUTRAL",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "UgyhFAn4P1WWgCNgHCN4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugwz3kkUZuzoNsDT2Sp4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugxs0QtSzp-rX_5u0aN4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyuUCApcT21IuLv-d94AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxBJcvMbY5MX5jMTRZ4AaABAg",
+      "truth": "POSITIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugw4Hum4mHOTOdmNwip4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxBA6MOshrfoS8080R4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEUTRAL",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "Ugzb2Ruq9EgMTcaRX714AaABAg",
+      "truth": "POSITIVE",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "Ugz3HG1uyiaN4rRXKUt4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgzjKI18fM8rs_huxiF4AaABAg",
+      "truth": "POSITIVE",
+      "base": "NEUTRAL",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgylyTzPE7pzzNCdiIJ4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyRCe48mA7dRopP3fF4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugy0gW0ugpf973uOofB4AaABAg",
+      "truth": "POSITIVE",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwrPJRC77jLa2JM7fh4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgzEgvkuvkzGn1PHmaN4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxijIVSJLUeh12uqgl4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugw5qiRr7k64ey4DS-N4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEUTRAL",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyH3fJbyuxuLMdlT6B4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugx2tcbU2LOnyZG49-14AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwSVSdbHNMUxbSxsf14AaABAg",
+      "truth": "NEUTRAL",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwhQxoZXybA2QrKbQl4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxWPAQQ_cl0UjUaZYp4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugz1cqitKoz_UoOaguV4AaABAg",
+      "truth": "POSITIVE",
+      "base": "NEUTRAL",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugyp4NtE5_HU_a8ncWB4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyXaPsoxoXSWI7pyOB4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugxi5UXlpGcoXz0uwxt4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgzAqeE_HKdvgWpgn4x4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugx2SJOxFQzTT1tOvUR4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgysIg3Gcd-5cFmi4HN4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugzy-OOPvoLlJAlaWsl4AaABAg",
+      "truth": "POSITIVE",
+      "base": "NEGATIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugwyn5QkgakrnuFfjzt4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgzPgpD3WT2pdI3MEHx4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugz9Fez_1jKMREbC9CN4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugy5UyBOYtfbkHmy0554AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwOTQ-jIhP5AMhVQXZ4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "Ugyi-uZarZ9DRVomKHt4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwM5kLAU20tLqxRvvJ4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "UgzPwX04cZpv_xQ6_XJ4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEUTRAL",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwTAvMGtHlqml7NsVx4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "POSITIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyQEUVFPCvfih8GPMB4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugw6bUmGX5gTx9rdgTV4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "Ugw3vBFmQebZT_7ChXV4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxtwIrCj7R-BMIlZRR4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyOJwiuVwumdPFA_Mp4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgzKy5Jm12idh0A4dz54AaABAg",
+      "truth": "NEGATIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwyLMvc7Rvl0loabmx4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgzfybJxcXEzyqHrb4B4AaABAg",
+      "truth": "POSITIVE",
+      "base": "NEUTRAL",
+      "finetuned": "POSITIVE",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "UgwFqrdREwxPP3ZkUkl4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugw02-XH9v6uzUR9AOd4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "UgwVagnT-WP1ioTxf-x4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyoRsd-KQa2ip-W48Z4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwVokiBMEbCL08D5DF4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugy6GHApFL3BBA2hivV4AaABAg",
+      "truth": "POSITIVE",
+      "base": "NEUTRAL",
+      "finetuned": "POSITIVE",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "UgxVczrE9ktzvFzbu5B4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugz94LdA_b9m0DBUOKR4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "UgxmgolVpnAGI9gDEU14AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugz0bmmK9CRc4yrpeWZ4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwCG2FXExgZk0QKnIF4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEUTRAL",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxdRNmXM4XHxZXMj-V4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "Ugw9sVj0u2QTDHYUDbZ4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxCjTIWAy8RkgUGpXJ4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxzRqAMxFtTdUQZ4Gp4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxggE5FHFNDk5Xsc0p4AaABAg",
+      "truth": "POSITIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugy4i9b70Tn68lfiagZ4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugz6FlvPjjeZDY_mkCp4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxyB-_lPur2gzlEkNJ4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "UgyBQpApws8eDpfFbdB4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgybQuJFHRLcfTPQK4R4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyZV9bGiJEMEEOTfgN4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugzo7pzO39vwpsOG9Vd4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwRCahJUAJMNWmF6l94AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyNYeZpan1btKw6rd14AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgzhsB-EsLQ-5x3Uh8l4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxewvKcgDmBninjgcp4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyFYAyDlgVA89GKRDd4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgzPNJLpq9oztWiObDp4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwssFTaBcVUwLKSAot4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyWreqWQknQoM5jnNZ4AaABAg",
+      "truth": "POSITIVE",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugw5EVn70uhFTVHHveh4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugwpy8dCNgIBWTaDIAt4AaABAg",
+      "truth": "POSITIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "UgyKiTh3nwgz-7eCLEt4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxJntaxK3YRhZ4pqhJ4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "Ugz1YV2Lb83IAWxdoYh4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwHj2KlX4rr5D7p6GB4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "Ugz7zlvWy-pbfex_UuB4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "UgxswXnPeaXmOEXe6Fh4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugwe_N1E4i_3RK3-J7d4AaABAg",
+      "truth": "POSITIVE",
+      "base": "NEUTRAL",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwEg6pNgjc5U0kHLVd4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyD0yCKz2jiT0lOgf54AaABAg",
+      "truth": "NEUTRAL",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "UgxxUtWGojyIZZJ214F4AaABAg",
+      "truth": "POSITIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwvOFEavWRFMaJIx3F4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwIHNaUrjFdL3tiG_Z4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgzNhi0W9Fhvir8affh4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxTKAKDkuFbdHxm6T54AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyaPxzOfplFI-TWRVB4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgznQc3mVYdkuX-FWl54AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEGATIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugw894sXX9tnU8F12H14AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwJakDGfnbarfexPAV4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "UgxOxDUz59BBswTFzAB4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugzl0aIlTESUBYxn50F4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgzuJWGfr7hYTZfcUAl4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugx7qcD5qLSHG8OauMZ4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugx0A37K5Ro0Xr07M_14AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgygmfbiRxh8slkqntN4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyMTnHxdFKvbHSjmvd4AaABAg",
+      "truth": "POSITIVE",
+      "base": "NEUTRAL",
+      "finetuned": "POSITIVE",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "UgwMtIPszqGSWkKjwMl4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "UgxYLzX2HH6s6BEcHod4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgzsZVb-8PQs7XZgOE54AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgzLRsfWkW_E_JsMCgJ4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugx7s65_qrHTVsM9sFt4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgzQb1BBIoytKGjR2gN4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugx1yWPs-KBbCnmRO5Z4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugy2f6aucSMSDdFJjy94AaABAg",
+      "truth": "NEUTRAL",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyB9QjqTwNnWU6t_Nt4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwrNOqpdQXhpsaAcXZ4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwsXYOB2wF_GYK0EjJ4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "POSITIVE",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "UgyJ_-0VFFVQdBc07KN4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEUTRAL",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugxkit8srIHjhC7ip1h4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwUbo-2xc8nKTgTxO14AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEUTRAL",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgzblRqXBweGMCaoIL94AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwpvchfCke7m3RkD0d4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgzCO8--QM5fuTCnMuR4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxdKeMm4zk9XidR69t4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyBKdhprVrrj7ZtV5t4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "UgyLgoKlYVstgACUdI54AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxAOSXIce3IFATbDBd4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "POSITIVE",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugxup2q2KllAqpXjond4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugw47z-dqcbBQGYy_aN4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgzafWLc-hguuF4IUrt4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxUj7g-torOLkFT5Jl4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxyWQgdKuzNrff_o754AaABAg",
+      "truth": "NEUTRAL",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwuHEh26AvU5iJ6Zal4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwsTXoLZ1yYGI1lAzV4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugza-FyJr1p6n0R_t7d4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugzxkep1JUWoU4-lTPl4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEGATIVE",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "UgyCOCUJMZiONMV1qT54AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugwf2hz53W7q51I90Et4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwjT21k5F8qgoVORLl4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxzGgPdU-BQGR_tsRt4AaABAg",
+      "truth": "POSITIVE",
+      "base": "NEGATIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "UgzotnbJ4jwrpYvJ94V4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxWoclXPtDq5XijcTF4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyqTOxYQx0qPmj34Op4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyFaOaxLpW4tQNOSZd4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgzgbnR0q_4p5gVRaq94AaABAg",
+      "truth": "POSITIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgzOEdT4yO9SW23OHQl4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwR2U_zMu6-eZp-l6t4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "UgwOz5UnGRjjq0FD4d14AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugzo4AtJiXcSsmmbttZ4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugz2w_f3-1o3pYHXWjh4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugzt8GFyVNRz8gKnm1x4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxM2oWuV3IhpiC7O6N4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgzXiU9L4sOEad9GQe14AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxXmfYaaWWvZdBLKiV4AaABAg",
+      "truth": "POSITIVE",
+      "base": "NEGATIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxCqssjvyZkaUNiBNN4AaABAg",
+      "truth": "POSITIVE",
+      "base": "NEUTRAL",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "Ugyltr2CTux12Cyw19F4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEGATIVE",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugw3RMoCJRk7ilXyxbp4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugz_oyfqImGdLjuxWzF4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwUB43eKCq3ak1_O3p4AaABAg",
+      "truth": "POSITIVE",
+      "base": "NEUTRAL",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwHsWf6yBULzkL7KV54AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugx6ZXLb-MlTU5p6OrJ4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxZUML9QnDS_xJO-qh4AaABAg",
+      "truth": "POSITIVE",
+      "base": "NEUTRAL",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "UgwwZpxLRHnlGYK1tDN4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwySlpSnepWm0DNpzJ4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxhVgG3RipemaVkp6t4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwGU8ofcsDQazuv94d4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugy1Tl8lfly4tqC3xeN4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwUJAbAGhhY7oUIxQx4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEUTRAL",
+      "finetuned": "POSITIVE",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "UgwQlsbwSwyU5JrHM1R4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyaBlXVuD_GcwkBGV14AaABAg",
+      "truth": "NEGATIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxxmsI9b-eWmiiETPF4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEGATIVE",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "UgwujQcudl153-HWpQF4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "UgxrnYULneyA-hRLvGh4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwEBEp6VWXVlIbDtid4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugy3jFl-QWhqYel8hBp4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "UgyXRw3I8d1FWgixx514AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugz-do2mnQ3pIlPeKj94AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyGreOGDJB-MFEi4Vd4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "Ugx9Puxx06uaFrcD51V4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyFSi1n3V-s29PldK94AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEUTRAL",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "UgwEubqgovsZE2UAm4p4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgzJZQJOsFPLtUHNEwZ4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "POSITIVE",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxyqM8Qdp3ZDN74sp94AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgzgIPTsQMkH8GImwT14AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugz1SKjTFvQGBSrbmDZ4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwxCxyRr_F4DOc_sKl4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugww7QsmHTeqDA0OkLR4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwzugpY13Li4pEhXqx4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEUTRAL",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugz7IzXUc7Cbe0IFZht4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwRLwq0HXP_5yHvg5R4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "UgzgVqn_DxJrrSJy8Gx4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugw5ddV72Joaj8wjgzZ4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugx_cQXSmheXGE5tqox4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwcsQWZRJWIQEQv5uJ4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "POSITIVE",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugzjm4iMSEzjOgMQU7h4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyfeDS1Pvvf0ZxRdLJ4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwzHfQ1EzJbGXD3Fl94AaABAg",
+      "truth": "POSITIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugx33UIOYveMyrafYTV4AaABAg",
+      "truth": "POSITIVE",
+      "base": "NEUTRAL",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "UgwMLesCR7KrSSg8c2h4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyiVQ0kfNw-GGpqNjh4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugz8X2t1wbP_VCCpCkt4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugw1Dwsda1xMYBro1Ax4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxwavBqhiTKT6Lo_V14AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugx-WgpULdKGhjtcR5R4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwVAo6Jf13PriUI4Ch4AaABAg",
+      "truth": "POSITIVE",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxXUOoxy2ADk_lga2Z4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwCHHf5sGQRbw0fZwN4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugwydk0dGjYmQQ2r5up4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgySAAwKpE27tg9oyJZ4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugz_JnEnh0Sq677FGmB4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwSeNi4sGjFECme1aJ4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "Ugzsm29-Td-4zLneQ5R4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugz771dqyHVm2VEYkjJ4AaABAg",
+      "truth": "POSITIVE",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyRoH_o3cMFgA6KkeJ4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugy_0eV7jydWWglrjJV4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwI51Y9VX7Muq8mRFV4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugwx-McNJO0vjf-46yF4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "POSITIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyFkzREvIPcx7bnRNR4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwYnHPHmzfAxPcXVGN4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwpYc54uzaDvV0qF1B4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "UgzakU_k-VxctOARKq94AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyeFWmn16StYerH2Jl4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEUTRAL",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwcBL35Ta-sUrnRF0t4AaABAg",
+      "truth": "POSITIVE",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwyMqKvRmLtSXUtdW94AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugx7p4DN55Adgm7iVwR4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugz9riXpBjIrEi6o3_h4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "UgyqJuTORT7PNnibXw14AaABAg",
+      "truth": "NEUTRAL",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugwu41ZKRpqgF85kSBp4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyNkQrfOuWCk4-pSGt4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugy8s1U-a6jMclQW0TN4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwUm8MA7anPEMyKS554AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugyf1yLfzymXzYKMhNJ4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgydDt-EgtPyGflRjO14AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxABxeUCzaqDAYBa7N4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugwno8wGmIioU_NO0XJ4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugz69RGV0JEpx6ybSSt4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyeC5rdU5ZMU4VWufh4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugz6ux5kh1XEj0guOw94AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyxDtEv3fBQExBNQ494AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugz7CwDBZEaPYA0bLPN4AaABAg",
+      "truth": "POSITIVE",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "UgyZzf5aWLLPuprTlOB4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyMu4qLoqkuRVq_IGV4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "POSITIVE",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "UgzLZ9HgtvUeu0QxEvJ4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyGcWZ3c96J3B4nmE14AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEGATIVE",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxP9-3WII3HipyiT_N4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgycLJENSAOvJ2sNYVp4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgzYhwiWq5jf714v7YR4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgzCzfhcQsbQB6NLNTl4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugyi0adbKftdYf30Qup4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgzFvqdMG2B4nUzpFel4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugyth3F7ugPEP-mSHid4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgzRJCn71neNLDlKZ5J4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEUTRAL",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxYY0zUtGgxJpC2jMh4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxLAYAwGtR09-PXQk94AaABAg",
+      "truth": "NEUTRAL",
+      "base": "POSITIVE",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyzfTM_VMFb7L68p8p4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "POSITIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwjcKU59kIeKq5M9J94AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwtljKSBUG6ccSUNF14AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgztvC2vd2MLQZGlqSZ4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxbgV7q_pKzr3kNIr54AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugy5MiYoARnpID79_GR4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwLBHqcUJlmcQn5tbl4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxND1VCJEbO3v8FCzZ4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugwmf2Fb1WQYdEXSzKp4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugy_Egr_gqNd53EkQa54AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEGATIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "UgzN6XYuVT6ID_2RYQ94AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEUTRAL",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxkHygctBNewaHreop4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwKrHqNV0VYJy8Md0N4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugzlp3yRxeL4tovzG3x4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEUTRAL",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgynDpYcUcMnfzMTltl4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgzN4fmE6bxZpMnGW7V4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgzNYDj6AlqqdezP9hN4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugx7D2FDmm6m0eVy_jF4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugy3mRnEf8yveVjS74N4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "POSITIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgzVcsWpCWwowjoTgCh4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEGATIVE",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxPUaG4B60sVNXDA5R4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwL9xMjoeV_KKUnyfR4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxElVP7tx2m5Xpg70t4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyIgrS2E3A9_QapWD94AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugwk1ctG3CM9ar4Cu2N4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "UgyJLlz5_AzF-B8OIel4AaABAg",
+      "truth": "NEGATIVE",
+      "base": "NEUTRAL",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgweKLlLUnbpmxuB5VR4AaABAg",
+      "truth": "POSITIVE",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgwPWcC0rRZ1_dk_1u14AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyV9xupsm-8XGi-bhN4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgzlNUR6WfXni7xXb8t4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxWs-a37N7_dShozyR4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgyZK4i9jPDxo2YwKJ54AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEGATIVE",
+      "in_sample_a": false
+    },
+    {
+      "comment_id": "UgxUjs0r558zLtDSRxF4AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "Ugywv_8680kMz1q8gm54AaABAg",
+      "truth": "POSITIVE",
+      "base": "POSITIVE",
+      "finetuned": "POSITIVE",
+      "in_sample_a": true
+    },
+    {
+      "comment_id": "UgxgaRutNFjsBDeKR-t4AaABAg",
+      "truth": "NEUTRAL",
+      "base": "NEUTRAL",
+      "finetuned": "NEUTRAL",
+      "in_sample_a": true
+    }
+  ]
+}

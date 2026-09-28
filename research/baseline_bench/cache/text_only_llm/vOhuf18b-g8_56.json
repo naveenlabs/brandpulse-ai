@@ -1,0 +1,27 @@
+{
+ "uid": "vOhuf18b-g8_56",
+ "system": "text_only_llm",
+ "video_id": "vOhuf18b-g8",
+ "segment_id": 56,
+ "split": "holdout",
+ "payload": {
+  "segment_id": 56,
+  "start_s": 336.14,
+  "end_s": 339.8,
+  "transcript": "If I compare this to like foldables of the past, this is a much older device."
+ },
+ "seconds": 3.32,
+ "raw": "{\n  \"segment_id\": 56,\n  \"conflict_score\": 0.8,\n  \"channels_in_conflict\": [],\n  \"flags\": [\"POTENTIAL_OVERSELL\"],\n  \"narrative\": \"The creator's comparison to 'older devices' suggests a scripted or overly critical tone, implying the device may not be as impressive as claimed.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 56,
+  "start_s": 336.14,
+  "end_s": 339.8,
+  "conflict_score": 0.8,
+  "conflict_reasons": [
+   "POTENTIAL_OVERSELL"
+  ],
+  "flagged": true
+ }
+}

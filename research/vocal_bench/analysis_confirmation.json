@@ -1,0 +1,787 @@
+{
+ "split": "confirmation",
+ "n": 47,
+ "surprise_neutral": false,
+ "alpha_corrected": 0.005555555555555556,
+ "thresholds": {
+  "audeering-msp-dim": [
+   0.4,
+   0.8
+  ],
+  "wavlm-msp-dim": [
+   0.2,
+   0.65
+  ]
+ },
+ "scored": [
+  {
+   "candidate": "audeering-msp-dim",
+   "kind": "dimensional",
+   "licence": "cc-by-nc-sa-4.0",
+   "incumbent": false,
+   "n": 47,
+   "accuracy": 0.3617021276595745,
+   "accuracy_ci": [
+    0.2396602228576844,
+    0.5046436542822955
+   ],
+   "macro_f1": 0.33957440409053313,
+   "per_class": {
+    "POSITIVE": {
+     "precision": 0.75,
+     "recall": 0.1111111111111111,
+     "f1": 0.19354838709677416,
+     "support": 27,
+     "predicted": 4
+    },
+    "NEUTRAL": {
+     "precision": 0.3076923076923077,
+     "recall": 0.9230769230769231,
+     "f1": 0.4615384615384615,
+     "support": 13,
+     "predicted": 39
+    },
+    "NEGATIVE": {
+     "precision": 0.5,
+     "recall": 0.2857142857142857,
+     "f1": 0.36363636363636365,
+     "support": 7,
+     "predicted": 4
+    }
+   },
+   "confusion": {
+    "POSITIVE": {
+     "POSITIVE": 3,
+     "NEUTRAL": 23,
+     "NEGATIVE": 1,
+     "UNMAPPED": 0
+    },
+    "NEUTRAL": {
+     "POSITIVE": 0,
+     "NEUTRAL": 12,
+     "NEGATIVE": 1,
+     "UNMAPPED": 0
+    },
+    "NEGATIVE": {
+     "POSITIVE": 1,
+     "NEUTRAL": 4,
+     "NEGATIVE": 2,
+     "UNMAPPED": 0
+    },
+    "UNMAPPED": {
+     "POSITIVE": 0,
+     "NEUTRAL": 0,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    }
+   },
+   "unmapped": 0,
+   "coverage": 1.0,
+   "coverage_accuracy": 0.3617021276595745,
+   "realtime_factor": 18.22,
+   "n_failed": 0,
+   "thresholds": [
+    0.4,
+    0.8
+   ]
+  },
+  {
+   "candidate": "dpngtm-wav2vec2",
+   "kind": "categorical",
+   "licence": "mit",
+   "incumbent": false,
+   "n": 47,
+   "accuracy": 0.40425531914893614,
+   "accuracy_ci": [
+    0.2763982896138818,
+    0.5465813176368735
+   ],
+   "macro_f1": 0.3226890756302521,
+   "per_class": {
+    "POSITIVE": {
+     "precision": 0.5833333333333334,
+     "recall": 0.5185185185185185,
+     "f1": 0.5490196078431373,
+     "support": 27,
+     "predicted": 24
+    },
+    "NEUTRAL": {
+     "precision": 0.5,
+     "recall": 0.07692307692307693,
+     "f1": 0.13333333333333336,
+     "support": 13,
+     "predicted": 2
+    },
+    "NEGATIVE": {
+     "precision": 0.19047619047619047,
+     "recall": 0.5714285714285714,
+     "f1": 0.2857142857142857,
+     "support": 7,
+     "predicted": 21
+    }
+   },
+   "confusion": {
+    "POSITIVE": {
+     "POSITIVE": 14,
+     "NEUTRAL": 1,
+     "NEGATIVE": 12,
+     "UNMAPPED": 0
+    },
+    "NEUTRAL": {
+     "POSITIVE": 7,
+     "NEUTRAL": 1,
+     "NEGATIVE": 5,
+     "UNMAPPED": 0
+    },
+    "NEGATIVE": {
+     "POSITIVE": 3,
+     "NEUTRAL": 0,
+     "NEGATIVE": 4,
+     "UNMAPPED": 0
+    },
+    "UNMAPPED": {
+     "POSITIVE": 0,
+     "NEUTRAL": 0,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    }
+   },
+   "unmapped": 0,
+   "coverage": 1.0,
+   "coverage_accuracy": 0.40425531914893614,
+   "realtime_factor": 44.06,
+   "n_failed": 0,
+   "thresholds": null
+  },
+  {
+   "candidate": "emotion2vec-base",
+   "kind": "categorical",
+   "licence": "other (GitHub badge says MIT)",
+   "incumbent": false,
+   "n": 47,
+   "accuracy": 0.3617021276595745,
+   "accuracy_ci": [
+    0.2396602228576844,
+    0.5046436542822955
+   ],
+   "macro_f1": 0.26394557823129255,
+   "per_class": {
+    "POSITIVE": {
+     "precision": 0.75,
+     "recall": 0.2222222222222222,
+     "f1": 0.34285714285714286,
+     "support": 27,
+     "predicted": 8
+    },
+    "NEUTRAL": {
+     "precision": 0.3055555555555556,
+     "recall": 0.8461538461538461,
+     "f1": 0.44897959183673475,
+     "support": 13,
+     "predicted": 36
+    },
+    "NEGATIVE": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "support": 7,
+     "predicted": 0
+    }
+   },
+   "confusion": {
+    "POSITIVE": {
+     "POSITIVE": 6,
+     "NEUTRAL": 20,
+     "NEGATIVE": 0,
+     "UNMAPPED": 1
+    },
+    "NEUTRAL": {
+     "POSITIVE": 2,
+     "NEUTRAL": 11,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    },
+    "NEGATIVE": {
+     "POSITIVE": 0,
+     "NEUTRAL": 5,
+     "NEGATIVE": 0,
+     "UNMAPPED": 2
+    },
+    "UNMAPPED": {
+     "POSITIVE": 0,
+     "NEUTRAL": 0,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    }
+   },
+   "unmapped": 3,
+   "coverage": 0.9361702127659575,
+   "coverage_accuracy": 0.38636363636363635,
+   "realtime_factor": 26.13,
+   "n_failed": 0,
+   "thresholds": null
+  },
+  {
+   "candidate": "emotion2vec-large",
+   "kind": "categorical",
+   "licence": "other (GitHub badge says MIT)",
+   "incumbent": false,
+   "n": 47,
+   "accuracy": 0.3191489361702128,
+   "accuracy_ci": [
+    0.2039520381739899,
+    0.4616761088552146
+   ],
+   "macro_f1": 0.3345631345631346,
+   "per_class": {
+    "POSITIVE": {
+     "precision": 0.6,
+     "recall": 0.2222222222222222,
+     "f1": 0.32432432432432434,
+     "support": 27,
+     "predicted": 10
+    },
+    "NEUTRAL": {
+     "precision": 0.36363636363636365,
+     "recall": 0.6153846153846154,
+     "f1": 0.4571428571428572,
+     "support": 13,
+     "predicted": 22
+    },
+    "NEGATIVE": {
+     "precision": 0.5,
+     "recall": 0.14285714285714285,
+     "f1": 0.22222222222222224,
+     "support": 7,
+     "predicted": 2
+    }
+   },
+   "confusion": {
+    "POSITIVE": {
+     "POSITIVE": 6,
+     "NEUTRAL": 10,
+     "NEGATIVE": 1,
+     "UNMAPPED": 10
+    },
+    "NEUTRAL": {
+     "POSITIVE": 4,
+     "NEUTRAL": 8,
+     "NEGATIVE": 0,
+     "UNMAPPED": 1
+    },
+    "NEGATIVE": {
+     "POSITIVE": 0,
+     "NEUTRAL": 4,
+     "NEGATIVE": 1,
+     "UNMAPPED": 2
+    },
+    "UNMAPPED": {
+     "POSITIVE": 0,
+     "NEUTRAL": 0,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    }
+   },
+   "unmapped": 13,
+   "coverage": 0.7234042553191489,
+   "coverage_accuracy": 0.4411764705882353,
+   "realtime_factor": 20.05,
+   "n_failed": 0,
+   "thresholds": null
+  },
+  {
+   "candidate": "emotion2vec-seed",
+   "kind": "categorical",
+   "licence": "other (GitHub badge says MIT)",
+   "incumbent": false,
+   "n": 47,
+   "accuracy": 0.3829787234042553,
+   "accuracy_ci": [
+    0.2579048266351308,
+    0.5257369155602367
+   ],
+   "macro_f1": 0.2991829038340666,
+   "per_class": {
+    "POSITIVE": {
+     "precision": 0.8,
+     "recall": 0.2962962962962963,
+     "f1": 0.43243243243243246,
+     "support": 27,
+     "predicted": 10
+    },
+    "NEUTRAL": {
+     "precision": 0.3333333333333333,
+     "recall": 0.7692307692307693,
+     "f1": 0.4651162790697674,
+     "support": 13,
+     "predicted": 30
+    },
+    "NEGATIVE": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "support": 7,
+     "predicted": 2
+    }
+   },
+   "confusion": {
+    "POSITIVE": {
+     "POSITIVE": 8,
+     "NEUTRAL": 14,
+     "NEGATIVE": 1,
+     "UNMAPPED": 4
+    },
+    "NEUTRAL": {
+     "POSITIVE": 2,
+     "NEUTRAL": 10,
+     "NEGATIVE": 1,
+     "UNMAPPED": 0
+    },
+    "NEGATIVE": {
+     "POSITIVE": 0,
+     "NEUTRAL": 6,
+     "NEGATIVE": 0,
+     "UNMAPPED": 1
+    },
+    "UNMAPPED": {
+     "POSITIVE": 0,
+     "NEUTRAL": 0,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    }
+   },
+   "unmapped": 5,
+   "coverage": 0.8936170212765957,
+   "coverage_accuracy": 0.42857142857142855,
+   "realtime_factor": 23.58,
+   "n_failed": 0,
+   "thresholds": null
+  },
+  {
+   "candidate": "speechbrain-iemocap",
+   "kind": "categorical",
+   "licence": "apache-2.0",
+   "incumbent": true,
+   "n": 47,
+   "accuracy": 0.3829787234042553,
+   "accuracy_ci": [
+    0.2579048266351308,
+    0.5257369155602367
+   ],
+   "macro_f1": 0.3788359788359788,
+   "per_class": {
+    "POSITIVE": {
+     "precision": 0.7777777777777778,
+     "recall": 0.25925925925925924,
+     "f1": 0.3888888888888889,
+     "support": 27,
+     "predicted": 9
+    },
+    "NEUTRAL": {
+     "precision": 0.47058823529411764,
+     "recall": 0.6153846153846154,
+     "f1": 0.5333333333333333,
+     "support": 13,
+     "predicted": 17
+    },
+    "NEGATIVE": {
+     "precision": 0.14285714285714285,
+     "recall": 0.42857142857142855,
+     "f1": 0.21428571428571427,
+     "support": 7,
+     "predicted": 21
+    }
+   },
+   "confusion": {
+    "POSITIVE": {
+     "POSITIVE": 7,
+     "NEUTRAL": 6,
+     "NEGATIVE": 14,
+     "UNMAPPED": 0
+    },
+    "NEUTRAL": {
+     "POSITIVE": 1,
+     "NEUTRAL": 8,
+     "NEGATIVE": 4,
+     "UNMAPPED": 0
+    },
+    "NEGATIVE": {
+     "POSITIVE": 1,
+     "NEUTRAL": 3,
+     "NEGATIVE": 3,
+     "UNMAPPED": 0
+    },
+    "UNMAPPED": {
+     "POSITIVE": 0,
+     "NEUTRAL": 0,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    }
+   },
+   "unmapped": 0,
+   "coverage": 1.0,
+   "coverage_accuracy": 0.3829787234042553,
+   "realtime_factor": 28.41,
+   "n_failed": 0,
+   "thresholds": null
+  },
+  {
+   "candidate": "superb-wav2vec2-er",
+   "kind": "categorical",
+   "licence": "apache-2.0",
+   "incumbent": false,
+   "n": 47,
+   "accuracy": 0.2978723404255319,
+   "accuracy_ci": [
+    0.18651084151016262,
+    0.439779440463654
+   ],
+   "macro_f1": 0.25747286103822603,
+   "per_class": {
+    "POSITIVE": {
+     "precision": 0.5294117647058824,
+     "recall": 0.3333333333333333,
+     "f1": 0.409090909090909,
+     "support": 27,
+     "predicted": 17
+    },
+    "NEUTRAL": {
+     "precision": 0.16666666666666666,
+     "recall": 0.07692307692307693,
+     "f1": 0.10526315789473684,
+     "support": 13,
+     "predicted": 6
+    },
+    "NEGATIVE": {
+     "precision": 0.16666666666666666,
+     "recall": 0.5714285714285714,
+     "f1": 0.25806451612903225,
+     "support": 7,
+     "predicted": 24
+    }
+   },
+   "confusion": {
+    "POSITIVE": {
+     "POSITIVE": 9,
+     "NEUTRAL": 5,
+     "NEGATIVE": 13,
+     "UNMAPPED": 0
+    },
+    "NEUTRAL": {
+     "POSITIVE": 5,
+     "NEUTRAL": 1,
+     "NEGATIVE": 7,
+     "UNMAPPED": 0
+    },
+    "NEGATIVE": {
+     "POSITIVE": 3,
+     "NEUTRAL": 0,
+     "NEGATIVE": 4,
+     "UNMAPPED": 0
+    },
+    "UNMAPPED": {
+     "POSITIVE": 0,
+     "NEUTRAL": 0,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    }
+   },
+   "unmapped": 0,
+   "coverage": 1.0,
+   "coverage_accuracy": 0.2978723404255319,
+   "realtime_factor": 18.52,
+   "n_failed": 0,
+   "thresholds": null
+  },
+  {
+   "candidate": "wavlm-msp-dim",
+   "kind": "dimensional",
+   "licence": "Open RAIL (non-commercial)",
+   "incumbent": false,
+   "n": 47,
+   "accuracy": 0.46808510638297873,
+   "accuracy_ci": [
+    0.33331462168462633,
+    0.6076785807322921
+   ],
+   "macro_f1": 0.33544973544973544,
+   "per_class": {
+    "POSITIVE": {
+     "precision": 0.7222222222222222,
+     "recall": 0.48148148148148145,
+     "f1": 0.5777777777777777,
+     "support": 27,
+     "predicted": 18
+    },
+    "NEUTRAL": {
+     "precision": 0.3103448275862069,
+     "recall": 0.6923076923076923,
+     "f1": 0.4285714285714286,
+     "support": 13,
+     "predicted": 29
+    },
+    "NEGATIVE": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "support": 7,
+     "predicted": 0
+    }
+   },
+   "confusion": {
+    "POSITIVE": {
+     "POSITIVE": 13,
+     "NEUTRAL": 14,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    },
+    "NEUTRAL": {
+     "POSITIVE": 4,
+     "NEUTRAL": 9,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    },
+    "NEGATIVE": {
+     "POSITIVE": 1,
+     "NEUTRAL": 6,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    },
+    "UNMAPPED": {
+     "POSITIVE": 0,
+     "NEUTRAL": 0,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    }
+   },
+   "unmapped": 0,
+   "coverage": 1.0,
+   "coverage_accuracy": 0.46808510638297873,
+   "realtime_factor": 13.16,
+   "n_failed": 0,
+   "thresholds": [
+    0.2,
+    0.65
+   ]
+  },
+  {
+   "candidate": "BASELINE always-neutral",
+   "kind": "baseline",
+   "licence": "-",
+   "incumbent": false,
+   "n": 47,
+   "accuracy": 0.2765957446808511,
+   "accuracy_ci": [
+    0.16936405991152936,
+    0.41758835700689967
+   ],
+   "macro_f1": 0.14444444444444446,
+   "per_class": {
+    "POSITIVE": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "support": 27,
+     "predicted": 0
+    },
+    "NEUTRAL": {
+     "precision": 0.2765957446808511,
+     "recall": 1.0,
+     "f1": 0.43333333333333335,
+     "support": 13,
+     "predicted": 47
+    },
+    "NEGATIVE": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "support": 7,
+     "predicted": 0
+    }
+   },
+   "confusion": {
+    "POSITIVE": {
+     "POSITIVE": 0,
+     "NEUTRAL": 27,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    },
+    "NEUTRAL": {
+     "POSITIVE": 0,
+     "NEUTRAL": 13,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    },
+    "NEGATIVE": {
+     "POSITIVE": 0,
+     "NEUTRAL": 7,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    },
+    "UNMAPPED": {
+     "POSITIVE": 0,
+     "NEUTRAL": 0,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    }
+   },
+   "unmapped": 0,
+   "coverage": 1.0,
+   "coverage_accuracy": 0.2765957446808511,
+   "realtime_factor": null,
+   "n_failed": 0,
+   "thresholds": null
+  },
+  {
+   "candidate": "BASELINE majority",
+   "kind": "baseline",
+   "licence": "-",
+   "incumbent": false,
+   "n": 47,
+   "accuracy": 0.2765957446808511,
+   "accuracy_ci": [
+    0.16936405991152936,
+    0.41758835700689967
+   ],
+   "macro_f1": 0.14444444444444446,
+   "per_class": {
+    "POSITIVE": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "support": 27,
+     "predicted": 0
+    },
+    "NEUTRAL": {
+     "precision": 0.2765957446808511,
+     "recall": 1.0,
+     "f1": 0.43333333333333335,
+     "support": 13,
+     "predicted": 47
+    },
+    "NEGATIVE": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "support": 7,
+     "predicted": 0
+    }
+   },
+   "confusion": {
+    "POSITIVE": {
+     "POSITIVE": 0,
+     "NEUTRAL": 27,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    },
+    "NEUTRAL": {
+     "POSITIVE": 0,
+     "NEUTRAL": 13,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    },
+    "NEGATIVE": {
+     "POSITIVE": 0,
+     "NEUTRAL": 7,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    },
+    "UNMAPPED": {
+     "POSITIVE": 0,
+     "NEUTRAL": 0,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    }
+   },
+   "unmapped": 0,
+   "coverage": 1.0,
+   "coverage_accuracy": 0.2765957446808511,
+   "realtime_factor": null,
+   "n_failed": 0,
+   "thresholds": null
+  }
+ ],
+ "vs_incumbent": {
+  "wavlm-msp-dim": {
+   "b": 10,
+   "c": 14,
+   "n_discordant": 24,
+   "p_value": 0.5412561893463135,
+   "min_attainable_p": 1.1920928955078125e-07,
+   "acc_diff": 0.08510638297872342,
+   "significant": false
+  },
+  "dpngtm-wav2vec2": {
+   "b": 13,
+   "c": 14,
+   "n_discordant": 27,
+   "p_value": 1.0,
+   "min_attainable_p": 1.4901161193847656e-08,
+   "acc_diff": 0.021276595744680826,
+   "significant": false
+  },
+  "emotion2vec-seed": {
+   "b": 7,
+   "c": 7,
+   "n_discordant": 14,
+   "p_value": 1.0,
+   "min_attainable_p": 0.0001220703125,
+   "acc_diff": 0.0,
+   "significant": false
+  },
+  "audeering-msp-dim": {
+   "b": 9,
+   "c": 8,
+   "n_discordant": 17,
+   "p_value": 1.0,
+   "min_attainable_p": 1.52587890625e-05,
+   "acc_diff": -0.021276595744680826,
+   "significant": false
+  },
+  "emotion2vec-base": {
+   "b": 8,
+   "c": 7,
+   "n_discordant": 15,
+   "p_value": 1.0,
+   "min_attainable_p": 6.103515625e-05,
+   "acc_diff": -0.021276595744680826,
+   "significant": false
+  },
+  "emotion2vec-large": {
+   "b": 8,
+   "c": 5,
+   "n_discordant": 13,
+   "p_value": 0.5810546875,
+   "min_attainable_p": 0.000244140625,
+   "acc_diff": -0.06382978723404253,
+   "significant": false
+  },
+  "superb-wav2vec2-er": {
+   "b": 10,
+   "c": 6,
+   "n_discordant": 16,
+   "p_value": 0.454498291015625,
+   "min_attainable_p": 3.0517578125e-05,
+   "acc_diff": -0.08510638297872342,
+   "significant": false
+  },
+  "BASELINE always-neutral": {
+   "b": 10,
+   "c": 5,
+   "n_discordant": 15,
+   "p_value": 0.3017578125,
+   "min_attainable_p": 6.103515625e-05,
+   "acc_diff": -0.10638297872340424,
+   "significant": false
+  },
+  "BASELINE majority": {
+   "b": 10,
+   "c": 5,
+   "n_discordant": 15,
+   "p_value": 0.3017578125,
+   "min_attainable_p": 6.103515625e-05,
+   "acc_diff": -0.10638297872340424,
+   "significant": false
+  }
+ }
+}

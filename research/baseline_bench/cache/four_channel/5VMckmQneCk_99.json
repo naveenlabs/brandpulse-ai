@@ -1,0 +1,36 @@
+{
+ "uid": "5VMckmQneCk_99",
+ "system": "four_channel",
+ "video_id": "5VMckmQneCk",
+ "segment_id": 99,
+ "split": "selection",
+ "payload": {
+  "segment_id": 99,
+  "start_s": 449.58,
+  "end_s": 453.08,
+  "transcript": "on a regular basis. I guess most of what I watch on YouTube is entertainment,",
+  "transcript_sentiment": "NEUTRAL (0.71)",
+  "vocal_emotion": "NEUTRAL (arousal 0.56)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "neutral (0.63)",
+  "video_comment_sentiment": "POSITIVE (0.95)"
+ },
+ "seconds": 4.394,
+ "raw": "{\n  \"segment_id\": 99,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"video_comment_sentiment\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and facial expressions suggest neutrality, but the audience's comments are overwhelmingly positive, indicating a conflict between the creator's tone and the audience's interpretation.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 99,
+  "start_s": 449.58,
+  "end_s": 453.08,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: video_comment_sentiment"
+  ],
+  "flagged": false
+ }
+}

@@ -1,0 +1,286 @@
+/* ===========================================================================
+   library.css — the rack.
+
+   Cards rather than rows, because every saved run has a shape and a row cannot
+   carry one. Each card holds that run's own trace, drawn from its own data by
+   the same code that draws the report's, at card size.
+   ======================================================================== */
+
+[data-library] { display: block; }
+
+.lb {
+  max-width: 1600px;
+  margin-inline: auto;
+  padding: var(--act-tight) var(--gutter) var(--act-norm);
+}
+
+/* Room for the comparison strip while it is open, so it never sits on top of
+   the last row of cards. */
+body:has(.cmp:not([hidden])) .lb { padding-bottom: 26rem; }
+
+.lb__head { max-width: 62ch; margin-bottom: var(--s-6); display: grid; gap: var(--s-4); }
+
+.lb__controls {
+  display: flex;
+  gap: var(--s-5);
+  flex-wrap: wrap;
+  padding-bottom: var(--s-4);
+  margin-bottom: var(--s-6);
+  border-bottom: var(--hair) solid var(--edge);
+}
+
+.lb__group { display: flex; gap: var(--s-2); flex-wrap: wrap; }
+.lb__empty { margin-bottom: var(--s-6); max-width: 60ch; }
+
+/* --- the rack ------------------------------------------------------------ */
+
+.rk {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+  gap: var(--s-5);
+}
+
+.rk__card {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  background: var(--panel);
+  border: var(--hair) solid var(--edge);
+  border-radius: var(--r-panel);
+  overflow: hidden;
+  transition: border-color var(--t-fast) var(--ease-out);
+}
+
+.rk__card:hover { border-color: var(--ink-3); }
+.rk__card:has(:focus-visible) { border-color: var(--ink); }
+
+.rk__card.is-broken { opacity: 0.8; }
+.rk__card.is-broken .rk__body { padding-block: var(--s-5); }
+
+/* The picker sits over the frame, not in the flow, so the card stays a card. */
+.rk__pick {
+  position: absolute;
+  top: var(--s-3);
+  left: var(--s-3);
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  background: color-mix(in srgb, var(--screen) 82%, transparent);
+  border: var(--hair) solid var(--edge-hi);
+  border-radius: var(--r-screen);
+}
+.rk__pick input { width: 17px; height: 17px; accent-color: var(--ink); cursor: pointer; }
+
+.rk__open { display: block; }
+
+.rk__frame {
+  display: block;
+  aspect-ratio: 16 / 9;
+  background: var(--screen);
+  overflow: hidden;
+}
+
+.rk__frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--t-slow) var(--ease-out);
+}
+.rk__card:hover .rk__frame img { transform: scale(1.03); }
+
+@media (prefers-reduced-motion: reduce) {
+  .rk__frame img, .rk__card:hover .rk__frame img { transition: none; transform: none; }
+}
+
+.rk__noframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(135deg,
+    transparent 0 7px, color-mix(in srgb, var(--edge) 60%, transparent) 7px 8px);
+}
+
+.rk__body { display: grid; gap: var(--s-3); padding: var(--s-4); align-content: start; }
+.rk__body h3 a { text-decoration: none; }
+.rk__body h3 a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+/* The run's own signature, drawn by the transport at card size. */
+.rk__sig .tp { border-color: var(--edge); }
+
+.rk__nums {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--s-3);
+  margin: 0;
+  padding-top: var(--s-3);
+  border-top: var(--hair) solid var(--edge);
+}
+.rk__nums div { display: grid; gap: 2px; }
+.rk__nums dd { margin: 0; color: var(--ink); }
+.rk__nums .is-tear { color: var(--tear); }
+
+.rk__meta { display: flex; align-items: center; gap: var(--s-2); flex-wrap: wrap; }
+.rk__sep { width: 1px; height: 0.85em; background: var(--edge-hi); display: inline-block; }
+
+.rk__thin {
+  padding-left: var(--s-3);
+  border-left: 2px solid var(--ch-facial);
+  color: var(--ink-2);
+}
+
+/* --- combined runs ------------------------------------------------------- */
+
+.sw { margin-top: var(--act-norm); padding-top: var(--s-6);
+  border-top: var(--hair) solid var(--edge); }
+.sw > h2 { margin-bottom: var(--s-3); }
+.sw .t-lede { margin-bottom: var(--s-6); }
+
+.sw__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr));
+  gap: var(--s-5);
+}
+
+.sw__one {
+  display: grid;
+  gap: var(--s-3);
+  align-content: start;
+  padding: var(--s-5);
+  background: var(--panel);
+  border: var(--hair) solid var(--edge);
+  border-radius: var(--r-panel);
+}
+.sw__link { text-decoration: none; }
+.sw__link:hover h3 { text-decoration: underline; text-underline-offset: 3px; }
+.sw__nums { display: flex; gap: var(--s-5); margin: 0; flex-wrap: wrap; }
+.sw__nums div { display: grid; gap: 2px; }
+.sw__nums dd { margin: 0; color: var(--ink); }
+
+/* --- the comparison strip ------------------------------------------------
+   Two runs held against each other without leaving the page. Both traces sit
+   on ONE shared scale, so the shorter run stops where it actually stops. */
+
+.cmp {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: var(--z-transport);
+  background: var(--body);
+  border-top: var(--hair) solid var(--edge-hi);
+  /* Never taller than half the window. Fixed to the bottom with no limit, two
+     runs' traces and figures on a phone held sideways stood taller than the
+     screen, and its top -- the Clear button's row -- could not be scrolled to
+     (INCLUSIVE_DESIGN.md R6). */
+  max-height: 50svh;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.cmp__inner {
+  max-width: 1600px;
+  margin-inline: auto;
+  /* Clear of a notch or home bar: viewport-fit=cover lets the page draw under
+     them, so the fixed strip has to step back itself (R11). */
+  padding: var(--s-4) max(var(--gutter), env(safe-area-inset-right))
+           max(var(--s-4), env(safe-area-inset-bottom)) max(var(--gutter), env(safe-area-inset-left));
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: var(--s-3) var(--s-5);
+  align-items: start;
+}
+
+.cmp__tag { grid-column: 1; color: var(--ink-2); }
+.cmp__inner .btn { grid-row: 1 / span 2; grid-column: 2; }
+
+.cmp__pair {
+  grid-column: 1;
+  display: grid;
+  gap: var(--s-4);
+}
+
+.cmp__one { display: grid; gap: var(--s-2); }
+
+/* The shared scale. Its full width is the longer of the two runs. */
+.cmp__scale {
+  width: 100%;
+  background: repeating-linear-gradient(90deg,
+    var(--edge) 0 1px, transparent 1px 10%);
+}
+
+.cmp__trace .tp { border-color: var(--edge); }
+
+.cmp__nums { display: flex; gap: var(--s-5); margin: 0; flex-wrap: wrap; }
+.cmp__nums div { display: flex; gap: var(--s-2); align-items: baseline; }
+.cmp__nums dt { color: var(--ink-3); }
+.cmp__nums dd { margin: 0; color: var(--ink); }
+
+.cmp__note { grid-column: 1; max-width: 80ch; }
+
+/* =============================================================== phone ==== */
+
+@media (max-width: 720px) {
+  .rk { grid-template-columns: minmax(0, 1fr); }
+  .rk__nums { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cmp__inner { grid-template-columns: minmax(0, 1fr); }
+  .cmp__inner .btn { grid-row: auto; grid-column: 1; justify-self: start; }
+  .cmp__nums { gap: var(--s-3); }
+}
+
+/* ===========================================================================
+   The loading panel's threshold, raised for this page — 23 Sep 2026.
+
+   chassis.css holds the panel back 700ms because a panel that appears and
+   leaves before it can be read IS the interruption rather than the cure, and
+   it names this page as the case it was written for.
+
+   The room now arrives measurably sooner: 3.75s to 2.35s on this machine with
+   no GPU, and a larger share of that on a machine with one, because what was
+   removed was a 900ms canvas fade and two thirds of the renderer's intro
+   rather than anything the CPU was doing. A threshold tuned to the old page is
+   too low for the new one -- it lets the panel appear for a few hundred
+   milliseconds on a load that was about to finish anyway, which is the exact
+   flash the 700ms exists to prevent.
+
+   950ms, so a load that now completes under a second shows the reader the
+   page's own ground and then the room, with nothing in between. A load that is
+   genuinely slow still explains itself, and now dissolves rather than cuts.
+   ======================================================================== */
+
+[data-library] { --boot-wait: 950ms; }
+
+/* --- the caveats ----------------------------------------------------------
+   The same disclosure every report carries, on the page that lists every
+   score (library.js caveatNote). Held to report.css's rule for .cal__caveat:
+   never collapsed, never clipped, never behind a summary, never on hover, and
+   long unbroken tokens in the pipeline's own sentences may break rather than
+   push the page wider than the window. Under the shelf it sits on the page
+   grid below the rail; in the list it follows the heading. */
+.lcav {
+  display: grid;
+  gap: var(--s-3);
+  max-width: 78ch;
+  margin: 0 0 var(--s-6);
+  padding: var(--s-4) 0 0;
+  border-top: var(--hair) solid var(--edge);
+}
+.bk .lcav { margin: var(--s-4) var(--gutter) var(--s-6); }
+.lcav__item {
+  margin: 0;
+  overflow-wrap: anywhere;
+  font: 400 var(--t-note)/1.56 var(--f-inst);
+  color: var(--ink-2);
+}
+.lcav__k { display: block; color: var(--ink); font-weight: 600; }
+
+/* --- deleting from the list (library.js deleteControl) -------------------- */
+.rk__del { margin-top: var(--s-3); }
+.rk__delbtn { color: var(--tear); }
+.rk__delq { display: grid; gap: var(--s-3); }
+.rk__delq p { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+.rk__delacts { display: flex; flex-wrap: wrap; gap: var(--s-3); }
+
+/* The way back to the shelf (library.js shelfToggle). */
+.lb__view { margin: 0; }

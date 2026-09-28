@@ -1,0 +1,4821 @@
+{
+  "video_url": "https://youtu.be/IS8O41HdCiQ",
+  "brand_name": "Nike",
+  "authenticity_score": 49.21,
+  "brand_health_score": 77.37,
+  "segment_count": 121,
+  "flagged_segments": [
+    {
+      "segment_id": 11,
+      "start_s": 63.0,
+      "end_s": 68.96000000000001,
+      "conflict_score": 0.8,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": true,
+      "text": "I was like, oh yeah, this is light work. This is nothing. And then by the end of the walk, I was like, goddamn my back, my shoulders, everything.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.4103
+        },
+        "facial_emotion": {
+          "dominant": "happy",
+          "confidence": 0.8732,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5067,
+          "valence": 0.432,
+          "dominance": 0.5354,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 159.85,
+        "energy_mean": 0.010701
+      }
+    },
+    {
+      "segment_id": 59,
+      "start_s": 290.44,
+      "end_s": 294.32000000000005,
+      "conflict_score": 0.8,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": true,
+      "text": "I'm going to move in that quickly already. I'm like, why not just start going a little bit faster?",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5067
+        },
+        "facial_emotion": {
+          "dominant": "fear",
+          "confidence": 0.978,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4776,
+          "valence": 0.4343,
+          "dominance": 0.5232,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 139.14,
+        "energy_mean": 0.020812
+      }
+    },
+    {
+      "segment_id": 94,
+      "start_s": 431.41999999999996,
+      "end_s": 435.71999999999997,
+      "conflict_score": 0.8,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": true,
+      "text": "Like even when I'm like not feeling a sneaker, like what am I doing talking about the sneaker?",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.6013
+        },
+        "facial_emotion": {
+          "dominant": "angry",
+          "confidence": 0.4371,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4146,
+          "valence": 0.2793,
+          "dominance": 0.4974,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 125.85,
+        "energy_mean": 0.034035
+      }
+    }
+  ],
+  "comment_sentiment": {
+    "label": "POSITIVE",
+    "confidence": 0.9615,
+    "comment_count": 100,
+    "distribution": {
+      "POSITIVE": 76,
+      "NEUTRAL": 18,
+      "NEGATIVE": 6
+    }
+  },
+  "bias_caveat": "IMPORTANT: Facial emotion recognition (DeepFace) has documented accuracy disparities across skin tone and gender (Buolamwini & Gebru, 2018; Fan et al., 2023). Authenticity scores informed by facial data should be interpreted with this limitation in mind.",
+  "vocal_caveat": "IMPORTANT: The vocal emotion channel is the second weakest of the four, after facial emotion, and is explicitly down-weighted. Benchmarked on 150 hand-rated clips from 6 speakers (vocal_bench/), the adopted model scores 48.9% three-class accuracy on held-out speakers - better than the model it replaced, which at 34.0% was significantly worse than always guessing NEUTRAL (p = 0.0070), but still not reliably better than that constant. No model tested beat it. Conflicts attributed to the vocal channel alone are damped accordingly, and per-segment claims should not rest on this channel. Read the within-video figure, not the headline: this report compares segments inside one video, and the channel's rank correlation with human judgement measured within a video is +0.159 across 147 clips and +0.056 on unseen speakers (vocal_bench/SPEAKER_NORM_RESULT.md). Most of its apparent accuracy is a between-video effect that says more about the speaker's habitual energy than about any individual moment.",
+  "vocal_licence_note": "The adopted vocal model (audeering/wav2vec2-large-robust-12-ft-emotion-msp-dim) is licensed CC-BY-NC-SA-4.0 and may not be used commercially. Every configuration measured in vocal_bench/ that showed usable signal was non-commercially licensed; the permissively-licensed alternatives measured at the bottom of every table. A commercial deployment would need to ship without this channel or replace it.",
+  "all_comments": [
+    {
+      "text": "What I’ve done to not get “burned out” from sneakers was to stop buying things that were hype and found my own style",
+      "label": "POSITIVE",
+      "confidence": 0.9768,
+      "like_count": 189
+    },
+    {
+      "text": "I believe the ZoomX used in this pair is the new TPE-based version whereas all the previous ones were PEBAX-based, so that's probably why it feels different.",
+      "label": "NEUTRAL",
+      "confidence": 0.9988,
+      "like_count": 65
+    },
+    {
+      "text": "We’re definitely getting older when we look forward to our morning walk. Great review, I feel like these will do extremely well, just as the original model has.",
+      "label": "POSITIVE",
+      "confidence": 0.9993,
+      "like_count": 39
+    },
+    {
+      "text": "Good to see your not just reviewing only Jordan’s",
+      "label": "POSITIVE",
+      "confidence": 0.9601,
+      "like_count": 19
+    },
+    {
+      "text": "I’ve been waiting 2 yrs for these to replace my invincible 3’s!",
+      "label": "POSITIVE",
+      "confidence": 0.8716,
+      "like_count": 12
+    },
+    {
+      "text": "That description of wanting to run even though you don't want to run is exactly how I feel walking in the Evo SLs.",
+      "label": "NEUTRAL",
+      "confidence": 0.5726,
+      "like_count": 57
+    },
+    {
+      "text": "I just supported my girlfriend through her first half marathon, and she guilt tripped me to get into running. This shoe after immediately trying on, I was like oh, I can run in these. and I love them now",
+      "label": "POSITIVE",
+      "confidence": 0.9991,
+      "like_count": 4
+    },
+    {
+      "text": "Man i got these and when i tell you… I feel no soreness during and post run. I absolutely love these and cant wait to see how the premiums will be",
+      "label": "POSITIVE",
+      "confidence": 0.9989,
+      "like_count": 8
+    },
+    {
+      "text": "Hey Chris, I’ma just tell you as a mail carrier who burns through shoes within three months walking and delivering mail, when you’re describing these it’s definitely possible to walk in them every day and within three months not have much if any grip on the bottom I walk at least 3 to 5 miles a day constantly delivering mail so it’s very easy for me to burn through shoes or burn through cushioning so she was like this that have that much extra cushioning are definitely helpful for comfort, but eventually the outsoles we are through",
+      "label": "POSITIVE",
+      "confidence": 0.9924,
+      "like_count": 10
+    },
+    {
+      "text": "150mi of running later, still as bouncy and comfortable as new.  New favorite max cushion shoe.",
+      "label": "POSITIVE",
+      "confidence": 0.9991,
+      "like_count": 1
+    },
+    {
+      "text": "yup, returning my vomero 18s and getting the plusses",
+      "label": "POSITIVE",
+      "confidence": 0.9984,
+      "like_count": 8
+    },
+    {
+      "text": "nike has confirmed that they use the zoom x name for multiple formulas of foam. so theyre all different in some way",
+      "label": "NEUTRAL",
+      "confidence": 0.9977,
+      "like_count": 16
+    },
+    {
+      "text": "i agree with u .. when u r truly passionate about something .. u cannot get burned out of it. u may feel u need a break .. that’s normal. but u will not feel u r tired of it. if u r .. then its not ur true passion. \nabout shoes .. u can get realisation that u need to stop buying. but u will not stop appreciate the art and beauty of it",
+      "label": "POSITIVE",
+      "confidence": 0.9512,
+      "like_count": 20
+    },
+    {
+      "text": "These are going to be for my 12 hour nurse shift👏👏👏",
+      "label": "POSITIVE",
+      "confidence": 0.9994,
+      "like_count": 2
+    },
+    {
+      "text": "Finally Nike coming out with exciting new running models again; for sure they saw the hype from maximalist models from Hoka and On getting a piece of their market share lol! Keep the competition up!",
+      "label": "POSITIVE",
+      "confidence": 0.999,
+      "like_count": 3
+    },
+    {
+      "text": "greetings from england, after watching your video i went ahead a purchased a pair and at a steal over here in the uk i grabbed a pair for 65 quid, cant wait to see what there like as a daily shoe, you're videos are top notch and very informative",
+      "label": "POSITIVE",
+      "confidence": 0.9994,
+      "like_count": 0
+    },
+    {
+      "text": "Been waiting for more people to review this, awesome to see you guys be one of the first!",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 1
+    },
+    {
+      "text": "They look comfortable. Can't wait till u review the Premium pair. Those look like the future of Nike.",
+      "label": "POSITIVE",
+      "confidence": 0.999,
+      "like_count": 1
+    },
+    {
+      "text": "Not sure if I ever left this comment here before but i got into hoops and running in part because of this channel. I loved sneakers and just wanted to know more and ended up watching a ton of Nightwing videos like 10 years ago or even more and they made me even more curious about two sports I had thought about picking up. So the way you talked about shoes was one of the things that tipped the scales and got me started. And since then I’ve also found that the right shoes really help me get excited about going on a run or to go shoot. So I totally get stepping in those and getting the itch to really try running in them.",
+      "label": "POSITIVE",
+      "confidence": 0.9987,
+      "like_count": 3
+    },
+    {
+      "text": "I was totally expecting the Wayne's World \"Schwing\" after hearing Chris talk about the premium and being able to touch the air pockets.",
+      "label": "NEUTRAL",
+      "confidence": 0.9878,
+      "like_count": 1
+    },
+    {
+      "text": "Never been burned out yet. The tech & designs always makes me curious. 😍",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 0
+    },
+    {
+      "text": "I love rucking too. Weighted training is awesome. My next training pair will definitely be the Vomero.",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 2
+    },
+    {
+      "text": "Now we have to see you review the Vomero Premium. 😁🤙",
+      "label": "POSITIVE",
+      "confidence": 0.9929,
+      "like_count": 1
+    },
+    {
+      "text": "perhaps aside from the composition of the zoomx, it's the geometry that makes these feel bouncier. the pegasus plus was meant to be neutral but the vomeros are built like rockers",
+      "label": "POSITIVE",
+      "confidence": 0.9348,
+      "like_count": 3
+    },
+    {
+      "text": "Good to see this review before getting these.",
+      "label": "POSITIVE",
+      "confidence": 0.9993,
+      "like_count": 1
+    },
+    {
+      "text": "Those look so dope! I can’t wait to see you do the premium version because those look insane! I hope they deliver like these do. As for the question of the day, nah I don’t and haven’t gotten tired of sneakers….its been like 44 years…I don’t see it happening. My buying habits have changed but that isn’t a reflection on my love for sneakers and the tech advancements within it. ❤",
+      "label": "POSITIVE",
+      "confidence": 0.9975,
+      "like_count": 0
+    },
+    {
+      "text": "I don't get burned out, just confused at some design choices. I think that might be due to whatever era you grew up in and having to deal with changing styles. to beat that, you just have to expand and find new things you like and the sneaker world will always come full circle for you",
+      "label": "POSITIVE",
+      "confidence": 0.8115,
+      "like_count": 1
+    },
+    {
+      "text": "I own a pair and they're amazing for both running and walking!",
+      "label": "POSITIVE",
+      "confidence": 0.9991,
+      "like_count": 0
+    },
+    {
+      "text": "To me it's more the spiritual successor to the Invincible though they've clearly mixed in some Vomero 18 DNA.",
+      "label": "NEUTRAL",
+      "confidence": 0.8007,
+      "like_count": 10
+    },
+    {
+      "text": "I agree with some of you in the earlier comments. If I’m not in LOVE, Jordan 1 lows, or kicks I missed out when I was in high/middle school. I’m not checking for them.",
+      "label": "NEUTRAL",
+      "confidence": 0.6948,
+      "like_count": 1
+    },
+    {
+      "text": "uh oh, I can see nightwing getting into running and join mrs. nightwing on weekly runs!!!  yes!!!!!!\n\nso I guess the wear on the outsole is like the reacts infinite RN 4?",
+      "label": "POSITIVE",
+      "confidence": 0.9895,
+      "like_count": 2
+    },
+    {
+      "text": "For the love… yet another well needed well done review",
+      "label": "POSITIVE",
+      "confidence": 0.9991,
+      "like_count": 1
+    },
+    {
+      "text": "Love the vomero 18 can’t wait to get the plus. Thx. Orange model is fire",
+      "label": "POSITIVE",
+      "confidence": 0.999,
+      "like_count": 1
+    },
+    {
+      "text": "Got it. Love your analysis. Straight to the point and real content.",
+      "label": "POSITIVE",
+      "confidence": 0.9991,
+      "like_count": 1
+    },
+    {
+      "text": "From a running perspective the orange is dope. I kinda think of running shoes like soccer boots since they aren't meant for lifestyle so the colors have a nice pop when you are running.",
+      "label": "POSITIVE",
+      "confidence": 0.9993,
+      "like_count": 3
+    },
+    {
+      "text": "These are a must for me as well. The premium as well. Thanks for the review.",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 0
+    },
+    {
+      "text": "QOTD:  I think the secret for sneaker collectors (or whatever it is you collect) is to figure out what you're actually interested in and pursue that.  Sneaker companies know how to manufacture FOMO and they're very good at it.  Add to that the thrill of making some money on the secondary market, and it's easy for buying to get out of hand.  Buy what you like, skip what you don't, and put the money you don't spend in a 90-day CD.\n\nThe Vomero 18s are incredible running shoes in all but hot weather—the uppers are cushy, and as a result they're hotboxes compared to other running shoes.  I've been looking forward to the Vomero Plus and I'm definitely interested in trying out the reformulated ZoomX.  Your first impressions sound like what I was hoping for.\n\nThanks for the review!  I left 18 1/2 thumbs up for the algorithm.  Catch you next time.",
+      "label": "POSITIVE",
+      "confidence": 0.9983,
+      "like_count": 1
+    },
+    {
+      "text": "got mine today,, ❤ so comfortable❤ love it😊",
+      "label": "POSITIVE",
+      "confidence": 0.9989,
+      "like_count": 0
+    },
+    {
+      "text": "I JUST PURCHASED TODAY FROM NIKE  MARCH 1 2026. THEY GIVE ME 60  DAYS TO TRY THEM OUT WOW WHAT A DEAL.  I HOPE I LIKE THEM  BECAUSE IM DOING SOME WALKING IN THIS PARK IN QUEENS FOR ONE HOUR A DAY HOPING TO INCREASE IT.",
+      "label": "POSITIVE",
+      "confidence": 0.9994,
+      "like_count": 0
+    },
+    {
+      "text": "Broooo!! I had to drop a comment…. I hadn’t seen your videos in yearssss like I remember years ago watching your videos on basketball shoe reviews especially retro Jordan’s…. Or like I remember the CP3 VII, the Jordan XX9, and man sooo many others I can’t remember.. then like I stopped watching shoe videos and now getting back into running and seeing your video popped up just brought me down memory lane. And it’s so cool to see you’re still doing your thing and at a much bigger scale and quality of production so just wanted to say amazing stuff man.. keep it up! That’s very admirable your work ethic and consistency",
+      "label": "POSITIVE",
+      "confidence": 0.9991,
+      "like_count": 0
+    },
+    {
+      "text": "QotD: Yeah, I don’t know that I get burnt out on sneakers but I do go through waves. After 3+ decades doing this I’d say that’s normal & certainly influenced by finances, but something always reinvigorates me; nostalgia, a unique silhouette, or like back in 2018, this channel! 😉",
+      "label": "POSITIVE",
+      "confidence": 0.9991,
+      "like_count": 1
+    },
+    {
+      "text": "Your videos are always so helpful, thank you!",
+      "label": "POSITIVE",
+      "confidence": 0.9991,
+      "like_count": 0
+    },
+    {
+      "text": "Great review! Might have to pick up a pair!🔥🔥🔥",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 0
+    },
+    {
+      "text": "Awesome review got me wanting a pair",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 0
+    },
+    {
+      "text": "Great shoe, and vídeo, as always.",
+      "label": "POSITIVE",
+      "confidence": 0.999,
+      "like_count": 0
+    },
+    {
+      "text": "Thanks you always help with my shoes \nI just have Achilles surgery so before I start wear my j's again I need something else",
+      "label": "POSITIVE",
+      "confidence": 0.9916,
+      "like_count": 0
+    },
+    {
+      "text": "💯% agree with you on burn out take",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 0
+    },
+    {
+      "text": "Can't wait to get my hands on the premium Pegasus and Vomero versions. They look out of this world. Designers went nuts and I love the function over form on the cushioning for both.",
+      "label": "POSITIVE",
+      "confidence": 0.999,
+      "like_count": 1
+    },
+    {
+      "text": "To avoid getting burnt out from anything, I just enjoy it at my own pace",
+      "label": "POSITIVE",
+      "confidence": 0.997,
+      "like_count": 1
+    },
+    {
+      "text": "These look hella comfy ☁️",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 0
+    },
+    {
+      "text": "Older head here. Stability shoes from Asics and Saucony have been like mana from heaven the past year. Love copping the loudest colorways on sale. Always hit on dad shoes, and feel great with my flat feet supported and toes allowed to have room.",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 21
+    },
+    {
+      "text": "It sounds like a good shoe andi might pick up a pair once they’re on sale, but yeah, the Premium is the one I’m really looking forward to. I know it’ll be heavy but I feel like it will have a really unique underfoot feel and hot damn those airbags.",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 0
+    },
+    {
+      "text": "I want the all black ones .. so dope! I also just got into sneakers after years of not giving a F so it's exciting for me🤙",
+      "label": "POSITIVE",
+      "confidence": 0.9991,
+      "like_count": 1
+    },
+    {
+      "text": "Man you sold me on these sneakers",
+      "label": "POSITIVE",
+      "confidence": 0.9983,
+      "like_count": 0
+    },
+    {
+      "text": "I like these, the toe swoosh is a good move. This colour way is too loud for me, but I’d try these if I was a runner based off of your review! As for the QOTD, I would say that I’ve not got every shoe I’d like to have, so that’s how I’m not burnt out. I do think you can get burnt out over a passion though, if you put a lot of energy into something you love, sometimes you might just need a break",
+      "label": "POSITIVE",
+      "confidence": 0.9994,
+      "like_count": 0
+    },
+    {
+      "text": "Hoping your next review will be the nike freak 7",
+      "label": "NEUTRAL",
+      "confidence": 0.9937,
+      "like_count": 1
+    },
+    {
+      "text": "One thing that wasn't mentioned is that these are the direct replacement for the Invincible Run 3's, which were already an incredibly comfortable shoe, hence the full length ZoomX and max cushion setup",
+      "label": "NEUTRAL",
+      "confidence": 0.9969,
+      "like_count": 0
+    },
+    {
+      "text": "might get this for my trip to japan",
+      "label": "POSITIVE",
+      "confidence": 0.957,
+      "like_count": 0
+    },
+    {
+      "text": "The only wear bester 😊",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 0
+    },
+    {
+      "text": "I was split between these and the Pegasus premium, and i ultimately chose these. The Pegasus premium, though I love the energy return, the zoom air bag felt really weak towards the heel. I had flashbacks of the vapor max ankle roll. The vomeros are overall a much more stable setup.",
+      "label": "POSITIVE",
+      "confidence": 0.9975,
+      "like_count": 0
+    },
+    {
+      "text": "Nightwing is a different breed unlike Seth Fowler who keeps messing up names and not doing research , he's just not into shoes now unlike Chris. Passion vs getting paid and free ad for the sock biz",
+      "label": "NEGATIVE",
+      "confidence": 0.9972,
+      "like_count": 3
+    },
+    {
+      "text": "TPE-based ZoomX, so if we're being very simple here, it's like a softer blend of Lightstrike Pro v1.",
+      "label": "NEUTRAL",
+      "confidence": 0.9946,
+      "like_count": 0
+    },
+    {
+      "text": "This model is very tempting. I have my Vomero 18, just ask my self if I'm ready to replace my Invincible run 3, yet!",
+      "label": "POSITIVE",
+      "confidence": 0.9988,
+      "like_count": 0
+    },
+    {
+      "text": "I have the previous…they are on the hot and heavy side but do provide cushion.",
+      "label": "POSITIVE",
+      "confidence": 0.9989,
+      "like_count": 0
+    },
+    {
+      "text": "Just saw this. Since I miss first Invincible, I probably get these. \nTry to think what color I am getting. These look cool.",
+      "label": "POSITIVE",
+      "confidence": 0.9993,
+      "like_count": 0
+    },
+    {
+      "text": "Might get these to replace my NB More V5 as my running/walking shoe",
+      "label": "NEUTRAL",
+      "confidence": 0.9735,
+      "like_count": 3
+    },
+    {
+      "text": "Love these Nike's!!!\nBest colourway...\nThe yellow 💛 \nor maybe, the white with the red midsole...\nWhat do people think is the best colour to get?",
+      "label": "POSITIVE",
+      "confidence": 0.9993,
+      "like_count": 0
+    },
+    {
+      "text": "Now i am burned out of Shoes so i am turning to watching movies i really like Movies especially horror movies my favorite horror movie is the exorcist",
+      "label": "POSITIVE",
+      "confidence": 0.9993,
+      "like_count": 2
+    },
+    {
+      "text": "I have invincible 3's and these look like they could supplant that whole line.  I may be wrong but the invincibles give that \"propelled\" feeling that make you want to run when you're already walking fast...",
+      "label": "POSITIVE",
+      "confidence": 0.9139,
+      "like_count": 3
+    },
+    {
+      "text": "Dope cw 🔥",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 0
+    },
+    {
+      "text": "They need to try brooks ghost max 2 durability and crazy cushioning that is built to last, I've had NB/and Nike and the rubber and foam just don't last long at all in my opinion and my history with some brands 😊",
+      "label": "POSITIVE",
+      "confidence": 0.8056,
+      "like_count": 0
+    },
+    {
+      "text": "damn. I also now have the same problem with my calves and Achilles heels. whenever I use my lebron 20s and yeezy slides. had to switch out of em for daily hooping and house slippers.",
+      "label": "NEGATIVE",
+      "confidence": 0.9962,
+      "like_count": 0
+    },
+    {
+      "text": "Great review.  Did you know more people die on average every year from coconuts falling than shark attacks?  Still not getting in the water.  I will play dodgeball with the coconuts.  Wonder how many sharks die from coconuts falling every year.",
+      "label": "POSITIVE",
+      "confidence": 0.778,
+      "like_count": 1
+    },
+    {
+      "text": "Yet to try these super chunky pairs. But the 18s looks slightly more appealing from an aesthetic view. I do want to try the Ava Rovers though lol. Not sure what burnout is, being more selective as you get older is defo a thing though 🙏",
+      "label": "POSITIVE",
+      "confidence": 0.9976,
+      "like_count": 0
+    },
+    {
+      "text": "Hoping that on release date white and orange combination is not the only offering",
+      "label": "NEUTRAL",
+      "confidence": 0.9938,
+      "like_count": 0
+    },
+    {
+      "text": "waiting for better colorways,forr  easy runs and casual",
+      "label": "POSITIVE",
+      "confidence": 0.999,
+      "like_count": 0
+    },
+    {
+      "text": "\"I don't want to run whatsoever\" 🤣🤣",
+      "label": "NEGATIVE",
+      "confidence": 0.953,
+      "like_count": 0
+    },
+    {
+      "text": "I'm in the market for recovery shoes, will have to wait for the Premium. Haha",
+      "label": "NEGATIVE",
+      "confidence": 0.9936,
+      "like_count": 0
+    },
+    {
+      "text": "Fun fact: The Breakfast Club is the best movie of all time. Use more clips please. 😎 💫",
+      "label": "POSITIVE",
+      "confidence": 0.9993,
+      "like_count": 0
+    },
+    {
+      "text": "I don’t know why, but this era of super thick midsoles on running shoes just doesn’t do it for me. I should just get my feet in a pair and see how they feel but aesthetically they are wild to me. Too wild lol\n\nCompletely agree with the notion, if you’re really passionate about something, you don’t get burned out. But it is good to see what other sides there are to what you love",
+      "label": "POSITIVE",
+      "confidence": 0.8871,
+      "like_count": 1
+    },
+    {
+      "text": "*QOTD request *: I know you’ve done plenty of retro basketball shoe reviews but would you ever consider a review on a retro new balance such as the 997, 998, or 1500? I’d love to know your perspective on those.",
+      "label": "NEUTRAL",
+      "confidence": 0.9451,
+      "like_count": 0
+    },
+    {
+      "text": "Chris doing some Rucking. Nice! \n As a runner, i look forward to the Vomero Premium. The plus, I’ll wait til on sale.",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 3
+    },
+    {
+      "text": "Looks like a good mall walking shoe",
+      "label": "POSITIVE",
+      "confidence": 0.9993,
+      "like_count": 0
+    },
+    {
+      "text": "🔥🔥🔥",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 0
+    },
+    {
+      "text": "Hmmmm these or the Nike Pegasus plus? 🤔",
+      "label": "NEUTRAL",
+      "confidence": 0.9988,
+      "like_count": 1
+    },
+    {
+      "text": "They keep adding cushioning eventually we’ll just be bouncing around like on pogo sticks.",
+      "label": "NEGATIVE",
+      "confidence": 0.998,
+      "like_count": 1
+    },
+    {
+      "text": "I'd have to say these are slightly larger than true to size. Putting them side by side with my Vomero 18's, both shoes size 12, the Plus is slightly longer.",
+      "label": "NEUTRAL",
+      "confidence": 0.9809,
+      "like_count": 0
+    },
+    {
+      "text": "Nike Algomerorithm Plus Review",
+      "label": "NEUTRAL",
+      "confidence": 0.9988,
+      "like_count": 0
+    },
+    {
+      "text": "Nice and comfortable. I have the 18 and they good. These look promising. Just the color? 😷",
+      "label": "POSITIVE",
+      "confidence": 0.9976,
+      "like_count": 0
+    },
+    {
+      "text": "Let’s go",
+      "label": "POSITIVE",
+      "confidence": 0.8062,
+      "like_count": 0
+    },
+    {
+      "text": "i want my Vomero 12 back",
+      "label": "POSITIVE",
+      "confidence": 0.4088,
+      "like_count": 0
+    },
+    {
+      "text": "I just ordered these this week the orange ones your showing",
+      "label": "POSITIVE",
+      "confidence": 0.9988,
+      "like_count": 1
+    },
+    {
+      "text": "those premium are absudly crazy..",
+      "label": "POSITIVE",
+      "confidence": 0.6091,
+      "like_count": 0
+    },
+    {
+      "text": "I thought these Vomero versions - Plus and the 18’s have the same stack height. It’s just that the Plus have higher sidewalls, making it look taller.🤔👀",
+      "label": "NEUTRAL",
+      "confidence": 0.9957,
+      "like_count": 0
+    },
+    {
+      "text": "My dyslexia had me calling these the Nike Venmo…",
+      "label": "NEUTRAL",
+      "confidence": 0.9947,
+      "like_count": 1
+    },
+    {
+      "text": "Aesthetics and onfoot feel preference are so individual. It's interesting to see what people like even though my tastes and preferences often differ from the popular takes.",
+      "label": "POSITIVE",
+      "confidence": 0.9974,
+      "like_count": 1
+    },
+    {
+      "text": "Worth an the\"features\" people talk about the contest l colorway IMHO can make it breaks the purchase decisions... At the end of the day \"it's not the show that wins the marathon\"",
+      "label": "NEUTRAL",
+      "confidence": 0.7228,
+      "like_count": 0
+    },
+    {
+      "text": "7:47 i disagree with this, I have to regulate my passion on things because I get a little too passionate on stuff and get burnt out on it, and if you say that “that means you weren’t passionate about those stuff” is kinda a cop out reason to just say that cause that means I just never been passionate about anything in my life, which isn’t true, it could be that I’m just burnt out in general lol but I do get burnt out on the stuff I am passionate about too",
+      "label": "NEGATIVE",
+      "confidence": 0.9896,
+      "like_count": 1
+    },
+    {
+      "text": "These will be legendary at Erewhon combined with yoga pants. I already see it lmfao",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 0
+    },
+    {
+      "text": "Excited for these! Even that specific color will be the one I get!🔥",
+      "label": "POSITIVE",
+      "confidence": 0.9991,
+      "like_count": 0
+    }
+  ],
+  "all_segments": [
+    {
+      "segment_id": 0,
+      "start_s": 0.0,
+      "end_s": 6.86,
+      "conflict_score": 0.171,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "facial_channel_downweighted[structural]: 0.5000 -> 0.1710 (x0.342, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "So I thought that the Nike Vomero 18 was amazing, but they just one-up themselves with the Plus model. These are fantastic.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.795
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9612,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6548,
+          "valence": 0.9193,
+          "dominance": 0.7211,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 165.84,
+        "energy_mean": 0.010035
+      }
+    },
+    {
+      "segment_id": 1,
+      "start_s": 12.44,
+      "end_s": 16.7,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "Hey, what's going on guys? My name is Chris. Welcome back to the official weartesters.com YouTube channel.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.657
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7143,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6393,
+          "valence": 0.8086,
+          "dominance": 0.6733,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 175.16,
+        "energy_mean": 0.015356
+      }
+    },
+    {
+      "segment_id": 2,
+      "start_s": 16.78,
+      "end_s": 24.6,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "Today we got a detailed look and review on these bad boys right here. This is the Nike Vomero Plus. This is essentially the Nike Vomero 18, but the next model.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.4728
+        },
+        "facial_emotion": {
+          "dominant": "happy",
+          "confidence": 0.4668,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6024,
+          "valence": 0.5963,
+          "dominance": 0.6298,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 147.59,
+        "energy_mean": 0.017121
+      }
+    },
+    {
+      "segment_id": 3,
+      "start_s": 24.6,
+      "end_s": 28.64,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "There's going to be one more that's called the Premium. Those things look insane.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.7719
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5263,
+          "valence": 0.5806,
+          "dominance": 0.579,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 147.43,
+        "energy_mean": 0.023081
+      }
+    },
+    {
+      "segment_id": 4,
+      "start_s": 28.64,
+      "end_s": 31.96,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "So I can't wait to try those. However, we got to wait till like October.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6478
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4794,
+          "valence": 0.4365,
+          "dominance": 0.5416,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 208.46,
+        "energy_mean": 0.014178
+      }
+    },
+    {
+      "segment_id": 5,
+      "start_s": 32.72,
+      "end_s": 35.24,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "These guys released pretty soon, early August.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7509
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5497,
+          "valence": 0.4761,
+          "dominance": 0.6415,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 229.72,
+        "energy_mean": 0.024302
+      }
+    },
+    {
+      "segment_id": 6,
+      "start_s": 37.260000000000005,
+      "end_s": 41.38,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "So we're talking about them right now. They come in a regular Nike orange box.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.8356
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6137,
+          "valence": 0.6353,
+          "dominance": 0.6558,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 181.31,
+        "energy_mean": 0.021939
+      }
+    },
+    {
+      "segment_id": 7,
+      "start_s": 41.46,
+      "end_s": 48.24,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "So just a performance box. And I, much like the last ones, you know, really just wear these for our walks and stuff.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.4489
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8902,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5396,
+          "valence": 0.6813,
+          "dominance": 0.5898,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 140.67,
+        "energy_mean": 0.017875
+      }
+    },
+    {
+      "segment_id": 8,
+      "start_s": 48.3,
+      "end_s": 53.96,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "So we walk almost five miles a day. And this is something that I've come to enjoy.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.9043
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8702,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5183,
+          "valence": 0.7,
+          "dominance": 0.5827,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 126.52,
+        "energy_mean": 0.017932
+      }
+    },
+    {
+      "segment_id": 9,
+      "start_s": 53.96,
+      "end_s": 58.74,
+      "conflict_score": 0.4,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "I used to load it, but now I really do enjoy it today. Actually, I stepped things up a little bit.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8635
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7503,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4527,
+          "valence": 0.7319,
+          "dominance": 0.535,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 135.05,
+        "energy_mean": 0.021226
+      }
+    },
+    {
+      "segment_id": 10,
+      "start_s": 58.84,
+      "end_s": 62.72,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "I put on, what was that? The 15 pound weight vest. That was pretty crazy.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.8048
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9345,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5634,
+          "valence": 0.534,
+          "dominance": 0.581,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 237.13,
+        "energy_mean": 0.022933
+      }
+    },
+    {
+      "segment_id": 11,
+      "start_s": 63.0,
+      "end_s": 68.96000000000001,
+      "conflict_score": 0.8,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": true,
+      "text": "I was like, oh yeah, this is light work. This is nothing. And then by the end of the walk, I was like, goddamn my back, my shoulders, everything.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.4103
+        },
+        "facial_emotion": {
+          "dominant": "happy",
+          "confidence": 0.8732,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5067,
+          "valence": 0.432,
+          "dominance": 0.5354,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 159.85,
+        "energy_mean": 0.010701
+      }
+    },
+    {
+      "segment_id": 12,
+      "start_s": 69.1,
+      "end_s": 73.82,
+      "conflict_score": 0.2052,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "facial_channel_downweighted[structural]: 0.6000 -> 0.2052 (x0.342, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "Like I was like, I felt, felt it all, but my shoes didn't. So these are fantastic, man.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8725
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.6876,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7406,
+          "valence": 0.7455,
+          "dominance": 0.768,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 165.12,
+        "energy_mean": 0.014438
+      }
+    },
+    {
+      "segment_id": 13,
+      "start_s": 73.82,
+      "end_s": 78.66,
+      "conflict_score": 0.171,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "facial_channel_downweighted[structural]: 0.5000 -> 0.1710 (x0.342, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "Like this is awesome. However, if you wanted a running perspective performance review, make sure that you head over to weartesters.com",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6237
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8433,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.704,
+          "valence": 0.8984,
+          "dominance": 0.7351,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 138.51,
+        "energy_mean": 0.01301
+      }
+    },
+    {
+      "segment_id": 14,
+      "start_s": 78.66,
+      "end_s": 82.89999999999999,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "where we've got you covered. But for here, this is just, you know, I'm just walking in them.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6975
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9705,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5424,
+          "valence": 0.497,
+          "dominance": 0.564,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 150.66,
+        "energy_mean": 0.021972
+      }
+    },
+    {
+      "segment_id": 15,
+      "start_s": 82.94,
+      "end_s": 86.88,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "I'm not casually walking. We're walking fast. I'm just saying we're not like we're running.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6437
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9824,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4846,
+          "valence": 0.3492,
+          "dominance": 0.5497,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 141.28,
+        "energy_mean": 0.017461
+      }
+    },
+    {
+      "segment_id": 16,
+      "start_s": 87.12,
+      "end_s": 93.17999999999999,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "However, they do make me feel like I want to run. And on top of that, you had said that like our speed was like crazy increased.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6701
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7057,
+          "frame_count": 6,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5268,
+          "valence": 0.4412,
+          "dominance": 0.5853,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 159.63,
+        "energy_mean": 0.026316
+      }
+    },
+    {
+      "segment_id": 17,
+      "start_s": 93.32,
+      "end_s": 94.86,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Yeah, you had a pep in your step.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.5101
+        },
+        "facial_emotion": {
+          "dominant": "angry",
+          "confidence": 0.5529,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4866,
+          "valence": 0.5195,
+          "dominance": 0.5442,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 264.27,
+        "energy_mean": 0.029737
+      }
+    },
+    {
+      "segment_id": 18,
+      "start_s": 98.64,
+      "end_s": 106.56,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "Not on purpose. I didn't feel like I was walking faster. But like for whatever reason, these like propel you. It's such a weird but amazing feel.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7753
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9602,
+          "frame_count": 8,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5538,
+          "valence": 0.5869,
+          "dominance": 0.5998,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 175.12,
+        "energy_mean": 0.015539
+      }
+    },
+    {
+      "segment_id": 19,
+      "start_s": 106.56,
+      "end_s": 110.34,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "So some of the B-roll you're going to see of the shoe is going to be of them brand new.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7997
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5321,
+          "valence": 0.5272,
+          "dominance": 0.5991,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 139.77,
+        "energy_mean": 0.021583
+      }
+    },
+    {
+      "segment_id": 20,
+      "start_s": 110.44,
+      "end_s": 115.94,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "I did some B-roll before I started walking in them. And I'm glad that I did because I was able to see a little bit of wear and tear on the outsoles.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8149
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5045,
+          "valence": 0.4838,
+          "dominance": 0.5568,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 122.15,
+        "energy_mean": 0.009867
+      }
+    },
+    {
+      "segment_id": 21,
+      "start_s": 116.44,
+      "end_s": 120.72,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "Which is kind of weird because I've only been wearing these for like a week. Like every day for a week, but still.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.7188
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9584,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5019,
+          "valence": 0.444,
+          "dominance": 0.5397,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 150.61,
+        "energy_mean": 0.014134
+      }
+    },
+    {
+      "segment_id": 22,
+      "start_s": 120.94,
+      "end_s": 125.72,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "And it's only been for walking. So that's one of the things where durability on the outsole might be a concern for some.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.4996
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9235,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEGATIVE",
+          "arousal": 0.3883,
+          "valence": 0.5505,
+          "dominance": 0.4694,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 109.01,
+        "energy_mean": 0.027956
+      }
+    },
+    {
+      "segment_id": 23,
+      "start_s": 125.84,
+      "end_s": 131.9,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "But it just kind of depends on what you're looking for. But either way, the outsole feels like it has a lot more rubber than the previous model",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5553
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9385,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4996,
+          "valence": 0.5478,
+          "dominance": 0.5431,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 148.15,
+        "energy_mean": 0.016007
+      }
+    },
+    {
+      "segment_id": 24,
+      "start_s": 131.9,
+      "end_s": 136.98000000000002,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "or the previous version of the Vomero 18. This one's got more rubber everywhere.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.481
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEGATIVE",
+          "arousal": 0.391,
+          "valence": 0.4987,
+          "dominance": 0.48,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 133.15,
+        "energy_mean": 0.018872
+      }
+    },
+    {
+      "segment_id": 25,
+      "start_s": 137.12,
+      "end_s": 141.94,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "You know what I mean? However, the four foot area where some of these lugs had some of those like little like nubs,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6597
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4902,
+          "valence": 0.4371,
+          "dominance": 0.5349,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 126.75,
+        "energy_mean": 0.026407
+      }
+    },
+    {
+      "segment_id": 26,
+      "start_s": 142.14000000000001,
+      "end_s": 146.12,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "like the little dots and stuff where they pay tribute to the waffle outsole. Those are already gone.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.6962
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.512,
+          "valence": 0.3178,
+          "dominance": 0.5547,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 138.06,
+        "energy_mean": 0.016046
+      }
+    },
+    {
+      "segment_id": 27,
+      "start_s": 146.3,
+      "end_s": 149.48000000000002,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "And this is only with, like I said, like a week's worth of like daily walking.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7246
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4093,
+          "valence": 0.558,
+          "dominance": 0.4933,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 126.02,
+        "energy_mean": 0.04376
+      }
+    },
+    {
+      "segment_id": 28,
+      "start_s": 149.66,
+      "end_s": 154.48000000000002,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "So if you're running and you're really like hitting the pavement, it might burn through the rubber pretty quickly.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.7655
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5031,
+          "valence": 0.4397,
+          "dominance": 0.5462,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 150.08,
+        "energy_mean": 0.023094
+      }
+    },
+    {
+      "segment_id": 29,
+      "start_s": 154.52,
+      "end_s": 159.14000000000001,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "It's very thin, not super durable, all that stuff. So if I'm already seeing like wear and tear with walks,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.8258
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4917,
+          "valence": 0.3561,
+          "dominance": 0.5625,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 119.85,
+        "energy_mean": 0.036761
+      }
+    },
+    {
+      "segment_id": 30,
+      "start_s": 159.14,
+      "end_s": 163.92,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "I can only imagine the amount of beating that this outsole is going to take with running.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.4007
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4608,
+          "valence": 0.4099,
+          "dominance": 0.5689,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 149.31,
+        "energy_mean": 0.022277
+      }
+    },
+    {
+      "segment_id": 31,
+      "start_s": 164.07999999999998,
+      "end_s": 170.92,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "But if you run on like a treadmill or you run indoors, like one of our new facilities here in the area has an indoor track and everything like that,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7403
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.5857,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4643,
+          "valence": 0.6303,
+          "dominance": 0.5025,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 122.94,
+        "energy_mean": 0.00574
+      }
+    },
+    {
+      "segment_id": 32,
+      "start_s": 170.95999999999998,
+      "end_s": 174.64,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "which is really, really cool. But if you are one of those people, you'll probably be fine.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8182
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.6357,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6209,
+          "valence": 0.9528,
+          "dominance": 0.6703,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 157.04,
+        "energy_mean": 0.015717
+      }
+    },
+    {
+      "segment_id": 33,
+      "start_s": 174.88,
+      "end_s": 180.98,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Now, despite having all that extra rubber, the shoe itself feels incredibly lighter than the previous model, the Vomero 18.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.4889
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8639,
+          "frame_count": 6,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5613,
+          "valence": 0.6779,
+          "dominance": 0.6152,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 142.2,
+        "energy_mean": 0.011361
+      }
+    },
+    {
+      "segment_id": 34,
+      "start_s": 181.2,
+      "end_s": 184.54,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "I don't know how. It's probably because of the cushion. The cushion's a little bit different.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.565
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9134,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4003,
+          "valence": 0.3643,
+          "dominance": 0.4709,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 151.21,
+        "energy_mean": 0.013012
+      }
+    },
+    {
+      "segment_id": 35,
+      "start_s": 184.64,
+      "end_s": 187.72,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "You know what I mean? This guy right here features full Zoom X.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6643
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6064,
+          "valence": 0.7033,
+          "dominance": 0.6439,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 136.32,
+        "energy_mean": 0.019623
+      }
+    },
+    {
+      "segment_id": 36,
+      "start_s": 187.8,
+      "end_s": 194.24,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "So the entire midsole is Zoom X. Whereas the last model was a dual density setup that had Zoom X and React X.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7809
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4691,
+          "valence": 0.5518,
+          "dominance": 0.5337,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 144.83,
+        "energy_mean": 0.017735
+      }
+    },
+    {
+      "segment_id": 37,
+      "start_s": 194.44,
+      "end_s": 198.10000000000002,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "I will say that the Vomero 18 is ridiculously comfortable.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8468
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5646,
+          "valence": 0.2518,
+          "dominance": 0.6371,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 154.1,
+        "energy_mean": 0.02284
+      }
+    },
+    {
+      "segment_id": 38,
+      "start_s": 198.44,
+      "end_s": 202.58,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "But after those long walks, sometimes that cushion was a little bit too much",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.5683
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4655,
+          "valence": 0.4332,
+          "dominance": 0.5282,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 165.52,
+        "energy_mean": 0.013753
+      }
+    },
+    {
+      "segment_id": 39,
+      "start_s": 202.58,
+      "end_s": 206.34,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "and it would really stress out my calves and my ligaments and things like that.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.9155
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9633,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4857,
+          "valence": 0.5082,
+          "dominance": 0.5573,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 136.56,
+        "energy_mean": 0.019105
+      }
+    },
+    {
+      "segment_id": 40,
+      "start_s": 206.38,
+      "end_s": 209.62,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "For whatever reason, even though this shoe feels thicker than those,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.4042
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.6741,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4377,
+          "valence": 0.3264,
+          "dominance": 0.5207,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 143.29,
+        "energy_mean": 0.026411
+      }
+    },
+    {
+      "segment_id": 41,
+      "start_s": 209.86,
+      "end_s": 213.38,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "like it's got like more cushion, you know what I mean? I'm not having that same problem.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.5103
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5116,
+          "valence": 0.3488,
+          "dominance": 0.5183,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 150.16,
+        "energy_mean": 0.01478
+      }
+    },
+    {
+      "segment_id": 42,
+      "start_s": 213.38,
+      "end_s": 218.29999999999998,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "And on top of that, I was having those same leg issues when I was wearing the Pegasus Plus,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.6666
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7572,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4824,
+          "valence": 0.463,
+          "dominance": 0.5513,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 144.88,
+        "energy_mean": 0.019747
+      }
+    },
+    {
+      "segment_id": 43,
+      "start_s": 218.44,
+      "end_s": 222.34,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "which has full-on Zoom X and everything like that. But that Zoom X feels different than this one.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5621
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4737,
+          "valence": 0.587,
+          "dominance": 0.5474,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 133.7,
+        "energy_mean": 0.025547
+      }
+    },
+    {
+      "segment_id": 44,
+      "start_s": 222.51999999999998,
+      "end_s": 226.84,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "The Zoom X on the Pegasus Plus was kind of like soft, squishy, fluffy.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6692
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5157,
+          "valence": 0.5488,
+          "dominance": 0.5657,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 180.06,
+        "energy_mean": 0.023413
+      }
+    },
+    {
+      "segment_id": 45,
+      "start_s": 226.98,
+      "end_s": 233.12,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "It still had some bounce back to it, but it was just more of a, like if you were to like land on a pillow, like that's kind of like how that felt.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5388
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5256,
+          "valence": 0.4339,
+          "dominance": 0.5524,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 155.04,
+        "energy_mean": 0.026191
+      }
+    },
+    {
+      "segment_id": 46,
+      "start_s": 233.26,
+      "end_s": 237.8,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "But the pillow would bounce back into shape, kind of like the pillows that they use in Airbnbs and hotels and shit.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5279
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4039,
+          "valence": 0.4927,
+          "dominance": 0.4559,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 138.07,
+        "energy_mean": 0.022446
+      }
+    },
+    {
+      "segment_id": 47,
+      "start_s": 238.01999999999998,
+      "end_s": 241.35999999999999,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "Like they feel like they got like air inside of the damn thing, so you can never get comfortable.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.853
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4969,
+          "valence": 0.4194,
+          "dominance": 0.5225,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 138.95,
+        "energy_mean": 0.035788
+      }
+    },
+    {
+      "segment_id": 48,
+      "start_s": 241.36,
+      "end_s": 245.60000000000002,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "It kind of felt like that where you crash on and it bumps you up a little bit. This is not like that.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.6097
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5929,
+          "valence": 0.347,
+          "dominance": 0.6346,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 156.07,
+        "energy_mean": 0.020407
+      }
+    },
+    {
+      "segment_id": 49,
+      "start_s": 245.66000000000003,
+      "end_s": 250.32000000000002,
+      "conflict_score": 0.2934,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.6000 -> 0.2934 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "Like this Zoom X feels much different. It feels really bouncy.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.4827
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5753,
+          "valence": 0.7364,
+          "dominance": 0.6301,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 163.03,
+        "energy_mean": 0.02748
+      }
+    },
+    {
+      "segment_id": 50,
+      "start_s": 250.42000000000002,
+      "end_s": 253.44000000000003,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "Like it's kind of weird. You can still compress it a little bit,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.6636
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5224,
+          "valence": 0.4302,
+          "dominance": 0.5356,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 169.0,
+        "energy_mean": 0.028296
+      }
+    },
+    {
+      "segment_id": 51,
+      "start_s": 253.54000000000002,
+      "end_s": 257.88,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "but nowhere near the level that the previous Zoom X iterations that I've tried,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5934
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.401,
+          "valence": 0.4505,
+          "dominance": 0.5043,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 134.2,
+        "energy_mean": 0.025883
+      }
+    },
+    {
+      "segment_id": 52,
+      "start_s": 258.02000000000004,
+      "end_s": 264.64,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "like nowhere near that. And this right here, which I would attribute to our faster walking pace coincidentally,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.4539
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5195,
+          "valence": 0.6167,
+          "dominance": 0.579,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 140.94,
+        "energy_mean": 0.017713
+      }
+    },
+    {
+      "segment_id": 53,
+      "start_s": 264.84000000000003,
+      "end_s": 268.6,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "just they feel like they're like really pushing you. Like whatever I'm putting on it,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.4843
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5574,
+          "valence": 0.2655,
+          "dominance": 0.6096,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 164.71,
+        "energy_mean": 0.017955
+      }
+    },
+    {
+      "segment_id": 54,
+      "start_s": 268.6,
+      "end_s": 272.06,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "like it's moving me forward. You know what I mean? This is one of those first shoes where,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.646
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5782,
+          "valence": 0.568,
+          "dominance": 0.6317,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 129.05,
+        "energy_mean": 0.050572
+      }
+    },
+    {
+      "segment_id": 55,
+      "start_s": 272.26000000000005,
+      "end_s": 277.26000000000005,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "despite the marketing, where like they're like, oh yeah, it's gonna be like however much percentage energy return.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6181
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5992,
+          "valence": 0.5489,
+          "dominance": 0.5971,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 144.79,
+        "energy_mean": 0.012133
+      }
+    },
+    {
+      "segment_id": 56,
+      "start_s": 277.32000000000005,
+      "end_s": 281.28000000000003,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "You always roll your eyes. They're like, yeah, sure. This actually feels like it's doing just that.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.4003
+        },
+        "facial_emotion": {
+          "dominant": "fear",
+          "confidence": 0.5333,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5991,
+          "valence": 0.5018,
+          "dominance": 0.6564,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 122.51,
+        "energy_mean": 0.018255
+      }
+    },
+    {
+      "segment_id": 57,
+      "start_s": 281.36,
+      "end_s": 285.82000000000005,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "And you can literally feel it. It's super weird. It made me want to start running.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.877
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.893,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5003,
+          "valence": 0.3852,
+          "dominance": 0.5802,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 145.71,
+        "energy_mean": 0.015107
+      }
+    },
+    {
+      "segment_id": 58,
+      "start_s": 285.94,
+      "end_s": 290.32000000000005,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "And I don't want to run whatsoever. But like this was one of those shoes where when I'm wearing,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5769
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9695,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4265,
+          "valence": 0.4148,
+          "dominance": 0.5095,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 114.66,
+        "energy_mean": 0.03031
+      }
+    },
+    {
+      "segment_id": 59,
+      "start_s": 290.44,
+      "end_s": 294.32000000000005,
+      "conflict_score": 0.8,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": true,
+      "text": "I'm going to move in that quickly already. I'm like, why not just start going a little bit faster?",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5067
+        },
+        "facial_emotion": {
+          "dominant": "fear",
+          "confidence": 0.978,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4776,
+          "valence": 0.4343,
+          "dominance": 0.5232,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 139.14,
+        "energy_mean": 0.020812
+      }
+    },
+    {
+      "segment_id": 60,
+      "start_s": 294.52000000000004,
+      "end_s": 297.72,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "But either way, super comfortable. I don't have no leg problems with these.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8343
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8152,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5644,
+          "valence": 0.2402,
+          "dominance": 0.6133,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 155.54,
+        "energy_mean": 0.020216
+      }
+    },
+    {
+      "segment_id": 61,
+      "start_s": 297.82,
+      "end_s": 301.22,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "That's the weirdest part. It's like, it's so much cushion. You're so high off the floor.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.8276
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9198,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5394,
+          "valence": 0.5304,
+          "dominance": 0.5776,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 144.55,
+        "energy_mean": 0.03062
+      }
+    },
+    {
+      "segment_id": 62,
+      "start_s": 301.44,
+      "end_s": 305.08000000000004,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "I was expecting my legs to be sore afterwards. And they're just not like,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.7158
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.745,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEGATIVE",
+          "arousal": 0.3934,
+          "valence": 0.3266,
+          "dominance": 0.501,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 111.85,
+        "energy_mean": 0.00938
+      }
+    },
+    {
+      "segment_id": 63,
+      "start_s": 305.12,
+      "end_s": 308.78000000000003,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "I've been excited every morning to put these on and go on my walks.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8401
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.999,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4581,
+          "valence": 0.6735,
+          "dominance": 0.5435,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 137.04,
+        "energy_mean": 0.016542
+      }
+    },
+    {
+      "segment_id": 64,
+      "start_s": 308.8,
+      "end_s": 312.44,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "And it's kind of weird. Now the upper on these guys is very thin.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.924
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7234,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.483,
+          "valence": 0.4213,
+          "dominance": 0.5267,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 162.45,
+        "energy_mean": 0.019086
+      }
+    },
+    {
+      "segment_id": 65,
+      "start_s": 312.66,
+      "end_s": 318.3,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "This is nothing crazy. It's just textile, everything. This particular colorway is not my real cup of tea or anything,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.7783
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.576,
+          "valence": 0.401,
+          "dominance": 0.6123,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 139.89,
+        "energy_mean": 0.021259
+      }
+    },
+    {
+      "segment_id": 66,
+      "start_s": 318.3,
+      "end_s": 321.34000000000003,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "but I could see this having great colors on it.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.9039
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5008,
+          "valence": 0.7446,
+          "dominance": 0.5714,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 174.35,
+        "energy_mean": 0.027204
+      }
+    },
+    {
+      "segment_id": 67,
+      "start_s": 321.52000000000004,
+      "end_s": 327.7,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "I just don't think that this bright orange one is it. However, they do have a little bit of like an Air Max 97 vibe to them with all of those little ridges.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.4098
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5696,
+          "valence": 0.6181,
+          "dominance": 0.604,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 142.99,
+        "energy_mean": 0.010611
+      }
+    },
+    {
+      "segment_id": 68,
+      "start_s": 327.9,
+      "end_s": 334.12,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "So if they were to make like a silver bullet colorway or any other like OG Air Max 97 style colorway on this,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7105
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5482,
+          "valence": 0.599,
+          "dominance": 0.5987,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 128.65,
+        "energy_mean": 0.02666
+      }
+    },
+    {
+      "segment_id": 69,
+      "start_s": 334.18,
+      "end_s": 340.52,
+      "conflict_score": 0.2934,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.6000 -> 0.2934 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "I think that that would be pretty fun. I will say that I love the swoosh that's under the mesh on the toe.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8959
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEGATIVE",
+          "arousal": 0.3626,
+          "valence": 0.6706,
+          "dominance": 0.4883,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 146.71,
+        "energy_mean": 0.010966
+      }
+    },
+    {
+      "segment_id": 70,
+      "start_s": 340.6,
+      "end_s": 344.15999999999997,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "I don't know why it's understated. It's weird, but I really like it.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6666
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4096,
+          "valence": 0.4683,
+          "dominance": 0.483,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 129.59,
+        "energy_mean": 0.027677
+      }
+    },
+    {
+      "segment_id": 71,
+      "start_s": 344.21999999999997,
+      "end_s": 347.44,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "It's something when I'm looking down, like I'm like, Oh, that's a dope little touch.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8743
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4811,
+          "valence": 0.6134,
+          "dominance": 0.5541,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 146.7,
+        "energy_mean": 0.03797
+      }
+    },
+    {
+      "segment_id": 72,
+      "start_s": 347.52,
+      "end_s": 352.66,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "I dig that. The tongue feels just kind of basic. It doesn't feel like it's anything premium or anything like that,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.5728
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5099,
+          "valence": 0.3687,
+          "dominance": 0.5494,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 163.83,
+        "energy_mean": 0.022398
+      }
+    },
+    {
+      "segment_id": 73,
+      "start_s": 352.8,
+      "end_s": 356.54,
+      "conflict_score": 0.2934,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.6000 -> 0.2934 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "but it feels good. It's got a regular tongue. It's not like a thin,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.565
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4512,
+          "valence": 0.5296,
+          "dominance": 0.507,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 134.52,
+        "energy_mean": 0.017498
+      }
+    },
+    {
+      "segment_id": 74,
+      "start_s": 356.76,
+      "end_s": 359.92,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "you know, like I just don't like them. Like the Kobe eights. If we're talking basketball,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.8357
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEGATIVE",
+          "arousal": 0.3827,
+          "valence": 0.3658,
+          "dominance": 0.4283,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 138.69,
+        "energy_mean": 0.014741
+      }
+    },
+    {
+      "segment_id": 75,
+      "start_s": 360.14,
+      "end_s": 363.5,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "if we're talking running, what was that shoe that we just reviewed? The Ava Rover,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.8466
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4643,
+          "valence": 0.4809,
+          "dominance": 0.5459,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 162.61,
+        "energy_mean": 0.026876
+      }
+    },
+    {
+      "segment_id": 76,
+      "start_s": 363.7,
+      "end_s": 368.0,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "or it's that thin felt tongue. Can't stand those things. So this is a more normal tongue.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.8914
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5205,
+          "valence": 0.4647,
+          "dominance": 0.5829,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 187.71,
+        "energy_mean": 0.016023
+      }
+    },
+    {
+      "segment_id": 77,
+      "start_s": 368.2,
+      "end_s": 371.98,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "It does have ventilation still. So that's nice. Even though it is on the thicker side,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.769
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4802,
+          "valence": 0.5346,
+          "dominance": 0.5562,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 136.99,
+        "energy_mean": 0.021855
+      }
+    },
+    {
+      "segment_id": 78,
+      "start_s": 372.2,
+      "end_s": 375.52,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "some people may not like this, but I personally do. I think that this is fantastic.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.9201
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9223,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4929,
+          "valence": 0.7744,
+          "dominance": 0.6049,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 141.2,
+        "energy_mean": 0.018705
+      }
+    },
+    {
+      "segment_id": 79,
+      "start_s": 375.71999999999997,
+      "end_s": 379.46,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "Actually much like the Ava Rover, these have a very similar lacing structure.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.633
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9529,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4118,
+          "valence": 0.5476,
+          "dominance": 0.5097,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 118.46,
+        "energy_mean": 0.022968
+      }
+    },
+    {
+      "segment_id": 80,
+      "start_s": 379.64,
+      "end_s": 383.62,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "Those little like cables and stuff. If you type your shoes really tight, those potentially could break.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.8023
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9132,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4789,
+          "valence": 0.5286,
+          "dominance": 0.53,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 163.14,
+        "energy_mean": 0.008838
+      }
+    },
+    {
+      "segment_id": 81,
+      "start_s": 383.65999999999997,
+      "end_s": 386.79999999999995,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "I don't see that happening in running, but it happened a lot in basketball.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6947
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9426,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4555,
+          "valence": 0.4499,
+          "dominance": 0.5232,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 144.0,
+        "energy_mean": 0.028256
+      }
+    },
+    {
+      "segment_id": 82,
+      "start_s": 387.03999999999996,
+      "end_s": 390.29999999999995,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "Now the insole is this guy right here. I would say it's fairly basic.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5452
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6062,
+          "valence": 0.3522,
+          "dominance": 0.6205,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 143.22,
+        "energy_mean": 0.025774
+      }
+    },
+    {
+      "segment_id": 83,
+      "start_s": 390.41999999999996,
+      "end_s": 393.71999999999997,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "It doesn't feel like anything special. If you want to take it out and swap it out for anything else,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.4862
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4737,
+          "valence": 0.3862,
+          "dominance": 0.5189,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 114.4,
+        "energy_mean": 0.033608
+      }
+    },
+    {
+      "segment_id": 84,
+      "start_s": 393.76,
+      "end_s": 397.06,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "you definitely could. I have been just fine with it. It's just a basic insole.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.5321
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4418,
+          "valence": 0.3971,
+          "dominance": 0.5206,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 157.73,
+        "energy_mean": 0.018961
+      }
+    },
+    {
+      "segment_id": 85,
+      "start_s": 397.15999999999997,
+      "end_s": 400.91999999999996,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "Just letting you guys know. In terms of fit and sizing, they do fit true to size.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6475
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5386,
+          "valence": 0.4518,
+          "dominance": 0.6151,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 171.3,
+        "energy_mean": 0.020003
+      }
+    },
+    {
+      "segment_id": 86,
+      "start_s": 401.06,
+      "end_s": 405.14,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "Whatever you typically wear, that's exactly what I would go with. And because this is a running shoe,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5391
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5612,
+          "valence": 0.4681,
+          "dominance": 0.6123,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 134.31,
+        "energy_mean": 0.033122
+      }
+    },
+    {
+      "segment_id": 87,
+      "start_s": 405.14,
+      "end_s": 408.97999999999996,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "there is going to be some reflective pieces that you can see like right here on the heel.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.638
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4475,
+          "valence": 0.6159,
+          "dominance": 0.4875,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 144.03,
+        "energy_mean": 0.016222
+      }
+    },
+    {
+      "segment_id": 88,
+      "start_s": 409.08,
+      "end_s": 412.38,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "But my favorite one actually is not that one, even though that's cool too.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6658
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4977,
+          "valence": 0.7127,
+          "dominance": 0.5651,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 166.51,
+        "energy_mean": 0.030119
+      }
+    },
+    {
+      "segment_id": 89,
+      "start_s": 412.65999999999997,
+      "end_s": 416.56,
+      "conflict_score": 0.2934,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.6000 -> 0.2934 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "My favorite one, and then there's these guys as well, but my favorite one is this.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7555
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEGATIVE",
+          "arousal": 0.3594,
+          "valence": 0.6714,
+          "dominance": 0.4789,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 193.39,
+        "energy_mean": 0.009768
+      }
+    },
+    {
+      "segment_id": 90,
+      "start_s": 416.7,
+      "end_s": 420.3,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "Like that's just a weird placement for it. I love that there's branding on it too.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7358
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4759,
+          "valence": 0.533,
+          "dominance": 0.5322,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 145.46,
+        "energy_mean": 0.032058
+      }
+    },
+    {
+      "segment_id": 91,
+      "start_s": 420.38,
+      "end_s": 423.56,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "I just, I don't know. Something about that like really gets me. I love that.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8879
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5994,
+          "valence": 0.5806,
+          "dominance": 0.6458,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 145.05,
+        "energy_mean": 0.032027
+      }
+    },
+    {
+      "segment_id": 92,
+      "start_s": 423.65999999999997,
+      "end_s": 426.74,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "Now with all that being said, what is today's user submitted question of the day?",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7699
+        },
+        "facial_emotion": {
+          "dominant": "surprise",
+          "confidence": 0.358,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5594,
+          "valence": 0.4101,
+          "dominance": 0.5969,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 159.63,
+        "energy_mean": 0.021959
+      }
+    },
+    {
+      "segment_id": 93,
+      "start_s": 427.0,
+      "end_s": 431.21999999999997,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "What do you do to keep from getting burned out on sneakers? I don't know if that's a thing.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.5306
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4067,
+          "valence": 0.2549,
+          "dominance": 0.4893,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 213.47,
+        "energy_mean": 0.02871
+      }
+    },
+    {
+      "segment_id": 94,
+      "start_s": 431.41999999999996,
+      "end_s": 435.71999999999997,
+      "conflict_score": 0.8,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": true,
+      "text": "Like even when I'm like not feeling a sneaker, like what am I doing talking about the sneaker?",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.6013
+        },
+        "facial_emotion": {
+          "dominant": "angry",
+          "confidence": 0.4371,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4146,
+          "valence": 0.2793,
+          "dominance": 0.4974,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 125.85,
+        "energy_mean": 0.034035
+      }
+    },
+    {
+      "segment_id": 95,
+      "start_s": 436.2,
+      "end_s": 440.02,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "I don't think that we get burnt out. I think that we get maybe tired,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.5409
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8458,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEGATIVE",
+          "arousal": 0.3361,
+          "valence": 0.2301,
+          "dominance": 0.4058,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 146.88,
+        "energy_mean": 0.028308
+      }
+    },
+    {
+      "segment_id": 96,
+      "start_s": 440.3,
+      "end_s": 443.7,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "maybe a little worn out. I guess that's what burnt out is. But like, I don't know.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.6766
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.6956,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4325,
+          "valence": 0.332,
+          "dominance": 0.4866,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 152.74,
+        "energy_mean": 0.019865
+      }
+    },
+    {
+      "segment_id": 97,
+      "start_s": 443.78,
+      "end_s": 447.41999999999996,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "If you're truly passionate about something, do you truly get burnt out with it?",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.6121
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8717,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.463,
+          "valence": 0.2783,
+          "dominance": 0.5634,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 183.23,
+        "energy_mean": 0.025901
+      }
+    },
+    {
+      "segment_id": 98,
+      "start_s": 447.47999999999996,
+      "end_s": 450.59999999999997,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "That's would be my question in reply to the question.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.8142
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8764,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEGATIVE",
+          "arousal": 0.3703,
+          "valence": 0.4352,
+          "dominance": 0.4615,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 196.67,
+        "energy_mean": 0.018553
+      }
+    },
+    {
+      "segment_id": 99,
+      "start_s": 450.76,
+      "end_s": 454.58,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "You know what I mean? Like if you're a movie buff, do you really get burnt out over watching movies?",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.8301
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9795,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.562,
+          "valence": 0.4203,
+          "dominance": 0.5891,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 135.08,
+        "energy_mean": 0.034999
+      }
+    },
+    {
+      "segment_id": 100,
+      "start_s": 454.68,
+      "end_s": 457.9,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Or do you get excited every time you go to watch a movie? If you love reading books,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.5174
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.813,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6183,
+          "valence": 0.8414,
+          "dominance": 0.6681,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 119.55,
+        "energy_mean": 0.015998
+      }
+    },
+    {
+      "segment_id": 101,
+      "start_s": 458.03999999999996,
+      "end_s": 461.06,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "do you get tired of books? Like obviously it sucks when one sucks.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.9041
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.6786,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5277,
+          "valence": 0.1628,
+          "dominance": 0.6095,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 166.5,
+        "energy_mean": 0.023617
+      }
+    },
+    {
+      "segment_id": 102,
+      "start_s": 461.06,
+      "end_s": 464.16,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "And that's what I feel like with a piece of footwear. Like if one sucks,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.7455
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9466,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4066,
+          "valence": 0.349,
+          "dominance": 0.4674,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 135.08,
+        "energy_mean": 0.025485
+      }
+    },
+    {
+      "segment_id": 103,
+      "start_s": 464.22,
+      "end_s": 469.32,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "it's like, oh, that sucks. But it still gives you something to talk about. You know what I mean? I think that if you're truly passionate about something,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.4783
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8043,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6186,
+          "valence": 0.235,
+          "dominance": 0.6519,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 181.83,
+        "energy_mean": 0.016913
+      }
+    },
+    {
+      "segment_id": 104,
+      "start_s": 469.5,
+      "end_s": 473.2,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "you can't truly get burnt out with it personally. That's like my view.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.8234
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9038,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4587,
+          "valence": 0.2905,
+          "dominance": 0.5521,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 142.26,
+        "energy_mean": 0.030631
+      }
+    },
+    {
+      "segment_id": 105,
+      "start_s": 473.28000000000003,
+      "end_s": 476.6,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "If you are getting burnt out, fatigued or whatever you want to call it,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.7423
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9045,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4599,
+          "valence": 0.249,
+          "dominance": 0.5411,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 138.38,
+        "energy_mean": 0.026475
+      }
+    },
+    {
+      "segment_id": 106,
+      "start_s": 476.62,
+      "end_s": 481.08,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "like whatever the word that you want to use, then I don't think that that's a passion of yours.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.5426
+        },
+        "facial_emotion": {
+          "dominant": "angry",
+          "confidence": 0.5009,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4928,
+          "valence": 0.3748,
+          "dominance": 0.5646,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 148.08,
+        "energy_mean": 0.014215
+      }
+    },
+    {
+      "segment_id": 107,
+      "start_s": 481.32,
+      "end_s": 484.42,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "Might be an interest, but maybe not quite a passion. But what about you guys?",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6097
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7504,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5238,
+          "valence": 0.4765,
+          "dominance": 0.5722,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 162.59,
+        "energy_mean": 0.014175
+      }
+    },
+    {
+      "segment_id": 108,
+      "start_s": 484.54,
+      "end_s": 489.32,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "Do you guys get, what was the question? Burnt out over footwear? What do you do to keep from getting burnt out?",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5711
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8706,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4461,
+          "valence": 0.3588,
+          "dominance": 0.507,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 187.74,
+        "energy_mean": 0.021384
+      }
+    },
+    {
+      "segment_id": 109,
+      "start_s": 489.54,
+      "end_s": 492.58,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "Oh yeah. I just, it just happens naturally, man. I'm just not sick of this.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.5798
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7831,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4096,
+          "valence": 0.2574,
+          "dominance": 0.4886,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 107.33,
+        "energy_mean": 0.023391
+      }
+    },
+    {
+      "segment_id": 110,
+      "start_s": 492.84,
+      "end_s": 496.36,
+      "conflict_score": 0.4,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "I love shoes. So what about you guys? Sound off below. Let me know.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.591
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7079,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5521,
+          "valence": 0.7515,
+          "dominance": 0.6369,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 145.97,
+        "energy_mean": 0.020538
+      }
+    },
+    {
+      "segment_id": 111,
+      "start_s": 496.48,
+      "end_s": 500.4,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "On top of all of that, are you excited for the Vomero Plus? I think it's kind of a weird name.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.4959
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7489,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4869,
+          "valence": 0.5626,
+          "dominance": 0.5309,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 155.57,
+        "energy_mean": 0.017968
+      }
+    },
+    {
+      "segment_id": 112,
+      "start_s": 500.48,
+      "end_s": 503.6,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "They took out the 18, you know, it's clearly the 18 Plus.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7842
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEGATIVE",
+          "arousal": 0.3824,
+          "valence": 0.4604,
+          "dominance": 0.4428,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 218.67,
+        "energy_mean": 0.015996
+      }
+    },
+    {
+      "segment_id": 113,
+      "start_s": 503.86,
+      "end_s": 507.36,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "But this, this is a fantastic model, man. I think that this is better than the other one.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.9134
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5969,
+          "valence": 0.8063,
+          "dominance": 0.6743,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 136.06,
+        "energy_mean": 0.026627
+      }
+    },
+    {
+      "segment_id": 114,
+      "start_s": 507.48,
+      "end_s": 510.68,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "Makes me really excited to try out the premium,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.9259
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5376,
+          "valence": 0.8556,
+          "dominance": 0.6177,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 144.23,
+        "energy_mean": 0.025549
+      }
+    },
+    {
+      "segment_id": 115,
+      "start_s": 510.84,
+      "end_s": 514.26,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "I think is what it was called. When you see that much cushion in a shoe and it's actually like,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5569
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.532,
+          "valence": 0.5381,
+          "dominance": 0.5787,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 134.81,
+        "energy_mean": 0.029431
+      }
+    },
+    {
+      "segment_id": 116,
+      "start_s": 514.28,
+      "end_s": 518.24,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "you could touch it. You know what I mean? Like those airbags you could touch. I'm sorry, man,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.8228
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7829,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4594,
+          "valence": 0.3404,
+          "dominance": 0.5324,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 174.75,
+        "energy_mean": 0.016902
+      }
+    },
+    {
+      "segment_id": 117,
+      "start_s": 518.28,
+      "end_s": 521.3,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "but they're talking about passion. Hot damn. It's steamy in here.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.4527
+        },
+        "facial_emotion": {
+          "dominant": "surprise",
+          "confidence": 0.8973,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.4971,
+          "valence": 0.5669,
+          "dominance": 0.5789,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 203.88,
+        "energy_mean": 0.015046
+      }
+    },
+    {
+      "segment_id": 118,
+      "start_s": 522.54,
+      "end_s": 525.78,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "Alrighty then. But sound off below and let us know if you tried these out.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.4863
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6192,
+          "valence": 0.695,
+          "dominance": 0.6363,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 195.3,
+        "energy_mean": 0.021892
+      }
+    },
+    {
+      "segment_id": 119,
+      "start_s": 525.88,
+      "end_s": 529.86,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "Also let us know what you think about them, whether it's for walking or running. I think it was a perfect shoe for both.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8285
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5634,
+          "valence": 0.7345,
+          "dominance": 0.6211,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 125.69,
+        "energy_mean": 0.021164
+      }
+    },
+    {
+      "segment_id": 120,
+      "start_s": 529.9599999999999,
+      "end_s": 534.98,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "Thank you guys so much for being here. Thank you so much for watching. We'll catch you guys in the next one. So until then, y'all have a good one.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.9206
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.6968,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5786,
+          "valence": 0.8487,
+          "dominance": 0.626,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 193.19,
+        "energy_mean": 0.019692
+      }
+    }
+  ],
+  "video_title": "Nike Vomero Plus Review",
+  "sweep_id": "nike-year-365d-d096f4e7"
+}

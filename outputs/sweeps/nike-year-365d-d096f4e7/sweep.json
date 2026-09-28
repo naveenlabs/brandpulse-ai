@@ -1,0 +1,125 @@
+{
+  "sweep_id": "nike-year-365d-d096f4e7",
+  "subject": "Nike",
+  "subject_kind": "brand",
+  "window": "year",
+  "offset_days": 365,
+  "status": "partial",
+  "controller": "llama3.1:8b",
+  "finished_at": 1790550005.476427,
+  "summary": {
+    "video_count": 4,
+    "authenticity": {
+      "mean": 55.36,
+      "min": 49.21,
+      "max": 64.96,
+      "spread": 15.75,
+      "stdev": 6.25,
+      "values": [
+        49.21,
+        64.96,
+        56.83,
+        50.44
+      ]
+    },
+    "brand_health": {
+      "mean": 73.19,
+      "min": 55.41,
+      "max": 81.61,
+      "spread": 26.2,
+      "stdev": 10.39,
+      "values": [
+        77.37,
+        55.41,
+        81.61,
+        78.39
+      ]
+    },
+    "segments_total": 426,
+    "flagged_total": 7,
+    "flagged_share": 0.01643192488262911,
+    "comments_total": 313,
+    "comment_distribution": {
+      "POSITIVE": 170,
+      "NEUTRAL": 106,
+      "NEGATIVE": 37
+    },
+    "spread_verdict": "these videos differ noticeably from each other",
+    "note": "Mean of 4 videos. Too few to generalise from, and the range matters more than the average.",
+    "means_not": "This is how much the four channels disagreed with each other, averaged across these videos. It is not a measure of whether the brand is liked, and not a measure of whether anyone was honest."
+  },
+  "members": [
+    {
+      "video_id": "IS8O41HdCiQ",
+      "title": "Nike Vomero Plus Review",
+      "channel": "WearTesters",
+      "published_at": "2025-07-28T14:00:25Z",
+      "duration_s": 536,
+      "comment_count": 179,
+      "authenticity_score": 49.21,
+      "brand_health_score": 77.37,
+      "analysed": true
+    },
+    {
+      "video_id": "gGI9SUhASao",
+      "title": "IS COURT VISION LOW BETTER THAN AIR FORCE 1? | NIKE COURT VISION VS NIKE AIR FORCE 1 FULL COMPARISON",
+      "channel": "Achint Chawla - Sneaker Soul",
+      "published_at": "2025-04-24T15:30:30Z",
+      "duration_s": 464,
+      "comment_count": 96,
+      "authenticity_score": 64.96,
+      "brand_health_score": 55.41,
+      "analysed": true
+    },
+    {
+      "video_id": "oZaBgxy_dr0",
+      "title": "THE SURPRISING TRUTH - Nike Alphafly 3 After 200 Miles Review",
+      "channel": "Ben Parkes",
+      "published_at": "2024-10-22T17:22:15Z",
+      "duration_s": 597,
+      "comment_count": 251,
+      "authenticity_score": null,
+      "brand_health_score": null,
+      "analysed": false
+    },
+    {
+      "video_id": "TjeP1L_Xz7M",
+      "title": "Nike JA 3 Worth The Hype? Review & On Foot",
+      "channel": "Elliot Page",
+      "published_at": "2025-08-08T15:00:06Z",
+      "duration_s": 537,
+      "comment_count": 105,
+      "authenticity_score": 56.83,
+      "brand_health_score": 81.61,
+      "analysed": true
+    },
+    {
+      "video_id": "BvywC2oVodU",
+      "title": "Why The Nike Reactx Rejuven8 Slide Will Be EVERYWHERE",
+      "channel": "Elliot Page",
+      "published_at": "2025-04-17T16:54:41Z",
+      "duration_s": 486,
+      "comment_count": 204,
+      "authenticity_score": 50.44,
+      "brand_health_score": 78.39,
+      "analysed": true
+    }
+  ],
+  "failed": [
+    {
+      "video_id": "oZaBgxy_dr0",
+      "title": "THE SURPRISING TRUTH - Nike Alphafly 3 After 200 Miles Review",
+      "reason": "yt-dlp failed to download 'https://youtu.be/oZaBgxy_dr0': ERROR: unable to download video data: HTTP Error 403: Forbidden",
+      "detail": "RuntimeError"
+    }
+  ],
+  "selection": {
+    "query_used": "Nike review",
+    "published_after": "2024-09-27T21:46:20Z",
+    "published_before": "2025-09-27T21:46:20Z",
+    "considered": 25,
+    "rejected": []
+  },
+  "bias_caveat": "IMPORTANT: Facial emotion recognition (DeepFace) has documented accuracy disparities across skin tone and gender (Buolamwini & Gebru, 2018; Fan et al., 2023). Authenticity scores informed by facial data should be interpreted with this limitation in mind.",
+  "vocal_caveat": "IMPORTANT: The vocal emotion channel is the second weakest of the four, after facial emotion, and is explicitly down-weighted. Benchmarked on 150 hand-rated clips from 6 speakers (vocal_bench/), the adopted model scores 48.9% three-class accuracy on held-out speakers - better than the model it replaced, which at 34.0% was significantly worse than always guessing NEUTRAL (p = 0.0070), but still not reliably better than that constant. No model tested beat it. Conflicts attributed to the vocal channel alone are damped accordingly, and per-segment claims should not rest on this channel. Read the within-video figure, not the headline: this report compares segments inside one video, and the channel's rank correlation with human judgement measured within a video is +0.159 across 147 clips and +0.056 on unseen speakers (vocal_bench/SPEAKER_NORM_RESULT.md). Most of its apparent accuracy is a between-video effect that says more about the speaker's habitual energy than about any individual moment."
+}

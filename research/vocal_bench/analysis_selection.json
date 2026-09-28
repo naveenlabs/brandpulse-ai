@@ -1,0 +1,787 @@
+{
+ "split": "selection",
+ "n": 100,
+ "surprise_neutral": false,
+ "alpha_corrected": 0.005555555555555556,
+ "thresholds": {
+  "audeering-msp-dim": [
+   0.4,
+   0.8
+  ],
+  "wavlm-msp-dim": [
+   0.2,
+   0.65
+  ]
+ },
+ "scored": [
+  {
+   "candidate": "audeering-msp-dim",
+   "kind": "dimensional",
+   "licence": "cc-by-nc-sa-4.0",
+   "incumbent": false,
+   "n": 100,
+   "accuracy": 0.54,
+   "accuracy_ci": [
+    0.44264685393523856,
+    0.6343935614666815
+   ],
+   "macro_f1": 0.36613903450166174,
+   "per_class": {
+    "POSITIVE": {
+     "precision": 1.0,
+     "recall": 0.02857142857142857,
+     "f1": 0.05555555555555556,
+     "support": 35,
+     "predicted": 1
+    },
+    "NEUTRAL": {
+     "precision": 0.5384615384615384,
+     "recall": 0.98,
+     "f1": 0.6950354609929078,
+     "support": 50,
+     "predicted": 91
+    },
+    "NEGATIVE": {
+     "precision": 0.5,
+     "recall": 0.26666666666666666,
+     "f1": 0.3478260869565218,
+     "support": 15,
+     "predicted": 8
+    }
+   },
+   "confusion": {
+    "POSITIVE": {
+     "POSITIVE": 1,
+     "NEUTRAL": 31,
+     "NEGATIVE": 3,
+     "UNMAPPED": 0
+    },
+    "NEUTRAL": {
+     "POSITIVE": 0,
+     "NEUTRAL": 49,
+     "NEGATIVE": 1,
+     "UNMAPPED": 0
+    },
+    "NEGATIVE": {
+     "POSITIVE": 0,
+     "NEUTRAL": 11,
+     "NEGATIVE": 4,
+     "UNMAPPED": 0
+    },
+    "UNMAPPED": {
+     "POSITIVE": 0,
+     "NEUTRAL": 0,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    }
+   },
+   "unmapped": 0,
+   "coverage": 1.0,
+   "coverage_accuracy": 0.54,
+   "realtime_factor": 18.22,
+   "n_failed": 0,
+   "thresholds": [
+    0.4,
+    0.8
+   ]
+  },
+  {
+   "candidate": "dpngtm-wav2vec2",
+   "kind": "categorical",
+   "licence": "mit",
+   "incumbent": false,
+   "n": 100,
+   "accuracy": 0.38,
+   "accuracy_ci": [
+    0.2909744920013438,
+    0.47790426179289663
+   ],
+   "macro_f1": 0.37429193899782137,
+   "per_class": {
+    "POSITIVE": {
+     "precision": 0.43243243243243246,
+     "recall": 0.45714285714285713,
+     "f1": 0.4444444444444445,
+     "support": 35,
+     "predicted": 37
+    },
+    "NEUTRAL": {
+     "precision": 0.7777777777777778,
+     "recall": 0.28,
+     "f1": 0.4117647058823529,
+     "support": 50,
+     "predicted": 18
+    },
+    "NEGATIVE": {
+     "precision": 0.17777777777777778,
+     "recall": 0.5333333333333333,
+     "f1": 0.26666666666666666,
+     "support": 15,
+     "predicted": 45
+    }
+   },
+   "confusion": {
+    "POSITIVE": {
+     "POSITIVE": 16,
+     "NEUTRAL": 2,
+     "NEGATIVE": 17,
+     "UNMAPPED": 0
+    },
+    "NEUTRAL": {
+     "POSITIVE": 16,
+     "NEUTRAL": 14,
+     "NEGATIVE": 20,
+     "UNMAPPED": 0
+    },
+    "NEGATIVE": {
+     "POSITIVE": 5,
+     "NEUTRAL": 2,
+     "NEGATIVE": 8,
+     "UNMAPPED": 0
+    },
+    "UNMAPPED": {
+     "POSITIVE": 0,
+     "NEUTRAL": 0,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    }
+   },
+   "unmapped": 0,
+   "coverage": 1.0,
+   "coverage_accuracy": 0.38,
+   "realtime_factor": 44.06,
+   "n_failed": 0,
+   "thresholds": null
+  },
+  {
+   "candidate": "emotion2vec-base",
+   "kind": "categorical",
+   "licence": "other (GitHub badge says MIT)",
+   "incumbent": false,
+   "n": 100,
+   "accuracy": 0.49,
+   "accuracy_ci": [
+    0.3942183009238615,
+    0.5865215952256586
+   ],
+   "macro_f1": 0.25092592592592594,
+   "per_class": {
+    "POSITIVE": {
+     "precision": 0.4,
+     "recall": 0.05714285714285714,
+     "f1": 0.09999999999999999,
+     "support": 35,
+     "predicted": 5
+    },
+    "NEUTRAL": {
+     "precision": 0.5,
+     "recall": 0.94,
+     "f1": 0.6527777777777778,
+     "support": 50,
+     "predicted": 94
+    },
+    "NEGATIVE": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "support": 15,
+     "predicted": 0
+    }
+   },
+   "confusion": {
+    "POSITIVE": {
+     "POSITIVE": 2,
+     "NEUTRAL": 32,
+     "NEGATIVE": 0,
+     "UNMAPPED": 1
+    },
+    "NEUTRAL": {
+     "POSITIVE": 3,
+     "NEUTRAL": 47,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    },
+    "NEGATIVE": {
+     "POSITIVE": 0,
+     "NEUTRAL": 15,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    },
+    "UNMAPPED": {
+     "POSITIVE": 0,
+     "NEUTRAL": 0,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    }
+   },
+   "unmapped": 1,
+   "coverage": 0.99,
+   "coverage_accuracy": 0.494949494949495,
+   "realtime_factor": 26.13,
+   "n_failed": 0,
+   "thresholds": null
+  },
+  {
+   "candidate": "emotion2vec-large",
+   "kind": "categorical",
+   "licence": "other (GitHub badge says MIT)",
+   "incumbent": false,
+   "n": 100,
+   "accuracy": 0.41,
+   "accuracy_ci": [
+    0.31867157095664655,
+    0.5079874943890338
+   ],
+   "macro_f1": 0.27844120104182024,
+   "per_class": {
+    "POSITIVE": {
+     "precision": 0.36363636363636365,
+     "recall": 0.22857142857142856,
+     "f1": 0.2807017543859649,
+     "support": 35,
+     "predicted": 22
+    },
+    "NEUTRAL": {
+     "precision": 0.4782608695652174,
+     "recall": 0.66,
+     "f1": 0.5546218487394958,
+     "support": 50,
+     "predicted": 69
+    },
+    "NEGATIVE": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "support": 15,
+     "predicted": 1
+    }
+   },
+   "confusion": {
+    "POSITIVE": {
+     "POSITIVE": 8,
+     "NEUTRAL": 24,
+     "NEGATIVE": 1,
+     "UNMAPPED": 2
+    },
+    "NEUTRAL": {
+     "POSITIVE": 11,
+     "NEUTRAL": 33,
+     "NEGATIVE": 0,
+     "UNMAPPED": 6
+    },
+    "NEGATIVE": {
+     "POSITIVE": 3,
+     "NEUTRAL": 12,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    },
+    "UNMAPPED": {
+     "POSITIVE": 0,
+     "NEUTRAL": 0,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    }
+   },
+   "unmapped": 8,
+   "coverage": 0.92,
+   "coverage_accuracy": 0.44565217391304346,
+   "realtime_factor": 20.05,
+   "n_failed": 0,
+   "thresholds": null
+  },
+  {
+   "candidate": "emotion2vec-seed",
+   "kind": "categorical",
+   "licence": "other (GitHub badge says MIT)",
+   "incumbent": false,
+   "n": 100,
+   "accuracy": 0.46,
+   "accuracy_ci": [
+    0.36560643853331865,
+    0.5573531460647615
+   ],
+   "macro_f1": 0.2384823848238483,
+   "per_class": {
+    "POSITIVE": {
+     "precision": 0.16666666666666666,
+     "recall": 0.02857142857142857,
+     "f1": 0.048780487804878044,
+     "support": 35,
+     "predicted": 6
+    },
+    "NEUTRAL": {
+     "precision": 0.5294117647058824,
+     "recall": 0.9,
+     "f1": 0.6666666666666667,
+     "support": 50,
+     "predicted": 85
+    },
+    "NEGATIVE": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "support": 15,
+     "predicted": 1
+    }
+   },
+   "confusion": {
+    "POSITIVE": {
+     "POSITIVE": 1,
+     "NEUTRAL": 29,
+     "NEGATIVE": 1,
+     "UNMAPPED": 4
+    },
+    "NEUTRAL": {
+     "POSITIVE": 3,
+     "NEUTRAL": 45,
+     "NEGATIVE": 0,
+     "UNMAPPED": 2
+    },
+    "NEGATIVE": {
+     "POSITIVE": 2,
+     "NEUTRAL": 11,
+     "NEGATIVE": 0,
+     "UNMAPPED": 2
+    },
+    "UNMAPPED": {
+     "POSITIVE": 0,
+     "NEUTRAL": 0,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    }
+   },
+   "unmapped": 8,
+   "coverage": 0.92,
+   "coverage_accuracy": 0.5,
+   "realtime_factor": 23.58,
+   "n_failed": 0,
+   "thresholds": null
+  },
+  {
+   "candidate": "speechbrain-iemocap",
+   "kind": "categorical",
+   "licence": "apache-2.0",
+   "incumbent": true,
+   "n": 100,
+   "accuracy": 0.34,
+   "accuracy_ci": [
+    0.25461379497543,
+    0.43722454341689065
+   ],
+   "macro_f1": 0.26238363301816325,
+   "per_class": {
+    "POSITIVE": {
+     "precision": 1.0,
+     "recall": 0.02857142857142857,
+     "f1": 0.05555555555555556,
+     "support": 35,
+     "predicted": 1
+    },
+    "NEUTRAL": {
+     "precision": 0.45614035087719296,
+     "recall": 0.52,
+     "f1": 0.48598130841121495,
+     "support": 50,
+     "predicted": 57
+    },
+    "NEGATIVE": {
+     "precision": 0.16666666666666666,
+     "recall": 0.4666666666666667,
+     "f1": 0.2456140350877193,
+     "support": 15,
+     "predicted": 42
+    }
+   },
+   "confusion": {
+    "POSITIVE": {
+     "POSITIVE": 1,
+     "NEUTRAL": 23,
+     "NEGATIVE": 11,
+     "UNMAPPED": 0
+    },
+    "NEUTRAL": {
+     "POSITIVE": 0,
+     "NEUTRAL": 26,
+     "NEGATIVE": 24,
+     "UNMAPPED": 0
+    },
+    "NEGATIVE": {
+     "POSITIVE": 0,
+     "NEUTRAL": 8,
+     "NEGATIVE": 7,
+     "UNMAPPED": 0
+    },
+    "UNMAPPED": {
+     "POSITIVE": 0,
+     "NEUTRAL": 0,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    }
+   },
+   "unmapped": 0,
+   "coverage": 1.0,
+   "coverage_accuracy": 0.34,
+   "realtime_factor": 28.41,
+   "n_failed": 0,
+   "thresholds": null
+  },
+  {
+   "candidate": "superb-wav2vec2-er",
+   "kind": "categorical",
+   "licence": "apache-2.0",
+   "incumbent": false,
+   "n": 100,
+   "accuracy": 0.3,
+   "accuracy_ci": [
+    0.21894753866228117,
+    0.39585038432811953
+   ],
+   "macro_f1": 0.2539755492232742,
+   "per_class": {
+    "POSITIVE": {
+     "precision": 0.125,
+     "recall": 0.02857142857142857,
+     "f1": 0.04651162790697674,
+     "support": 35,
+     "predicted": 8
+    },
+    "NEUTRAL": {
+     "precision": 0.5263157894736842,
+     "recall": 0.4,
+     "f1": 0.45454545454545453,
+     "support": 50,
+     "predicted": 38
+    },
+    "NEGATIVE": {
+     "precision": 0.16666666666666666,
+     "recall": 0.6,
+     "f1": 0.2608695652173913,
+     "support": 15,
+     "predicted": 54
+    }
+   },
+   "confusion": {
+    "POSITIVE": {
+     "POSITIVE": 1,
+     "NEUTRAL": 14,
+     "NEGATIVE": 20,
+     "UNMAPPED": 0
+    },
+    "NEUTRAL": {
+     "POSITIVE": 5,
+     "NEUTRAL": 20,
+     "NEGATIVE": 25,
+     "UNMAPPED": 0
+    },
+    "NEGATIVE": {
+     "POSITIVE": 2,
+     "NEUTRAL": 4,
+     "NEGATIVE": 9,
+     "UNMAPPED": 0
+    },
+    "UNMAPPED": {
+     "POSITIVE": 0,
+     "NEUTRAL": 0,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    }
+   },
+   "unmapped": 0,
+   "coverage": 1.0,
+   "coverage_accuracy": 0.3,
+   "realtime_factor": 18.52,
+   "n_failed": 0,
+   "thresholds": null
+  },
+  {
+   "candidate": "wavlm-msp-dim",
+   "kind": "dimensional",
+   "licence": "Open RAIL (non-commercial)",
+   "incumbent": false,
+   "n": 100,
+   "accuracy": 0.52,
+   "accuracy_ci": [
+    0.4231640509017654,
+    0.6153561567991945
+   ],
+   "macro_f1": 0.39367156412610954,
+   "per_class": {
+    "POSITIVE": {
+     "precision": 0.5,
+     "recall": 0.4,
+     "f1": 0.4444444444444445,
+     "support": 35,
+     "predicted": 28
+    },
+    "NEUTRAL": {
+     "precision": 0.5211267605633803,
+     "recall": 0.74,
+     "f1": 0.6115702479338843,
+     "support": 50,
+     "predicted": 71
+    },
+    "NEGATIVE": {
+     "precision": 1.0,
+     "recall": 0.06666666666666667,
+     "f1": 0.125,
+     "support": 15,
+     "predicted": 1
+    }
+   },
+   "confusion": {
+    "POSITIVE": {
+     "POSITIVE": 14,
+     "NEUTRAL": 21,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    },
+    "NEUTRAL": {
+     "POSITIVE": 13,
+     "NEUTRAL": 37,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    },
+    "NEGATIVE": {
+     "POSITIVE": 1,
+     "NEUTRAL": 13,
+     "NEGATIVE": 1,
+     "UNMAPPED": 0
+    },
+    "UNMAPPED": {
+     "POSITIVE": 0,
+     "NEUTRAL": 0,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    }
+   },
+   "unmapped": 0,
+   "coverage": 1.0,
+   "coverage_accuracy": 0.52,
+   "realtime_factor": 13.16,
+   "n_failed": 0,
+   "thresholds": [
+    0.2,
+    0.65
+   ]
+  },
+  {
+   "candidate": "BASELINE always-neutral",
+   "kind": "baseline",
+   "licence": "-",
+   "incumbent": false,
+   "n": 100,
+   "accuracy": 0.5,
+   "accuracy_ci": [
+    0.40382982859014716,
+    0.5961701714098528
+   ],
+   "macro_f1": 0.2222222222222222,
+   "per_class": {
+    "POSITIVE": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "support": 35,
+     "predicted": 0
+    },
+    "NEUTRAL": {
+     "precision": 0.5,
+     "recall": 1.0,
+     "f1": 0.6666666666666666,
+     "support": 50,
+     "predicted": 100
+    },
+    "NEGATIVE": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "support": 15,
+     "predicted": 0
+    }
+   },
+   "confusion": {
+    "POSITIVE": {
+     "POSITIVE": 0,
+     "NEUTRAL": 35,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    },
+    "NEUTRAL": {
+     "POSITIVE": 0,
+     "NEUTRAL": 50,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    },
+    "NEGATIVE": {
+     "POSITIVE": 0,
+     "NEUTRAL": 15,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    },
+    "UNMAPPED": {
+     "POSITIVE": 0,
+     "NEUTRAL": 0,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    }
+   },
+   "unmapped": 0,
+   "coverage": 1.0,
+   "coverage_accuracy": 0.5,
+   "realtime_factor": null,
+   "n_failed": 0,
+   "thresholds": null
+  },
+  {
+   "candidate": "BASELINE majority",
+   "kind": "baseline",
+   "licence": "-",
+   "incumbent": false,
+   "n": 100,
+   "accuracy": 0.5,
+   "accuracy_ci": [
+    0.40382982859014716,
+    0.5961701714098528
+   ],
+   "macro_f1": 0.2222222222222222,
+   "per_class": {
+    "POSITIVE": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "support": 35,
+     "predicted": 0
+    },
+    "NEUTRAL": {
+     "precision": 0.5,
+     "recall": 1.0,
+     "f1": 0.6666666666666666,
+     "support": 50,
+     "predicted": 100
+    },
+    "NEGATIVE": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "support": 15,
+     "predicted": 0
+    }
+   },
+   "confusion": {
+    "POSITIVE": {
+     "POSITIVE": 0,
+     "NEUTRAL": 35,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    },
+    "NEUTRAL": {
+     "POSITIVE": 0,
+     "NEUTRAL": 50,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    },
+    "NEGATIVE": {
+     "POSITIVE": 0,
+     "NEUTRAL": 15,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    },
+    "UNMAPPED": {
+     "POSITIVE": 0,
+     "NEUTRAL": 0,
+     "NEGATIVE": 0,
+     "UNMAPPED": 0
+    }
+   },
+   "unmapped": 0,
+   "coverage": 1.0,
+   "coverage_accuracy": 0.5,
+   "realtime_factor": null,
+   "n_failed": 0,
+   "thresholds": null
+  }
+ ],
+ "vs_incumbent": {
+  "audeering-msp-dim": {
+   "b": 6,
+   "c": 26,
+   "n_discordant": 32,
+   "p_value": 0.0005350527353584766,
+   "min_attainable_p": 4.656612873077393e-10,
+   "acc_diff": 0.2,
+   "significant": true
+  },
+  "wavlm-msp-dim": {
+   "b": 17,
+   "c": 35,
+   "n_discordant": 52,
+   "p_value": 0.017533235299084904,
+   "min_attainable_p": 4.440892098500626e-16,
+   "acc_diff": 0.18,
+   "significant": false
+  },
+  "BASELINE always-neutral": {
+   "b": 8,
+   "c": 24,
+   "n_discordant": 32,
+   "p_value": 0.0070003666914999485,
+   "min_attainable_p": 4.656612873077393e-10,
+   "acc_diff": 0.15999999999999998,
+   "significant": false
+  },
+  "BASELINE majority": {
+   "b": 8,
+   "c": 24,
+   "n_discordant": 32,
+   "p_value": 0.0070003666914999485,
+   "min_attainable_p": 4.656612873077393e-10,
+   "acc_diff": 0.15999999999999998,
+   "significant": false
+  },
+  "emotion2vec-base": {
+   "b": 10,
+   "c": 25,
+   "n_discordant": 35,
+   "p_value": 0.01667384780012071,
+   "min_attainable_p": 5.820766091346741e-11,
+   "acc_diff": 0.14999999999999997,
+   "significant": false
+  },
+  "emotion2vec-seed": {
+   "b": 11,
+   "c": 23,
+   "n_discordant": 34,
+   "p_value": 0.05761267291381955,
+   "min_attainable_p": 1.1641532182693481e-10,
+   "acc_diff": 0.12,
+   "significant": false
+  },
+  "emotion2vec-large": {
+   "b": 20,
+   "c": 27,
+   "n_discordant": 47,
+   "p_value": 0.38169339766321286,
+   "min_attainable_p": 1.4210854715202004e-14,
+   "acc_diff": 0.06999999999999995,
+   "significant": false
+  },
+  "dpngtm-wav2vec2": {
+   "b": 17,
+   "c": 21,
+   "n_discordant": 38,
+   "p_value": 0.6271025701571489,
+   "min_attainable_p": 7.275957614183426e-12,
+   "acc_diff": 0.03999999999999998,
+   "significant": false
+  },
+  "superb-wav2vec2-er": {
+   "b": 10,
+   "c": 6,
+   "n_discordant": 16,
+   "p_value": 0.454498291015625,
+   "min_attainable_p": 3.0517578125e-05,
+   "acc_diff": -0.040000000000000036,
+   "significant": false
+  }
+ }
+}

@@ -1,0 +1,3308 @@
+{
+  "video_url": "https://youtu.be/kykPtluEwWY?si=VQnCWYR5DtdomP48",
+  "brand_name": "Google",
+  "authenticity_score": 60.21,
+  "brand_health_score": 81.57,
+  "segment_count": 88,
+  "flagged_segments": [
+    {
+      "segment_id": 24,
+      "start_s": 122.94,
+      "end_s": 126.74000000000001,
+      "conflict_score": 0.8,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": true,
+      "text": "for today. And I don't think that you're going to get any better proof that even Google knows that",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.456
+        },
+        "facial_emotion": {
+          "dominant": "angry",
+          "confidence": 0.7771,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6204,
+          "valence": 0.4658,
+          "dominance": 0.6549,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 175.35,
+        "energy_mean": 0.029719
+      }
+    }
+  ],
+  "comment_sentiment": {
+    "label": "POSITIVE",
+    "confidence": 0.9581,
+    "comment_count": 58,
+    "distribution": {
+      "POSITIVE": 34,
+      "NEUTRAL": 8,
+      "NEGATIVE": 16
+    }
+  },
+  "bias_caveat": "IMPORTANT: Facial emotion recognition (DeepFace) has documented accuracy disparities across skin tone and gender (Buolamwini & Gebru, 2018; Fan et al., 2023). Authenticity scores informed by facial data should be interpreted with this limitation in mind.",
+  "vocal_caveat": "IMPORTANT: The vocal emotion channel is the second weakest of the four, after facial emotion, and is explicitly down-weighted. Benchmarked on 150 hand-rated clips from 6 speakers (vocal_bench/), the adopted model scores 48.9% three-class accuracy on held-out speakers - better than the model it replaced, which at 34.0% was significantly worse than always guessing NEUTRAL (p = 0.0070), but still not reliably better than that constant. No model tested beat it. Conflicts attributed to the vocal channel alone are damped accordingly, and per-segment claims should not rest on this channel. Read the within-video figure, not the headline: this report compares segments inside one video, and the channel's rank correlation with human judgement measured within a video is +0.159 across 147 clips and +0.056 on unseen speakers (vocal_bench/SPEAKER_NORM_RESULT.md). Most of its apparent accuracy is a between-video effect that says more about the speaker's habitual energy than about any individual moment.",
+  "vocal_licence_note": "The adopted vocal model (audeering/wav2vec2-large-robust-12-ft-emotion-msp-dim) is licensed CC-BY-NC-SA-4.0 and may not be used commercially. Every configuration measured in vocal_bench/ that showed usable signal was non-commercially licensed; the permissively-licensed alternatives measured at the bottom of every table. A commercial deployment would need to ship without this channel or replace it.",
+  "all_comments": [
+    {
+      "text": "Who else loves the Pixel 10 Pro??",
+      "label": "POSITIVE",
+      "confidence": 0.9991,
+      "like_count": 33
+    },
+    {
+      "text": "Im so happy with the Pixel 10 Pro. Have it since release date and phone runs so great.",
+      "label": "POSITIVE",
+      "confidence": 0.999,
+      "like_count": 29
+    },
+    {
+      "text": "I love my pixel 10 pro xl. It does what I need perfectly",
+      "label": "POSITIVE",
+      "confidence": 0.9988,
+      "like_count": 6
+    },
+    {
+      "text": "I was waiting for the Pixel 11 family to be launched towards the end of August, but my current handset that I've had for the last five years, finally gave up the ghost, thus forcing my hand... As a result, I am now the proud owner of a Pixel 10 Pro, and I'm more than satisfied with its performance thus far...\nI might even be in a good position from what I'm hearing about the Pixel 11's price increase as well as RAM decrease across the board... I'll keep what I have for a few years...",
+      "label": "POSITIVE",
+      "confidence": 0.9993,
+      "like_count": 6
+    },
+    {
+      "text": "67 years old. Bought the 10 because I like good photos and good links to google overall. So out the box seam less set up very quickly. Yes I it quick and helpful, I like to keep my phones for a long time. So I will not smash the battery management and hope to get my monies worth. So far so Good. But my research led me to this phone as it packs what I want. Price was good, service good. Happy days. Like the review.",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 8
+    },
+    {
+      "text": "I just bought an as new Pixel 10 Pro XL arriving tomorrow I can't wait! I've been using my Pixel 6 pro since I bought it brand new and still have and use it to this day, the 6 was my first pixel, I owned and 8 Pro for 8mths until it's wifi started playing up and now onto the 10, I love them and won't use anytime else now :)",
+      "label": "POSITIVE",
+      "confidence": 0.9994,
+      "like_count": 6
+    },
+    {
+      "text": "I would LOVE Google earbuds because I just got the Google pixel 10 literally yesterday",
+      "label": "POSITIVE",
+      "confidence": 0.999,
+      "like_count": 4
+    },
+    {
+      "text": "Thank  you for your review however, could you confirm which will be better in terms of choosing for my next phone between S26/27 (will be launching) or Pixle 10pro. I'm using S23 as of now and want to upgrade.",
+      "label": "NEUTRAL",
+      "confidence": 0.9801,
+      "like_count": 0
+    },
+    {
+      "text": "The true mark of a great reviewer isn't praising novelty, but recognizing maturity. Highlighting how staying with the same design language became Google’s strongest move takes a rare level of perceptive clarity. Masterclass in tech commentary.",
+      "label": "POSITIVE",
+      "confidence": 0.9991,
+      "like_count": 43
+    },
+    {
+      "text": "I am using the pixel 10 pro xl and I still love it. I am a medium user and it really works fine for me. The day to day tasks are done pretty well. The camera has taken some great photos as well. Especially with the current scenario of the semi conductor production issues, I don't want to buy a new phone with increased prices. This is still a good one for me. Thanks for the video. You explained it so well. I too feel the same in most of the points that you mentioned.",
+      "label": "POSITIVE",
+      "confidence": 0.9978,
+      "like_count": 5
+    },
+    {
+      "text": "Pixel Buds Giveaway!  Make sure you're subscribed to the channel and the JSL Newsletter in order for you to be eligible.  Giveaway open to all who meet requirements, winner to be announced at the end of August 2026.  Subscribe to the JSL Newsletter!! https://shorturl.at/WZ2Lg",
+      "label": "POSITIVE",
+      "confidence": 0.9974,
+      "like_count": 8
+    },
+    {
+      "text": "Your videos make it much easier to decide on tech purchases. Thanks for sharing, and hosting this giveaway!\n\nI just got my Pixel 10 Pro because of your review, and I haven't regretted it for a second! Now I'd love to complete the setup with the Pixel Buds. Thanks for the amazing reviews and for this giveaway!",
+      "label": "POSITIVE",
+      "confidence": 0.9994,
+      "like_count": 1
+    },
+    {
+      "text": "is it worth it to upgrade google pixel 10/11 pro from iphone 16 pro?actually i dont play heavy games  just indie and social media",
+      "label": "NEUTRAL",
+      "confidence": 0.9987,
+      "like_count": 0
+    },
+    {
+      "text": "wow u nailed the video quality description perfectly, i mean it dont look fake but ..",
+      "label": "POSITIVE",
+      "confidence": 0.9986,
+      "like_count": 1
+    },
+    {
+      "text": "u are no jasoo u are jeasun :D",
+      "label": "POSITIVE",
+      "confidence": 0.5747,
+      "like_count": 1
+    },
+    {
+      "text": "I just got a Pixel 10 Pro XL in Moonstone it is wonderful. It reminds me so much of my old Sierra Blue iPhone 13 Pro Max.",
+      "label": "POSITIVE",
+      "confidence": 0.9993,
+      "like_count": 1
+    },
+    {
+      "text": "Nice review but battery health dropped on me 6% in 6/7 month as my backup phone battery life bad. I switched to the s26 ultra instead",
+      "label": "NEGATIVE",
+      "confidence": 0.9981,
+      "like_count": 3
+    },
+    {
+      "text": "Im thinking of getting a new 10 pro this month for ~600-650€ (here in Germany). For that price it could be a good deal even though it still has 128gb which is a small bummer",
+      "label": "POSITIVE",
+      "confidence": 0.9982,
+      "like_count": 1
+    },
+    {
+      "text": "剛下單買p10 pro，希望大多數問題都改善了😊",
+      "label": "POSITIVE",
+      "confidence": 0.999,
+      "like_count": 0
+    },
+    {
+      "text": "Still rocking my Pixel 9 Pro (Non-XL).",
+      "label": "POSITIVE",
+      "confidence": 0.9533,
+      "like_count": 4
+    },
+    {
+      "text": "Bought my Google Pixel 10 Pro XL in Obsidian last December, and it was the very first one I ever bought. I never even owned a Nexus. The only problem is that it's too damn good, and I upgrade regularly, but now I'm not so sure if I want to do that as often because of it.",
+      "label": "POSITIVE",
+      "confidence": 0.9939,
+      "like_count": 0
+    },
+    {
+      "text": "Sold 15pm and got 10 pro xl around half a year ago, won't go back to apple haha",
+      "label": "NEGATIVE",
+      "confidence": 0.979,
+      "like_count": 5
+    },
+    {
+      "text": "I just bought the Pixel 10 pro for $540. Arriving this Saturday. Hell of a deal! Given the Pixel 11 pro is pretty much a slightly beefed up 10 pro and my phone usage is minimal!",
+      "label": "POSITIVE",
+      "confidence": 0.9994,
+      "like_count": 1
+    },
+    {
+      "text": "well i would hope their latest pixel should be the best pixel",
+      "label": "POSITIVE",
+      "confidence": 0.9992,
+      "like_count": 0
+    },
+    {
+      "text": "I have a Apple IPhone 14 Pro Max and looking for a upgrade, new iPhone isn’t selling it for me and I saw a ad for this phone so here I am looking up information about it.",
+      "label": "POSITIVE",
+      "confidence": 0.9698,
+      "like_count": 1
+    },
+    {
+      "text": "Pixel 10Pro XL を使っています。",
+      "label": "NEUTRAL",
+      "confidence": 0.9756,
+      "like_count": 2
+    },
+    {
+      "text": "Wow, If I have this kind of Phone I will be the first one to have it in our city..... It would be expensive..",
+      "label": "POSITIVE",
+      "confidence": 0.9114,
+      "like_count": 0
+    },
+    {
+      "text": "I have a 10a for work and I love it. I know Apple is far from perfect in this area, but I just can’t make the jump to Google because of their data collection and ad business, in addition to the fact that they don’t have Advanced Data Protection for cloud backups. \n\nIn terms of usability, smoothness, battery life, design  — it’s fantastic.",
+      "label": "POSITIVE",
+      "confidence": 0.9916,
+      "like_count": 1
+    },
+    {
+      "text": "I’m here",
+      "label": "NEUTRAL",
+      "confidence": 0.9681,
+      "like_count": 1
+    },
+    {
+      "text": "My content creator in smartphone Second hand market",
+      "label": "NEUTRAL",
+      "confidence": 0.9986,
+      "like_count": 1
+    },
+    {
+      "text": "My pixel 10 pro still has a video stabilization problem: kind of shaky and has noise in some parts of video recording. Surely not what I was expecting from a 1000 usd phone! Video boost is a joke, it doesn't fix anything, rather makes the video even worse. Pls comment and share, I have videos to prove it on my chanel",
+      "label": "NEGATIVE",
+      "confidence": 0.9985,
+      "like_count": 0
+    },
+    {
+      "text": "Just upgraded to the 10 pro.",
+      "label": "POSITIVE",
+      "confidence": 0.9933,
+      "like_count": 1
+    },
+    {
+      "text": "batteria healt?",
+      "label": "NEUTRAL",
+      "confidence": 0.9986,
+      "like_count": 0
+    },
+    {
+      "text": "I would love to buy a new pixel. Problem is I switch phones all the time and the pixel is esim only. That is a non starter .",
+      "label": "NEGATIVE",
+      "confidence": 0.9949,
+      "like_count": 0
+    },
+    {
+      "text": "Hey jsl \n\nI want a good phone atleast 5 to 6 yr & my priority excellent performance ( not lag. Sustain performance) & software & good battery backup .\n\nPlease suggest me phone Which phones I go for Samsung or pixel\n\nLuv from india 🇮🇳",
+      "label": "POSITIVE",
+      "confidence": 0.8232,
+      "like_count": 1
+    },
+    {
+      "text": "The glass is way too slippery... I miss the plastic.  But I guess reviews never have to mention that.",
+      "label": "NEGATIVE",
+      "confidence": 0.9974,
+      "like_count": 3
+    },
+    {
+      "text": "Hey how will you select the winner",
+      "label": "NEUTRAL",
+      "confidence": 0.9982,
+      "like_count": 1
+    },
+    {
+      "text": "Just wish it had faster charging",
+      "label": "NEGATIVE",
+      "confidence": 0.9956,
+      "like_count": 0
+    },
+    {
+      "text": "I’m on iPhone 😅",
+      "label": "NEUTRAL",
+      "confidence": 0.9879,
+      "like_count": 0
+    },
+    {
+      "text": "MOONSTONE is the best phones color all the time..",
+      "label": "POSITIVE",
+      "confidence": 0.9986,
+      "like_count": 1
+    },
+    {
+      "text": "0:03 the phone is dusty lol",
+      "label": "NEGATIVE",
+      "confidence": 0.544,
+      "like_count": 0
+    },
+    {
+      "text": "Ive had my pixel 10 pro xl for 3 months, I used to have a pixel 6 and then had Samsung Galaxy phones for a few years and I decided 3 months ago to go back to an vanilla android phone. \n\nThis phone isn't flashy and has all the bells and whistles, but it's very stable and it makes sense, since I use all the google apps(sheets,docs,photos,etc). I love my pixel 10 xl pro.",
+      "label": "POSITIVE",
+      "confidence": 0.9994,
+      "like_count": 4
+    },
+    {
+      "text": "We’re all gonna die!!!",
+      "label": "NEGATIVE",
+      "confidence": 0.9972,
+      "like_count": 2
+    },
+    {
+      "text": "Quick favour if I win can I have the pixel",
+      "label": "POSITIVE",
+      "confidence": 0.9373,
+      "like_count": 0
+    },
+    {
+      "text": "This is a horrible phone out of the box it had the box glitch issue that bricks your phone and I got another replacement for 99 dollars same issue do not waste your money on this phone. Mind you it's $1000+",
+      "label": "NEGATIVE",
+      "confidence": 0.9978,
+      "like_count": 0
+    },
+    {
+      "text": "ive had mine for a year now next month. pro not XL. i love it. fingerprint scanner is very reliable. the only thing i dont like is the wireless charging. got a car mount to charge and i couldnt have anything open like GPS or spotify and still charge. it would sit at whatever battery percentage was there when mounting.",
+      "label": "NEGATIVE",
+      "confidence": 0.621,
+      "like_count": 0
+    },
+    {
+      "text": "Getting ready to buy mine right now",
+      "label": "POSITIVE",
+      "confidence": 0.9993,
+      "like_count": 1
+    },
+    {
+      "text": "Pixels are midrange phones sold on premium price. it matches hardware to iPhone from 5 years ago, really wonder on mental capacity of people paying 1000+ dollars for this sub 500 hardware.",
+      "label": "NEGATIVE",
+      "confidence": 0.9979,
+      "like_count": 1
+    },
+    {
+      "text": "I'm still a fan of the curved screen phones. If it weren't for the Tensor G1 issues and the iffy modem. I liked the overall build quality and display of the 6 Pro the most to this day. I hope they bring back the Sorta Sunny color one day.",
+      "label": "POSITIVE",
+      "confidence": 0.999,
+      "like_count": 0
+    },
+    {
+      "text": "Bro acting like google might die without this phone...lol",
+      "label": "NEGATIVE",
+      "confidence": 0.9975,
+      "like_count": 0
+    },
+    {
+      "text": "The pixel 9 pro XL can stick to a magnet🤯. Just not strong😒..I thank the pixel 9 pro xl got beef 🥩👊with pixel 10 pro xl ...on who had mag safe first🤷😂...",
+      "label": "NEGATIVE",
+      "confidence": 0.9971,
+      "like_count": 0
+    },
+    {
+      "text": "Worst review",
+      "label": "NEGATIVE",
+      "confidence": 0.9953,
+      "like_count": 0
+    },
+    {
+      "text": "Gotta say, the Google Pixel is the dark horse. Whether you're coming from the Apple Walled Garden or Samsung's One UI, the Pixel’s seamless software experience is the true game-changer. It's the cleanest, smartest Android on the planet. The Google Pixel prioritizes a smart, user-friendly experience over raw processing power. It's not built for top-tier gaming or chasing benchmark scores. Instead, it's designed for users who value a clean software interface, a consistently brilliant camera, and a device that improves over time with meaningful updates.",
+      "label": "POSITIVE",
+      "confidence": 0.999,
+      "like_count": 0
+    },
+    {
+      "text": "It's annoyingly the slowest Android phone I have ever used. Ugh. The only reason I stuck with it for a year was because when it comes to Android phones, I am a purist.",
+      "label": "NEGATIVE",
+      "confidence": 0.9969,
+      "like_count": 0
+    },
+    {
+      "text": "The moment Tensor starts trading blows with the Snapdragon 8 series is the moment I consider a Pixel",
+      "label": "NEGATIVE",
+      "confidence": 0.9029,
+      "like_count": 0
+    },
+    {
+      "text": "These are not bad phones, but pound for pound, compared with the Galaxy S26 and the iPhone 17 Pros, they are poor value. The advantage with Pixels, and what I would recommend, is to get them cheap secondhand or nearly new. I got mine for £500 off, with only a battery cycle count of two, meaning I was getting a flagship-price device at a mid-range price, which makes the cons a little less irksome. \n\nCertainly, I would not recommend paying full whack, and hearing that prices are going up again, the Pixel 12 looks even harder to recommend at MRSP. Other than that, for my usage, I don't play games or do anything intensive. It works great. Cameras are solid. Battery life is average.\n\nSo, at the right price, I would recommend it.",
+      "label": "POSITIVE",
+      "confidence": 0.6045,
+      "like_count": 0
+    },
+    {
+      "text": "The Pixel 10 Pro feels like a high-end mid-tier phone.  The battery life and how it gets used is not amazing enough for flag ship pricing.  However, on a sale for teens/grandparents it is great.  \n\nFor adults with a full-time job and in need of power-user features, the big 3 globally are better choices.  Those are Oppo Find X9 Ultra, iPhone 17 Pro Max, and the Samsung S26 Ultra.  Not in any order.",
+      "label": "POSITIVE",
+      "confidence": 0.997,
+      "like_count": 1
+    },
+    {
+      "text": "I'm the pixel 8 user from past 2 years.. and 10 pro is my attention.. and you giveaway pixel buds 😅 @JSLReview",
+      "label": "POSITIVE",
+      "confidence": 0.9259,
+      "like_count": 0
+    }
+  ],
+  "all_segments": [
+    {
+      "segment_id": 0,
+      "start_s": 0.0,
+      "end_s": 12.38,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Hey, it's Jason. It's been one year since I got my hand on the Google Pixel 10 Pro,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6017
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8988,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.8539,
+          "valence": 0.8833,
+          "dominance": 0.8448,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 199.26,
+        "energy_mean": 0.045153
+      }
+    },
+    {
+      "segment_id": 1,
+      "start_s": 12.5,
+      "end_s": 16.88,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "the latest flagship from a company that really seemed like it was on its last lifeline of",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.4972
+        },
+        "facial_emotion": {
+          "dominant": "happy",
+          "confidence": 0.8291,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.626,
+          "valence": 0.6761,
+          "dominance": 0.6604,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 169.72,
+        "energy_mean": 0.025475
+      }
+    },
+    {
+      "segment_id": 2,
+      "start_s": 16.88,
+      "end_s": 21.76,
+      "conflict_score": 0.2052,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "facial_channel_downweighted[structural]: 0.6000 -> 0.2052 (x0.342, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "trying to make a phone that people would actually find interesting, and it's been a really surprising",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7197
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8326,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7131,
+          "valence": 0.8655,
+          "dominance": 0.7208,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 186.46,
+        "energy_mean": 0.01814
+      }
+    },
+    {
+      "segment_id": 3,
+      "start_s": 21.76,
+      "end_s": 27.6,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "journey to say the least. I can now definitively say that the Pixel 10 Pro is my favorite non-iPhone",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.803
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9323,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6431,
+          "valence": 0.6895,
+          "dominance": 0.6941,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 194.51,
+        "energy_mean": 0.036044
+      }
+    },
+    {
+      "segment_id": 4,
+      "start_s": 27.6,
+      "end_s": 32.36,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "and definitely my favorite Pixel up to this point. I've had so much fun using this phone,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.9392
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7693,
+          "valence": 0.7916,
+          "dominance": 0.7494,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 182.02,
+        "energy_mean": 0.033176
+      }
+    },
+    {
+      "segment_id": 5,
+      "start_s": 32.480000000000004,
+      "end_s": 36.24,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "and the past year has made me really hopeful for Google's future in this space.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8927
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6161,
+          "valence": 0.8191,
+          "dominance": 0.6704,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 169.51,
+        "energy_mean": 0.034245
+      }
+    },
+    {
+      "segment_id": 6,
+      "start_s": 36.44,
+      "end_s": 40.44,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "And with the Pixel 11 lineup getting ready to launch in the very near future, I thought it'd",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5389
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6819,
+          "valence": 0.7336,
+          "dominance": 0.6803,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 192.55,
+        "energy_mean": 0.04787
+      }
+    },
+    {
+      "segment_id": 7,
+      "start_s": 40.44,
+      "end_s": 45.620000000000005,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "be a good time to do a long-term review of the Pixel 10 Pro, going into the specifics of what",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5021
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6599,
+          "valence": 0.865,
+          "dominance": 0.7018,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 206.95,
+        "energy_mean": 0.03046
+      }
+    },
+    {
+      "segment_id": 8,
+      "start_s": 45.620000000000005,
+      "end_s": 50.900000000000006,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "I've loved about this phone, what I'm really hoping Google fixes, and what my long-term views",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8009
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7257,
+          "valence": 0.8156,
+          "dominance": 0.7389,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 219.12,
+        "energy_mean": 0.034459
+      }
+    },
+    {
+      "segment_id": 9,
+      "start_s": 50.900000000000006,
+      "end_s": 56.5,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "are of the Pixel as a whole, all in an effort to help you decide if the Pixel 10 Pro is the right",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.678
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6575,
+          "valence": 0.6606,
+          "dominance": 0.6732,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 219.78,
+        "energy_mean": 0.033212
+      }
+    },
+    {
+      "segment_id": 10,
+      "start_s": 56.5,
+      "end_s": 61.26,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "phone for you. But real quick, to celebrate over 5,000 subscribers to the JSL newsletter,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7126
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9355,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5733,
+          "valence": 0.7087,
+          "dominance": 0.625,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 198.44,
+        "energy_mean": 0.027245
+      }
+    },
+    {
+      "segment_id": 11,
+      "start_s": 61.38,
+      "end_s": 64.88,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "I'm actually giving away a brand new pair of Pixel Buds. If you guys want in on this,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5031
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7478,
+          "valence": 0.8514,
+          "dominance": 0.7325,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 177.95,
+        "energy_mean": 0.028187
+      }
+    },
+    {
+      "segment_id": 12,
+      "start_s": 65.14,
+      "end_s": 69.76,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "just make sure that you're subscribed to the channel and the JSL newsletter. The link to subscribe",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.8295
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6683,
+          "valence": 0.6946,
+          "dominance": 0.6789,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 196.74,
+        "energy_mean": 0.023754
+      }
+    },
+    {
+      "segment_id": 13,
+      "start_s": 69.76,
+      "end_s": 74.02,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_emotion"
+      ],
+      "flagged": false,
+      "text": "to the newsletter will be in the description down below. It's totally open for everyone. The winner",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6575
+        },
+        "facial_emotion": {
+          "dominant": "sad",
+          "confidence": 0.4749,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5792,
+          "valence": 0.6855,
+          "dominance": 0.5995,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 155.57,
+        "energy_mean": 0.031476
+      }
+    },
+    {
+      "segment_id": 14,
+      "start_s": 74.02,
+      "end_s": 78.5,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "is going to be announced via the newsletter at the end of August. Thank you, thank you, thank you for",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8015
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7978,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6358,
+          "valence": 0.7719,
+          "dominance": 0.6831,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 156.11,
+        "energy_mean": 0.026912
+      }
+    },
+    {
+      "segment_id": 15,
+      "start_s": 78.5,
+      "end_s": 82.42,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "all of you who have been supporting me there. Okay, first, let's talk about the physical design of the",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.5523
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9359,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.619,
+          "valence": 0.6003,
+          "dominance": 0.6575,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 177.79,
+        "energy_mean": 0.026155
+      }
+    },
+    {
+      "segment_id": 16,
+      "start_s": 82.42,
+      "end_s": 87.92,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Pixel 10 Pro. It's kind of important because this is an area that historically, Google has kind of",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.5775
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.919,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5999,
+          "valence": 0.5876,
+          "dominance": 0.607,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 211.42,
+        "energy_mean": 0.023632
+      }
+    },
+    {
+      "segment_id": 17,
+      "start_s": 87.92,
+      "end_s": 92.24000000000001,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "struggled with. If y'all remember, the Pixel has had some very unique form factors throughout its",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6087
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.5368,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7288,
+          "valence": 0.6174,
+          "dominance": 0.7381,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 184.39,
+        "energy_mean": 0.029092
+      }
+    },
+    {
+      "segment_id": 18,
+      "start_s": 92.24000000000001,
+      "end_s": 97.02,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "life. Google would experiment with weird build materials and designs that made their phone stand",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.4507
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6355,
+          "valence": 0.6746,
+          "dominance": 0.6629,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 164.45,
+        "energy_mean": 0.016943
+      }
+    },
+    {
+      "segment_id": 19,
+      "start_s": 97.02,
+      "end_s": 101.2,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "out, but not always in a good way. It's kind of like they were trying to be different and cool,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.5657
+        },
+        "facial_emotion": {
+          "dominant": "happy",
+          "confidence": 0.5197,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.619,
+          "valence": 0.5924,
+          "dominance": 0.6458,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 183.45,
+        "energy_mean": 0.026361
+      }
+    },
+    {
+      "segment_id": 20,
+      "start_s": 101.3,
+      "end_s": 106.42,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "which kind of worked, albeit to a very, very small population. And ironically, it's when Google just",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6338
+        },
+        "facial_emotion": {
+          "dominant": "happy",
+          "confidence": 0.6046,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6533,
+          "valence": 0.6994,
+          "dominance": 0.6769,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 159.87,
+        "energy_mean": 0.031176
+      }
+    },
+    {
+      "segment_id": 21,
+      "start_s": 106.42,
+      "end_s": 111.62,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "did what most of the competition was doing that it finally found its footing. And that was with the launch",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.4926
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6563,
+          "valence": 0.6936,
+          "dominance": 0.6803,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 172.45,
+        "energy_mean": 0.021219
+      }
+    },
+    {
+      "segment_id": 22,
+      "start_s": 112.42,
+      "end_s": 116.88,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "of Pixel 10 Pro. This is when they used high-end aluminum for the frame, a glass-on-glass design,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7081
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6647,
+          "valence": 0.6943,
+          "dominance": 0.6931,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 169.89,
+        "energy_mean": 0.028921
+      }
+    },
+    {
+      "segment_id": 23,
+      "start_s": 117.26,
+      "end_s": 122.94,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "and the tested modern industrial form factor. And it finally looked and felt like a flagship phone",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.5331
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6183,
+          "valence": 0.658,
+          "dominance": 0.6653,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 161.72,
+        "energy_mean": 0.028463
+      }
+    },
+    {
+      "segment_id": 24,
+      "start_s": 122.94,
+      "end_s": 126.74000000000001,
+      "conflict_score": 0.8,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": true,
+      "text": "for today. And I don't think that you're going to get any better proof that even Google knows that",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.456
+        },
+        "facial_emotion": {
+          "dominant": "angry",
+          "confidence": 0.7771,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6204,
+          "valence": 0.4658,
+          "dominance": 0.6549,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 175.35,
+        "energy_mean": 0.029719
+      }
+    },
+    {
+      "segment_id": 25,
+      "start_s": 126.74000000000001,
+      "end_s": 131.26,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "it hit a home run with this design as they didn't change anything for the Pixel 10 Pro,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.3815
+        },
+        "facial_emotion": {
+          "dominant": "sad",
+          "confidence": 0.6339,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6091,
+          "valence": 0.6389,
+          "dominance": 0.618,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 149.06,
+        "energy_mean": 0.018612
+      }
+    },
+    {
+      "segment_id": 26,
+      "start_s": 131.74,
+      "end_s": 136.52,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "despite their history of essentially throwing spaghetti at the wall with each and every iteration.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.672
+        },
+        "facial_emotion": {
+          "dominant": "sad",
+          "confidence": 0.7516,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6018,
+          "valence": 0.4701,
+          "dominance": 0.6183,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 187.73,
+        "energy_mean": 0.022286
+      }
+    },
+    {
+      "segment_id": 27,
+      "start_s": 136.8,
+      "end_s": 141.34,
+      "conflict_score": 0.2052,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "facial_channel_downweighted[structural]: 0.6000 -> 0.2052 (x0.342, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "And one year later, I'll be the first to say that this is the one time that I'm glad that there's",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8487
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8869,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7033,
+          "valence": 0.6957,
+          "dominance": 0.7268,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 173.16,
+        "energy_mean": 0.039698
+      }
+    },
+    {
+      "segment_id": 28,
+      "start_s": 141.34,
+      "end_s": 146.78,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "no physical design differences from the year prior because this phone has held up incredibly well and",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.554
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6442,
+          "valence": 0.7593,
+          "dominance": 0.6784,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 181.89,
+        "energy_mean": 0.023098
+      }
+    },
+    {
+      "segment_id": 29,
+      "start_s": 146.78,
+      "end_s": 152.36,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "still very much meets the standard of a modern flagship in 2026. The robust aluminum frame paired",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.5996
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.644,
+          "valence": 0.5935,
+          "dominance": 0.6834,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 182.71,
+        "energy_mean": 0.02979
+      }
+    },
+    {
+      "segment_id": 30,
+      "start_s": 152.36,
+      "end_s": 156.82,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "with the thickness of this phone gives the Pixel 10 Pro a good amount of weight in the hand that is",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6405
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7121,
+          "valence": 0.7789,
+          "dominance": 0.7167,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 201.3,
+        "energy_mean": 0.027891
+      }
+    },
+    {
+      "segment_id": 31,
+      "start_s": 156.82,
+      "end_s": 162.92000000000002,
+      "conflict_score": 0.2934,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.6000 -> 0.2934 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "such a welcome change from the overly light plasticky feels of the pixels of the past, and the hardware",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7053
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.588,
+          "valence": 0.8368,
+          "dominance": 0.6502,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 164.56,
+        "energy_mean": 0.023508
+      }
+    },
+    {
+      "segment_id": 32,
+      "start_s": 162.92000000000002,
+      "end_s": 167.66,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "has stood the test of time. The signature pixel camera housing hasn't seen scratches or wear,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5551
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6271,
+          "valence": 0.4502,
+          "dominance": 0.6524,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 200.82,
+        "energy_mean": 0.027862
+      }
+    },
+    {
+      "segment_id": 33,
+      "start_s": 167.66,
+      "end_s": 171.38,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "which is really nice because it really is the most eye-catching part of this design.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.9291
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6911,
+          "valence": 0.7881,
+          "dominance": 0.716,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 165.3,
+        "energy_mean": 0.021816
+      }
+    },
+    {
+      "segment_id": 34,
+      "start_s": 171.6,
+      "end_s": 175.88,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "This moonstone color still slaps in my opinion. It really gives the phone a refined look and",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8683
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6517,
+          "valence": 0.6507,
+          "dominance": 0.688,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 180.63,
+        "energy_mean": 0.040519
+      }
+    },
+    {
+      "segment_id": 35,
+      "start_s": 175.88,
+      "end_s": 180.78,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "the high refresh rate display with its small bezel still looks and performs great. And what really",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7219
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6963,
+          "valence": 0.7813,
+          "dominance": 0.7181,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 191.94,
+        "energy_mean": 0.026481
+      }
+    },
+    {
+      "segment_id": 36,
+      "start_s": 180.78,
+      "end_s": 186.12,
+      "conflict_score": 0.171,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "facial_channel_downweighted[structural]: 0.5000 -> 0.1710 (x0.342, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "has been the cherry on top is the addition of pixel snap on the Pixel 10 Pro. I have so many MagSafe",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7456
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7977,
+          "frame_count": 6,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6941,
+          "valence": 0.7508,
+          "dominance": 0.7128,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 165.98,
+        "energy_mean": 0.021194
+      }
+    },
+    {
+      "segment_id": 37,
+      "start_s": 186.12,
+      "end_s": 190.9,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "accessories. It's been fantastic being able to use them natively on this updated form factor.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.9256
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6263,
+          "valence": 0.8856,
+          "dominance": 0.6967,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 148.2,
+        "energy_mean": 0.01858
+      }
+    },
+    {
+      "segment_id": 38,
+      "start_s": 191.1,
+      "end_s": 196.3,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "All to say, Google has really stepped it up in terms of quality here as this phone is still a joy to have",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.9295
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.759,
+          "valence": 0.9356,
+          "dominance": 0.7756,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 189.68,
+        "energy_mean": 0.039691
+      }
+    },
+    {
+      "segment_id": 39,
+      "start_s": 196.3,
+      "end_s": 200.92000000000002,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "in my hands. And I'm really hoping that they continue down this path with the new iterations",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8512
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6231,
+          "valence": 0.7087,
+          "dominance": 0.6521,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 187.69,
+        "energy_mean": 0.03524
+      }
+    },
+    {
+      "segment_id": 40,
+      "start_s": 200.92000000000002,
+      "end_s": 206.10000000000002,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "to come. Okay, the Pixel 10 Pro's physical design one year later, in my opinion, checks the box in",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5951
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9201,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6566,
+          "valence": 0.6567,
+          "dominance": 0.6889,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 175.38,
+        "energy_mean": 0.029896
+      }
+    },
+    {
+      "segment_id": 41,
+      "start_s": 206.10000000000002,
+      "end_s": 211.42000000000002,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "the good category, but we got to talk about another area of the Pixel that has kind of struggled in",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.7168
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7131,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6023,
+          "valence": 0.5823,
+          "dominance": 0.6236,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 176.07,
+        "energy_mean": 0.021816
+      }
+    },
+    {
+      "segment_id": 42,
+      "start_s": 211.42000000000002,
+      "end_s": 216.26000000000002,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "the past when it comes to long-term use, and that's the Pixel's performance. This phone is using the",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.6213
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9161,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6663,
+          "valence": 0.7446,
+          "dominance": 0.6935,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 166.08,
+        "energy_mean": 0.019399
+      }
+    },
+    {
+      "segment_id": 43,
+      "start_s": 216.26000000000002,
+      "end_s": 222.42000000000002,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Tensor G5, Google's latest in-house processor, and the Tensor lineup so far has had a bit of a shaky",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.6794
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6965,
+          "valence": 0.6238,
+          "dominance": 0.6917,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 195.07,
+        "energy_mean": 0.025484
+      }
+    },
+    {
+      "segment_id": 44,
+      "start_s": 222.42,
+      "end_s": 227.04,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "reputation when it comes to long-term reliability. The older versions were known to fall a bit short",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5388
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5211,
+          "valence": 0.4655,
+          "dominance": 0.614,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 160.13,
+        "energy_mean": 0.032653
+      }
+    },
+    {
+      "segment_id": 45,
+      "start_s": 227.04,
+      "end_s": 231.66,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "in terms of performance, especially when compared to other flagships, and even to this day, the",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5731
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6108,
+          "valence": 0.5241,
+          "dominance": 0.6453,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 160.25,
+        "energy_mean": 0.021981
+      }
+    },
+    {
+      "segment_id": 46,
+      "start_s": 231.66,
+      "end_s": 236.85999999999999,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Tensor isn't winning any medals when it comes to pure specs. That said, the Tensor G5 one year later to",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.5331
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6485,
+          "valence": 0.5147,
+          "dominance": 0.6767,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 177.93,
+        "energy_mean": 0.03274
+      }
+    },
+    {
+      "segment_id": 47,
+      "start_s": 236.85999999999999,
+      "end_s": 242.17999999999998,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "me has been the most stable Tensor experience I've had. Even after multiple software updates and",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8541
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5974,
+          "valence": 0.6018,
+          "dominance": 0.6472,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 178.24,
+        "energy_mean": 0.025658
+      }
+    },
+    {
+      "segment_id": 48,
+      "start_s": 242.17999999999998,
+      "end_s": 246.89999999999998,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "regular usage, the Pixel 10 Pro still feels the same as it did when I first took it out of the box.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5601
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5533,
+          "valence": 0.5827,
+          "dominance": 0.6022,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 157.42,
+        "energy_mean": 0.019454
+      }
+    },
+    {
+      "segment_id": 49,
+      "start_s": 247.1,
+      "end_s": 251.72,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Now, granted, I wouldn't classify myself as a power user, even though I do think I push phones a bit",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.4707
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.706,
+          "valence": 0.4814,
+          "dominance": 0.6977,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 197.4,
+        "energy_mean": 0.039786
+      }
+    },
+    {
+      "segment_id": 50,
+      "start_s": 251.72,
+      "end_s": 256.16,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "harder than the average Joe, but I'm happy to say that the performance on this phone has been rock",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.891
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6458,
+          "valence": 0.5949,
+          "dominance": 0.6558,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 178.94,
+        "energy_mean": 0.02247
+      }
+    },
+    {
+      "segment_id": 51,
+      "start_s": 256.16,
+      "end_s": 260.52,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "solid over the past year. Battery life has also been consistent with the Pixel 10 Pro. This was",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7333
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6305,
+          "valence": 0.5437,
+          "dominance": 0.6648,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 191.95,
+        "energy_mean": 0.031381
+      }
+    },
+    {
+      "segment_id": 52,
+      "start_s": 260.52,
+      "end_s": 265.82,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "initially an area of concern as efficiency on the Tensor wasn't its forte in earlier versions of the",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.6408
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5985,
+          "valence": 0.4606,
+          "dominance": 0.6484,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 163.78,
+        "energy_mean": 0.027403
+      }
+    },
+    {
+      "segment_id": 53,
+      "start_s": 265.82,
+      "end_s": 271.8,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "chip, but the G5 seems to, again, be a lot more stable here, which has translated to good, consistent",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7906
+        },
+        "facial_emotion": {
+          "dominant": "happy",
+          "confidence": 0.9965,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.661,
+          "valence": 0.6768,
+          "dominance": 0.6793,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 179.83,
+        "energy_mean": 0.027461
+      }
+    },
+    {
+      "segment_id": 54,
+      "start_s": 271.8,
+      "end_s": 276.92,
+      "conflict_score": 0.4,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "battery performance. And probably the thing about the Pixel 10 Pro that, to me, really sets the phone",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7846
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8402,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5838,
+          "valence": 0.6211,
+          "dominance": 0.6291,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 170.61,
+        "energy_mean": 0.020957
+      }
+    },
+    {
+      "segment_id": 55,
+      "start_s": 276.92,
+      "end_s": 282.2,
+      "conflict_score": 0.4,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "apart and still requires good performance is its ability to leverage AI. Now, hear me out on this",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6974
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8006,
+          "frame_count": 6,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6315,
+          "valence": 0.7301,
+          "dominance": 0.6716,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 162.59,
+        "energy_mean": 0.023088
+      }
+    },
+    {
+      "segment_id": 56,
+      "start_s": 282.2,
+      "end_s": 287.5,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "one, because trust me, there is no one that hates AI slot more than I do, but I really do feel as",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.5875
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8317,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6472,
+          "valence": 0.3484,
+          "dominance": 0.694,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 159.04,
+        "energy_mean": 0.026212
+      }
+    },
+    {
+      "segment_id": 57,
+      "start_s": 287.5,
+      "end_s": 291.44,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "though that the only phone out there right now that is going in the right direction when it comes to AI",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7445
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6121,
+          "valence": 0.6162,
+          "dominance": 0.6239,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 148.3,
+        "energy_mean": 0.027814
+      }
+    },
+    {
+      "segment_id": 58,
+      "start_s": 291.44,
+      "end_s": 297.20000000000005,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "integration is the Google Pixel. Gemini being the core AI assistant on this phone elevates the utility",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7394
+        },
+        "facial_emotion": {
+          "dominant": "sad",
+          "confidence": 0.4503,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6449,
+          "valence": 0.7248,
+          "dominance": 0.6703,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 161.41,
+        "energy_mean": 0.028594
+      }
+    },
+    {
+      "segment_id": 59,
+      "start_s": 297.20000000000005,
+      "end_s": 302.04,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "of this device to a different level. It reminds me of the time when Apple introduced the App Store to",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.4864
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.667,
+          "valence": 0.7329,
+          "dominance": 0.6859,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 169.0,
+        "energy_mean": 0.035568
+      }
+    },
+    {
+      "segment_id": 60,
+      "start_s": 302.04,
+      "end_s": 306.48,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "the iPhone. It changed what the phone could be. And even though I don't think it's at the same level,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5823
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6421,
+          "valence": 0.5886,
+          "dominance": 0.6521,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 192.76,
+        "energy_mean": 0.027995
+      }
+    },
+    {
+      "segment_id": 61,
+      "start_s": 306.48,
+      "end_s": 311.58000000000004,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "what Google is trying to do with Gemini and the Pixel is the closest thing to a paradigm shift that",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.5224
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6623,
+          "valence": 0.687,
+          "dominance": 0.6867,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 173.99,
+        "energy_mean": 0.02712
+      }
+    },
+    {
+      "segment_id": 62,
+      "start_s": 311.58000000000004,
+      "end_s": 315.88,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "I really don't think anyone else is really getting close to. That's not to say that it's perfect,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.4051
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9832,
+          "frame_count": 3,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6223,
+          "valence": 0.5178,
+          "dominance": 0.6672,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 175.65,
+        "energy_mean": 0.029213
+      }
+    },
+    {
+      "segment_id": 63,
+      "start_s": 315.88,
+      "end_s": 320.20000000000005,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "but I really do think it's doing better than everybody else in the game right now. But let's go back to",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7538
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8532,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6319,
+          "valence": 0.6502,
+          "dominance": 0.6535,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 149.32,
+        "energy_mean": 0.023319
+      }
+    },
+    {
+      "segment_id": 64,
+      "start_s": 320.20000000000005,
+      "end_s": 324.58000000000004,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "more normal consumer level stuff and talk about how the Pixel 10 Pro has been with its cameras,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.5657
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8287,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6238,
+          "valence": 0.6726,
+          "dominance": 0.6626,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 158.16,
+        "energy_mean": 0.027138
+      }
+    },
+    {
+      "segment_id": 65,
+      "start_s": 325.06,
+      "end_s": 329.70000000000005,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "probably still the main reason why people decided to get this phone. One year later, I'd argue that the",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.4979
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9095,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.619,
+          "valence": 0.4203,
+          "dominance": 0.6481,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 186.95,
+        "energy_mean": 0.036398
+      }
+    },
+    {
+      "segment_id": 66,
+      "start_s": 329.7,
+      "end_s": 334.21999999999997,
+      "conflict_score": 0.2052,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "facial_channel_downweighted[structural]: 0.6000 -> 0.2052 (x0.342, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "still images this device is able to produce is still top three in the game right now. I wouldn't",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.528
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9998,
+          "frame_count": 1,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.659,
+          "valence": 0.6632,
+          "dominance": 0.658,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 166.78,
+        "energy_mean": 0.029519
+      }
+    },
+    {
+      "segment_id": 67,
+      "start_s": 334.21999999999997,
+      "end_s": 338.18,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "even fight you if you say it's in the number one spot because the photos that you can get with this",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.4425
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6786,
+          "valence": 0.4911,
+          "dominance": 0.694,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 168.77,
+        "energy_mean": 0.028384
+      }
+    },
+    {
+      "segment_id": 68,
+      "start_s": 338.18,
+      "end_s": 342.03999999999996,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "phone are pretty incredible. And I've said this before, and it's so true, especially as I've been",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8988
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6507,
+          "valence": 0.6564,
+          "dominance": 0.6672,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 178.02,
+        "energy_mean": 0.036
+      }
+    },
+    {
+      "segment_id": 69,
+      "start_s": 342.03999999999996,
+      "end_s": 346.9,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "using this phone over time, getting good pictures out of this phone is almost effortless. I just snap",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6032
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7446,
+          "valence": 0.5351,
+          "dominance": 0.7278,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 170.27,
+        "energy_mean": 0.024923
+      }
+    },
+    {
+      "segment_id": 70,
+      "start_s": 346.9,
+      "end_s": 351.46,
+      "conflict_score": 0.2052,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "facial_channel_downweighted[structural]: 0.6000 -> 0.2052 (x0.342, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "randomly without too much thought most of the time, and I'm kind of blown away at how good these",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7741
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.6518,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6507,
+          "valence": 0.6632,
+          "dominance": 0.6803,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 173.56,
+        "energy_mean": 0.037124
+      }
+    },
+    {
+      "segment_id": 71,
+      "start_s": 351.46,
+      "end_s": 356.02,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "photos turn out all on their own. Now, where I feel as though Google has the most opportunity for",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6419
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7885,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6459,
+          "valence": 0.6413,
+          "dominance": 0.6732,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 168.63,
+        "energy_mean": 0.031526
+      }
+    },
+    {
+      "segment_id": 72,
+      "start_s": 356.02,
+      "end_s": 360.96,
+      "conflict_score": 0.2052,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "facial_channel_downweighted[structural]: 0.6000 -> 0.2052 (x0.342, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "improvement is with their video quality. It's never been that good, and it always feels as though",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6307
+        },
+        "facial_emotion": {
+          "dominant": "sad",
+          "confidence": 0.8933,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6569,
+          "valence": 0.6348,
+          "dominance": 0.6728,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 170.68,
+        "energy_mean": 0.030765
+      }
+    },
+    {
+      "segment_id": 73,
+      "start_s": 360.96,
+      "end_s": 365.71999999999997,
+      "conflict_score": 0.171,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "facial_channel_downweighted[structural]: 0.5000 -> 0.1710 (x0.342, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "it's more behind than it actually is because the still image quality is so good. The videos that you",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.695
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7712,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6697,
+          "valence": 0.6949,
+          "dominance": 0.6811,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 163.36,
+        "energy_mean": 0.022724
+      }
+    },
+    {
+      "segment_id": 74,
+      "start_s": 365.71999999999997,
+      "end_s": 370.97999999999996,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "can get out of this phone are okay, but they tend to look over processed and too digital. If Google is",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEGATIVE",
+          "confidence": 0.7991
+        },
+        "facial_emotion": {
+          "dominant": "happy",
+          "confidence": 0.9893,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6909,
+          "valence": 0.7,
+          "dominance": 0.691,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 201.01,
+        "energy_mean": 0.030655
+      }
+    },
+    {
+      "segment_id": 75,
+      "start_s": 370.97999999999996,
+      "end_s": 376.12,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "able to find a way to get the video quality on the Pixel to mirror the color signs of its photo quality,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.572
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6887,
+          "valence": 0.695,
+          "dominance": 0.7111,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 187.58,
+        "energy_mean": 0.032161
+      }
+    },
+    {
+      "segment_id": 76,
+      "start_s": 376.21999999999997,
+      "end_s": 381.52,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "it would be an absolute home run, especially in times like these where shooting video is a lot more",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7007
+        },
+        "facial_emotion": {
+          "dominant": "happy",
+          "confidence": 0.8915,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6845,
+          "valence": 0.4825,
+          "dominance": 0.7085,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 196.76,
+        "energy_mean": 0.026815
+      }
+    },
+    {
+      "segment_id": 77,
+      "start_s": 381.52,
+      "end_s": 386.41999999999996,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "commonplace than before. But overall, the Pixel 10 Pro has been a really fun device to use over the",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8872
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8079,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6236,
+          "valence": 0.675,
+          "dominance": 0.6737,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 192.69,
+        "energy_mean": 0.037539
+      }
+    },
+    {
+      "segment_id": 78,
+      "start_s": 386.41999999999996,
+      "end_s": 391.65999999999997,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "past year. I do notice that I play around with it a lot more than I do with my iPhone, and I'm glad",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8339
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.8477,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5552,
+          "valence": 0.732,
+          "dominance": 0.5993,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 141.65,
+        "energy_mean": 0.021224
+      }
+    },
+    {
+      "segment_id": 79,
+      "start_s": 391.65999999999997,
+      "end_s": 396.44,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "to say that's still the case today. Now, Google has leaked preliminary info on the new Pixel 11 lineup",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7169
+        },
+        "facial_emotion": {
+          "dominant": "sad",
+          "confidence": 0.5923,
+          "frame_count": 2,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6286,
+          "valence": 0.5562,
+          "dominance": 0.6855,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 165.08,
+        "energy_mean": 0.031198
+      }
+    },
+    {
+      "segment_id": 80,
+      "start_s": 396.44,
+      "end_s": 401.76,
+      "conflict_score": 0.2445,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "channels_in_conflict: facial_emotion",
+        "vocal_channel_downweighted[structural]: 0.5000 -> 0.2445 (x0.489, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "that we'll be releasing in August. So far, it looks like it's building upon the strength of the Pixel 10,",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6776
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6176,
+          "valence": 0.6888,
+          "dominance": 0.6404,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 162.86,
+        "energy_mean": 0.02743
+      }
+    },
+    {
+      "segment_id": 81,
+      "start_s": 401.85999999999996,
+      "end_s": 406.78,
+      "conflict_score": 0.0,
+      "conflict_reasons": [],
+      "flagged": false,
+      "text": "and I'm super excited to see what it brings to the table. But if you're holding the 10 Pro, I'd wait before",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.8456
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7526,
+          "valence": 0.8115,
+          "dominance": 0.7421,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 186.5,
+        "energy_mean": 0.036947
+      }
+    },
+    {
+      "segment_id": 82,
+      "start_s": 406.78,
+      "end_s": 411.38,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "jumping too quickly to get the 11 Pro. Make sure that you're subscribed to the channel to check out",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.698
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7018,
+          "valence": 0.7174,
+          "dominance": 0.6958,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 184.5,
+        "energy_mean": 0.020539
+      }
+    },
+    {
+      "segment_id": 83,
+      "start_s": 411.38,
+      "end_s": 415.9,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: video_comment_sentiment"
+      ],
+      "flagged": false,
+      "text": "the review once that phone is released so you can be informed about whether or not that phone is",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7836
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.5955,
+          "valence": 0.5891,
+          "dominance": 0.6352,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 163.05,
+        "energy_mean": 0.034329
+      }
+    },
+    {
+      "segment_id": 84,
+      "start_s": 415.9,
+      "end_s": 421.59999999999997,
+      "conflict_score": 0.2052,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "facial_channel_downweighted[structural]: 0.6000 -> 0.2052 (x0.342, measured channel accuracy)"
+      ],
+      "flagged": false,
+      "text": "worth it because the Pixel 10 Pro one year later is still a solid, solid device. But hey, that's just",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.7334
+        },
+        "facial_emotion": {
+          "dominant": "sad",
+          "confidence": 0.6306,
+          "frame_count": 5,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6773,
+          "valence": 0.6603,
+          "dominance": 0.6879,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 209.5,
+        "energy_mean": 0.023746
+      }
+    },
+    {
+      "segment_id": 85,
+      "start_s": 421.59999999999997,
+      "end_s": 425.9,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion",
+        "channels_in_conflict: vocal_prosody"
+      ],
+      "flagged": false,
+      "text": "me, and I want to know what you guys think. What do you guys think about the Pixel 10 Pro one year later?",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.7899
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.7947,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.6751,
+          "valence": 0.6684,
+          "dominance": 0.682,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 169.33,
+        "energy_mean": 0.02533
+      }
+    },
+    {
+      "segment_id": 86,
+      "start_s": 426.09999999999997,
+      "end_s": 429.94,
+      "conflict_score": 0.6,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "Are you as impressed as I am, or are you disappointed? Curious to get your thoughts. Let me know what you guys",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "NEUTRAL",
+          "confidence": 0.649
+        },
+        "facial_emotion": {
+          "dominant": null,
+          "confidence": 0.0,
+          "frame_count": 0,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "POSITIVE",
+          "arousal": 0.7343,
+          "valence": 0.2816,
+          "dominance": 0.7078,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 221.44,
+        "energy_mean": 0.033709
+      }
+    },
+    {
+      "segment_id": 87,
+      "start_s": 429.94,
+      "end_s": 437.78,
+      "conflict_score": 0.5,
+      "conflict_reasons": [
+        "channels_in_conflict: transcript_sentiment",
+        "channels_in_conflict: vocal_emotion",
+        "channels_in_conflict: facial_emotion"
+      ],
+      "flagged": false,
+      "text": "are thinking in the comments down below. And in case you guys missed my long-term review of the iPhone 17 Pro, definitely check it out here. You're not going to want to miss it.",
+      "model_outputs": {
+        "transcript_sentiment": {
+          "label": "POSITIVE",
+          "confidence": 0.6516
+        },
+        "facial_emotion": {
+          "dominant": "neutral",
+          "confidence": 0.9931,
+          "frame_count": 4,
+          "reliability": 0.342
+        },
+        "vocal_emotion": {
+          "label": "NEUTRAL",
+          "arousal": 0.6371,
+          "valence": 0.5683,
+          "dominance": 0.651,
+          "reliability": 0.489
+        },
+        "pitch_mean_hz": 191.33,
+        "energy_mean": 0.025034
+      }
+    }
+  ]
+}

@@ -1,0 +1,3879 @@
+{
+  "generated_by": "ui_evidence/verify_ui.py",
+  "measured_at": "2026-09-25T10:48:36",
+  "base": "http://127.0.0.1:5057",
+  "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)",
+  "surfaces": {
+    "landing": "/",
+    "run": "/run",
+    "library": "/library",
+    "brand-book": "/brand/huawei-week-b2c94d55",
+    "product-book": "/brand/sasmung-s27-ultra-half-12f4e012",
+    "member-book": "/brand/iphone-18-pro-max-month-df147f72/vTDhHX7x2N4"
+  },
+  "requests_console": {
+    "landing": {
+      "foreign_requests": [],
+      "console_errors": []
+    },
+    "run": {
+      "foreign_requests": [],
+      "console_errors": []
+    },
+    "library": {
+      "foreign_requests": [],
+      "console_errors": []
+    },
+    "brand-book": {
+      "foreign_requests": [],
+      "console_errors": []
+    },
+    "product-book": {
+      "foreign_requests": [],
+      "console_errors": []
+    },
+    "member-book": {
+      "foreign_requests": [],
+      "console_errors": []
+    }
+  },
+  "contrast": {
+    "bench": {
+      "landing": {
+        "pairs": 32,
+        "failing": 0,
+        "spreads": null,
+        "min_ratio": 5.13,
+        "worst": []
+      },
+      "run": {
+        "pairs": 13,
+        "failing": 0,
+        "spreads": null,
+        "min_ratio": 5.13,
+        "worst": []
+      },
+      "library": {
+        "pairs": 11,
+        "failing": 0,
+        "spreads": null,
+        "min_ratio": 4.53,
+        "worst": []
+      },
+      "brand-book": {
+        "pairs": 44,
+        "failing": 0,
+        "spreads": 15,
+        "min_ratio": 4.6,
+        "worst": []
+      },
+      "product-book": {
+        "pairs": 44,
+        "failing": 0,
+        "spreads": 17,
+        "min_ratio": 4.6,
+        "worst": []
+      },
+      "member-book": {
+        "pairs": 39,
+        "failing": 0,
+        "spreads": 21,
+        "min_ratio": 4.6,
+        "worst": []
+      }
+    },
+    "field": {
+      "landing": {
+        "pairs": 32,
+        "failing": 0,
+        "spreads": null,
+        "min_ratio": 4.8,
+        "worst": []
+      },
+      "run": {
+        "pairs": 13,
+        "failing": 0,
+        "spreads": null,
+        "min_ratio": 4.8,
+        "worst": []
+      },
+      "library": {
+        "pairs": 11,
+        "failing": 0,
+        "spreads": null,
+        "min_ratio": 5.51,
+        "worst": []
+      },
+      "brand-book": {
+        "pairs": 44,
+        "failing": 1,
+        "spreads": 15,
+        "min_ratio": 1.11,
+        "worst": [
+          {
+            "sample": "01",
+            "color": "rgb(231, 236, 238)",
+            "bg": "rgb(248,247,244)",
+            "size": 11.5,
+            "large": false,
+            "ratio": 1.11,
+            "passes": false
+          }
+        ]
+      },
+      "product-book": {
+        "pairs": 44,
+        "failing": 1,
+        "spreads": 17,
+        "min_ratio": 1.11,
+        "worst": [
+          {
+            "sample": "01",
+            "color": "rgb(231, 236, 238)",
+            "bg": "rgb(248,247,244)",
+            "size": 11.5,
+            "large": false,
+            "ratio": 1.11,
+            "passes": false
+          }
+        ]
+      },
+      "member-book": {
+        "pairs": 39,
+        "failing": 0,
+        "spreads": 21,
+        "min_ratio": 4.98,
+        "worst": []
+      }
+    }
+  },
+  "keyboard": {
+    "landing@1440": {
+      "stops": 43,
+      "without_ring": [],
+      "off_screen": [],
+      "obscured": [],
+      "focused_while_invisible": [],
+      "tabbable": 18,
+      "invisible_tabbables": [],
+      "invisible_count": 0
+    },
+    "run@1440": {
+      "stops": 44,
+      "without_ring": [],
+      "off_screen": [],
+      "obscured": [],
+      "focused_while_invisible": [],
+      "tabbable": 15,
+      "invisible_tabbables": [],
+      "invisible_count": 0
+    },
+    "library@1440": {
+      "stops": 43,
+      "without_ring": [],
+      "off_screen": [],
+      "obscured": [],
+      "focused_while_invisible": [],
+      "tabbable": 14,
+      "invisible_tabbables": [],
+      "invisible_count": 0
+    },
+    "brand-book@1440": {
+      "stops": 44,
+      "without_ring": [],
+      "off_screen": [],
+      "obscured": [],
+      "focused_while_invisible": [],
+      "tabbable": 26,
+      "invisible_tabbables": [],
+      "invisible_count": 0
+    },
+    "product-book@1440": {
+      "stops": 44,
+      "without_ring": [],
+      "off_screen": [],
+      "obscured": [],
+      "focused_while_invisible": [],
+      "tabbable": 26,
+      "invisible_tabbables": [],
+      "invisible_count": 0
+    },
+    "member-book@1440": {
+      "stops": 44,
+      "without_ring": [],
+      "off_screen": [],
+      "obscured": [],
+      "focused_while_invisible": [],
+      "tabbable": 21,
+      "invisible_tabbables": [],
+      "invisible_count": 0
+    },
+    "landing@390": {
+      "stops": 43,
+      "without_ring": [],
+      "off_screen": [],
+      "obscured": [],
+      "focused_while_invisible": [
+        {
+          "el": "a",
+          "label": "Opening",
+          "top": 88,
+          "onScreen": true,
+          "ring": true,
+          "obscured": false,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        },
+        {
+          "el": "a",
+          "label": "Analyse",
+          "top": 131,
+          "onScreen": true,
+          "ring": true,
+          "obscured": false,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        },
+        {
+          "el": "a",
+          "label": "Library",
+          "top": 174,
+          "onScreen": true,
+          "ring": true,
+          "obscured": false,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        },
+        {
+          "el": "button.display__opt",
+          "label": "Dark",
+          "top": 234,
+          "onScreen": true,
+          "ring": true,
+          "obscured": false,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        },
+        {
+          "el": "button.display__opt",
+          "label": "Light",
+          "top": 234,
+          "onScreen": true,
+          "ring": true,
+          "obscured": false,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        }
+      ],
+      "tabbable": 18,
+      "invisible_tabbables": [
+        {
+          "el": "a",
+          "label": "Opening",
+          "opacity": 0
+        },
+        {
+          "el": "a",
+          "label": "Analyse",
+          "opacity": 0
+        },
+        {
+          "el": "a",
+          "label": "Library",
+          "opacity": 0
+        },
+        {
+          "el": "button.display__opt",
+          "label": "Dark",
+          "opacity": 0
+        },
+        {
+          "el": "button.display__opt",
+          "label": "Light",
+          "opacity": 0
+        },
+        {
+          "el": "a.pill",
+          "label": "Analyse a video",
+          "opacity": 0
+        }
+      ],
+      "invisible_count": 6
+    },
+    "run@390": {
+      "stops": 44,
+      "without_ring": [],
+      "off_screen": [],
+      "obscured": [],
+      "focused_while_invisible": [
+        {
+          "el": "a",
+          "label": "Opening",
+          "top": 88,
+          "onScreen": true,
+          "ring": true,
+          "obscured": false,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        },
+        {
+          "el": "a",
+          "label": "Analyse",
+          "top": 131,
+          "onScreen": true,
+          "ring": true,
+          "obscured": false,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        },
+        {
+          "el": "a",
+          "label": "Library",
+          "top": 174,
+          "onScreen": true,
+          "ring": true,
+          "obscured": false,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        },
+        {
+          "el": "button.display__opt",
+          "label": "Dark",
+          "top": 234,
+          "onScreen": true,
+          "ring": true,
+          "obscured": false,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        },
+        {
+          "el": "button.display__opt",
+          "label": "Light",
+          "top": 234,
+          "onScreen": true,
+          "ring": true,
+          "obscured": false,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        }
+      ],
+      "tabbable": 15,
+      "invisible_tabbables": [
+        {
+          "el": "a",
+          "label": "Opening",
+          "opacity": 0
+        },
+        {
+          "el": "a",
+          "label": "Analyse",
+          "opacity": 0
+        },
+        {
+          "el": "a",
+          "label": "Library",
+          "opacity": 0
+        },
+        {
+          "el": "button.display__opt",
+          "label": "Dark",
+          "opacity": 0
+        },
+        {
+          "el": "button.display__opt",
+          "label": "Light",
+          "opacity": 0
+        },
+        {
+          "el": "a.pill",
+          "label": "Analyse a video",
+          "opacity": 0
+        }
+      ],
+      "invisible_count": 6
+    },
+    "library@390": {
+      "stops": 43,
+      "without_ring": [],
+      "off_screen": [],
+      "obscured": [
+        {
+          "el": "a",
+          "label": "Analyse",
+          "top": 131,
+          "onScreen": true,
+          "ring": true,
+          "obscured": true,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        },
+        {
+          "el": "a",
+          "label": "Library",
+          "top": 174,
+          "onScreen": true,
+          "ring": true,
+          "obscured": true,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        },
+        {
+          "el": "button.display__opt",
+          "label": "Dark",
+          "top": 234,
+          "onScreen": true,
+          "ring": true,
+          "obscured": true,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        },
+        {
+          "el": "button.display__opt",
+          "label": "Light",
+          "top": 234,
+          "onScreen": true,
+          "ring": true,
+          "obscured": true,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        },
+        {
+          "el": "a.pill",
+          "label": "Analyse a video",
+          "top": 285,
+          "onScreen": true,
+          "ring": true,
+          "obscured": true,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        }
+      ],
+      "focused_while_invisible": [
+        {
+          "el": "a",
+          "label": "Opening",
+          "top": 88,
+          "onScreen": true,
+          "ring": true,
+          "obscured": false,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        },
+        {
+          "el": "a",
+          "label": "Analyse",
+          "top": 131,
+          "onScreen": true,
+          "ring": true,
+          "obscured": true,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        },
+        {
+          "el": "a",
+          "label": "Library",
+          "top": 174,
+          "onScreen": true,
+          "ring": true,
+          "obscured": true,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        },
+        {
+          "el": "button.display__opt",
+          "label": "Dark",
+          "top": 234,
+          "onScreen": true,
+          "ring": true,
+          "obscured": true,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        },
+        {
+          "el": "button.display__opt",
+          "label": "Light",
+          "top": 234,
+          "onScreen": true,
+          "ring": true,
+          "obscured": true,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        }
+      ],
+      "tabbable": 14,
+      "invisible_tabbables": [
+        {
+          "el": "a",
+          "label": "Opening",
+          "opacity": 0
+        },
+        {
+          "el": "a",
+          "label": "Analyse",
+          "opacity": 0
+        },
+        {
+          "el": "a",
+          "label": "Library",
+          "opacity": 0
+        },
+        {
+          "el": "button.display__opt",
+          "label": "Dark",
+          "opacity": 0
+        },
+        {
+          "el": "button.display__opt",
+          "label": "Light",
+          "opacity": 0
+        },
+        {
+          "el": "a.pill",
+          "label": "Analyse a video",
+          "opacity": 0
+        }
+      ],
+      "invisible_count": 6
+    },
+    "brand-book@390": {
+      "stops": 44,
+      "without_ring": [],
+      "off_screen": [],
+      "obscured": [
+        {
+          "el": "a",
+          "label": "Opening",
+          "top": 88,
+          "onScreen": true,
+          "ring": true,
+          "obscured": true,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        },
+        {
+          "el": "a",
+          "label": "Analyse",
+          "top": 131,
+          "onScreen": true,
+          "ring": true,
+          "obscured": true,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        },
+        {
+          "el": "a",
+          "label": "Library",
+          "top": 174,
+          "onScreen": true,
+          "ring": true,
+          "obscured": true,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        }
+      ],
+      "focused_while_invisible": [
+        {
+          "el": "a",
+          "label": "Opening",
+          "top": 88,
+          "onScreen": true,
+          "ring": true,
+          "obscured": true,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        },
+        {
+          "el": "a",
+          "label": "Analyse",
+          "top": 131,
+          "onScreen": true,
+          "ring": true,
+          "obscured": true,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        },
+        {
+          "el": "a",
+          "label": "Library",
+          "top": 174,
+          "onScreen": true,
+          "ring": true,
+          "obscured": true,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        },
+        {
+          "el": "button.display__opt",
+          "label": "Dark",
+          "top": 234,
+          "onScreen": true,
+          "ring": true,
+          "obscured": false,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        },
+        {
+          "el": "button.display__opt",
+          "label": "Light",
+          "top": 234,
+          "onScreen": true,
+          "ring": true,
+          "obscured": false,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        }
+      ],
+      "tabbable": 32,
+      "invisible_tabbables": [
+        {
+          "el": "a",
+          "label": "Opening",
+          "opacity": 0
+        },
+        {
+          "el": "a",
+          "label": "Analyse",
+          "opacity": 0
+        },
+        {
+          "el": "a",
+          "label": "Library",
+          "opacity": 0
+        },
+        {
+          "el": "button.display__opt",
+          "label": "Dark",
+          "opacity": 0
+        },
+        {
+          "el": "button.display__opt",
+          "label": "Light",
+          "opacity": 0
+        },
+        {
+          "el": "a.pill",
+          "label": "Analyse a video",
+          "opacity": 0
+        }
+      ],
+      "invisible_count": 6
+    },
+    "product-book@390": {
+      "stops": 44,
+      "without_ring": [],
+      "off_screen": [],
+      "obscured": [
+        {
+          "el": "a",
+          "label": "Opening",
+          "top": 88,
+          "onScreen": true,
+          "ring": true,
+          "obscured": true,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        },
+        {
+          "el": "a",
+          "label": "Analyse",
+          "top": 131,
+          "onScreen": true,
+          "ring": true,
+          "obscured": true,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        },
+        {
+          "el": "a",
+          "label": "Library",
+          "top": 174,
+          "onScreen": true,
+          "ring": true,
+          "obscured": true,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        }
+      ],
+      "focused_while_invisible": [
+        {
+          "el": "a",
+          "label": "Opening",
+          "top": 88,
+          "onScreen": true,
+          "ring": true,
+          "obscured": true,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        },
+        {
+          "el": "a",
+          "label": "Analyse",
+          "top": 131,
+          "onScreen": true,
+          "ring": true,
+          "obscured": true,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        },
+        {
+          "el": "a",
+          "label": "Library",
+          "top": 174,
+          "onScreen": true,
+          "ring": true,
+          "obscured": true,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        },
+        {
+          "el": "button.display__opt",
+          "label": "Dark",
+          "top": 234,
+          "onScreen": true,
+          "ring": true,
+          "obscured": false,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        },
+        {
+          "el": "button.display__opt",
+          "label": "Light",
+          "top": 234,
+          "onScreen": true,
+          "ring": true,
+          "obscured": false,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        }
+      ],
+      "tabbable": 37,
+      "invisible_tabbables": [
+        {
+          "el": "a",
+          "label": "Opening",
+          "opacity": 0
+        },
+        {
+          "el": "a",
+          "label": "Analyse",
+          "opacity": 0
+        },
+        {
+          "el": "a",
+          "label": "Library",
+          "opacity": 0
+        },
+        {
+          "el": "button.display__opt",
+          "label": "Dark",
+          "opacity": 0
+        },
+        {
+          "el": "button.display__opt",
+          "label": "Light",
+          "opacity": 0
+        },
+        {
+          "el": "a.pill",
+          "label": "Analyse a video",
+          "opacity": 0
+        }
+      ],
+      "invisible_count": 6
+    },
+    "member-book@390": {
+      "stops": 44,
+      "without_ring": [],
+      "off_screen": [],
+      "obscured": [
+        {
+          "el": "a",
+          "label": "Analyse",
+          "top": 131,
+          "onScreen": true,
+          "ring": true,
+          "obscured": true,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        },
+        {
+          "el": "a",
+          "label": "Library",
+          "top": 174,
+          "onScreen": true,
+          "ring": true,
+          "obscured": true,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        },
+        {
+          "el": "button.display__opt",
+          "label": "Dark",
+          "top": 234,
+          "onScreen": true,
+          "ring": true,
+          "obscured": true,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        },
+        {
+          "el": "button.display__opt",
+          "label": "Light",
+          "top": 234,
+          "onScreen": true,
+          "ring": true,
+          "obscured": true,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        }
+      ],
+      "focused_while_invisible": [
+        {
+          "el": "a",
+          "label": "Opening",
+          "top": 88,
+          "onScreen": true,
+          "ring": true,
+          "obscured": false,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        },
+        {
+          "el": "a",
+          "label": "Analyse",
+          "top": 131,
+          "onScreen": true,
+          "ring": true,
+          "obscured": true,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        },
+        {
+          "el": "a",
+          "label": "Library",
+          "top": 174,
+          "onScreen": true,
+          "ring": true,
+          "obscured": true,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        },
+        {
+          "el": "button.display__opt",
+          "label": "Dark",
+          "top": 234,
+          "onScreen": true,
+          "ring": true,
+          "obscured": true,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        },
+        {
+          "el": "button.display__opt",
+          "label": "Light",
+          "top": 234,
+          "onScreen": true,
+          "ring": true,
+          "obscured": true,
+          "ringSurvivesForcedColors": true,
+          "faint": true
+        }
+      ],
+      "tabbable": 21,
+      "invisible_tabbables": [
+        {
+          "el": "a",
+          "label": "Opening",
+          "opacity": 0
+        },
+        {
+          "el": "a",
+          "label": "Analyse",
+          "opacity": 0
+        },
+        {
+          "el": "a",
+          "label": "Library",
+          "opacity": 0
+        },
+        {
+          "el": "button.display__opt",
+          "label": "Dark",
+          "opacity": 0
+        },
+        {
+          "el": "button.display__opt",
+          "label": "Light",
+          "opacity": 0
+        },
+        {
+          "el": "a.pill",
+          "label": "Analyse a video",
+          "opacity": 0
+        }
+      ],
+      "invisible_count": 6
+    }
+  },
+  "frame_rate": {
+    "surface": "landing film, scrolled",
+    "frames": 264,
+    "median_fps": 59.9,
+    "p5_fps": 59.9,
+    "worst_frame_ms": 16.8,
+    "note": "headless Chrome paces at 60 Hz; a regression signal, not the panel's rate"
+  },
+  "transitions": {
+    "total": 130,
+    "transitioning": 102,
+    "note": "design contract; never a failure"
+  },
+  "reduced_motion": {
+    "os/landing": {
+      "infinite_animations": 0,
+      "looping": [],
+      "gpu_draws_per_s": 0.0,
+      "paints2d_per_s": 0.0,
+      "pinned_sections": 1
+    },
+    "os/run": {
+      "infinite_animations": 0,
+      "looping": [],
+      "gpu_draws_per_s": 0.0,
+      "paints2d_per_s": 0.0,
+      "pinned_sections": 0
+    },
+    "os/library": {
+      "infinite_animations": 0,
+      "looping": [],
+      "gpu_draws_per_s": 0.0,
+      "paints2d_per_s": 0.0,
+      "pinned_sections": 0
+    },
+    "os/brand-book": {
+      "infinite_animations": 0,
+      "looping": [],
+      "gpu_draws_per_s": 0.0,
+      "paints2d_per_s": 0.0,
+      "pinned_sections": 0
+    },
+    "os/product-book": {
+      "infinite_animations": 0,
+      "looping": [],
+      "gpu_draws_per_s": 0.0,
+      "paints2d_per_s": 0.0,
+      "pinned_sections": 0
+    },
+    "os/member-book": {
+      "infinite_animations": 0,
+      "looping": [],
+      "gpu_draws_per_s": 0.0,
+      "paints2d_per_s": 0.0,
+      "pinned_sections": 0
+    },
+    "switch/landing": {
+      "infinite_animations": 0,
+      "looping": [],
+      "gpu_draws_per_s": 60.0,
+      "paints2d_per_s": 0.0,
+      "pinned_sections": 3
+    },
+    "switch/run": {
+      "infinite_animations": 5,
+      "looping": [
+        "div.optics__assembly",
+        "div.optic"
+      ],
+      "gpu_draws_per_s": 0.0,
+      "paints2d_per_s": 0.0,
+      "pinned_sections": 0
+    },
+    "switch/library": {
+      "infinite_animations": 0,
+      "looping": [],
+      "gpu_draws_per_s": 5400.0,
+      "paints2d_per_s": 0.0,
+      "pinned_sections": 0
+    },
+    "switch/brand-book": {
+      "infinite_animations": 0,
+      "looping": [],
+      "gpu_draws_per_s": 0.0,
+      "paints2d_per_s": 0.0,
+      "pinned_sections": 0
+    },
+    "switch/product-book": {
+      "infinite_animations": 0,
+      "looping": [],
+      "gpu_draws_per_s": 0.0,
+      "paints2d_per_s": 0.0,
+      "pinned_sections": 0
+    },
+    "switch/member-book": {
+      "infinite_animations": 0,
+      "looping": [],
+      "gpu_draws_per_s": 0.0,
+      "paints2d_per_s": 0.0,
+      "pinned_sections": 0
+    },
+    "motion-on/landing": {
+      "infinite_animations": 8,
+      "gpu_draws_per_s": 60.0
+    },
+    "motion-on/library": {
+      "infinite_animations": 0,
+      "gpu_draws_per_s": 5445.0
+    },
+    "motion-on/run": {
+      "infinite_animations": 5,
+      "gpu_draws_per_s": 0.0
+    }
+  },
+  "books": {
+    "/brand/huawei-week-b2c94d55": {
+      "chapters": 5,
+      "spreads": 15,
+      "h1": 1,
+      "caveat": true,
+      "standing": false,
+      "cannotTell": false,
+      "errors": []
+    },
+    "/brand/iphone-18-pro-max-month-df147f72": {
+      "chapters": 5,
+      "spreads": 14,
+      "h1": 1,
+      "caveat": true,
+      "standing": false,
+      "cannotTell": false,
+      "errors": []
+    },
+    "/brand/nike-half-19a4d6f6": {
+      "chapters": 6,
+      "spreads": 16,
+      "h1": 1,
+      "caveat": true,
+      "standing": false,
+      "cannotTell": false,
+      "errors": []
+    },
+    "/brand/nike-week-19a4d6f6": {
+      "chapters": 6,
+      "spreads": 16,
+      "h1": 1,
+      "caveat": true,
+      "standing": false,
+      "cannotTell": false,
+      "errors": []
+    },
+    "/brand/sasmung-s27-ultra-half-12f4e012": {
+      "chapters": 6,
+      "spreads": 17,
+      "h1": 1,
+      "caveat": true,
+      "standing": false,
+      "cannotTell": false,
+      "errors": []
+    },
+    "/brand/sasmung-s27-ultra-month-cb910946": {
+      "chapters": 6,
+      "spreads": 17,
+      "h1": 1,
+      "caveat": true,
+      "standing": false,
+      "cannotTell": false,
+      "errors": []
+    },
+    "/brand/huawei-week-b2c94d55/JRJSd7YwTdQ": {
+      "chapters": 6,
+      "spreads": 17,
+      "h1": 1,
+      "caveat": true,
+      "standing": false,
+      "cannotTell": false,
+      "errors": []
+    },
+    "/brand/huawei-week-b2c94d55/8EThb_Wm-_U": {
+      "chapters": 6,
+      "spreads": 18,
+      "h1": 1,
+      "caveat": true,
+      "standing": false,
+      "cannotTell": false,
+      "errors": []
+    },
+    "/brand/huawei-week-b2c94d55/s99083xrwPI": {
+      "chapters": 6,
+      "spreads": 21,
+      "h1": 1,
+      "caveat": true,
+      "standing": false,
+      "cannotTell": false,
+      "errors": []
+    },
+    "/brand/huawei-week-b2c94d55/FqfX1-dSbYk": {
+      "chapters": 6,
+      "spreads": 22,
+      "h1": 1,
+      "caveat": true,
+      "standing": false,
+      "cannotTell": false,
+      "errors": []
+    },
+    "/brand/huawei-week-b2c94d55/pb2wzGJ9rXA": {
+      "chapters": 6,
+      "spreads": 17,
+      "h1": 1,
+      "caveat": true,
+      "standing": false,
+      "cannotTell": false,
+      "errors": []
+    },
+    "/brand/iphone-18-pro-max-month-df147f72/ohqxP8EEumo": {
+      "chapters": 6,
+      "spreads": 21,
+      "h1": 1,
+      "caveat": true,
+      "standing": false,
+      "cannotTell": false,
+      "errors": []
+    },
+    "/brand/iphone-18-pro-max-month-df147f72/PjAyUhf52D0": {
+      "chapters": 6,
+      "spreads": 20,
+      "h1": 1,
+      "caveat": true,
+      "standing": false,
+      "cannotTell": false,
+      "errors": []
+    },
+    "/brand/iphone-18-pro-max-month-df147f72/WUlLIo9LI-w": {
+      "chapters": 6,
+      "spreads": 19,
+      "h1": 1,
+      "caveat": true,
+      "standing": false,
+      "cannotTell": false,
+      "errors": []
+    },
+    "/brand/iphone-18-pro-max-month-df147f72/vTDhHX7x2N4": {
+      "chapters": 6,
+      "spreads": 21,
+      "h1": 1,
+      "caveat": true,
+      "standing": false,
+      "cannotTell": false,
+      "errors": []
+    },
+    "/brand/nike-half-19a4d6f6/BJioCrnBwYw": {
+      "chapters": 6,
+      "spreads": 16,
+      "h1": 1,
+      "caveat": true,
+      "standing": false,
+      "cannotTell": false,
+      "errors": []
+    },
+    "/brand/nike-half-19a4d6f6/adxwkEGVV2o": {
+      "chapters": 6,
+      "spreads": 18,
+      "h1": 1,
+      "caveat": true,
+      "standing": false,
+      "cannotTell": false,
+      "errors": []
+    },
+    "/brand/nike-half-19a4d6f6/lOIDb7ahVhM": {
+      "chapters": 6,
+      "spreads": 21,
+      "h1": 1,
+      "caveat": true,
+      "standing": false,
+      "cannotTell": false,
+      "errors": []
+    },
+    "/brand/nike-half-19a4d6f6/B8-JHY94jvI": {
+      "chapters": 6,
+      "spreads": 14,
+      "h1": 1,
+      "caveat": true,
+      "standing": false,
+      "cannotTell": false,
+      "errors": []
+    },
+    "/brand/nike-half-19a4d6f6/BrWwyy2k3lU": {
+      "chapters": 6,
+      "spreads": 14,
+      "h1": 1,
+      "caveat": true,
+      "standing": false,
+      "cannotTell": false,
+      "errors": []
+    },
+    "/brand/nike-week-19a4d6f6/BJioCrnBwYw": {
+      "chapters": 6,
+      "spreads": 16,
+      "h1": 1,
+      "caveat": true,
+      "standing": false,
+      "cannotTell": false,
+      "errors": []
+    },
+    "/brand/nike-week-19a4d6f6/lOIDb7ahVhM": {
+      "chapters": 6,
+      "spreads": 21,
+      "h1": 1,
+      "caveat": true,
+      "standing": false,
+      "cannotTell": false,
+      "errors": []
+    },
+    "/brand/nike-week-19a4d6f6/B8-JHY94jvI": {
+      "chapters": 6,
+      "spreads": 14,
+      "h1": 1,
+      "caveat": true,
+      "standing": false,
+      "cannotTell": false,
+      "errors": []
+    },
+    "/brand/nike-week-19a4d6f6/BrWwyy2k3lU": {
+      "chapters": 6,
+      "spreads": 14,
+      "h1": 1,
+      "caveat": true,
+      "standing": false,
+      "cannotTell": false,
+      "errors": []
+    },
+    "/brand/sasmung-s27-ultra-half-12f4e012/L8CswTQyuMw": {
+      "chapters": 6,
+      "spreads": 22,
+      "h1": 1,
+      "caveat": true,
+      "standing": false,
+      "cannotTell": false,
+      "errors": []
+    },
+    "/brand/sasmung-s27-ultra-half-12f4e012/1n4Y4SEnALs": {
+      "chapters": 6,
+      "spreads": 22,
+      "h1": 1,
+      "caveat": true,
+      "standing": false,
+      "cannotTell": false,
+      "errors": []
+    },
+    "/brand/sasmung-s27-ultra-half-12f4e012/MQpvfM7T0Ow": {
+      "chapters": 6,
+      "spreads": 23,
+      "h1": 1,
+      "caveat": true,
+      "standing": false,
+      "cannotTell": false,
+      "errors": []
+    },
+    "/brand/sasmung-s27-ultra-half-12f4e012/RIxJH90lv0E": {
+      "chapters": 6,
+      "spreads": 21,
+      "h1": 1,
+      "caveat": true,
+      "standing": false,
+      "cannotTell": false,
+      "errors": []
+    },
+    "/brand/sasmung-s27-ultra-half-12f4e012/z0HTxwB3XlU": {
+      "chapters": 6,
+      "spreads": 22,
+      "h1": 1,
+      "caveat": true,
+      "standing": false,
+      "cannotTell": false,
+      "errors": []
+    },
+    "/brand/sasmung-s27-ultra-month-cb910946/L8CswTQyuMw": {
+      "chapters": 6,
+      "spreads": 22,
+      "h1": 1,
+      "caveat": true,
+      "standing": false,
+      "cannotTell": false,
+      "errors": []
+    },
+    "/brand/sasmung-s27-ultra-month-cb910946/MQpvfM7T0Ow": {
+      "chapters": 6,
+      "spreads": 23,
+      "h1": 1,
+      "caveat": true,
+      "standing": false,
+      "cannotTell": false,
+      "errors": []
+    },
+    "/brand/sasmung-s27-ultra-month-cb910946/RIxJH90lv0E": {
+      "chapters": 6,
+      "spreads": 21,
+      "h1": 1,
+      "caveat": true,
+      "standing": false,
+      "cannotTell": false,
+      "errors": []
+    },
+    "/brand/sasmung-s27-ultra-month-cb910946/GbtxgwYJp8o": {
+      "chapters": 6,
+      "spreads": 21,
+      "h1": 1,
+      "caveat": true,
+      "standing": false,
+      "cannotTell": false,
+      "errors": []
+    }
+  },
+  "no_script": {
+    "landing": {
+      "h1": 1,
+      "chars": 1520,
+      "links": 2,
+      "caveat": true
+    },
+    "run": {
+      "h1": 1,
+      "chars": 821,
+      "links": 2,
+      "caveat": false
+    },
+    "library": {
+      "h1": 1,
+      "chars": 1958,
+      "links": 2,
+      "caveat": true
+    },
+    "brand-book": {
+      "h1": 1,
+      "chars": 2003,
+      "links": 2,
+      "caveat": true
+    },
+    "product-book": {
+      "h1": 1,
+      "chars": 2108,
+      "links": 2,
+      "caveat": true
+    },
+    "member-book": {
+      "h1": 1,
+      "chars": 2063,
+      "links": 2,
+      "caveat": true
+    }
+  },
+  "run_voice": {
+    "stages": [
+      {
+        "polite": "Stage 1 of 4: waiting for the worker.",
+        "alert": "",
+        "title": "Queued \u2014 Analyse \u2014 BrandPulse",
+        "role": "progressbar",
+        "valuenow": null,
+        "valuetext": "Queued. No stage has started yet.",
+        "regions": 2,
+        "outside": true,
+        "stage_index": -1
+      },
+      {
+        "polite": "Stage 1 of 4: fetching and classifying audience comments.",
+        "alert": "",
+        "title": "Stage 1 of 4 \u2014 Analyse \u2014 BrandPulse",
+        "role": "progressbar",
+        "valuenow": "0",
+        "valuetext": "Stage 1 of 4, fetching and classifying audience comments. 0 of 4 stages complete.",
+        "regions": 2,
+        "outside": true,
+        "stage_index": 0
+      },
+      {
+        "polite": "Stage 2 of 4: downloading the video, transcribing it, and reading the face and the voice. This is the long stage.",
+        "alert": "",
+        "title": "Stage 2 of 4 \u2014 Analyse \u2014 BrandPulse",
+        "role": "progressbar",
+        "valuenow": "1",
+        "valuetext": "Stage 2 of 4, downloading the video, transcribing it, and reading the face and the voice. This is the long stage. 1 of 4 stages complete.",
+        "regions": 2,
+        "outside": true,
+        "stage_index": 1
+      },
+      {
+        "polite": "Stage 3 of 4: scoring cross-modal conflicts, one local model call per segment.",
+        "alert": "",
+        "title": "Stage 3 of 4 \u2014 Analyse \u2014 BrandPulse",
+        "role": "progressbar",
+        "valuenow": "2",
+        "valuetext": "Stage 3 of 4, scoring cross-modal conflicts, one local model call per segment. 2 of 4 stages complete.",
+        "regions": 2,
+        "outside": true,
+        "stage_index": 2
+      },
+      {
+        "polite": "Stage 4 of 4: computing the final scores.",
+        "alert": "",
+        "title": "Stage 4 of 4 \u2014 Analyse \u2014 BrandPulse",
+        "role": "progressbar",
+        "valuenow": "3",
+        "valuetext": "Stage 4 of 4, computing the final scores. 3 of 4 stages complete.",
+        "regions": 2,
+        "outside": true,
+        "stage_index": 3
+      }
+    ],
+    "endings": {
+      "done": {
+        "polite": "The analysis finished. Authenticity 61.18 out of 100. Brand health 66.05 out of 100. 94 segments, 11 flagged as cross-channel conflicts. The bias caveat is on the report. A link to open it follows.",
+        "alert": "",
+        "title": "Finished \u2014 Analyse \u2014 BrandPulse",
+        "role": null,
+        "valuenow": null,
+        "valuetext": null,
+        "regions": 2,
+        "outside": true
+      },
+      "cancelled": {
+        "polite": "The run was stopped. Nothing was written to the outputs directory. Links to start again and to open the library follow.",
+        "alert": "",
+        "title": "Stopped \u2014 Analyse \u2014 BrandPulse",
+        "role": null,
+        "valuenow": null,
+        "valuetext": null,
+        "regions": 2,
+        "outside": true
+      },
+      "error": {
+        "polite": "This machine is already running an analysis. Showing its progress.",
+        "alert": "The run did not finish. The backend reported: Ollama unreachable at http://localhost:11434. The usual causes are a private, region-locked or removed video, comments disabled on it, an exhausted YouTube quota, or Ollama not running.",
+        "title": "Failed \u2014 Analyse \u2014 BrandPulse",
+        "role": null,
+        "valuenow": null,
+        "valuetext": null,
+        "regions": 2,
+        "outside": true
+      },
+      "lost": {
+        "polite": "This machine is already running an analysis. Showing its progress.",
+        "alert": "That run is no longer known to the server. Jobs are held in memory, so restarting Flask forgets them. If the run had already finished, its report is in the library.",
+        "title": "No longer known \u2014 Analyse \u2014 BrandPulse",
+        "role": null,
+        "valuenow": null,
+        "valuetext": null,
+        "regions": 2,
+        "outside": true
+      }
+    }
+  },
+  "reflow": {
+    "landing@320x568": {
+      "vw": 320,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@320x568": {
+      "vw": 320,
+      "canScrollX": 0,
+      "lost": [
+        {
+          "el": "span",
+          "text": "Held-out accuracy",
+          "over": 11
+        },
+        {
+          "el": "span.t-read",
+          "text": "34.2%",
+          "over": 1
+        },
+        {
+          "el": "span.t-micro",
+          "text": "39 of 114 frames, held-out speaker",
+          "over": 1
+        },
+        {
+          "el": "span.t-read",
+          "text": "78.7%",
+          "over": 1
+        },
+        {
+          "el": "span.t-micro",
+          "text": "118 of 150 comments, unseen videos",
+          "over": 1
+        },
+        {
+          "el": "p.t-micro",
+          "text": "Each percentage is what that chann",
+          "over": 11
+        }
+      ],
+      "lostCount": 6
+    },
+    "library@320x568": {
+      "vw": 320,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@320x568": {
+      "vw": 320,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@320x568": {
+      "vw": 320,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@320x568": {
+      "vw": 320,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@320x568+motion": {
+      "vw": 320,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@320x568+motion": {
+      "vw": 320,
+      "canScrollX": 0,
+      "lost": [
+        {
+          "el": "span",
+          "text": "Held-out accuracy",
+          "over": 11
+        },
+        {
+          "el": "span.t-read",
+          "text": "34.2%",
+          "over": 1
+        },
+        {
+          "el": "span.t-micro",
+          "text": "39 of 114 frames, held-out speaker",
+          "over": 1
+        },
+        {
+          "el": "span.t-read",
+          "text": "78.7%",
+          "over": 1
+        },
+        {
+          "el": "span.t-micro",
+          "text": "118 of 150 comments, unseen videos",
+          "over": 1
+        },
+        {
+          "el": "p.t-micro",
+          "text": "Each percentage is what that chann",
+          "over": 11
+        }
+      ],
+      "lostCount": 6
+    },
+    "library@320x568+motion": {
+      "vw": 320,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@320x568+motion": {
+      "vw": 320,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@320x568+motion": {
+      "vw": 320,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@320x568+motion": {
+      "vw": 320,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@360x800": {
+      "vw": 360,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@360x800": {
+      "vw": 360,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@360x800": {
+      "vw": 360,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@360x800": {
+      "vw": 360,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@360x800": {
+      "vw": 360,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@360x800": {
+      "vw": 360,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@360x800+motion": {
+      "vw": 360,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@360x800+motion": {
+      "vw": 360,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@360x800+motion": {
+      "vw": 360,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@360x800+motion": {
+      "vw": 360,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@360x800+motion": {
+      "vw": 360,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@360x800+motion": {
+      "vw": 360,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@390x844": {
+      "vw": 390,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@390x844": {
+      "vw": 390,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@390x844": {
+      "vw": 390,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@390x844": {
+      "vw": 390,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@390x844": {
+      "vw": 390,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@390x844": {
+      "vw": 390,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@390x844+motion": {
+      "vw": 390,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@390x844+motion": {
+      "vw": 390,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@390x844+motion": {
+      "vw": 390,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@390x844+motion": {
+      "vw": 390,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@390x844+motion": {
+      "vw": 390,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@390x844+motion": {
+      "vw": 390,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@844x390": {
+      "vw": 844,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@844x390": {
+      "vw": 844,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@844x390": {
+      "vw": 844,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@844x390": {
+      "vw": 844,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@844x390": {
+      "vw": 844,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@844x390": {
+      "vw": 844,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@844x390+motion": {
+      "vw": 844,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@844x390+motion": {
+      "vw": 844,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@844x390+motion": {
+      "vw": 844,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@844x390+motion": {
+      "vw": 844,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@844x390+motion": {
+      "vw": 844,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@844x390+motion": {
+      "vw": 844,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@768x1024": {
+      "vw": 768,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@768x1024": {
+      "vw": 768,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@768x1024": {
+      "vw": 768,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@768x1024": {
+      "vw": 768,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@768x1024": {
+      "vw": 768,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@768x1024": {
+      "vw": 768,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@768x1024+motion": {
+      "vw": 768,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@768x1024+motion": {
+      "vw": 768,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@768x1024+motion": {
+      "vw": 768,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@768x1024+motion": {
+      "vw": 768,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@768x1024+motion": {
+      "vw": 768,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@768x1024+motion": {
+      "vw": 768,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@1024x768": {
+      "vw": 1024,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@1024x768": {
+      "vw": 1024,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@1024x768": {
+      "vw": 1024,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@1024x768": {
+      "vw": 1024,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@1024x768": {
+      "vw": 1024,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@1024x768": {
+      "vw": 1024,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@1024x768+motion": {
+      "vw": 1024,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@1024x768+motion": {
+      "vw": 1024,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@1024x768+motion": {
+      "vw": 1024,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@1024x768+motion": {
+      "vw": 1024,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@1024x768+motion": {
+      "vw": 1024,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@1024x768+motion": {
+      "vw": 1024,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@1280x800": {
+      "vw": 1280,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@1280x800": {
+      "vw": 1280,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@1280x800": {
+      "vw": 1280,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@1280x800": {
+      "vw": 1280,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@1280x800": {
+      "vw": 1280,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@1280x800": {
+      "vw": 1280,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@1280x800+motion": {
+      "vw": 1280,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@1280x800+motion": {
+      "vw": 1280,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@1280x800+motion": {
+      "vw": 1280,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@1280x800+motion": {
+      "vw": 1280,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@1280x800+motion": {
+      "vw": 1280,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@1280x800+motion": {
+      "vw": 1280,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@1440x900": {
+      "vw": 1440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@1440x900": {
+      "vw": 1440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@1440x900": {
+      "vw": 1440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@1440x900": {
+      "vw": 1440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@1440x900": {
+      "vw": 1440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@1440x900": {
+      "vw": 1440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@1440x900+motion": {
+      "vw": 1440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@1440x900+motion": {
+      "vw": 1440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@1440x900+motion": {
+      "vw": 1440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@1440x900+motion": {
+      "vw": 1440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@1440x900+motion": {
+      "vw": 1440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@1440x900+motion": {
+      "vw": 1440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@1512x982": {
+      "vw": 1512,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@1512x982": {
+      "vw": 1512,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@1512x982": {
+      "vw": 1512,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@1512x982": {
+      "vw": 1512,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@1512x982": {
+      "vw": 1512,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@1512x982": {
+      "vw": 1512,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@1512x982+motion": {
+      "vw": 1512,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@1512x982+motion": {
+      "vw": 1512,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@1512x982+motion": {
+      "vw": 1512,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@1512x982+motion": {
+      "vw": 1512,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@1512x982+motion": {
+      "vw": 1512,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@1512x982+motion": {
+      "vw": 1512,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@1920x1080": {
+      "vw": 1920,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@1920x1080": {
+      "vw": 1920,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@1920x1080": {
+      "vw": 1920,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@1920x1080": {
+      "vw": 1920,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@1920x1080": {
+      "vw": 1920,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@1920x1080": {
+      "vw": 1920,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@1920x1080+motion": {
+      "vw": 1920,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@1920x1080+motion": {
+      "vw": 1920,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@1920x1080+motion": {
+      "vw": 1920,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@1920x1080+motion": {
+      "vw": 1920,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@1920x1080+motion": {
+      "vw": 1920,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@1920x1080+motion": {
+      "vw": 1920,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@2560x1440": {
+      "vw": 2560,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@2560x1440": {
+      "vw": 2560,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@2560x1440": {
+      "vw": 2560,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@2560x1440": {
+      "vw": 2560,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@2560x1440": {
+      "vw": 2560,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@2560x1440": {
+      "vw": 2560,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@2560x1440+motion": {
+      "vw": 2560,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@2560x1440+motion": {
+      "vw": 2560,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@2560x1440+motion": {
+      "vw": 2560,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@2560x1440+motion": {
+      "vw": 2560,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@2560x1440+motion": {
+      "vw": 2560,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@2560x1440+motion": {
+      "vw": 2560,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@3440x1440": {
+      "vw": 3440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@3440x1440": {
+      "vw": 3440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@3440x1440": {
+      "vw": 3440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@3440x1440": {
+      "vw": 3440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@3440x1440": {
+      "vw": 3440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@3440x1440": {
+      "vw": 3440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@3440x1440+motion": {
+      "vw": 3440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@3440x1440+motion": {
+      "vw": 3440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@3440x1440+motion": {
+      "vw": 3440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@3440x1440+motion": {
+      "vw": 3440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@3440x1440+motion": {
+      "vw": 3440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@3440x1440+motion": {
+      "vw": 3440,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@640x400": {
+      "vw": 640,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@640x400": {
+      "vw": 640,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@640x400": {
+      "vw": 640,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@640x400": {
+      "vw": 640,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@640x400": {
+      "vw": 640,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@640x400": {
+      "vw": 640,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "landing@640x400+motion": {
+      "vw": 640,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run@640x400+motion": {
+      "vw": 640,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library@640x400+motion": {
+      "vw": 640,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book@640x400+motion": {
+      "vw": 640,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book@640x400+motion": {
+      "vw": 640,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book@640x400+motion": {
+      "vw": 640,
+      "canScrollX": 0,
+      "lost": [],
+      "lostCount": 0
+    }
+  },
+  "label_in_name": {
+    "bench/landing": {
+      "checked": 0,
+      "failing": []
+    },
+    "bench/run": {
+      "checked": 0,
+      "failing": []
+    },
+    "bench/library": {
+      "checked": 0,
+      "failing": []
+    },
+    "bench/brand-book": {
+      "checked": 2,
+      "failing": []
+    },
+    "bench/product-book": {
+      "checked": 2,
+      "failing": []
+    },
+    "bench/member-book": {
+      "checked": 2,
+      "failing": []
+    },
+    "field/landing": {
+      "checked": 0,
+      "failing": []
+    },
+    "field/run": {
+      "checked": 0,
+      "failing": []
+    },
+    "field/library": {
+      "checked": 0,
+      "failing": []
+    },
+    "field/brand-book": {
+      "checked": 2,
+      "failing": []
+    },
+    "field/product-book": {
+      "checked": 2,
+      "failing": []
+    },
+    "field/member-book": {
+      "checked": 2,
+      "failing": []
+    }
+  },
+  "skip_link": {
+    "landing": {
+      "isSkip": true,
+      "text": "Skip to the content",
+      "visible": true,
+      "top": 12,
+      "scrollY": 170,
+      "intro_focused_main": true,
+      "reached_backwards_after": 8
+    },
+    "run": {
+      "isSkip": true,
+      "text": "Skip to the content",
+      "visible": true,
+      "top": 12,
+      "scrollY": 299,
+      "intro_focused_main": false,
+      "reached_backwards_after": 0
+    },
+    "library": {
+      "isSkip": true,
+      "text": "Skip to the content",
+      "visible": true,
+      "top": 12,
+      "scrollY": 1,
+      "intro_focused_main": false,
+      "reached_backwards_after": 0
+    },
+    "brand-book": {
+      "isSkip": true,
+      "text": "Skip to the content",
+      "visible": true,
+      "top": 12,
+      "scrollY": 0,
+      "intro_focused_main": false,
+      "reached_backwards_after": 0
+    },
+    "product-book": {
+      "isSkip": true,
+      "text": "Skip to the content",
+      "visible": true,
+      "top": 12,
+      "scrollY": 0,
+      "intro_focused_main": false,
+      "reached_backwards_after": 0
+    },
+    "member-book": {
+      "isSkip": true,
+      "text": "Skip to the report",
+      "visible": true,
+      "top": 12,
+      "scrollY": 0,
+      "intro_focused_main": false,
+      "reached_backwards_after": 0
+    }
+  },
+  "text_spacing": {
+    "landing": {
+      "measured": 118,
+      "lost": [],
+      "lostCount": 0
+    },
+    "run": {
+      "measured": 39,
+      "lost": [],
+      "lostCount": 0
+    },
+    "library": {
+      "measured": 54,
+      "lost": [],
+      "lostCount": 0
+    },
+    "brand-book": {
+      "measured": 921,
+      "lost": [],
+      "lostCount": 0
+    },
+    "product-book": {
+      "measured": 1137,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-book": {
+      "measured": 1779,
+      "lost": [],
+      "lostCount": 0
+    },
+    "member-longest-segment": {
+      "measured": 1620,
+      "lost": [],
+      "lostCount": 0
+    }
+  },
+  "axe": {
+    "tags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21a",
+      "wcag21aa",
+      "wcag22a",
+      "wcag22aa"
+    ],
+    "by_page": {
+      "bench/landing@1440": [],
+      "bench/run@1440": [],
+      "bench/library@1440": [],
+      "bench/brand-book@1440": [],
+      "bench/product-book@1440": [],
+      "bench/member-book@1440": [
+        {
+          "id": "scrollable-region-focusable",
+          "impact": "serious",
+          "help": "Scrollable region must have keyboard access",
+          "nodes": 2,
+          "where": [
+            "div[data-cx-folio=\"34\"] > .cx__body"
+          ],
+          "spreads": 2
+        }
+      ],
+      "bench/landing@390": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 1,
+          "where": [
+            ".burger"
+          ],
+          "spreads": 1
+        }
+      ],
+      "bench/run@390": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 1,
+          "where": [
+            ".burger"
+          ],
+          "spreads": 1
+        }
+      ],
+      "bench/library@390": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 1,
+          "where": [
+            ".burger"
+          ],
+          "spreads": 1
+        }
+      ],
+      "bench/brand-book@390": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 5,
+          "where": [
+            ".burger"
+          ],
+          "spreads": 5
+        }
+      ],
+      "bench/product-book@390": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 6,
+          "where": [
+            ".burger"
+          ],
+          "spreads": 6
+        }
+      ],
+      "bench/member-book@390": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 6,
+          "where": [
+            ".burger"
+          ],
+          "spreads": 6
+        }
+      ],
+      "field/landing@1440": [],
+      "field/run@1440": [],
+      "field/library@1440": [],
+      "field/brand-book@1440": [],
+      "field/product-book@1440": [],
+      "field/member-book@1440": [
+        {
+          "id": "scrollable-region-focusable",
+          "impact": "serious",
+          "help": "Scrollable region must have keyboard access",
+          "nodes": 2,
+          "where": [
+            "div[data-cx-folio=\"34\"] > .cx__body"
+          ],
+          "spreads": 2
+        }
+      ],
+      "field/landing@390": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 1,
+          "where": [
+            ".burger"
+          ],
+          "spreads": 1
+        }
+      ],
+      "field/run@390": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 1,
+          "where": [
+            ".burger"
+          ],
+          "spreads": 1
+        }
+      ],
+      "field/library@390": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 1,
+          "where": [
+            ".burger"
+          ],
+          "spreads": 1
+        }
+      ],
+      "field/brand-book@390": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 5,
+          "where": [
+            ".burger"
+          ],
+          "spreads": 5
+        }
+      ],
+      "field/product-book@390": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 6,
+          "where": [
+            ".burger"
+          ],
+          "spreads": 6
+        }
+      ],
+      "field/member-book@390": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 6,
+          "where": [
+            ".burger"
+          ],
+          "spreads": 6
+        }
+      ]
+    },
+    "rules_by_impact": {
+      "serious": [
+        "aria-prohibited-attr",
+        "scrollable-region-focusable"
+      ]
+    }
+  },
+  "target_size": {
+    "landing@1440": {
+      "measured": 9,
+      "failing": [],
+      "failingCount": 0
+    },
+    "run@1440": {
+      "measured": 17,
+      "failing": [],
+      "failingCount": 0
+    },
+    "library@1440": {
+      "measured": 13,
+      "failing": [],
+      "failingCount": 0
+    },
+    "brand-book@1440": {
+      "measured": 356,
+      "failing": [],
+      "failingCount": 0
+    },
+    "product-book@1440": {
+      "measured": 413,
+      "failing": [],
+      "failingCount": 0
+    },
+    "member-book@1440": {
+      "measured": 402,
+      "failing": [],
+      "failingCount": 0
+    },
+    "landing@390": {
+      "measured": 4,
+      "failing": [],
+      "failingCount": 0
+    },
+    "run@390": {
+      "measured": 12,
+      "failing": [],
+      "failingCount": 0
+    },
+    "library@390": {
+      "measured": 8,
+      "failing": [],
+      "failingCount": 0
+    },
+    "brand-book@390": {
+      "measured": 140,
+      "failing": [],
+      "failingCount": 0
+    },
+    "product-book@390": {
+      "measured": 162,
+      "failing": [],
+      "failingCount": 0
+    },
+    "member-book@390": {
+      "measured": 98,
+      "failing": [
+        {
+          "el": "a.mark",
+          "label": "BrandPulse",
+          "w": 120,
+          "h": 23
+        },
+        {
+          "el": "a.member__back",
+          "label": "Back to the combined report",
+          "w": 167,
+          "h": 16
+        },
+        {
+          "el": "a",
+          "label": "Previous video",
+          "w": 89,
+          "h": 16
+        }
+      ],
+      "failingCount": 3
+    }
+  },
+  "forced_colors": {
+    "landing": {
+      "ring_lost": [],
+      "ring_lost_count": 0,
+      "background_only_marks": {
+        "count": 41,
+        "which": [
+          "i",
+          "div.signal-object__halo",
+          "div.signal-object__shadow",
+          "div.signal-object__rim",
+          "i.signal-object__point",
+          "br",
+          "div.f-atmosphere",
+          "span.bar__mark",
+          "span.bar__fill"
+        ]
+      }
+    },
+    "run": {
+      "ring_lost": [],
+      "ring_lost_count": 0,
+      "background_only_marks": {
+        "count": 12,
+        "which": [
+          "i",
+          "div.optics__halo",
+          "div.optic__grooves",
+          "b",
+          "span",
+          "span.optic__needle",
+          "div.optics__beam",
+          "i.tp__mark"
+        ]
+      }
+    },
+    "library": {
+      "ring_lost": [],
+      "ring_lost_count": 0,
+      "background_only_marks": {
+        "count": 0,
+        "which": []
+      }
+    },
+    "brand-book": {
+      "ring_lost": [],
+      "ring_lost_count": 0,
+      "background_only_marks": {
+        "count": 2,
+        "which": [
+          "i.k"
+        ]
+      }
+    },
+    "product-book": {
+      "ring_lost": [],
+      "ring_lost_count": 0,
+      "background_only_marks": {
+        "count": 2,
+        "which": [
+          "i.k"
+        ]
+      }
+    },
+    "member-book": {
+      "ring_lost": [],
+      "ring_lost_count": 0,
+      "background_only_marks": {
+        "count": 2,
+        "which": [
+          "i"
+        ]
+      }
+    }
+  },
+  "vision": {
+    "screenshots": [
+      "ui_evidence/shots/a11y/vision-landing-none.png",
+      "ui_evidence/shots/a11y/vision-landing-protanopia.png",
+      "ui_evidence/shots/a11y/vision-landing-deuteranopia.png",
+      "ui_evidence/shots/a11y/vision-landing-tritanopia.png",
+      "ui_evidence/shots/a11y/vision-landing-achromatopsia.png",
+      "ui_evidence/shots/a11y/vision-landing-blurredVision.png",
+      "ui_evidence/shots/a11y/vision-landing-reducedContrast.png",
+      "ui_evidence/shots/a11y/vision-library-none.png",
+      "ui_evidence/shots/a11y/vision-library-protanopia.png",
+      "ui_evidence/shots/a11y/vision-library-deuteranopia.png",
+      "ui_evidence/shots/a11y/vision-library-tritanopia.png",
+      "ui_evidence/shots/a11y/vision-library-achromatopsia.png",
+      "ui_evidence/shots/a11y/vision-library-blurredVision.png",
+      "ui_evidence/shots/a11y/vision-library-reducedContrast.png",
+      "ui_evidence/shots/a11y/vision-member-book-none.png",
+      "ui_evidence/shots/a11y/vision-member-book-protanopia.png",
+      "ui_evidence/shots/a11y/vision-member-book-deuteranopia.png",
+      "ui_evidence/shots/a11y/vision-member-book-tritanopia.png",
+      "ui_evidence/shots/a11y/vision-member-book-achromatopsia.png",
+      "ui_evidence/shots/a11y/vision-member-book-blurredVision.png",
+      "ui_evidence/shots/a11y/vision-member-book-reducedContrast.png",
+      "ui_evidence/shots/a11y/vision-brand-book-none.png",
+      "ui_evidence/shots/a11y/vision-brand-book-protanopia.png",
+      "ui_evidence/shots/a11y/vision-brand-book-deuteranopia.png",
+      "ui_evidence/shots/a11y/vision-brand-book-tritanopia.png",
+      "ui_evidence/shots/a11y/vision-brand-book-achromatopsia.png",
+      "ui_evidence/shots/a11y/vision-brand-book-blurredVision.png",
+      "ui_evidence/shots/a11y/vision-brand-book-reducedContrast.png"
+    ],
+    "note": "for a human reader; stills blurred"
+  },
+  "small_text": {
+    "landing@390": {
+      "measured": 141,
+      "small": [
+        {
+          "el": "span",
+          "size": 8,
+          "text": "BRANDPULSE / INDEPENDENT PERSP"
+        },
+        {
+          "el": "p.hero__eyebrow",
+          "size": 9,
+          "text": "ONE VIDEO. FOUR WAYS OF SEEING"
+        },
+        {
+          "el": "span",
+          "size": 7,
+          "text": "FIG. 01 / THE FOUR-CHANNEL INS"
+        },
+        {
+          "el": "span.hero__channel-no",
+          "size": 11,
+          "text": "04"
+        },
+        {
+          "el": "span",
+          "size": 11,
+          "text": "One real analysis iPhone 18 Pr"
+        },
+        {
+          "el": "span",
+          "size": 10,
+          "text": "Every model runs on this machi"
+        },
+        {
+          "el": "span",
+          "size": 9,
+          "text": "CM3070 / FINAL YEAR PROJECT"
+        },
+        {
+          "el": "small",
+          "size": 11,
+          "text": "Video-level"
+        },
+        {
+          "el": "span.f-step",
+          "size": 11,
+          "text": "01 / 04"
+        }
+      ],
+      "smallCount": 9,
+      "svgSmall": [],
+      "svgSmallCount": 0
+    },
+    "run@390": {
+      "measured": 34,
+      "small": [],
+      "smallCount": 0,
+      "svgSmall": [],
+      "svgSmallCount": 0
+    },
+    "library@390": {
+      "measured": 48,
+      "small": [
+        {
+          "el": "p.t-micro",
+          "size": 11.5,
+          "text": "4 videos over the last month"
+        },
+        {
+          "el": "dt.t-micro",
+          "size": 11.5,
+          "text": "Range"
+        }
+      ],
+      "smallCount": 2,
+      "svgSmall": [],
+      "svgSmallCount": 0
+    },
+    "brand-book@390": {
+      "measured": 656,
+      "small": [
+        {
+          "el": "span.cx__chn",
+          "size": 11,
+          "text": "5"
+        },
+        {
+          "el": "dt",
+          "size": 11.5,
+          "text": "Comments read"
+        },
+        {
+          "el": "p.ti__shk",
+          "size": 11.5,
+          "text": "In short"
+        },
+        {
+          "el": "code",
+          "size": 11.5,
+          "text": "python write_analysis.py --swe"
+        },
+        {
+          "el": "button.ev",
+          "size": 11.5,
+          "text": "Comfort and Wearability"
+        },
+        {
+          "el": "span.rb__w",
+          "size": 10.5,
+          "text": "leans positive"
+        },
+        {
+          "el": "button.vt__sort",
+          "size": 11.5,
+          "text": "Brand health\u2020"
+        },
+        {
+          "el": "th",
+          "size": 11.5,
+          "text": "Needs"
+        },
+        {
+          "el": "span.vt__ch",
+          "size": 11.5,
+          "text": "Anakin Dad"
+        },
+        {
+          "el": "span.src",
+          "size": 11,
+          "text": "from the figures"
+        },
+        {
+          "el": "text",
+          "size": 11,
+          "text": "\u22120.75"
+        },
+        {
+          "el": "span.mx__vt",
+          "size": 10.5,
+          "text": "HUAWEI Pura X View:"
+        }
+      ],
+      "smallCount": 19,
+      "svgSmall": [
+        {
+          "text": "\u22121.00",
+          "px": 8
+        },
+        {
+          "text": "\u22120.75",
+          "px": 8
+        },
+        {
+          "text": "\u22120.50",
+          "px": 8
+        },
+        {
+          "text": "\u22120.25",
+          "px": 8
+        },
+        {
+          "text": "0.00",
+          "px": 8
+        }
+      ],
+      "svgSmallCount": 5
+    },
+    "product-book@390": {
+      "measured": 854,
+      "small": [
+        {
+          "el": "span.cx__chn",
+          "size": 11,
+          "text": "6"
+        },
+        {
+          "el": "dt",
+          "size": 11.5,
+          "text": "Comments read"
+        },
+        {
+          "el": "p.ti__shk",
+          "size": 11.5,
+          "text": "In short"
+        },
+        {
+          "el": "button.ev",
+          "size": 11.5,
+          "text": "Display"
+        },
+        {
+          "el": "span.rb__w",
+          "size": 10.5,
+          "text": "balanced"
+        },
+        {
+          "el": "button.vt__sort",
+          "size": 11.5,
+          "text": "Brand health\u2020"
+        },
+        {
+          "el": "th",
+          "size": 11.5,
+          "text": "Needs"
+        },
+        {
+          "el": "span.vt__ch",
+          "size": 11.5,
+          "text": "MTG Productions, 9:55"
+        },
+        {
+          "el": "span.src",
+          "size": 11,
+          "text": "from the figures"
+        },
+        {
+          "el": "text",
+          "size": 11,
+          "text": "\u22120.50"
+        },
+        {
+          "el": "span.mx__vt",
+          "size": 10.5,
+          "text": "Buy The Galaxy S26"
+        },
+        {
+          "el": "th.mx__sumh",
+          "size": 11.5,
+          "text": "Across the videos"
+        }
+      ],
+      "smallCount": 20,
+      "svgSmall": [
+        {
+          "text": "\u22120.50",
+          "px": 8
+        },
+        {
+          "text": "\u22120.25",
+          "px": 8
+        },
+        {
+          "text": "0.00",
+          "px": 8
+        },
+        {
+          "text": "+0.25",
+          "px": 8
+        },
+        {
+          "text": "+0.50",
+          "px": 8
+        }
+      ],
+      "svgSmallCount": 5
+    },
+    "member-book@390": {
+      "measured": 1061,
+      "small": [
+        {
+          "el": "span.cx__chn",
+          "size": 11,
+          "text": "6"
+        },
+        {
+          "el": "dt",
+          "size": 11.5,
+          "text": "Comments read"
+        },
+        {
+          "el": "p.ti__shk",
+          "size": 11.5,
+          "text": "In short"
+        },
+        {
+          "el": "text",
+          "size": 11.5,
+          "text": "Audience +0.51"
+        },
+        {
+          "el": "span.tn__n",
+          "size": 11,
+          "text": "3"
+        },
+        {
+          "el": "button.ev",
+          "size": 11.5,
+          "text": "11:45"
+        },
+        {
+          "el": "span.src",
+          "size": 11,
+          "text": "from the readings"
+        },
+        {
+          "el": "span.tp__id",
+          "size": 11.5,
+          "text": "Audience"
+        },
+        {
+          "el": "th",
+          "size": 11.5,
+          "text": "Needs"
+        },
+        {
+          "el": "span.rd__what",
+          "size": 11,
+          "text": "confidence"
+        },
+        {
+          "el": "span.rd__note",
+          "size": 11.5,
+          "text": "read on arousal"
+        },
+        {
+          "el": "span.sg__kind",
+          "size": 11,
+          "text": "inference"
+        }
+      ],
+      "smallCount": 14,
+      "svgSmall": [
+        {
+          "text": "negative",
+          "px": 7.3
+        },
+        {
+          "text": "positive",
+          "px": 7.2
+        },
+        {
+          "text": "Reviewer +0.31",
+          "px": 7
+        },
+        {
+          "text": "Audience +0.51",
+          "px": 7
+        }
+      ],
+      "svgSmallCount": 4
+    },
+    "landing@1440": {
+      "measured": 152,
+      "small": [
+        {
+          "el": "span",
+          "size": 10,
+          "text": "YOUR VIDEO / YOUR MACHINE"
+        },
+        {
+          "el": "p.hero__eyebrow",
+          "size": 10,
+          "text": "ONE VIDEO. FOUR WAYS OF SEEING"
+        },
+        {
+          "el": "span.hero__scroll",
+          "size": 9,
+          "text": "SCROLL TO LOOK BENEATH"
+        },
+        {
+          "el": "span",
+          "size": 8,
+          "text": "INDEPENDENT BY DESIGN"
+        },
+        {
+          "el": "span.hero__channel-no",
+          "size": 11,
+          "text": "04"
+        },
+        {
+          "el": "span",
+          "size": 11,
+          "text": "Every model runs on this machi"
+        },
+        {
+          "el": "span",
+          "size": 9,
+          "text": "CM3070 / FINAL YEAR PROJECT"
+        },
+        {
+          "el": "small",
+          "size": 11,
+          "text": "Video-level"
+        },
+        {
+          "el": "p.close__badge",
+          "size": 11,
+          "text": "11 runs measured on this machi"
+        },
+        {
+          "el": "p.close__note",
+          "size": 11,
+          "text": "Four to nine minutes \u00b7 Ollama "
+        }
+      ],
+      "smallCount": 10,
+      "svgSmall": [],
+      "svgSmallCount": 0
+    },
+    "run@1440": {
+      "measured": 41,
+      "small": [],
+      "smallCount": 0,
+      "svgSmall": [],
+      "svgSmallCount": 0
+    },
+    "library@1440": {
+      "measured": 54,
+      "small": [
+        {
+          "el": "p.t-micro",
+          "size": 11.5,
+          "text": "4 videos over the last month"
+        },
+        {
+          "el": "dt.t-micro",
+          "size": 11.5,
+          "text": "Range"
+        }
+      ],
+      "smallCount": 2,
+      "svgSmall": [],
+      "svgSmallCount": 0
+    },
+    "brand-book@1440": {
+      "measured": 983,
+      "small": [
+        {
+          "el": "span.cx__chn",
+          "size": 11,
+          "text": "5"
+        },
+        {
+          "el": "dt",
+          "size": 11.5,
+          "text": "Comments read"
+        },
+        {
+          "el": "p.ti__shk",
+          "size": 11.5,
+          "text": "In short"
+        },
+        {
+          "el": "code",
+          "size": 11.5,
+          "text": "python write_analysis.py --swe"
+        },
+        {
+          "el": "button.ev",
+          "size": 11.5,
+          "text": "Comfort and Wearability"
+        },
+        {
+          "el": "span.rb__w",
+          "size": 10.5,
+          "text": "leans positive"
+        },
+        {
+          "el": "a.ev",
+          "size": 11.5,
+          "text": "comment 10"
+        },
+        {
+          "el": "span",
+          "size": 11.5,
+          "text": "86.59"
+        },
+        {
+          "el": "button.vt__sort",
+          "size": 11.5,
+          "text": "Brand health\u2020"
+        },
+        {
+          "el": "th",
+          "size": 11.5,
+          "text": "Needs"
+        },
+        {
+          "el": "span.vt__ch",
+          "size": 11.5,
+          "text": "gizmochina"
+        },
+        {
+          "el": "span.src",
+          "size": 11,
+          "text": "from the figures"
+        }
+      ],
+      "smallCount": 22,
+      "svgSmall": [
+        {
+          "text": "\u22121.00",
+          "px": 9
+        },
+        {
+          "text": "\u22120.75",
+          "px": 9
+        },
+        {
+          "text": "\u22120.50",
+          "px": 9
+        },
+        {
+          "text": "\u22120.25",
+          "px": 9
+        },
+        {
+          "text": "0.00",
+          "px": 9
+        }
+      ],
+      "svgSmallCount": 5
+    },
+    "product-book@1440": {
+      "measured": 1233,
+      "small": [
+        {
+          "el": "span.cx__chn",
+          "size": 11,
+          "text": "6"
+        },
+        {
+          "el": "dt",
+          "size": 11.5,
+          "text": "Comments read"
+        },
+        {
+          "el": "p.ti__shk",
+          "size": 11.5,
+          "text": "In short"
+        },
+        {
+          "el": "button.ev",
+          "size": 11.5,
+          "text": "Design"
+        },
+        {
+          "el": "span.rb__w",
+          "size": 10.5,
+          "text": "balanced"
+        },
+        {
+          "el": "a.ev",
+          "size": 11.5,
+          "text": "comment 98"
+        },
+        {
+          "el": "span",
+          "size": 11.5,
+          "text": "11.58"
+        },
+        {
+          "el": "button.vt__sort",
+          "size": 11.5,
+          "text": "Brand health\u2020"
+        },
+        {
+          "el": "th",
+          "size": 11.5,
+          "text": "Needs"
+        },
+        {
+          "el": "span.vt__ch",
+          "size": 11.5,
+          "text": "TechTalkTV, 7:03"
+        },
+        {
+          "el": "span.src",
+          "size": 11,
+          "text": "from the figures"
+        },
+        {
+          "el": "text",
+          "size": 11,
+          "text": "04"
+        }
+      ],
+      "smallCount": 28,
+      "svgSmall": [
+        {
+          "text": "\u22120.50",
+          "px": 9
+        },
+        {
+          "text": "\u22120.25",
+          "px": 9
+        },
+        {
+          "text": "0.00",
+          "px": 9
+        },
+        {
+          "text": "+0.25",
+          "px": 9
+        },
+        {
+          "text": "+0.50",
+          "px": 9
+        },
+        {
+          "text": "the last six months",
+          "px": 9
+        },
+        {
+          "text": "the last month",
+          "px": 9
+        }
+      ],
+      "svgSmallCount": 7
+    },
+    "member-book@1440": {
+      "measured": 1829,
+      "small": [
+        {
+          "el": "span.cx__chn",
+          "size": 11,
+          "text": "6"
+        },
+        {
+          "el": "dt",
+          "size": 11.5,
+          "text": "Comments read"
+        },
+        {
+          "el": "p.ti__shk",
+          "size": 11.5,
+          "text": "In short"
+        },
+        {
+          "el": "text",
+          "size": 11.5,
+          "text": "Audience +0.51"
+        },
+        {
+          "el": "span.tn__n",
+          "size": 11,
+          "text": "3"
+        },
+        {
+          "el": "button.ev",
+          "size": 11.5,
+          "text": "11:45"
+        },
+        {
+          "el": "span.src",
+          "size": 11,
+          "text": "from the readings"
+        },
+        {
+          "el": "th",
+          "size": 11.5,
+          "text": "Conflict"
+        },
+        {
+          "el": "span.rd__what",
+          "size": 11,
+          "text": "mean confidence"
+        },
+        {
+          "el": "span.rd__note",
+          "size": 11.5,
+          "text": "one reading, whole video"
+        },
+        {
+          "el": "span.sg__kind",
+          "size": 11,
+          "text": "inference"
+        },
+        {
+          "el": "span.rl__sample",
+          "size": 11.5,
+          "text": "118 of 150 comments, unseen vi"
+        }
+      ],
+      "smallCount": 13,
+      "svgSmall": [],
+      "svgSmallCount": 0
+    }
+  },
+  "shelf_follows_window": {
+    "1440 at load": {
+      "shelfShown": true,
+      "cards": 0,
+      "text": 697
+    },
+    "narrowed to 800": {
+      "shelfShown": false,
+      "cards": 0,
+      "text": 0
+    },
+    "widened to 1440": {
+      "shelfShown": true,
+      "cards": 0,
+      "text": 697
+    },
+    "landscape phone 1024x430": {
+      "shelfShown": true,
+      "cards": 0,
+      "text": 697
+    }
+  },
+  "print": {
+    "brand-book": {
+      "bookChars": 21010,
+      "printedChars": 1782,
+      "worstOnWhite": 1.19,
+      "share": 0.085
+    },
+    "product-book": {
+      "bookChars": 25577,
+      "printedChars": 1576,
+      "worstOnWhite": 1.19,
+      "share": 0.062
+    },
+    "member-book": {
+      "bookChars": 61025,
+      "printedChars": 1280,
+      "worstOnWhite": 1.19,
+      "share": 0.021
+    }
+  },
+  "motion_switch": {
+    "control": null
+  },
+  "one_page": {
+    "brand-book": {
+      "bookChars": 21010,
+      "linear": false,
+      "hiddenChapters": 4,
+      "chars": 21010,
+      "h1": 1
+    },
+    "product-book": {
+      "bookChars": 25577,
+      "linear": false,
+      "hiddenChapters": 5,
+      "chars": 25577,
+      "h1": 1
+    },
+    "member-book": {
+      "bookChars": 61025,
+      "linear": false,
+      "hiddenChapters": 5,
+      "chars": 61025,
+      "h1": 1
+    }
+  },
+  "journeys": {
+    "library caveat (shelf)": false,
+    "keyboard delete (shelf)": {
+      "deleteReached": false,
+      "spaceConfirms": false,
+      "stops": 80
+    },
+    "library caveat (list)": false,
+    "keyboard delete (list)": {
+      "deleteReached": false,
+      "spaceConfirms": false,
+      "stops": 80
+    },
+    "film in the accessibility tree": {
+      "beats": 1,
+      "link": false,
+      "facialDisclosure": false
+    },
+    "boot screen": {
+      "shown": true,
+      "focusInside": false,
+      "survivesModifierKeys": true
+    }
+  },
+  "failures": [
+    "[2 contrast] field/brand-book: 1.11:1 at 11.5px rgb(231, 236, 238) on rgb(248,247,244) '01'",
+    "[2 contrast] field/product-book: 1.11:1 at 11.5px rgb(231, 236, 238) on rgb(248,247,244) '01'",
+    "[3 keyboard] landing@390: 6 controls take focus while invisible, first a 'Opening'",
+    "[3 keyboard] run@390: 6 controls take focus while invisible, first a 'Opening'",
+    "[3 keyboard] library@390: 5 stops hidden behind a fixed bar (2.4.11), first a 'Analyse'",
+    "[3 keyboard] library@390: 6 controls take focus while invisible, first a 'Opening'",
+    "[3 keyboard] brand-book@390: 3 stops hidden behind a fixed bar (2.4.11), first a 'Opening'",
+    "[3 keyboard] brand-book@390: 6 controls take focus while invisible, first a 'Opening'",
+    "[3 keyboard] product-book@390: 3 stops hidden behind a fixed bar (2.4.11), first a 'Opening'",
+    "[3 keyboard] product-book@390: 6 controls take focus while invisible, first a 'Opening'",
+    "[3 keyboard] member-book@390: 4 stops hidden behind a fixed bar (2.4.11), first a 'Analyse'",
+    "[3 keyboard] member-book@390: 6 controls take focus while invisible, first a 'Opening'",
+    "[6 motion] switch/landing: still drawing 60.0 GPU frames a second after settling",
+    "[6 motion] switch/run: 5 endless animations still running: ['div.optics__assembly', 'div.optic']",
+    "[6 motion] switch/library: still drawing 5400.0 GPU frames a second after settling",
+    "[7 books] /brand/huawei-week-b2c94d55/JRJSd7YwTdQ: standing",
+    "[7 books] /brand/huawei-week-b2c94d55/8EThb_Wm-_U: standing",
+    "[7 books] /brand/huawei-week-b2c94d55/s99083xrwPI: standing",
+    "[7 books] /brand/huawei-week-b2c94d55/FqfX1-dSbYk: standing",
+    "[7 books] /brand/huawei-week-b2c94d55/pb2wzGJ9rXA: standing",
+    "[7 books] /brand/iphone-18-pro-max-month-df147f72/ohqxP8EEumo: standing",
+    "[7 books] /brand/iphone-18-pro-max-month-df147f72/PjAyUhf52D0: standing",
+    "[7 books] /brand/iphone-18-pro-max-month-df147f72/WUlLIo9LI-w: standing",
+    "[7 books] /brand/iphone-18-pro-max-month-df147f72/vTDhHX7x2N4: standing",
+    "[7 books] /brand/nike-half-19a4d6f6/BJioCrnBwYw: standing",
+    "[7 books] /brand/nike-half-19a4d6f6/adxwkEGVV2o: standing",
+    "[7 books] /brand/nike-half-19a4d6f6/lOIDb7ahVhM: standing",
+    "[7 books] /brand/nike-half-19a4d6f6/B8-JHY94jvI: standing",
+    "[7 books] /brand/nike-half-19a4d6f6/BrWwyy2k3lU: standing",
+    "[7 books] /brand/nike-week-19a4d6f6/BJioCrnBwYw: standing",
+    "[7 books] /brand/nike-week-19a4d6f6/lOIDb7ahVhM: standing",
+    "[7 books] /brand/nike-week-19a4d6f6/B8-JHY94jvI: standing",
+    "[7 books] /brand/nike-week-19a4d6f6/BrWwyy2k3lU: standing",
+    "[7 books] /brand/sasmung-s27-ultra-half-12f4e012/L8CswTQyuMw: standing",
+    "[7 books] /brand/sasmung-s27-ultra-half-12f4e012/1n4Y4SEnALs: standing",
+    "[7 books] /brand/sasmung-s27-ultra-half-12f4e012/MQpvfM7T0Ow: standing",
+    "[7 books] /brand/sasmung-s27-ultra-half-12f4e012/RIxJH90lv0E: standing",
+    "[7 books] /brand/sasmung-s27-ultra-half-12f4e012/z0HTxwB3XlU: standing",
+    "[7 books] /brand/sasmung-s27-ultra-month-cb910946/L8CswTQyuMw: standing",
+    "[7 books] /brand/sasmung-s27-ultra-month-cb910946/MQpvfM7T0Ow: standing",
+    "[7 books] /brand/sasmung-s27-ultra-month-cb910946/RIxJH90lv0E: standing",
+    "[7 books] /brand/sasmung-s27-ultra-month-cb910946/GbtxgwYJp8o: standing",
+    "[11 reflow] run@320x568: 6 text elements off the side, worst +11px span 'Held-out accuracy'",
+    "[15 axe] bench/member-book@1440: serious scrollable-region-focusable on 2 nodes (Scrollable region must have keyboard access) e.g. ['div[data-cx-folio=\"34\"] > .cx__body']",
+    "[15 axe] bench/landing@390: serious aria-prohibited-attr on 1 nodes (Elements must only use permitted ARIA attributes) e.g. ['.burger']",
+    "[15 axe] bench/run@390: serious aria-prohibited-attr on 1 nodes (Elements must only use permitted ARIA attributes) e.g. ['.burger']",
+    "[15 axe] bench/library@390: serious aria-prohibited-attr on 1 nodes (Elements must only use permitted ARIA attributes) e.g. ['.burger']",
+    "[15 axe] bench/brand-book@390: serious aria-prohibited-attr on 5 nodes (Elements must only use permitted ARIA attributes) e.g. ['.burger']",
+    "[15 axe] bench/product-book@390: serious aria-prohibited-attr on 6 nodes (Elements must only use permitted ARIA attributes) e.g. ['.burger']",
+    "[15 axe] bench/member-book@390: serious aria-prohibited-attr on 6 nodes (Elements must only use permitted ARIA attributes) e.g. ['.burger']",
+    "[15 axe] field/member-book@1440: serious scrollable-region-focusable on 2 nodes (Scrollable region must have keyboard access) e.g. ['div[data-cx-folio=\"34\"] > .cx__body']",
+    "[15 axe] field/landing@390: serious aria-prohibited-attr on 1 nodes (Elements must only use permitted ARIA attributes) e.g. ['.burger']",
+    "[15 axe] field/run@390: serious aria-prohibited-attr on 1 nodes (Elements must only use permitted ARIA attributes) e.g. ['.burger']",
+    "[15 axe] field/library@390: serious aria-prohibited-attr on 1 nodes (Elements must only use permitted ARIA attributes) e.g. ['.burger']",
+    "[15 axe] field/brand-book@390: serious aria-prohibited-attr on 5 nodes (Elements must only use permitted ARIA attributes) e.g. ['.burger']",
+    "[15 axe] field/product-book@390: serious aria-prohibited-attr on 6 nodes (Elements must only use permitted ARIA attributes) e.g. ['.burger']",
+    "[15 axe] field/member-book@390: serious aria-prohibited-attr on 6 nodes (Elements must only use permitted ARIA attributes) e.g. ['.burger']",
+    "[16 target size] member-book@390: a.mark 'BrandPulse' 120x23px",
+    "[16 target size] member-book@390: a.member__back 'Back to the combined report' 167x16px",
+    "[16 target size] member-book@390: a 'Previous video' 89x16px",
+    "[19 small text] landing@390: 9 reader-facing styles under 12px, smallest 7px span 'FIG. 01 / THE FOUR-CHANNEL INS'",
+    "[19 small text] library@390: 2 reader-facing styles under 12px, smallest 11.5px p.t-micro '4 videos over the last month'",
+    "[19 small text] brand-book@390: 19 reader-facing styles under 12px, smallest 10.5px span.rb__w 'leans positive'",
+    "[19 small text] brand-book@390: 5 chart labels under 10px, smallest 8px '\u22121.00'",
+    "[19 small text] product-book@390: 20 reader-facing styles under 12px, smallest 10.5px span.rb__w 'balanced'",
+    "[19 small text] product-book@390: 5 chart labels under 10px, smallest 8px '\u22120.50'",
+    "[19 small text] member-book@390: 14 reader-facing styles under 12px, smallest 11px span.cx__chn '6'",
+    "[19 small text] member-book@390: 4 chart labels under 10px, smallest 7px 'Reviewer +0.31'",
+    "[19 small text] landing@1440: 10 reader-facing styles under 12px, smallest 8px span 'INDEPENDENT BY DESIGN'",
+    "[19 small text] library@1440: 2 reader-facing styles under 12px, smallest 11.5px p.t-micro '4 videos over the last month'",
+    "[19 small text] brand-book@1440: 22 reader-facing styles under 12px, smallest 10.5px span.rb__w 'leans positive'",
+    "[19 small text] brand-book@1440: 5 chart labels under 10px, smallest 9px '\u22121.00'",
+    "[19 small text] product-book@1440: 28 reader-facing styles under 12px, smallest 10.5px span.rb__w 'balanced'",
+    "[19 small text] product-book@1440: 7 chart labels under 10px, smallest 9px '\u22120.50'",
+    "[19 small text] member-book@1440: 13 reader-facing styles under 12px, smallest 11px span.cx__chn '6'",
+    "[20 shelf/list] narrowing a loaded shelf to 800px leaves 0 characters and no list",
+    "[21 print] brand-book: printing carries 8% of the book's text",
+    "[21 print] brand-book: printed text as low as 1.19:1 on white paper",
+    "[21 print] product-book: printing carries 6% of the book's text",
+    "[21 print] product-book: printed text as low as 1.19:1 on white paper",
+    "[21 print] member-book: printing carries 2% of the book's text",
+    "[21 print] member-book: printed text as low as 1.19:1 on white paper",
+    "[22 motion switch] no motion control on the page",
+    "[23 one page] brand-book: ?read=page does not give the one-page reading",
+    "[23 one page] product-book: ?read=page does not give the one-page reading",
+    "[23 one page] member-book: ?read=page does not give the one-page reading",
+    "[24 journeys] library (shelf): the bias caveat is not on the page with scripting on",
+    "[24 journeys] library (shelf): Delete is not reachable by keyboard in 80 Tab stops",
+    "[24 journeys] library (list): the bias caveat is not on the page with scripting on",
+    "[24 journeys] library (list): Delete is not reachable by keyboard in 80 Tab stops",
+    "[24 journeys] film: a screen reader reaches 1 of 4 parts, link=False, facial disclosure=False",
+    "[24 journeys] boot screen: focus is not inside the dialog"
+  ],
+  "failure_count_by_check": {
+    "2 contrast": 2,
+    "3 keyboard": 10,
+    "6 motion": 3,
+    "7 books": 27,
+    "11 reflow": 1,
+    "15 axe": 14,
+    "16 target size": 3,
+    "19 small text": 15,
+    "20 shelf/list": 1,
+    "21 print": 6,
+    "22 motion switch": 1,
+    "23 one page": 3,
+    "24 journeys": 6
+  }
+}

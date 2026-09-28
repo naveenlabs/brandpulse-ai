@@ -1,0 +1,35 @@
+{
+ "uid": "q0aFOxT6TNw_74",
+ "system": "four_channel",
+ "video_id": "q0aFOxT6TNw",
+ "segment_id": 74,
+ "split": "selection",
+ "payload": {
+  "segment_id": 74,
+  "start_s": 419.34,
+  "end_s": 424.17999999999995,
+  "transcript": "which is just how easily it seems like the anodization layer on top of the aluminum",
+  "transcript_sentiment": "NEUTRAL (0.64)",
+  "vocal_emotion": "NEUTRAL (arousal 0.46)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "happy (0.93)",
+  "video_comment_sentiment": "POSITIVE (0.98)"
+ },
+ "seconds": 4.461,
+ "raw": "{\n  \"segment_id\": 74,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words convey a neutral sentiment, but their facial expression shows happiness, and the audience's comments are overwhelmingly positive. This discrepancy suggests a potential disconnect between the creator's tone and their emotional state.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 74,
+  "start_s": 419.34,
+  "end_s": 424.17999999999995,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion"
+  ],
+  "flagged": false
+ }
+}

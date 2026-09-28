@@ -1,0 +1,27 @@
+{
+ "uid": "haWvrSliMVY_35",
+ "system": "text_only_llm_anchored",
+ "video_id": "haWvrSliMVY",
+ "segment_id": 35,
+ "split": "holdout",
+ "payload": {
+  "segment_id": 35,
+  "start_s": 251.70000000000002,
+  "end_s": 258.54,
+  "transcript": "that I'm wearing a Chanel fragrance. So fifth and last thing you should know, the placebo effect works."
+ },
+ "seconds": 4.018,
+ "raw": "{\n  \"segment_id\": 35,\n  \"conflict_score\": 0.75,\n  \"channels_in_conflict\": [],\n  \"flags\": [\"POTENTIAL_PAID_PROMOTION\"],\n  \"narrative\": \"The mention of a high-end brand like Chanel, combined with the casual tone and the inclusion of a non-relevant fact (the placebo effect), suggests that the creator is using this segment to subtly promote the product.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 35,
+  "start_s": 251.70000000000002,
+  "end_s": 258.54,
+  "conflict_score": 0.75,
+  "conflict_reasons": [
+   "POTENTIAL_PAID_PROMOTION"
+  ],
+  "flagged": true
+ }
+}

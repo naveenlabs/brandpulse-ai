@@ -1,0 +1,28 @@
+{
+ "uid": "Kk-RKpTAXmA_24",
+ "system": "text_only_llm",
+ "video_id": "Kk-RKpTAXmA",
+ "segment_id": 24,
+ "split": "holdout",
+ "payload": {
+  "segment_id": 24,
+  "start_s": 96.76,
+  "end_s": 101.32,
+  "transcript": "Shout out Sony's other division. Now, in my tiny hands, they look like quarter-inch jacks."
+ },
+ "seconds": 3.875,
+ "raw": "{\n  \"segment_id\": 24,\n  \"conflict_score\": 0.8,\n  \"channels_in_conflict\": [],\n  \"flags\": [\"POTENTIAL_PAID_PROMOTION\", \"SARCASM_DETECTED\"],\n  \"narrative\": \"The creator's tone and language suggest sarcasm, and the mention of Sony's other division implies a potential promotional tone, indicating a high likelihood of insincerity.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 24,
+  "start_s": 96.76,
+  "end_s": 101.32,
+  "conflict_score": 0.8,
+  "conflict_reasons": [
+   "POTENTIAL_PAID_PROMOTION",
+   "SARCASM_DETECTED"
+  ],
+  "flagged": true
+ }
+}

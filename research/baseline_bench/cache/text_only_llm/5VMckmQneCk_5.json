@@ -1,0 +1,27 @@
+{
+ "uid": "5VMckmQneCk_5",
+ "system": "text_only_llm",
+ "video_id": "5VMckmQneCk",
+ "segment_id": 5,
+ "split": "selection",
+ "payload": {
+  "segment_id": 5,
+  "start_s": 26.3,
+  "end_s": 30.340000000000003,
+  "transcript": "this is one tough phone. I've been specifically using it without a case to test it."
+ },
+ "seconds": 3.681,
+ "raw": "{\n  \"segment_id\": 5,\n  \"conflict_score\": 0.8,\n  \"channels_in_conflict\": [],\n  \"flags\": [\"POTENTIAL_PAID_PROMOTION\"],\n  \"narrative\": \"The creator's statement about intentionally testing the phone without a case to demonstrate its toughness may be an attempt to showcase its durability in a controlled manner, suggesting a potential promotional tone.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 5,
+  "start_s": 26.3,
+  "end_s": 30.340000000000003,
+  "conflict_score": 0.8,
+  "conflict_reasons": [
+   "POTENTIAL_PAID_PROMOTION"
+  ],
+  "flagged": true
+ }
+}

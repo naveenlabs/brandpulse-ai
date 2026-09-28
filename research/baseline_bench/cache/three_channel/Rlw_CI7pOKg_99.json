@@ -1,0 +1,36 @@
+{
+ "uid": "Rlw_CI7pOKg_99",
+ "system": "three_channel",
+ "video_id": "Rlw_CI7pOKg",
+ "segment_id": 99,
+ "split": "holdout",
+ "payload": {
+  "segment_id": 99,
+  "start_s": 586.64,
+  "end_s": 590.8,
+  "transcript": "down it's gonna have to throttle more quickly versus a macbook pro which of course does have a fan so",
+  "transcript_sentiment": "NEGATIVE (0.49)",
+  "vocal_emotion": "NEUTRAL (arousal 0.64)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.98)"
+ },
+ "seconds": 4.558,
+ "raw": "{\n  \"segment_id\": 99,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"video_comment_sentiment\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words convey a negative sentiment, but their facial expression is neutral and the audience's comments are overwhelmingly positive, indicating a conflict between the creator's verbal and non-verbal cues.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 99,
+  "start_s": 586.64,
+  "end_s": 590.8,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: video_comment_sentiment"
+  ],
+  "flagged": false
+ }
+}

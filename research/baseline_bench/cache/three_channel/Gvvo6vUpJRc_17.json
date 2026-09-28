@@ -1,0 +1,36 @@
+{
+ "uid": "Gvvo6vUpJRc_17",
+ "system": "three_channel",
+ "video_id": "Gvvo6vUpJRc",
+ "segment_id": 17,
+ "split": "selection",
+ "payload": {
+  "segment_id": 17,
+  "start_s": 103.26,
+  "end_s": 108.64,
+  "transcript": "That's the other type. They're geared for consumption. So now this new pair of very expensive headphones,",
+  "transcript_sentiment": "NEUTRAL (0.68)",
+  "vocal_emotion": "NEUTRAL (arousal 0.59)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.96)"
+ },
+ "seconds": 4.599,
+ "raw": "{\n  \"segment_id\": 17,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"video_comment_sentiment\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and tone suggest neutrality, but their face shows no emotion and the audience's comments are overwhelmingly positive, indicating a potential disconnect between the creator's intent and the audience's interpretation.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 17,
+  "start_s": 103.26,
+  "end_s": 108.64,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: video_comment_sentiment"
+  ],
+  "flagged": false
+ }
+}

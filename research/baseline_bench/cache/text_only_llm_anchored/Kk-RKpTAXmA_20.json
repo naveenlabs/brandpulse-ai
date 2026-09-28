@@ -1,0 +1,27 @@
+{
+ "uid": "Kk-RKpTAXmA_20",
+ "system": "text_only_llm_anchored",
+ "video_id": "Kk-RKpTAXmA",
+ "segment_id": 20,
+ "split": "holdout",
+ "payload": {
+  "segment_id": 20,
+  "start_s": 81.44,
+  "end_s": 86.6,
+  "transcript": "Sony Sound Connect. We're going to need an app because everything does."
+ },
+ "seconds": 3.601,
+ "raw": "{\n  \"segment_id\": 20,\n  \"conflict_score\": 0.75,\n  \"channels_in_conflict\": [],\n  \"flags\": [\"POTENTIAL_PAID_PROMOTION\"],\n  \"narrative\": \"The creator's statement sounds overly promotional, using a superlative ('everything does') and implying a necessity for an app, which may be a subtle sales pitch.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 20,
+  "start_s": 81.44,
+  "end_s": 86.6,
+  "conflict_score": 0.75,
+  "conflict_reasons": [
+   "POTENTIAL_PAID_PROMOTION"
+  ],
+  "flagged": true
+ }
+}

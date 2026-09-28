@@ -1,0 +1,768 @@
+{
+ "incong_00": {
+  "probe_id": "incong_00",
+  "raw": {
+   "segment_id": 1000,
+   "conflict_score": 0.1,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There is a very minor disagreement between the channels regarding the sentiment of this segment. While the transcript, facial expression, and video comments all indicate positive sentiment, the vocal channel's confidence is low, suggesting a potential misinterpretation of the creator's tone. This low conflict score reflects the overall agreement across the channels."
+  },
+  "parsed": true,
+  "conflict_score": 0.1,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There is a very minor disagreement between the channels regarding the sentiment of this segment. While the transcript, facial expression, and video comments all indicate positive sentiment, the vocal channel's confidence is low, suggesting a potential misinterpretation of the creator's tone. This low conflict score reflects the overall agreement across the channels.",
+  "latency_s": 7.3483,
+  "error": null
+ },
+ "incong_01": {
+  "probe_id": "incong_01",
+  "raw": {
+   "segment_id": 1001,
+   "conflict_score": 0.05,
+   "channels_in_conflict": [],
+   "flags": [],
+   "narrative": "All channels indicate a positive sentiment regarding the product. The transcript, facial expression, and comment sentiment all agree, while the vocal channel's reliability is low, suggesting a minor discrepancy that doesn't warrant a significant conflict score."
+  },
+  "parsed": true,
+  "conflict_score": 0.05,
+  "channels": [],
+  "flags": [],
+  "narrative": "All channels indicate a positive sentiment regarding the product. The transcript, facial expression, and comment sentiment all agree, while the vocal channel's reliability is low, suggesting a minor discrepancy that doesn't warrant a significant conflict score.",
+  "latency_s": 3.378,
+  "error": null
+ },
+ "incong_02": {
+  "probe_id": "incong_02",
+  "raw": {
+   "segment_id": 1002,
+   "conflict_score": 0.1,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There is a very minor disagreement between the channels regarding the sentiment of this segment. The transcript explicitly states the creator received compensation, while the facial, vocal, and comment channels all indicate a positive sentiment. Given the low reliability of the vocal channel, this conflict is considered minimal."
+  },
+  "parsed": true,
+  "conflict_score": 0.1,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There is a very minor disagreement between the channels regarding the sentiment of this segment. The transcript explicitly states the creator received compensation, while the facial, vocal, and comment channels all indicate a positive sentiment. Given the low reliability of the vocal channel, this conflict is considered minimal.",
+  "latency_s": 4.0972,
+  "error": null
+ },
+ "incong_03": {
+  "probe_id": "incong_03",
+  "raw": {
+   "segment_id": 1003,
+   "conflict_score": 0.1,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There is a very minor disagreement between the channels regarding the sentiment of this segment. The transcript, facial expression, and video comments all indicate a positive sentiment, while the vocal channel's arousal is also positive, but with low reliability. This suggests a generally positive reaction, but the vocal channel's uncertainty warrants caution."
+  },
+  "parsed": true,
+  "conflict_score": 0.1,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There is a very minor disagreement between the channels regarding the sentiment of this segment. The transcript, facial expression, and video comments all indicate a positive sentiment, while the vocal channel's arousal is also positive, but with low reliability. This suggests a generally positive reaction, but the vocal channel's uncertainty warrants caution.",
+  "latency_s": 4.2182,
+  "error": null
+ },
+ "incong_04": {
+  "probe_id": "incong_04",
+  "raw": {
+   "segment_id": 1004,
+   "conflict_score": 0.1,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a minor disagreement between the creator's stated opinion (positive) and the overall audience sentiment, which is also positive. The creator's facial expression and vocal tone also align with a positive sentiment, but the vocal channel's reliability is low, suggesting a potential misinterpretation of the creator's true feelings."
+  },
+  "parsed": true,
+  "conflict_score": 0.1,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a minor disagreement between the creator's stated opinion (positive) and the overall audience sentiment, which is also positive. The creator's facial expression and vocal tone also align with a positive sentiment, but the vocal channel's reliability is low, suggesting a potential misinterpretation of the creator's true feelings.",
+  "latency_s": 4.2544,
+  "error": null
+ },
+ "incong_05": {
+  "probe_id": "incong_05",
+  "raw": {
+   "segment_id": 1005,
+   "conflict_score": 0.05,
+   "channels_in_conflict": [],
+   "flags": [],
+   "narrative": "All channels indicate a positive sentiment regarding the phone, aligning strongly with the creator's explicit statement. While the vocal channel has lower reliability, the consistency across transcript, facial expression, and comment sentiment suggests a genuine positive experience."
+  },
+  "parsed": true,
+  "conflict_score": 0.05,
+  "channels": [],
+  "flags": [],
+  "narrative": "All channels indicate a positive sentiment regarding the phone, aligning strongly with the creator's explicit statement. While the vocal channel has lower reliability, the consistency across transcript, facial expression, and comment sentiment suggests a genuine positive experience.",
+  "latency_s": 3.3153,
+  "error": null
+ },
+ "incong_06": {
+  "probe_id": "incong_06",
+  "raw": {
+   "segment_id": 1006,
+   "conflict_score": 0.05,
+   "channels_in_conflict": [],
+   "flags": [],
+   "narrative": "All channels indicate a positive sentiment regarding the video segment. There is minimal disagreement between the channels, with the vocal channel having a lower reliability score, suggesting its assessment is less certain than the other channels."
+  },
+  "parsed": true,
+  "conflict_score": 0.05,
+  "channels": [],
+  "flags": [],
+  "narrative": "All channels indicate a positive sentiment regarding the video segment. There is minimal disagreement between the channels, with the vocal channel having a lower reliability score, suggesting its assessment is less certain than the other channels.",
+  "latency_s": 3.1759,
+  "error": null
+ },
+ "incong_07": {
+  "probe_id": "incong_07",
+  "raw": {
+   "segment_id": 1007,
+   "conflict_score": 0.05,
+   "channels_in_conflict": [],
+   "flags": [],
+   "narrative": "All channels express positive sentiment regarding the new design and its price. There is minimal disagreement, and the vocal channel's low reliability score further reduces the significance of any potential conflict."
+  },
+  "parsed": true,
+  "conflict_score": 0.05,
+  "channels": [],
+  "flags": [],
+  "narrative": "All channels express positive sentiment regarding the new design and its price. There is minimal disagreement, and the vocal channel's low reliability score further reduces the significance of any potential conflict.",
+  "latency_s": 3.1668,
+  "error": null
+ },
+ "incong_08": {
+  "probe_id": "incong_08",
+  "raw": {
+   "segment_id": 1008,
+   "conflict_score": 0.05,
+   "channels_in_conflict": [],
+   "flags": [],
+   "narrative": "All channels indicate a positive sentiment regarding this segment. There is minimal disagreement, with the vocal channel having a lower reliability score, suggesting its assessment may not fully align with the other channels' observations. The overall sentiment is strongly aligned across all sources."
+  },
+  "parsed": true,
+  "conflict_score": 0.05,
+  "channels": [],
+  "flags": [],
+  "narrative": "All channels indicate a positive sentiment regarding this segment. There is minimal disagreement, with the vocal channel having a lower reliability score, suggesting its assessment may not fully align with the other channels' observations. The overall sentiment is strongly aligned across all sources.",
+  "latency_s": 3.4912,
+  "error": null
+ },
+ "incong_09": {
+  "probe_id": "incong_09",
+  "raw": {
+   "segment_id": 1009,
+   "conflict_score": 0.05,
+   "channels_in_conflict": [],
+   "flags": [],
+   "narrative": "All channels indicate a positive sentiment regarding the camera, aligning strongly. There is minimal disagreement, and the vocal channel's low reliability score further reduces the significance of any potential conflict."
+  },
+  "parsed": true,
+  "conflict_score": 0.05,
+  "channels": [],
+  "flags": [],
+  "narrative": "All channels indicate a positive sentiment regarding the camera, aligning strongly. There is minimal disagreement, and the vocal channel's low reliability score further reduces the significance of any potential conflict.",
+  "latency_s": 3.0908,
+  "error": null
+ },
+ "incong_10": {
+  "probe_id": "incong_10",
+  "raw": {
+   "segment_id": 1010,
+   "conflict_score": 0.1,
+   "channels_in_conflict": [],
+   "flags": [],
+   "narrative": "All channels indicate a positive sentiment towards the device, suggesting a generally agreeable reaction. The slight disagreement in channel reliability scores doesn't warrant a significant conflict, as the core sentiment aligns across all sources. This segment appears to be a straightforward positive endorsement."
+  },
+  "parsed": true,
+  "conflict_score": 0.1,
+  "channels": [],
+  "flags": [],
+  "narrative": "All channels indicate a positive sentiment towards the device, suggesting a generally agreeable reaction. The slight disagreement in channel reliability scores doesn't warrant a significant conflict, as the core sentiment aligns across all sources. This segment appears to be a straightforward positive endorsement.",
+  "latency_s": 3.4749,
+  "error": null
+ },
+ "incong_11": {
+  "probe_id": "incong_11",
+  "raw": {
+   "segment_id": 1011,
+   "conflict_score": 0.15,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "vocal_reliability",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a minor disagreement between the creator's stated positive sentiment and the positive sentiment expressed by the audience and their facial expression. The creator's vocal tone also aligns with a positive sentiment, but the low reliability of the vocal channel makes this a weak signal. Overall, the conflict score is low as the channels largely agree."
+  },
+  "parsed": true,
+  "conflict_score": 0.15,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "vocal_reliability",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a minor disagreement between the creator's stated positive sentiment and the positive sentiment expressed by the audience and their facial expression. The creator's vocal tone also aligns with a positive sentiment, but the low reliability of the vocal channel makes this a weak signal. Overall, the conflict score is low as the channels largely agree.",
+  "latency_s": 4.4885,
+  "error": null
+ },
+ "incong_12": {
+  "probe_id": "incong_12",
+  "raw": {
+   "segment_id": 1012,
+   "conflict_score": 0.05,
+   "channels_in_conflict": [],
+   "flags": [],
+   "narrative": "All channels indicate a positive sentiment regarding the product, aligning strongly. The slight disagreement in channel reliability scores does not warrant a significant conflict."
+  },
+  "parsed": true,
+  "conflict_score": 0.05,
+  "channels": [],
+  "flags": [],
+  "narrative": "All channels indicate a positive sentiment regarding the product, aligning strongly. The slight disagreement in channel reliability scores does not warrant a significant conflict.",
+  "latency_s": 2.9045,
+  "error": null
+ },
+ "incong_13": {
+  "probe_id": "incong_13",
+  "raw": {
+   "segment_id": 1013,
+   "conflict_score": 0.15,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "vocal_reliability",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a minor disagreement between the creator's words, which express a positive sentiment, and the creator's facial expression and the audience's comments, both also indicating happiness. The low reliability of the vocal channel further reduces confidence in this apparent alignment, suggesting a potential misinterpretation of the creator's intent."
+  },
+  "parsed": true,
+  "conflict_score": 0.15,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "vocal_reliability",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a minor disagreement between the creator's words, which express a positive sentiment, and the creator's facial expression and the audience's comments, both also indicating happiness. The low reliability of the vocal channel further reduces confidence in this apparent alignment, suggesting a potential misinterpretation of the creator's intent.",
+  "latency_s": 4.4686,
+  "error": null
+ },
+ "incong_14": {
+  "probe_id": "incong_14",
+  "raw": {
+   "segment_id": 1014,
+   "conflict_score": 0.05,
+   "channels_in_conflict": [],
+   "flags": [],
+   "narrative": "All channels indicate a positive sentiment regarding this segment. The transcript, facial expression, and comment sentiment all align with a positive assessment, while the vocal channel's reliability is low, suggesting a minor discrepancy that doesn't warrant a significant conflict score."
+  },
+  "parsed": true,
+  "conflict_score": 0.05,
+  "channels": [],
+  "flags": [],
+  "narrative": "All channels indicate a positive sentiment regarding this segment. The transcript, facial expression, and comment sentiment all align with a positive assessment, while the vocal channel's reliability is low, suggesting a minor discrepancy that doesn't warrant a significant conflict score.",
+  "latency_s": 3.4719,
+  "error": null
+ },
+ "incong_15": {
+  "probe_id": "incong_15",
+  "raw": {
+   "segment_id": 1015,
+   "conflict_score": 0.1,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "vocal_reliability",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a minor disagreement between the creator's confident statement and the overwhelmingly positive sentiment expressed through their facial expression, vocal tone, and audience comments. The low vocal reliability score suggests this conflict is likely due to noise or misinterpretation, making it a relatively minor concern. "
+  },
+  "parsed": true,
+  "conflict_score": 0.1,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "vocal_reliability",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a minor disagreement between the creator's confident statement and the overwhelmingly positive sentiment expressed through their facial expression, vocal tone, and audience comments. The low vocal reliability score suggests this conflict is likely due to noise or misinterpretation, making it a relatively minor concern. ",
+  "latency_s": 4.1947,
+  "error": null
+ },
+ "incong_16": {
+  "probe_id": "incong_16",
+  "raw": {
+   "segment_id": 1016,
+   "conflict_score": 0.05,
+   "channels_in_conflict": [],
+   "flags": [],
+   "narrative": "All channels indicate a positive sentiment regarding this segment. There is minimal disagreement, with the vocal channel having a lower reliability score, suggesting its assessment may be less accurate than the transcript, facial expression, and comment sentiment."
+  },
+  "parsed": true,
+  "conflict_score": 0.05,
+  "channels": [],
+  "flags": [],
+  "narrative": "All channels indicate a positive sentiment regarding this segment. There is minimal disagreement, with the vocal channel having a lower reliability score, suggesting its assessment may be less accurate than the transcript, facial expression, and comment sentiment.",
+  "latency_s": 3.2818,
+  "error": null
+ },
+ "incong_17": {
+  "probe_id": "incong_17",
+  "raw": {
+   "segment_id": 1017,
+   "conflict_score": 0.1,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "vocal_reliability",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There is a very minor disagreement between the channels regarding the sentiment of this segment. While the transcript, facial expression, and video comments all indicate positive sentiment, the vocal channel's reliability is low, suggesting its assessment may be inaccurate. This minimal conflict suggests the creator is genuinely pleased with the value, despite a slightly cautious tone."
+  },
+  "parsed": true,
+  "conflict_score": 0.1,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "vocal_reliability",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There is a very minor disagreement between the channels regarding the sentiment of this segment. While the transcript, facial expression, and video comments all indicate positive sentiment, the vocal channel's reliability is low, suggesting its assessment may be inaccurate. This minimal conflict suggests the creator is genuinely pleased with the value, despite a slightly cautious tone.",
+  "latency_s": 4.4156,
+  "error": null
+ },
+ "incong_18": {
+  "probe_id": "incong_18",
+  "raw": {
+   "segment_id": 1018,
+   "conflict_score": 0.15,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "vocal_reliability",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a minor disagreement between the creator's words (positive), their facial expression (happy), and the audience's comments (positive), suggesting a potential mismatch in genuine sentiment. The creator's vocal tone and low reliability score introduce uncertainty, making the overall assessment less confident.  The low vocal reliability score is the primary driver of the low conflict score."
+  },
+  "parsed": true,
+  "conflict_score": 0.15,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "vocal_reliability",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a minor disagreement between the creator's words (positive), their facial expression (happy), and the audience's comments (positive), suggesting a potential mismatch in genuine sentiment. The creator's vocal tone and low reliability score introduce uncertainty, making the overall assessment less confident.  The low vocal reliability score is the primary driver of the low conflict score.",
+  "latency_s": 4.6346,
+  "error": null
+ },
+ "incong_19": {
+  "probe_id": "incong_19",
+  "raw": {
+   "segment_id": 1019,
+   "conflict_score": 0.1,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "vocal_reliability",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There is a very minor disagreement between the channels regarding the sentiment of this segment. While the transcript, facial expression, and video comments all indicate a positive sentiment, the vocal channel's reliability is low, suggesting its assessment may be inaccurate. This minimal conflict suggests the overall sentiment is likely positive, but the vocal channel's data should be treated with caution."
+  },
+  "parsed": true,
+  "conflict_score": 0.1,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "vocal_reliability",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There is a very minor disagreement between the channels regarding the sentiment of this segment. While the transcript, facial expression, and video comments all indicate a positive sentiment, the vocal channel's reliability is low, suggesting its assessment may be inaccurate. This minimal conflict suggests the overall sentiment is likely positive, but the vocal channel's data should be treated with caution.",
+  "latency_s": 4.5401,
+  "error": null
+ },
+ "incong_20": {
+  "probe_id": "incong_20",
+  "raw": {
+   "segment_id": 1020,
+   "conflict_score": 0.05,
+   "channels_in_conflict": [],
+   "flags": [],
+   "narrative": "All channels indicate a positive sentiment regarding the video segment. There is minimal disagreement between the channels, with the vocal channel having a lower reliability score, suggesting its assessment may be less accurate than the other channels."
+  },
+  "parsed": true,
+  "conflict_score": 0.05,
+  "channels": [],
+  "flags": [],
+  "narrative": "All channels indicate a positive sentiment regarding the video segment. There is minimal disagreement between the channels, with the vocal channel having a lower reliability score, suggesting its assessment may be less accurate than the other channels.",
+  "latency_s": 3.2277,
+  "error": null
+ },
+ "incong_21": {
+  "probe_id": "incong_21",
+  "raw": {
+   "segment_id": 1021,
+   "conflict_score": 0.15,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "vocal_reliability",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a minor disagreement between the creator's positive transcript and the positive sentiment expressed by the audience and their facial expression. The creator's vocal tone and facial expression align with the overall positive sentiment, but the low vocal reliability score suggests this is a weak signal. This indicates a subtle potential for sarcasm or a nuanced opinion not fully captured by the transcript."
+  },
+  "parsed": true,
+  "conflict_score": 0.15,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "vocal_reliability",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a minor disagreement between the creator's positive transcript and the positive sentiment expressed by the audience and their facial expression. The creator's vocal tone and facial expression align with the overall positive sentiment, but the low vocal reliability score suggests this is a weak signal. This indicates a subtle potential for sarcasm or a nuanced opinion not fully captured by the transcript.",
+  "latency_s": 4.5876,
+  "error": null
+ },
+ "incong_22": {
+  "probe_id": "incong_22",
+  "raw": {
+   "segment_id": 1022,
+   "conflict_score": 0.05,
+   "channels_in_conflict": [],
+   "flags": [],
+   "narrative": "All channels indicate a positive sentiment regarding the creator's statement. There is minimal disagreement, and the vocal channel's low reliability score further reduces the significance of any potential conflict."
+  },
+  "parsed": true,
+  "conflict_score": 0.05,
+  "channels": [],
+  "flags": [],
+  "narrative": "All channels indicate a positive sentiment regarding the creator's statement. There is minimal disagreement, and the vocal channel's low reliability score further reduces the significance of any potential conflict.",
+  "latency_s": 3.1843,
+  "error": null
+ },
+ "incong_23": {
+  "probe_id": "incong_23",
+  "raw": {
+   "segment_id": 1023,
+   "conflict_score": 0.05,
+   "channels_in_conflict": [],
+   "flags": [],
+   "narrative": "All channels indicate a positive sentiment regarding the creator's statement about stopping phone use. There is a minor disagreement between the vocal channel and its reliability score, but this does not warrant a significant conflict score."
+  },
+  "parsed": true,
+  "conflict_score": 0.05,
+  "channels": [],
+  "flags": [],
+  "narrative": "All channels indicate a positive sentiment regarding the creator's statement about stopping phone use. There is a minor disagreement between the vocal channel and its reliability score, but this does not warrant a significant conflict score.",
+  "latency_s": 3.2217,
+  "error": null
+ },
+ "control_00": {
+  "probe_id": "control_00",
+  "raw": {
+   "segment_id": 2000,
+   "conflict_score": 0.05,
+   "channels_in_conflict": [],
+   "flags": [],
+   "narrative": "All channels indicate a positive sentiment regarding the product review. The transcript, facial expression, and comment sentiment all align with a positive assessment, while the vocal channel's reliability is low, resulting in a minimal conflict score."
+  },
+  "parsed": true,
+  "conflict_score": 0.05,
+  "channels": [],
+  "flags": [],
+  "narrative": "All channels indicate a positive sentiment regarding the product review. The transcript, facial expression, and comment sentiment all align with a positive assessment, while the vocal channel's reliability is low, resulting in a minimal conflict score.",
+  "latency_s": 3.376,
+  "error": null
+ },
+ "control_01": {
+  "probe_id": "control_01",
+  "raw": {
+   "segment_id": 2001,
+   "conflict_score": 0.1,
+   "channels_in_conflict": [],
+   "flags": [],
+   "narrative": "All channels indicate a neutral sentiment regarding the charging time. There is no significant disagreement between the transcript, facial expression, video comment sentiment, and vocal emotion data, suggesting a straightforward and factual statement."
+  },
+  "parsed": true,
+  "conflict_score": 0.1,
+  "channels": [],
+  "flags": [],
+  "narrative": "All channels indicate a neutral sentiment regarding the charging time. There is no significant disagreement between the transcript, facial expression, video comment sentiment, and vocal emotion data, suggesting a straightforward and factual statement.",
+  "latency_s": 3.142,
+  "error": null
+ },
+ "control_02": {
+  "probe_id": "control_02",
+  "raw": {
+   "segment_id": 2002,
+   "conflict_score": 0.05,
+   "channels_in_conflict": [],
+   "flags": [],
+   "narrative": "All channels indicate a positive sentiment regarding the product. The transcript, facial expression, and comment sentiment all strongly agree, while the vocal channel's reliability is low, resulting in a minimal conflict score."
+  },
+  "parsed": true,
+  "conflict_score": 0.05,
+  "channels": [],
+  "flags": [],
+  "narrative": "All channels indicate a positive sentiment regarding the product. The transcript, facial expression, and comment sentiment all strongly agree, while the vocal channel's reliability is low, resulting in a minimal conflict score.",
+  "latency_s": 3.1797,
+  "error": null
+ },
+ "control_03": {
+  "probe_id": "control_03",
+  "raw": {
+   "segment_id": 2003,
+   "conflict_score": 0.05,
+   "channels_in_conflict": [],
+   "flags": [],
+   "narrative": "All channels indicate a neutral sentiment regarding this product description. There is minimal disagreement between the transcript, facial expression, and comment sentiment, and the vocal channel's reliability is low, so no conflict is detected."
+  },
+  "parsed": true,
+  "conflict_score": 0.05,
+  "channels": [],
+  "flags": [],
+  "narrative": "All channels indicate a neutral sentiment regarding this product description. There is minimal disagreement between the transcript, facial expression, and comment sentiment, and the vocal channel's reliability is low, so no conflict is detected.",
+  "latency_s": 3.231,
+  "error": null
+ },
+ "control_04": {
+  "probe_id": "control_04",
+  "raw": {
+   "segment_id": 2004,
+   "conflict_score": 0.65,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a strong agreement across the transcript, facial expression, and comment sentiment indicating a negative experience with the product. However, the vocal channel's arousal is relatively low, suggesting a muted expression of negativity, and its reliability is questionable. This creates a moderate conflict, primarily driven by the transcript and comment channels."
+  },
+  "parsed": true,
+  "conflict_score": 0.65,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a strong agreement across the transcript, facial expression, and comment sentiment indicating a negative experience with the product. However, the vocal channel's arousal is relatively low, suggesting a muted expression of negativity, and its reliability is questionable. This creates a moderate conflict, primarily driven by the transcript and comment channels.",
+  "latency_s": 4.2472,
+  "error": null
+ },
+ "control_05": {
+  "probe_id": "control_05",
+  "raw": {
+   "segment_id": 2005,
+   "conflict_score": 0.05,
+   "channels_in_conflict": [],
+   "flags": [],
+   "narrative": "All channels indicate a positive sentiment regarding the video segment. There is minimal disagreement between the channels, with the vocal channel having a lower reliability score, suggesting its assessment is less certain than the other channels."
+  },
+  "parsed": true,
+  "conflict_score": 0.05,
+  "channels": [],
+  "flags": [],
+  "narrative": "All channels indicate a positive sentiment regarding the video segment. There is minimal disagreement between the channels, with the vocal channel having a lower reliability score, suggesting its assessment is less certain than the other channels.",
+  "latency_s": 3.1983,
+  "error": null
+ },
+ "control_06": {
+  "probe_id": "control_06",
+  "raw": {
+   "segment_id": 2006,
+   "conflict_score": 0.1,
+   "channels_in_conflict": [],
+   "flags": [],
+   "narrative": "All channels align on a neutral sentiment regarding this segment. The low vocal reliability score suggests the audio data may not be a reliable indicator of the creator's true emotional state. Therefore, there is no significant conflict detected."
+  },
+  "parsed": true,
+  "conflict_score": 0.1,
+  "channels": [],
+  "flags": [],
+  "narrative": "All channels align on a neutral sentiment regarding this segment. The low vocal reliability score suggests the audio data may not be a reliable indicator of the creator's true emotional state. Therefore, there is no significant conflict detected.",
+  "latency_s": 3.2088,
+  "error": null
+ },
+ "control_07": {
+  "probe_id": "control_07",
+  "raw": {
+   "segment_id": 2007,
+   "conflict_score": 0.75,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "facial_emotion",
+    "video_comment_sentiment",
+    "vocal_prosody"
+   ],
+   "flags": [],
+   "narrative": "There's a strong agreement across the transcript, facial expression, and comment sentiment indicating a negative experience with the software. The creator's vocal cues and facial expression both reinforce this negative sentiment, but the low vocal reliability score suggests this channel's assessment is less trustworthy. This high conflict score suggests a significant discrepancy in how the experience is being perceived."
+  },
+  "parsed": true,
+  "conflict_score": 0.75,
+  "channels": [
+   "transcript_sentiment",
+   "facial_emotion",
+   "video_comment_sentiment",
+   "vocal_prosody"
+  ],
+  "flags": [],
+  "narrative": "There's a strong agreement across the transcript, facial expression, and comment sentiment indicating a negative experience with the software. The creator's vocal cues and facial expression both reinforce this negative sentiment, but the low vocal reliability score suggests this channel's assessment is less trustworthy. This high conflict score suggests a significant discrepancy in how the experience is being perceived.",
+  "latency_s": 4.2645,
+  "error": null
+ },
+ "control_08": {
+  "probe_id": "control_08",
+  "raw": {
+   "segment_id": 2008,
+   "conflict_score": 0.05,
+   "channels_in_conflict": [],
+   "flags": [],
+   "narrative": "All channels indicate a positive sentiment regarding the product's quality and sound. There is minimal disagreement between the channels, suggesting a consistent positive message being conveyed. The low vocal reliability score does not warrant a significant conflict."
+  },
+  "parsed": true,
+  "conflict_score": 0.05,
+  "channels": [],
+  "flags": [],
+  "narrative": "All channels indicate a positive sentiment regarding the product's quality and sound. There is minimal disagreement between the channels, suggesting a consistent positive message being conveyed. The low vocal reliability score does not warrant a significant conflict.",
+  "latency_s": 3.1405,
+  "error": null
+ },
+ "control_09": {
+  "probe_id": "control_09",
+  "raw": {
+   "segment_id": 2009,
+   "conflict_score": 0.1,
+   "channels_in_conflict": [],
+   "flags": [],
+   "narrative": "All channels align on a neutral sentiment regarding this product description. There is no significant disagreement between the transcript, facial expression, and comment sentiment, and the vocal channel's reliability is low, making its opinion less impactful."
+  },
+  "parsed": true,
+  "conflict_score": 0.1,
+  "channels": [],
+  "flags": [],
+  "narrative": "All channels align on a neutral sentiment regarding this product description. There is no significant disagreement between the transcript, facial expression, and comment sentiment, and the vocal channel's reliability is low, making its opinion less impactful.",
+  "latency_s": 3.1895,
+  "error": null
+ },
+ "control_10": {
+  "probe_id": "control_10",
+  "raw": {
+   "segment_id": 2010,
+   "conflict_score": 0.25,
+   "channels_in_conflict": [
+    "transcript_sentiment",
+    "vocal_emotion",
+    "facial_emotion",
+    "video_comment_sentiment"
+   ],
+   "flags": [],
+   "narrative": "There's a strong agreement across the transcript, facial expression, and comment sentiment, all indicating negative sentiment regarding the product's price. The vocal channel's arousal is low and its reliability is weak, suggesting it may not fully capture the creator's frustration, but the overall consensus points to a negative reaction."
+  },
+  "parsed": true,
+  "conflict_score": 0.25,
+  "channels": [
+   "transcript_sentiment",
+   "vocal_emotion",
+   "facial_emotion",
+   "video_comment_sentiment"
+  ],
+  "flags": [],
+  "narrative": "There's a strong agreement across the transcript, facial expression, and comment sentiment, all indicating negative sentiment regarding the product's price. The vocal channel's arousal is low and its reliability is weak, suggesting it may not fully capture the creator's frustration, but the overall consensus points to a negative reaction.",
+  "latency_s": 4.0914,
+  "error": null
+ },
+ "control_11": {
+  "probe_id": "control_11",
+  "raw": {
+   "segment_id": 2011,
+   "conflict_score": 0.05,
+   "channels_in_conflict": [],
+   "flags": [],
+   "narrative": "All channels indicate a positive sentiment regarding the video segment. There is minimal disagreement between the channels, with the vocal channel having a lower reliability score that doesn't significantly impact the overall assessment."
+  },
+  "parsed": true,
+  "conflict_score": 0.05,
+  "channels": [],
+  "flags": [],
+  "narrative": "All channels indicate a positive sentiment regarding the video segment. There is minimal disagreement between the channels, with the vocal channel having a lower reliability score that doesn't significantly impact the overall assessment.",
+  "latency_s": 3.0346,
+  "error": null
+ }
+}

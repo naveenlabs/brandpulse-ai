@@ -1,0 +1,497 @@
+<title>BrandPulse Final Evaluation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&display=swap">
+<style>
+/* BrandPulse's own materials (ui/src/styles/tokens.css): FIELD for light, BENCH for dark.
+   Only the high-contrast inks are used for text here. */
+:root {
+  color-scheme: light;
+  --ground: #F4F7F7;
+  --sheet: #FFFFFF;
+  --panel: #EDF1F2;
+  --edge: #C9D1D4;
+  --edge-hi: #8E9A9F;
+  --ink: #0E1214;
+  --ink-2: #445055;
+  --accent: #00655A;
+  --accent-soft: #DCEFEC;
+  --warm: #7E4A00;
+  --tear: #C4005E;
+  --focus: #0E1214;
+  --f-inst: "Archivo", ui-sans-serif, system-ui, sans-serif;
+  --f-voice: "Newsreader", ui-serif, Georgia, serif;
+  --measure: 44rem;
+  --wide: 76rem;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --ground: #0C0F11; --sheet: #141A1D; --panel: #1A2023; --edge: #2C3539; --edge-hi: #56646A;
+    --ink: #E7ECEE; --ink-2: #A3AFB4; --accent: #5FD3C0; --accent-soft: #15302C;
+    --warm: #E8A33C; --tear: #FF5FA2; --focus: #FFFFFF;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --ground: #0C0F11; --sheet: #141A1D; --panel: #1A2023; --edge: #2C3539; --edge-hi: #56646A;
+  --ink: #E7ECEE; --ink-2: #A3AFB4; --accent: #5FD3C0; --accent-soft: #15302C;
+  --warm: #E8A33C; --tear: #FF5FA2; --focus: #FFFFFF;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--ground); color: var(--ink);
+  font: 400 1.0625rem/1.55 var(--f-inst); font-variation-settings: "wdth" 100;
+  padding-inline: 16px;
+}
+a { color: var(--accent); }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* ---- the running head ---- */
+.head {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
+  margin-inline: -16px; padding: 10px 16px 0; background: var(--ground);
+  border-bottom: 1px solid var(--edge);
+}
+.head__row { max-width: var(--wide); margin: 0 auto; display: flex; gap: 1rem; align-items: baseline; justify-content: space-between; flex-wrap: wrap; }
+.head__name { font-weight: 650; font-variation-settings: "wdth" 110; letter-spacing: -0.01em; }
+.head__name span { color: var(--ink-2); font-weight: 450; }
+.head__count { font-variant-numeric: tabular-nums; font-size: 0.9rem; color: var(--ink-2); }
+.bar { max-width: var(--wide); margin: 8px auto 0; height: 4px; background: var(--edge); }
+.bar i { display: block; height: 100%; width: 0; background: var(--accent); transition: width .3s ease; }
+@media (prefers-reduced-motion: reduce) { .bar i { transition: none; } }
+
+main { max-width: var(--wide); margin: 0 auto; padding-block: 2.5rem 5rem; }
+.prose { max-width: var(--measure); }
+
+/* ---- title plate ---- */
+.plate { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1.25rem; padding-block: 1rem 2.5rem; border-bottom: 1px solid var(--edge); }
+.plate__kicker { font-size: 0.9rem; font-weight: 600; color: var(--accent); font-variation-settings: "wdth" 90; }
+.plate h1 { margin: 0; font: 400 clamp(2.2rem, 5vw, 3.6rem)/1.05 var(--f-voice); letter-spacing: -0.02em; text-wrap: balance; max-width: 20ch; }
+.plate p { margin: 0; max-width: var(--measure); font-size: 1.125rem; }
+.facts { display: flex; flex-wrap: wrap; gap: 0.5rem 1.75rem; margin: 0; padding: 0; list-style: none; }
+.facts li { display: grid; gap: 0.1rem; }
+.facts b { font: 650 1.35rem/1.1 var(--f-inst); font-variation-settings: "wdth" 110; font-variant-numeric: tabular-nums; }
+.facts span { font-size: 0.875rem; color: var(--ink-2); }
+
+.contents { margin: 2rem 0 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); gap: 0.4rem 1.5rem; max-width: var(--wide); }
+.contents a { display: flex; gap: 0.6rem; text-decoration: none; color: var(--ink); padding: 0.35rem 0; border-bottom: 1px solid var(--edge); }
+.contents a:hover { color: var(--accent); }
+.contents em { font-style: normal; font-variant-numeric: tabular-nums; color: var(--ink-2); min-width: 1.5rem; }
+.contents small { margin-left: auto; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+
+/* ---- parts ---- */
+.part { padding-block: 3.5rem 1rem; border-bottom: 1px solid var(--edge); scroll-margin-top: 5rem; }
+.part__n { font-size: 0.9rem; font-weight: 600; color: var(--accent); font-variation-settings: "wdth" 90; margin: 0 0 0.4rem; }
+.part h2 { margin: 0 0 0.75rem; font: 400 clamp(1.7rem, 3.4vw, 2.4rem)/1.1 var(--f-voice); letter-spacing: -0.015em; text-wrap: balance; }
+.part__intro { margin: 0 0 1.75rem; max-width: var(--measure); color: var(--ink); }
+.part__intro + .part__intro { margin-top: -1rem; }
+
+/* ---- screenshots ---- */
+figure { margin: 2rem 0 1.5rem; }
+.shot { display: block; width: 100%; padding: 0; border: 1px solid var(--edge-hi); background: #080A0B; cursor: zoom-in; line-height: 0; }
+.shot img { width: 100%; height: auto; display: block; }
+figcaption { display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; justify-content: space-between; margin-top: 0.55rem; font-size: 0.9rem; color: var(--ink-2); max-width: var(--wide); }
+figcaption b { color: var(--ink); font-weight: 600; }
+.pair { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.pair figure { margin: 0; }
+@media (max-width: 760px) { .pair { grid-template-columns: 1fr; } }
+
+/* ---- questions ---- */
+.q { max-width: var(--measure); margin: 0 0 1.25rem; padding: 1.25rem 1.25rem 1.35rem; background: var(--sheet); border: 1px solid var(--edge); scroll-margin-top: 5.5rem; }
+.q fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
+.q__id { font: 600 0.8rem/1 var(--f-inst); font-variation-settings: "wdth" 85; color: var(--ink-2); font-variant-numeric: tabular-nums; margin-bottom: 0.5rem; display: flex; gap: 0.6rem; }
+.q__id .opt { color: var(--ink-2); font-weight: 450; }
+.q__label, .q legend { display: block; padding: 0; font: 500 1.2rem/1.35 var(--f-voice); margin: 0 0 0.35rem; text-wrap: pretty; }
+.q legend .q__lab { display: block; }
+.q__help { margin: 0 0 0.85rem; color: var(--ink-2); font-size: 0.95rem; }
+.q.is-done { border-color: var(--accent); }
+.q.is-flag { border-color: var(--tear); }
+
+.choices { display: grid; gap: 0.45rem; margin-top: 0.6rem; }
+.choice { display: flex; gap: 0.7rem; align-items: flex-start; padding: 0.6rem 0.75rem; border: 1px solid var(--edge); background: var(--ground); cursor: pointer; }
+.choice:hover { border-color: var(--edge-hi); }
+.choice input { margin: 0.25rem 0 0; width: 1.05rem; height: 1.05rem; accent-color: var(--accent); flex: none; }
+.choice:has(input:checked) { border-color: var(--accent); background: var(--accent-soft); }
+.choice .k { font-weight: 600; font-variant-numeric: tabular-nums; color: var(--ink-2); min-width: 1.1rem; }
+
+.scale { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0.4rem; margin-top: 0.7rem; }
+.scale label { display: grid; place-items: center; gap: 0.2rem; padding: 0.55rem 0.25rem; border: 1px solid var(--edge); background: var(--ground); cursor: pointer; font-weight: 600; font-variant-numeric: tabular-nums; font-size: 1.1rem; }
+.scale label:hover { border-color: var(--edge-hi); }
+.scale input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.scale label:has(input:checked) { background: var(--accent); border-color: var(--accent); color: var(--sheet); }
+.scale label:has(input:focus-visible) { outline: 3px solid var(--focus); outline-offset: 2px; }
+.scale__ends { display: flex; justify-content: space-between; gap: 1rem; margin-top: 0.4rem; font-size: 0.875rem; color: var(--ink-2); }
+
+textarea, input[type="text"] {
+  width: 100%; margin-top: 0.5rem; padding: 0.65rem 0.75rem; font: 400 1.0625rem/1.5 var(--f-inst);
+  color: var(--ink); background: var(--ground); border: 1px solid var(--edge-hi); border-radius: 0;
+}
+textarea { min-height: 6.5rem; resize: vertical; }
+
+.consent { max-width: var(--measure); display: grid; gap: 0.9rem; }
+.consent h3 { margin: 1rem 0 0; font: 600 1rem/1.3 var(--f-inst); }
+.consent p { margin: 0; }
+.consent ul { margin: 0; padding-left: 1.2rem; display: grid; gap: 0.35rem; }
+
+/* ---- finish ---- */
+.finish { max-width: var(--measure); padding-block: 3.5rem 2rem; scroll-margin-top: 5rem; }
+.finish h2 { margin: 0 0 0.75rem; font: 400 clamp(1.7rem, 3.4vw, 2.4rem)/1.1 var(--f-voice); }
+.status { padding: 1rem 1.1rem; border: 1px solid var(--edge); background: var(--sheet); margin: 1rem 0; }
+.status ul { margin: 0.5rem 0 0; padding-left: 1.2rem; }
+.btns { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 1.25rem 0 0.75rem; }
+.btn { font: 600 1rem/1 var(--f-inst); padding: 0.9rem 1.25rem; border: 1px solid var(--ink); background: var(--ink); color: var(--ground); cursor: pointer; }
+.btn--quiet { background: transparent; color: var(--ink); }
+.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.said { min-height: 1.5rem; font-weight: 600; color: var(--accent); }
+#export { min-height: 16rem; font: 400 0.9rem/1.45 ui-monospace, Menlo, Consolas, monospace; }
+
+/* ---- the enlarger ---- */
+dialog.lb { width: 100vw; height: 100dvh; max-width: none; max-height: none; margin: 0; padding: 0; border: 0; background: #06080A; color: #E7ECEE; }
+dialog.lb::backdrop { background: rgba(0,0,0,.8); }
+.lb__bar { position: sticky; top: 0; left: 0; display: flex; gap: 0.5rem; align-items: center; justify-content: space-between; padding: 0.6rem 0.8rem; padding-top: calc(0.6rem + env(safe-area-inset-top, 0px)); background: #06080A; border-bottom: 1px solid #2C3539; z-index: 1; }
+.lb__cap { font-size: 0.9rem; color: #A3AFB4; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.lb__bar button { font: 600 0.95rem/1 var(--f-inst); padding: 0.6rem 0.9rem; background: transparent; color: #E7ECEE; border: 1px solid #56646A; cursor: pointer; white-space: nowrap; }
+.lb__bar button:focus-visible { outline-color: #FFFFFF; }
+.lb__view { height: calc(100dvh - 3.3rem); overflow: auto; display: grid; place-items: center; }
+.lb__view img { display: block; max-width: 100%; max-height: calc(100dvh - 3.6rem); cursor: zoom-in; }
+.lb.is-actual .lb__view { place-items: start; }
+.lb.is-actual .lb__view img { max-width: none; max-height: none; width: 1512px; cursor: zoom-out; }
+</style>
+
+<header class="head">
+  <div class="head__row">
+    <div class="head__name">BrandPulse <span>final evaluation</span></div>
+    <div class="head__count" id="count" aria-live="polite">0 answered</div>
+  </div>
+  <div class="bar" aria-hidden="true"><i id="bar"></i></div>
+</header>
+
+<main id="top">
+  <section class="plate" aria-labelledby="t">
+    <p class="plate__kicker">CM3070 final-year project, the last round of testing</p>
+    <h1 id="t">Tell me what you make of BrandPulse</h1>
+    <p>BrandPulse reads a YouTube review four ways: the words said, the face on camera, the voice, and the viewers' comments. Then it shows where those four disagree. You'll see real screenshots of it and answer questions about them. <strong>I'm testing the design, not you.</strong> "I don't know what this means" is a useful answer.</p>
+    <ul class="facts">
+      <li><b>20–25 min</b><span>to finish</span></li>
+      <li><b>18</b><span>screenshots</span></li>
+      <li><b>8</b><span>short parts</span></li>
+      <li><b>Laptop</b><span>works best; a phone works too</span></li>
+    </ul>
+    <p class="q__help" style="margin:0">Tap any screenshot to see it full size. Your answers are saved in this browser as you go. At the end, one button copies them all so you can paste them to me.</p>
+    <ol class="contents" id="contents"></ol>
+  </section>
+
+  <div id="parts"></div>
+
+  <section class="finish" id="finish" aria-labelledby="fin">
+    <p class="part__n">Last step</p>
+    <h2 id="fin">Send me your answers</h2>
+    <p>Press the button, then paste the text to me on WhatsApp or by email. Nothing is sent anywhere until you do.</p>
+    <div class="status" id="status" aria-live="polite"></div>
+    <div class="btns">
+      <button class="btn" type="button" id="copy">Copy my answers</button>
+      <button class="btn btn--quiet" type="button" id="show">Show them as text</button>
+    </div>
+    <p class="said" id="said" aria-live="polite"></p>
+    <label class="sr" for="export">Your answers as text</label>
+    <textarea id="export" readonly hidden></textarea>
+    <p class="q__help">Thank you, this really helps. If you change your mind about taking part, just tell me and I'll delete your answers.</p>
+  </section>
+</main>
+
+<dialog class="lb" id="lb" aria-label="Screenshot, full size">
+  <div class="lb__bar">
+    <span class="lb__cap" id="lbcap"></span>
+    <span style="display:flex;gap:.5rem">
+      <button type="button" id="lbzoom">Actual size</button>
+      <button type="button" id="lbclose">Close</button>
+    </span>
+  </div>
+  <div class="lb__view"><img id="lbimg" alt=""></div>
+</dialog>
+
+<script>
+(() => {
+  const STORE = "bp-final-eval-v1";
+  const SCALE_AGREE = ["Strongly disagree", "Strongly agree"];
+
+  /* The instrument. IDs are stable: the answer key (user_eval/PROTOCOL.md) and the
+     analysis refer to them. C-, R1 and O1-O3 reuse the August pilot's and V2's wording. */
+  const PARTS = [
+    { id: "p0", n: "Before you start", title: "What this is, and your consent", blocks: [
+      { html: `<div class="consent">
+        <p>This is the final user evaluation for my BSc Computer Science project (CM3070). BrandPulse analyses a YouTube review video and shows where the reviewer's words, face and voice and the audience's comments disagree with each other.</p>
+        <h3>What you'll do</h3>
+        <ul><li>Look at 18 screenshots of the real interface and answer questions about them, about 20–25 minutes.</li>
+        <li>Some questions have a right answer. That tests whether the <em>design</em> is clear, not how clever you are. If you'd have to guess, pick "Not sure".</li></ul>
+        <h3>Your answers</h3>
+        <ul><li>Taking part is voluntary. You can skip any question or stop at any point.</li>
+        <li>The report refers to you by a number (P1, P2, …), never by name. Your name is only so I know whose answers are whose.</li>
+        <li>Nothing is collected automatically. Your answers reach me only when you copy and send them.</li>
+        <li>You can withdraw until I submit on 28 Sep 2026: tell me and I'll delete your answers.</li>
+        <li>Video stills in the screenshots are blurred on purpose (the videos belong to their creators). Everything else is the interface exactly as built.</li></ul>
+      </div>` },
+      { q: { id: "C0.1", type: "multi", label: "Consent", options: ["I've read the above and I'm happy to take part."], required: true, short: "Consent to take part" } },
+      { q: { id: "C0.2", type: "choice", label: "Can I quote your answers in my report, without your name?", options: ["Yes, quote me anonymously", "No, just count my answers"], short: "Quote anonymously" } },
+      { q: { id: "C0.3", type: "text", label: "Your first name or initials", help: "Only so I know whose answers these are. It never appears in the report.", short: "Name / initials" } },
+    ]},
+    { id: "p1", n: "Part 1 of 8", title: "About you", blocks: [
+      { q: { id: "A1", type: "choice", label: "How often do you watch YouTube reviews before buying something?", options: ["Never", "A few times a year", "About once a month", "Every week or more"] } },
+      { q: { id: "A2", type: "choice", label: "Did you try the first version of BrandPulse in August?", options: ["Yes", "No", "Not sure"] } },
+      { q: { id: "A3", type: "choice", label: "What are you filling this in on?", options: ["Laptop or desktop", "Tablet", "Phone"] } },
+      { q: { id: "A4", type: "multi", optional: true, label: "Does anything affect how you read screens?", help: "Optional. Tick only what you're comfortable sharing. It helps me judge whether the design works for everyone.", options: ["Colour blindness", "Low vision, or I usually enlarge text", "Dyslexia", "Animation or motion makes me uncomfortable", "None of these", "Prefer not to say"] } },
+    ]},
+    { id: "p2", n: "Part 2 of 8", title: "First look", intro: ["This is the first screen after the short opening animation."], blocks: [
+      { fig: [{ src: "img/01-opening.webp", cap: "The opening page", alt: "BrandPulse opening page: a dark space scene with two sweeping light trails, the headline 'Nobody lies in the words. So this reads four other things.', a button 'See it on a real video', and four labels: What was said, The face on camera, How it was said, What the room wrote." }] },
+      { q: { id: "F1", type: "long", label: "From this screen alone, what do you think BrandPulse does?", short: "What BrandPulse does (first look)" } },
+      { q: { id: "F2", type: "scale", label: "This looks like a professional, trustworthy tool.", ends: SCALE_AGREE } },
+    ]},
+    { id: "p3", n: "Part 3 of 8", title: "Starting an analysis", intro: ["This is where you start a new analysis. There are three tabs along the form: One video, A brand and A product."], blocks: [
+      { pair: [
+        { src: "img/02-analyse-video.webp", cap: "The 'One video' tab", alt: "The Analyse page with the 'One video' tab chosen: the headline 'Look closer.', a field for a YouTube address, fields for Brand and Product, and a 'Begin analysis' button. A 3D stack of translucent panels sits on the right." },
+        { src: "img/03-analyse-product.webp", cap: "The 'A product' tab", alt: "The Analyse page with the 'A product' tab chosen: the headline 'Every perspective.', text explaining it finds five recent reviews of the same thing, a Product field, and choices for how far back to look: Last week, Last month, Last 6 months, Last year." } ] },
+      { q: { id: "S1", type: "choice", label: "You want to know what the five most recent reviews of the Galaxy S27 Ultra say. Which tab would you use?", options: ["One video", "A brand", "A product", "Not sure"], short: "Which tab for five S27 reviews" } },
+      { q: { id: "S2", type: "scale", label: "It's clear what I need to type in to start.", ends: SCALE_AGREE } },
+      { q: { id: "S3", type: "long", optional: true, label: "Is anything on this page unclear?", short: "Analyse page: unclear" } },
+    ]},
+    { id: "p4", n: "Part 4 of 8", title: "The library", intro: ["Every finished analysis is kept here as a book on a shelf, sorted into single videos, brands and products. It's 3D: you can click a book to take it down and drag to turn it."], blocks: [
+      { fig: [{ src: "img/04-library.webp", cap: "The library shelf", alt: "A 3D wooden bookshelf with three sections headed A video (11 volumes), A brand (3 volumes) and A product (3 volumes). Each book's cover shows a title such as 'Apple Duo' and two scores. A hint at the bottom reads 'Click a volume to take it down, drag to turn it, Esc puts it back'." }] },
+      { q: { id: "L1", type: "choice", label: "How would you open the analysis of the 'Apple Duo' video?", options: ["Click its book on the shelf", "Go back to the Analyse page and run it again", "Search for it on YouTube", "Not sure"], short: "How to open Apple Duo" } },
+      { q: { id: "L2", type: "choice", label: "The bookshelf idea is…", options: ["Helpful: I get it straight away", "Nice to look at, but a plain list would do just as well", "Confusing"], short: "Bookshelf idea" } },
+    ]},
+    { id: "p5", n: "Part 5 of 8", title: "One video's report", intro: ["Opening a book gives you the report on one video, here a hands-on review of an 'iPhone Duo'. You turn it page by page like a real book. Below are six of its spreads (two pages each)."], blocks: [
+      { fig: [{ src: "img/05-report-overview.webp", cap: "Spread 1: the overview", alt: "Report overview. Left page: a blurred video still, the title 'Apple Duo', length 7:34, 82 segments, 100 comments read. Right page, 'The reading': a paragraph summary, then two scores, Authenticity 56.31 of 100 and Brand health 81.45 of 100, each with a one-line explanation, and a dagger footnote warning about facial emotion recognition bias." }] },
+      { q: { id: "R1", type: "long", label: "Without me explaining anything, what do you think this is telling you?", help: "In your own words. If you're guessing at parts, say so; that's useful too.", short: "What the overview tells you (pilot C1)" } },
+      { q: { id: "R2", type: "long", label: "In your own words, what is the Authenticity score measuring?", short: "What Authenticity measures (V2 B1)" } },
+      { q: { id: "R3", type: "choice", label: "Authenticity is 56.31 out of 100. Which of these does it tell you?", options: ["The reviewer was only about half honest", "How far the four readings of the video (words, face, voice, comments) agreed with each other", "56% of viewers liked the video", "Not sure"], short: "What 56.31 Authenticity tells you" } },
+      { q: { id: "R4", type: "choice", label: "What is Brand health made from?", options: ["The video's views and likes", "60% what the comments felt, 40% Authenticity", "The reviewer's opinion of the brand", "Not sure"], short: "What Brand health is made from" } },
+      { q: { id: "R5", type: "scale", label: "I can tell the difference between Authenticity and Brand health.", ends: SCALE_AGREE } },
+
+      { fig: [{ src: "img/06-report-time.webp", cap: "Spread 4: what the reviewer talked about", alt: "Left page 'Where the time went': horizontal bars for topics Design 0:33, Price 0:17, Performance 0:16, Camera 0:05, Impressions 0:06, Availability 0:05, each split into positive, neutral and negative. Right page 'Reviewer and audience, topic by topic': one row per topic with a round mark for the reviewer and a square for the audience on a negative-to-positive scale, most labelled 'no clear difference'." }] },
+      { q: { id: "R6", type: "choice", label: "Left page: which topic did the reviewer spend the most time on?", options: ["Price", "Design", "Camera", "Performance", "Not sure"], short: "Topic with most time" } },
+      { q: { id: "R7", type: "choice", label: "Right page: most topics say “no clear difference”. What do you think that means?", options: ["The reviewer and the comments said exactly the same thing", "There isn't enough to be sure the two sides differ", "Nobody talked about that topic", "Not sure"], short: "Meaning of 'no clear difference'" } },
+
+      { fig: [{ src: "img/07-report-audience.webp", cap: "Spread 8: the audience", alt: "Left page 'What the room said': a wide bar split into 63 positive, 15 neutral and 22 negative comments. Right page 'The comments, as classified': six YouTube comments, each labelled positive, neutral or negative with a confidence number." }] },
+      { q: { id: "R8", type: "choice", label: "How did the audience react to this video overall?", options: ["Mostly positive", "Mostly negative", "Evenly split", "Not sure"], short: "Audience overall" } },
+
+      { fig: [{ src: "img/08-report-moments.webp", cap: "Spread 18: the moments that don't add up", alt: "'The moments that do not add up': three cards for 0:05, 0:11 and 0:40, each with a blurred still, a quote of what was said, what each of the four channels read (words, face, voice, comments), a sentence on why they don't match, and an 'Open this moment' link." }] },
+      { q: { id: "R9", type: "choice", label: "Look at the 0:40 card (on the right). What doesn't add up there?", options: ["The words read negative, but the voice and comments read positive", "The face looked angry", "All four readings agreed", "Not sure"], short: "What doesn't add up at 0:40" } },
+      { q: { id: "R10", type: "scale", label: "Pages like this help me understand WHY the scores are what they are.", ends: SCALE_AGREE } },
+
+      { fig: [{ src: "img/09-report-trust.webp", cap: "Spread 20: how far to trust it", alt: "Left page 'How far to trust this reading', marked 'Well covered': a table of three checks with this video's value, what is needed and 'met'. Right page 'Could this be paid?': 0 of 5 checked signs are present, five signs each marked Absent, and a note that these are signs, not proof." }] },
+      { q: { id: "R11", type: "choice", label: "Right page, “Could this be paid?” What does it tell you about this video?", options: ["It was paid promotion", "None of the five signs it checks were found, but that isn't proof either way", "It proves the review was honest", "Not sure"], short: "Could this be paid" } },
+      { q: { id: "R12", type: "choice", label: "Left page says “Well covered”. What is that about?", options: ["How much evidence the reading rests on", "Whether the verdict is right", "Whether the reviewer was honest", "Not sure"], short: "What 'Well covered' means" } },
+
+      { fig: [{ src: "img/10-report-limits.webp", cap: "Spread 21: the evidence and its limits", alt: "Left page 'How the evidence was read': for each channel, how much of the video it read and its measured accuracy: transcript 82 of 82 segments and 67.8%, facial emotion 36 of 82 and 34.2%, vocal 82 of 82 and 48.9%, audience comments one reading and 78.7%. Right page 'What limits the reading': two numbered warnings, 1 Facial emotion and 2 Vocal prosody." }] },
+      { q: { id: "R13", type: "long", label: "Every report carries a warning about facial emotion (right page, number 1). In your own words, what is it warning you about?", short: "The facial-emotion warning (V2 B3)" } },
+      { q: { id: "R14", type: "choice", label: "Left page: one of the four readings is much less reliable than the others. Which one?", options: ["The words (transcript)", "The face (facial emotion)", "The voice (vocal)", "The comments", "Not sure"], short: "Least reliable channel (V2 B5)" } },
+      { q: { id: "R15", type: "scale", label: "After reading these pages, how much would you trust the scores?", ends: ["Not at all", "Completely"] } },
+    ]},
+    { id: "p6", n: "Part 6 of 8", title: "Five videos in one report", intro: ["BrandPulse can also read five reviews of the same product and combine them into one book. This one covers the 'Galaxy S27 Ultra' over the last six months."], blocks: [
+      { fig: [{ src: "img/11-set-overview.webp", cap: "Spread 1: the overview", alt: "Combined report overview. Left: 'sasmung s27 ultra, from the last six months', 5 videos, 332 segments, 461 comments, and a contents list of the five video titles. Right, 'The reading across 5 videos': a summary paragraph, then two rows of five numbered tiles, Reviewers' words (4 of 5 lean positive) and Audiences (4 of 5 are balanced), and a line saying the reviewer is measurably warmer than the audience in 4 of 5 videos." }] },
+      { q: { id: "M1", type: "choice", label: "Across the five videos, how do the reviewers' own words lean?", options: ["Positive in 4 of 5", "Negative in most", "Evenly split", "Not sure"], short: "Reviewers' lean across 5" } },
+      { q: { id: "M2", type: "choice", label: "Do the reviewers and their audiences agree?", options: ["Yes, in all five", "The reviewer is warmer than the audience in 4 of 5", "The audiences are warmer in most", "Not sure"], short: "Reviewers vs audiences" } },
+
+      { fig: [{ src: "img/12-set-table.webp", cap: "Spread 3: the five videos side by side (a fold-out page)", alt: "A table with one row per video, numbered 01 to 05: title and channel, a short verdict, the reviewer's words lean, the audience lean, which side is warmer, coverage, signs, Authenticity and Brand health. The audience column reads −0.03, −0.06, −0.07, −0.20 and −0.27." }] },
+      { q: { id: "M3", type: "choice", label: "In this table, which video's comments (the Audience column) lean the most negative?", options: ["01", "02", "04", "05", "Not sure"], short: "Most negative audience" } },
+      { q: { id: "M4", type: "scale", label: "The table makes it easy to compare the five videos.", ends: SCALE_AGREE } },
+
+      { fig: [{ src: "img/13-set-quadrant.webp", cap: "Spread 4: reviewers against their audiences", alt: "Left page: a scatter chart with the reviewer's lean across and the audience's lean up, a diagonal line where the two agree, and five numbered points with cross-shaped intervals, mostly below the diagonal. Right page 'The odd one out': no video stands apart, with two strip charts of the reviewers' and audiences' leans." }] },
+      { q: { id: "M5", type: "scale", label: "The chart on the left (“Reviewers against their audiences”) is easy to read.", ends: SCALE_AGREE } },
+      { q: { id: "M6", type: "long", optional: true, label: "What would make that chart clearer?", short: "Scatter chart: clearer how" } },
+
+      { fig: [{ src: "img/14-set-matrix.webp", cap: "Spread 8: what they agree on, theme by theme (a fold-out page)", alt: "A grid with themes down the side (Design, Camera, Performance, Battery, Display, Price, Comfort, Value) and the five videos across. Each cell has a disc for the reviewer (praised, criticised, mixed, neutral) inside a ring for the audience. The last column summarises, e.g. 'Split: praised in 3, criticised in 2' for Design and 'Praised in 2 of 2' for Display." }] },
+      { fig: [{ src: "img/15-set-agree.webp", cap: "Spread 9: praised, criticised and split", alt: "Left page 'Praised and criticised across the set': reviewers agree on Performance (praised in 2 of 3) and Display (praised in 2 of 2), each with a quote. Right page 'Where they split': Design and Camera, each with a quote for and a quote against, then 'Where audiences push back'." }] },
+      { q: { id: "M7", type: "choice", label: "Which themes do the reviewers agree are good?", options: ["Performance and Display", "Design and Camera", "Price and Value", "Not sure"], short: "Themes agreed good" } },
+      { q: { id: "M8", type: "scale", label: "The grid of themes by video (the first of these two screenshots) is easy to understand.", ends: SCALE_AGREE } },
+
+      { fig: [{ src: "img/16-set-twice.webp", cap: "Spread 13: the same video, read twice", alt: "Left page 'The same video, read twice': three videos analysed in two periods, days apart. For the first, Reviewer +0.31 then +0.31, Audience −0.03 then +0.04, Authenticity 39.89 then 53.36, Brand health 15.96 then 79.29, with the note 'Comments read negative, then positive, on a near-tie.' Right page 'What changed by theme': a table of themes in both periods." }] },
+      { q: { id: "M9", type: "choice", label: "Left page: the same video was analysed twice, days apart, and its Brand health jumped from 15.96 to 79.29. What does the page say that means?", options: ["The video suddenly got much better reviews", "Its comments were almost a tie and tipped the other way, so that score is sensitive; the leans stayed the same", "The system made an error and should be ignored", "Not sure"], short: "Why Brand health jumped" } },
+
+      { fig: [{ src: "img/17-set-trust.webp", cap: "Spread 14: trust, and could any of this be paid", alt: "Left page 'How far to trust this set', Well covered, three checks all met. Right page 'Could any of this be paid?': a grid of five signs by five videos with filled or open dots, and a 'Present in' column: declared paid promotion 1 of 5, sponsor wording 1 of 5, affiliate links 1 of 5, reviewer warmer than audience 4 of 5, positive words at flagged moments 5 of 5." }] },
+      { q: { id: "M10", type: "choice", label: "Right page: in how many of the five videos did the creator declare a paid promotion?", options: ["None", "1 of 5", "4 of 5", "All 5", "Not sure"], short: "Declared paid promotion" } },
+    ]},
+    { id: "p7", n: "Part 7 of 8", title: "Look and feel", intro: ["The same page in the two display modes. There's a switch at the top of every page, and it follows your computer's setting until you change it."], blocks: [
+      { pair: [
+        { src: "img/05-report-overview.webp", cap: "Dark", alt: "The report overview in the dark display: charcoal pages on a near-black desk." },
+        { src: "img/18-theme-light.webp", cap: "Light", alt: "The same report overview in the light display: cream pages with a dark frame on a pale grey desk." } ] },
+      { q: { id: "D1", type: "choice", label: "Which is easier to read?", options: ["Dark", "Light", "About the same"] } },
+      { q: { id: "D2", type: "choice", label: "Which looks better?", options: ["Dark", "Light", "About the same"] } },
+      { q: { id: "D3", type: "choice", label: "The reports are laid out as a book you turn page by page. Which would you prefer?", options: ["The book", "A normal page you scroll down", "No preference"], short: "Book vs scrolling page" } },
+      { q: { id: "D3b", type: "long", optional: true, label: "Why?", short: "Why (book vs scroll)" } },
+      { q: { id: "D4", type: "choice", label: "In the screenshots, was any text too small or too faint to read comfortably?", options: ["Yes, often", "Yes, in a few places", "No"], short: "Text too small or faint" } },
+      { q: { id: "D4b", type: "long", optional: true, label: "If yes, where?", short: "Where text was hard to read" } },
+      { q: { id: "D5", type: "choice", label: "Some pages use 3D and animation (the opening, the bookshelf, the page turns). Would you want a switch to turn motion off?", options: ["Yes", "No", "Don't mind"], short: "Motion-off switch wanted" } },
+    ]},
+    { id: "p8", n: "Part 8 of 8", title: "Overall", intro: ["Last few. The first three are the same questions the August testers answered, so the two rounds can be compared."], blocks: [
+      { q: { id: "O1", type: "long", label: "What's confusing, unclear, or made you think “wait, what does that mean”?", help: "Specific is better than general: which number, which section, if you can point to it.", short: "What's confusing (pilot C2)" } },
+      { q: { id: "O2", type: "long", label: "If you were deciding whether to trust a sponsored review based on this, what's missing that you'd want to see?", short: "What's missing (pilot C3)" } },
+      { q: { id: "O3", type: "scale", label: "Quick rating: how easy was this to understand overall?", ends: ["1 = totally confusing", "5 = totally clear"], short: "Ease of understanding (pilot Q4)" } },
+      { q: { id: "O4", type: "scale", label: "I would use this to check a product review before buying.", ends: SCALE_AGREE } },
+      { q: { id: "O5", type: "long", label: "The one thing you liked most.", short: "Liked most" } },
+      { q: { id: "O6", type: "long", label: "The one thing you'd change first.", short: "Change first" } },
+    ]},
+  ];
+
+  const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const LETTERS = "abcdefgh";
+  const questions = [];
+  let answers = {};
+  try { answers = JSON.parse(localStorage.getItem(STORE) || "{}") || {}; } catch (e) { answers = {}; }
+  const save = () => { try { localStorage.setItem(STORE, JSON.stringify(answers)); } catch (e) {} };
+
+  function figHTML(f) {
+    return `<figure><button class="shot" type="button" data-src="${f.src}" data-cap="${esc(f.cap)}" aria-label="${esc(f.cap)}: open full size">
+      <img src="${f.src}" alt="${esc(f.alt)}" width="3024" height="1720" loading="lazy" decoding="async"></button>
+      <figcaption><b>${esc(f.cap)}</b><span>Tap to enlarge</span></figcaption></figure>`;
+  }
+
+  function qHTML(q) {
+    const tag = `<span class="q__id"><span>${esc(q.id)}</span>${q.optional ? '<span class="opt">optional</span>' : ""}${q.required ? '<span class="opt">required</span>' : ""}</span>`;
+    const help = q.help ? `<p class="q__help" id="h-${q.id}">${esc(q.help)}</p>` : "";
+    const name = `q-${q.id}`;
+    if (q.type === "text" || q.type === "long") {
+      const field = q.type === "text"
+        ? `<input type="text" id="f-${q.id}" data-q="${q.id}" autocomplete="off"${q.help ? ` aria-describedby="h-${q.id}"` : ""}>`
+        : `<textarea id="f-${q.id}" data-q="${q.id}"${q.help ? ` aria-describedby="h-${q.id}"` : ""}></textarea>`;
+      return `<div class="q" id="${name}">${tag}<label class="q__label" for="f-${q.id}">${esc(q.label)}</label>${help}${field}</div>`;
+    }
+    let body = "";
+    if (q.type === "choice" || q.type === "multi") {
+      const kind = q.type === "choice" ? "radio" : "checkbox";
+      body = `<div class="choices">${q.options.map((o, i) => `<label class="choice"><input type="${kind}" name="${name}" value="${i}" data-q="${q.id}"><span class="k">${LETTERS[i]}</span><span>${esc(o)}</span></label>`).join("")}</div>`;
+    } else if (q.type === "scale") {
+      body = `<div class="scale">${[1, 2, 3, 4, 5].map((v) => `<label><input type="radio" name="${name}" value="${v}" data-q="${q.id}" aria-label="${v}${v === 1 ? ", " + esc(q.ends[0]) : v === 5 ? ", " + esc(q.ends[1]) : ""}">${v}</label>`).join("")}</div>
+        <div class="scale__ends" aria-hidden="true"><span>1 ${esc(q.ends[0].replace(/^1 = /, "= "))}</span><span>5 ${esc(q.ends[1].replace(/^5 = /, "= "))}</span></div>`;
+    }
+    return `<div class="q" id="${name}"><fieldset${q.help ? ` aria-describedby="h-${q.id}"` : ""}><legend>${tag}<span class="q__lab">${esc(q.label)}</span></legend>${help}${body}</fieldset></div>`;
+  }
+
+  // ---- build
+  const host = document.getElementById("parts");
+  const contents = document.getElementById("contents");
+  let html = "", toc = "";
+  PARTS.forEach((p, pi) => {
+    const qs = p.blocks.filter((b) => b.q).map((b) => b.q);
+    toc += `<li><a href="#${p.id}"><em>${pi}</em><span>${esc(p.title)}</span><small>${qs.length}</small></a></li>`;
+    html += `<section class="part" id="${p.id}" aria-labelledby="${p.id}-h"><p class="part__n">${esc(p.n)}</p><h2 id="${p.id}-h">${esc(p.title)}</h2>`;
+    (p.intro || []).forEach((t) => { html += `<p class="part__intro">${esc(t)}</p>`; });
+    p.blocks.forEach((b) => {
+      if (b.html) html += b.html;
+      if (b.fig) html += b.fig.map(figHTML).join("");
+      if (b.pair) html += `<div class="pair">${b.pair.map(figHTML).join("")}</div>`;
+      if (b.q) { questions.push({ ...b.q, part: p.title }); html += qHTML(b.q); }
+    });
+    html += `</section>`;
+  });
+  host.innerHTML = html;
+  contents.innerHTML = toc + `<li><a href="#finish"><em>✓</em><span>Send me your answers</span></a></li>`;
+  const byId = Object.fromEntries(questions.map((q) => [q.id, q]));
+
+  // ---- restore, then listen
+  for (const q of questions) {
+    const v = answers[q.id];
+    if (v == null) continue;
+    if (q.type === "text" || q.type === "long") { const f = document.getElementById("f-" + q.id); if (f) f.value = v; }
+    else if (q.type === "multi") (Array.isArray(v) ? v : []).forEach((i) => { const el = document.querySelector(`input[name="q-${q.id}"][value="${i}"]`); if (el) el.checked = true; });
+    else { const el = document.querySelector(`input[name="q-${q.id}"][value="${v}"]`); if (el) el.checked = true; }
+  }
+
+  const answered = (q) => {
+    const v = answers[q.id];
+    if (q.type === "multi") return Array.isArray(v) && v.length > 0;
+    if (q.type === "text" || q.type === "long") return typeof v === "string" && v.trim() !== "";
+    return v != null && v !== "";
+  };
+  const counted = questions.filter((q) => !q.optional);
+  function refresh() {
+    let n = 0;
+    for (const q of questions) {
+      const done = answered(q);
+      if (done && !q.optional) n++;
+      const box = document.getElementById("q-" + q.id);
+      if (box) { box.classList.toggle("is-done", done); if (done) box.classList.remove("is-flag"); }
+    }
+    document.getElementById("count").textContent = `${n} of ${counted.length} answered`;
+    document.getElementById("bar").style.width = `${(100 * n / counted.length).toFixed(1)}%`;
+    status();
+  }
+
+  host.addEventListener("input", (e) => {
+    const t = e.target; const id = t.dataset && t.dataset.q; if (!id) return;
+    const q = byId[id];
+    if (q.type === "text" || q.type === "long") answers[id] = t.value;
+    else if (q.type === "multi") answers[id] = [...document.querySelectorAll(`input[name="q-${id}"]:checked`)].map((x) => +x.value);
+    else answers[id] = +t.value;
+    save(); refresh();
+  });
+
+  // ---- finish
+  const consented = () => answered(byId["C0.1"]);
+  function status() {
+    const el = document.getElementById("status");
+    const missing = counted.filter((q) => !answered(q) && q.id !== "C0.1");
+    const copy = document.getElementById("copy");
+    copy.disabled = !consented();
+    if (!consented()) { el.innerHTML = `Please tick the consent box in <a href="#p0">Before you start</a> first.`; return; }
+    if (!missing.length) { el.innerHTML = `<strong>All ${counted.length} questions answered.</strong> Thank you.`; return; }
+    el.innerHTML = `<strong>${counted.length - missing.length} of ${counted.length} answered.</strong> You can send them as they are, or go back to:
+      <ul>${missing.slice(0, 8).map((q) => `<li><a href="#q-${q.id}" data-jump="${q.id}">${esc(q.id)}: ${esc(q.short || q.label)}</a></li>`).join("")}${missing.length > 8 ? `<li>and ${missing.length - 8} more</li>` : ""}</ul>`;
+  }
+  document.getElementById("status").addEventListener("click", (e) => {
+    const a = e.target.closest("[data-jump]"); if (!a) return;
+    const box = document.getElementById("q-" + a.dataset.jump); if (box) box.classList.add("is-flag");
+  });
+
+  function render(q) {
+    const v = answers[q.id];
+    if (!answered(q)) return "(no answer)";
+    if (q.type === "text" || q.type === "long") return v.trim().replace(/\n+/g, " / ");
+    if (q.type === "multi") return v.map((i) => `${LETTERS[i]}) ${q.options[i]}`).join("; ");
+    if (q.type === "choice") return `${LETTERS[v]}) ${q.options[v]}`;
+    return `${v} of 5  (1 = ${q.ends[0].replace(/^1 = /, "")}, 5 = ${q.ends[1].replace(/^5 = /, "")})`;
+  }
+  function exportText() {
+    const who = (answers["C0.3"] || "").trim() || "(no name)";
+    const when = new Date();
+    const lines = [`BRANDPULSE FINAL EVALUATION v1`, `From: ${who}`, `Sent: ${when.toLocaleString()}`, ""];
+    let part = "";
+    for (const q of questions) {
+      if (q.part !== part) { part = q.part; lines.push(`== ${part}`); }
+      lines.push(`[${q.id}] ${q.short || q.label}`, `-> ${render(q)}`);
+    }
+    return lines.join("\n");
+  }
+  const said = document.getElementById("said");
+  const box = document.getElementById("export");
+  document.getElementById("show").addEventListener("click", () => { box.value = exportText(); box.hidden = false; box.focus(); box.select(); });
+  document.getElementById("copy").addEventListener("click", () => {
+    const text = exportText();
+    box.value = text;
+    const fallback = () => { box.hidden = false; box.focus(); box.select(); said.textContent = "Your browser didn't let me copy. The text is selected below: press Ctrl+C (or Cmd+C), then paste it to me."; };
+    try {
+      navigator.clipboard.writeText(text).then(() => { said.textContent = "Copied. Now paste it to me on WhatsApp or by email."; }, fallback);
+    } catch (e) { fallback(); }
+  });
+
+  // ---- the enlarger
+  const lb = document.getElementById("lb"), lbimg = document.getElementById("lbimg"), zoom = document.getElementById("lbzoom");
+  let opener = null;
+  const setZoom = (on) => { lb.classList.toggle("is-actual", on); zoom.textContent = on ? "Fit to screen" : "Actual size"; };
+  host.addEventListener("click", (e) => {
+    const b = e.target.closest(".shot"); if (!b) return;
+    opener = b; lbimg.src = b.dataset.src; lbimg.alt = b.querySelector("img").alt;
+    document.getElementById("lbcap").textContent = b.dataset.cap; setZoom(false);
+    if (typeof lb.showModal === "function") lb.showModal(); else window.open(b.dataset.src, "_blank");
+  });
+  zoom.addEventListener("click", () => setZoom(!lb.classList.contains("is-actual")));
+  lbimg.addEventListener("click", () => setZoom(!lb.classList.contains("is-actual")));
+  document.getElementById("lbclose").addEventListener("click", () => lb.close());
+  lb.addEventListener("close", () => { if (opener) opener.focus(); });
+
+  refresh();
+})();
+</script>

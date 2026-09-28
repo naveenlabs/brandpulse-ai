@@ -1,0 +1,28 @@
+{
+ "uid": "Kk-RKpTAXmA_49",
+ "system": "text_only_llm",
+ "video_id": "Kk-RKpTAXmA",
+ "segment_id": 49,
+ "split": "holdout",
+ "payload": {
+  "segment_id": 49,
+  "start_s": 218.28,
+  "end_s": 222.57999999999998,
+  "transcript": "is an absolute deal breaker. And it's less obvious, but check this out."
+ },
+ "seconds": 4.894,
+ "raw": "{\n  \"segment_id\": 49,\n  \"conflict_score\": 0.7,\n  \"channels_in_conflict\": [],\n  \"flags\": [\"POTENTIAL_PAID_PROMOTION\", \"OVERLY_ENTHUSIASTIC_LANGUAGE\"],\n  \"narrative\": \"The language used is overly promotional and enthusiastic, suggesting the creator may not be entirely sincere. The phrase 'absolute deal breaker' is a strong sales-oriented term, and the phrase 'check this out' implies a sense of excitement or urgency that may be insincere.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 49,
+  "start_s": 218.28,
+  "end_s": 222.57999999999998,
+  "conflict_score": 0.7,
+  "conflict_reasons": [
+   "POTENTIAL_PAID_PROMOTION",
+   "OVERLY_ENTHUSIASTIC_LANGUAGE"
+  ],
+  "flagged": false
+ }
+}

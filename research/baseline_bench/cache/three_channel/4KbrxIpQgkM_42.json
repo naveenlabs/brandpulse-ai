@@ -1,0 +1,36 @@
+{
+ "uid": "4KbrxIpQgkM_42",
+ "system": "three_channel",
+ "video_id": "4KbrxIpQgkM",
+ "segment_id": 42,
+ "split": "selection",
+ "payload": {
+  "segment_id": 42,
+  "start_s": 218.24,
+  "end_s": 221.70000000000002,
+  "transcript": "and undercut the competition a little bit. So it works.",
+  "transcript_sentiment": "POSITIVE (0.46)",
+  "vocal_emotion": "NEUTRAL (arousal 0.55)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.99)"
+ },
+ "seconds": 3.978,
+ "raw": "{\n  \"segment_id\": 42,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words convey a positive sentiment, but their facial expression shows no emotion, indicating a potential disconnect between their verbal and non-verbal cues.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 42,
+  "start_s": 218.24,
+  "end_s": 221.70000000000002,
+  "conflict_score": 0.2934,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "vocal_channel_downweighted[structural]: 0.6000 -> 0.2934 (x0.489, measured channel accuracy)"
+  ],
+  "flagged": false
+ }
+}

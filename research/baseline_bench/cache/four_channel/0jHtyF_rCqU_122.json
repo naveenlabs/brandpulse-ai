@@ -1,0 +1,35 @@
+{
+ "uid": "0jHtyF_rCqU_122",
+ "system": "four_channel",
+ "video_id": "0jHtyF_rCqU",
+ "segment_id": 122,
+ "split": "selection",
+ "payload": {
+  "segment_id": 122,
+  "start_s": 586.0,
+  "end_s": 591.88,
+  "transcript": "compared to the iPhone's brand new revised front camera. And the way that the second screen is implemented here is awesome.",
+  "transcript_sentiment": "NEUTRAL (0.54)",
+  "vocal_emotion": "NEUTRAL (arousal 0.60)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "happy (1.00)",
+  "video_comment_sentiment": "POSITIVE (0.98)"
+ },
+ "seconds": 4.733,
+ "raw": "{\n  \"segment_id\": 122,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words convey a neutral sentiment, but their facial expression shows happiness, which is a positive emotion. The audience's comments also express a strong positive sentiment, indicating a potential conflict between the creator's verbal and non-verbal cues.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 122,
+  "start_s": 586.0,
+  "end_s": 591.88,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion"
+  ],
+  "flagged": false
+ }
+}

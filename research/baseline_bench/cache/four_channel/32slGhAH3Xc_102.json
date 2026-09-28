@@ -1,0 +1,36 @@
+{
+ "uid": "32slGhAH3Xc_102",
+ "system": "four_channel",
+ "video_id": "32slGhAH3Xc",
+ "segment_id": 102,
+ "split": "selection",
+ "payload": {
+  "segment_id": 102,
+  "start_s": 472.96000000000004,
+  "end_s": 476.14,
+  "transcript": "then its selfie camera is about a 5. Whereas with the Z Flip,",
+  "transcript_sentiment": "NEUTRAL (0.72)",
+  "vocal_emotion": "NEUTRAL (arousal 0.56)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "neutral (1.00)",
+  "video_comment_sentiment": "POSITIVE (0.98)"
+ },
+ "seconds": 4.329,
+ "raw": "{\n  \"segment_id\": 102,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"video_comment_sentiment\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and face suggest neutrality, but the audience's comments are overwhelmingly positive, indicating a conflict between the creator's tone and the audience's interpretation.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 102,
+  "start_s": 472.96000000000004,
+  "end_s": 476.14,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: video_comment_sentiment"
+  ],
+  "flagged": false
+ }
+}

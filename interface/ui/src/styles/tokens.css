@@ -1,0 +1,318 @@
+/* ===========================================================================
+   tokens.css — the one source of truth for how this product looks.
+
+   ART DIRECTION (24 Sep 2026, the cohesion pass)
+   ----------------------------------------------
+   A contemporary research library, with precise instruments and beautifully
+   presented findings. The opening page shows what the instrument sees, the
+   Analyse page is where it works, the library keeps what it found, and the
+   book is where that is studied. Every surface is one of those four rooms in
+   the same building, so every surface is lit the same way:
+
+     ENVIRONMENT  one ground per theme (--body). Every section, scene and
+                  room falls back to it at its edges; nothing sits on a
+                  private black or a private grey of its own.
+     LIGHT        one key light (--key), silver under BENCH and daylight
+                  under FIELD. Scenes may pool light; they do not tint it.
+                  The four channel hues appear only where they MEAN a
+                  channel, and --tear only where a measured conflict is.
+     MATERIALS    wood, paper, cloth and glass keep their own character and
+                  share the light: an object throws a pool (--shade) on the
+                  surface under it; a card never floats on a blurred shadow.
+     TYPE         Archivo is the instrument, Newsreader is the human and the
+                  editorial voice. Two families, and a test counts them.
+     CONTROLS     one family: a pill for every action, a soft field for
+                  every input, an underline for every tab, a round button
+                  for every page turn. Same border, same type, same focus.
+
+   Two designed themes, neither an inversion of the other:
+
+     BENCH   the instrument under low light: graphite, soft-white ink,
+             silver highlights, shadowed paper.
+     FIELD   the same building in daylight: pale warm stone, charcoal ink,
+             light paper, wood under daylight. The environment was a cool
+             anodised grey until this pass; it is stone now because the
+             paper, the oak and the library wall it holds are all warm, and a
+             cool room around warm objects read as two buildings.
+
+   There is no offset, blurred drop shadow on any card in either theme, and a
+   test asserts it. Depth is a lit screen set into a matte body, one machined
+   hairline, and -- for physical objects only -- the pool of shade an object
+   throws on the surface it stands on.
+
+   Every foreground token was checked numerically against every ground it can
+   appear on, in both themes (24 Sep 2026). All clear
+   WCAG AA for body text; the lowest is BENCH --ink-3 on --panel at 4.53:1.
+   ======================================================================== */
+
+:root {
+  /* --- type ------------------------------------------------------------ */
+
+  /* Archivo is the instrument and Newsreader is the human. Nothing else
+     speaks. There is deliberately no monospace family: timecode is Archivo at
+     `wdth` 78 on tabular figures, which aligns just as well and avoids the
+     generated-design tell of a mono face used for small data labels. */
+  --f-inst: "Archivo", ui-sans-serif, system-ui, sans-serif;
+  --f-voice: "Newsreader", ui-serif, Georgia, serif;
+
+  /* The width axis is semantic on this interface, not decorative. It encodes
+     how much the instrument trusts a reading. `--w-thin` is the facial
+     channel's width and it is used nowhere else: that channel scores 34.2% on
+     held-out speakers against an always-NEUTRAL constant's 67.5%, so its name
+     and every one of its readouts are set narrow, permanently, on every
+     surface. A reader can see which channels are trusted before reading a
+     number. */
+  --w-wide: 110;     /* scores and display */
+  --w-mid: 104;      /* panel headings */
+  --w-text: 100;     /* running prose */
+  --w-dense: 84;     /* labels, ledger columns */
+  --w-trust-hi: 108; /* SPINE ONLY: a channel measured well */
+  --w-trust-lo: 76;  /* SPINE ONLY: the facial channel */
+  --w-code: 78;      /* timecode and identifiers */
+  --w-thin: 72;      /* the facial channel, everywhere, permanently */
+
+  --t-readout-xl: clamp(3.5rem, 9vw, 8.25rem);
+  --t-readout-l: clamp(2.125rem, 4.4vw, 3.625rem);
+  --t-readout-m: clamp(1.625rem, 2.9vw, 2.375rem);
+  --t-panel: clamp(1.3125rem, 2.2vw, 1.6875rem);
+  --t-lede: 1.1875rem;
+  --t-body: 1.03125rem;
+  --t-small: 0.90625rem;
+  --t-label: 0.8125rem;
+  --t-micro: 0.71875rem;
+  --t-voice: clamp(1.25rem, 1.7vw, 1.625rem);
+
+  /* THE HIERARCHY, BY ROLE. One recipe per role, used by every page that has
+     that role, so a page title on Analyse and a beat title in the film are the
+     same object at different moments rather than two designs.
+
+       display   the cinematic line: a film beat, the Analyse title, the
+                 closing line. Archivo, tight, with the second line allowed
+                 to turn to Newsreader italic where it is a voice.
+       title     a major section: the proof, the limits, the logo sequence.
+       sub       a subheading inside a section.
+       lede      the paragraph that follows a title.
+       label     sentence case, never tracked out, never ALL-CAPS.
+       note      the smallest size anything a reader NEEDS is ever set at.
+                 Decorative annotations may go to --t-micro; nothing that
+                 carries an instruction, a caveat or a status goes below
+                 this. */
+  --t-display: clamp(3.25rem, 6.7vw, 7rem);
+  /* A page's own title (Analyse, the library's empty room): the display
+     role one step down, because it shares its screen with a form. */
+  --t-page: clamp(2.75rem, 5vw, 5.125rem);
+  --t-title: clamp(1.875rem, 3.7vw, 3.5rem);
+  --t-sub: clamp(1.25rem, 1.9vw, 1.625rem);
+  --t-note: 0.78125rem;
+
+  --wt-display: 560;
+  --wt-title: 600;
+  --lh-display: 0.95;
+  --lh-title: 1.02;
+  --tr-display: -0.045em;
+  --tr-title: -0.028em;
+  --tr-label: 0.01em;
+
+  /* --- space ----------------------------------------------------------- */
+
+  --s-1: 0.25rem;  --s-2: 0.5rem;   --s-3: 0.75rem;  --s-4: 1rem;
+  --s-5: 1.5rem;   --s-6: 2rem;     --s-7: 3rem;     --s-8: 4rem;
+  --s-9: 6rem;     --s-10: 8rem;    --s-11: 11rem;
+
+  /* Act spacing is deliberately IRREGULAR. A page whose sections are all the
+     same distance apart has a metronome where its rhythm should be. Each act
+     on the opening page picks one of these rather than a single --gap-act. */
+  --act-tight: clamp(3rem, 4.5vw, 4.25rem);
+  --act-norm: clamp(4rem, 6.5vw, 6rem);
+  --act-wide: clamp(5.5rem, 9vw, 8.5rem);
+
+  /* THE PAGE GRID. One gutter and one content width for every surface, so
+     the masthead's left edge, a film beat's left edge, the Analyse form's
+     left edge and the book's control bar all stand on the same line. */
+  --gutter: clamp(1rem, 3.2vw, 2.75rem);
+  --page-max: 1600px;
+  --measure: 66ch;
+  --measure-voice: 58ch;
+
+  /* --- shape ----------------------------------------------------------- */
+
+  /* The chassis edge is hard because it is machined, a panel is barely eased,
+     a screen is a cut aperture. Controls are the one exception, and they are
+     one exception rather than four: every action is a pill, every input is a
+     soft field. */
+  --r-chassis: 0px;
+  --r-panel: 4px;
+  --r-screen: 2px;
+  --r-field: 6px;
+  --r-pill: 999px;
+  --r-display: 10px;   /* a lit display set into the room (FIELD opening) */
+
+  /* A hairline that lands on a device pixel rather than on a blurry 1px CSS
+     unit at 2x. */
+  --hair: 1px;
+
+  /* --- controls -------------------------------------------------------- */
+
+  /* One family. Height, padding, type and border are the same for every
+     action on every page; the variant only changes the fill. 44px is the
+     touch target this project gives every control. */
+  --ctl-h: 44px;
+  --ctl-h-sm: 36px;
+  --ctl-pad-x: 1.25rem;
+  --ctl-size: 0.875rem;
+  --ctl-weight: 600;
+  --ctl-wdth: 96;
+  --ctl-border: 1px;
+
+  /* --- motion ---------------------------------------------------------- */
+
+  --t-fast: 130ms;
+  --t-med: 280ms;
+  --t-slow: 900ms;
+  --ease-out: cubic-bezier(.19, .78, .2, 1);
+  --ease-move: cubic-bezier(.4, 0, .18, 1);
+
+  --z-transport: 40;
+  --z-masthead: 50;
+  --z-sweep: 70;     /* the theme-change illumination band */
+  --z-skip: 80;
+}
+
+@media (min-resolution: 2dppx) {
+  :root { --hair: 0.5px; }
+}
+
+/* =========================================================== BENCH (dark) */
+
+:root,
+[data-theme="bench"] {
+  color-scheme: dark;
+
+  --body: #101315;     /* the environment: graphite */
+  --panel: #1A2023;    /* a raised, lit surface in it */
+  --screen: #080A0B;   /* a recessed well: darker than the body */
+  --edge: #252C30;     /* machined hairline */
+  --edge-hi: #364146;  /* an interactive edge */
+  /* The boundary of a field a reader types into. It is the only thing that
+     says "this is an input", so it is held to WCAG 1.4.11's 3:1 against every
+     ground it sits on: 3.34 (panel), 3.78 (body), 4.02 (screen). --edge-hi
+     measured 1.57-1.89 there (INCLUSIVE_DESIGN.md A9). */
+  --edge-ctl: #66727A;
+
+  --ink: #E7ECEE;
+  --ink-2: #98A4AA;
+  --ink-3: #7D888D;
+
+  /* The four tracks. Three read the creator and are cool; one reads everybody
+     else and is warm. Seeing warm against cool on the trace IS seeing the
+     creator against the audience, so the palette carries the product's
+     structure rather than decorating it.
+
+     The facial track is deliberately the dullest and least saturated of the
+     four. Its colour is as quiet as its width is narrow, for the same measured
+     reason. Hue is never load-bearing: every track also carries a mark shape
+     and a material, so the trace survives greyscale, print and CVD. */
+  --ch-transcript: #5FD3C0;
+  --ch-facial: #A9BCC7;
+  --ch-vocal: #A99BE0;
+  --ch-audience: #E8A33C;
+
+  /* The ONLY saturated colour in the interface, reserved for the seconds where
+     the four readings disagree. */
+  --tear: #FF2E88;
+  --on-tear: #14060C;
+
+  --focus: #FFFFFF;
+
+  /* --- light and material ---------------------------------------------- */
+
+  /* The key light: what every scene on every page pools, instead of a teal
+     glow here and a violet one there. `--key` is a colour, `--key-rgb` is the
+     same colour for rgba() in gradients that fade it out. */
+  --key: #C8D1D6;
+  --key-rgb: 200 209 214;
+  /* What an object throws on the surface it stands on. */
+  --shade-rgb: 0 0 0;
+  --shade-a: 0.55;
+  /* How strongly a scene pools the key light on its subject. */
+  --pool-a: 0.07;
+  /* The one grain. Scenes that carry texture read this rather than choosing
+     their own strength. */
+  --grain-a: 0.10;
+
+  /* Glass: a sheet of the environment you can see through, with a lit edge. */
+  --glass: color-mix(in srgb, var(--panel) 58%, transparent);
+  --glass-edge: color-mix(in srgb, var(--ink) 16%, transparent);
+  --glass-hi: rgb(255 255 255 / 0.10);
+
+  /* Wood, cloth and paper as CSS sees them. The shelf's own WebGL palette
+     (lib/shelf.js SHELF_PALETTE) and the book's leaf (leaf.css) are the
+     authorities; these are for the few CSS surfaces that sit beside them. */
+  --wood: #3a3129;
+  --cloth: #141a1e;
+
+  /* Scene grounds for canvas and WebGL. Read by lib/theme.js sceneColors(),
+     so a renderer never hard-codes a background the page does not have. */
+  --scene-ground: var(--body);
+  --scene-deep: #06080A;
+}
+
+/* =========================================================== FIELD (light) */
+
+/* Pale stone rather than paper and never cream: warm enough to share a room
+   with the oak and the book, neutral enough that the paper is still the
+   lightest, warmest thing in it. */
+
+[data-theme="field"] {
+  color-scheme: light;
+
+  --body: #E3E2DE;
+  --panel: #EEEDEA;
+  --screen: #F8F7F4;
+  --edge: #CBC9C2;
+  --edge-hi: #A7A59E;
+  --edge-ctl: #7E7C75;  /* 3.22 body, 3.57 panel, 3.90 screen (see BENCH) */
+
+  --ink: #111416;
+  --ink-2: #474F53;
+  --ink-3: #566064;
+
+  --ch-transcript: #00655A;
+  --ch-facial: #4E646F;
+  --ch-vocal: #4F4394;
+  --ch-audience: #7E4A00;
+
+  --tear: #C4005E;
+  --on-tear: #FFFFFF;
+
+  --focus: #111416;
+
+  /* Daylight: the key is warm white, and shade is a warm umber at low
+     strength so a shadow on stone reads as depth rather than dirt. */
+  --key: #FFFDF7;
+  --key-rgb: 255 253 247;
+  --shade-rgb: 58 48 34;
+  --shade-a: 0.22;
+  --pool-a: 0.55;
+  --grain-a: 0.05;
+
+  --glass: color-mix(in srgb, var(--screen) 62%, transparent);
+  --glass-edge: color-mix(in srgb, var(--ink) 14%, transparent);
+  --glass-hi: rgb(255 255 255 / 0.70);
+
+  --wood: #a28d72;
+  --cloth: #141a1e;
+
+  --scene-ground: var(--body);
+  --scene-deep: #D6D4CE;
+}
+
+/* A theme switch is one event, not a cascade of transitions. For the frame
+   the attribute changes, every transition is suspended, so no border fades
+   while its ground has already swapped and nothing is ever half one theme and
+   half the other. lib/theme.js adds and removes the class. */
+html.is-theming *,
+html.is-theming *::before,
+html.is-theming *::after {
+  transition: none !important;
+}

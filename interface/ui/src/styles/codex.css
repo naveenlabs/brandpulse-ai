@@ -1,0 +1,955 @@
+/* ===========================================================================
+   codex.css — the volume from the shelf, open on the desk.
+
+   The book is made of the materials the shelf already painted it in, so the
+   inside and the outside are one object:
+
+     boards   --cx-cloth, the cover's own cloth (SHELF_BOARD.cloth in
+              shelf.js). Like the shelf's boards it is NOT themed: a
+              clothbound volume does not reprint itself when the lights go up,
+              so the boards are dark in both themes and stand a few pixels
+              proud of the block, as the squares of a real hardback do.
+     paper    --leaf and its family from leaf.css, which the cover's opening
+              already uncovers. Grain, a gutter that falls into the binding,
+              the edges of the leaves beneath at each fore edge, and one lit
+              hairline at the head.
+     type     the cover's tracked Newsreader for titles and the running heads;
+              Archivo for everything that is measured.
+
+   ONE RULE GOVERNS THE LAYOUT: NOTHING IS CLIPPED TO MAKE IT FIT.
+
+   A spread is sized to what the window can show. Material that does not fit
+   is carried over onto another spread by codex.js, at an item boundary, after
+   measuring it. If one item is taller than a whole page -- the folded-out
+   ledger is the real case -- that page scrolls inside the book: the book
+   stays one screen and nothing is cut, shrunk or out of reach. (It used to
+   grow instead, which made the ledger a 4,455px sheet at 1512x860.)
+   `overflow: hidden` appears twice in this file and neither is layout: one
+   is how a strip of the turning leaf shows its own slice of the page, for the
+   640ms the leaf exists; the other is the standard visually-hidden pattern
+   that keeps a turn button's word for assistive technology on a laptop.
+   ======================================================================== */
+
+[data-report][data-codex],
+[data-sweep][data-codex] { display: block; }
+
+/* A volume on its way in is the loading state; the boot panel would be a
+   second screen flashing between the shelf and the book. The flag is set
+   before first paint in report.html and brand.html. */
+html.js[data-carrying] [data-boot] { display: none; }
+
+/* While the cover is still over the desk the book underneath is not shown.
+   Released by openBook() the moment the board is far enough open to see past,
+   and faded out again by wireClose() on the way back to the shelf. */
+[data-opening] [data-cx],
+[data-closing] [data-cx] { opacity: 0; }
+[data-cx] { transition: opacity 340ms var(--ease-out); }
+[data-closing] [data-cx] { transition-duration: 220ms; }
+
+/* --- the room the book takes ---------------------------------------------
+
+   Every length that decides whether a spread fits the window is here, and
+   each one is a real part of the page rather than a fudge: the sticky
+   masthead, the chapter bar, the room reserved above and below the block for
+   a turning leaf, and the board. */
+
+.cx {
+  --cx-cloth: #141a1e;
+  --cx-foil: #e7ecee;
+  --cx-board: 7px;
+  --cx-mast: 4.75rem;
+  --cx-bar: 3.5rem;
+  --cx-reserve: 1.75rem;
+  --cx-h: clamp(30rem,
+    calc(100svh - var(--cx-mast) - var(--cx-bar) - 2 * var(--cx-reserve) - 1rem), 58rem);
+  /* A page a little narrower than it is tall. The cover is 2:3 and a page of
+     that shape at this height would hold about forty characters to the line,
+     which is too few for measured prose and too few for a table of readings. */
+  --cx-w: min(100%, calc(var(--cx-h) * 2.2));
+
+  --pg-top: clamp(1.5rem, 3.2svh, 2.6rem);
+  --pg-bottom: clamp(1rem, 2.2svh, 1.75rem);
+  --pg-outer: clamp(1.75rem, 2.9vw, 3.5rem);
+  --pg-inner: clamp(2.1rem, 3.3vw, 3.9rem);
+  --cx-grain: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='g'><feTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='3'/><feColorMatrix type='saturate' values='0'/></filter><rect width='160' height='160' filter='url(%23g)' opacity='.055'/></svg>");
+
+  max-width: 1840px;
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+  padding-bottom: 1rem;
+}
+
+/* --- the bar: the way out, the contents, and where you are --------------- */
+
+.cx__bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--s-2) var(--s-5);
+  min-height: var(--cx-bar);
+  padding-block: var(--s-2);
+  border-bottom: var(--hair) solid var(--edge);
+}
+
+.cx__close {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 2.5rem;
+  padding: 0 1.05rem 0 0.9rem;
+  border: var(--hair) solid var(--edge-hi);
+  border-radius: 999px;
+  color: var(--ink);
+  font: var(--ctl-weight) var(--ctl-size)/1 var(--f-inst);
+  font-variation-settings: "wdth" var(--ctl-wdth);
+  text-decoration: none;
+  transition: border-color var(--t-fast) var(--ease-out), background var(--t-fast) var(--ease-out);
+}
+.cx__close:hover { border-color: var(--ink-3); background: color-mix(in srgb, var(--ink) 5%, transparent); }
+.cx__close:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }
+
+.cx__toc ol { display: flex; flex-wrap: wrap; gap: 2px; margin: 0; padding: 0; list-style: none; }
+
+.cx__ch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2.5rem;
+  padding: 0 0.85rem;
+  border-radius: 999px;
+  color: var(--ink-2);
+  font: 500 13px/1 var(--f-inst);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color var(--t-fast) var(--ease-out), background var(--t-fast) var(--ease-out);
+}
+.cx__ch:hover { color: var(--ink); background: color-mix(in srgb, var(--ink) 6%, transparent); }
+.cx__ch:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.cx__ch[aria-current="true"] { color: var(--ink); background: color-mix(in srgb, var(--ink) 11%, transparent); }
+.cx__chn { font: 500 11.5px/1 var(--f-inst); color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.cx__ch[aria-current="true"] .cx__chn { color: var(--ink-2); }
+
+.cx__where {
+  margin: 0 0 0 auto;
+  font: 400 12.5px/1.35 var(--f-inst);
+  color: var(--ink-2);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+/* --- the stage: the book, with a way to turn at each fore edge ----------- */
+
+.cx__stage {
+  display: grid;
+  grid-template-columns: 4.25rem minmax(0, 1fr) 4.25rem;
+  column-gap: 0.75rem;
+  align-items: start;
+}
+
+/* The containing block for the turning leaf. It must not clip: a leaf in the
+   air is allowed to be the tallest thing here, which is exactly why the
+   reserve above and below the block exists. */
+.cx__book {
+  grid-column: 2;
+  grid-row: 1;
+  position: relative;
+  isolation: isolate;
+  padding-block: var(--cx-reserve);
+}
+
+.cx__turnbtn {
+  grid-row: 1;
+  position: sticky;
+  top: calc(50svh - 2.75rem);
+  margin-top: calc(var(--cx-reserve) + var(--cx-h) / 2 - 2.75rem);
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  gap: 0.55rem;
+  width: 100%;
+  min-height: 5.5rem;
+  padding: 0.9rem 0.25rem;
+  border: var(--hair) solid var(--edge-hi);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink);
+  font: 500 12px/1.1 var(--f-inst);
+  cursor: pointer;
+  transition: border-color var(--t-fast) var(--ease-out), background var(--t-fast) var(--ease-out);
+}
+.cx__turnbtn--prev { grid-column: 1; }
+.cx__turnbtn--next { grid-column: 3; }
+.cx__turnbtn:hover:not([disabled]) { border-color: var(--ink-3); background: color-mix(in srgb, var(--ink) 5%, transparent); }
+.cx__turnbtn:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }
+.cx__turnbtn[disabled] { opacity: 0.32; cursor: default; }
+.cx-arrow { flex: none; }
+
+/* On a laptop the fore-edge buttons give their width back to the pages: the
+   arrow stays, the word is kept for assistive technology and speech input. */
+@media (min-width: 1100px) and (max-width: 1379.98px) {
+  .cx__stage { grid-template-columns: 2.9rem minmax(0, 1fr) 2.9rem; column-gap: 0.5rem; }
+  .cx__turnbtn { min-height: 4.5rem; padding-inline: 0; }
+  .cx__turnbtn span {
+    position: absolute; width: 1px; height: 1px; overflow: hidden;
+    clip-path: inset(50%); white-space: nowrap;
+  }
+}
+
+/* --- a spread: the boards, and the block of pages on them ---------------- */
+
+.cx__chapter[hidden],
+.cx__spread[hidden] { display: none; }
+
+.cx__spread {
+  position: relative;
+  width: var(--cx-w);
+  margin-inline: auto;
+  padding: var(--cx-board);
+  border-radius: 5px;
+  background-color: var(--cx-cloth);
+  background-image: var(--cx-grain);
+  /* The board's cut edge catching the lamp. An inset rule, not elevation. */
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / .16),
+    inset 0 0 0 1px rgb(255 255 255 / .06),
+    0 2px 0 var(--leaf-edge), 0 4px 0 var(--cx-cloth),
+    0 16px 35px -18px rgb(var(--lf-cast) / .65);
+}
+.cx__spread:focus { outline: none; }
+.cx__spread:focus-visible { outline: 2px solid var(--focus); outline-offset: 5px; }
+
+/* Where the book meets the desk. Behind the boards and inset on the sides, so
+   it never adds layout width; a blurred gradient with no edge of its own,
+   the same way the shelf's casts are drawn. */
+.cx__spread::after {
+  content: "";
+  position: absolute;
+  inset: 64% 2% -16px 2%;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(56% 50% at 50% 100%,
+    rgb(var(--lf-cast) / var(--lf-cast-a)) 0%, rgb(var(--lf-cast) / 0) 74%);
+  filter: blur(14px);
+}
+
+.cx__pages {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  min-height: calc(var(--cx-h) - 2 * var(--cx-board));
+}
+.cx__spread[data-wide] .cx__pages { grid-template-columns: minmax(0, 1fr); }
+
+/* --- a page ---------------------------------------------------------------
+
+   Each page carries its own paper, gutter and edge rather than the block
+   carrying them for both, because a page is also what turns: a copy of it on
+   the leaf has to look like the page it is a copy of. */
+
+.cx__page {
+  --pad-l: var(--pg-outer);
+  --pad-r: var(--pg-inner);
+  /* Everything printed here takes the paper's grounds. --screen is not
+     rebound: a photograph tipped onto a page is still a photograph. */
+  --body: var(--leaf);
+  --panel: var(--leaf-panel);
+  --edge: var(--leaf-rule);
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-4);
+  min-width: 0;
+  padding: var(--pg-top) var(--pad-r) var(--pg-bottom) var(--pad-l);
+  background-color: var(--leaf);
+  background-image: var(--cx-grain),
+    linear-gradient(110deg, rgb(var(--leaf-grain) / .025), transparent 48%);
+  color: var(--ink);
+}
+.cx__page--recto { --pad-l: var(--pg-inner); --pad-r: var(--pg-outer); }
+
+/* The greys printed on dark paper, one step brighter than the chassis's.
+   Four of five readers in the final user evaluation found text too small or
+   faint, three of them naming the small grey notes (24 Sep 2026). Measured
+   against --leaf: --ink-2 6.45:1 -> 7.69:1, --ink-3 4.53:1 -> 5.65:1 (and
+   4.04:1 -> 5.04:1 on the lit gutter, --leaf-hi), so the order ink > ink-2 >
+   ink-3 holds and every grey now clears 4.5:1 with room. The light paper's
+   greys already measured 5.1:1 and above and are unchanged. */
+html:not([data-theme="field"]) .cx__page { --ink-2: #AFBBC0; --ink-3: #98A5AC; }
+/* Dark cloth and a fine silver board edge separate the paper from the desk. */
+html:not([data-theme="field"]) .cx { --cx-cloth: #11191E; }
+html:not([data-theme="field"]) .cx__spread {
+  background-image: var(--cx-grain), linear-gradient(135deg, #35424A, #11191E 30%, #182329 75%, #46535A);
+}
+.cx__spread::before {
+  content: ""; position: absolute; left: 10px; right: 10px; bottom: -3px;
+  height: 4px; border-radius: 0 0 2px 2px; pointer-events: none;
+  background: repeating-linear-gradient(to bottom, var(--leaf-edge) 0 1px, var(--leaf) 1px 2px);
+}
+.cx__page--fold { --pad-l: clamp(2rem, 4vw, 4.5rem); --pad-r: clamp(2rem, 4vw, 4.5rem); }
+
+/* The binding and the block, drawn over the page so a plate that bleeds into
+   the gutter curves into it the way ink on a real page does. */
+.cx__page::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+}
+.cx__page--verso::after {
+  background:
+    linear-gradient(270deg,
+      rgb(var(--lf-shade) / .52) 0, rgb(var(--lf-shade) / .24) 1.1%,
+      rgb(var(--lf-shade) / .09) 4.4%, rgb(var(--lf-shade) / 0) 11%),
+    linear-gradient(90deg,
+      rgb(var(--lf-shade) / .30) 0 1px, transparent 1px 3px,
+      rgb(var(--lf-shade) / .16) 3px 4px, transparent 4px 6px,
+      rgb(var(--lf-shade) / .08) 6px 7px, transparent 7px),
+    linear-gradient(180deg, rgb(var(--leaf-grain) / .07) 0 1px, transparent 1px);
+}
+.cx__page--recto::after {
+  background:
+    linear-gradient(90deg,
+      rgb(var(--lf-shade) / .46) 0, rgb(var(--lf-shade) / .20) 1.1%,
+      rgb(var(--lf-shade) / .07) 4.4%, rgb(var(--lf-shade) / 0) 11%),
+    linear-gradient(270deg,
+      rgb(var(--lf-shade) / .30) 0 1px, transparent 1px 3px,
+      rgb(var(--lf-shade) / .16) 3px 4px, transparent 4px 6px,
+      rgb(var(--lf-shade) / .08) 6px 7px, transparent 7px),
+    linear-gradient(180deg, rgb(var(--leaf-grain) / .07) 0 1px, transparent 1px);
+}
+.cx__page--fold::after {
+  background:
+    linear-gradient(90deg,
+      rgb(var(--lf-shade) / .30) 0 1px, transparent 1px 3px,
+      rgb(var(--lf-shade) / .16) 3px 4px, transparent 4px 6px, transparent 6px),
+    linear-gradient(270deg,
+      rgb(var(--lf-shade) / .30) 0 1px, transparent 1px 3px,
+      rgb(var(--lf-shade) / .16) 3px 4px, transparent 4px 6px, transparent 6px),
+    linear-gradient(180deg, rgb(var(--leaf-grain) / .07) 0 1px, transparent 1px);
+}
+
+/* The running head: the book's title over every verso, set as the cover sets
+   it, and the chapter over every recto. */
+.cx__run {
+  margin: 0;
+  min-height: 1rem;
+  font: italic 400 13.5px/1.2 var(--f-voice);
+  letter-spacing: 0.01em;
+  color: var(--ink-2);
+}
+.cx__page--recto .cx__run {
+  text-align: right;
+  font: 500 11.5px/1.3 var(--f-inst);
+  letter-spacing: 0.06em;
+  color: var(--ink-3);
+}
+.cx__page.is-plain .cx__run { display: none; }
+
+.cx__body {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-5);
+  min-width: 0;
+}
+.cx__body > * { min-width: 0; }
+
+.cx__folio {
+  margin: auto 0 0;
+  font: 500 11.5px/1 var(--f-inst);
+  letter-spacing: 0.06em;
+  color: var(--ink-3);
+  font-variant-numeric: tabular-nums;
+}
+.cx__page--recto .cx__folio { text-align: right; }
+.cx__page--fold .cx__folio { text-align: center; }
+
+/* THE BLOCK IS ONE SCREEN.
+
+   On a spread the block is exactly --cx-h tall, which codex.js measures as
+   the room between the chapter bar and the line at the foot of the page, and
+   a page's body scrolls inside it when it holds more than that. The running
+   head and the folio stay where a printed page has them.
+
+   The page's margins move from the page onto its three parts, so the body's
+   scroll area runs to the edge of the paper. A scroll container clips what
+   it holds to its own box, and a plate printed to the edge (.cx-bleed) sits
+   in the margin: left on the page, the margin would have cut it off.
+
+   The single-page layout below 1100px is read downward and is not affected. */
+@media (min-width: 1100px) {
+  /* The room kept above and below the block for a turning leaf. 1.75rem
+     was sized when the page could grow; the turn solves its perspective
+     from whatever room is there (codex.js), so a flatter turn is the only
+     cost of giving 24px of it to the pages. */
+  .cx { padding-bottom: 0; --cx-reserve: 1rem;
+    /* The page's margins and the space between its head, body and folio
+       follow the window's height as well as its width, so a laptop's shorter
+       page gives up a few pixels of air rather than a line of text. Unchanged
+       from about 1,150px of window height up. */
+    --pg-top: clamp(1.25rem, 2.8svh, 2.6rem);
+    --pg-bottom: clamp(0.875rem, 1.9svh, 1.75rem); }
+  .cx__pages {
+    height: calc(var(--cx-h) - 2 * var(--cx-board));
+    grid-template-rows: minmax(0, 1fr);
+  }
+  .cx__page { min-height: 0; padding: 0; gap: clamp(0.75rem, 1.4svh, 1rem); }
+  .cx__run { padding: var(--pg-top) var(--pad-r) 0 var(--pad-l); }
+  .cx__folio { padding: 0 var(--pad-r) var(--pg-bottom) var(--pad-l); }
+  /* A running head and a folio hold one line of their own type even while
+     empty. codex.js measures a continuation spread before number() has
+     written them, and with the margins moved into their padding an empty one
+     collapsed: 16px at the head, 11.5px at the foot, so every continuation
+     page was measured 28px taller than it prints (measured on the claims,
+     23 Sep 2026). A zero-width space is a line box in the element's own face. */
+  .cx__run:empty::before,
+  .cx__folio:empty::before { content: "\200b"; }
+  /* Positioned so it is also the box its screen-reader-only text is placed
+     in: 31 such spans in the ledger were placed against the page instead,
+     escaped the scroll area, and stretched the document by 4,060px. */
+  .cx__body {
+    position: relative;
+    min-height: 0;
+    padding-inline: var(--pad-l) var(--pad-r);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--leaf-rule) transparent;
+  }
+  .cx__page.is-plain .cx__body { padding-top: var(--pg-top); }
+
+  /* A plate printed to the edge gives up height before the page scrolls:
+     it is the one thing on a title page that can be cropped without losing
+     a word. object-fit keeps its middle; 9rem keeps it a picture. */
+  .cx__body > .ti,
+  .cx__body > .mo { min-height: 0; }
+  .ti__plate { flex: 0 1 auto; min-height: 9rem; }
+  .mo__plate { flex: 0 1 auto; min-height: 9rem; aspect-ratio: 16 / 9; }
+  .mo__plate .mo__frame { height: 100%; aspect-ratio: auto; }
+  /* The cover-cloth title, where there is no plate to crop, gives up some of
+     its padding on a short window instead. */
+  .cx__body .ti__board { padding-block: clamp(1.25rem, 2.8svh, 2.8rem) clamp(1.1rem, 2.4svh, 2.4rem); }
+}
+
+/* Measured by codex.js while laid out and out of sight. Never seen. */
+.cx--measure {
+  position: absolute !important;
+  inset-inline: 0;
+  top: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* --- type on the page -----------------------------------------------------
+
+   One small scale, shared by every book. Newsreader is the human voice and
+   the cover's; Archivo measures. Nothing meaningful is set below 12px. */
+
+.cx-display {
+  margin: 0;
+  font-family: var(--f-voice);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  text-wrap: balance;
+}
+.cx-kicker {
+  margin: 0;
+  font: 500 12.5px/1.35 var(--f-inst);
+  letter-spacing: 0.03em;
+  color: var(--ink-2);
+}
+.cx-h {
+  margin: 0;
+  font-family: var(--f-voice);
+  font-weight: 400;
+  font-size: clamp(1.65rem, 2.2vw, 2.25rem);
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+.cx-h3 {
+  margin: 0;
+  font: 600 13px/1.3 var(--f-inst);
+  letter-spacing: 0.02em;
+  color: var(--ink);
+}
+.cx-lede {
+  margin: 0;
+  max-width: 58ch;
+  font: 400 15px/1.55 var(--f-inst);
+  color: var(--ink-2);
+  text-wrap: pretty;
+}
+.cx-text {
+  margin: 0;
+  max-width: 62ch;
+  font-family: var(--f-voice);
+  font-size: 17px;
+  line-height: 1.55;
+  color: var(--ink);
+  text-wrap: pretty;
+}
+.cx-note {
+  margin: 0;
+  max-width: 66ch;
+  font: 400 13.5px/1.55 var(--f-inst);
+  color: var(--ink-2);
+  text-wrap: pretty;
+}
+.cx-rule {
+  display: block;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.45;
+}
+
+/* A plate printed to the edge of the paper: the head, the fore edge and into
+   the gutter, as a photobook prints one. */
+.cx-bleed {
+  margin-top: calc(-1 * var(--pg-top));
+  margin-inline: calc(-1 * var(--pad-l)) calc(-1 * var(--pad-r));
+}
+/* ...except at the fore edge, where the edges of the leaves beneath are
+   drawn. Printed over, they read as a white line through the photograph. */
+.cx__page--verso .cx-bleed { margin-left: calc(-1 * var(--pad-l) + 7px); }
+.cx__page--recto .cx-bleed { margin-right: calc(-1 * var(--pad-r) + 7px); }
+
+/* A control printed on the page. */
+.cx-btn {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  min-height: 2.25rem;
+  padding: 0 0.95rem;
+  border: var(--hair) solid var(--edge-hi);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink);
+  font: 500 12.5px/1 var(--f-inst);
+  cursor: pointer;
+  text-decoration: none;
+  transition: border-color var(--t-fast) var(--ease-out), background var(--t-fast) var(--ease-out);
+}
+.cx-btn:hover:not([disabled]) { border-color: var(--ink-3); background: color-mix(in srgb, var(--ink) 5%, transparent); }
+.cx-btn:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.cx-btn[disabled] { opacity: 0.38; cursor: default; }
+.cx-btn--icon { width: 2.25rem; padding: 0; justify-content: center; }
+
+/* A cross-reference to another page of the same book. */
+.cx-xref {
+  appearance: none;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+.cx-xref:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+
+/* ===========================================================================
+   WHAT EVERY BOOK PRINTS
+
+   The components both kinds of volume share -- a single video's and a
+   sweep's -- so there is one title page, one set of notes, one audience band
+   and one mark per channel, not a copy of each per page.
+   ======================================================================== */
+
+/* The bench the book lies on. The light falls on the desk and the room goes
+   away at the edges; fixed, so it does not travel as a tall page scrolls. */
+[data-report]::before,
+[data-sweep]::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -3;
+  pointer-events: none;
+  /* The same key the shelf, the film's object and the optical plates are lit
+     by, pooled where the book lies -- so the desk is the library's room with
+     the volume brought down into it, not a second room. */
+  background:
+    radial-gradient(62% 58% at 50% 44%, rgb(var(--key-rgb) / calc(var(--pool-a) * .6)), transparent 72%),
+    radial-gradient(128% 92% at 50% 30%,
+      rgb(var(--desk) / 0) 0 44%, rgb(var(--desk) / var(--desk-a)) 100%);
+}
+
+/* The mark each channel is drawn with on the transport, repeated wherever the
+   channel is named, so a table and a trace name the same channel the same way. */
+.mo__mark { flex: none; display: block; }
+.mo__mark[data-mark="transcript"] { width: 11px; height: 3px; background: var(--ch); }
+.mo__mark[data-mark="facial"] { width: 11px; height: 7px; border: 1px solid var(--ch); }
+.mo__mark[data-mark="vocal"] {
+  width: 11px; height: 7px; background: var(--ch);
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 7'%3E%3Cpath d='M0 3.5 Q1.4 0.4 2.75 3.5 T5.5 3.5 T8.25 3.5 T11 3.5' fill='none' stroke='%23000' stroke-width='1.4'/%3E%3C/svg%3E");
+  mask-size: 100% 100%; mask-repeat: no-repeat;
+}
+.mo__mark[data-mark="audience"] {
+  width: 11px; height: 3px;
+  background: repeating-linear-gradient(90deg, var(--ch) 0 2px, transparent 2px 4px);
+}
+
+.is-absent { font-style: italic; color: var(--ink-3); }
+
+/* --- the title page -------------------------------------------------------
+
+   The inside of the cover. The same frame the shelf painted on the board,
+   printed to the edge of the paper with the board's own hairline frame inset
+   on it, and under it the title in the cover's tracked serif. */
+
+.ti { display: flex; flex-direction: column; gap: var(--s-5); flex: 1 1 auto; }
+
+.ti__plate {
+  position: relative;
+  margin-bottom: 0;
+  aspect-ratio: 16 / 9;
+  background: var(--screen);
+}
+.ti__plate img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.ti__plate::after {
+  content: "";
+  position: absolute;
+  inset: clamp(10px, 1.6vw, 18px);
+  border: 1px solid rgb(231 236 238 / .34);
+  pointer-events: none;
+}
+
+/* No plate: the page is the cover. The title in foil on the board's own
+   cloth, the glow the shelf paints on a board with no frame to show, and the
+   cover's inset hairline. Unthemed, like the boards. */
+.ti__board {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  gap: 0.6rem;
+  padding: clamp(1.6rem, 3.6svh, 2.8rem) 1.75rem clamp(1.4rem, 3.2svh, 2.4rem);
+  text-align: center;
+  color: #e7ecee;
+  background:
+    radial-gradient(90% 120% at 50% 115%, rgb(72 83 90 / .72), rgb(72 83 90 / 0) 70%),
+    var(--cx-cloth);
+}
+.ti__board::after {
+  content: "";
+  position: absolute;
+  inset: clamp(10px, 1.4vw, 14px);
+  border: 1px solid rgb(231 236 238 / .3);
+  pointer-events: none;
+}
+.ti__bk { margin: 0; font: 500 12px/1.3 var(--f-inst); letter-spacing: 0.06em; color: rgb(231 236 238 / .74); }
+.ti__board .ti__title { color: #e7ecee; }
+.ti__brule { display: block; width: 4.5rem; height: 1px; background: rgb(231 236 238 / .5); }
+.ti__bsub { margin: 0; font: italic 400 clamp(1.1rem, 1.6vw, 1.45rem)/1.2 var(--f-voice); color: rgb(231 236 238 / .82); }
+
+/* A contents list: the entries of this volume and the pages they are on. */
+.toc { display: grid; gap: 0.6rem; margin-top: auto; }
+.toc__list { display: grid; margin: 0; padding: 0; list-style: none; border-top: var(--hair) solid var(--leaf-rule); }
+.toc__list li {
+  display: grid;
+  grid-template-columns: 1.9rem minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 0.6rem;
+  padding-block: 0.4rem;
+  border-bottom: var(--hair) solid var(--leaf-rule);
+}
+.toc__n { font-size: 12px; color: var(--ink-3); }
+.toc__t {
+  appearance: none;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--ink);
+  font: 400 14.5px/1.35 var(--f-voice);
+  text-align: left;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+.toc__t:hover { text-decoration: underline; text-underline-offset: 3px; }
+.toc__t:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.toc__pg { font-size: 12.5px; color: var(--ink-2); cursor: pointer; }
+.toc__list li.is-failed .toc__t { color: var(--ink-2); font-style: italic; }
+
+.ti__block { display: flex; flex-direction: column; gap: 0.7rem; flex: 1 1 auto; }
+.ti__title { font-size: clamp(2.5rem, 4.4vw, 4.3rem); overflow-wrap: anywhere; }
+.ti__title[data-len="m"] { font-size: clamp(2rem, 3.1vw, 3rem); letter-spacing: 0.03em; line-height: 1.04; }
+.ti__title[data-len="l"] { font-size: clamp(1.5rem, 2.1vw, 2rem); letter-spacing: 0.015em; line-height: 1.14; }
+.ti__sub {
+  margin: 0;
+  font-family: var(--f-voice);
+  font-style: italic;
+  font-size: clamp(1.3rem, 1.9vw, 1.85rem);
+  line-height: 1.12;
+  color: var(--ink-2);
+  overflow-wrap: anywhere;
+}
+.ti__rule { width: 5.5rem; margin-block: 0.4rem 0.2rem; color: var(--ink); }
+.ti__facts { display: flex; flex-wrap: wrap; gap: var(--s-3) var(--s-6); margin: 0; }
+.ti__facts div { display: grid; gap: 3px; }
+.ti__facts dt { font: 500 11.5px/1.2 var(--f-inst); letter-spacing: 0.04em; color: var(--ink-3); }
+.ti__facts dd { margin: 0; font-size: 18px; color: var(--ink); }
+.ti__cap { margin-top: auto; padding-top: var(--s-2); }
+/* In short: the book's plain bottom line, printed from its facts (24 Sep 2026).
+   Set as a note in the margin of the title block rather than a panel, so the
+   page keeps one voice; the photograph above gives up height to make room. */
+.ti__short {
+  display: grid;
+  gap: 0.2rem;
+  max-width: 54ch;
+  margin: 0.15rem 0 0;
+  padding-left: 0.8rem;
+  border-left: 2px solid var(--ink-3);
+}
+.ti__shk { margin: 0; font: 500 11.5px/1.2 var(--f-inst); letter-spacing: 0.04em; color: var(--ink-2); }
+.ti__shp { margin: 0; font: 400 14px/1.5 var(--f-inst); color: var(--ink); text-wrap: pretty; }
+.ti__cap a { color: var(--ink); text-underline-offset: 3px; }
+
+/* --- what limits the reading ----------------------------------------------- */
+
+.lm { display: flex; flex-direction: column; gap: var(--s-5); }
+.lm__notes { display: grid; gap: var(--s-5); margin: 0; padding: 0; list-style: none; }
+.lm__k { display: flex; align-items: baseline; gap: 0.6rem; margin: 0 0 0.45rem; font: 600 13px/1.3 var(--f-inst); color: var(--ink); }
+.lm__n { font: 400 1.2rem/1 var(--f-voice); color: var(--ink-2); }
+.lm__note:focus { outline: none; }
+.lm__note:focus-visible { outline: 2px solid var(--focus); outline-offset: 4px; }
+
+/* --- the room, as a band ---------------------------------------------------
+
+   The room is the audience channel, so it is drawn in the audience channel's
+   own colour, and the three classes are told apart by weight and by shape as
+   well as by tint, so the figure survives greyscale. The old build coloured
+   negative comments with the conflict colour, which on this interface means
+   something else entirely. */
+
+.au { display: flex; flex-direction: column; gap: var(--s-5); }
+.au__fig { display: grid; gap: var(--s-4); margin: 0; }
+.au__band { display: flex; gap: 2px; height: clamp(3.5rem, 9svh, 6rem); }
+/* Widths are the counts themselves as flex weights, so the three blocks and
+   the two hairline gaps between them always sum to the band, never past it. */
+.au__band i { flex: var(--n, 0) 1 0px; min-width: 0; }
+.au__band i[data-k="POSITIVE"] { background: var(--ch-audience); }
+.au__band i[data-k="NEUTRAL"] { background: color-mix(in srgb, var(--ch-audience) 38%, var(--leaf)); }
+.au__band i[data-k="NEGATIVE"] {
+  background: repeating-linear-gradient(135deg,
+    var(--ch-audience) 0 2px, color-mix(in srgb, var(--ch-audience) 18%, var(--leaf)) 2px 6px);
+}
+.au__nums { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--s-4); margin: 0; }
+.au__nums div { display: grid; gap: 2px; }
+.au__nums dt { display: flex; align-items: center; gap: 0.45rem; font: 500 12.5px/1.2 var(--f-inst); color: var(--ink-2); }
+.au__nums dd { margin: 0; }
+.au__nums .t-read { font-size: clamp(1.9rem, 3vw, 2.6rem); line-height: 1.05; color: var(--ink); }
+.au__pct { font: 400 12.5px/1.2 var(--f-inst); color: var(--ink-3); }
+.au__verdict b { font-weight: 600; }
+
+.cm__glyph { flex: none; display: inline-block; width: 9px; height: 9px; background: var(--ch-audience); }
+[data-k="POSITIVE"] .cm__glyph { clip-path: polygon(50% 0, 100% 100%, 0 100%); }
+[data-k="NEGATIVE"] .cm__glyph { clip-path: polygon(0 0, 100% 0, 50% 100%); }
+[data-k="NEUTRAL"] .cm__glyph { border-radius: 50%; background: color-mix(in srgb, var(--ch-audience) 50%, var(--leaf)); }
+
+
+/* --- the turning leaf -----------------------------------------------------
+
+   Exists for one turn and is then removed. Its faces are inert copies of the
+   two pages involved -- the one being turned and the one it becomes -- so the
+   reader watches the page they were reading go over. */
+
+.cx__turn { position: absolute; z-index: 6; pointer-events: none; }
+.cx__still { position: absolute; top: 0; z-index: 1; }
+.cx__proxy { position: absolute; top: 0; left: 0; margin: 0; }
+/* Half of a fold-out's sheet, cut the way a strip's face cuts its slice. */
+.cx__window { overflow: hidden; }
+
+.cx__cast {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+  width: var(--w, 0px);
+  opacity: var(--o, 0);
+}
+.cx__cast[data-side="r"] {
+  left: 50%;
+  background: linear-gradient(90deg,
+    rgb(var(--lf-shade) / .6), rgb(var(--lf-shade) / .2) 45%, rgb(var(--lf-shade) / 0));
+}
+.cx__cast[data-side="l"] {
+  right: 50%;
+  background: linear-gradient(270deg,
+    rgb(var(--lf-shade) / .6), rgb(var(--lf-shade) / .2) 45%, rgb(var(--lf-shade) / 0));
+}
+
+.cx__leaf { will-change: transform; position: absolute; top: 0; z-index: 3; transform-style: preserve-3d; }
+.cx__leaf[data-dir="next"] { transform-origin: left center; }
+.cx__leaf[data-dir="prev"] { transform-origin: right center; }
+
+.cx__strip { position: absolute; top: 0; height: 100%; transform-style: preserve-3d; }
+.cx__leaf[data-dir="next"] .cx__strip { transform-origin: left center; }
+.cx__leaf[data-dir="next"] > .cx__strip { left: 0; }
+.cx__leaf[data-dir="next"] .cx__strip .cx__strip { left: 100%; }
+.cx__leaf[data-dir="prev"] .cx__strip { transform-origin: right center; }
+.cx__leaf[data-dir="prev"] > .cx__strip { right: 0; }
+.cx__leaf[data-dir="prev"] .cx__strip .cx__strip { right: 100%; }
+
+/* Each strip shows its own slice of the page: this is the one `overflow:
+   hidden` in the book, and it is the mechanism of the slice rather than a lid
+   over something mispositioned. Faces overlap their neighbour by a pixel so
+   the chain has no hairline seams when it bends. */
+.cx__face {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.cx__leaf[data-dir="next"] .cx__face { right: -1px; }
+.cx__leaf[data-dir="prev"] .cx__face { left: -1px; }
+.cx__leaf[data-dir="prev"] .cx__face > .cx__proxy { margin-left: 1px; }
+.cx__face--back { transform: rotateY(180deg); }
+
+/* The light on the leaf, per strip, from the angle each strip is actually at. */
+.cx__sh { position: absolute; inset: 0; z-index: 5; pointer-events: none; }
+.cx__leaf[data-dir="next"] .cx__face--front > .cx__sh,
+.cx__leaf[data-dir="prev"] .cx__face--back > .cx__sh {
+  background: linear-gradient(90deg,
+    rgb(var(--lf-shade) / var(--a1, 0)), rgb(var(--lf-shade) / var(--a2, 0)));
+}
+.cx__leaf[data-dir="next"] .cx__face--back > .cx__sh,
+.cx__leaf[data-dir="prev"] .cx__face--front > .cx__sh {
+  background: linear-gradient(90deg,
+    rgb(var(--lf-shade) / var(--a2, 0)), rgb(var(--lf-shade) / var(--a1, 0)));
+}
+.cx__face::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 6;
+  pointer-events: none;
+  background: rgb(var(--leaf-grain) / var(--gl, 0));
+}
+
+/* The leaf's own thickness, at its free edge: a lit hairline and its shade. */
+.cx__strip.is-edge > .cx__face::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 7;
+  width: 2px;
+  pointer-events: none;
+  background: linear-gradient(90deg, rgb(var(--leaf-grain) / .14), rgb(var(--lf-shade) / .3));
+}
+.cx__leaf[data-dir="next"] .cx__strip.is-edge > .cx__face--front::before,
+.cx__leaf[data-dir="prev"] .cx__strip.is-edge > .cx__face--back::before { right: 0; }
+.cx__leaf[data-dir="next"] .cx__strip.is-edge > .cx__face--back::before,
+.cx__leaf[data-dir="prev"] .cx__strip.is-edge > .cx__face--front::before { left: 0; }
+
+/* --- one page at a time ---------------------------------------------------
+
+   Below the width at which two pages can each hold a readable measure, the
+   book is read downward: one column, the chapter's pages in order, the
+   binding down the left. It is the same paper and the same boards, not a
+   double spread squeezed into a phone. The width is codex.js's WIDE_QUERY. */
+
+@media (max-width: 1099.98px) {
+  .cx {
+    --cx-board: 5px;
+    --pg-top: 1.9rem;
+    --pg-bottom: 1.3rem;
+    --pg-outer: clamp(1.15rem, 4.6vw, 2.5rem);
+    --pg-inner: clamp(1.5rem, 5.4vw, 2.9rem);
+  }
+  .cx__where { flex-basis: 100%; margin: 0; text-align: left; }
+
+  .cx__stage {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    row-gap: var(--s-3);
+  }
+  .cx__book { grid-column: 1 / -1; padding-block: var(--s-4) 0; }
+  .cx__turnbtn {
+    grid-row: 2;
+    position: static;
+    margin: 0;
+    width: auto;
+    min-height: 2.75rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0 1.15rem;
+    font-size: 13px;
+  }
+  .cx__turnbtn--prev { grid-column: 1; justify-self: start; }
+  .cx__turnbtn--next { grid-column: 2; justify-self: end; }
+
+  .cx__spread { width: 100%; }
+  /* The chapter's pages run on as one column inside one set of boards. */
+  .cx__spread + .cx__spread { margin-top: calc(-1 * var(--cx-board)); border-top-left-radius: 0; border-top-right-radius: 0; }
+  .cx__pages,
+  .cx__spread[data-wide] .cx__pages { grid-template-columns: minmax(0, 1fr); min-height: 0; }
+  .cx__page--verso,
+  .cx__page--recto,
+  .cx__page--fold { --pad-l: var(--pg-inner); --pad-r: var(--pg-outer); }
+  .cx__page--recto { border-top: var(--hair) solid var(--leaf-rule); }
+  .cx__page--recto .cx__run { display: none; }
+  /* A page that exists only to receive material carried over from the one
+     before it has nothing to hold when there is no spread to fill, and is
+     not shown as a blank page in the column. */
+  .cx__page:has(> .cx__body > [data-cx-flow]:only-child:empty) { display: none; }
+
+  .cx__page--verso::after,
+  .cx__page--recto::after,
+  .cx__page--fold::after {
+    background:
+      linear-gradient(90deg,
+        rgb(var(--lf-shade) / .42) 0, rgb(var(--lf-shade) / .14) 2%, rgb(var(--lf-shade) / 0) 7%),
+      linear-gradient(270deg,
+        rgb(var(--lf-shade) / .30) 0 1px, transparent 1px 3px,
+        rgb(var(--lf-shade) / .14) 3px 4px, transparent 4px),
+      linear-gradient(180deg, rgb(var(--leaf-grain) / .07) 0 1px, transparent 1px);
+  }
+}
+
+@media (max-width: 40rem) {
+  .cx { padding-inline: 12px; }
+  .cx__bar { gap: var(--s-2); }
+  .cx__close { min-height: 2.75rem; }
+  .cx__toc { flex-basis: 100%; }
+  .cx__ch { padding: 0 0.7rem; min-height: 2.5rem; }
+}
+
+/* --- reduced motion ------------------------------------------------------ */
+
+@media (prefers-reduced-motion: reduce) {
+  [data-cx] { transition: none; }
+  .cx__turn { display: none; }
+  .cx__close, .cx__ch, .cx__turnbtn, .cx-btn { transition: none; }
+}
+
+/* --- read as one page, and print (codex.js readsAsPage) -------------------
+   The switch between the two readings sits in the chapter bar. On one page
+   there is nothing to turn, so the turn buttons go; everything else is the
+   one-column layout re-emitted for this attribute by vite.config.js. */
+.cx__mode {
+  display: inline-flex; align-items: center; min-height: 2.5rem; padding: 0 0.7rem;
+  font: 600 13px/1.2 var(--f-inst); color: var(--ink-2);
+  text-decoration: underline; text-decoration-color: var(--edge-hi); text-underline-offset: 3px;
+}
+.cx__mode:hover { color: var(--ink); text-decoration-color: currentColor; }
+:root[data-read="page"] .cx__turnbtn { display: none; }
+:root[data-read="page"] .cx__chapter + .cx__chapter { margin-top: var(--s-6); }
+
+@media print {
+  .masthead, .skip-link, [data-footer], .cx__bar, .cx__turnbtn, .member { display: none !important; }
+  .cx, .cx__book { padding: 0 !important; margin: 0 !important; }
+  .cx__spread { break-inside: auto; box-shadow: none !important; }
+  .cx__page { break-inside: avoid-page; }
+  .cx__body { overflow: visible !important; height: auto !important; }
+}
+/* Controls that are white type on a dark pill -- a pressed chip, a numbered
+   badge -- keep their pill on paper. Browsers drop backgrounds when printing,
+   and the pressed ledger chips printed white on white (verify_ui.py check 21). */
+@media print {
+  /* .rb__tile: a filled tile IS the reading (positive); on paper it keeps it. */
+  .chip, .chip__n, .mem__n, .ti__board, .rb__tile { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+}

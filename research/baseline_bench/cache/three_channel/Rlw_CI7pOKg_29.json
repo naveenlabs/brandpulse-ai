@@ -1,0 +1,35 @@
+{
+ "uid": "Rlw_CI7pOKg_29",
+ "system": "three_channel",
+ "video_id": "Rlw_CI7pOKg",
+ "segment_id": 29,
+ "split": "holdout",
+ "payload": {
+  "segment_id": 29,
+  "start_s": 162.32000000000002,
+  "end_s": 168.72,
+  "transcript": "since apple refreshed the macbook air and in fact the entire mac lineup with their m series of chips",
+  "transcript_sentiment": "NEUTRAL (0.65)",
+  "vocal_emotion": "POSITIVE (arousal 0.70)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.98)"
+ },
+ "seconds": 4.4,
+ "raw": "{\n  \"segment_id\": 29,\n  \"conflict_score\": 0.5,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words (NEUTRAL) and face (no emotion detected) convey conflicting emotions, while their tone (POSITIVE) and the audience's comments (POSITIVE) are in agreement.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 29,
+  "start_s": 162.32000000000002,
+  "end_s": 168.72,
+  "conflict_score": 0.5,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion"
+  ],
+  "flagged": false
+ }
+}

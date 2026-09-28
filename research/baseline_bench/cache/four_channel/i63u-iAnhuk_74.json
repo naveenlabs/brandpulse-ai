@@ -1,0 +1,36 @@
+{
+ "uid": "i63u-iAnhuk_74",
+ "system": "four_channel",
+ "video_id": "i63u-iAnhuk",
+ "segment_id": 74,
+ "split": "selection",
+ "payload": {
+  "segment_id": 74,
+  "start_s": 353.88,
+  "end_s": 357.03999999999996,
+  "transcript": "but is a solid amount still behind the Snapdragon chips",
+  "transcript_sentiment": "NEUTRAL (0.64)",
+  "vocal_emotion": "NEUTRAL (arousal 0.49)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.97)"
+ },
+ "seconds": 4.572,
+ "raw": "{\n  \"segment_id\": 74,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"vocal_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and tone suggest neutrality, but their facial expression is neutral and their vocal tone is also neutral, which is somewhat inconsistent with the positive sentiment expressed by the audience in the comments.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 74,
+  "start_s": 353.88,
+  "end_s": 357.03999999999996,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: vocal_emotion"
+  ],
+  "flagged": false
+ }
+}

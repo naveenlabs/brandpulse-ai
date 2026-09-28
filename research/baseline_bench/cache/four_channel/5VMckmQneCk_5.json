@@ -1,0 +1,36 @@
+{
+ "uid": "5VMckmQneCk_5",
+ "system": "four_channel",
+ "video_id": "5VMckmQneCk",
+ "segment_id": 5,
+ "split": "selection",
+ "payload": {
+  "segment_id": 5,
+  "start_s": 26.3,
+  "end_s": 30.340000000000003,
+  "transcript": "this is one tough phone. I've been specifically using it without a case to test it.",
+  "transcript_sentiment": "NEGATIVE (0.87)",
+  "vocal_emotion": "POSITIVE (arousal 0.65)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "fear (0.78)",
+  "video_comment_sentiment": "POSITIVE (0.95)"
+ },
+ "seconds": 4.45,
+ "raw": "{\n  \"segment_id\": 5,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"vocal_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and facial expressions convey a negative sentiment, but their tone and pitch suggest a positive emotion. This discrepancy suggests a potential conflict in the creator's emotional state.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 5,
+  "start_s": 26.3,
+  "end_s": 30.340000000000003,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: vocal_emotion"
+  ],
+  "flagged": false
+ }
+}

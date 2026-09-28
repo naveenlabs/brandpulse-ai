@@ -1,0 +1,169 @@
+/* Isolated to #film. All colour and type come from the existing instrument. */
+#film.film--chamber { height: 100svh; min-height: 640px; position: relative; isolation: isolate; overflow: hidden; background: var(--body); color: var(--ink); perspective: none; }
+#film .f-chamber { position: relative; width: 100%; height: 100%; overflow: hidden; }
+/* One key light pooled where the object turns, the same light the shelf and
+   the optical plates are lit by; not a teal glow of the chamber's own. */
+#film .f-atmosphere { position: absolute; inset: 0; pointer-events: none; background: radial-gradient(ellipse at 73% 48%, rgb(var(--key-rgb) / var(--pool-a)), transparent 52%); }
+#film .f-atmosphere::after { content: ''; position: absolute; inset: 0; opacity: var(--grain-a); background-image: url('/static/grain.png'); }
+#film .f-topline { position: absolute; z-index: 5; top: 100px; left: var(--gutter); right: var(--gutter); display: flex; justify-content: space-between; gap: 20px; font-size: var(--t-note); font-weight: 500; letter-spacing: var(--tr-label); color: var(--ink-2); }
+#film .f-topline i { display: inline-block; width: 5px; height: 5px; background: var(--ch-transcript); margin-right: 10px; vertical-align: 2px; }
+#film .f-space { position: absolute; width: 70%; height: 94%; right: -4%; top: 0; pointer-events: none; }
+#film .f-orbits { position: absolute; inset: 0; width: 100%; height: 100%; }
+#film .f-optics { position: absolute; inset: 0; perspective: 1200px; perspective-origin: 50% 50%; }
+#film .f-object { position: absolute; left: 50%; top: 50%; width: clamp(230px,27vw,440px); aspect-ratio: 1.55; margin-left: clamp(-220px,-13.5vw,-115px); margin-top: -10%; transform-style: preserve-3d; }
+#film .f-plate { position: absolute; inset: 0; transform-style: preserve-3d; border: 0; background: transparent; will-change: transform; }
+#film .f-plate::before, #film .f-plate::after { content: ''; position: absolute; left: 0; right: 0; top: calc(var(--i) * 25%); height: 1px; background: color-mix(in srgb,var(--channel) 75%,transparent); z-index: 2; }
+#film .f-plate::after { top: calc((var(--i) + 1) * 25% - 1px); opacity: .55; }
+#film .f-plate__image { position: absolute; inset: 0; overflow: hidden; background: var(--screen); clip-path: inset(calc(var(--i) * 25%) 0 calc((3 - var(--i)) * 25%) 0); }
+#film .f-plate img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) contrast(1.12) brightness(.65); opacity: calc(.9 - var(--separation,0) * .26); }
+#film .f-plate__scan { position: absolute; inset: 0; background: linear-gradient(0deg,color-mix(in srgb,var(--channel) 25%,transparent),transparent 70%),repeating-linear-gradient(0deg,transparent 0 3px,#0003 3px 4px); }
+#film .f-plate__label { position: absolute; left: calc(100% + 12px); top: calc(var(--i) * 25%); width: 110px; display: grid; gap: 4px; font-size: 11px; font-weight: 500; letter-spacing: var(--tr-label); color: var(--channel); opacity: var(--separation,0); }
+#film .f-plate__label span:last-child { font-size: 12px; font-weight: 600; }
+#film .f-plate__corner { display: none; }
+#film .f-coordinate { position: absolute; color: var(--ink-3); font-size: 11px; letter-spacing: var(--tr-label); }
+#film .f-coordinate--a { left: 29%; top: 20%; }
+#film .f-coordinate--b { right: 17%; bottom: 17%; writing-mode: vertical-rl; }
+#film .f-story { position: absolute; z-index: 3; left: calc(var(--gutter) + 2vw); top: 26%; width: 51%; height: 57%; pointer-events: none; }
+/* Faded, never hidden: a beat that is not on screen is still read aloud in
+   order (film.js, INCLUSIVE_DESIGN.md A5). Its link takes no pointer while
+   faded; a keyboard that reaches it brings the beat on screen. */
+#film .f-beat { position: absolute; inset: 0; opacity: 0; transition: opacity .32s ease; }
+#film .f-beat.is-current { opacity: 1; }
+#film .f-beat:not(.is-current) .f-link { pointer-events: none; }
+#film .f-eyebrow { margin: 0 0 24px; font-size: var(--t-label); font-weight: 600; letter-spacing: var(--tr-label); font-variation-settings: 'wdth' var(--ctl-wdth); color: var(--ink-2); }
+/* The display role (tokens.css): the reference every other display line in
+   the building is set against. */
+#film .f-beat h2 { margin: 0 0 26px; font: var(--wt-display) var(--t-display)/var(--lh-display) var(--f-inst); letter-spacing: var(--tr-display); font-variation-settings: 'wdth' 94; }
+#film .f-beat h2 em { font-family: var(--f-voice); font-weight: 380; letter-spacing: -.04em; }
+#film .f-body { margin: 0; max-width: 33ch; font-size: clamp(14px,1.16vw,18px); line-height: 1.6; color: var(--ink-2); }
+#film .f-invitation { display: flex; align-items: center; gap: 12px; margin-top: 32px; color: var(--ink-2); font-size: var(--t-note); letter-spacing: var(--tr-label); }
+#film .f-aside { font-size: var(--t-note); line-height: 1.55; color: var(--ink-2); margin-top: 25px; max-width: 42ch; }
+#film .f-measure { display: flex; gap: 25px; align-items: center; margin: 8px 0 22px; }
+#film .f-measure > span { font-size: clamp(30px,3.4vw,54px); font-variation-settings: 'wdth' 80; letter-spacing: -.05em; font-variant-numeric: tabular-nums; }
+#film .f-measure > div { padding-left: 20px; border-left: 1px solid var(--edge-hi); font-size: var(--t-note); color: var(--ink-2); }
+#film .f-measure strong { display: block; margin-top: 4px; font-size: 20px; color: var(--tear); }
+#film .f-link { display: inline-flex; align-items: center; gap: 28px; pointer-events: auto; margin-top: 18px; padding: 0 0 8px; font-size: var(--ctl-size); font-weight: var(--ctl-weight); font-variation-settings: 'wdth' var(--ctl-wdth); color: var(--ink); border-bottom: 1px solid var(--edge-hi); text-decoration: none; transition: border-color var(--t-fast) var(--ease-out); }
+#film .f-link:hover { border-bottom-color: var(--ink); }
+#film .f-evidence { position: absolute; z-index: 4; bottom: 110px; right: 5%; width: 46%; display: grid; grid-template-columns: repeat(2,1fr); gap: 15px 26px; opacity: 0; }
+#film .f-evidence > div { border-top: 1px solid color-mix(in srgb,var(--channel) 32%,transparent); padding-top: 9px; }
+#film .f-evidence__name { display: flex; align-items: center; gap: 7px; color: var(--ink-2); font-size: 12px; font-weight: 500; }
+#film .f-evidence__name i { width: 5px; height: 5px; background: var(--channel); }
+#film .f-evidence__name small { font-size: 11.5px; margin-left: auto; color: var(--ink-3); }
+/* The pipeline's raw strings are not consistently cased -- the transcript and
+   comment channels return POSITIVE, the facial and vocal channels return
+   fear / angry -- so a grid printing them verbatim reads as a bug. film.js
+   sets them in sentence case (format.js sentence()), like every label in the
+   building; the reading itself is never altered. */
+#film .f-evidence strong { display: block; margin-top: 6px; font-size: 14px; font-weight: 600; color: var(--channel); }
+#film .f-bottom { position: absolute; bottom: 32px; left: var(--gutter); right: var(--gutter); display: flex; align-items: center; gap: 28px; font-size: var(--t-note); letter-spacing: var(--tr-label); color: var(--ink-2); }
+#film .f-bottom > span, #film .f-bottom a { display: inline-flex; align-items: center; gap: 10px; }
+#film .f-step { font-variant-numeric: tabular-nums; }
+#film .f-track { height: 1px; flex: 1; background: var(--edge-hi); }
+#film .f-track i { display: block; height: 1px; background: var(--ink); transform: scaleX(0); transform-origin: left; }
+#film .f-bottom b { margin-left: 12px; font-weight: 400; }
+#film .f-bottom a { color: var(--ink-2); text-decoration: none; }
+#film .f-bottom a:hover { color: var(--ink); }
+@media (min-width: 1600px) { #film .f-story { top: 28%; } }
+/* The plate labels hang off the right of an object that is itself set past the
+   right edge, so below 1400px they run under the chamber's own overflow clip
+   and lose their last characters. Measured at the widest point of the turn:
+   1366px clipped by 1px, 1280 by 19, 1200 by 36, 1100 by 57, 1000 by 137. At
+   1400px and above nothing clips, so nothing above 1400px changes.
+   They are stood down rather than moved, because the same four readings are
+   already printed in full in .f-evidence -- no reading is lost, and the layout
+   below 760px already stands them down for exactly this reason. */
+@media (max-width: 1399px) { #film .f-plate__label { display: none; } }
+@media (max-width: 1000px) and (min-width: 760px) { #film .f-beat h2 { font-size: 6.8vw; } #film .f-space { right: -10%; } }
+@media (max-width: 759px) {
+  #film.film--chamber { min-height: 720px; }
+  #film .f-topline { top: 82px; font-size: 11.5px; }
+  #film .f-topline > span:last-child { max-width: 38%; text-align: right; }
+  #film .f-story { left: var(--gutter); top: 145px; width: calc(100% - var(--gutter) * 2); height: 240px; }
+  #film .f-eyebrow { margin-bottom: 18px; font-size: 12px; }
+  #film .f-beat h2 { font-size: clamp(43px,9.5vw,65px); margin-bottom: 14px; }
+  #film .f-body { font-size: 14px; line-height: 1.5; }
+  #film .f-invitation { margin-top: 14px; font-size: 12px; }
+  #film .f-aside { margin-top: 12px; font-size: 12px; }
+  #film .f-space { width: 100%; height: 52%; top: 43%; right: -10%; }
+  #film .f-object { width: 190px; margin-left: -95px; margin-top: -65px; }
+  #film .f-plate__label { display: none; }
+  #film .f-coordinate { display: none; }
+  #film .f-evidence { right: 6%; bottom: 75px; width: 88%; gap: 10px 20px; background: color-mix(in srgb,var(--screen) 90%,transparent); }
+  #film .f-evidence strong { font-size: 12px; }
+  #film .f-bottom { bottom: 25px; gap: 15px; font-size: 11.5px; }
+  #film .f-bottom > span:nth-last-child(2) { display: none; }
+  #film .f-measure { margin: 0 0 10px; }
+  #film .f-measure > span { font-size: 27px; }
+  #film .f-link { margin-top: 10px; }
+}
+@media (max-height: 740px) and (min-width: 760px) {
+  #film .f-story { top: 24%; }
+  #film .f-beat h2 { font-size: min(6.7vw,78px); margin-bottom: 18px; }
+  #film .f-eyebrow { margin-bottom: 18px; }
+  #film .f-evidence { bottom: 70px; }
+}
+@media (prefers-reduced-motion: reduce) { #film .f-beat { transition: none; } }
+/* STACKED: a window too short to hold the chamber (film.js). Not pinned; the
+   instrument frozen open as a still, then the four beats and the four readings
+   in reading order. The same order the print layout below uses. */
+#film.film--chamber.film--stacked { height: auto; min-height: 0; overflow: visible; }
+#film.film--stacked .f-chamber { height: auto; overflow: visible; display: flex; flex-direction: column; gap: var(--s-5); padding: 96px var(--gutter) var(--s-7); }
+#film.film--stacked .f-topline { position: static; }
+#film.film--stacked .f-space { position: relative; width: 100%; height: 260px; right: auto; top: auto; }
+#film.film--stacked .f-story { position: static; width: auto; height: auto; left: auto; top: auto; }
+#film.film--stacked .f-beat { position: static; opacity: 1; margin-bottom: var(--s-6); }
+#film.film--stacked .f-beat h2 { font-size: clamp(40px, 7vw, 72px); }
+#film.film--stacked .f-evidence { position: static; width: auto; opacity: 1; }
+#film.film--stacked .f-bottom { display: none; }
+@media print {
+  #film.film--chamber { height: auto !important; overflow: visible; }
+  #film .f-chamber { overflow: visible; }
+  #film .f-space, #film .f-topline, #film .f-bottom, #film .f-evidence, #film .f-field { display: none; }
+  #film .f-story { position: static; width: auto; height: auto; padding: 30px; }
+  #film .f-beat { position: static; opacity: 1; visibility: visible; margin-bottom: 30px; }
+}
+
+/* --- the ground --------------------------------------------------------
+   The Data Pixel Arc, behind .f-atmosphere so the section's own grain and
+   channel tints still sit on top of it. First in the chamber and with no
+   z-index of its own, so it paints under every layer that has one.
+
+   The mask is the reason the composition does not move. The arc is pushed to
+   arcCenter 0.82 in film.js, but its band is 0.4 of the height and its own
+   edge falloff is gentle, so without a mask it still reaches .f-beat h2 at
+   the top and .f-bottom at the foot. The four stops hold it to the band
+   between them: clear of the headline above, clear of the transport rule
+   below, and faded at both ends rather than cut. */
+#film .f-field { position: absolute; inset: 0; pointer-events: none; overflow: hidden;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0 34%, #000 58% 88%, transparent 96%);
+  mask-image: linear-gradient(to bottom, transparent 0 34%, #000 58% 88%, transparent 96%); }
+
+/* The second half of the mask, on the canvas so the two intersect natively.
+   It is a correction, not a flourish, and FIELD is where it shows.
+
+   The component's light path never fades to nothing at its own edge. At the
+   renderer's 0.02 intensity cutoff its colour is already rgb(192,206,194) --
+   46 units off its own paper -- and its alpha floor is 0.22, so the field
+   STARTS at roughly a sixteen-unit step. Against the opaque paper the
+   component paints for itself that step is invisible, because both sides of
+   it are the same paper. Against --screen, with datapixelarc.js's deviation 3
+   clearing instead of filling, it was a pale sage wedge with a hard parabolic
+   edge running up out of the lower left corner.
+
+   That wedge is dealt with in two places, and NOT here: the multiply below,
+   and the FIELD brightness and opacity in film.js, which are solved against
+   the step rather than chosen. This ellipse was tried as the fix first and
+   does not work as one -- centred on the crown it never reaches the arc's
+   legs, which is where the cutoff shows -- so what it is kept for is
+   shaping. It rounds the glow off in both themes and stops the ground
+   reaching the chamber's corners. */
+#film .f-field canvas { display: block; width: 100%; height: 100%;
+  -webkit-mask-image: radial-gradient(118% 78% at 50% 92%, #000 0 30%, transparent 84%);
+  mask-image: radial-gradient(118% 78% at 50% 92%, #000 0 30%, transparent 84%); }
+
+/* The other half of that correction: the mask fixes the wedge's EDGE, this
+   fixes its colour. Multiplying means a cell carrying the light path's own
+   paper leaves --screen where it was, and only the cells with real sage and
+   emerald ink in them darken it -- which is the reading that path was
+   written for, and the one its opaque background gave it for free. */
+[data-theme="field"] #film .f-field canvas { mix-blend-mode: multiply; }

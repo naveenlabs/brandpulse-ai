@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en" data-theme="bench">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Library — BrandPulse</title>
+<meta name="description" content="Every analysis saved on this machine, each carrying its own trace, sortable and comparable.">
+<script>
+  (function () {
+    try {
+      var saved = localStorage.getItem("brandpulse-theme");
+      if (saved === "bench" || saved === "field") {
+        document.documentElement.dataset.theme = saved; return;
+      }
+    } catch (e) {}
+    document.documentElement.dataset.theme =
+      window.matchMedia("(prefers-color-scheme: light)").matches ? "field" : "bench";
+  })();
+  /* The in-page Reduce motion switch, applied before first paint for the same
+     reason as the theme: a page that starts moving and then stops is the
+     thing the reader asked not to see. */
+  try {
+    if (localStorage.getItem("brandpulse-motion") === "off") {
+      document.documentElement.dataset.motion = "off";
+    }
+  } catch (e) {}
+  document.documentElement.classList.add("js");
+  window.__bpFallback = setTimeout(function () {
+    document.documentElement.classList.remove("js");
+  }, 4000);
+</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23101315'/%3E%3Cg stroke-width='1.2'%3E%3Cpath d='M1 3h14' stroke='%235FD3C0'/%3E%3Cpath d='M1 6.5h14' stroke='%23A9BCC7'/%3E%3Cpath d='M1 10h14' stroke='%23A99BE0'/%3E%3Cpath d='M1 13.5h14' stroke='%23E8A33C'/%3E%3Cpath d='M10 0v16' stroke='%23FF2E88' stroke-width='1.6'/%3E%3C/g%3E%3C/svg%3E">
+<script type="module" src="/src/pages/library.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to the content</a>
+<div class="chassis">
+  <header class="masthead" data-chrome></header>
+
+  <main id="main" data-library>
+    <section class="state" data-boot>
+      <p class="t-label state__tag">Reading</p>
+      <h2 class="t-l">Opening this machine&rsquo;s saved runs</h2>
+      <p class="t-body">Each one is read in full so its own trace can be drawn.</p>
+    </section>
+
+    <!-- No-script core. The listing needs JavaScript; the disclosure that every
+         report carries a facial-bias caveat does not, and the project requires it
+         wherever facial-derived scores are surfaced. -->
+    <div data-fallback class="fallback">
+      <h1>The library</h1>
+      <p>
+        Browsing the saved runs needs JavaScript, and this browser is not running
+        it. The reports themselves are plain JSON on this machine and the API is
+        still reachable: <code>GET /reports</code> lists them and
+        <code>GET /reports/&lt;filename&gt;</code> returns one whole.
+      </p>
+      <!--BP:CAVEATS-->
+      <h2>What a saved run contains</h2>
+      <p>
+        Every segment of one video with each of the four channels&rsquo; readings
+        attached, every audience comment as classified, the two scores, and the
+        caveats above. Author identifiers are never stored.
+      </p>
+      <h2>Where to go</h2>
+      <ul>
+        <li><a href="/run">Analyse a video</a></li>
+        <li><a href="/">What the system measures, and where it is weak</a></li>
+      </ul>
+    </div>
+  </main>
+
+  <!-- No site footer on this page. Everything the grey band said that is true
+       here is said on .bk__rail beside the count it belongs to: what was
+       analysed, how many, and that all of it stayed on this machine. The band
+       repeated the masthead in a different colour under a bookcase it could
+       not match, which is the same reason the opening page dropped it. -->
+</div>
+</body>
+</html>

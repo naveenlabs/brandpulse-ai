@@ -1,0 +1,36 @@
+{
+ "uid": "Kk-RKpTAXmA_20",
+ "system": "four_channel",
+ "video_id": "Kk-RKpTAXmA",
+ "segment_id": 20,
+ "split": "holdout",
+ "payload": {
+  "segment_id": 20,
+  "start_s": 81.44,
+  "end_s": 86.6,
+  "transcript": "Sony Sound Connect. We're going to need an app because everything does.",
+  "transcript_sentiment": "NEUTRAL (0.61)",
+  "vocal_emotion": "NEUTRAL (arousal 0.63)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.97)"
+ },
+ "seconds": 4.453,
+ "raw": "{\n  \"segment_id\": 20,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"vocal_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and tone suggest neutrality, but their facial expression is neutral and their vocal tone is also neutral, which is somewhat inconsistent with the audience's overwhelmingly positive sentiment.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 20,
+  "start_s": 81.44,
+  "end_s": 86.6,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: vocal_emotion"
+  ],
+  "flagged": false
+ }
+}

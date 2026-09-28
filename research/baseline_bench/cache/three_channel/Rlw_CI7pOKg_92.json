@@ -1,0 +1,35 @@
+{
+ "uid": "Rlw_CI7pOKg_92",
+ "system": "three_channel",
+ "video_id": "Rlw_CI7pOKg",
+ "segment_id": 92,
+ "split": "holdout",
+ "payload": {
+  "segment_id": 92,
+  "start_s": 548.32,
+  "end_s": 554.6400000000001,
+  "transcript": "the previous test again i have my 4k premiere pro running here we've also got youtube video playing",
+  "transcript_sentiment": "NEUTRAL (0.76)",
+  "vocal_emotion": "POSITIVE (arousal 0.74)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "none detected",
+  "video_comment_sentiment": "POSITIVE (0.98)"
+ },
+ "seconds": 4.031,
+ "raw": "{\n  \"segment_id\": 92,\n  \"conflict_score\": 0.5,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and tone suggest a positive sentiment, but their facial expression is neutral, indicating a potential conflict between their verbal and non-verbal cues.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 92,
+  "start_s": 548.32,
+  "end_s": 554.6400000000001,
+  "conflict_score": 0.5,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion"
+  ],
+  "flagged": false
+ }
+}

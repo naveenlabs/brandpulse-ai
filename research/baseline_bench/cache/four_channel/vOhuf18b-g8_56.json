@@ -1,0 +1,36 @@
+{
+ "uid": "vOhuf18b-g8_56",
+ "system": "four_channel",
+ "video_id": "vOhuf18b-g8",
+ "segment_id": 56,
+ "split": "holdout",
+ "payload": {
+  "segment_id": 56,
+  "start_s": 336.14,
+  "end_s": 339.8,
+  "transcript": "If I compare this to like foldables of the past, this is a much older device.",
+  "transcript_sentiment": "NEUTRAL (0.62)",
+  "vocal_emotion": "NEUTRAL (arousal 0.58)",
+  "vocal_reliability": 0.489,
+  "pitch_mean_hz": 0.0,
+  "energy_mean": 0.0,
+  "facial_emotion": "neutral (0.99)",
+  "video_comment_sentiment": "POSITIVE (0.97)"
+ },
+ "seconds": 5.01,
+ "raw": "{\n  \"segment_id\": 56,\n  \"conflict_score\": 0.6,\n  \"channels_in_conflict\": [\"transcript_sentiment\", \"facial_emotion\", \"vocal_emotion\"],\n  \"flags\": [],\n  \"narrative\": \"The creator's words and tone suggest neutrality, but their facial expression and vocal tone also convey neutrality, which aligns with their words. However, the audience's comments are overwhelmingly positive, creating a conflict between the creator's and audience's sentiments.\"\n}",
+ "ok": true,
+ "reason": null,
+ "result": {
+  "segment_id": 56,
+  "start_s": 336.14,
+  "end_s": 339.8,
+  "conflict_score": 0.6,
+  "conflict_reasons": [
+   "channels_in_conflict: transcript_sentiment",
+   "channels_in_conflict: facial_emotion",
+   "channels_in_conflict: vocal_emotion"
+  ],
+  "flagged": false
+ }
+}
